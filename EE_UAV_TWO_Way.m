@@ -1,0 +1,1 @@
+%vehicle coordinate setup
