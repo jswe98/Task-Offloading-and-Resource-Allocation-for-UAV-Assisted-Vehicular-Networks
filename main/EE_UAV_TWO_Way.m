@@ -92,20 +92,36 @@ j1=2*pi*fc*T/c*v;%0阶贝塞尔函数参数（V2I）
 epsi=besselj(0,j1);%求贝塞尔函数值（V2I）er
 l=5;%车与基站通信慢衰落系数
 %先定义Gvr的初值，这是在第一个时隙的快衰落加慢衰落
-PL=zeros(M,1);
+PLvr=zeros(M,1);
 GVR=zeros(M,1,N);
-
+GVU=zeros(M,1,N);
 for m=1:M
-    PL(m,1,1) =l/(distanceVR(m,1,1)^2);%路径损耗的倒数
-    GVR(m,1,1)=l*(PL(m,1,1))^2; 
+    PLvr(m,1,1) =l/(distanceVR(m,1,1)^2);%路径损耗的倒数
+    GVR(m,1,1)=l*(PLvr(m,1,1))^2; 
 end
 for t=2:N
     for m=1:M
+    PLvr(m,1,1) =l/(distanceVR(m,1,1)^2);%路径损耗的倒数
     GVR(m,1,t)=((epsi(m)*GVR(m,1,t-1))^2+(1-epsi(m))^2)*l/(distanceVR(m,1,t)^2);
     end
 end
-
-
+%先定义Gvu的初值
+for t=1:N
+    for m=1:M
+    GVU(m,1,t) =l/(distanceVU(m,1,t)^2);%路径损耗的倒数
+    end
+end
+%使用信噪比进行判断
+X=zeros(M,N);
+for t=1:N
+    for m=1:M
+    if  GVU(m,1,t)>GVR(m,1,t)
+        X(m,t)=1;
+    else
+        X(m,t)=0;
+    end;
+    end
+end
 %{
 % 定义车道的宽度和车的初始位置
 lane_width = 3;
