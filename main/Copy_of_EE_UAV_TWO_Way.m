@@ -4,13 +4,20 @@ clear
 %format long  
 % format short 
 T=60;%共有70个时隙
+UAVposition = zeros(T,3);
+cvx_begin
+cvx_solver sedumi
+variable UAVposition((T,3))   
+
+
+UAVpositions=zeros(M,3,T); %无人机在每个时隙地三维位置相对于每辆车的
 M=4;%车的数量
 det=1;%solt length
 TTT=T*det;%time span
 lright=1;%车道索引车向右 right
 lleft=-1;%车道索引车向左
 %UAV coordinate setup
-UAVposition = zeros(T,3);
+
 UAVposition(1,:) = [0;0;80];% 定义无人机初始位置
 VUAV_max=30;%无人机速度约束
 D=VUAV_max*det;%maximum distance of UAV
@@ -22,11 +29,21 @@ VUAU_y(t)=30*rand();
 end
 % 模拟无人机位置变化C1=linspace(1,1,N);
 for t = 2:T
-    UAVvelocity = [VUAU_x(t); VUAU_y(t)];  % 假设无人机在每个时刻沿着固定方向移动，这里假设速度为[1;1;1]
-    UAVvelocity = UAVvelocity / norm(UAVvelocity) * D;    % 缩放方向向量以控制飞行距离小于30
-    UAVposition(t,:) = [UAVposition(t-1,1)+ det.*UAVvelocity(1);UAVposition(t-1,2)+ det.*UAVvelocity(2) ;100];   % 更新位置
+    UAVposition(:,t)=UAVposition(:,t-1)+[500/(N-1),500/(N-1),H]';
+%     UAVvelocity = [VUAU_x(t); VUAU_y(t)];  % 假设无人机在每个时刻沿着固定方向移动，这里假设速度为[1;1;1]
+%     UAVvelocity = UAVvelocity / norm(UAVvelocity) * D;    % 缩放方向向量以控制飞行距离小于30
+%     UAVposition(t,:) = [UAVposition(t-1,1)+ det.*UAVvelocity(1);UAVposition(t-1,2)+ det.*UAVvelocity(2) ;100];   % 更新位置
 %     UAVposition(T,:)=UAVposition(1,:);
     %     UAVposition(t,:) = [UAVposition(t-1,1:2) + det.*velocity(1:2), 100];
+end
+ % 定义车车与无人机的距离
+distanceVU=zeros(M,T);
+
+for t=1:T
+    for m=1:M
+    UAVpositions(m,:,t)=UAVposition(t,:);
+    distanceVU(m,t) = norm(UAVpositions(m,:,t)-Vposition(m,:,t)); 
+    end
 end
 
 figure;
@@ -68,15 +85,11 @@ end   % 定义车车的初始位置
 % 定义车车与路边单元的距离
 RSU=zeros(M,3,T);
 distanceVR=zeros(M,T);
- % 定义车车与无人机的距离
-distanceVU=zeros(M,T);
-UAVpositions=zeros(M,3,T);
+
 for t=1:T
     for m=1:M
     RSU(m,:,t)=[0,0,0];
     distanceVR(m,t) = norm(RSU(m,:,t)-Vposition(m,:,t)); 
-    UAVpositions(m,:,t)=UAVposition(t,:);
-    distanceVU(m,t) = norm(UAVpositions(m,:,t)-Vposition(m,:,t)); 
     end
 end
 V1=20*ones(1,M);%发送车的速度
@@ -141,13 +154,18 @@ end
 %求解吞吐量和R SUM
 RSUM=sum(R(:));
 
+maximize RSUM
+subject to
+for t=2:T-1
+    norm([UAVposition(t,1) UAVposition(t,2)]-[UAVposition(t+1,1) UAVposition(t+1,2)])<= Vmax*delta;
+end
+cvx end
 
-
-distanceVR=distanceVR';
-distanceVU=distanceVU';
-GVR=GVR';
-GVU=GVU';
-X=X';
+% distanceVR=distanceVR';
+% distanceVU=distanceVU';
+% GVR=GVR';
+% GVU=GVU';
+% X=X';
 
 %{
 % 定义车道的宽度和车的初始位置
