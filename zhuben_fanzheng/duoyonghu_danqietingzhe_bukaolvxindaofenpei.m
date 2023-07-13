@@ -103,6 +103,7 @@ VJ(1)^(2)+VJ_I^(2)-2*VJ(1)*VJ_I<=VV_max^(2)*t;
 VJ(120)^(2)+VJ_F^(2)-2*VJ(120)*VJ_F<=VV_max^(2)*t;
 20*ones(1,120)<=VJ<=120*ones(1,120);
 cvx_end
+
 HJ_0=HJ;
 VJ_0=VJ;
 M_E0=M_E;

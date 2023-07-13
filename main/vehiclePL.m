@@ -1,10 +1,10 @@
-function [PLVR,PLVU] = vehiclePL(T,M,lright,lleft,Vvelocity,V1,det,VUAV_max,H,q_cvx)%2b是散射分量平均功率，omega是LOS分量
+function [PLVR,PLVU] = vehiclePL(T,M,lright,lleft,Vvelocity,V1,det,VUAV_max,H,UAVposition)%2b是散射分量平均功率，omega是LOS分量
 D=VUAV_max*det;%maximum distance of UAV
-UAVposition = zeros(T,3);
-UAVposition(1,:) = [0;0;H];% 定义无人机初始位置
+
 for t = 2:T
 %     UAVvelocity = [VUAU_x(t); VUAU_y(t)];  % 假设无人机在每个时刻沿着固定方向移动，这里假设速度为[1;1;1]
-q_cvx(:,t)=q_cvx(:,t-1)+[500/(N-1),500/(N-1),H]';
+% q_cvx(:,t)=q_cvx(:,t-1)+[500/(t-1),500/(t-1),H]';
+ UAVposition(t,:)=UAVposition(t-1,:)+[500/(t-1),500/(t-1),0];
  %     UAVvelocity = UAVvelocity / norm(UAVvelocity) * D;    % 缩放方向向量以控制飞行距离小于30
 %     UAVposition(t,:) = [UAVposition(t-1,1)+ det.*UAVvelocity(1);UAVposition(t-1,2)+ det.*UAVvelocity(2) ;100];   % 更新位置
 %     UAVposition(T,:)=UAVposition(1,:);
@@ -84,13 +84,13 @@ for t=1:T
     GVU(m,t) =l/(distanceVU(m,t)^2);%路径损耗的倒数
     end
 end
-figure;
-plot(UAVposition(1,:), UAVposition(2,:));
-%plot3(UAVposition(1,:), UAVposition(2,:), UAVposition(3,:));
-grid on;
-xlabel('X');
-ylabel('Y');
-zlabel('Z');
-title('无人机轨迹');
+% figure;
+% plot(UAVposition(1,:), UAVposition(2,:));
+% %plot3(UAVposition(1,:), UAVposition(2,:), UAVposition(3,:));
+% grid on;
+% xlabel('X');
+% ylabel('Y');
+% zlabel('Z');
+% title('无人机轨迹');
 PLVR=GVR';%ShadowedRician distribution
 PLVU=GVU';

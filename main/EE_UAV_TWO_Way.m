@@ -10,8 +10,9 @@ TTT=T*det;%time span
 lright=1;%车道索引车向右 right
 lleft=-1;%车道索引车向左
 %UAV coordinate setup
+H=80;
 UAVposition = zeros(T,3);
-UAVposition(1,:) = [0;0;80];% 定义无人机初始位置
+UAVposition(1,:) = [0;0;H];% 定义无人机初始位置
 VUAV_max=30;%无人机速度约束
 D=VUAV_max*det;%maximum distance of UAV
 VUAU_x=30*rand();
@@ -24,7 +25,7 @@ end
 for t = 2:T
     UAVvelocity = [VUAU_x(t); VUAU_y(t)];  % 假设无人机在每个时刻沿着固定方向移动，这里假设速度为[1;1;1]
     UAVvelocity = UAVvelocity / norm(UAVvelocity) * D;    % 缩放方向向量以控制飞行距离小于30
-    UAVposition(t,:) = [UAVposition(t-1,1)+ det.*UAVvelocity(1);UAVposition(t-1,2)+ det.*UAVvelocity(2) ;100];   % 更新位置
+    UAVposition(t,:) = [UAVposition(t-1,1)+ det.*UAVvelocity(1);UAVposition(t-1,2)+ det.*UAVvelocity(2) ;H];   % 更新位置
 %     UAVposition(T,:)=UAVposition(1,:);
     %     UAVposition(t,:) = [UAVposition(t-1,1:2) + det.*velocity(1:2), 100];
 end

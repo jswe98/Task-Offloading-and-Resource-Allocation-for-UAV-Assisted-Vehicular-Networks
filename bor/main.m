@@ -1,4 +1,7 @@
 %% part 1:parameters initialization
+clc
+close all
+clear
 WR=[0,0];%coordinate of RIS
 WG=[0,70];%coordinate of ground user
 zG=150e3;
@@ -114,8 +117,8 @@ while 1
     end
 end
 hold on;axis on;grid on
-plot(WR(1),WR(2),'sk','MarkerSize',10);
-plot(WG(1),WG(2),'Ob','MarkerSize',10);
+% plot(WR(1),WR(2),'sk','MarkerSize',10);
+% plot(WG(1),WG(2),'Ob','MarkerSize',10);
 plot(Q0(1:N,1),Q0(1:N,2),'-^','LineWidth',1.2,'MarkerSize',5);
 
 

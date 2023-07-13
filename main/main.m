@@ -12,14 +12,16 @@ V1=20*ones(1,M);%发送车的速度
 H=80;%无人机高度
 VUAV_max=30;%无人机速度约束
 q_cvx=zeros(3,T);
+UAVposition = zeros(T,3);
+UAVposition(1,:) = [0;0;H];% 定义无人机初始位置
 cvx_begin
 cvx_solver sedumi
-variable q_cvx(3,T)   
+variable UAVposition(T,3)   
 % for t=1:T
 % VUAU_x(t)=30*rand();
 % VUAU_y(t)=30*rand();
 % end
-[PLVR,PLVU]=vehiclePL(T,M,lright,lleft,Vvelocity,V1,det,VUAV_max,q_cvx);
+[PLVR,PLVU]=vehiclePL(T,M,lright,lleft,Vvelocity,V1,det,VUAV_max,UAVposition);
 %使用信噪比进行判断
 X=zeros(M,T);
 for t=1:T
@@ -43,10 +45,12 @@ for t=1:T
     end
 end
 %求解吞吐量和R SUM
-RSUM=sum(R(:));
-
+for t=2:T
+    RSUM(t)=sum(R(t,:));
+end
 %  expression Rate_N(1,N)
-maximize RSUM
+expression RSUM(T)
+maximize RSUM(T)
 subject to
 for t=2:T-1
     norm([q_cvx(1,n) q_cvx(2,n)]-[q_cvx(1,n+1) q_cvx(2,n+1)])<=Vmax*delta;

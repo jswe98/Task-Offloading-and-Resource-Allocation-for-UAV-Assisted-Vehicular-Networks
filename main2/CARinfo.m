@@ -1,0 +1,70 @@
+function [CARposition,l,GVR,distanceVR,Vposition] = CARinfo(T,M,det,roadlength,roadwidth)
+Vposition = zeros(M,3,T);% 定义车车的初始位置
+ll=zeros(1,M);
+lright=1;%车道索引车向右 right
+lleft=-1;%车道索引车向左
+Vvelocity = 15;  % 车车速度为40
+for m = 1:M
+random_number = randi([0, 1]); % 生成0到1之间的随机整数（0代表-1，1代表1）
+if random_number == 0
+    ll(m) = lright;   % 右车
+    random_number = randi([0, 1]);
+    if random_number == 0
+        Vposition_x=0;
+    else
+        Vposition_x=200;
+    end        
+else
+    ll(m) = lleft;
+    random_number = randi([0, 1]);
+    if random_number == 0
+        Vposition_x=400;
+    else
+        Vposition_x=roadlength;
+    end 
+end
+     Vposition(m,:,1)=[Vposition_x; roadwidth/2+roadwidth/2*ll(m); 0];
+     for t=2:T
+     Vposition(m,:,t)=[Vposition(m,1,t-1)+ll(m)*det*Vvelocity; roadwidth/2+roadwidth/2*ll(m); 0];
+     end
+end   % 定义车车的初始位置
+RSU=zeros(M,3,T);
+distanceVR=zeros(M,T);
+for t=1:T
+    for m=1:M
+    RSU(m,:,t)=[0,0,0];
+    distanceVR(m,t) = norm(RSU(m,:,t)-Vposition(m,:,t)); 
+    end
+end
+V1=20*ones(1,M);%发送车的速度
+V2=zeros(1,1);%接收基站的速度
+v=zeros(M,1);%车与基站之间的相对速度矩阵
+h=zeros(M,1);%车与基站之间的先前时刻的值
+for m=1:M 
+        v(m)=abs(V1(m)-V2);
+        h(m)=1+0.3*rand(1);    
+end
+TC=0.0005;%基站采集与之通信的发射车干扰信道链路的CSI周期(V2I)
+c=3*1e+8;%光速
+fc=5.9*1e+9;%多普勒频移中心频率
+j1=2*pi*fc*TC/c*v;%0阶贝塞尔函数参数（V2I）
+epsi=besselj(0,j1);%求贝塞尔函数值（V2I）er
+l=5;%车与基站通信慢衰落系数
+%先定义Gvr的初值，这是在第一个时隙的快衰落加慢衰落
+PLvr=zeros(M,1);
+GVR=zeros(M,T);
+for m=1:M
+    PLvr(m,1) =l/(distanceVR(m,1)^2);%路径损耗的倒数
+    GVR(m,1)=l*(PLvr(m,1))^2; 
+end
+for t=2:T
+    for m=1:M
+    PLvr(m,1) =l/(distanceVR(m,1)^2);%路径损耗的倒数
+    GVR(m,t)=((epsi(m)*GVR(m,t-1))^2+(1-epsi(m))^2)*l/(distanceVR(m,t)^2);%前一时刻的相关系数加上新的慢衰落
+    end
+end
+
+CARposition=Vposition;
+l=ll;
+
+

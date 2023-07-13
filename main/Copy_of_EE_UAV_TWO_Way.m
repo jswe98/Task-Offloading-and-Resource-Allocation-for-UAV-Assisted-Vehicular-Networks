@@ -139,24 +139,41 @@ C1=linspace(1,1,M);
 %求解吞吐量第一个时隙的
 P=zeros(T,M);
 R=zeros(T,M);
+
+%求解吞吐量和R SUM
+for i=1:10
+cvx_begin
+cvx_solver sedumi
+variable UAVposition(T,3)   
+expression RSUM(T)
+maximize RSUM(T)
+subject to
+for t=2:T-1
+    norm([UAVposition(t+1,1) UAVposition(t+1,2)]-[UAVposition(t,1) UAVposition(t,2)])<= D;
+end
 for t=1:T
     for m=1:M
       P(t,m)=0.003;%功率的初值
       R(t,m)=X(m,t)'*log(1+P(t,m)*GVR(m,t)'/Delta)+(1-X(m,t)')*log(1+P(t,m)*GVU(m,t)'/Delta);
     end
 end
-%求解吞吐量和R SUM
-RSUM=sum(R(:));
-cvx_begin
-cvx_solver sedumi
-variable UAVposition(T,3)   
-expression R(T,M)
-maximize sum(R(:))
-subject to
-for t=2:T-1
-    norm([UAVposition(t,1) UAVposition(t,2)]-[UAVposition(t+1,1) UAVposition(t+1,2)])<= D;
+for t=2:T
+    RSUM(t)=sum(R(t,:));
 end
-cvx end
+cvx_end
+qqqq(i,:)=UAVposition(T,:)
+end
+UAV=zeros(3,T);
+for t=1:T
+UAV=UAVpositions(1,:,t);
+end
+% figure;
+% plot3(UAV(1,:), UAV(2,:), UAV(3,:));
+% grid on;
+% xlabel('X');
+% ylabel('Y');
+% zlabel('Z');
+% title('无人机轨迹');
 
 % distanceVR=distanceVR';
 % distanceVU=distanceVU';
