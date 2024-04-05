@@ -21,7 +21,7 @@ else
     if random_number == 0
         Vposition_x=roadlength/2;
     else
-        Vposition_x=roadlength;
+        Vposition_x=roadlength/4;
     end 
     random_numbery = roadwidth/2+(roadwidth/2) * rand; % 生成0到4之间的随机数
 end
