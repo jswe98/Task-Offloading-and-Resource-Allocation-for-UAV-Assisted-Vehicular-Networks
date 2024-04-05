@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
+The style file: ysubst.bst
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/chap-intro.aux
+A level-1 auxiliary file: chapter/chap-2.aux
+A level-1 auxiliary file: chapter/chap-3.aux
+A level-1 auxiliary file: chapter/chap-4.aux
+A level-1 auxiliary file: chapter/chap-conclusion.aux
+A level-1 auxiliary file: chapter/achive.aux
+A level-1 auxiliary file: chapter/thanks.aux
+I found no \citation commands---while reading file template.aux
+format.conference.title is an unknown function---line 2787 of file ysubst.bst
+format.cconference.title is an unknown function---line 2822 of file ysubst.bst
+format.patent.continue.vol.num is an unknown function---line 2951 of file ysubst.bst
+format.patent.crossref is an unknown function---line 2959 of file ysubst.bst
+"}" can't start a style-file command---line 2967 of file ysubst.bst
+ : }
+ :  }
+Database file #1: bib/tex.bib
+(There were 6 error messages)

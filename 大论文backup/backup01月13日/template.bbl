@@ -1,0 +1,106 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Lim et al.(2021)]{TFL}
+\textup{Lim W~Y~B, Huang J, Xiong Z}, et al.
+\newblock Towards Federated Learning in Uav-enabled Internet of Vehicles: A
+  Multi-dimensional Contract-matching Approach [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2021, 22(8):
+  5140--5154.
+
+\bibitem[Wu et al.(2021)]{ACO}
+\textup{Wu Q, Xu J, Zeng Y}, et al.
+\newblock A Comprehensive Overview on 5g-and-beyond Networks with Uavs: From
+  Communications to Sensing and Intelligence [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2021, 39(10):
+  2912--2945.
+
+\bibitem[Liu et al.(2019)]{CCO}
+\textup{Liu Z, Xie Y, Chan K~Y}, et al.
+\newblock Chance-constrained Optimization in D2d-based Vehicular Communication
+  Network [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5045--5058.
+
+\bibitem[Liu et al.(2021){\natexlab{a}}]{RAI}
+\textup{Liu Z, Su J, Xie Y~a}, et al.
+\newblock Resource Allocation in D2d Enabled Vehicular Communications: A Robust
+  Stackelberg Game Approach Based on Price-penalty Mechanism [J].
+\newblock IEEE Transactions on Vehicular Technology, 2021, 70(8): 8186--8200.
+
+\bibitem[GT(1968)]{GT}
+Back Matter [J].
+\newblock Econometrica, 1968, 36(3/4).
+
+\bibitem[Ren et al.(2015)]{PCID}
+\textup{Ren Y, Liu F, Liu Z}, et al.
+\newblock Power Control in D2d-based Vehicular Communication Networks [J].
+\newblock IEEE Transactions on Vehicular Technology, 2015, 64(12): 5547--5562.
+
+\bibitem[Zhou et al.(2019)]{ACAR}
+\textup{Zhou Z, Guo Y, He Y}, et al.
+\newblock Access Control and Resource Allocation for M2m Communications in
+  Industrial Automation [J].
+\newblock IEEE Transactions on Industrial Informatics, 2019, 15(5): 3093--3103.
+
+\bibitem[Liu et al.(2023)]{Qian2023}
+\textup{Liu Q, Gong J, Liu Q}.
+\newblock {Blockchain-Assisted Reputation Management Scheme} for {Internet} of
+  {Vehicles} [J].
+\newblock Sensors, 2023, 23(10).
+
+\bibitem[Kim et al.(2011)]{Kim2011}
+\textup{Kim T, Love D~J, Clerckx B}.
+\newblock {Does Frequent Low Resolution Feedback Outperform Infrequent High
+  Resolution Feedback} for {Multiple Antenna Beamforming Systems?} [J].
+\newblock IEEE Transactions on Signal Processing, 2011, 59(4): 1654--1669.
+
+\bibitem[Sakr and Hossain(2014)]{Sakr2014}
+\textup{Sakr A, Hossain E}.
+\newblock Cognitive and {Energy Harvesting-based} {D2D Communication} in
+  Cellular Networks: Stochastic Geometry Modeling and Analysis [J].
+\newblock IEEE Transactions on Communications, 2014, 63: 1867--1880.
+
+\bibitem[Xie et al.(2020)]{Xie2020}
+\textup{Xie Y~a, Liu Z, Chan K~Y}, et al.
+\newblock {Energy-Spectral Efficiency Optimization} in {Vehicular
+  Communications: Joint Clustering} and {Pricing-Based Robust Power Control
+  Approach} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2020, 69(11):
+  13673--13685.
+
+\bibitem[Zhang et al.(2017)]{Zhang2017}
+\textup{Zhang K, Mao Y, Leng S}, et al.
+\newblock {Mobile-Edge Computing} for {Vehicular Networks: A Promising Network
+  Paradigm} with {Predictive Off-loading} [J].
+\newblock IEEE Vehicular Technology Magazine, 2017, 12(2): 36--44.
+
+\bibitem[Saleem et al.(2021)]{Saleem2021}
+\textup{Saleem U, Liu Y, Jangsher S}, et al.
+\newblock Mobility-aware Joint Task Scheduling and Resource Allocation for
+  Cooperative Mobile Edge Computing [J].
+\newblock IEEE Transactions on Wireless Communications, 2021, 20(1): 360--374.
+
+\bibitem[Tran and Pompili(2019)]{Tran2019}
+\textup{Tran T~X, Pompili D}.
+\newblock {Joint Task Offloading} and {Resource Allocation} for {Multi-Server
+  Mobile-edge Computing Networks} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(1): 856--868.
+
+\bibitem[Xiao et al.(2020)]{Xiao2020}
+\textup{Xiao H, Zhu D, Chronopoulos A~T}.
+\newblock {Power Allocation with Energy Efficiency Optimization} in {Cellular
+  D2d-based V2x Communication Network} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2020,
+  21(12): 4947--4957.
+
+\bibitem[Liu et al.(2021){\natexlab{b}}]{liu2021}
+\textup{Liu Z, Su J, Xie Y~a}, et al.
+\newblock {Resource Allocation} in {D2D-Enabled Vehicular Communications}: {A
+  Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2021, 70(8): 8186--8200.
+
+\end{thebibliography}

@@ -1,0 +1,947 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
+The style file: ysubst.bst
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/chap-intro.aux
+A level-1 auxiliary file: chapter/chap-2.aux
+A level-1 auxiliary file: chapter/chap-3.aux
+A level-1 auxiliary file: chapter/chap-4.aux
+A level-1 auxiliary file: chapter/chap-conclusion.aux
+A level-1 auxiliary file: chapter/achive.aux
+A level-1 auxiliary file: chapter/thanks.aux
+format.conference.title is an unknown function---line 2787 of file ysubst.bst
+format.cconference.title is an unknown function---line 2822 of file ysubst.bst
+format.patent.continue.vol.num is an unknown function---line 2951 of file ysubst.bst
+format.patent.crossref is an unknown function---line 2959 of file ysubst.bst
+"}" can't start a style-file command---line 2967 of file ysubst.bst
+ : }
+ :  }
+Database file #1: bib/tex.bib
+I was expecting a `,' or a `}'---line 85 of file bib/tex.bib
+ : pages = "
+ :          1",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 128 of file bib/tex.bib
+ :  number = 1262
+ :               -1272,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 139 of file bib/tex.bib
+ :  number = 171
+ :              -178,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 153 of file bib/tex.bib
+ : 
+ : %pages =        {45--48},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 240 of file bib/tex.bib
+ :   
+ :   %url={https://api.semanticscholar.org/CorpusID:16361641}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 250 of file bib/tex.bib
+ : 
+ : %url = {https://doi.org/10.1145/1374618.1374654},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+"{" immediately follows a field name---line 336 of file bib/tex.bib
+ : @ARTICLE
+ :         {twoway001,
+I'm skipping whatever remains of this entry
+"{" immediately follows a field name---line 354 of file bib/tex.bib
+ : @ARTICLE
+ :         {twoway002,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 593 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 607 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/5/2553},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 639 of file bib/tex.bib
+ :   
+ :   %volume = {PP},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 663 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/2073-8994/11/1/58},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 676 of file bib/tex.bib
+ :   
+ :   %https://www.sciencedirect.com/science/article/abs/pii/S1570870522002165
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry 陈进2020浅析中国城市智能交通系统产业化发展趋势
+while executing---line 3783 of file ysubst.bst
+Warning--there's a number but no volume in 吕婷5G基站节能技术研究
+You can't pop an empty literal stack for entry 吕婷5G基站节能技术研究
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 吕婷5G基站节能技术研究
+while executing---line 3783 of file ysubst.bst
+Warning--empty year in 5G+MEC承载车联网业务传输性能测试与验证
+You can't pop an empty literal stack for entry 5G+MEC承载车联网业务传输性能测试与验证
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 5G+MEC承载车联网业务传输性能测试与验证
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 谭国平2024无人机辅助MEC车辆任务卸载与功率控制近端策略优化算法
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 谭国平2024无人机辅助MEC车辆任务卸载与功率控制近端策略优化算法
+while executing---line 3783 of file ysubst.bst
+Warning--"Edge Computing Service Provisioning} for {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"EDGE COMPUTING SERVICE PROVISIONING} FOR {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"computing service provisioning} for {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING SERVICE PROVISIONING} FOR {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"service provisioning} for {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"SERVICE PROVISIONING} FOR {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"provisioning} for {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"PROVISIONING} FOR {Vehicular Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"Networks: A Consensus ADMM Approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS: A CONSENSUS ADMM APPROACH}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"A consensus admm approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"A CONSENSUS ADMM APPROACH}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"consensus admm approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"CONSENSUS ADMM APPROACH}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"admm approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"ADMM APPROACH}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"approach}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhou2019
+while executing---line 3783 of file ysubst.bst
+Warning--"Probabilistic Approach} for {Cooperative Computation Offloading} in {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"PROBABILISTIC APPROACH} FOR {Cooperative Computation Offloading} IN {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"approach} for {Cooperative Computation Offloading} in {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH} FOR {Cooperative Computation Offloading} IN {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"Computation Offloading} in {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTATION OFFLOADING} IN {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"offloading} in {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"OFFLOADING} IN {MEC-Assisted Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR NETWORKS}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Dai2022
+while executing---line 3783 of file ysubst.bst
+Warning--"Edge Caching} and {Computing} in {Vehicle Networks: A Deep Reinforcement Learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"EDGE CACHING} AND {Computing} IN {Vehicle Networks: A Deep Reinforcement Learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"caching} and {Computing} in {Vehicle Networks: A Deep Reinforcement Learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"CACHING} AND {Computing} IN {Vehicle Networks: A Deep Reinforcement Learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"Networks: A Deep Reinforcement Learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS: A DEEP REINFORCEMENT LEARNING}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"A deep reinforcement learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"A DEEP REINFORCEMENT LEARNING}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"deep reinforcement learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"DEEP REINFORCEMENT LEARNING}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"reinforcement learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"REINFORCEMENT LEARNING}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"learning}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"LEARNING}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Tan2018
+while executing---line 3783 of file ysubst.bst
+Warning--"Game-Based Computation Offloading Method} in {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"GAME-BASED COMPUTATION OFFLOADING METHOD} IN {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"computation offloading method} in {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTATION OFFLOADING METHOD} IN {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"offloading method} in {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"OFFLOADING METHOD} IN {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"method} in {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"METHOD} IN {Vehicular Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"Multiaccess Edge Computing Networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"MULTIACCESS EDGE COMPUTING NETWORKS}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"edge computing networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"EDGE COMPUTING NETWORKS}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"computing networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING NETWORKS}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry Wang2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Wang2020
+while executing---line 3783 of file ysubst.bst
+Warning--"Vehicular Edge Computing} for {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR EDGE COMPUTING} FOR {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"edge computing} for {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"EDGE COMPUTING} FOR {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"computing} for {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING} FOR {Real-Time Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"Offloading Requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"OFFLOADING REQUESTS}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"requests}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"REQUESTS}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Wang2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li2023
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li2023
+while executing---line 3783 of file ysubst.bst
+Warning--"Approximations} of {Chance Constrained Programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROXIMATIONS} OF {Chance Constrained Programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"Constrained Programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"CONSTRAINED PROGRAMS}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"PROGRAMS}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Nemirovski2007
+while executing---line 3783 of file ysubst.bst
+Warning--"Optimization} in {D2D-Based Vehicular Communication Network}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"OPTIMIZATION} IN {D2D-Based Vehicular Communication Network}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Communication Network}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATION NETWORK}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"communication network}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION NETWORK}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"network}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORK}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry CCO
+while executing---line 3783 of file ysubst.bst
+Warning--"Allocation} for {D2D-Based V2X Communication With Imperfect CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} FOR {D2D-Based V2X Communication With Imperfect CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"V2X Communication With Imperfect CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"V2X COMMUNICATION WITH IMPERFECT CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"communication with imperfect csi}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION WITH IMPERFECT CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"imperfect csi}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"IMPERFECT CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"csi}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"CSI}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li2020
+while executing---line 3783 of file ysubst.bst
+Warning--"Efficiency Optimization} in {Vehicular Communications: Joint Clustering} and {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"EFFICIENCY OPTIMIZATION} IN {Vehicular Communications: Joint Clustering} AND {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"optimization} in {Vehicular Communications: Joint Clustering} and {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"OPTIMIZATION} IN {Vehicular Communications: Joint Clustering} AND {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"Communications: Joint Clustering} and {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS: JOINT CLUSTERING} AND {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"Joint clustering} and {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"JOINT CLUSTERING} AND {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"clustering} and {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"CLUSTERING} AND {Pricing-Based Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"Robust Power Control Approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"ROBUST POWER CONTROL APPROACH}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"power control approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"POWER CONTROL APPROACH}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"control approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"CONTROL APPROACH}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"approach}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xie2020
+while executing---line 3783 of file ysubst.bst
+Warning--"5G Spectrum Sharing} for {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"5G SPECTRUM SHARING} FOR {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"spectrum sharing} for {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"SPECTRUM SHARING} FOR {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"sharing} for {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"SHARING} FOR {Immersive-Experience-Driven Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATIONS}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"communications}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhou2017
+while executing---line 3783 of file ysubst.bst
+Warning--"Task Offloading} and {Resource Allocation} for {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"TASK OFFLOADING} AND {Resource Allocation} FOR {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"offloading} and {Resource Allocation} for {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"OFFLOADING} AND {Resource Allocation} FOR {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"Allocation} for {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} FOR {Multi-Server Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"Mobile-Edge Computing Networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"MOBILE-EDGE COMPUTING NETWORKS}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"computing networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING NETWORKS}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Tran2019
+while executing---line 3783 of file ysubst.bst
+Warning--"Allocation Based} on {User Pairing} and {Subcarrier Matching} for {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION BASED} ON {User Pairing} AND {Subcarrier Matching} FOR {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"based} on {User Pairing} and {Subcarrier Matching} for {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"BASED} ON {User Pairing} AND {Subcarrier Matching} FOR {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Pairing} and {Subcarrier Matching} for {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"PAIRING} AND {Subcarrier Matching} FOR {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Matching} for {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"MATCHING} FOR {Downlink Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Non-Orthogonal Multiple Access Networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"NON-ORTHOGONAL MULTIPLE ACCESS NETWORKS}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"multiple access networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"MULTIPLE ACCESS NETWORKS}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"access networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"ACCESS NETWORKS}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Liang2021
+while executing---line 3783 of file ysubst.bst
+Warning--"Allocation With Energy Efficiency Optimization} in {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION WITH ENERGY EFFICIENCY OPTIMIZATION} IN {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"energy efficiency optimization} in {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"ENERGY EFFICIENCY OPTIMIZATION} IN {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"efficiency optimization} in {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"EFFICIENCY OPTIMIZATION} IN {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"optimization} in {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"OPTIMIZATION} IN {Cellular} {D2D-Based} {V2X Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"Communication Network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION NETWORK}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"network}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORK}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xiao2020
+while executing---line 3783 of file ysubst.bst
+Warning--"Transmission} for {Reconfigurable Intelligent Surface Aided Millimeter Wave Vehicular Communications With Statistical CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"TRANSMISSION} FOR {Reconfigurable Intelligent Surface Aided Millimeter Wave Vehicular Communications With Statistical CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"Intelligent Surface Aided Millimeter Wave Vehicular Communications With Statistical CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"INTELLIGENT SURFACE AIDED MILLIMETER WAVE VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"surface aided millimeter wave vehicular communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"SURFACE AIDED MILLIMETER WAVE VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"aided millimeter wave vehicular communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"AIDED MILLIMETER WAVE VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"millimeter wave vehicular communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"MILLIMETER WAVE VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"wave vehicular communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"WAVE VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"vehicular communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"communications with statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS WITH STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"statistical csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"STATISTICAL CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"csi}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"CSI}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Chen2022
+while executing---line 3783 of file ysubst.bst
+Warning--"Comprehensive Overview} on {5G}-and-{Beyond Networks With} {UAVs}: {From Communications} to {Sensing} and {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPREHENSIVE OVERVIEW} ON {5G}-AND-{Beyond Networks With} {UAVs}: {From Communications} TO {Sensing} AND {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"overview} on {5G}-and-{Beyond Networks With} {UAVs}: {From Communications} to {Sensing} and {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"OVERVIEW} ON {5G}-AND-{Beyond Networks With} {UAVs}: {From Communications} TO {Sensing} AND {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"Networks With} {UAVs}: {From Communications} to {Sensing} and {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS WITH} {UAVs}: {From Communications} TO {Sensing} AND {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"with} {UAVs}: {From Communications} to {Sensing} and {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"WITH} {UAVs}: {From Communications} TO {Sensing} AND {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"Communications} to {Sensing} and {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS} TO {Sensing} AND {Intelligence}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry ACO
+while executing---line 3783 of file ysubst.bst
+Warning--"UAV Caching} and {Trajectory} in {Aerial-Assisted Vehicular Networks: A Learning-Based Approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"UAV CACHING} AND {Trajectory} IN {Aerial-Assisted Vehicular Networks: A Learning-Based Approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"caching} and {Trajectory} in {Aerial-Assisted Vehicular Networks: A Learning-Based Approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"CACHING} AND {Trajectory} IN {Aerial-Assisted Vehicular Networks: A Learning-Based Approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Networks: A Learning-Based Approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR NETWORKS: A LEARNING-BASED APPROACH}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"networks: A learning-based approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS: A LEARNING-BASED APPROACH}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"A learning-based approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"A LEARNING-BASED APPROACH}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"learning-based approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"LEARNING-BASED APPROACH}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"approach}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry OUC
+while executing---line 3783 of file ysubst.bst
+Warning--"Dynamic Resource Slicing} and {Optimization} for {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"DYNAMIC RESOURCE SLICING} AND {Optimization} FOR {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"resource slicing} and {Optimization} for {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"RESOURCE SLICING} AND {Optimization} FOR {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"slicing} and {Optimization} for {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"SLICING} AND {Optimization} FOR {Space-Air-Ground Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"Integrated Vehicular Networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"INTEGRATED VEHICULAR NETWORKS}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"vehicular networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR NETWORKS}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SDR
+while executing---line 3783 of file ysubst.bst
+Warning--"Space-Air-Ground Integrated Networks} by {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"SPACE-AIR-GROUND INTEGRATED NETWORKS} BY {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"integrated networks} by {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"INTEGRATED NETWORKS} BY {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"networks} by {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS} BY {Artificial Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"Intelligence}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"INTELLIGENCE}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry OSI
+while executing---line 3783 of file ysubst.bst
+Warning--"UAV-Assisted Emergency Communication Technology} in a {Heterogeneous Internet} of {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"UAV-ASSISTED EMERGENCY COMMUNICATION TECHNOLOGY} IN A {Heterogeneous Internet} OF {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"emergency communication technology} in a {Heterogeneous Internet} of {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"EMERGENCY COMMUNICATION TECHNOLOGY} IN A {Heterogeneous Internet} OF {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"communication technology} in a {Heterogeneous Internet} of {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION TECHNOLOGY} IN A {Heterogeneous Internet} OF {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"technology} in a {Heterogeneous Internet} of {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"TECHNOLOGY} IN A {Heterogeneous Internet} OF {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"Internet} of {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+Warning--"INTERNET} OF {Things}" isn't a brace-balanced string for entry DSF
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DSF
+while executing---line 3783 of file ysubst.bst
+Warning--"Allocation} in {D2D Enabled Vehicular Communications: A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} IN {D2D Enabled Vehicular Communications: A Robust Stackelberg Game Approach Based} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"Enabled Vehicular Communications: A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"ENABLED VEHICULAR COMMUNICATIONS: A ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"vehicular communications: A robust stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATIONS: A ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"communications: A robust stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS: A ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"A robust stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"A ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"robust stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"Mechanism}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"MECHANISM}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry RAI
+while executing---line 3783 of file ysubst.bst
+Warning--"Control} and {Resource Allocation} for {M2M Communications} in {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"CONTROL} AND {Resource Allocation} FOR {M2M Communications} IN {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"Allocation} for {M2M Communications} in {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} FOR {M2M Communications} IN {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"Communications} in {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS} IN {Industrial Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"Automation}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"AUTOMATION}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry ACAR
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Gao2020
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Song2022
+while executing---line 3783 of file ysubst.bst
+Warning--"Federated Learning} in {UAV-Enabled Internet} of {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"FEDERATED LEARNING} IN {UAV-Enabled Internet} OF {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"learning} in {UAV-Enabled Internet} of {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"LEARNING} IN {UAV-Enabled Internet} OF {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"Internet} of {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"INTERNET} OF {Vehicles}: {A Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"Multi-Dimensional Contract-Matching Approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"MULTI-DIMENSIONAL CONTRACT-MATCHING APPROACH}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"contract-matching approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"CONTRACT-MATCHING APPROACH}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"approach}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry TFL
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 胡益恺智能车辆决策方法研究综述
+while executing---line 3783 of file ysubst.bst
+Warning--empty author in GT
+You can't pop an empty literal stack for entry GT
+while executing---line 3783 of file ysubst.bst
+Warning--"Control} in {D2D-Based Vehicular Communication Networks}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"CONTROL} IN {D2D-Based Vehicular Communication Networks}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Communication Networks}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATION NETWORKS}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"communication networks}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION NETWORKS}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"networks}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS}" isn't a brace-balanced string for entry PCID
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry PCID
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Towards2024
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Towards2024
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SurveyMEC2017
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SurveyMEC2018
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DistributedTask2024
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DistributedTask2024
+while executing---line 3783 of file ysubst.bst
+Warning--"Reputation Management Scheme} for internet of vehicles" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"REPUTATION MANAGEMENT SCHEME} FOR INTERNET OF VEHICLES" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"management scheme} for internet of vehicles" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"MANAGEMENT SCHEME} FOR INTERNET OF VEHICLES" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"scheme} for internet of vehicles" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"SCHEME} FOR INTERNET OF VEHICLES" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Qian2023
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 云计算隐私10418975
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 云计算隐私10418975
+while executing---line 3783 of file ysubst.bst
+Warning--"Frequent Low Resolution Feedback Outperform Infrequent High Resolution Feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"FREQUENT LOW RESOLUTION FEEDBACK OUTPERFORM INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"low resolution feedback outperform infrequent high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"LOW RESOLUTION FEEDBACK OUTPERFORM INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"resolution feedback outperform infrequent high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"RESOLUTION FEEDBACK OUTPERFORM INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"feedback outperform infrequent high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"FEEDBACK OUTPERFORM INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"outperform infrequent high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"OUTPERFORM INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"infrequent high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"INFREQUENT HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"high resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"HIGH RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"resolution feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"RESOLUTION FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"feedback} for {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"FEEDBACK} FOR {Multiple Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"Antenna Beamforming Systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"ANTENNA BEAMFORMING SYSTEMS?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"beamforming systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"BEAMFORMING SYSTEMS?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"systems?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+Warning--"SYSTEMS?}" isn't a brace-balanced string for entry Kim2011
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Kim2011
+while executing---line 3783 of file ysubst.bst
+Warning--"Harvesting-Based} {D2D Communication} in cellular networks: Stochastic geometry modeling and analysis" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"HARVESTING-BASED} {D2D Communication} IN CELLULAR NETWORKS: STOCHASTIC GEOMETRY MODELING AND ANALYSIS" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"Communication} in cellular networks: Stochastic geometry modeling and analysis" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATION} IN CELLULAR NETWORKS: STOCHASTIC GEOMETRY MODELING AND ANALYSIS" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Sakr2014
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Guo2019
+while executing---line 3783 of file ysubst.bst
+Warning--"Computing} for {Vehicular Networks: A Promising Network Paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING} FOR {Vehicular Networks: A Promising Network Paradigm} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"Networks: A Promising Network Paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORKS: A PROMISING NETWORK PARADIGM} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"A promising network paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"A PROMISING NETWORK PARADIGM} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"promising network paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"PROMISING NETWORK PARADIGM} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"network paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"NETWORK PARADIGM} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"paradigm} with {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"PARADIGM} WITH {Predictive Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"Off-Loading}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"OFF-LOADING}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhang2017
+while executing---line 3783 of file ysubst.bst
+Warning--"Joint Task Scheduling} and {Resource Allocation} for {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"JOINT TASK SCHEDULING} AND {Resource Allocation} FOR {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"task scheduling} and {Resource Allocation} for {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"TASK SCHEDULING} AND {Resource Allocation} FOR {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"scheduling} and {Resource Allocation} for {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"SCHEDULING} AND {Resource Allocation} FOR {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Allocation} for {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} FOR {Cooperative Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Mobile Edge Computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"MOBILE EDGE COMPUTING}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"edge computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"EDGE COMPUTING}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"computing}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+Warning--"COMPUTING}" isn't a brace-balanced string for entry Saleem2021
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Saleem2021
+while executing---line 3783 of file ysubst.bst
+Warning--"Allocation} in {D2D-Enabled Vehicular Communications}: {A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"ALLOCATION} IN {D2D-Enabled Vehicular Communications}: {A Robust Stackelberg Game Approach Based} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Vehicular Communications}: {A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"VEHICULAR COMMUNICATIONS}: {A Robust Stackelberg Game Approach Based} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"communications}: {A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"COMMUNICATIONS}: {A Robust Stackelberg Game Approach Based} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"ROBUST STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"stackelberg game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"STACKELBERG GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"game approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"GAME APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"approach based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROACH BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"based} on {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"BASED} ON {Price-Penalty Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"Mechanism}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+Warning--"MECHANISM}" isn't a brace-balanced string for entry liu2021
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry liu2021
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xu2015
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Effect2020
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Performance2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry WirelessRelay5937283
+while executing---line 3783 of file ysubst.bst
+Warning--empty year in 无人机技术辅助的车联网
+You can't pop an empty literal stack for entry 无人机技术辅助的车联网
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 无人机技术辅助的车联网
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Joint9453853
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 无人机QoS9373692
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway7091030
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway5753961
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway575396233
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Spatial4490168
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Stochastic6576809
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Fiore2008TheNS
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry JointTrajectory9627548
+while executing---line 3783 of file ysubst.bst
+(There were 84 error messages)

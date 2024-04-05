@@ -1,0 +1,72 @@
+\BOOKMARK [0][-]{chapter*.1}{摘 要}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{ABSTRACT}{}% 2
+\BOOKMARK [0][-]{chapter.1}{第 1章  绪论}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1 课题的研究背景及意义}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{1.2 国内外研究现状}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 无线协作网络功率控制}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 无人机中继轨迹优化}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 中继选择与聚类算法}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{1.3 研究动机}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 车辆非密集网络通信快速性}{section.1.3}% 10
+\BOOKMARK [1][-]{section.1.4}{1.4 论文结构安排}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{第 2章  插图}{}% 12
+\BOOKMARK [1][-]{section.2.1}{2.1 单个居中图形}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{2.2 两个并排图形}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{2.3 两个以上的并排或者堆叠的图形}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{2.4 图题}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{2.5 图形的引用}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{2.6 本章小结}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{第 3章  云辅助的车辆网络功率控制与任务卸载}{}% 19
+\BOOKMARK [1][-]{section.3.1}{3.1 引言}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{3.2 系统模型与问题描述}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 通信模型}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 车辆计算模型}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 问题的定义}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{3.3 问题的求解}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 目标方程中的连续凸逼近方法}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 中断概率的近似}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 优化功率问题}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 计算资源分配}{section.3.3}% 29
+\BOOKMARK [1][-]{section.3.4}{3.4 仿真结果和性能分析}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.5}{3.5 本章小结}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.6}{3.6 表格的引用}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.7}{3.7 本章小结}{chapter.3}% 33
+\BOOKMARK [0][-]{chapter.4}{第 4章  公式}{}% 34
+\BOOKMARK [1][-]{section.4.1}{4.1 上下标}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.2}{4.2 分式}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.3}{4.3 矢量点乘与叉乘}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.4}{4.4 求和与积分}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.5}{4.5 矩阵与数组}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.6}{4.6 多行公式与对齐方法}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.7}{4.7 带有大括号的方程组}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.8}{4.8 特殊的公式}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.9}{4.9 数学环境的使用}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 定义}{section.4.9}% 44
+\BOOKMARK [2][-]{subsection.4.9.2}{4.9.2 定理及证明}{section.4.9}% 45
+\BOOKMARK [2][-]{subsection.4.9.3}{4.9.3 推论}{section.4.9}% 46
+\BOOKMARK [2][-]{subsection.4.9.4}{4.9.4 引理}{section.4.9}% 47
+\BOOKMARK [2][-]{subsection.4.9.5}{4.9.5 例子}{section.4.9}% 48
+\BOOKMARK [1][-]{section.4.10}{4.10 本章小结}{chapter.4}% 49
+\BOOKMARK [0][-]{chapter.5}{第 5章  参考文献}{}% 50
+\BOOKMARK [1][-]{section.5.1}{5.1 参考文献在正文和列表中格式要求}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 在正文中的要求}{section.5.1}% 52
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 在列表中的要求}{section.5.1}% 53
+\BOOKMARK [1][-]{section.5.2}{5.2 单一参考文献}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.3}{5.3 多个连续参考文献}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.4}{5.4 多个不连续参考文献}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.5}{5.5 本章小结}{chapter.5}% 57
+\BOOKMARK [0][-]{chapter.6}{第 6章  数字物理量与单位}{}% 58
+\BOOKMARK [1][-]{section.6.1}{6.1 数字}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.2}{6.2 单位}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.3}{6.3 同时输入数字与单位}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.4}{6.4 附1：国际标准单位与导出单位输入方式}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.5}{6.5 本章小结}{chapter.6}% 63
+\BOOKMARK [0][-]{chapter*.15}{结 论}{}% 64
+\BOOKMARK [0][-]{appendix.A}{附录 A  程序代码的输入}{}% 65
+\BOOKMARK [1][-]{section.A.1}{A.1 插入程序代码}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.2}{A.2\040FORTRAN}{appendix.A}% 67
+\BOOKMARK [1][-]{section.A.3}{A.3\040MATLAB}{appendix.A}% 68
+\BOOKMARK [1][-]{section.A.4}{A.4\040C++}{appendix.A}% 69
+\BOOKMARK [0][-]{appendix*.16}{参考文献}{}% 70
+\BOOKMARK [0][-]{appendix*.17}{攻读硕士学位期间承担的科研任务与主要成果}{}% 71
+\BOOKMARK [0][-]{appendix*.18}{致 谢}{}% 72

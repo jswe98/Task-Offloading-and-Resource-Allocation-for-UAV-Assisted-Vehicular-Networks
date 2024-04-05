@@ -1,0 +1,27 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Lim et al.(2021)]{ACO}
+\textup{Lim W~Y~B, Huang J, Xiong Z}, et al.
+\newblock Towards Federated Learning in Uav-enabled Internet of Vehicles: A
+  Multi-dimensional Contract-matching Approach [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2021, 22(8):
+  5140--5154.
+
+\bibitem[Liu et al.(2019)]{CCO}
+\textup{Liu Z, Xie Y, Chan K~Y}, et al.
+\newblock Chance-constrained Optimization in D2d-based Vehicular Communication
+  Network [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5045--5058.
+
+\bibitem[Liu et al.(2023)]{Qian2023}
+\textup{Liu Q, Gong J, Liu Q}.
+\newblock {Blockchain-Assisted Reputation Management Scheme} for {Internet} of
+  {Vehicles} [J].
+\newblock Sensors, 2023, 23(10).
+
+\end{thebibliography}

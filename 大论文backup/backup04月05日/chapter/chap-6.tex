@@ -1,0 +1,13 @@
+﻿% !Mode:: "TeX:UTF-8"
+ % 结束代码为空，因为通常不需要在abstract环境结束时做特殊处理
+\newenvironment{abstract2}{
+  \phantomsection  % 创建一个PDF书签锚点
+  \addcontentsline{toc}{chapter}{摘要}  % 将摘要添加到目录中
+  \chapter*{摘要}  % 使用星号版本的\chapter命令来创建一个不带编号的章节标题
+  \markboth{摘要}{摘要}  % 更新页眉（可能需要根据你的文档类调整）
+}{}  % 结束代码为空，因为通常不需要在abstract环境结束时做特殊处理
+
+
+\begin{abstract2}
+这是摘要的内容。
+\end{abstract2}

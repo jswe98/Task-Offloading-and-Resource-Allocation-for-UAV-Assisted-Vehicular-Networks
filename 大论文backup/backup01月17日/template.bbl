@@ -1,0 +1,219 @@
+\begin{thebibliography}{34}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Zhou et al.(2019){\natexlab{a}}]{Zhou2019}
+\textup{Zhou Z, Feng J, Chang Z}, et al.
+\newblock {Energy-Efficient Edge Computing Service Provisioning} for {Vehicular
+  Networks: A Consensus Admm Approach} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5087--5099.
+
+\bibitem[Dai et al.(2022)]{Dai2022}
+\textup{Dai P, Hu K, Wu X}, et al.
+\newblock {A Probabilistic Approach} for {Cooperative Computation Offloading}
+  in {MEC-Assisted Vehicular Networks} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022, 23(2):
+  899--911.
+
+\bibitem[Tan and Hu(2018)]{Tan2018}
+\textup{Tan L~T, Hu R~Q}.
+\newblock {Mobility-Aware Edge Caching} and {Computing} in {Vehicle Networks: A
+  Deep Reinforcement Learning} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2018, 67(11):
+  10190--10203.
+
+\bibitem[Wang et al.(2020)]{Wang2020}
+\textup{Wang Y, Lang P, Tian D}, et al.
+\newblock {A Game-based Computation Offloading Method} in {Vehicular
+  Multiaccess Edge Computing Networks} [J].
+\newblock IEEE Internet of Things Journal, 2020, 7(6): 4987--4996.
+
+\bibitem[Wang et al.(2022)]{Wang2022}
+\textup{Wang J, Zhu K, Chen B}, et al.
+\newblock {Distributed} {Clustering-Based} {Cooperative Vehicular Edge
+  Computing} for {Real-Time Offloading Requests} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(1): 653--669.
+
+\bibitem[Li et al.(2023)]{Li2023}
+\textup{Li Z, Yang C, Huang X}, et al.
+\newblock Coor: Collaborative Task Offloading and Service Caching Replacement
+  for Vehicular Edge Computing Networks [J].
+\newblock IEEE Transactions on Vehicular Technology, 2023.
+
+\bibitem[Nemirovski and Shapiro(2007)]{Nemirovski2007}
+\textup{Nemirovski A, Shapiro A}.
+\newblock {Convex Approximations} of {Chance Constrained Programs} [J].
+\newblock SIAM Journal on Optimization, 2007, 17(4): 969--996.
+
+\bibitem[Liu et al.(2019){\natexlab{a}}]{CCO}
+\textup{Liu Z, Xie Y, Chan K~Y}, et al.
+\newblock {Chance-Constrained Optimization} in {D2D-Based Vehicular
+  Communication Network} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5045--5058.
+
+\bibitem[Li et al.(2020)]{Li2020}
+\textup{Li X, Ma L, Xu Y}, et al.
+\newblock {Resource Allocation} for {D2D-Based V2x Communication with Imperfect
+  Csi} [J].
+\newblock IEEE Internet of Things Journal, 2020, 7(4): 3545--3558.
+
+\bibitem[Xie et al.(2020)]{Xie2020}
+\textup{Xie Y~a, Liu Z, Chan K~Y}, et al.
+\newblock {Energy-Spectral Efficiency Optimization} in {Vehicular
+  Communications: Joint Clustering} and {Pricing-Based Robust Power Control
+  Approach} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2020, 69(11):
+  13673--13685.
+
+\bibitem[Zhou et al.(2017)]{Zhou2017}
+\textup{Zhou H, Xu W, Bi Y}, et al.
+\newblock {Toward 5g Spectrum Sharing} for {Immersive-Experience-Driven
+  Vehicular Communications} [J].
+\newblock IEEE Wireless Communications, 2017, 24(6): 30--37.
+
+\bibitem[Tran and Pompili(2019)]{Tran2019}
+\textup{Tran T~X, Pompili D}.
+\newblock {Joint Task Offloading} and {Resource Allocation} for {Multi-Server
+  Mobile-edge Computing Networks} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(1): 856--868.
+
+\bibitem[Liu et al.(2021){\natexlab{a}}]{Liang2021}
+\textup{Liu Z, Liang C, Yuan Y}, et al.
+\newblock {Resource Allocation Based} on {User Pairing} and {Subcarrier
+  Matching} for {Downlink Non-orthogonal Multiple Access Networks} [J].
+\newblock IEEE/CAA Journal of Automatica Sinica, 2021, 8(3): 679--689.
+
+\bibitem[Xiao et al.(2020)]{Xiao2020}
+\textup{Xiao H, Zhu D, Chronopoulos A~T}.
+\newblock {Power Allocation with Energy Efficiency Optimization} in {Cellular}
+  {D2D-Based} {V2X Communication Network} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2020,
+  21(12): 4947--4957.
+
+\bibitem[Chen et al.(2022)]{Chen2022}
+\textup{Chen Y, Wang Y, Jiao L}.
+\newblock {Robust Transmission} for {Reconfigurable Intelligent Surface Aided
+  Millimeter Wave Vehicular Communications with Statistical Csi} [J].
+\newblock IEEE Transactions on Wireless Communications, 2022, 21(2): 928--944.
+
+\bibitem[Wu et al.(2021)]{ACO}
+\textup{Wu Q, Xu J, Zeng Y}, et al.
+\newblock {A Comprehensive Overview} on {5G}-and-{Beyond Networks With} {UAVs}:
+  {From Communications} to {Sensing} and {Intelligence} [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2021, 39(10):
+  2912--2945.
+
+\bibitem[Wu et al.(2020)]{OUC}
+\textup{Wu H, Lyu F, Zhou C}, et al.
+\newblock {Optimal Uav Caching} and {Trajectory} in {Aerial-Assisted Vehicular
+  Networks: A Learning-based Approach} [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2020, 38(12):
+  2783--2797.
+
+\bibitem[Lyu et al.(2022)]{SDR}
+\textup{Lyu F, Yang P, Wu H}, et al.
+\newblock {Service-Oriented Dynamic Resource Slicing} and {Optimization} for
+  {Space-Air-Ground Integrated Vehicular Networks} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022, 23(7):
+  7469--7483.
+
+\bibitem[Kato et al.(2019)]{OSI}
+\textup{Kato N, Fadlullah Z~M, Tang F}, et al.
+\newblock {Optimizing Space-air-ground Integrated Networks} by {Artificial
+  Intelligence} [J].
+\newblock IEEE Wireless Communications, 2019, 26(4): 140--147.
+
+\bibitem[Liu et al.(2019){\natexlab{b}}]{DSF}
+\textup{Liu M, Yang J, Gui G}.
+\newblock {DSF-NOMA: Uav-assisted Emergency Communication Technology} in a
+  {Heterogeneous Internet} of {Things} [J].
+\newblock IEEE Internet of Things Journal, 2019, 6(3): 5508--5519.
+
+\bibitem[Liu et al.(2021){\natexlab{b}}]{RAI}
+\textup{Liu Z, Su J, Xie Y~a}, et al.
+\newblock {Resource Allocation} in {D2D Enabled Vehicular Communications: A
+  Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2021, 70(8): 8186--8200.
+
+\bibitem[Zhou et al.(2019){\natexlab{b}}]{ACAR}
+\textup{Zhou Z, Guo Y, He Y}, et al.
+\newblock {Access Control} and {Resource Allocation} for {M2M Communications}
+  in {Industrial Automation} [J].
+\newblock IEEE Transactions on Industrial Informatics, 2019, 15(5): 3093--3103.
+
+\bibitem[Gao et al.(2020)]{Gao2020}
+\textup{Gao Q, Lin S, Zhu G}.
+\newblock Joint Vehicular and Static Users Multiplexing Transmission with
+  Hierarchical Modulation for Throughput Maximization in Vehicular Networks
+  [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2020, 21(9):
+  3835--3847.
+
+\bibitem[Liu et al.(2022)]{Song2022}
+\textup{Liu Z, Zhao S, Yang Y}, et al.
+\newblock Toward Hybrid Backscatter-aided Wireless-powered Internet of Things
+  Networks: Cooperation and Coexistence Scenarios [J].
+\newblock IEEE Internet of Things Journal, 2022, 9(8): 6264--6276.
+
+\bibitem[Lim et al.(2021)]{TFL}
+\textup{Lim W~Y~B, Huang J, Xiong Z}, et al.
+\newblock {Towards Federated Learning} in {UAV-Enabled Internet} of {Vehicles}:
+  {A Multi-dimensional Contract-matching Approach} [J].
+\newblock {IEEE Transactions} on {Intelligent Transportation Systems}, 2021,
+  22(8): 5140--5154.
+
+\bibitem[GT(1968)]{GT}
+Back Matter [J].
+\newblock Econometrica, 1968, 36(3/4).
+
+\bibitem[Ren et al.(2015)]{PCID}
+\textup{Ren Y, Liu F, Liu Z}, et al.
+\newblock {Power Control} in {D2D-Based Vehicular Communication Networks} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2015, 64(12): 5547--5562.
+
+\bibitem[Liu et al.(2023)]{Qian2023}
+\textup{Liu Q, Gong J, Liu Q}.
+\newblock {Blockchain-Assisted Reputation Management Scheme} for Internet of
+  Vehicles [J].
+\newblock Sensors, 2023, 23(10).
+
+\bibitem[Kim et al.(2011)]{Kim2011}
+\textup{Kim T, Love D~J, Clerckx B}.
+\newblock {Does Frequent Low Resolution Feedback Outperform Infrequent High
+  Resolution Feedback} for {Multiple Antenna Beamforming Systems?} [J].
+\newblock IEEE Transactions on Signal Processing, 2011, 59(4): 1654--1669.
+
+\bibitem[Sakr and Hossain(2014)]{Sakr2014}
+\textup{Sakr A, Hossain E}.
+\newblock Cognitive and {Energy Harvesting-based} {D2D Communication} in
+  Cellular Networks: Stochastic Geometry Modeling and Analysis [J].
+\newblock IEEE Transactions on Communications, 2014, 63: 1867--1880.
+
+\bibitem[Zhang et al.(2017)]{Zhang2017}
+\textup{Zhang K, Mao Y, Leng S}, et al.
+\newblock {Mobile-Edge Computing} for {Vehicular Networks: A Promising Network
+  Paradigm} with {Predictive Off-loading} [J].
+\newblock IEEE Vehicular Technology Magazine, 2017, 12(2): 36--44.
+
+\bibitem[Saleem et al.(2021)]{Saleem2021}
+\textup{Saleem U, Liu Y, Jangsher S}, et al.
+\newblock {Mobility-Aware Joint Task Scheduling} and {Resource Allocation} for
+  {Cooperative Mobile Edge Computing} [J].
+\newblock IEEE Transactions on Wireless Communications, 2021, 20(1): 360--374.
+
+\bibitem[Liu et al.(2021){\natexlab{c}}]{liu2021}
+\textup{Liu Z, Su J, Xie Y~a}, et al.
+\newblock {Resource Allocation} in {D2D-Enabled Vehicular Communications}: {A
+  Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2021, 70(8): 8186--8200.
+
+\bibitem[Chen et al.(2016)]{Xu2015}
+\textup{Chen X, Jiao L, Li W}, et al.
+\newblock Efficient {Multi-User} Computation Offloading for {Mobile-Edge} Cloud
+  Computing [J].
+\newblock IEEE/ACM Transactions on Networking, 2016, 24(5): 2795--2808.
+
+\end{thebibliography}

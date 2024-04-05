@@ -1,0 +1,127 @@
+% !Mode:: "TeX:UTF-8"
+%%%%%%% 以下内容不要修改！！！ mzhy55
+%\addcontentsline{toc}{chapter}{摘要}
+\makeatletter
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+%  \renewcommand{\headrule}{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{\zihao{5} 摘\ \ 要}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+  }
+  \pagestyle{fancy}%%%%% 页眉 mzhy55
+  \fancyhf{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{{\zihao{5} 摘\ \ 要}}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+\makeatother
+%%%%%%% 以上内容不要修改！！！ mzhy55
+\addcontentsline{toc}{chapter}{\heiti 摘要}%%%%%目录 mzhy55
+\newpage\ \vspace{-2.5em}
+\begin{center}
+\vspace{0.4cm}   %题目上间隔
+\makeatletter
+\zihao{-2}{\heiti \CAST@value@title}  %自动添加中文题目作为摘要
+\makeatother
+\end{center}
+\vspace{0.7cm}   %题目下间隔
+%\begin{abstract}
+%\end{abstract}
+%\textcolor[RGB]{202,12,22}{近年来，5G技术逐步商用化，无线通信技术的快速发展和应用为车联网通信的研究带来了巨大的机遇和挑战。5G移动技术可有效满足车联网的需求，为车联网的发展带来更好的解决方案。但与此同时，由于5G技术信道状态的复杂性以及车联网中移动用户的随机性使得诸多不确定因素共存于系统之中，如用户数量、信道状态、拓扑切换、可用信息以及用户信息安全等方面。可见这种高动态环境对于车联网无线可靠传输提出了新的挑战。本项目将针对5G车联中的干扰管理与资源分配以及多种服务指标保证，围绕上述三个学术问题展开研究。重点关注如何克服车联网中不确定因素对网络资源管理效率的影响，提高系统鲁棒性。本项目研究将为建立适应复杂高动态，高密度网络环境的资源管理协议奠定基础，对于提高无线频谱资源利用效率，优化网络性能，推动5G网络技术发展具有重要的促进作用。本项目侧重研究通信网络节能优化管理，研究成果可服务于信息产业无线通信领域，符合湖北省产业升级、绿色崛起的发展需求。}
+%\section*{\centering 无人机辅助的车联网络任务卸载与资源分配的研究}
+\noindent{\heiti 摘要：}近年来，随着道路交通车辆密度的不断增大，道路交通安全以及车辆通信拥堵等问题日益凸显。随着智能化、联网化程度的不断发展，智能交通系统(Intelligent Traffic Systems, ITS)正在世界各地得到广泛开发和部署
+。纵观前四代移动通信技术，仅仅实现了人与人之间的信息交互，并未真正转变到人与物、物与物之间的互联。而5G的出现，使得万物互联不再停留在概念阶段。5G具有大容量
+、高速率、低时延、高带宽和高移动性等特点。借助多路访问边缘计算(Multi-Access Edge Computing, MEC)，端到端延迟缩短至1毫秒。因此，作为一项实现智慧城市、智能交通的重要手段，车联网被寄予厚望。万物互联的提出
+，使得越来越多的设备加入车联网有了可能，更加多样化的车联网场景相继提出，本文聚焦于无人机作为空中基站辅助车辆与路边单元的通信与任务卸载，
+%并制定了合理的功率控制及轨迹优化等联合优化方案以全方位的提高车联网的系统性能。
+并制定了有效的功率控制及轨迹优化策略，通过联合优化方案提升车联网的系统性能。
+
+首先，针对空地一体化的大规模通信异构的车联网络，提出了一种基于博弈的鲁棒资源分配算法，该方案通过构建用户间的博弈关系，制定了实时功率分配和定价策略，在该优化方案中实现了用户利益的最大化。
+引入了概率约束，以确保用户服务的可靠性和稳定性。仿真结果表明，所提算法具有复杂多用户干扰和信道不确定性的空地一体化异构车载通信场景下是有效的。
+
+其次，针对车辆网络越来越高的低延迟高数据计算的需求，提出了云辅助MEC的鲁棒功率控制和任务卸载的新方法。根据系统模型构建了鲁棒性功率控制和任务卸载调度的优化问题问题，由于信道存在不确定性，优化问题受到传输速率、计算通信延迟和同信道干扰概率形式的限制。
+应用了 连续凸逼近(Successive Convex Approximation, SCA) 技术，将变量耦合的NP难问题(Non-deterministic Polynomial-time hard problem, NP-hard problem)转化为可处理的凸问题。仿真结果表明，所提出的算法得到了近似最优解。与现有方法相比，系统平均
+卸载效用得到显著改善。
+
+最后，考虑了将无人机辅助通信与任务卸载相结合的物理场景，提出了一种天地一体化的无人机辅助双向车道的车辆通信方案。设计了车辆通信时的吞吐量最大化与通信及无人机飞行能耗最小化的
+平衡方案。通过优化车辆的发射功率与无人机的飞行轨迹以及时隙的分配，可以使得系统的能效最大化，数值仿真表明，该方案在能效方面的性能明显高于其他方法并可显著提升车联网通信效率。
+
+
+\begin{keywords}
+车联网；无人机通信；吞吐量最大化；中断概率；边缘计算；轨迹优化；任务卸载
+%关键词1；关键词2；关键词4；关键词4 \qquad(关键词是供检索用的主题词条。关键词应集中体现论文特色，反映研究成果的内涵，具有语义性，在论文中有明确的出处，并应尽量采用《汉语主题词表》或各专业主题词表提供的规范词，应列取3-8个关键词，按词条的外延层次从大到小排列。)
+\end{keywords}
+
+%\zhongtuanclassnum{TP391.41}
+\makeatletter
+\noindent{\heiti 分类号：}  \CAST@value@classification   %自动添加分类号
+\makeatother
+%\noindent\textbf{中图分类号：}  TP273.2 UDC： 623.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage%mzhy55注释掉，中文摘要后边没有空白页，英文摘要接着，不管在奇数页还是偶数页
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% 以下内容不要修改！！！ mzhy55
+\newpage\ \vspace{-2.5em}
+\vspace{0.23cm}   %题目上间隔
+\begin{center}
+\makeatletter
+\zihao{-2}\textbf{\CAST@value@entitle}    %自动添加英文题目作为摘要
+\makeatother
+\end{center}
+\addcontentsline{toc}{chapter}{\bf ABSTRACT}%%%%%目录 mzhy55     Abstract  ABSTRACT
+
+\makeatletter
+  \fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+%  \renewcommand{\headrule}{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{\zihao{5} Abstract}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+  }
+  \pagestyle{fancy}%%%%% 页眉 mzhy55
+  \fancyhf{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{{\zihao{5} Abstract}}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+\makeatother
+%%%%%%% 以上内容不要修改！！！ mzhy55
+\vspace{0.39cm}  %题目下间隔
+\noindent\textbf{Abstract: }In recent years, the density of road vehicles has increased, leading to prominent issues of traffic safety and vehicle communication congestion. Intelligent Traffic Systems (ITS) are being widely developed and deployed worldwide due to the continuous development of intelligence and networking. During the first four generations of mobile communication technology, it facilitated information exchange solely between people, without enabling connections between people and things, or things and things. However, with the advent of 5G, the concept of interconnectivity will become a reality. 5G boasts high capacity, speed, bandwidth, and mobility, as well as low latency. Multi-Access Edge Computing (MEC) can reduce end-to-end latency to 1 millisecond, making telematics a crucial component in the realization of smart cities and intelligent transportation. This proposal introduces the concept of the Internet of Everything. This paper focuses on the use of UAVs as airborne base stations to support communication and task offloading between vehicles and roadside units. It formulates power control and trajectory optimization schemes to improve the system performance of vehicle networking. The paper aims to achieve an all-round improvement in the system's performance.
+
+Firstly, a game-based resource allocation algorithm is proposed for air-ground integrated large-scale communication heterogeneous vehicular networks. The algorithm centers on the game relationship between users and formulates real-time power allocation and pricing strategies to maximize user benefits in a novel optimization scheme. To ensure the reliability and stability of user services, probabilistic constraints are introduced. The simulation results demonstrate the effectiveness of the proposed algorithm in air-ground integrated heterogeneous vehicular communication scenarios, even in the presence of complex multi-user interference and channel uncertainty.
+
+Secondly, a new approach to robust power control and task offloading for cloud-assisted MEC is proposed to address the increasing demand for low-latency, high-data computation in vehicular networks. The optimization problem is limited by the form of transmission rate, computational communication delay, and co-channel interference probability due to the presence of channel uncertainty. The optimization problem is initially formulated as a robust power control and task offloading scheduling problem using the Successive Convex Approximation (SCA) technique to transform the variable-coupled NP-hard problem into a tractable convex problem.   Simulation results demonstrate that our proposed algorithm achieves a Compared to the existing methods, the average utility of system offloading has significantly improved.
+
+Finally, this paper considers a more realistic physical scenario that combines UAV-assisted communication with task offloading. The authors propose an efficient UAV-assisted vehicular communication scheme for two-way lanes. A balancing scheme is constructed to measure the basic throughput, communication, and UAV flight energy consumption during vehicular communication. By optimizing the transmit power of the vehicle and the flight trajectory of the UAV, as well as the allocation of time slots, the energy efficiency of the system can be maximized. Numerical simulations show that this scheme significantly outperforms other methods in terms of energy efficiency and can greatly improve vehicular communication efficiency.
+
+\begin{englishkeywords}
+UAV Communication; Throughput Maximisation; Outage Probability; Edge Computing; Trajectory Optimisation; Task Offloading
+\end{englishkeywords}
+
+\makeatletter
+\noindent\textbf{Classification:} \CAST@value@UDC
+\makeatother
+\cleardoublepage%这一行保证了目录页从奇数页开始！
+%%%%%%% 以下内容不要修改！！！ mzhy55
+\makeatletter
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+%  \renewcommand{\headrule}{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{\zihao{5} \nouppercase \leftmark}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+  }
+\pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{{\zihao{5} \nouppercase \leftmark}}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+\makeatother
+%%%%%%% 以上内容不要修改！！！ mzhy55

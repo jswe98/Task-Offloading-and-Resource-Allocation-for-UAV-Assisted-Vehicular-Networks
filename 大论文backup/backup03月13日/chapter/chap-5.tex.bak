@@ -1,0 +1,95 @@
+% !Mode:: "TeX:UTF-8"
+\chapter{参考文献}
+\label{chap:bib}
+
+所有被引用的参考文献信息均存储在模板目录中的“bib”目录下，文件名为“tex.bib”。
+由于使用了BibTeX，参考文献的格式是不需要手动调整。模板中的ysubst.bst 文件负责
+文献格式输出。这里推荐您使用软件JabRef 来对文献进行管理。JabRef 支持中文，它可
+以在这个网址下载到。\url{http://jabref.sourceforge.net/}
+
+首先需要了解一个概念叫“BibTeX key”，也称作“BibTeX键”。它可以简单的理解为一篇
+参考文献的“身份证号”。每一篇参考文献均有一个属于自己的不会重复的BibTeX key。
+在引用文献的时候，需要使用引用命令\verb|\supercite{}|以上角标形式出现，使用引用命令\verb|\cite{}| 以正文形式出现。
+
+\section{参考文献在正文和列表中格式要求}
+
+\subsection{在正文中的要求}
+
+在正文中，引用参考文献格式要求如下。
+
+如果是单个作者的文献，应该写成：Kivshar\supercite{Kivshar2008}研究了...，得到了...结果。
+
+如果是多个作者的文献，应该写成：Knight等\supercite{liu2021}研究了...，得到了...结果。
+姚建铨等\supercite{yaojianquan2009}研究了...，得到了...结果。只需要列出第一个作者加上``等''字即可。中英文的文献是一样的标准，都是加上`` 等''字。
+
+文献的序号紧接着名字出现，而不是放到这句话的最后面，大家要统一一下。
+
+\subsection{在列表中的要求}
+
+参考文献的格式一定按照bib文件夹里的tex文件的格式书写，特别指出：
+
+(1) 文献标识一定要加上，比如J、M、C、D等。
+
+(2) 当三个以上作者是省略掉，只列出前三个，后边加上``等''、``et al''。
+
+(3) 期刊的年、卷、期、页的格式：2018, 30(4): 15-30. 当缺少卷或期时，在参考文献tex.bib的文件里把相应的项不填就可以了。
+
+上述指出的问题只要是严格按照模板格式去填写，就不会出现的。为了防止有上述不规范的情况出现，请打印装订之前务必检查是否有类似问题。
+
+
+\section{单一参考文献}\label{section5-1}
+例如这里我引用一篇文献：
+\begin{verbatim}
+Knight等\supercite{Knight1996}研究了...Russell是光子晶体光纤之父...。
+\end{verbatim}
+其中“Knight1996”是我要引用的文献的BibTeX 键。输出的结果为：
+
+Knight等\supercite{Knight1996}研究了...Russell是光子晶体光纤之父...。
+
+注意文献的编号是自动生成的，并且具有超链接功能。单击编号可以定位到文末的参考文献章节。
+
+\section{多个连续参考文献}\label{section5-2}
+ 如果要一次引用多个文献，只要在引用命令中用英文逗号隔开各个BibTeX键即可，例如：
+ \begin{verbatim}
+我要引用2篇文献\supercite{Knight1996,Knight2000}。
+\end{verbatim}
+输出结果为：
+
+我要引用2篇文献\supercite{Knight1996,Knight2000}。
+
+
+如果是3 篇或者以上，加入更多BibTeX 键即可。例如：
+ \begin{verbatim}
+3篇文献\supercite{Knight1996,Knight2000,Knight2002}。
+\end{verbatim}
+输出结果为：
+
+3篇文献\supercite{Knight1996,Knight2000,Knight2002}。
+
+更多文献的例子：
+ \begin{verbatim}
+很多很多文献\supercite{Kivshar2008,John1987,Jing2010,Jeon2005,%
+Jastrow2008,Jackson2008,Huttunen2005,Hou2008,Hilligsoe2004,%
+Hassani2008,Han2002}。
+\end{verbatim}
+
+输出的结果为：很多很多文献\supercite{John1987,Jing2010,Jeon2005,%
+Jastrow2008,Jackson2008,Huttunen2005,Hou2008,Hilligsoe2004,%
+Hassani2008,Han2002}。
+
+
+
+\section{多个不连续参考文献}\label{section5-3}
+ \begin{verbatim}
+四个不连续文献\supercite{Zhu2004,Zhu2001,Han2002,Knight1996}。
+\end{verbatim}
+四个不连续文献\supercite{Zhu2004,Zhu2001,Han2002,Knight1996}。
+
+专利及学位论文格式如下：
+\cite{jxz,Yu2004,Zhao2013}。
+
+多个作者的中文文献显示如下\cite{yaojianquan2009}，language=\{Chinese\}很重要，在bib文件中，中文文献要加上！会议论文的格式如下\cite{Li1998}。
+
+
+\section{本章小结}\label{section5-4}
+注意！从第二章开始应有``本章小结"，主要总结本章所做的主要研究工作，研究成果等内容!!!

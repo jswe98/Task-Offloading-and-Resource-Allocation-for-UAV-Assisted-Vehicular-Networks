@@ -1,0 +1,141 @@
+% !Mode:: "TeX:UTF-8"
+\chapter{云辅助的车辆网络功率控制与任务卸载}
+\label{chap:table}
+
+\section{引言}\label{section3-1}
+\label{chap:introduction}
+云辅助移动边缘计算（C-MEC）为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本文提出了一种稳健的功率
+控制和任务卸载方案，以卸载计算任务并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为了模拟信道的不确定性，采用了一阶马尔可夫过程，并考虑了车辆的移动性。此外，由于频谱资源有限，假设信道重用会导致复杂的同信道干扰。为了克服这些限制，对信号链路实施了概率约束，以确保通信质量。采用伯恩斯坦近似法将原始约束转化为可解约束。此外，还进一步采用了块坐标下降（BCD）方法和连续凸近似（SCA）技术来解决非凸鲁棒性优化问题。为确定最优解，提出了一种鲁棒电源控制和任务卸载调度算法。对提出的算法进行了数值模拟，以评估系统的性能。结果表明，与基准模型相比，该算法非常有效，尤其是在信道不确定的通信环境中。
+\section{系统模型与问题描述}\label{section3-2}
+在本研究中，C-MEC车辆网络如图1所示
+
+\subsection{通信模型}\label{section3-2-1}
+由于车辆移动的快速性
+
+\subsection{车辆计算模型}\label{section3-2-2}
+
+\subsection{问题的定义}\label{section3-2-3}
+\begin{table}[htbp!]
+ \centering\small
+ \Tablecaption{燕山大学硕士学位论文参考文献规则}\label{tab:ysubof}
+\begin{tabular}{llr}
+ \toprule
+    论文版本    & 参考文献标准    & 实施年份（年）  \\
+ \midrule
+    旧版        & BF7714-87       & 1987            \\
+    新版        & GBT7714-2005    & 2005            \\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+实现代码如下：
+\begin{verbatim}
+\begin{table}[htbp!]
+ \centering\small
+ \Tablecaption{燕山大学硕士学位论文参考文献规则}\label{tab:ysubof}
+\begin{tabular}{llr}
+ \toprule
+    论文版本    & 参考文献标准    & 实施年份（年）  \\
+ \midrule
+    旧版        & BF7714-87       & 1987            \\
+    新版        & GBT7714-2005    & 2005            \\
+ \bottomrule
+ \end{tabular}
+\end{table}
+\end{verbatim}
+
+\section{问题的求解}\label{section3-3}
+合并列通常见于表格的第一行，在适当的位置使用\verb|\multicolumn| 命令即可。
+\subsection{目标方程中的连续凸逼近方法}\label{section3-3-1}
+\begin{table}[htbp!]
+\centering\small
+\Tablecaption{带有合并列的三线表}\label{tab:test}
+\begin{tabular}{llr} \toprule
+\multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
+Animal & Description & Price (\$)\\ \midrule
+Gnat & per gram & 13.65 \\
+& each & 0.01 \\
+Gnu & stuffed & 92.50 \\
+Emu & stuffed & 33.33 \\
+Armadillo & frozen & 8.99 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{中断概率的近似}\label{section3-3-2}
+该表格是采用如下代码实现的：
+\begin{verbatim}
+\begin{table}[htbp!]
+\centering\small
+\Tablecaption{带有合并列的三线表}\label{tab:test}
+\begin{tabular}{llr} \toprule
+\multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
+Animal & Description & Price (\$)\\ \midrule
+Gnat & per gram & 13.65 \\
+& each & 0.01 \\
+Gnu & stuffed & 92.50 \\
+Emu & stuffed & 33.33 \\
+Armadillo & frozen & 8.99 \\ \bottomrule
+\end{tabular}
+\end{table}
+\end{verbatim}
+\subsection{优化功率问题}\label{section3-3-3}
+
+\subsection{计算资源分配}\label{section3-3-4}
+
+\section{仿真结果和性能分析}\label{section3-4}
+\begin{verbatim}
+\begin{table}[htbp!]
+	\centering\small
+	\Tablecaption{The relation of $E({{L}_{q}})$ with ${{p}_{2}}$
+    and $\theta$}\label{tab.2}
+	\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}@{~~}cccccccc@{~~}}
+		\toprule
+		\multicolumn{7}{c}{ \hspace{2cm} The expected waiting queue length
+         $E({{L}_{q}})$}\\\cline{2-8}
+		\raisebox{1ex}[0pt]{$\theta$}  &$p_2=0.1$     &$p_2=0.15$  &$p_2=0.2$
+        &$p_2=0.25$ &$p_2=0.3$  &$p_2=0.35$   &$p_2=0.4$\\
+		\midrule
+		0.3     &16.4830  &5.1232   &2.9232   &1.9704   &1.4339   &1.0886   &0.8479\\
+		0.5     &9.0488   &3.7848   &2.2906   &1.5839   &1.1723   &1.9035   &0.7146 \\
+		0.7     &7.4321   &3.3256   &2.0528   &1.4338   &1.0686   &0.8291   &0.6607 \\
+		\bottomrule
+	\end{tabular*}	
+\end{table}
+\end{verbatim}
+生成
+\begin{table}[htbp!]
+	\centering\small
+	\Tablecaption{The relation of $E({{L}_{q}})$ with ${{p}_{2}}$ and $\theta$}\label{tab.2}
+	\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}@{~~}cccccccc@{~~}}
+		\toprule
+		\multicolumn{7}{c}{ \hspace{2cm} The expected waiting queue length $E({{L}_{q}})$}\\
+		\cline{2-8}
+		\raisebox{1ex}[0pt]{$\theta$}  &$p_2=0.1$     &$p_2=0.15$  &$p_2=0.2$   &$p_2=0.25$
+        &$p_2=0.3$  &$p_2=0.35$   &$p_2=0.4$\\
+		\midrule
+		0.3     &16.4830  &5.1232   &2.9232   &1.9704   &1.4339   &1.0886   &0.8479\\
+		0.5     &9.0488   &3.7848   &2.2906   &1.5839   &1.1723   &1.9035   &0.7146 \\
+		0.7     &7.4321   &3.3256   &2.0528   &1.4338   &1.0686   &0.8291   &0.6607 \\
+		\bottomrule
+	\end{tabular*}	
+\end{table}
+
+\section{本章小结}\label{section3-5}
+在本章中，我们提出了一个新颖的鲁棒功率控制算法，优化方法针对于保证车辆通信的QoS的同时最大化效用。由于信道不确定性的存在，
+其实上边的例子中已经包含了表题的引用命令
+为当前的表格添加中文图题“燕山大学硕士学位论文参考文献规则”。同时添加标签“tab:ysubof”。 对表格的引用就是通过标签来实现的。
+\begin{comment}
+\section{表格的引用}\label{section3-6}
+表格的引用同样是使用\verb|\ref{}| 命令实现的。例如“表\verb|\ref{tab:ysubof}|” 输出的结果为：表\ref{tab:ysubof}。\LaTeX 会自动将其替换为表格的编号。例如：
+\begin{verbatim}
+燕山大学硕士学位论文参考文献规则的表格如表\ref{tab:ysubof}所示。
+\end{verbatim}
+的效果如下：\\
+燕山大学硕士学位论文参考文献规则的表格如表\ref{tab:ysubof}所示。
+
+\section{本章小结}\label{section3-7}
+注意！从第二章开始应有``本章小结"，主要总结本章所做的主要研究工作，研究成果等内容！！！
+
+\end{comment}
+
+%

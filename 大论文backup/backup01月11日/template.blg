@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
+The style file: ysubst.bst
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/chap-intro.aux
+A level-1 auxiliary file: chapter/chap-2.aux
+A level-1 auxiliary file: chapter/chap-3.aux
+A level-1 auxiliary file: chapter/chap-4.aux
+A level-1 auxiliary file: chapter/chap-conclusion.aux
+A level-1 auxiliary file: chapter/achive.aux
+A level-1 auxiliary file: chapter/thanks.aux
+format.conference.title is an unknown function---line 2787 of file ysubst.bst
+format.cconference.title is an unknown function---line 2822 of file ysubst.bst
+format.patent.continue.vol.num is an unknown function---line 2951 of file ysubst.bst
+format.patent.crossref is an unknown function---line 2959 of file ysubst.bst
+"}" can't start a style-file command---line 2967 of file ysubst.bst
+ : }
+ :  }
+Database file #1: bib/tex.bib
+You're missing a field name---line 45 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 59 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/5/2553},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 91 of file bib/tex.bib
+ :   
+ :   %volume = {PP},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 115 of file bib/tex.bib
+ : 
+ : %URL = {https://www.mdpi.com/2073-8994/11/1/58},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 128 of file bib/tex.bib
+ :   
+ :   %https://www.sciencedirect.com/science/article/abs/pii/S1570870522002165
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "TFL"
+You can't pop an empty literal stack for entry ACO
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry CCO
+while executing---line 3783 of file ysubst.bst
+Warning--"Reputation Management Scheme} for {Internet} of {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"REPUTATION MANAGEMENT SCHEME} FOR {Internet} OF {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"management scheme} for {Internet} of {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"MANAGEMENT SCHEME} FOR {Internet} OF {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"scheme} for {Internet} of {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+Warning--"SCHEME} FOR {Internet} OF {Vehicles}" isn't a brace-balanced string for entry Qian2023
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Qian2023
+while executing---line 3783 of file ysubst.bst
+(There were 13 error messages)

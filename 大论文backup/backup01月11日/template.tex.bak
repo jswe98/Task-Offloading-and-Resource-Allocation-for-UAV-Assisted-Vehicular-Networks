@@ -1,0 +1,258 @@
+﻿% !Mode:: "TeX:UTF-8"
+%% Thesis Template of Yanshan University
+%% for using YSUthesis package with XeLaTeX
+% 2018年2月5日
+%% 文档参数配置开始：
+
+%%===========================%
+
+\documentclass[openany]{YSUthesis}
+%  showtypeinfo 显示扉页的LaTeX版本信息，去掉即可隐藏版本信息。
+%  openany      可以去掉章节起始页必须为奇数页的限制，使章节连续，不出现空白页。
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX，
+%  这样可以生成正确的参考文献和交叉引用链接。
+
+%  设置图形文件的搜索路径。支持图形格式：pdf; png; jpg.
+\graphicspath{{chapter/}{figures/}}
+
+%  执行下面的命令可以取消PDF文件中的链接颜色，使用 Adobe Acrobat Reader 查看
+%  时，链接可能会有边框，但是在打印时不会出现。
+%\hypersetup{colorlinks=false}
+
+% 启用以下这段代码可以让你更改目录的缩进，以备学院有特殊要求。
+%\usepackage{titletoc}
+%\titlecontents{chapter}[4\ccwd]{}
+%                {\bf\contentslabel{4\ccwd}}
+%                {\hspace{-4\ccwd}\bf}
+%                {\titlerule*[5pt]{.}\contentspage}
+%\titlecontents{subsection}[68pt]{}
+%                {\contentslabel{40pt}}
+%                {\hspace{-4\ccwd}}
+%                {\titlerule*[5pt]{.}\contentspage}
+\makeatletter   %mzhy55
+\renewcommand*\l@chapter{\@dottedtocline{1}{0em}{3.5em}}% 使英文章标题缩进，原来是0em
+\renewcommand*\l@section{\@dottedtocline{1}{15pt}{2.0em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{24pt}{2.5em}}% 使英文目录的小节标题左移，对齐，原来是{2}{24pt}{24pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{42pt}{36pt}}
+%\renewcommand*\l@paragraph{\@dottedtocline{4}{48pt}{48pt}}
+%\renewcommand*\l@subparagraph{\@dottedtocline{5}{60pt}{60pt}}
+\makeatother    %mzhy55
+
+\usepackage{latexsym}
+\usepackage{algorithm, algorithmic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{arydshln}
+\usepackage{pmat}
+\usepackage{comment}
+% \usepackage[english]{babel} 这些都是我加的
+% \usepackage{lmodern}
+% \usepackage{amsmath}
+% \usepackage{bm}
+\newcommand{\adots}{\mathinner{\mkern2mu%
+\raisebox{0.1em}{.}\mkern2mu\raisebox{0.4em}{.}%
+\mkern2mu\raisebox{0.7em}{.}\mkern1mu}}
+\begin{comment}
+占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改
+\end{comment}
+% 选择数学字体，xits-math.otf为类Times 字体，Cambria Math与Office2010数学公式格式相同。
+\setmathfont{xits-math.otf}
+%%===========================%
+%% 文档参数配置结束
+
+\usepackage{titlesec}
+\usepackage{titletoc}%%%%%mzhy55 解决目录中章标题的黑体问题
+\titlecontents{chapter}[0pt]{\bf\vspace{0mm}}
+{\thecontentslabel\hskip.5em}{}
+{\titlerule*[0.45pc]{.}\contentspage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%mzhy55 解决目录中章标题的黑体问题
+
+
+%% 文档正式开始
+%============================%
+\begin{document}
+
+%%调整公式与正文间距离，调整空白大小命令：
+\setlength{\abovedisplayskip}{4pt} %%% 4pt 个人觉得稍妥，可自行设置
+\setlength{\belowdisplayskip}{4pt}
+
+% 以下为封面部分
+%----------------------------%
+% 中文封面内容
+
+\classification{O226}                             % 中图分类号，注意，此项要自己查，更改！！！
+\UDC{517}                                         % UDC，注意，此项要自己查，更改！！！
+\title{高动态环境下车联网通信资源联合优化分配的研究}                          % 论文题目
+\author{魏建帅}                                   % 作者姓名，注意：姓在前，名在后！！！
+\advisor{刘志新\, 教授}                           % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
+\degree{工学硕士}                                 % 申请学位
+\major{控制科学与工程}                            % 专业，注意，此项要以自己实际情况修改！！！
+\institute{电气工程学院}                                % 所在单位
+\defenddate{2024年6月}                            % 答辩日期，注意：要依实际答辩时间修改！！！
+\school{燕山大学}                                 % 院校名称
+
+% 英文封面内容
+\enstatement{Control Science and Engineering}                           % 学科或领域
+%{Control Science and Engineering}%{Science}       % 学科或领域
+\entitle{RESEARCH OF JOINT OPTIMAL ALLOCATION OF COMMUNICATION RESOURCES FOR VEHICLE NETWORKING IN HIGHLY DYNAMIC ENVIRONMENTS}         % 英文题目，所有字母大写！！！
+\enauthor{Wei Jianshuai}                              % 作者英文姓名，注意：姓在前，名在后！！！
+\enadvisor{Professor Liu Zhixin}                    % 导师英文姓名，注意：姓在前，名在后，若是“副教授”，加上“Associate”词！！！
+\enschool{Yanshan University}                        % 院校英文名称
+\enathdate{June, 2023}                                % 英文答辩日期，注意：要依实际答辩时间修改！！！
+
+\makeatletter    %%%%%%%mzhy55
+\newcommand\makecover{%
+\cleardoublepage
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=9.0cm]{ysulogo}\\
+\vspace*{1.5cm}
+{\zihao{-0}\ziju{0.5}\heiti{硕士学位论文}}\\
+\vspace*{0.5cm}
+{\zihao{-2} MASTER'S DISSERTATION}\\
+\vspace*{0.5cm}
+{\zihao{-2} {\heiti（\ \ 学\ \ 术\ \ 学\ \ 位\ \ ）}}\\%%%%2023.5.12修改
+\vspace*{3cm}
+\begin{tabular}{p{3cm}p{9cm}}
+\zihao{-2}{\heiti 论文题目} & \zihao{-2}{\kaishu\CAST@value@title}
+\end{tabular}
+\vfill
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{3cm}p{9cm}}
+\zihao{-2}{\heiti 作者姓名} & \zihao{-2}{\kaishu\CAST@value@author} \\
+\zihao{-2}{\heiti 学科专业} & \zihao{-2}{\kaishu\CAST@value@major}  \\
+\zihao{-2}{\heiti 指导教师} & \zihao{-2}{\kaishu\CAST@value@advisor}
+\end{tabular}\\
+\vspace*{2cm}
+\zihao{-2}\songti\textbf{2023 年6月}%%%第一页上的日期，根据实际答辩时间填写，  mzhy55
+\end{center}
+\clearpage
+\if@twoside
+\thispagestyle{empty}
+\cleardoublepage
+\fi}
+\makeatother    %%%%%%%mzhy55
+
+% 生成封面
+\makecover
+
+% 生成中文封里
+\maketitle
+
+% 生成英文封里
+\makeenglishtitle
+
+% 生成原创性声明
+\makelicense
+
+
+% 以下为前言部分
+%----------------------------%
+\frontmatter
+\pagenumbering{Roman}
+
+% 摘要
+\include{chapter/abstract}
+
+% 目录
+\tableofcontents
+% 表格目录
+%\listoftables
+% 插图目录
+%\listoffigures
+
+
+% 以下为正文部分
+%----------------------------%
+\mainmatter
+\include{chapter/chap-intro}
+\include{chapter/chap-2}
+\include{chapter/chap-3}
+\include{chapter/chap-4}
+\include{chapter/chap-5}
+\include{chapter/chap-6}
+\include{chapter/chap-conclusion}
+
+\renewcommand{\chaptermark}[1]{\markboth{附录~\thechapter~\hspace{0.5em}#1}{}} % 页眉上“附录” mzhy55
+%% 附录
+\appendix
+%\include{chapter/appendix}
+%%%%\include{chapter/appendix1}
+
+
+% 以下为附件部分
+%----------------------------%
+\backmatter
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}} % 页眉上“参考文献、成果、致谢” mzhy55
+%%%%%%% 以下内容不要修改！！！ mzhy55
+\makeatletter
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+%  \renewcommand{\headrule}{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{\zihao{5} 参考文献}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+  }
+  \pagestyle{fancy}%%%%% 页眉 mzhy55
+  \fancyhf{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{{\zihao{5} 参考文献}}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+\makeatother
+%%%%%%% 以上内容不要修改！！！ mzhy55
+
+% 参考文献
+%|- 使用 BibTeX
+\bibliography{bib/tex}
+%\nocite{*}
+%|-不使用 BibTeX
+%\include{chapter/bib}
+
+% 发表文章目录
+\include{chapter/achive}
+
+% 致谢
+\include{chapter/thanks}
+
+%  % 作者简介
+%  \include{chapter/resume}
+\begin{thebibliography}{0}   %引用参考文献
+\bibitem{TFL}
+W. Lim, J. Huang, Z. Xiong, et al. ``Towards Federated Learning in UAV-Enabled Internet of Vehicles: A Multi-Dimensional ContractMatching Approach," \emph{IEEE Trans. Intelligent Transportation Systems}, vol. 22, no. 8, pp. 5140-5154, Aug. 2021.
+\bibitem{ACO}
+Q. Wu, J. Xu, Y. Zeng, et al. ``A Comprehensive Overview on 5G-and-Beyond Networks with UAVs: From Communications to Sensing and Intelligence," \emph{IEEE J. Sel. Areas Commun.}, vol. 39, no. 10, pp. 2912-2945, Oct. 2021.
+%\bibitem{EMC}
+%L. Ruan, J. Wang, J. Chen, et al, ``Energy-Efficient Multi-UAV Coverage Deployment in UAV Networks: A Game-Theoretic Framework, \emph{China Communications}, vol. 15, no. 10, pp.  194-209, Oct. 2018.
+\bibitem{ASO}
+Y. Xu, G. Gui, H. Gacanin, F. Adachi, ``A survey on resource allocation for 5G heterogeneous networks: Current research, future trends and challenges," \emph{IEEE Commun. Surveys and Tutorials}, vol. 23, no. 2, pp. 668-695, Feb. 2021.
+\bibitem{OUC}
+H. Wu, F. Lyu, C. Zhou, et al, ``Optimal UAV Caching and Trajectory in Aerial-Assisted Vehicular Networks: A Learning-Based Approach," \emph{IEEE J. Sel. Areas Commun.}, vol. 38, no. 12, pp.  2783-2797, Jun. 2020.
+\bibitem{OSI}
+N. Kato, Z. Fadlullah, F. Tang, B. Mao, S. Tani, A. Okamura, and J. Liu, ``Optimizing space-air-ground integrated networks by artificial intelligence," \emph{IEEE Wireless Commun.}, vol. 26, no. 4, pp. 140-147, Aug. 2019.
+\bibitem{DUE}
+M. Liu, J. Yang, and G. Gui, ``Dsf-noma: UAV-assisted emergency communication technology in a heterogeneous internet of things," \emph{IEEE Internet of Things Journal}, vol. 6, no. 3, pp. 5508-5519, Jun. 2019.
+\bibitem{SDR}
+F. Lyu, P. Yang, H. Wu, et al. ``Service-Oriented Dynamic Resource Slicing and Optimization for Space-Air-Ground Integrated Vehicular Networks," \emph{IEEE Transactions on Intelligent Transportation Systems}, Apr. 2021, DOI:10.1109/TITS.2021.3070542.
+\bibitem{HUP}
+Q. Han, B. Yang, X. Wang, et al. ``Hierarchical-game-based uplink power control in femtocell networks," \emph{IEEE Trans. Veh. Technol.}, vol. 63, no. 6, pp. 2819-2835, Jul. 2014.
+\bibitem{DPC}
+K. Zhu, E. Hossain, and A. Anpalagan. ``Downlink Power Control in Two-Tier Cellular OFDMA Networks Under Uncertainties: A Robust Stackelberg Game," \emph{IEEE Trans. commun.}, vol. 63, no. 2, pp. 520-535, Jul. 2015.
+\bibitem{CCO}
+Z. Liu, Y. Xie, K. Y. Chan, et al. ``Chance-constrained optimization in D2D-based vehicular communication network," \emph{IEEE Trans. Veh. Technol.}, vol. 68, no. 5, pp. 5045-5058, May. 2019.
+%\bibitem{TMF}
+%D. Zhang, Q. Wu, M. Cui , G. Zhang, and D. Niyato. ``Throughput Maximization for IRS-Assisted Wireless Powered Hybrid NOMA and TDMA," \emph{IEEE Wireless Commun.}, vol. 10, no. 9, pp. 1944-1948, Jun. 2021.
+\bibitem{RAI}
+Z. Liu, J. Su, Y. Xie, et al. ``Resource Allocation in D2D Enabled Vehicular Communications: A Robust Stackelberg Game Approach Based on Price-Penalty Mechanism," \emph{IEEE Trans. Veh. Technol.}, vol. 70, no. 8, pp. 8186-8200, Jul. 2021.
+\bibitem{GT}
+G. Owen, ``Game Theory," \emph{New York, NY, USA: Academic}, 2005.
+\bibitem{PCID}
+Y. Ren, F. Liu, Z. Liu, C. Wang, and Y. Ji, ``Power control in D2D-based vehicular communication networks," \emph{IEEE Trans. Veh. Technol.}, vol. 64, no. 12, pp. 5547-5562, Oct. 2015.
+\bibitem{ACAR}
+Z. Zhou, Y. Guo, Y. He, et al, ``Access control and resource allocation for M2M communications in industrial automation," \emph{IEEE Trans. Ind. Informat.}, vol. 15, no. 5, pp. 3093-3103, May. 2019.
+\end{thebibliography}
+
+\end{document}
+%%===========================%
+%% 全文结束

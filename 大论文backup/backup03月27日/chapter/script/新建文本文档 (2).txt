@@ -1,0 +1,45 @@
+@echo off    
+chcp 65001    
+setlocal EnableDelayedExpansion    
+    
+set "script_folder=%~dp0"    
+set "parent_folder=!script_folder:~0,-1!\.."    
+set "grandparent_folder=!parent_folder:~0,-1!\.."    
+  
+REM 预先定义文件名    
+set "authorname=魏建帅"        
+set "StudentNumber=202121030188"       
+set "Title=无人机辅助的车联网络任务卸载与资源分配的研究"         
+set "yuanfilename=template.pdf"      
+set "newfilename=!StudentNumber!_!authorname!_!Title!.pdf"   
+    
+echo 当前脚本的爷级目录是：%grandparent_folder%    
+    
+REM 检查模板文件是否存在  
+if not exist "%grandparent_folder%\%yuanfilename%" (    
+    echo 模板文件不存在。    
+    pause    
+    exit /b    
+)  
+  
+REM 删除旧的 PDF 文件    
+set "old_filename=%grandparent_folder%\202121030188_魏建帅_学位论文.pdf"  
+if exist "%old_filename%" (    
+    del "%old_filename%"    
+    if exist "%old_filename%" (    
+        echo 删除文件失败。    
+        pause    
+        exit /b    
+    )    
+)    
+  
+REM 复制新的 PDF 文件到爷级目录    
+copy "%grandparent_folder%\%yuanfilename%" "%grandparent_folder%\%newfilename%"    
+if errorlevel 1 (    
+    echo 复制文件失败。    
+    pause    
+    exit /b    
+)    
+    
+echo 文件已成功替换。    
+exit
