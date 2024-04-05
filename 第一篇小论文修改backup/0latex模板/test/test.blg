@@ -1,0 +1,8 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: test.aux
+I couldn't open style file plainnat.bst
+---line 3 of file test.aux
+ : \bibstyle{plainnat
+ :                   }
+I'm skipping whatever remains of this command
+I found no style file---while reading file test.aux
+(There were 2 error messages)

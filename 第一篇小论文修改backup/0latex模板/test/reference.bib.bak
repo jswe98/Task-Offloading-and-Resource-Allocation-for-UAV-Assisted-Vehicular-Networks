@@ -1,0 +1,253 @@
+
+@ARTICLE{liu2021,
+  author={Liu, Zhixin and Su, Jiawei and Xie, Yuan-ai and Ma, Kai and Yang, Yi and Guan, Xinping},
+  journal={IEEE Transactions on Vehicular Technology},
+  title={{Resource Allocation} in {D2D-Enabled Vehicular Communications}: {A Robust Stackelberg Game Approach Based} on {Price-Penalty Mechanism}},
+  year={2021},
+  volume={70},
+  number={8},
+  pages={8186-8200},
+  doi={10.1109/TVT.2021.3093900}}
+
+@article{Bertsekas1999,
+  title={Nonlinear Programming: 2nd Edition},
+  author={ Bertsekas, D. P. },
+  year={1999}}
+
+@ARTICLE{Yang2015,
+  author={Yang, Lei and Cao, Jiannong and Cheng, Hui and Ji, Yusheng},
+  journal={IEEE Transactions on Computers},
+  title={Multi-User Computation Partitioning for Latency Sensitive Mobile Cloud Applications},
+  year={2015},
+  volume={64},
+  number={8},
+  pages={2253-2266},
+  doi={10.1109/TC.2014.2366735}}
+
+@article{Sakr2014,
+author = {Sakr, Ahmed and Hossain, Ekram},
+year = {2014},
+month = {05},
+pages = {},
+title = {Cognitive and Energy Harvesting-Based {D2D Communication} in Cellular Networks: Stochastic Geometry Modeling and Analysis},
+volume = {63},
+journal = {Communications, IEEE Transactions on},
+doi = {10.1109/TCOMM.2015.2411266}}
+
+@ARTICLE{Kim2011,
+  author={Kim, Taejoon and Love, David J. and Clerckx, Bruno},
+  journal={IEEE Transactions on Signal Processing},
+  title={Does Frequent Low Resolution Feedback Outperform Infrequent High Resolution Feedback for Multiple Antenna Beamforming Systems?},
+  year={2011},
+  volume={59},
+  number={4},
+  pages={1654-1669},
+  doi={10.1109/TSP.2010.2099222}}
+
+@ARTICLE{Ren2015,
+  author={Ren, Yi and Liu, Fuqiang and Liu, Zhi and Wang, Chao and Ji, Yusheng},
+  journal={IEEE Transactions on Vehicular Technology},
+  title={{Power Control} in {D2D-Based Vehicular Communication Networks}},
+  year={2015},
+  volume={64},
+  number={12},
+  pages={5547-5562},
+  doi={10.1109/TVT.2015.2487365}}
+
+@ARTICLE{Wang2015,
+  author={Wang, Shaowei and Shi, Weijia and Wang, Chonggang},
+  journal={IEEE Transactions on Communications},
+  title={Energy-Efficient Resource Management in OFDM-Based Cognitive Radio Networks Under Channel Uncertainty},
+  year={2015},
+  volume={63},
+  number={9},
+  pages={3092-3102},
+  doi={10.1109/TCOMM.2015.2452251}}
+
+@article{Nemirovski2007,
+  author = { Nemirovski, Arkadi and  Shapiro, Alexander},
+  title = {Convex Approximations of Chance Constrained Programs},
+  journal = {SIAM Journal on Optimization},
+  volume = {17},
+  number = {4},
+  pages = {969-996},
+  year = {2007},
+  doi = {10.1137/050622328}}
+
+@ARTICLE{Chen2022,
+  author={Chen, Yuanbin and Wang, Ying and Jiao, Lei},
+  journal={IEEE Transactions on Wireless Communications},
+  title={{Robust Transmission} for {Reconfigurable Intelligent Surface Aided Millimeter Wave Vehicular Communications With Statistical CSI}},
+  year={2022},
+  volume={21},
+  number={2},
+  pages={928-944},
+  doi={10.1109/TWC.2021.3100492}}
+
+@ARTICLE{Liang2017,
+  author={Liang, Le and Li, Geoffrey Ye and Xu, Wei},
+  journal={IEEE Transactions on Communications},
+  title={{Resource Allocation} for {D2D-Enabled Vehicular Communications}},
+  year={2017},
+  volume={65},
+  number={7},
+  pages={3186-3197},
+  doi={10.1109/TCOMM.2017.2699194}}
+
+@ARTICLE{Liang2021,
+  author={Liu, Zhixin and Liang, Changjian and Yuan, Yazhou and Chan, Kit Yan and Guan, Xinping},
+  journal={IEEE/CAA Journal of Automatica Sinica},
+  title={{Resource Allocation Based} on {User Pairing} and {Subcarrier Matching} for {Downlink Non-Orthogonal Multiple Access Networks}},
+  year={2021},
+  volume={8},
+  number={3},
+  pages={679-689},
+  doi={10.1109/JAS.2021.1003886}}
+
+@inproceedings{Ahmed2016,
+  title={Mobile Cloud Computing Energy-aware Task Offloading (MCC: ETO)},
+  author={A. Ahmed and A Abdul and Kaiwartya Omprakash and Mohammed Joda Usman and Omair Syed and Aanchal},
+  year={2016}
+}
+
+@Article{Sym2019,
+AUTHOR = {Pham, Xuan-Qui and Nguyen, Tien-Dung and Nguyen, VanDung and Huh, Eui-Nam},
+TITLE = {Joint Node Selection and Resource Allocation for Task Offloading in Scalable Vehicle-Assisted Multi-Access Edge Computing},
+JOURNAL = {Symmetry},
+VOLUME = {11},
+YEAR = {2019},
+NUMBER = {1},
+URL = {https://www.mdpi.com/2073-8994/11/1/58},
+ISSN = {2073-8994},
+ABSTRACT = {The resource limitation of multi-access edge computing (MEC) is one of the major issues in order to provide low-latency high-reliability computing services for Internet of Things (IoT) devices. Moreover, with the steep rise of task requests from IoT devices, the requirement of computation tasks needs dynamic scalability while using the potential of offloading tasks to mobile volunteer nodes (MVNs). We, therefore, propose a scalable vehicle-assisted MEC (SVMEC) paradigm, which cannot only relieve the resource limitation of MEC but also enhance the scalability of computing services for IoT devices and reduce the cost of using computing resources. In the SVMEC paradigm, a MEC provider can execute its users&rsquo; tasks by choosing one of three ways: (i) Do itself on local MEC, (ii) offload to the remote cloud, and (iii) offload to the MVNs. We formulate the problem of joint node selection and resource allocation as a Mixed Integer Nonlinear Programming (MINLP) problem, whose major objective is to minimize the total computation overhead in terms of the weighted-sum of task completion time and monetary cost for using computing resources. In order to solve it, we adopt alternative optimization techniques by decomposing the original problem into two sub-problems: Resource allocation sub-problem and node selection sub-problem. Simulation results demonstrate that our proposed scheme outperforms the existing schemes in terms of the total computation overhead.},
+DOI = {10.3390/sym11010058}}
+
+@INPROCEEDINGS{Cai2014,
+  author={Baigen Cai and Congcong Wang and Wei ShangGuan and Jian Wang},
+  booktitle={17th International IEEE Conference on Intelligent Transportation Systems (ITSC)},
+  title={Research of information interaction simulation method in Cooperative Vehicle Infrastructure System},
+  year={2014},
+  volume={},
+  number={},
+  pages={45-50},
+  doi={10.1109/ITSC.2014.6957664}}
+
+@ARTICLE{Cui2021,
+  author={Cui, Yaping and Du, Lijuan and Wang, Honggang and Wu, Dapeng and Wang, Ruyan},
+  journal={IEEE Transactions on Vehicular Technology},
+  title={{Reinforcement Learning} for {Joint Optimization} of {Communication} and {Computation} in {Vehicular Networks}},
+  year={2021},
+  volume={70},
+  number={12},
+  pages={13062-13072},
+  doi={10.1109/TVT.2021.3125109}}
+
+@ARTICLE{Li2020,
+  author={Li, Xiaoshuai and Ma, Lin and Xu, Yubin and Shankaran, Rajan},
+  journal={IEEE Internet of Things Journal},
+  title={{Resource Allocation} for {D2D-Based V2X Communication With Imperfect CSI}},
+  year={2020},
+  volume={7},
+  number={4},
+  pages={3545-3558},
+  doi={10.1109/JIOT.2020.2973267}}
+
+@ARTICLE{Xiao2020,
+  author={Xiao, Hailin and Zhu, Dan and Chronopoulos, Anthony Theodore},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  title={{Power Allocation With Energy Efficiency Optimization} in {Cellular D2D-Based V2X Communication Network}},
+  year={2020},
+  volume={21},
+  number={12},
+  pages={4947-4957},
+  doi={10.1109/TITS.2019.2945770}}
+
+@ARTICLE{Chen2017,
+  author={Chen, Xu and Pu, Lingjun and Gao, Lin and Wu, Weigang and Wu, Di},
+  journal={IEEE Wireless Communications},
+  title={Exploiting Massive D2D Collaboration for Energy-Efficient Mobile Edge Computing},
+  year={2017},
+  volume={24},
+  number={4},
+  pages={64-71},
+  doi={10.1109/MWC.2017.1600321}}
+
+@ARTICLE{Liu2015,
+  author={Liu, Jiajia and Kato, Nei and Ma, Jianfeng and Kadowaki, Naoto},
+  journal={IEEE Communications Surveys and Tutorials},
+  title={{Device-to-Device Communication} in {LTE-Advanced Networks: A Survey}},
+  year={2015},
+  volume={17},
+  number={4},
+  pages={1923-1940},
+  doi={10.1109/COMST.2014.2375934}}
+
+@ARTICLE{Zhou2017,
+  author={Zhou, Haibo and Xu, Wenchao and Bi, Yuanguo and Chen, Jiacheng and Yu, Quan and Shen, Xuemin Sherman},
+  journal={IEEE Wireless Communications},
+  title={Toward 5G Spectrum Sharing for Immersive-Experience-Driven Vehicular Communications},
+  year={2017},
+  volume={24},
+  number={6},
+  pages={30-37},
+  doi={10.1109/MWC.2017.1600412}}
+
+@ARTICLE{Xie2020,
+author={Xie, Yuan-ai and Liu, Zhixin and Chan, Kit Yan and Guan, Xinping},
+journal={IEEE Transactions on Vehicular Technology},
+title={{Energy-Spectral Efficiency Optimization} in {Vehicular Communications: Joint Clustering} and {Pricing-Based Robust Power Control Approach}},
+year={2020},
+volume={69},
+number={11},
+pages={13673-13685},
+doi={10.1109/TVT.2020.3021478}}
+
+@ARTICLE{Dai2022,
+  author={Dai, Penglin and Hu, Kaiwen and Wu, Xiao and Xing, Huanlai and Teng, Fei and Yu, Zhaofei},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  title={{A Probabilistic Approach} for {Cooperative Computation Offloading} in {MEC-Assisted Vehicular Networks}},
+  year={2022},
+  volume={23},
+  number={2},
+  pages={899-911},
+  doi={10.1109/TITS.2020.3017172}}
+
+@ARTICLE{Pang2021,
+  author={Pang, Shanchen and Wang, Nuanlai and Wang, Min and Qiao, Sibo and Zhai, Xue and N. Xiong, Neal},
+  journal={IEEE Transactions on Network Science and Engineering},
+  title={{A Smart Network Resource Management System} for {High Mobility Edge Computing} in {5G Internet} of {Vehicles}},
+  year={2021},
+  volume={8},
+  number={4},
+  pages={3179-3191},
+  doi={10.1109/TNSE.2021.3106955}}
+
+@ARTICLE{Tan2018,
+  author={Tan, Le Thanh and Hu, Rose Qingyang},
+  journal={IEEE Transactions on Vehicular Technology},
+  title={Mobility-Aware Edge Caching and Computing in Vehicle Networks: A Deep Reinforcement Learning},
+  year={2018},
+  volume={67},
+  number={11},
+  pages={10190-10203},
+  doi={10.1109/TVT.2018.2867191}}
+
+@ARTICLE{Tran2019,
+  author={Tran, Tuyen X. and Pompili, Dario},
+  journal={IEEE Transactions on Vehicular Technology},
+  title={{Joint Task Offloading} and {Resource Allocation} for {Multi-Server Mobile-Edge Computing Networks}},
+  year={2019},
+  volume={68},
+  number={1},
+  pages={856-868},
+  doi={10.1109/TVT.2018.2881191}}
+
+@ARTICLE{Wang2020,
+  author={Wang, Yunpeng and Lang, Ping and Tian, Daxin and Zhou, Jianshan and Duan, Xuting and Cao, Yue and Zhao, Dezong},
+  journal={IEEE Internet of Things Journal},
+  title={{A Game-Based Computation Offloading Method} in {Vehicular Multiaccess Edge Computing Networks}},
+  year={2020},
+  volume={7},
+  number={6},
+  pages={4987-4996},
+  doi={10.1109/JIOT.2020.2972061}}

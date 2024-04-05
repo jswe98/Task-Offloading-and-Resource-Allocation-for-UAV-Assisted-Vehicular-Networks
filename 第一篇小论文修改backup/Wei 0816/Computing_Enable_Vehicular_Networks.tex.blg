@@ -1,0 +1,40 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Computing_Enable_Vehicular_Networks.tex.aux
+Case mismatch error between cite keys liu2021 and Liu2021
+---line 68 of file Computing_Enable_Vehicular_Networks.tex.aux
+ : \citation{liu2021
+ :                  }
+I'm skipping whatever remains of this command
+The style file: IEEEtran.bst
+Database file #1: reference.bib
+You're missing a field name---line 28 of file reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 42 of file reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/5/2553},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 74 of file reference.bib
+ :   
+ :   %volume = {PP},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 98 of file reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/2073-8994/11/1/58},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 111 of file reference.bib
+ :   
+ :   %https://www.sciencedirect.com/science/article/abs/pii/S1570870522002165
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Bertsekas1999
+
+Done.
+(There were 6 error messages)

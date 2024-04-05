@@ -1,0 +1,492 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subfigure}
+%\usepackage{bbm}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\newcounter{mytempeqncnt}
+\usepackage{amssymb}
+\pagestyle{empty} \textwidth 17cm \textheight 22.5cm
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\BOX}{\hfill $\Box$}
+\newcommand{\NAB}{\hfill $\nabla \nabla \nabla$}
+\newcommand{\BYDEF}{\stackrel{\rm \Delta}{=}}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+\topmargin -2.0cm \oddsidemargin 0.0cm \evensidemargin 0.0cm
+\parskip 0.3cm
+\parindent 0.0cm
+\baselineskip 0.5cm \makeatletter
+\def\EquationsBySection{\def\theequation{\thesection.\arabic{equation}}%
+\@addtoreset{equation}{section}}
+\def\TheoremsBySection{\def\thetheorem{\thesection.\arabic{theorem}}%
+\@addtoreset{theorem}{section}}
+\def\DefinitionsBySection{\def\thedefinition{\thesection.\arabic{definition}}%
+\@addtoreset{definition}{section}}
+\def\RemarksBySection{\def\theremark{\thesection.\arabic{remark}}%
+\@addtoreset{remark}{section}}
+\def\LemmasBySection{\def\thelemma{\thesection.\arabic{lemma}}%
+\@addtoreset{lemma}{section}}
+\def\AssumptionsBySection{\def\theassumption{\thesection.\arabic{assumption}}%
+\@addtoreset{assumption}{section}} \makeatother
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\hs}{\hspace}
+\newcommand{\vs}{\vspace}
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\bib}{\bibitem}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\fc}{\frac}
+\newcommand{\nm}{\nonumber}
+\newcommand{\ol}{\overline}
+\newcommand{\da}{\Delta}
+\newcommand\old[1]{}
+\newtheorem{remark}{Remark}
+\EquationsBySection \TheoremsBySection \DefinitionsBySection
+\RemarksBySection \LemmasBySection \AssumptionsBySection
+\begin{document}
+\begin{flushright}
+    Dr. Zhixin Liu \\
+    School of Electrical Engineering\\
+    Yanshan University \\
+    Qinhuangdao, 066004 China  \\
+    E-mail: lzxauto@ysu.edu.cn
+    \\
+\end{flushright}
+\begin{flushleft}
+Prof. Luo, Yan\\
+Area Editor\\
+IEEE Internet of Things Journal
+
+
+
+\end{flushleft}
+Dear Editor,\\
+
+Thank you very much for your email and the review comments on our
+paper:
+\begin{center}
+{\bf Ref.  IoT-17188-2021}\\
+{``AUV-aided Hybrid Data Collection Scheme based on Value of
+Information for Internet of Underwater Things"}
+\end{center}
+
+
+As kindly suggested by you and the reviewers, the paper has been
+seriously revised in accordance to the constructive and helpful
+comments from you and the reviewers for improving the quality
+further. All the modifications in the revision have been marked \textcolor{blue}{in
+blue}. For more information, please see the detailed Responses to the
+Reviewers.
+
+We would like to express our sincere appreciation to you for your
+prompt and professional handling of our manuscript.
+
+Looking forward to hearing from you.
+
+Yours sincerely,
+
+\vspace{3mm} Zhixin Liu
+
+\newpage
+\pagestyle{plain}
+\title{\Huge{Responses to Reviewers\thanks{For the paper, Ref.  IoT-17188-2021, ``AUV-aided Hybrid Data Collection Scheme based on Value of
+Information for Internet of Underwater Things," submitted to {\em IEEE Internet of Things Journal}.}}}
+\author{}
+\date{}
+\maketitle We would like to thank the reviewers for their careful
+assessments and constructive comments on our submission,
+particularly the time being spent. We take the reviewers' views very
+seriously, and have made every possible effort in order to address
+the concerns raised by the reviewers and modify the paper according
+to his/her suggestions and comments. We have corrected all the
+errors and typos. The details are explained below.
+
+We hope this revised version is now suitable for publication in {\bf
+IEEE Internet of Things Journal}.\\
+
+\newpage
+
+{\Large \underline{Response to Reviewer 1}}
+
+We would like to thank the reviewer for spending his/her time to assess the paper, and make very constructive and detailed informative comments provided in the review. We appreciate the review's patience and carefulness very much.
+
+It is noted that the labels of all equations in this response are the SAME as that in the manuscript.
+Our responses are given as follows:
+
+\begin{enumerate}
+%R1Q1
+\item\textbf{Question}: In this paper, the value of information is determined by the abnormality of the data, however, how to measure the abnormality is not clear, i.e., how to quantize $Q$? does it measured by the data volume?
+
+\textbf{Answer}: Thanks for the reviewer's comments!
+In this paper, $Q$ is the measured value of physical data. The abnormality of the data is determined according to the distribution of $Q$. To be more specific, for a cluster $G$, $Q_{ij}$ is $i$th data perceived by $j$th sensor node (a member node or the cluster head of $G$) in the current round. It is supposed that the mean and standard deviation of historical data of the member node are denoted by $\mu_{j}$ and $\sigma_{j}$, respectively. Then the abnormality of $Q_{ij}$ is revealed by its importance degree $E(Q_{ij})$ and can be calculated by eq.(4).
+\begin{equation*}
+E(Q_{ij})=\frac{1}{\sigma_{j} \sqrt{2\pi}}\int_{-\infty}^{\mu_{j}+|Q_{ij}-\mu_{j}|} e^{\frac{-(q-\mu_{j})^2}{2\sigma_{j}^2}}dq.\tag{4}
+\end{equation*}
+
+We define $E(Q_{j})=\max\limits_{i}\{E(Q_{ij})\}$ as the importance degree of data perceived by $j$th sensor node. That is to say, the importance degree of this sensor node depends on the most abnormal data it perceived. After all member nodes reporting their data to the cluster head, the cluster head processes acquired data and computes the importance degree of the cluster $G$ as $E(Q_{G})=\max\limits_{j}\{E(Q_{j})\}$. In other words, $Q_{G}$ is the most important data in cluster $G$; $E(Q_{G})$ represents the importance degree of the cluster $G$ to guarantee timeliness of information with the highest level of urgency in $G$.
+
+In the revision, we have clarified how to measure the abnormality of newly generated data. The revised part is marked in \textcolor{blue}{blue}, and some modifications are as follow:
+
+``\textcolor{blue}{In this paper, $Q$ is the measured value of physical data. The abnormality of the data is determined according to the distribution of $Q$. To be more specific, for a cluster $G$, $Q_{ij}$ is $i$th data perceived by $j$th sensor node (a member node or the cluster head of $G$) in the current round. It is supposed that the mean and standard deviation of historical data of the sensor node are denoted by $\mu_{j}$ and $\sigma_{j}$, respectively. Then the abnormality of $Q_{ij}$ is revealed by its importance degree $E(Q_{ij})$, and $E(Q_{ij})$ can be calculated by:
+\begin{equation*}
+E(Q_{ij})=\frac{1}{\sigma_{j} \sqrt{2\pi}}\int_{-\infty}^{\mu_{j}+|Q_{ij}-\mu_{j}|} e^{\frac{-(q-\mu_{j})^2}{2\sigma_{j}^2}}dq,\tag{4}
+\end{equation*}
+where $q$ is an integral variable.}''
+
+%R1Q2
+\item\textbf{Question}: According to eq.(5), when $Q$ is less than $\mu$, the initial VoI will less than 0?
+
+\textbf{Answer}: Thanks for the reviewer's comments! Both $Q>\mu$ and $Q<\mu$ are possible in practice because $Q$ is a real measured value. The two conditions are both considered in our scheme to make it more practical. The basic idea of data important degree is that the data deviating farther from historical mean $(\mu_{j})$ are more important. In order to show that the initial VoI is always greater than 0, we first pay attention to eq.(4).
+\begin{equation*}
+E(Q_{ij})=\frac{1}{\sigma_{j} \sqrt{2\pi}}\int_{-\infty}^{\mu_{j}+|Q_{ij}-\mu_{j}|} e^{\frac{-(q-\mu_{j})^2}{2\sigma_{j}^2}}dq.\tag{4}
+\end{equation*}
+When $Q_{ij}$ is less than $\mu_{j}$, \(|Q_{ij}-\mu_{j}|=\mu_{j}-Q_{ij}>0\); hence the integral upper limit of eq.(4) is greater than $\mu_{j}$, i.e. $\mu_{j}+|Q_{ij}-\mu_{j}|>\mu_{j}$. Substituting $E(Q_{ij})$ into eq.(5), we find that $V_0(Q_{ij})=2E(Q_{ij})-1>0$ holds because $E(Q_{ij})$ is always greater than 0.5. Therefore, the fact that the initial VoI is always positive can be guaranteed.
+
+%R1Q3
+\item\textbf{Question}: In eq.(10), $h$ should be added for measuring the actual physical distance.
+
+\textbf{Answer}: Thanks for the reviewer's comment. We are sorry for the ambiguous presentation. In this paper, $h$ is the size of a cluster. $h$ is used to calculate the unique identifier of a cluster $G(X, Y, Z)$ as shown in (1)-(3), where $(x, y, z)$ is the actual physical position of a sensor node (SN), and $(X, Y, Z)$ is the cluster index. Thus, $h$ is only included in $(X, Y, Z)$.
+%For a SN $(x, y, z)$, the cluster index $(X, Y, Z)$ it belongs to are calculated as:
+\begin{equation*}
+X=\left\{
+\begin{array}{llll}
+\lceil\frac{x}{h}\rceil, &x>0\\
+\lfloor\frac{x}{h}\rfloor, &x<0.
+\end{array}
+\right. \tag{1}
+\end{equation*}
+\begin{equation*}
+Y=\left\{
+\begin{array}{llll}
+\lceil\frac{y}{h}\rceil, &y>0\\
+\lfloor\frac{y}{h}\rfloor, &y<0.
+\end{array}
+\right. \tag{2}
+\end{equation*}
+\begin{equation*}
+Z=\lceil\frac{z}{h}\rceil\tag{3}
+\end{equation*}
+Eq.(10), i.e. $D_{i,j}=\sqrt{(x_i-x_j)^2+(y_i-y_j)^2+(z_i-z_j)^2}$, is the actual physical distance between SN $i$ $(x_i,y_i,z_i)$ and SN $j$ $(x_j,y_j,z_j)$. Therefore, $h$ is not included to measure the actual physical distance. Differences between $(X, Y, Z)$ and $(x, y, z)$ have been highlighted in the revision in \textcolor{blue}{blue} to avoid misleading, and the modifications are as follow:
+
+``\textcolor{blue}{Every nodes belonging to a certain cluster have a unique identifier, i.e. $G(X,Y,Z)$. The cluster index $(X, Y, Z)$ can be calculated as:
+\begin{equation*}
+X=\left\{
+\begin{array}{llll}
+\lceil\frac{x}{h}\rceil, &x>0\\
+\lfloor\frac{x}{h}\rfloor, &x<0.
+\end{array}
+\right. \tag{1}
+\end{equation*}
+\begin{equation*}
+Y=\left\{
+\begin{array}{llll}
+\lceil\frac{y}{h}\rceil, &y>0\\
+\lfloor\frac{y}{h}\rfloor, &y<0.
+\end{array}
+\right. \tag{2}
+\end{equation*}
+\begin{equation*}
+Z=\lceil\frac{z}{h}\rceil\tag{3}
+\end{equation*}
+}
+$\cdots\cdots$
+
+\textcolor{blue}{The distance between SN $i$ $(x_i,y_i,z_i)$ and SN $j$ $(x_j,y_j,z_j)$ is calculated as:
+\begin{equation*}
+D_{i,j}=\sqrt{(x_i-x_j)^2+(y_i-y_j)^2+(z_i-z_j)^2}.\tag{10}
+\end{equation*}
+where $(x_i,y_i,z_i)$ and $(x_j,y_j,z_j)$ are actual physical 3D coordinates of SN $i$ and SN $j$, respectively.}"
+
+%R1Q4
+\item\textbf{Question}: ``if the expected value of data sent by multi-hop is remarkably larger than the AUV gathered...", how to compute the value of these two modes? Since both the multi-hop routing and the AUV path are not determined.
+
+\textbf{Answer}: Thanks for the reviewer's comments! In the revision, we have added the explanations on how to estimate the VoI expected by these two modes.
+
+As shown in (18), $\widehat{{V}}_{rec}^{hop}(Q_G)$ and $\widehat{V}_{rec}^{\textrm{AUV}}(Q_G)$ are the estimated VoI achieved by two modes. From (6), we find that $V_0(Q_G)$ and $\xi E(Q_G)$ are constants with determined $Q_G$ in a cluster. Hence $\widehat{{V}}_{rec}^{hop}(Q_G)$ and $\widehat{V}_{rec}^{\textrm{AUV}}(Q_G)$ only depend on the collection time $t_{col}$.
+\begin{equation*}
+V_{rec}(Q_G)=V_0(Q_G)\left(1-\xi E(Q_G)\right)^{t_{col}},\tag{6}
+\end{equation*}
+\begin{equation*}
+U_{G(X,Y,Z)}^{eva}=\widehat{{V}}_{rec}^{hop}(Q_G)-\widehat{V}_{rec}^{\textrm{AUV}}(Q_G),\tag{18}
+\end{equation*}
+Since both the multihop routing and the AUV path are not determined before deciding transmission modes, $t_{col}$ needs to be estimated. We provide a method to estimate $t_{col}$ in the following based on historical time information.
+
+For any layer, all cluster heads (CHs) in the layer are classified into four categories based on the transmission mode in two latest rounds. They are: (i) transmitting hop-by-hop in past two rounds; (ii) transmitting hop-by-hop in second past round while gathered by an AUV in the latest round; (iii) gathered by an AUV in second past round while transmitting hop-by-hop in the latest round; and (iv) gathered by an AUV in the past two rounds.
+
+When an AUV arrives at its collecting layer, it broadcasts control massages including the layer index and time information. Time information contains AUV navigation time in the layer in the two recent rounds (i.e. $t_{\textrm{AUV}}[r-1]$ and $t_{\textrm{AUV}}[r-2]$), and the time consumption of all clusters that need to transmit hop-by-hop in the these rounds (i.e. $t_{hop}[r-1]$ and $t_{hop}[r-2]$). CHs receiving the control messages in the current layer will compute expected residual VoI and decide the transmission mode.
+
+Before deciding transmission modes (transmitting hop-by-hop or gathered by an AUV), CHs first estimate time consumption of the two modes. $t_{col}$ is the time elapsed between CH collecting MNs' data and sink obtaining data, $\widehat{t}_{col}$ is an estimation of $t_{col}$.
+
+For the CHs in case (i), $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ is calculated by (6). In particular, $\widehat{{V}}_{rec}^{hop}(Q_G)[r]=V_{0}(Q_G)\left(1-\xi E(Q_G)\right)^{\widehat{t}_{col}[r]}$ herein, where
+\begin{equation*}
+\widehat{t}_{col}[r]=\vartheta t_{hop}[r-1]+(1-\vartheta)t_{hop}[r-2];
+\end{equation*}
+$\vartheta$ is a weighting factor. The VoI expected to get by AUV is
+\begin{equation*}
+\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]=V_{0}(Q_G)\left(1-\xi E(Q_G)\right)^{\widehat{t}_{col}[r]},
+\end{equation*}
+where
+\begin{equation*}
+\widehat{t}_{col}[r]=\vartheta t_{\textrm{AUV}}[r-1]+(1-\vartheta)t_{\textrm{AUV}}[r-2].
+\end{equation*}
+Then $U_{G(X,Y,Z)}^{eva}$ is obtained by (18).
+
+For the CHs in case (ii), $\widehat{t}_{col}[r]=t_{hop}[r-2]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$, while $\widehat{t}_{col}[r]=t_{\textrm{AUV}}[r-1]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$.
+For the CHs in case (iii), $\widehat{t}_{col}[r]=t_{hop}[r-1]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ while $\widehat{t}_{col}[r]=t_{\textrm{AUV}}[r-2]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$.
+For the CHs in case (iv), $\widehat{t}_{col}[r]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ is set to be the average of time consumption of all CHs that transmit by multihop in the two recent rounds, while $\widehat{t}_{col}[r]=\vartheta t_{\textrm{AUV}}[r-1]+(1-\vartheta)t_{\textrm{AUV}}[r-2]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$. Then $U_{G(X,Y,Z)}^{eva}$ of all CHs in the layer is calculated by (18).
+
+The revised parts are marked in \textcolor{blue}{blue}, and some modifications are as follow:
+
+``\textcolor{blue}{AUVs have the location knowledge of all SNs in the 3D underwater environment. For any layer, when an AUV arrives at this collecting layer, it broadcasts control massages including the layer index and time  information. Time information contains AUV navigation time in the layer in the two recent rounds (i.e. $t_{\textrm{AUV}}[r-1]$ and $t_{\textrm{AUV}}[r-2]$), and the time consumption of all clusters that need to transmit hop-by-hop in the two recent rounds (i.e. $t_{hop}[r-1]$ and $t_{hop}[r-2]$). CHs receiving the control messages in the determined layer will collect data from their MNs and compute potential profit to judge either transmitting by multihop or gathered by an AUV. After that, decisions are responded to the AUV. Then the AUV starts its collection procedure based on the feedback received. Other layers have similar processes.}
+
+$\cdots\cdots$
+
+``\textcolor{blue}{All CHs in the layer are classified into four categories based on the transmission mode in the past two rounds. They are: (i) transmitting hop-by-hop in the two latest rounds; (ii) transmitting hop-by-hop in second latest round while gathered by an AUV in the latest round; (iii) gathered by an AUV in second latest round while transmitting hop-by-hop in the latest round; and (iv) gathered by an AUV in the two latest rounds. CHs receiving the control messages in the current layer will compute expected residual VoI and decide their own transmission mode.
+If the expected value of data sent by multihop is remarkably larger than the AUV-gathered, the first mode is adopted. Otherwise, one should choose the second manner. Denoted by $U_{G(X,Y,Z)}^{eva}$, the evaluated value difference between two collection modes is expressed as:
+\begin{equation*}
+U_{G(X,Y,Z)}^{eva}=\widehat{{V}}_{rec}^{hop}(Q_G)-\widehat{V}_{rec}^{\textrm{AUV}}(Q_G),\tag{18}
+\end{equation*}
+where $\widehat{{V}}_{rec}^{hop}(Q_G)$ and $\widehat{V}_{rec}^{\textrm{AUV}}(Q_G)$ are the estimated VoI achieved by two modes. Estimation methods of CHs varies with their categories in the two latest rounds. Specifically, for the CHs in case (i), $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ is calculated by (6).}
+
+\textcolor{blue}{In particular, $\widehat{{V}}_{rec}^{hop}(Q_G)[r]=V_{0}(Q_G)\left(1-\xi E(Q_G)\right)^{\widehat{t}_{col}[r]}$ herein, where $\widehat{t}_{col}[r]=\vartheta t_{hop}[r-1]+(1-\vartheta)t_{hop}[r-2]$ is the estimate of ${t}_{col}$; $\vartheta$ is a weighting factor. The VoI expected to get by AUV is $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]=V_{0}(Q_G)\left(1-\xi E(Q_G)\right)^{\widehat{t}_{col}[r]}$, where $\widehat{t}_{col}[r]=\vartheta t_{\textrm{AUV}}[r-1]+(1-\vartheta)t_{\textrm{AUV}}[r-2]$. Then $U_{G(X,Y,Z)}^{eva}$ is obtained by (18).}
+
+\textcolor{blue}{For the CHs in case (ii), $\widehat{t}_{col}[r]=t_{hop}[r-2]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$, while $\widehat{t}_{col}[r]=t_{\textrm{AUV}}[r-1]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$. For the CHs in case (iii), $\widehat{t}_{col}[r]=t_{hop}[r-1]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ while $\widehat{t}_{col}[r]=t_{\textrm{AUV}}[r-2]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$. For the CHs in case (iv), $\widehat{t}_{col}[r]$ in $\widehat{{V}}_{rec}^{hop}(Q_G)[r]$ is set to be the average of time consumption of all CHs that transmit by multihop in the two recent rounds, while $\widehat{t}_{col}[r]=\vartheta t_{\textrm{AUV}}[r-1]+(1-\vartheta)t_{\textrm{AUV}}[r-2]$ in $\widehat{{V}}_{rec}^{\textrm{AUV}}(Q_G)[r]$. Then $U_{G(X,Y,Z)}^{eva}$ of all CHs in the layer is calculated by (18).}"
+
+
+%R1Q5
+\item\textbf{Question}: In the clustering scheme, the clusters are grouped by the physical positions, however, since the sensor nodes in the same cluster may sense different information, they may have different values.
+
+\textbf{Answer}: Thanks for the reviewer's comments and sorry for our unclear presentation. We agree with the view that sensor nodes in the same cluster sense different information and they may have difference values. In this paper, the data deviating farther from historical mean $(\mu_{j})$ are more important; hence we devote to ensure timeliness of abnormal data by transmitting them as soon as possible.
+
+Take any one of the clusters ($G$) as an example. We assume that $Q_{ij}$ is $i$th data perceived by $j$th sensor node belonging to $G$ in the current round. $E(Q_{ij})\in(0.5,1)$ is the importance degree of $Q_{ij}$ and it can be calculated as:
+\begin{equation*}
+E(Q_{ij})=\frac{1}{\sigma_{j} \sqrt{2\pi}}\int_{-\infty}^{\mu_{j}+|Q_{ij}-\mu_{j}|} e^{\frac{-(q-\mu_{j})^2}{2\sigma_{j}^2}}dq.\tag{4}
+\end{equation*}
+We define $E(Q_{j})=\max\limits_{i}\{E(Q_{ij})\}$ as the importance degree of data perceived by $j$th sensor node. That is to say, the importance degree of this sensor node depends on the most abnormal data it perceived. After all member nodes reporting their data to the cluster head, the cluster head processes acquired data and computes the importance degree of the cluster $G$ as $E(Q_{G})=\max\limits_{j}\{E(Q_{j})\}$. In other words, $Q_{G}$ is the most important data in cluster $G$; $E(Q_{G})$ represents the importance degree of the cluster $G$ to guarantee timeliness of information with the highest level of urgency in $G$.
+
+Then the initial VoI of data generated in cluster $G$, $V_0(Q_{G})$, is calculated by (5).
+\begin{equation*}
+V_0(Q_{G})=2E(Q_{G})-1.\tag{5}
+\end{equation*}
+In summary, although sensor nodes in the same cluster may sense different information with difference values, the importance degree $E(Q_{G})$ and initial VoI $V_0(Q_{G})$ of data in cluster $G$ can be obtained through the paradigm given above.
+
+The related part has been explained in the revision. The revised part is marked in \textcolor{blue}{blue}, and the contents are as follow:
+
+``\textcolor{blue}{In this paper, $Q$ is the measured value of physical data. To be more specific, for a cluster $G$, $Q_{ij}$ is $i$th data perceived by $j$th sensor node (a member node or the cluster head of $G$) in the current round. It is supposed that the mean and standard deviation of historical data of the member node are denoted by $\mu_{j}$ and $\sigma_{j}$, respectively. Then the abnormality of $Q_{ij}$ is revealed by its importance degree $E(Q_{ij})$ and can be calculated by:
+\begin{equation*}
+E(Q_{ij})=\frac{1}{\sigma_{j} \sqrt{2\pi}}\int_{-\infty}^{\mu_{j}+|Q_{ij}-\mu_{j}|} e^{\frac{-(q-\mu_{j})^2}{2\sigma_{j}^2}}dq.\tag{4}
+\end{equation*}
+where $q$ is an integral variable. Thus the two conditions, i.e. $Q_{ij}$ is greater or less than $\mu_{j}$, are both taken into consideration.}
+
+\textcolor{blue}{We define $E(Q_{j})=\max\limits_{i}\{E(Q_{ij})\}$ as the importance degree of data perceived by $j$th sensor node. That is to say, the importance degree of this sensor node depends on the most abnormal data it perceived. After all member nodes reporting their data to the cluster head, the cluster head processes acquired data and computes the importance degree of the cluster $G$ as $E(Q_{G})=\max\limits_{j}\{E(Q_{j})\}$. In other words, $Q_{G}$ is the most important data in cluster $G$; $E(Q_{G})$ represents the importance degree of the cluster $G$ to guarantee timeliness of information with the highest level of urgency in $G$.}
+
+\textcolor{blue}{Then the initial VoI of data generated in cluster $G$, $V_0(Q_{G})$, is defined by (5); the dependence of the abnormality of sensed data and the importance degree is reflected. In other words, the larger $V_0(Q_{G})$ is, the more urgent the data $Q_{G}$ will be.
+\begin{equation*}
+V_0(Q_{G})=2E(Q_{G})-1.\tag{5}
+\end{equation*}
+A decay model of VoI is developed to directly reveal the correlation between timeliness of collected information and its urgency degree; the decay model is more suitable in practical application scenarios. When the data with initial VoI, $V_0(Q_{G})$, are received by the surface sink over time $t_{col}$, the residual value of $Q_{G}$ is defined as:
+\begin{equation*}
+V_{rec}(Q_{G})=V_0(Q_{G})\left(1-\xi E(Q_{G})\right)^{t_{col}},\tag{6}
+\end{equation*}
+where $E(Q_{G})$ is involved in $V_{rec}(Q_{G})$ to directly decide the attenuation rate $\xi E(Q_{G})$; $\xi\in(0,1)$ is a coefficient that is changeable to adapt different applications. In our model, the value of important data with large $|Q_{ij}-\mu_{j}|$ decreases rapidly whereas the normal information has a lower decay rate.}"
+
+%R1Q6
+\item\textbf{Question}: In the AUV path planning scheme, the AUV's path is determined by solving the TSP problem, however, since the TSP problem only considers the distances between different CHs, the value of their data are not considered.
+
+\textbf{Answer}: Thanks for the reviewer's comments! Some explanations are given as follows.
+The proposed scheme executes with two steps, the sensors in a layer decide the routing mode first based on the VoI, which has been given in the answer of question 4.
+Owing to the introduction of multihop-based transmission into AUV-aided data collection scheme, the important data are sent hop-by-hop instead of waiting for an AUV. AUVs are only responsible for retrieving data with lower importance degrees. Thus, the sensors with high-value data are grouped to the hop-by-hop mode.
+For the sensors that choose the AUV gathering mode are with relative lower VoI, the difference of data value will not be distinguished herein. The AUV path planning scheme is executed to reduce travel distance and save energy and trip time. Thus the traveling salesman problem (TSP) is introduced in this phase.
+The path planning is modeled as a TSP herein so as to find the shortest path which in turn save AUV's energy and reduce complexity of AUV trajectory design.
+
+
+\end{enumerate}
+
+Finally, the authors thank the reviewer for the comments provided, and the time and efforts he/she has spent in the review again. Without the careful comments, the paper would not reach its current quality. We hope that the above modifications have answered the reviewers concerns.
+
+\newpage
+
+{\Large \underline{Response to Reviewer 2}}
+
+We would like to thank the reviewer for spending his/her time to assess the paper, and make some very constructive and detailed informative comments. We appreciate the reviews patience and carefulness very much.
+
+It is noted that the indexes of all equations and figures in the response are the SAME as those in the manuscript. Our responses are given as follows:
+
+\begin{enumerate}
+%R2Q1
+\item\textbf{Question}: The originality of this paper is questionable.
+The authors claim that they propose a novel concept of VoI. However, this concept is not new and there are lots of previous papers presenting this concept.
+
+\textbf{Answer}: Thanks for the reviewer's comments! We are sorry for the inappropriate statements, and we have made corresponding modification in the revision.
+
+We agree with the reviewer's view that the concept of VoI is not new. The idea of introducing the concept of VoI is to differentiate the data importance and
+consequently choose a rational transmission mode; the data with high VoI should be paid more attention in the collection design. As for the evaluation of data value, there are different definitions of VoI.
+To measure timeliness of data collection, we developed a new analytic expression which attempts to depict the VoI attenuation process. Based on this definition, the impact of data importance on the attenuation rate is first taken into consideration. A paradigm to quantize initial VoI is also provided in this paper.
+
+%It is indeed not appropriate to claim that we propose a novel concept of value of information (VoI). We developed a specific VoI attenuation model to measure timeliness of data collection. The importance degrees of data were involved in the provided analytic expression of the model to change VoI attenuation rates adaptively.
+
+As is known to all, timeliness of important and normal data are different. That is to say the value attenuation rates of data with varying importance degrees should be different. Therefore, the VoI of important data decreases dramatically, whereas other normal data should have lower value attenuation rates.
+
+Although the criterion has been used in some previous papers [28] [30] [31], the relationship between the importance degrees of data and value attenuation rates are not intuitively embodied in existing mathematical expressions of VoI. In our work, the relationship above is directly revealed in the mathematical definition of VoI, where the value attenuation rates is adaptively changed according to the importance degree of data. The residual VoI not only determined by the elapsed time but also affected by the importance degree of data. We devote to enrich the definition of VoI in theory and make it fit the actual situation better.
+
+Furthermore, how to determine the initial VoI is also not explicitly mentioned in these papers. We provide a paradigm to calculate initial VoI based on the distribution of historical data.
+
+[28] J. Yan, X. Yang, X. Luo, and C. Chen, ``Energy-efficient data collection over AUV-assisted underwater acoustic sensor network," IEEE Systems Journal, vol. 12, no. 4, pp. 3519-3530, 2018.
+
+[30] G. Han, Z. Tang, Y. He, J. Jiang, and J. A. Ansere, ``District partition-based data collection algorithm with event dynamic competition in underwater acoustic sensor networks," IEEE Transactions on Industrial Informatics, vol. 15, no. 10, pp. 5755-5764, 2019.
+
+[31] R. Duan, J. Du, C. Jiang, and Y. Ren, ``Value-based hierarchical information collection for AUV-enabled internet of underwater things," IEEE Internet of Things Journal, vol. 7, no. 10, pp. 9870-9883, 2020.
+
+The revised part has been modified in \textcolor{blue}{blue} in the revision, and the contents are as follows:
+
+``\textcolor{blue}{Although the criterion has been used in some previous papers [28] [30] [31], the relationship between the importance degrees of data and value attenuation rates are not intuitively embodied in existing mathematical expressions of VoI. However, timeliness of sensed information is positively related to its degree of importance in most of the marine monitoring scenarios. In our work, the relationship above is directly revealed in the mathematical definition of VoI, where the value attenuation rates is adaptively changed. Furthermore, how to determine the initial VoI is also not explicitly mentioned in these papers; hence we provide a paradigm to calculate initial VoI based on the distribution of historical data. We devote to enrich the definition of VoI in theory and make it fit the actual situation better.}"
+
+\item\textbf{Question}: Regarding the data collection scheme for IoUT, there are also many similar studies. For example, Q. Wang et al. presented a similar UAV-assisted data collection scheme for IoUT in the published paper  ``On Connectivity of UAV-Assisted Data Acquisition for Underwater Internet of Things," in IEEE Internet of Things Journal, vol. 7, no. 6, pp. 5371-5385, June 2020. However, the authors did not explicitly cite similar studies and highlight their differences.
+
+
+
+\textbf{Answer}: Thanks for the reviewer's suggestions! The mentioned literature is helpful to our work, we have read it carefully. Some similar studies are cited and reviewed in the revision, the differences and contributions of our work are summarized. The revised part has been marked in \textcolor{blue}{blue} in the revision, and the contents are as follows:
+
+``\textcolor{blue}{Owing to the low prices of sensors and unique merits of acoustic signal to transmit the generated information in harsh underwater environments, UASNs are the key parts of IoUT so far [7].}
+
+$\cdots\cdots$
+
+\textcolor{blue}{The classic hop-based data transmission was extended to the IoUT first, and the AUV-assisted data gathering schemes have been developed in the following.}
+
+\textcolor{blue}{A theoretical model to investigate the path connectivity of unmanned aerial vehicles (UAVs)-assisted data acquisition schemes was built in [17], where Wang \textit{et al.} bridged the gap between underwater acoustic and electromagnetical links, but AUVs were not exploited to shorten transmission distances. The established probability-based model can be extended to many scenarios.}"
+
+$\cdots\cdots$
+
+\textcolor{blue}{The surface sink could usually be a buoy or a platform, receiving the collected data from SNs and AUVs and transmitting the {raw} data to a ground control center for analysis with the help of a UAV or a satellite via RF link [18], [34], [35].}
+
+[7] L. Bai, R. Han, J. Liu, J. Choi, and W. Zhang, ``Random access and detection performance of internet of things for smart ocean," IEEE Internet of Things Journal, vol. 7, no. 10, pp. 9858-9869, 2020.
+
+[17] Q. Wang, H.-N. Dai, Q. Wang, M. K. Shukla, W. Zhang, and C. G. Soares, ``On connectivity of UAV-assisted data acquisition for underwater internet of things," IEEE Internet of Things Journal, vol. 7, no. 6,
+pp. 5371-5385, 2020.
+
+[18] R. Ma, R. Wang, G. Liu, W. Meng, and X. Liu, ``UAV-aided cooperative data collection scheme for ocean monitoring networks," IEEE Internet of Things Journal, pp. 1-1, 2021. DOI: 10.1109/JIOT.2021.3065740.
+
+[34] Z. Wang, G. Zhang, Q. Wang, K. Wang, and K. Yang, ``Completion time minimization in wireless-powered UAV-assisted data collection system," IEEE Communications Letters, vol. 25, no. 6, pp. 1954-1958, 2021.
+
+[35] X. Li, W. Feng, Y. Chen, C.-X. Wang, and N. Ge, ``Maritime coverage enhancement using UAVs coordinated with hybrid satellite-terrestrial networks," IEEE Transactions on Communications, vol. 68, no. 4, pp. 2355-2369, 2020.
+%R2Q2
+\item\textbf{Question}: The presentation of the paper requires substantial efforts to improve.
+
+\textbf{Answer}: Thanks for the reviewer's comments! We have checked the whole paper carefully  to avoid any typo and mistake.
+
+\item\textbf{Question}: Please give a systematic model to describe the entire working procedure of your proposed scheme.
+
+\textbf{Answer}: Thanks for the reviewer's suggestions! The entire working procedure has been summarized as Fig. 4 which was added in the revision.
+
+\begin{figure}[htbp]\label{fig4}
+\centering
+%\hspace{1.0cm}
+%\includegraphics[width=7.5cm]{special.eps}
+\includegraphics[width=6cm]{diagram.eps}
+\center{\footnotesize   Fig. 4 System working process diagram.}
+\end{figure}
+
+AUVs have the location knowledge of all sensor nodes (SNs) in the 3D underwater environment. Take a layer as an example. When an AUV arrives at a collecting layer, it broadcasts control massages including the layer index and time information. Time information contains AUV navigation time in the layer in the two recent rounds (i.e. $t_{\textrm{AUV}}[r-1]$ and $t_{\textrm{AUV}}[r-2]$), and the time consumption of all clusters that need to transmit hop-by-hop in the two recent rounds (i.e. $t_{hop}[r-1]$ and $t_{hop}[r-2]$). Cluster heads (CHs) receiving the control messages in the determined layer will evaluate the value difference between two collection modes to judge either transmitting by multihop or gathered by an AUV. The value difference between two collection modes is calculated by (18).
+\begin{equation*}
+U_{G(X,Y,Z)}^{eva}=\widehat{{V}}_{rec}^{hop}(Q_{G})-\widehat{V}_{rec}^{\textrm{AUV}}(Q_{G}),\tag{18}
+\end{equation*}
+where $\widehat{{V}}_{rec}^{hop}(Q_{G})$ and $\widehat{V}_{rec}^{\textrm{AUV}}(Q_{G})$ are the estimated VoI achieved by two modes. After that, the decisions are responded to the AUV. Then the AUV starts its collection procedure based on the feedback received. Other layers have similar processes.
+
+
+The revised part has been marked in \textcolor{blue}{blue} in the revision, and the contents are as follows:
+
+``\textcolor{blue}{AUVs have the location knowledge of all SNs in the 3D underwater environment. Take a layer as an example. When an AUV arrives at a collecting layer, it broadcasts control massages including the layer index and time  information. Time information contains AUV navigation time in the layer in the two recent rounds (i.e. $t_{\textrm{AUV}}[r-1]$ and $t_{\textrm{AUV}}[r-2]$), and the time consumption of all clusters that need to transmit hop-by-hop in the two recent rounds (i.e. $t_{hop}[r-1]$ and $t_{hop}[r-2]$). CHs receiving the control messages in the determined layer will collect data from their MNs and compute potential profit to judge either transmitting by multihop or gathered by an AUV. After that, the decisions are responded to the AUV. Then the AUV starts its collection procedure based on the feedback received. Other layers have similar processes.}"
+
+\item\textbf{Question}: Mathematical terms should be first explicitly defined before giving the equations.
+
+\textbf{Answer}: Thanks for the reviewer's carefulness and sorry for our negligence! We have added missing definitions of mathematical terms explicitly in the revised version; the contents are as follows:
+
+``\textcolor{blue}{Every nodes belonging to a certain cluster have a unique identifier, i.e. $G(X,Y,Z)$; the cluster index is $(X, Y, Z)$. }
+
+\textcolor{blue}{$q$ is an integral variable.}
+
+\textcolor{blue}{The time to transmit $\mathcal{L}_p$ bits data can be written as
+$T_{i,j}=\mathcal{L}_p/R_{i,j}$, where $R_{i,j}$ is the transmission rate between SN $i$ and SN $j$.}
+
+\textcolor{blue}{$P_{t}$ and $P_{r}$ are transmit and receive power of an SN, respectively.}
+
+\textcolor{blue}{Especially, $d_{o,e}$ is the distance between the sink and the starting point of a layer.}"
+
+\item\textbf{Question}: There are many repetitions of acronyms throughout the entire paper.
+
+\textbf{Answer}: Thanks for the reviewer's comments! We have checked all acronyms throughout the paper and repetitions are revised carefully. All acronyms throughout the paper are listed in the following table.
+\begin{table}[htbp]
+\footnotesize
+\centering  % ±í¾ÓÖÐ
+%\scalebox{0.05}
+{
+\begin{tabular}{ll}
+\toprule
+IoUT  & Internet of Underwater Things \\
+AUVs  & Autonomous underwater vehicles\\
+HDCS  & Hybrid data collection scheme\\
+EE    & Energy efficiency  \\
+SNs   & Sensor nodes  \\
+VoI   & Value of information\\
+CHs   & Cluster heads  \\
+TSP   & Traveling salesman problem  \\
+UASNs & Underwater acoustic sensor networks \\
+IoT   & Internet of Things  \\
+UAV   & Unmanned aerial vehicle   \\
+RF    & Radio frequency  \\
+SNR   & Signal to noise ratio  \\
+MNs   & Member nodes \\
+EC    & Energy center \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\item\textbf{Question}: Many references of this paper are not state-of-the-art. E.g., no publication in 2021 is cited.
+
+\textbf{Answer}: Thanks for the reviewer's suggestions! Some state-of-the-art studies have been added in INTRODUCTION and RELATED WORK in \textcolor{blue}{blue}. The contents are as follows:
+
+``\textcolor{blue}{Amid the curiosity about the unknown space and the increasing requirements for natural resources, the scientific exploration of the ocean has been attracting increasing attention [1].}
+
+$\cdots\cdots$
+
+\textcolor{blue}{In UAV-aided ocean monitoring networks, Ma \textit{et al.} prolonged the network lifetime by studying the resource allocation and access issues [17]. In this paper, single-hop underwater acoustic signal transmission as well as radio frequency links between sink nodes and the UAV were considered simultaneously.}
+
+$\cdots\cdots$
+
+\textcolor{blue}{In [25], Fang \textit{et al.} utilized M/G/1 vacation queueing model to improve timely and reliable data collection, while the energy consumption of AUVs was also considered.}"
+
+Related works are stated as:
+
+[1] M. Jahanbakht, W. Xiang, L. Hanzo and M. Rahimi Azghadi, ``Internet of Underwater Things and Big Marine Data Analytics - A Comprehensive Survey," in IEEE Communications Surveys \& Tutorials, vol. 23, no. 2, pp. 904-956, Second quarter 2021, doi: 10.1109/COMST.2021.3053118.
+
+[17] R. Ma, R. Wang, G. Liu, W. Meng and X. Liu, ``UAV-Aided Cooperative Data Collection Scheme for Ocean Monitoring Networks," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2021.3065740.
+
+[25] Z. Fang, J. Wang, C. Jiang, Q. Zhang and Y. Ren, ``AoI Inspired Collaborative Information Collection for AUV Assisted Internet of Underwater Things," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2021.3049239.
+
+\end{enumerate}
+
+Finally, thanks the reviewer again for the comments provided, and the time and efforts spent in the review. We hope that the above responses have answered the reviewer's concerns. We will happily welcome any additional suggestions and feedback by the reviewer.
+
+
+\end{document}
+
+
+
+
+
+
+
+

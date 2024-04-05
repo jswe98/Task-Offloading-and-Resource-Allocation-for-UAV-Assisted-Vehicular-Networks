@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2023.1.9)  9 JAN 2023 11:51
+entering extended mode
+**E:/OneDrive/组内文献/2021*Wei/latex模板/test/reference.bib
+("E:/OneDrive/组内文献/2021 Wei/latex模板/test/reference.bib"
+Overfull \hbox (3.4404pt too wide) in paragraph at lines 72--77
+[]\tenrm @inproceedingsAhmed2016, ti-tle=Mobile Cloud Com-put-ing Energy-aware 
+Task Of-fload-ing (MCC: ETO),|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+! Misplaced alignment tab character &.
+l.87 ...igm, a MEC provider can execute its users&
+                                                  rsquo; tasks by choosing o...
+
+? 
+! Emergency stop.
+l.87 ...igm, a MEC provider can execute its users&
+                                                  rsquo; tasks by choosing o...
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

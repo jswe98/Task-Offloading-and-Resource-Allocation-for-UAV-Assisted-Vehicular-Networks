@@ -1,0 +1,520 @@
+\documentclass[twocolumn]{IEEEtran}
+%\documentclass[onecolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[nocompress]{cite}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{epstopdf}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{\bf Definition}
+\newtheorem{remark}{Remark}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\usepackage{extarrows}
+\usepackage{amsfonts}
+\usepackage{algorithm, algorithmic}
+\usepackage{color}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{cases}
+\makeatletter
+\newcommand{\ALOOP}[1]{\ALC@it\algorithmicloop\ #1
+  \begin{ALC@loop}}
+\newcommand{\ENDALOOP}{\end{ALC@loop}\ALC@it\algorithmicendloop}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\algorithmicbreak}{\textbf{break}}
+\newcommand{\BREAK}{\STATE \algorithmicbreak}
+\makeatother
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+\else
+\fi
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+\title{Power Control and Task Offloading for Cloud Assisted MEC in Vehicular Networks}
+
+%\author{
+%\thanks{Zhixin Liu, Sainan Wang
+%are with the Institute of Electrical Engineering, Yanshan
+%University, Qinhuangdao 066004, China.
+%}}
+
+\markboth{Manuscript}{?}
+\maketitle
+\begin{abstract}
+Cloud-assisted mobile-edge computing (C-MEC) has been witnessed as a novel solution for task offloading in vehicular networks, which is able to provide rich computing resources. In this paper, a robust power control scheme is proposed to offload the computation task and maximize the utility of C-MEC networks. However,
+an uncertain channel state seriously affects the stable transmission of the offloading task. The first-order Markov process is adopted to simulate channel uncertainty, where vehicular mobility is highly considered. Moreover, channel reusing is assumed due to the limited spectrum resources, which leads to complex co-channel interference and communication delay. To depress the above challenges, probability constraints of signal links are constructed to ensure communication quality. Furthermore, the Bernstein approximations method is adopted to transform the original constraints into solvable ones. Scrupulously, the block coordinate descent (BCD) method and the successive convex approximation (SCA) technique are further adopted to solve the nonconvex robust optimization framework. Furthermore,  a joint robust power control and task offloading scheduling algorithm is proposed to approach the optimal solutions. Numerical simulations are performed to evaluate the system performances, and the results indicate that the proposed algorithm is effective and outperform the benchmarks, especially in communication environments with channel uncertainty.
+\end{abstract}
+\begin{keywords}
+Internet of Vehicle (IoV), Robust Power Control, Edge Computing, Computation Offloading,
+\end{keywords}
+\section{Introduction}
+The high data traffic load poses a heavy burden to the Vehicular Networks because of the limitation of the computing resources. Mobile-edge computing (MEC) or mobile cloud computing (MCC), as new architecture and a key technology for the emerging 5G networks, has been proposed to address the V2I problem \cite{sym2019}. MEC migrates remote cloud computing resources to the edge of the network to curtail the end-to-end transmission delay of data and to free the computing and storage pressure of vehicles or roadside units \cite{Wang2020}. But the computing resources of MEC are still limited. Considering the rich computing resources provided by the Internet, cloud-based vehicular networks have been proposed to address the explosive growth of computing task requirements of vehicles. However, cloud computing centers tend to be far from the network. In the highly dynamic Internet of Vehicles, the amount of data will be produced by vehicles, must be processed in a short period. Therefore, the (C-MEC) is expected to solve this problem.
+
+Our objective is to design a (C-MEC) vehicular network. Specifically, we consider a multi-cell network where each Base Station (BS) is equipped with a MEC server to provide computation offloading services to the mobile vehicles. For MEC layer, which has moderate computation capacity and deploys close to networks, can be used to assist the vehicles. Cloud computing layer, can be used to process the large-scale, delay-insensitive data that the MEC layer can not process. We hope that such a network structure can solve the problem of task offloading in the Internet of Vehicles. However, for the current Mobile-Edge computing that enable vehicular networks, interference in the dense vehicle scenario often leads to acutely poor communication Quality of Service (QoS). In addition, a vehicle¡¯s mobility leads to an uncertain channel state and further affects the stability of communication. So joint power control and computing resource allocation in multi-vehicles, the multi-MEC system will resolve the task offloading problem in a C-MEC vehicular network.
+\subsection{Related Works}
+Recently, some works have been devoted to an IoV edge computing network, consisting of a cloud computing layer and MEC layer vehicle network architectures. But the Doppler effect in the high mobility of vehicles poses a challenge to V2I communication. interference caused by channel reuse in the vehicle scenario often leads to acutely poor communication quality. Vehicle equipment has a reduced tolerance for delay and transmission reliability, so higher requirements are put forward. Aliyu et al. \cite{Ahmed2016} proposed a systematic review of MCC energy-aware issues and grouped some research works on battery energy in MCC into dynamic and nondynamic energy-aware task offloading \cite{Dai2022}. \cite{Zhou2019} Proposed a hierarchical computing framework for vehicular networks which is composed of the control layer, the VEC server layer, and the vehicular network layer. Investigate the service scenario of cooperative computation offloading in MEC-assisted service architecture, where multiple MEC servers and remote cloud offload computation-intensive tasks in a collaborative way \cite{Pang2021}, propose a hybrid transmission and reputation management strategy to accommodate the fast-changing IoV topology and to meet the low latency requirements of intelligent driving tasks.
+
+Recently, some works have been devoted to an IoV edge computing network, consisting of a cloud computing layer and MEC layer vehicle network architectures. But the Doppler effect in the high mobility of vehicles poses a challenge to V2I communication. interference caused by channel reuse in the vehicle scenario often leads to acutely poor communication quality. Vehicle equipment has a reduced tolerance for delay and transmission reliability, so higher requirements are put forward. Aliyu et al. \cite{Ahmed2016} proposed a systematic review of MCC energy-aware issues and grouped some research works on battery energy in MCC into dynamic and nondynamic energy-aware task offloading \cite{Dai2022}. \cite{Zhou2019} Proposed a hierarchical computing framework for vehicular networks which is composed of the control layer, the VEC server layer, and the vehicular network layer. Investigate the service scenario of cooperative computation offloading in MEC-assisted service architecture, where multiple MEC servers and remote cloud offload computation-intensive tasks in a collaborative way \cite{Pang2021}, propose a hybrid transmission and reputation management strategy to accommodate the fast-changing IoV topology and to meet the low latency requirements of intelligent driving tasks.
+
+In the V2I networks, the authorized vehicles with spectrum resources can directly communicate to the RSU. However, the scarce spectrum resources appear inadequate in high-density vehicular networks \cite{Xie2020}. Zhou et al. \cite{Zhou2017} investigated dynamic sharing of the 5G spectrum and proposed a sharing architecture of DSRC and the 5G spectrum for immersive experience-driven vehicular communications. Tran et al. \cite{Tran2019} design a holistic solution for joint task offloading and resource allocation in a multi-server MEC-assisted network. As the vehicles transmitting to the same BS use different sub-bands, the up-link intra-cell interference is well mitigated. It can be see effective channel reusing is crucial \cite{Liang2021}.
+
+When the fast-moving vehicles communicate with different MEC servers in different time slots, and each MEC can only connect with vehicles within its coverage, the generated Doppler effect has a significant influence on the small-scale fading of CSI and thereby causing fast channel variations. In other words, the CSIs used are outdated. First-order Gauss-Markov process is adopted to describe the impacts of the Doppler frequency shift on the channel in \cite{Liu2019}. So the temporal correlation coefficient is a function of the speed $\nu$ and decreases as $\nu$ increases, the average sum-rate degenerates as $\nu$ grows larger, which means that a larger speed probably endows the acquisition of real-time CSI with more difficulty \cite{Chen2022}. Therein, the Bernstein approximation method has commonly been used to deal with this difficult handling non-convex problem \cite{Wang2015}. To deal with the interference constraint, the probability constraint is constructed to depress the uncertain co-channel interference. And the Bernstein approximation method is used to transform it into a solvable closed form. To deal with the outage probability constraint, we assume the CSIs are obtained through channel estimation \cite{Xiao2020}. Therefore, the outage constraint is transformed according to the Bernstein-type inequality to make it a deterministic optimization problem. Based on the characteristics of our constraints, Bernstein method is also used in this paper.
+
+Moreover, due to the outstanding performance in low communication delay and computing delay, Li et al. introduce the outage probability constraint to guarantee the reliability of vehicular links \cite{Li2020}. Considering that the exact expression contains the exponential integral function, to make it tractable, consider an approximate closed-form expression such that the computational complexity can be reduced.
+
+Some papers focused on the problem of computation offloading in the vehicle computing scenario. Tan and Hu \cite{Tan2018} designed a joint communication, caching and computing problem for achieving the operational excellence and the cost efficiency of the vehicular networks. \cite{Wang2020} formulated the problem as a generalized NE problem and presented a game theory algorithm to analysis the equilibrium problem. In summary, most of the existing works did not consider a holistic approach that jointly power control and the computing resource allocation in a multi-vehicles, multi-MEC system as considered in this paper.
+
+It is assumed in \cite{Wang2020} that the vehicles use a constant transmit power while our approach optimizes vehicle¡¯s transmit power. However, it seems like a new problem because the objective function is difficult to handle. Nemirovski and Shapiro have proposed a convex approximation approach in \cite{Nemirovski2007} that can solve it. Aiming at the non-convex of the problem with two variables, Some research decouples the original problem into two subproblems and deploys the block coordinate descent (BCD).
+\subsection{Contributions}
+In this paper, a robust power control and task offloading algorithm is proposed for the cloud assisted MEC in vehicular networks with highly dynamic vehicles. The communication delay and computing delay are guaranteed by probabilistic constraints, and vehicle QoS is also guaranteed in the framework. The main contributions of this paper include the following aspects:
+
+The main contributions are summarized as follows:
+\begin{itemize}
+
+  \item We present a C-MEC vehicular networks for computation offloading architecture. For MEC layer, which has moderate computation capacity and deploys close to networks, can be used to assist the vehicles. Cloud computing layer, can be used to process the large-scale, delay-insensitive data that MEC layer can not process.
+  \item Considering the channel uncertainty caused by the high-speed movement of vehicles in the scenario of the Internet of Vehicles, the first-order Markov process is introduced. A reasonable and feasible IoV network environment is constructed to more realistically describe the dynamic characteristics of the Internet of Vehicles. The Bernstein approximation method previously used in interference constraints is improved and generalized, and it is applied to the matrix form of interruption probability to deal with non-convex outage constraint in large-scale dynamic vehicle network environments to ensure the quality of network communication services.
+  \item Our proposed algorithm considers cross-layer computation and communication resources to guarantee the vehicle QoS and various task requirements under C-MEC vehicular networks.
+\end{itemize}
+
+The remainder of this article is organized as follows: the model of power control and task offloading for cloud assisted MEC in vehicular networks is established de?nes in Section II. In Section III, the probability constraints and the objective function of the primal problem are formulated, and the optimization is proposed. In Section IV, simulation results and performance analysis are presented. Finally, we draw a conclusion in Section V.
+
+\section{System model}
+In this work, the road network is divided into multiple geographic zones within the RSU¡¯s coverage in Fig. 1, which is composed of the MEC layer, and the cloud computing layer hierarchical architecture of computation offloading, numerous vehicle-to-RSU (V2I) cells underlay a macro cell. In which each RSU is equipped with a MEC server to provide computation offloading services to the vehicles. The detailed offloading process is described as follows. Firstly, the vehicles offload request messages by the wireless interface, which includes required communication resources, the task ID and submission time, and the expected service delay of the task to the cloud. Secondly, the MEC server makes scheduling according to the received request messages, including the task upload server and task computation server. Finally, after task upload, the task waits in the computation queue until one of the processors is available. We denote the set of vehicles and MEC servers in the mobile system as $\mathcal{V}=\left\{1,\ 2,...,V\right\}$ and $\mathcal{M}=\left\{1,\ 2,...,M\right\}$, respectively. Some notations are given in Table I.
+\begin{remark}
+In this paper, we only consider the simplified single-segment case in order to derive a tractable solution. The more complicated multi-segment case is beyond the scope of this paper and will be investigated in future works. Nevertheless, the proposed solution can be easily extended to the multi-segment scenario by adopting a time division multiple access communication technology. That is, the number of vehicles in each segment remains constant within a slot and varies across different slots. Hence, time resource is divided into multi-frames, and each frame is divided into several time slots. Different vehicles access its time slots when they communicate with the RSU.
+\end{remark}
+\begin{figure}[H]
+\centering
+\includegraphics[width=9cm]{figures//model2.eps}
+\caption{System model.}
+\label{model}
+\end{figure}
+\begin{table}[!h]\label{II}
+\caption{Notations}
+\centering
+{\small\begin{tabular}{ll}
+\hline
+\hline
+$\textrm{Pr}\{\cdot\}$ & Probability function. \\
+%$\mathbit{E}\left(\mathbit{x}\right)$ & Exponential distribution. \\
+$\mathbb{R}^k$         & Set of $k$-dimensional real vectors.\\
+$\mathbf{f}$ &  Index set of computing resource. \\
+$\mathbf{p}$ &   Index set of vehicle's power. \\
+$\mathcal{M}$  & Index set of vehicles over a time slot $\mathcal{M}$$=$$\{1,2,\cdots,M\}$.\\
+$\mathcal{V}$  & Index set of all active vehicles $\mathcal{V}$$=$$\{1,2,\cdots,V\}$.\\
+$\textrm{E}\{\cdot\}$ &  Mathematical expectation of a random variable. \\
+%$\mathcal{J}$  & Index set of all CHs $\mathcal{J}$$=$$\{1,2,\cdots,N\}$. \\
+\hline
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Communication Model}
+Different from the traditional cellular communication, Due to the fast mobility of vehicles, their CSIs are hard to be estimated precisely. In particular, RSU can only achieve the accurate knowledge of large-scale fading $L^2$ of vehicular to RSU links while the small-scale fading $h$ is greatly influenced by the fast channel variations caused by the Doppler effect. We assume the CSIs are obtained through channel estimation \cite{Xiao2020}, Therefore, we model the small-scale fading channel estimation of $h$ by using the first-order Gauss-Markov process \cite{Kim2011} in each transmission time interval as follows,
+\begin{eqnarray}\label{E1}
+h=\xi{\widetilde{h}}+\sqrt{1-\xi^2}\zeta,
+\end{eqnarray}
+
+We assume that the estimated channel gain $\widetilde{h}$ denotes the estimate of $h$ and ${\widetilde{h}}^2$
+is exponentially distributed with unit mean \cite{Sakr2014}. Furthermore, $\xi\epsilon\left(0,1\right)$ represents the correlation coefficient over $v\rightarrow m$ link, and $\zeta$ stands for the channel gain and follows a complex Gaussian distribution $\zeta\sim\mathcal{CN}(0,\delta^2)$ and independent and uncorrelated of $\widetilde{h}$. The coefficient $\left(0<\zeta<1\right)$ quantifies the channel correlation between the two consecutive time slots and we assume that time correlation coefficient $\zeta$. is same for all VUEs. According to the Jakes statistical model for the fading channel \cite{Kim2011}, $\zeta$ is given as $\zeta=J_0\left(2\pi f_{max}T_s\right)$, where $J_0$ is the zero-order Bessel function of the first kind. $ f_{max}=\bar{\nu}f_c/c $ is the maximum Doppler frequency, where $\bar{\nu}$ indicates the vehicle speed, $f_c$ indicates the carrier frequency at 5.9 Ghz, and $c=3\times{10}^8m/s $, $T_s$ is a period feedback latency. erally, both transmitter vehicles and RSU can know the accurate $\zeta$.
+
+Based on the aforementioned discussion, the mobile V2I channel power gain of the effective links and interference links in $k$th time slot from $i$th transmitter to $j$th receiver can be expressed as a shared expression:
+\begin{eqnarray}\label{E2}
+G_{i,j}^k={\hat{g}}_{i,j}^k+{\widetilde{g}}_{i,j}^k,
+\end{eqnarray}
+
+Where ${\hat{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2$, $ {\widetilde{g}}_{i,j}^k=L_{i,j}^2\left(1-\xi_{i,j}^2\right)\zeta_{i,j}^2\ $, and $ {L_{i,j}^k}^2$ denotes the kth time slot large-scale fading effects including shadow-fading and path loss from $i$th transmitter to $j$th receiver on the road section. Moreover, ${\hat{g}}_{i,j}^k$ is an observed value. ${\widetilde{g}}_{i,j}^k$ denotes an exponential random variable with parameter,$E\left(\frac{1}{{L_{i,j}^k}^2\sqrt{1-{\zeta_{i,j}^k}^2}}\right)$.
+
+To improve the spectrum utilization and realize multi-vehicles joint communication, V2I communications reuse the same uplink channel. In this case, the Signal-to-Interference-plus-Noise Ratio (SINR) from vehicle $i$ to RSU can be formulated as,
+\begin{eqnarray}\label{E2}
+\gamma_i^v=\frac{p_ig_{i,j}}{\sum_{j=1,j\neq i}^{M}{p_jg_{j,i}}+\sigma^2}
+\end{eqnarray}
+
+Where $p_j $ denotes the transmit power of the $j$th vehicles, where $\sigma^2$ is the background noise. Therefore, the deterministic equivalent transmission rate of VUEs calculated by Shannon¡¯s theorem is,
+\begin{eqnarray}\label{E2}
+{R_i\left(P\right)=\log}_2{\left(1+\frac{p_ig_{i,j}}{\sum_{j=1,j\neq i}^{M}{p_jg_{j,i}}+\sigma^2}\right)}
+\end{eqnarray}
+
+Hence, the transmission time of vehicle $i$ when sending its task input $d_{i,up}$ in the uplink can be calculated as,
+\begin{eqnarray}\label{E2}
+t_{i,up}=\frac{d_{i,up}}{R_i\left(P\right)}
+\end{eqnarray}
+
+Where $W$ is the bandwidth of the reused channel. Therefore, the upload time of each V2I link can be formulated as,
+\begin{eqnarray}\label{E2}
+t_{i,up}=\frac{d_{i,up}}{W{\log}_2{\left(1+\frac{p_ig_{i,j}}{\sum_{j=1,j\neq i}^{M}{p_jg_{j,i}}+\sigma^2}\right)}}
+\end{eqnarray}
+
+And $d_{i,up}$ is the amount of input data including system settings, program codes, and input parameters, which is necessary to transfer the program execution.
+
+Communication delay is another significant index that affects the performance of wireless networks. The packets to V2I receivers must be in the queue before they transmit at the speed of $R_i$. It is assumed that the process of a packet arriving at the $i$th V2I receiver is a Poisson process with parameter $k_i$, and the length of the data packet obeys the exponential distribution of parameter $\tau_i$. We develop the M/M/1 model instructions the relationship between the expected delay and transmission rate of the $i$th V2I links can be expressed as,
+\begin{eqnarray}\label{E2}
+D_i=\frac{1}{{\tau_iR}_i-k_i}
+\end{eqnarray}
+
+\subsection{Vehicle Computing Model}
+We consider that each vehicle $v\in V$ has one different computation task at a time. denoted as $c_v$ [cycles] specifies the workload, i.e. the amount of computation to accomplish the task, that is atomic and cannot be divided into subtasks. The values of $c_v$ can be obtained through carefully profiling of the task execution \cite{Yang2015}. Each task should be offloaded to the MEC server and then transmission to the cloud server. By offloading the computation task to the MEC server, the vehicles would get more computing resources, however, it would consume additional time for sending the task input in the uplink.
+
+The MEC server at each RSU is able to provide computation offloading service to a vehicle at a time slot. The computing resources are quantified by the fixed rate $\bar{f}$, expressed in terms of number of CPU cycles/s. the vehicle $i$th uploads the input data of task to the nearest RSU, the RSU process the small-scale, delay-sensitive data first, then the RSU forward the remaining data to the remote cloud server, the cloud is able to provide computation offloading service to multiple RSU concurrently. The computing resources made available by cloud to be shared among the associating users are quantified by the computational rate $f_i$, it is still expressed in terms of number of CPU cycles/s. Thus, the latency for computing offloading can be written as,
+\begin{eqnarray}\label{E2}
+t_{i,exe}=\frac{c_{i,e}}{\bar{f}+f_i}
+\end{eqnarray}
+
+\subsection{Problem  Definition}
+Given the computing resource allocation $f_i$, the total delay experienced by vehicle $i$ when offloading its task is given by,
+\begin{eqnarray}\label{E2}
+ t_i=\frac{c_{i,e}}{\bar{f}+f_i}+T_c
+\end{eqnarray}
+
+The transmission latency between RSU and cloud server is defined as $T_c$, usually it is set to a fix value \cite{Xiao2020}, so the relative improvement in task completion time is characterized by,
+\begin{eqnarray}\label{E2}
+U_{i,exe}=\frac{t_{max}-t_{i,exe}}{t_{max}}
+\end{eqnarray}
+
+Where $t_{max}$ is the maximum tolerable threshold of the task completion time£¬If a task can be completed ahead of deadline $ t_{max}$, the vehicle can get a higher utility, otherwise, it will produce the corresponding loss.Therefore, we define the offloading utility of vehicle u as,
+\begin{eqnarray}\label{E2}
+\frac{U_{i,exe}}{t_{i,up}}
+\end{eqnarray}
+denote offloading time cost utilities at a unit.
+
+The joint task offloading and resource allocation will be formulated as an optimization problem in this section. And the goal is to obtain the minimum total system cost composed of latency and transmission rate for all vehicles in the networks. For a given uplink power allocation $\mathbf{p}$, and computing resource allocation $\mathbf{f}$, we define the system utility as the weighted-sum of all the vehicles¡¯ offloading utilities,
+\begin{eqnarray}\label{E2}
+U=\max\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
+\end{eqnarray}
+
+This utility means getting a more enormous execution time utility with a minor upload time cost. We now formulate the Joint Resource Allocation and Task Offloading Problem as a system utility maximization problem, i.e. The robust optimization problem is formulated as follows:
+\begin{subequations}
+\begin{align}\label{}
+&\  \textbf{P}:U=\max\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}} &
+\end{align}
+	\begin{numcases}{s.t.}
+	\textrm{Pr}\left\{\gamma_i\geq\gamma_{th}\right\}\geq1-\varepsilon_1,\\
+    \textrm{Pr}\left\{\frac{1}{\tau_iR_i-k_i}+\frac{c_{i,e}}{\bar{f}+f_i}\le D_{max}\right\}\geq1-\varepsilon_2,\\
+	\sum_{i=1}^{N}f_i\le f_{total},\\
+    0\le p_i\le p_{max}
+	\end{numcases}
+	\label{eq}
+\end{subequations}
+Where $U$ denotes the network utility, the constraints in the formulation above can be explained as follows: Constraints (13a) is used to guarantee the QoS requirements of VUEs, however, due to Large amount of computation caused by time varying network topologies, the real-time SINR is hard to obtain in vehicular communication scenario, and it can be replaced with the long-term SINR since the CSI feedback time interval is very small. $\gamma_i$ denotes the average SINR of the $i$th V2I link when a small CSI feedback time interval is used, in order to ensure that the task is successfully offloaded to the RSU, the SINR should be guaranteed to be no less than the SINR threshold \cite{liu2021}. $\gamma_{th}$ is the SINR threshold for successful detecting the V2I communication. $\textrm{Pr}\left\{\cdot\right\}$ defines the probability of the input. In this case, we introduce the outage probability constraint (13a) to guarantee the reliability of vehicular links \cite{Li2020}. $D_{max}$ is the delay bound of the $i$th V2I link in the process of data transmission. $\varepsilon_1$, $ \varepsilon_2 $ are the outage probability thresholds of SINR and delay constraint respectively, where $\varepsilon_1,\varepsilon_2\in\left(0,1\right)$. constraints (13c) state that each MEC server must allocate a positive computing resource to each user associated with it and that the total computing resources allocated to all the associated users must not excess the server¡¯s computing capacity, in another word, the number of applications served by a particular edge cloud should be within its capacity. (13b) denote the total latency of communication and computing should be guaranteed to be no less than the time threshold, $p_{max}$ is the maximum transmit power of the transmit vehicle in vehicle communication network, and the transmit power is greater than zero in (13d).
+\section{Problem solutions}
+In this section, we proposed a BCD-based algorithm to solve the problem (13). The BCD method enables the complex original problem to be decomposed into a succession of simpler subproblems \cite{Bertsekas1999}. Motivated by this fact, all variables are divided into two blocks and optimized alternatively.
+
+By fixing $\mathbf{f}$, the problem (13) can be transformed into the following problem.
+\begin{subequations}
+\begin{align}\label{}
+&\  \textbf{P1}:U=\max\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}} &
+\end{align}
+	\begin{numcases}{s.t.}
+	\textrm{Pr}\left\{\gamma_i\geq\gamma_{th}\right\}\geq1-\varepsilon_1\\
+    \textrm{Pr}\left\{\frac{1}{\tau_iR_i-k_i}+\frac{c_{i,e}}{\bar{f}+f_i}\le D_{max}\right\}\geq1-\varepsilon_2\\
+    0\le p_i\le p_{max}
+	\end{numcases}
+	\label{eq}
+\end{subequations}
+\subsection{Successive Convex Approximation of the Objective Function}
+Since the original problem is a non-convex and NP-hard because of the logarithmic function in the objective function, here, the method of successive convex approximation is adopted to relax the original problem and make objective function solvable. We can use the lower bound to approach the original function as follows,
+\begin{eqnarray}\label{E6}
+\begin{array}{ll}
+\alpha \ln{\left(z\right)}+\beta\le \ln{\left(1+z\right)}\\
+\left\{
+\begin{array}{ll} \hfill
+&\alpha=\frac{z_0}{1+z_0}\\
+&\beta=\ln{\left(1+z_0\right)}-\frac{z_0}{1+z_0}\ln{\left(z_0\right)}
+\end{array}
+\right.
+\end{array}
+\end{eqnarray}
+
+Each term of (14) can be represented by $A_k\ln\left(\gamma_k\left(e^{\widetilde{\mathbf{p}}}\right)\right)+B_k$ through successive convex approximation, where $A_k$ and $B_k$ can be chosen as $A_k=\gamma_i/\left(1+\gamma_i\right)$, $B_k=\ln{\left(1+\gamma_i\right)}-A_k\ln{\left(\gamma_i\right)}$, $A_k$=1, $B_k$=0, and each term of objective function can be written as follows,
+\begin{eqnarray}\label{E2}
+\frac{1}{\ln{2}}\sum_{i=1}^{M}{\frac{U_{i,exe}}{d_{i,up}}\left.\left[{A_k\ln{\left(\gamma\left(p\right)\right)}+B}_k\right.\right]}
+\end{eqnarray}
+
+It is still hard to directly calculation because of fractional from of SINR, we use variable substitution, i.e. ${\hat{p}}_i=ln{p_i}$, $p_i=e^{{\hat{p}}_i}$, then ${\hat{p}}_i\le l n{p_{max}},\ \forall\ \ 1\le i\le M$
+\begin{eqnarray}\label{E2}
+U=\max\frac{1}{ln{2}}\sum_{i=1}^{M}\left.\frac{U_{i,exe}}{d_{i,up}}\left[{A_k\ln{\left(\gamma\left(e^{\widetilde{P}}\right)\right)}+B}_k\right.\right]
+\end{eqnarray}
+
+\subsection{Approximate of the Outage Probability Constraint}
+It is obvious that the constraint (14a) includes uncertainties and the objective function is a non-convex problem in (14), so the objective function and constraints are difficult to deal with when determining the optimal solutions. It is necessary to design an algorithm with lower complexity to solve the problem. In this paper, For the uncertain channel gain. Considering the fast fading. Two common forms are adopted to describe the uncertainty mentioned above, i.e. the statistical constraints and deterministic constraints. to pursue a simple form of (14a), a matrix form is introduced, the general form the channel gain is described as,
+\begin{eqnarray}\label{E2}
+\textrm{Pr}\left\{\left(G_m\right)^Te^{\widetilde{p}}+\sigma^2\le0\right\}\geq1-\varepsilon_1
+\end{eqnarray}
+  b
+  ...
+Where $\textbf{G}_m=\left[G_{1,m},G_{2,m},\ldots,-\frac{G_{m,m}}{\gamma_{th}},\ldots,G_{M,m}\right]^T
+$, Furthermore, the Bernstein method is adopted to approximate the probability constraint with channel uncertainty
+
+Theorem 1: The outage probability of all cochannel V2I links $ \textrm{Pr}\left\{\gamma_i\le\gamma_{th}\right\}\geq1-\varepsilon_1$
+is reformulated as the separable constraints (14a)
+\begin{eqnarray}\label{E2}
+\sigma^2+\sum_{i=1}^{M}{\chi_{i,j}e^{{\widetilde{p}}_i}}+\sqrt{2\ln\left(\frac{1}{\varepsilon_1}\right)}\left(\sum_{m=1}^{M}\left(\sigma_{i,j}\beta_{i,j}p_i\right)^2\right)^\frac{1}{2}\le0,
+\end{eqnarray}
+
+Where $\chi_{i,j}=\mu_{i,j}^+\alpha_{i,j}+\beta_{i,j}+g_{i,j}$, these parameters (i.e. $\sigma_{i,j}$ and $\alpha_{i,j}$) are deduced to be positive in \cite{Liu2019}. Suppose that the truncated distributions of $G_{i,j}$ have bounded supports $\left[{\widetilde{g}}_{i,j}^k+\alpha_{i,j},{\widetilde{g}}_{i,j}^k+\beta_{i,j}\right]$, ${\widetilde{g}}_{i,j}^k$ is an estimate of $G_{i,j}$, Introduce constants $\alpha_{i,j}=\frac{1}{2}\left(b_{i,j}-a_{i,j}\right)$, $\beta_{i,j}=\frac{1}{2}\left(b_{i,j}+a_{i,j}\right)$ to normalize the supports to $\left[-1,1\right]$ as follows,
+\begin{eqnarray}\label{E2}
+\xi_{i,j}=\frac{G_{i,j}-{\widetilde{g}}_{i,j}^k-\beta_{i,j}}{\alpha_{i,j}}\in\left[-1,1\right],
+\end{eqnarray}
+
+In the last term of (19), the variables $p$ are coupled nonlinearly. Hence, directly finding an acceptably good solution to (14a) by the Bernstein method is time consuming when the K increases and the number of vehicles is large. Therefore, it is necessary to Introduced a $l_2-norm$ approximate problem for any $x\in \mathbb{R}^k$. Hence, the last term in (19) containing $l_2-norm$ of the vector is further approximated by $\parallel x\parallel_1\le\parallel x\parallel_2$. Based on these, the constraint in (14a) is further formulated as fellow with lower complexity and higher reliability,
+\begin{eqnarray}\label{21}
+\sigma^2+\sum_{i=1}^{M}{\chi_{i,j}e^{{\widetilde{p}}_i}}+\sqrt{2\ln\left(\frac{1}{\varepsilon_1}\right)}\sum_{i=1}^{M}{\left|\sigma_{i,j}\beta_{i,j}\right|e^{{\widetilde{p}}_i}}\le0
+\end{eqnarray}
+
+To pursue a simple form of (21), we define
+\begin{eqnarray}\label{22}
+\ \mathrm{\Pi}_i=\sigma^2+\sqrt{2\ln\left(\frac{1}{\varepsilon_1}\right)}\sum_{i\neq j}^{M}{\left|\sigma_{i,j}\beta_{i,j}\right|e^{{\widetilde{p}}_i}}
+\end{eqnarray}
+
+The constraint (14b) can be handled by an Integral transformation method, According to constraint (14b), where $D_{max}=D_1+D_2 $, $D_1=\frac{1}{\tau_iR_i-k_i} $, $ D_2=\frac{c_{i,e}}{f_i} $, $ X={\widetilde{h}}^2$ is an exponential random variable with unit mean, i.e.,$X\sim e x p{\left(1\right)}$, we can get the feasible power region of the communication delay probability as follows,
+\begin{eqnarray}\label{E2}
+\left.\left[\ln\left(1-\varepsilon_2\right)-{\hat{g}}_{i,j}^k\right.\right]e^{{\widetilde{p}}_i}+D^\ast\ \le0
+\end{eqnarray}
+
+The proof of the feasible region can be found as follow,
+\begin{proof}
+The probability constraint of (14b) can be transformed to the deterministic one according to the following inference
+\begin{equation}
+\begin{array}{ll}
+\textrm{Pr}\left\{\frac{1}{\tau_iR_i-k_i}+\frac{c_{i,e}}{f_i}\le D_{max}\right\}\\
+=\textrm{Pr}\left\{R_i\geq\frac{1}{R_i\left(D_{max}-D_2\right)}+\frac{k_i}{\tau_i}\right\}\\
+\le1-\textrm{Pr}\left\{p_i{\widetilde{g}}_{i,j}^k\le\left(I_{th}+\sigma^2\right)2^\frac{1+k_i\left(D_{max}-D_2\right)}{\tau_i\left(D_{max}-D_2\right)}-p_i{\hat{g}}_{i,j}^k\right\}\\
+=1-\int_{0}^{\left(I_{th}+\sigma^2\right)2^\frac{1+k_i\left(D_{max}-D_2\right)}{\tau_i\left(D_{max}-D_2\right)}-p_i{\hat{g}}_{i,j}^k}{e^{-x}dx}\geq1-\varepsilon_2
+\end{array}
+\end{equation}
+
+Then, we have the equivalent result of the inequality function in (24) as
+\begin{eqnarray}\label{E2}
+\left.\left[\ln\left(1-\varepsilon_2\right)-{\hat{g}}_{i,j}^k\right.\right]e^{{\widetilde{p}}_i}+D^\ast\ \le0
+\end{eqnarray}
+Where,$D^\ast=\left(I_{th}+\sigma^2\right)2^\frac{1+k_i\left(D_{max}-D_2\right)}{\tau_i\left(D_{max}-D_2\right)}$
+\end{proof}
+In summary, we can obtain a deterministic optimization problem of robust power allocation by transforming the objective function, outage probability constraints, delay constraints. It is expressed as,
+\begin{subequations}
+\begin{align}\label{}
+&\ \textbf{P1}:\max\frac{1}{\ln{2}}\sum_{i=1}^{M}\left.\frac{U_{i,exe}}{d_{i,up}}\left[{A_k\ln{\left(\gamma\left(e^{\widetilde{P}}\right)\right)}+B}_k\right.\right] &
+\end{align}
+	\begin{numcases}{s.t.}
+	\sum_{i=1}^{M}{\chi_{i,j}e^{{\widetilde{p}}_i}}+\mathrm{\Pi}_i\le0\\
+    \left.\left[\ln\left(1-\varepsilon_2\right)-{\hat{g}}_{i,j}^k\right.\right]e^{{\widetilde{p}}_i}+D^\ast\
+    \le0\\
+    -\infty\le{\widetilde{p}}_i\le \ln{p_{i,max}}
+	\end{numcases}
+	\label{eq}
+\end{subequations}
+
+\subsection{Optimal Power Control Algorithm}
+To pursue an iterative algorithm for solving the problem, Lagrange method is used to maximize the lower bound of the original objective under given coefficients $X_i$ and $Y_i$. It is noted that these two coefficients should be updated to guarantee a monotonic increase in the lower bound performance.
+
+Hence, the Lagrangian function of (26) under fixed coefficients $X_i$ and $Y_i$ can be expressed as,
+\begin{align}\label{}
+L\left(\widetilde{\mathbf{p}},\lambda,\mu\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}{\frac{U_{i,exe}}{d_{i,up}}\left[A_kln{\left({\bar{\gamma}}_k\left(e^{\widetilde{\mathbf{p}}}\right)\right)}+B_k\right]}\\
+\notag-\mu_k\Big[\left(ln\left(1-\varepsilon_2\right)-{\hat{g}}_{i,j}^k\right)e^{{\widetilde{p}}_i}+D^\ast\Big]\\
+-\lambda_k\Big[\sum_{i=1}^{M}{\chi_{i,j}e^{{\widetilde{p}}_i}}{+\mathrm{\Pi}}_i\Big]\notag,
+\end{align}
+
+Where $\lambda_k$ and $\mu_k$ are the Lagrangian multipliers, and $\lambda_k\geq0$, $\mu_k\geq0$.
+
+The power vector $\mathbf{p}$ iteration function is obtained by
+\begin{align}\label{}
+\frac{\partial L\left(\mathbf{p},\lambda,\mu\right)}{\partial p_i}=A_i-\Bigl[\sum_{j=1,j\neq i}^{M}\left(A_j\frac{{\bar{\gamma}}_j\left(e^{\widetilde{p}}\right){\bar{G}}_{k,j}}{e^{{\widetilde{p}}_j}{\bar{G}}_{j,j}}\right)\\
++\lambda_i\mathrm{\Pi}_ie^{-{\widetilde{p}}_i}+\mu_i{\hat{g}}_{i,j}^k\Bigl]e^{{\widetilde{p}}_i}=0\notag
+\end{align}
+
+Based on (28), the iteration for the power allocation , can be formulated as,
+\begin{align}
+{\widetilde{p}}^{\left(t+1\right)}=\Big[ln{A_i}+ln\left(\sum_{j=1,j\neq i}^{M}\left(A_j\frac{{\bar{\gamma}}_j\left(e^{\widetilde{p}}\right){\bar{G}}_{k,j}}{e^{{\widetilde{p}}_j}{\bar{G}}_{j,j}}\right)
+\notag\Big.\notag\right.\\\phantom{=\;\;}\Big.+\lambda_i\mathrm{\Pi}_ie^{-{\widetilde{p}}_i}\Big.+\mu_i\hat{g}\Big)
+\Big]_{-\infty}^{ln{p_{max}}}
+\end{align}
+
+The Lagrangian multiplier $\lambda$, $\mu$, are updated through the sub-gradient method, which are formulated as,
+\begin{equation}
+\lambda_i^{\left(t+1\right)}=\left[\lambda_i^{\left(t\right)}+K_\lambda^{\left(t\right)}\left(\sum_{j\neq i}^{M}{\chi_{i,j}e^{{\widetilde{p}}_j}}+\mathrm{\Pi}_i\right)\right]^+
+\end{equation}
+\begin{equation}
+\mu_{i,j}^{\left(t+1\right)}=\left[\mu_{i,j}^{\left(t\right)}+K_\mu\left(\left(\ln\left(1-\varepsilon_2\right)-{\hat{g}}_{i,j}^k\right)e^{{\widetilde{p}}_i}+D^\ast\right)\right]^+
+\end{equation}
+
+Where $K_\lambda$, $K_\mu$ denote the step-size, and $K_\lambda\geq0$, $K_\mu\geq0$. $t$ denotes the iteration index. $\left[x\right]^+=\max{\left[0,x\right]}$.
+\subsection{Computing Resource Allocation}
+After obtaining $\mathbf{p}$, the formulated problem with respect $\mathbf{f}$ reformulated by:
+\begin{subequations}
+\begin{align}\label{}
+&\  \textbf{P2}:\max\sum_{i=1}^{N}\frac{U_{i,exe}}{t_{i,up}} &
+\end{align}
+	\begin{numcases}{s.t.}
+	\textrm{Pr}\left\{\gamma_i\le\gamma_{th}\right\}\geq1-\varepsilon_1\\
+    \textrm{Pr}\left\{\frac{1}{\tau_iR_i-k_i}+\frac{c_{i,e}}{\bar{f}+f_i}\le D_{max}\right\}\geq1-\varepsilon_2\\
+    0\leq P_i\leq P_{i, max}
+	\end{numcases}
+	\label{eq}
+\end{subequations}
+
+Notice that the constraints in (32a) and (32b) are convex, by calculating the second-order derivatives of $f_i$, the Lagrangian function is constructed to seek the optimal powers. Hence, (32) is a convex optimization problem and can be solved using Karush-Kuhn-Tucker (KKT) conditions. The Lagrangian function of (32) is formulated as,
+\begin{equation}
+\begin{aligned}
+U\left(\mathbf{f},\xi,\varphi\right)=\sum_{i=1}^{M}{\frac{R_i\left(P\right)}{\ln{2}\ast d_{i,up}}\left[1-\left(\frac{c_{i,e}}{t_{max}\left(\bar{f}+f_i\right)}+\frac{T_c}{t_{max}}\right)\right]}\\-\xi_k\left(\frac{1}{\tau_iR_i-\lambda_i}+\frac{c_{i,e}}{\bar{f}+f_i}\ \le D_{max}\right)-\varphi_k\left[\sum_{i=1}^{M}f_i-f_{total}\right]
+\end{aligned}
+\end{equation}
+Based on (33), the iteration for the computing resource allocation, can be formulated as, In order to prove the concavity of (32), the following research is taken. The first-order derivative of $U\left(\mathbf{f},\xi,\varphi\right)$ with respect to $f_i$ is,
+\begin{equation}
+\frac{\partial U\left(\mathbf{f},\xi,\varphi\right)}{\partial f_i}=\frac{c_{i,e}}{ln{2}\ast d_{i,up}t_{max}\left(\bar{f}+f_i\right)^2}=\frac{\mathrm{\Omega}_i}{\left(\bar{f}+f_i\right)^2}
+\end{equation}
+in which, for simplicity $$\mathrm{\Omega}_i=\frac{c_{i,e}}{\ln{2}\ast d_{i,up}\ast t_{max}}$$
+The second-order derivative of is obtained further as,
+\begin{equation}
+\frac{\partial^2U}{\partial f_i^2}=-\frac{2\cdot\mathrm{\Omega}_i}{\left(\bar{f}+f_i\right)^3}\le0
+\end{equation}
+It is obvious that the second-order derivative of $U\left(\mathbf{f},\xi,\varphi\right)$ with respect to $f_i$ is always less than zero. Therefore, $U\left(\mathbf{f},\xi,\varphi\right)$ is a concave function about $f_i$, Hence, (32) is a convex optimization problem and can be solved using Karush-Kuhn-Tucker (KKT) conditions.
+\begin{equation}
+\frac{\partial u\left(\mathbf{F},\xi,\varphi\right)}{\partial f_i}=\frac{\mathrm{\Omega}_iR_i\left(P\right)}{\left(\bar{f}+f_i\right)^2}-\xi_k\frac{c_{i,e}}{\left(\bar{f}+f_i\right)^2}-\sum_{i=1}^{N}\varphi_k=0
+\end{equation}
+Let$$
+\frac{\partial u\left(\mathbf{F},\xi,\varphi\right)}{\partial f_i}=0
+$$the optimal computing resource allocation is:obtained by
+\begin{equation}
+{f_i}^\ast=\sqrt{\frac{\mathrm{\Omega}_yR_i\left(P\right)-{c_{i,e}\xi}_k}{\sum_{i=1}^{N}\varphi_k}}-\bar{f}
+\end{equation}
+The iterative expression is as follows,
+\begin{equation}
+{\widetilde{f}}^{\left(t+1\right)}=\left[\sqrt{\frac{\mathrm{\Omega}_yR_i\left(P\right)-{c_{i,e}\xi}_k}{\sum_{i=1}^{M}\varphi_k}}-\bar{f}\right]_0^{f_{total}\ }
+\end{equation}
+The Lagrangian multiplier $\eta$, $\varphi$, are updated through the sub-gradient method, which are formulated as,
+\begin{equation}
+\xi_i^{\left(t+1\right)}=\left[\xi_i^{\left(t\right)}+K_\xi^{\left(t\right)}\left(\frac{1}{\tau_iR_i-\lambda_i}+\frac{c_{i,e}}{\bar{f}+f_i}-D_{max}\right)\right]^+
+\end{equation}
+\begin{equation}
+\varphi_{i,j}^{\left(t+1\right)}=\left[\varphi_{i,j}^{\left(t\right)}+K_\varphi\left(\sum_{i=1}^{M}f_i-f_{total}\right)\right]^+
+\end{equation}
+
+With the above efforts, we successfully transform the original problem into two convex subproblems. Then, an alternative iterative algorithm which is summarized in Algorithm 1 is proposed to solve them.
+\begin{algorithm}[ht]
+\caption{Joint Robust Power Control Task Offloading Scheduling Algorithm}
+\small{\begin{algorithmic}[1]
+\STATE \textbf{Input:} Set the maximal iterative number $\mathcal{T}_{max}$, and the iterative index $t=0$.
+%\STATE \textbf{Initialization:} $\mathbf{P}^i[n], \mathbf{q}^i[n], \boldsymbol{\Upsilon}_k^i[n]$,
+\REPEAT
+\STATE Given feasible points $\lambda, \mu, \mathbf{f}$.
+\STATE Solve problem $P_1$, and obtain the current optimal solution ${\widetilde{p}}^{\left(t+1\right)}$.
+\STATE Given feasible points $\xi, \varphi, \mathbf{p}$.
+\STATE Solve the problem $P_2$, and obtain the current optimal solution ${\widetilde{f}}^{\left(t+1\right)}$.
+\UNTIL synchronously converge to the optimal solutions or $t\geq\mathcal{T}_{max}$
+\STATE \textbf{Output:} $\mathbf{f},\mathbf{p}$.
+\end{algorithmic}}
+\end{algorithm}
+\begin{remark}
+Algorithm1 contains a loop whose time complexity is described by the maximal loop count, $\mathcal{T}_{max}$. Since there are $V$ clusters which use their power iterations for power optimization, the computational complexity of the Algorithm1 is $O(V\mathcal{T}_{max})$.
+\end{remark}
+\section{Simulation results and performance analysis}
+In this section, numerical simulations are presented to evaluate the performance of the proposed Algorithm1. A MEC-based vehicular network system which includes five clusters under a certain time slot is selected as our fundamental simulation scenario. The major system parameters are listed in Table II. It is noted that the bandwidth W is set as 10 MHz in the numerical simulations. We assume that both the vehicles and RSUs use a single antenna for uplink transmission and reception, respectively,and the variation of the vehicles¡¯ speed is negligible within the reference time interval. Unless stated otherwise, the parameter value of $\gamma_{th}$ is set to ${10}^{-6}$, the outage probability threshold $\varepsilon_1=\varepsilon_2=0.1$.
+
+\begin{table}[h!]
+	\centering
+\caption{\label{tab:the3} System parameters}
+{\scriptsize%×ÖÌå´óÐ¡
+  %\resizebox{\textwidth}{0.9cm}
+  {
+\begin{tabular}{|l|l|}
+\hline
+  $\bf{Parameter}$ & $\bf{Value}$ \\\hline
+Carrier frequency $(f_c)$        & 5.9 GHz  \\\hline
+%Cluster effective communication radius $(R)$        & 15 m  \\\hline
+Radio Range $(R_a)$   & $300$ m  \\\hline
+CSI feedback period of vehicle $(T)$    & 1 ms  \\\hline
+ Average speed of vehicle  & 30 m/s \\\hline
+ Mean of background noise $(\sigma^2)$  &  -30 dBm  \\\hline
+Maximum transmitter power $(p_{i,max})$ & 0.05 W \\\hline
+Log-normal shadowing standard deviation &10 dB \\\hline
+Pathloss model &$d^{-\theta}$, $d$ in m\\\hline
+Pathloss exponent $(\theta)$&3
+\\\hline
+\end{tabular}}}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=7cm]{figures//pp.eps}
+\caption{Power convergence performance.}
+\label{F3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=7cm]{figures//ff.eps}
+\caption{computing resource which cloud allocation to RSU.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=7cm]{figures//ee.eps}
+\caption{Comparison of average system utility.}
+\end{figure}
+
+Fig. 1 and Fig. 2 show the power allocation of each vehicle transmitter and the corresponding computing resource which cloud allocation to RSU in Algorithm1, respectively. It can be seen that the computing resources allocated in the cloud peak at the fifth iteration and begin to decline because of the limitation of total computing resources $f_{total}$ from the cloud. The corresponding power resource allocation also changes due to computing resources allocation under Joint Robust Power Control and Task Offloading Scheduling.
+
+This phenomenon is reasonable due to the definition of $U$ in (12). $R_i$ increases logarithmically as the power vector $\mathbf{p}$ increases, the upload time $t_{i,up}$, as the denominator of $U$, will decrease with the increase of power vector $\mathbf{p}$ and as the executive utility of the numerator part,$t_{i,exe}$ decreases inversely proportional with the increase of computing power $\mathbf{f}$,causing the numerator to increase with the increase of $\mathbf{f}$.
+
+In the MEC-Enabled vehicular cloud system. It is unrealistic not to take into account the mobility of the vehicle, we then investigated the impact of vehicle mobility on system performance. Assume the variation of the vehicles¡¯ speed is negligible within the reference time interval. In order to further illustrate the influence of speed-induced Doppler shift on system performance, the comparison experiment between the benchmark value and the increasing speed measurement under the condition of constant vehicle speed is simulated in the system.
+
+Since the relative speed in the V-RSU link is zero, And the speed of all vehicles is the same in the same network there is no Doppler effect. Then the vehicle speed on the road is set to 20 m/s, 30 m/s, 40 m/s, 50 m/s and 60 m/s, respectively£¬It can be seen from Fig. 5 that with the increase of vehicle speed, the utility value of the vehicular network decreases, This is because the higher speed will cause a greater Doppler frequency shift in the network, increase channel uncertainty. The result also proves that methods tend to obtain better utility when the vehicle speed Is low.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//diffspeed.eps}
+\caption{Comparison of average system utility against different speed.}
+\end{figure}
+In order to further verify the performance of the proposed scheme after considering the mobility of the vehicle, the figure.6 describes the effect of the same speed and different speeds of each vehicle under different $\varepsilon_1$ on the total utility, and it can be seen from the figure that with the change of $\varepsilon_1$, the system utility also changes, and the utility at different speeds of each vehicle is higher than that of all vehicles at the same speed, which characterizes the high robustness of the proposed method in complex dynamic vehicle networks.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//diff_e1.eps}
+\caption{Comparison of average system utility against different $\varepsilon_1$.}
+\end{figure}
+
+In terms of computing resources allocation, we choose the default task input size as $ d_u=420KB$ (following \cite{Xu2015}),We now evaluate the system utility performance against different benchmark schemes. The purpose of this section is to show the convergence of our proposed algorithm and its performance is better than three benchmark schemes through some simulation results. The benchmark schemes are described as follow
+\begin{itemize}
+\item[1)]``Independent Offloading and power control'' (denoted as ``IOP''):the vehicles independently make power control and the computing resources allocation.
+\item[2)]``¡°Without vehicle power control''(denoted as ``Without-VPC''):The transmit power of the vehicles is set as average power during the offloading.
+\item[3)]``¡°Without computing resources allocation'': (denoted as ``Without-CRA''),The transmit power of the vehicles is set as average power during the offloading.
+    %Similar to [?]
+\end{itemize}
+Fig. 6 is the iterative convergence of the total utility of the system in different cases, and it can be seen from the figure that the robust joint optimization performance is better than the other three cases. It can be seen that with the increase of the number of iterations, the four methods converge to a stable value, among which the performance of proposed scheme is the best.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//compare.eps}
+\caption{ transmission rate under different numbers.}
+\end{figure}
+In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, so we set the CPU task lode (Megzcycles) of the five vehicles to 1600, 1700, 1800, 1900, 2000.
+
+As we can see, with the increase of the ratio of iteration, the average system utility of vehicles changes gradually and tends to be stable. In the independent optimization process, the computing resource allocation is carried out first, and the optimal power allocation is not known at this time, and the power and computing resource alternate optimization method is used, and the corresponding optimal value can be obtained for each iteration. Individual optimization is to first optimize the power $\mathbf{p}$, and after obtaining the result, the result is used for the optimization of computing resources, and then the computing resources are optimized, and finally, the utility of the system is obtained.However, if joint optimization is used, then both variables can get the optimal value.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//diff_dup.eps}
+\caption{Comparison of average system utility against different task input size.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//diff_total.eps}
+\caption{Comparison of average system utility against different $f_{total}$.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figures//diff_c.eps}
+\caption{Comparison of average system utility against different task workloads.}
+\end{figure}
+The average system utility of the four competing schemes are plotted in Fig.8 with different values of $d_u$. It can be seen that the average system utilities of all schemes decrease with the task input size. Moreover, we observe that the performance gains of the proposed scheme over the other schemes also follow the similar trend.
+The total system cost comparisons with different $f_{total}$ are shown in Fig.9. Due to the limited computation capability at the cloud, when the computation capability is small, the system utility tend to small.
+We can clearly see that as the data size increases, the system utility tend to small. This is because when the tasks require more upload time with more data size.
+\section{Conclusions}
+This paper focuses on the Joint Task Offloading and Resource Allocation for Mobile-Edge Computing Enable Vehicular Networks with channel uncertainty and co-channel interference.
+The optimization scheme attempt to guarantees vehicles¡¯ QoS when there exists a maximized utility requirement. Due to the existence of channel uncertainty, the probability forms of interference, delay, and delivery rate constraints are performed. The underlying optimization problem was formulated as a Mixed-Integer Non-linear Program (MINLP), which is very difficult to solve to optimal, then the SCA technique is applied to transform the non-convex problem of variables coupling into a treatable convex problem. The Task Offloading and power allocation algorithm is developed to achieve practical execution scheme. Simulation results showed that our heuristic algorithm performs closely to the optimal solution and significantly improves the average system offloading utility over traditional approaches.
+\bibliography{reference}
+\bibliographystyle{IEEEtran}
+\end{document}

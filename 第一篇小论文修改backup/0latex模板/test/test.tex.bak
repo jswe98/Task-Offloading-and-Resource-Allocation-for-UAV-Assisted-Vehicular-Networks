@@ -1,0 +1,82 @@
+\documentclass[twocolumn]{IEEEtran}
+%\documentclass[onecolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[nocompress]{cite}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{epstopdf}
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{\bf Definition}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\usepackage{extarrows}
+\usepackage{amsfonts}
+\usepackage{algorithm, algorithmic}
+\usepackage{color}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+
+\makeatletter
+\newcommand{\ALOOP}[1]{\ALC@it\algorithmicloop\ #1
+\begin{ALC@loop}}
+\newcommand{\ENDALOOP}{\end{ALC@loop}\ALC@it\algorithmicendloop}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\algorithmicbreak}{\textbf{break}}
+\newcommand{\BREAK}{\STATE \algorithmicbreak}
+\makeatother
+\ifCLASSINFOpdf
+\else
+\fi
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+\title{}%{Covert Communication in Joint Radar and Communication System}
+\markboth{Manuscript}{?}
+\maketitle
+\begin{abstract}
+\end{abstract}
+\begin{keywords}
+\end{keywords}
+\section{Conclusions}
+Test
+
+
+
+\begin{document}
+
+ The author \citet{toschi09} has shown that ..
+
+\bibliographystyle{plain}
+\bibliography{foo}
+
+\end{document}
+
+$C=B{\log}_2{\left(1+\frac{S}{I+N_0}\right)}$,MS Word
+
+$C=B{{\log }_{2}}\left( 1+\frac{S}{I+{{N}_{0}}} \right)$,Mathtype
+
+
+
+
+
+
+
+
+
+
+
+\bibliography{reference}
+\bibliographystyle{IEEEtran}
+%\bibliography{IEEEabrv,reference}
+\end{document}
