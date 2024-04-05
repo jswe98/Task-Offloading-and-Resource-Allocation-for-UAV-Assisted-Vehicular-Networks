@@ -1,0 +1,42 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Computing_Enable_Vehicular_Networks.aux
+The style file: IEEEtran.bst
+Database file #1: ./reference/reference.bib
+You're missing a field name---line 31 of file ./reference/reference.bib
+ : 
+ : %doi = {https://doi.org/10.1016/B978-0-12-407948-9.00010-4},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 53 of file ./reference/reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 67 of file ./reference/reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/5/2553},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 99 of file ./reference/reference.bib
+ :   
+ :   %volume = {PP},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 123 of file ./reference/reference.bib
+ : 
+ : %URL = {https://www.mdpi.com/2073-8994/11/1/58},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 136 of file ./reference/reference.bib
+ :   
+ :   %https://www.sciencedirect.com/science/article/abs/pii/S1570870522002165
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author in ROSS2014607
+Warning--edition ordinal word "Eleventh Edition" may be too high (or improper) for conversion in ROSS2014607
+Warning--empty journal in Bertsekas1999
+
+Done.
+(There were 6 error messages)
