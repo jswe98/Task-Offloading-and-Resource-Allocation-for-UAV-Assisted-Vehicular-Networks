@@ -1,0 +1,125 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kivshar(2008)]{Kivshar2008}
+\textup{Kivshar Y~S}.
+\newblock Nonlinear Optics: The Next Decade [J].
+\newblock Opt. Express, 2008, 16(26): 22126--22128.
+
+\bibitem[Knight et al.(1996)]{Knight1996}
+\textup{Knight J~C, Birks T~A, Russell P~S~J}, et al.
+\newblock All-silica Single-mode Optical Fiber with Photonic Crystal Cladding
+  [J].
+\newblock Opt. Lett., 1996, 21(19): 1547--1549.
+
+\bibitem[姚建铨~等(2009)]{yaojianquan2009}
+\textup{姚建铨, 迟楠, 杨鹏飞, 等}.
+\newblock 太赫兹通信技术的研究与展望 [J].
+\newblock 中国激光, 2009, 36(9): 2213--2233.
+
+\bibitem[Knight et al.(2000)]{Knight2000}
+\textup{Knight J, Arriaga J, Birks T}, et al.
+\newblock Anomalous Dispersion in Photonic Crystal Fiber [J].
+\newblock Photonics Technology Letters, IEEE, 2000, 12(7): 807 --809.
+
+\bibitem[Knight and Russell(2002)]{Knight2002}
+\textup{Knight J~C, Russell P~S~J}.
+\newblock New Ways to Guide Light [J].
+\newblock Science, 2002, 296(5566): 276--277, April 12, 2002.
+
+\bibitem[John(1987)]{John1987}
+\textup{John S}.
+\newblock Strong Localization of Photons in Certain Disordered Dielectric
+  Superlattices [J].
+\newblock Phys. Rev. Lett., 1987, 58(23): 2486--2489.
+
+\bibitem[Jing and Yao(2010)]{Jing2010}
+\textup{Jing L, Yao J~Q}.
+\newblock A Ferroelectric Polyvinylidene Fluoride-coated Porous Fiber Based
+  Surface-plasmon-resonance-like Gas Sensor in the Terahertz Region [J].
+\newblock Optoelectronics Letters, 2010, 6: 321--324.
+\newblock 10.1007/s11801-010-0092-6.
+
+\bibitem[Jeon et al.(2005)]{Jeon2005}
+\textup{Jeon T~I, Zhang J, Grischkowsky D}.
+\newblock Thz Sommerfeld Wave Propagation on a Single Metal Wire [J].
+\newblock Appl. Phys. Lett., 2005, 86(16): 161904.
+
+\bibitem[Jastrow et al.(2008)]{Jastrow2008}
+\textup{Jastrow C, Munter K, Piesiewicz R}, et al.
+\newblock 300 Ghz Transmission System [J].
+\newblock Electronics Letters, 2008, 44(3): 213 --214.
+
+\bibitem[Jackson et al.(2008)]{Jackson2008}
+\textup{Jackson J, Mourou M, Whitaker J}, et al.
+\newblock Terahertz Imaging for Non-destructive Evaluation of Mural Paintings
+  [J].
+\newblock Opt. Commun., 2008, 281(4): 527 -- 532.
+
+\bibitem[Huttunen and T\"{o}rm\"{a}(2005)]{Huttunen2005}
+\textup{Huttunen A, T\"{o}rm\"{a} P}.
+\newblock Optimization of Dual-core and Microstructure Fiber Geometries for
+  Dispersion Compensation and Large Mode Area [J].
+\newblock Opt. Express, 2005, 13(2): 627--635.
+
+\bibitem[Hou et al.(2008)]{Hou2008}
+\textup{Hou J, Bird D, George A}, et al.
+\newblock Metallic Mode Confinement in Microstructured Fibres [J].
+\newblock Opt. Express, 2008, 16(9): 5983--5990.
+
+\bibitem[Hilligs{\o}e et al.(2004)]{Hilligsoe2004}
+\textup{Hilligs{\o}e K~M, Andersen T, Paulsen H}, et al.
+\newblock Supercontinuum Generation in a Photonic Crystal Fiber with Two Zero
+  Dispersion Wavelengths [J].
+\newblock Opt. Express, 2004, 12(6): 1045--1054.
+
+\bibitem[Hassani et al.(2008)]{Hassani2008}
+\textup{Hassani A, Dupuis A, Skorobogatiy M}.
+\newblock Porous Polymer Fibers for Low-loss Terahertz Guiding [J].
+\newblock Opt. Express, 2008, 16(9): 6340--6351.
+
+\bibitem[Han et al.(2002)]{Han2002}
+\textup{Han H, Park H, Cho M}, et al.
+\newblock Terahertz Pulse Propagation in a Plastic Photonic Crystal Fiber [J].
+\newblock Appl. Phys. Lett., 2002, 80(15): 2634--2636.
+
+\bibitem[Zhu and Brown(2004)]{Zhu2004}
+\textup{Zhu Z, Brown T~G}.
+\newblock Polarization Properties of Supercontinuum Spectra Generated in
+  Birefringent Photonic Crystal Fibers [J].
+\newblock J. Opt. Soc. Am. B, 2004, 21(2): 249--257.
+
+\bibitem[Zhu and Brown(2001)]{Zhu2001}
+\textup{Zhu Z, Brown T}.
+\newblock Analysis of the Space Filling Modes of Photonic Crystal Fibers [J].
+\newblock Opt. Express, 2001, 8(10): 547--554.
+
+\bibitem[姜锡洲和林良乐(1989-07-26)]{jxz}
+\textup{姜锡洲, 林良乐}.
+\newblock
+\newblock 一种温热外敷药制备方案：中国，88105607.3 [P].
+\newblock 1989-07-26.
+
+\bibitem[于克信(2004)]{Yu2004}
+\textup{于克信}.
+\newblock 国有企业改革过程中的管理重组研究 [D].
+\newblock 上海: 复旦大学博士学位论文, 2004: 45--48.
+
+\bibitem[赵天书(2013)]{Zhao2013}
+\textup{赵天书}.
+\newblock 诺西肽分阶段补料分批发酵过程优化研究 [D].
+\newblock 沈阳: 东北大学硕士学位论文, 2013: 5--13.
+
+\bibitem[Li and Juang(1998)]{Li1998}
+\textup{Li Q, Juang B~H}.
+\newblock Speaker Verification Using Verbal Information Verification for
+  Automatic Enrollment [C]//.
+\newblock \textup{Editor}.
+\newblock ICASSP.
+\newblock Beijing: Publisher, 1998.
+
+\end{thebibliography}

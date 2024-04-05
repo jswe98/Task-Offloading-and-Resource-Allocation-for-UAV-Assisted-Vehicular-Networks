@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
+The style file: ysubst.bst
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/chap-intro.aux
+A level-1 auxiliary file: chapter/chap-2.aux
+A level-1 auxiliary file: chapter/chap-3.aux
+A level-1 auxiliary file: chapter/chap-4.aux
+A level-1 auxiliary file: chapter/chap-5.aux
+A level-1 auxiliary file: chapter/chap-6.aux
+A level-1 auxiliary file: chapter/chap-conclusion.aux
+A level-1 auxiliary file: chapter/appendix1.aux
+A level-1 auxiliary file: chapter/achive.aux
+A level-1 auxiliary file: chapter/thanks.aux
+format.conference.title is an unknown function---line 2787 of file ysubst.bst
+format.cconference.title is an unknown function---line 2822 of file ysubst.bst
+format.patent.continue.vol.num is an unknown function---line 2951 of file ysubst.bst
+format.patent.crossref is an unknown function---line 2959 of file ysubst.bst
+"}" can't start a style-file command---line 2967 of file ysubst.bst
+ : }
+ :  }
+Database file #1: bib/tex.bib
+You can't pop an empty literal stack for entry Kivshar2008
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Knight1996
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry yaojianquan2009
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Knight2000
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry John1987
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Jing2010
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Jeon2005
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Jastrow2008
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Jackson2008
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Huttunen2005
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Hou2008
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Hilligsoe2004
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Hassani2008
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Han2002
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhu2004
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhu2001
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry jxz
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry jxz
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li1998
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li1998
+while executing---line 3783 of file ysubst.bst
+(There were 25 error messages)

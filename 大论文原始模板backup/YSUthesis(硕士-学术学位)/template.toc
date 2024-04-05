@@ -1,0 +1,64 @@
+\let \CTEX@spaceChar \relax 
+\contentsline {chapter}{摘\hskip 1em\relax 要}{I}{chapter*.1}
+\contentsline {chapter}{\bf ABSTRACT}{II}{chapter*.1}
+\contentsline {chapter}{\numberline {第\nobreakspace {}1\ignorespaces \nobreakspace {}章\hspace {0.3em}}绪论}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}高楼大厦始于一砖一瓦}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}一个完整的章节实例}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}章节条款标题}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}条标题}{3}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}款标题}{3}{subsubsection.1.3.1.1}
+\contentsline {section}{\numberline {1.4}解决pdf文件复制出现乱码问题}{4}{section.1.4}
+\contentsline {chapter}{\numberline {第\nobreakspace {}2\ignorespaces \nobreakspace {}章\hspace {0.3em}}插图}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}单个居中图形}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}两个并排图形}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}两个以上的并排或者堆叠的图形}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}图题}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}图形的引用}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}本章小结}{8}{section.2.6}
+\contentsline {chapter}{\numberline {第\nobreakspace {}3\ignorespaces \nobreakspace {}章\hspace {0.3em}}表格}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}普通三线表}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}有合并列的三线表}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}特殊形式的表格}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}表题的生成}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}表格的引用}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}本章小结}{11}{section.3.6}
+\contentsline {chapter}{\numberline {第\nobreakspace {}4\ignorespaces \nobreakspace {}章\hspace {0.3em}}公式}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}上下标}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}分式}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}矢量点乘与叉乘}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}求和与积分}{13}{section.4.4}
+\contentsline {section}{\numberline {4.5}矩阵与数组}{14}{section.4.5}
+\contentsline {section}{\numberline {4.6}多行公式与对齐方法}{15}{section.4.6}
+\contentsline {section}{\numberline {4.7}带有大括号的方程组}{15}{section.4.7}
+\contentsline {section}{\numberline {4.8}特殊的公式}{16}{section.4.8}
+\contentsline {section}{\numberline {4.9}数学环境的使用}{17}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}定义}{18}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}定理及证明}{18}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}推论}{19}{subsection.4.9.3}
+\contentsline {subsection}{\numberline {4.9.4}引理}{19}{subsection.4.9.4}
+\contentsline {subsection}{\numberline {4.9.5}例子}{20}{subsection.4.9.5}
+\contentsline {section}{\numberline {4.10}本章小结}{20}{section.4.10}
+\contentsline {chapter}{\numberline {第\nobreakspace {}5\ignorespaces \nobreakspace {}章\hspace {0.3em}}参考文献}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}参考文献在正文和列表中格式要求}{21}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}在正文中的要求}{21}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}在列表中的要求}{21}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}单一参考文献}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}多个连续参考文献}{22}{section.5.3}
+\contentsline {section}{\numberline {5.4}多个不连续参考文献}{22}{section.5.4}
+\contentsline {section}{\numberline {5.5}本章小结}{22}{section.5.5}
+\contentsline {chapter}{\numberline {第\nobreakspace {}6\ignorespaces \nobreakspace {}章\hspace {0.3em}}数字物理量与单位}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}数字}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}单位}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}同时输入数字与单位}{23}{section.6.3}
+\contentsline {section}{\numberline {6.4}附1：国际标准单位与导出单位输入方式}{24}{section.6.4}
+\contentsline {section}{\numberline {6.5}本章小结}{24}{section.6.5}
+\contentsline {chapter}{结\hskip 1em\relax 论}{25}{chapter*.15}
+\contentsline {chapter}{\numberline {附录\nobreakspace {}A\hspace {0.3em}}程序代码的输入}{26}{appendix.A}
+\contentsline {section}{\numberline {A.1}插入程序代码}{26}{section.A.1}
+\contentsline {section}{\numberline {A.2}FORTRAN}{26}{section.A.2}
+\contentsline {section}{\numberline {A.3}MATLAB}{26}{section.A.3}
+\contentsline {section}{\numberline {A.4}C++}{27}{section.A.4}
+\contentsline {chapter}{参考文献}{29}{appendix*.16}
+\contentsline {chapter}{攻读硕士学位期间承担的科研任务与主要成果}{31}{appendix*.17}
+\contentsline {chapter}{致\hskip 1em\relax 谢}{32}{appendix*.18}
+\contentsfinish 

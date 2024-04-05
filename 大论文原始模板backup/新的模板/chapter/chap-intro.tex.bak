@@ -1,0 +1,225 @@
+% !Mode:: "TeX:UTF-8"
+\chapter{绪论}
+\label{chap:introduction}
+
+快速入门：本模板的意义是为了让从未接触过\LaTeX 的新手能尽快的上手，熟悉
+本模板的使用。因此本文介绍的大部分内容都将以实例的形式给出，您
+可以通过目录快速检索感兴趣的内容。作为一个学文论文作者，你的主
+要精力应该是论文的内容而不是论文的格式。字体字号对齐方式是否有
+背题图和图注是否在同一页参考文献作者是否缩写期刊名是否缩写——
+这些不应该成为一个即将具有硕士学位的人花费大量精力去考虑的问题。
+这也是本模板要解决的问题。
+
+上角标引用参考文献 \textsuperscript{\cite{Birks1997}}
+
+同时引用两个参考文献 \cite{Huisheng,Benabid2002a}
+
+   同时引用两个参考文献 \supercite{Effect2020,Performance2022}
+
+  普通引用一个 \cite{Agrawal2001a}
+
+
+本说明的结构安排如下：第 \ref{chap:introduction}章是一篇简易教程，完整的示例了论文的
+一章可能会遇到的各种问题如插图、公式、图形引用、公式引用和文献
+的插入及引用。第 \ref{chap:figures}章是关于插图的进阶内容，会涉及到图形的不同排
+列形式，图形的大小缩放等。第 \ref{chap:table}章是关于表格的内容，涉及如何插入表格，
+科技文献常用的三线表以及跨页长表格等问题。第 \ref{chap:equ}章是关于公式的进阶内容，涉及公式
+的编号、对齐、矩阵和方程组的编写等问题。第 \ref{chap:bib}章是关于参考文献，
+涉及文献的压缩引用，排序等。%第\ref{chap:chap-5}章则介绍了在文章内加入计算机程序源代码的方法。
+第 \ref{chap:unit}章介绍输入数字和物理量的方法。
+
+\section{高楼大厦始于一砖一瓦}\label{section1-1}
+简单的说，\LaTeX 是一种对文字进行排版处理的程序语言，尽管它的功
+能不仅限于此。它与我们常用的Microsoft Word在使用上有较大的区
+别。例如我们在MSWord中输入标题时，先输入标题文字，如“绪论”，
+然后将其选中，选择MSWord中的“章标题”样式。这是在已经定义好
+了章标题样式的前提下。如果从未听说过样式或者没有使用过MSWord样
+式的同学，
+
+\begin{table}[htbp!]
+ \centering\small
+ \renewcommand\arraystretch{1.5}
+ \caption{跨页表格} % 第一个表的标题
+ \label{biao1-1} % 第一个表的标签
+ \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
+ \toprule
+    \qquad\qquad 符号  &\quad\qquad\qquad\qquad 参数           & \quad\qquad\qquad\qquad 数值    \\
+ \midrule
+    \qquad\qquad $\theta$ &\quad\qquad\qquad\qquad 范围 & \quad\qquad\qquad\qquad 690 m   \\
+    \qquad\qquad $f_t$ &\quad\qquad\qquad\qquad 频率 & \quad\qquad\qquad\qquad 8.9 GHz \\
+ \bottomrule
+ \end{tabular*}
+\end{table}
+
+\begin{table}[htbp!]
+ \centering\small
+ \renewcommand\arraystretch{1.5} % 手动减少表格上方与上一个元素的间距
+\vspace{-5pt} % 这里的值可以根据需要调整
+ \captionsetup{labelformat=empty, labelsep=none} % 不显示表编号
+ \caption[]{表 \ref{biao1-1}（续）}
+ \label{tab:parameters2}
+\vspace{-5pt} % 这里的值可以根据需要调整
+ \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
+ \toprule
+    \qquad\qquad 符号            &\quad\qquad\qquad\qquad 参数 & \quad\qquad\qquad\qquad 数值         \\
+ \midrule
+    \qquad\qquad $S$             &\quad\qquad\qquad\qquad 周期 & \quad\qquad\qquad\qquad 133 ms       \\
+    \qquad\qquad $\nu$           &\quad\qquad\qquad\qquad 车速 & \quad\qquad\qquad\qquad 430 m/s      \\
+    \qquad\qquad $Q$             &\quad\qquad\qquad\qquad 效果 & \quad\qquad\qquad\qquad 0.9          \\
+    \qquad\qquad $G_l$           &\quad\qquad\qquad\qquad 指数 & \quad\qquad\qquad\qquad 3            \\
+    \qquad\qquad $\delta^2$      &\quad\qquad\qquad\qquad 方差 & \quad\qquad\qquad\qquad -90 dBm      \\
+    \qquad\qquad $p$             &\quad\qquad\qquad\qquad 功率 & \quad\qquad\qquad\qquad 0.67 W       \\
+    \qquad\qquad $L_{th}$        &\quad\qquad\qquad\qquad 阈值 & \quad\qquad\qquad\qquad ${10}^{-8}$  \\
+ \bottomrule
+ \end{tabular*}
+\vspace{-5pt} % 这里的值可以根据需要调整 % 手动减少表格下方与下一个元素的间距
+\end{table}
+
+
+
+\verb|\section{课题背景}|、\verb|\subsection{理论基础}|和
+\verb|\subsubsection{公式推导}|来告诉\LaTeX 这些分别是节标题、
+条标题和款标题。\LaTeX 会自动对它们进行格式的设置，并且会自动
+为你生成编号。
+
+而图形的插入通常则是通过以下形式：
+如图 \ref{系统模型图}所示
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm,height=8cm]{figures//chap1//系统模型图.eps}
+\caption{系统模型图}
+\label{系统模型图}
+\end{figure}
+
+\begin{verbatim}
+\begin{figure}
+ \includegraphics{ysulogo}
+\end{figure}
+\end{verbatim}
+其中ysulogo为插图的文件名，不包含后缀名（\XeLaTeX 支持PDF, PNG, JPG 格式）。与命令不同，这里使用了\\
+\verb|\begin{figure}|
+和
+\verb|\end{figure}|\\
+这一对命令来构成一个\textbf{环境}。使用本模板完成学位论文时将会经常
+用到命令与环境。一般使用者只要能区分开二者即可，其实只要完成论文的
+第一幅插图，后续的插图可以将原来的插图环境复制并稍加修改即可。
+
+\section{一个完整的章节实例}\label{section1-2}
+下边我们使用命令与环境的概念，完成一个迷你章节的例子。
+
+本节提出了一种算法来解决优化问题。该算法如下所示，
+
+\vspace*{0.25cm}%设置了一点间距
+\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
+    \toprule
+    算法1-1基于xxx算法                                     \\
+    \midrule
+    Step1： 开始。                                         \\
+    Step2： 初始化                                         \\
+    Step3： 设置                                           \\
+    Step4： 设置                                           \\
+    Step5： 根据                                           \\
+    Step6： 更新                                           \\
+    Step7： 根据                                           \\
+    Step8： 根据                                           \\
+    Step9： 重复                                           \\
+    Step10：设置                                           \\
+    Step11：结束。                                         \\
+    \bottomrule
+\end{tabular*}
+
+进入YSUthesis文件夹，打开主文件template.tex。进入chapter文件夹，
+打开chap-intro.tex文件。该文件对应论文的第一章“绪论”。然后输入如下内容：
+\begin{table}[htbp!]
+ \centering\small
+ \renewcommand\arraystretch{1.5}   %latex三线表中各行间隔
+ \Tablecaption{不用跨页的表格}\label{biao2-1}
+\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
+ \toprule
+    \qquad\qquad 符号    &\quad\qquad\qquad       参数 & \quad\qquad\qquad       数值         \\
+ \midrule
+    \qquad\qquad $S$     &\quad\qquad\qquad\qquad 周期 & \quad\qquad\qquad\qquad 133 ms       \\
+    \qquad\qquad $\nu$   &\quad\qquad\qquad\qquad 车速 & \quad\qquad\qquad\qquad 430 m/s      \\
+    \qquad\qquad $Q$     &\quad\qquad\qquad\qquad 效果 & \quad\qquad\qquad\qquad 0.9          \\
+    \qquad\qquad $G_l$   &\quad\qquad\qquad\qquad 指数 & \quad\qquad\qquad\qquad 3            \\
+ \bottomrule
+ \end{tabular*}
+\end{table}
+进入YSUthesis文件夹，打开主文件template.tex。进入chapter文件夹，
+打开chap-intro.tex文件。该文件对应论文的第一章“绪论”。然后输入如下内容：
+
+进入YSUthesis文件夹，打开主文件template.tex。进入chapter文件夹，
+打开chap-intro.tex文件。该文件对应论文的第一章“绪论”。然后输入如下内容：
+
+进入YSUthesis文件夹，打开主文件template.tex。进入chapter文件夹，
+打开chap-intro.tex文件。该文件对应论文的第一章“绪论”。然后输入如下内容：
+
+因此，将原问题 \eqref{E3-1} 给出
+\begin{align}
+&\textbf{P2}:\max\limits_{\mathbf{n}}\frac{d}{\ln{2}}\sum_{i=1}^{R}\left.\frac{L_{q}}{n_{i}}\left[{g_e\ln{\left(\left(e^{g}\right)\right)}+e}_k\!\!\right.\right]      \label{E3-1}\\
+\text { s.t. }
+& \chi_{\text {w }} \in L                                                                                                                    \tag{\ref{E3-1}{-1}}      \label{E3-1-1}\\  % 约束
+& \sum_m k_{s_i}^{[r]}=1, \forall i, s                                                                                                       \tag{\ref{E3-1}{-2}}      \label{E3-1-2}\\  % 阈值
+& U_{y_i}^{[w]} \geq y_{a_i}^{[k]} R_{\min }, \forall i, s, k                                                                                \tag{\ref{E3-1}{-3}}      \label{E3-1-3}   % 分配
+\end{align}
+
+ 公式 \eqref{E3-1-1}引用了第一个子公式
+\begin{verbatim}
+% !Mode:: "TeX:UTF-8"
+\chapter{绪论}
+我是绪论中的正文文本。
+
+\section{课题背景}
+我要使用引用命令为我的文章引用文献：
+\ldots加速度为\SI{12345}{\square\micro\meter\per\nano\second}，是一般加速度的\num{1.2345e3}倍\supercite{Yablonovitch1987}，
+误差\SI{+-2e-6}{\square\micro\meter\per\nano\second}。
+
+\subsection{该小节插图}
+这里我要使用图形环境插图。注意该插图拥有中英双语图注和自动生成的图形编号。同时我要引用该图形：该图的编号是\ref{fig-pcf}。
+\begin{figure}[hptb]
+ \centering
+ \includegraphics{chp-1_pcf}
+ \caption{形式多样的光子晶体光纤} \label{fig-pcf}
+\end{figure}
+
+\subsection{该小节插入公式}
+我还要使用公式环境插入公式。注意公式是自动居中编号。同时我也要引用该公式，该公式的编号是\eqref{equ-sample}
+\begin{equation}\label{equ-sample}
+\sum_{i=1}^n\sin\beta_i^2+\int_a^b\frac{D}{c}\,\mathrm{d}x=0.
+\end{equation}
+
+\section{本章小结}
+以上为本章的所有内容。
+\end{verbatim}
+保存该文件。切换到template.tex主文件，依次执行菜单``TeX"下的``XeLaTeX" - ``BibTeX" - ``XeLaTeX" - ``XeLaTeX"，（这些步骤也可以通过工具栏上的
+按钮完成）。之后会在主目录下自动生成PDF文件，您不妨亲自动手试试看！
+生成的参考文献如图\ref{fig-ctt}所示。
+\begin{figure}[hptb]
+ \centering
+ \includegraphics[width=\linewidth]{citation}
+\Figcaption{自动生成的参考文献}\label{fig-ctt}
+\end{figure}
+
+\section{章节条款标题}\label{section1-3}
+论文的框架分为：章节条款等，分别由下列一些命令生成。由\verb|\chapter{}|生成章标题，由\verb|\section{}|生成节标题，由\verb|\subsection{}| 生成条标题，   由 \verb|\subsubsection{}| 生成款标题。
+
+\subsection{条标题}\label{section1-3-1}
+论文的框架分为：章节条款等，分别由下列一些命令生成。由\verb|\chapter{}|生成章标题，由\verb|\section{}|生成节标题，由\verb|\subsection{}| 生成条标题，由 \verb|\subsubsection{}| 生成款标题。
+
+\subsubsection{款标题}\label{section1-3-1-1}
+\quad 论文的框架分为：章节条款等，分别由下列一些命令生成。由\verb|\chapter{}| 生成章标题，由\verb|\section{}|生成节标题，由\verb|\subsection{}| 生成条标题， 由命令\verb|\subsubsection{}| 生成款标题。
+
+\section{解决pdf文件复制出现乱码问题}\label{section1-4}
+\begin{verbatim}
+以下是解决pdf文件复制乱码问题（方便论文查重，我已经按照第一种办法做了，如果有个别同学还是不成功，请按照后边方法，照做一下）！！！下面是另外两种办法，共三种办法！！！
+(1) 在YSUthesis.cls的Line142，加上``\setCJKmainfont{新宋体}第一种办法！''
+%%上面一行是解决pdf文件复制乱码问题！！！下面是另外两种办法，共三种办法！
+
+(2) 在template.tex文件的\begin{document}前边，加上
+``\usepackage{ccmap}删掉前边的注释！为了解决论文查重，PDF文件复制出现乱码问题，请去掉这行前面的注释，编译完成后，使用Adobe Acrobat 删掉论文前面多余的两页即可！！！不知道是什么原因，但是这样可以解决问题，有待大家找到更好的解决办法！！！这种方法在编译过程中会终止，需要回车一下！！！''
+
+(3) 在template.tex文件的\classification{O226}前边，加上
+``为了解决论文查重，PDF文件复制出现乱码问题，请去掉这行前面的注释，编译完成后，使用Adobe Acrobat 删掉论文前面多余的两页即可！！！不知道是什么原因，但是这样可以解决问题，有待大家找到更好的解决办法！！！''
+\end{verbatim}
+
+注意！第一章不要有``本章小结"!!!

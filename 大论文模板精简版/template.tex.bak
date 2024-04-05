@@ -1,0 +1,273 @@
+﻿% !Mode:: "TeX:UTF-8"
+%% Thesis Template of Yanshan University
+%% for using YSUthesis package with XeLaTeX
+% 2018年2月5日
+%% 文档参数配置开始：
+
+%%===========================%
+\documentclass[openany]{YSUthesis}
+%showtypeinfo %显示扉页的LaTeX版本信息，去掉即可隐藏版本信息。
+%  openany      可以去掉章节起始页必须为奇数页的限制，使章节连续，不出现空白页。
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX，
+%  这样可以生成正确的参考文献和交叉引用链接。
+
+%  设置图形文件的搜索路径。支持图形格式：pdf; png; jpg.
+\graphicspath{{chapter/}{figures/}}
+\usepackage{fontspec}
+%\setmainfont{Latin Modern Roman} % 设置默认字体为Latin Modern Roman，或者你喜欢的其他字体
+\newfontfamily\timesfont{Times New Roman} % 定义一个新的字体族为Times New Roman  
+%\newfontfamily\timetimefont{Time} % 定义一个新的字体族为Times New Roman
+\setmainfont{Times New Roman}
+%  执行下面的命令可以取消PDF文件中的链接颜色，使用 Adobe Acrobat Reader 查看
+%  时，链接可能会有边框，但是在打印时不会出现。
+%\hypersetup{colorlinks=false}
+
+% 启用以下这段代码可以让你更改目录的缩进，以备学院有特殊要求。
+%\usepackage{titletoc}
+%\titlecontents{chapter}[4\ccwd]{}
+%                {\bf\contentslabel{4\ccwd}}
+%                {\hspace{-4\ccwd}\bf}
+%                {\titlerule*[5pt]{.}\contentspage}
+%\titlecontents{subsection}[68pt]{}
+%                {\contentslabel{40pt}}
+%                {\hspace{-4\ccwd}}
+%                {\titlerule*[5pt]{.}\contentspage}
+\makeatletter   %mzhy55
+\renewcommand*\l@chapter{\@dottedtocline{1}{0em}{3.5em}}% 使英文章标题缩进，原来是0em
+\renewcommand*\l@section{\@dottedtocline{1}{15pt}{2.0em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{24pt}{2.5em}}% 使英文目录的小节标题左移，对齐，原来是{2}{24pt}{24pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{42pt}{36pt}}
+
+%\renewcommand*\l@paragraph{\@dottedtocline{4}{48pt}{48pt}}
+%\renewcommand*\l@subparagraph{\@dottedtocline{5}{60pt}{60pt}}
+\makeatother    %mzhy55
+%\classification{O226}
+\usepackage{ccmap}
+\usepackage[numbers,sort&compress]{natbib} %同时引用两个参考文献
+\usepackage{latexsym}
+\usepackage{algorithm, algorithmic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{arydshln}
+\usepackage{pmat}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{graphics}
+\usepackage{epsfig}%这一句一定要加上
+\usepackage{subcaption}  %貌似没用到
+\usepackage{enumerate}%超链接
+\usepackage{url} %超链接
+\usepackage{hyperref} %超链接
+\usepackage{amsmath,amsthm}
+\usepackage{xcolor}
+%\usepackage{tocloft}
+\newtheorem{theorem}{Theorem}
+\newcommand{\mykeywords}{车联网；无人机通信；吞吐量最大化；中断概率；边缘计算；轨迹优化；任务卸载 } %
+\newcommand{\myenkeywords}{UAV Communication; Throughput Maximisation; Outage Probability; Edge Computing; Trajectory Optimisation; Task Offloading} %
+\hypersetup{%hypertex=true,
+            colorlinks=true,
+            linkcolor=black,     %blue    公式与图与目录
+            anchorcolor=black,
+            citecolor=black}    %green  参考文献
+    % 这里还可以添加其他元数据，如pdfsubject, pdfkeywords等
+\title{无人机辅助的车联网络任务卸载与资源分配的研究}% 论文题目
+\school{燕山大学}                                 % 院校名称
+\author{魏建帅}  %魏建帅
+\advisornamecn{刘志新}     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
+\enauthor{ Wei Jianshuai}        %Wei Jianshuai    xxx               % 作者英文姓名，注意：姓在前，名在后！！！
+\enadvisorname{ Liu Zhixin} %Liu Zhixin           xxx
+\makeatletter
+\hypersetup{
+    pdftitle={\CAST@value@title},
+    pdfauthor={\CAST@value@author},
+    pdfsubject={\CAST@value@school 硕士学位论文},
+    pdfkeywords={\mykeywords\myenkeywords},
+    pdfcreator={WinEdit7.0},  % 设置PDF的Creator元数据
+    pdfproducer={你的制作者名或软件名}} % 设置PDF的Producer元数据}
+\makeatother
+% \usepackage[english]{babel} 这些都是我加的
+% \usepackage{lmodern}
+% \usepackage{amsmath}
+% \usepackage{bm}
+\newcommand{\adots}{\mathinner{\mkern2mu%
+%\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  %参考文献上角标
+\raisebox{0.1em}{.}\mkern2mu\raisebox{0.4em}{.}%
+\mkern2mu\raisebox{0.7em}{.}\mkern1mu}}
+\begin{comment}
+占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占位符勿修改占
+\end{comment}
+% 选择数学字体，xits-math.otf为类Times 字体，Cambria Math与Office2010数学公式格式相同。
+\setmathfont{xits-math.otf}
+%%===========================%
+%% 文档参数配置结束
+\newcommand{\addabstracttotoc}[1]{%
+  \addtocontents{toc}{\protect\contentsline{chapter}{\protect\fontspec{Times New Roman}\protect #1}{}{}}%
+} 
+\usepackage{titlesec}
+\usepackage{titletoc}%%%%%mzhy55 解决目录中章标题的黑体问题
+\titlecontents{chapter}[0pt]{\heiti\vspace{0mm}}
+{\thecontentslabel\hskip.5em}{}
+{\titlerule*[0.45pc]{.}\contentspage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%mzhy55 解决目录中章标题的黑体问题
+%% 文档正式开始
+%============================%
+\begin{document}
+
+%%调整公式与正文间距离，调整空白大小命令：
+\setlength{\abovedisplayskip}{4pt} %%% 4pt 个人觉得稍妥，可自行设置
+\setlength{\belowdisplayskip}{4pt}
+
+% 以下为封面部分
+%----------------------------%
+% 中文封面内容
+
+\classification{TP273.2}                          % 中图分类号，注意，此项要自己查，更改！！！
+\UDC{623.1}                                       % UDC，注意，此项要自己查，更改！！！
+%\title{高动态环境下车联网通信资源联合优化分配的研究}  % 论文题目
+%\title{无人机辅助的车联网络任务卸载与资源分配的研究}% 论文题目
+%\author{魏建帅}           %魏建帅                        % 作者姓名，注意：姓在前，名在后！！！
+%\advisornamecn{刘志新}     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
+\advisor{ 教授}
+\degree{工学硕士}                                 % 申请学位
+\major{控制科学与工程}                            % 专业，注意，此项要以自己实际情况修改！！！
+\institute{电气工程学院}                          % 所在单位
+\defenddate{2024年6月}                            % 答辩日期，注意：要依实际答辩时间修改！！！
+%\school{燕山大学}                                 % 院校名称
+
+% 英文封面内容
+\enstatement{Control Science and Engineering}     % 学科或领域
+%{Control Science and Engineering}%{Science}      % 学科或领域
+\entitle{Task Offloading and
+Resource Allocation for UAV-Assisted
+Vehicular Networks}                      % 英文题目，所有字母大写！！！
+%\enauthor{ Wei Jianshuai}        %Wei Jianshuai                   % 作者英文姓名，注意：姓在前，名在后！！！
+\enadvisor{Professor}                  % 导师英文姓名，注意：姓在前，名在后，若是“副教授”，加上“Associate” 词！！！
+%\enadvisorname{ Liu Zhixin} %Liu Zhixin
+\enschool{School of Electrical Engineering, Yanshan University}                        % 院校英文名称
+\enathdate{June}                            % 英文答辩日期，注意：要依实际答辩时间修改！！！
+\enathdateyear{, 2024}
+
+\makeatletter    %%%%%%%mzhy55
+\newcommand\makecover{%
+\cleardoublepage
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=9.0cm]{ysulogo.eps}\\   %eps jpg pdf
+\vspace*{1.5cm}
+{\zihao{-0}\ziju{0.5}\heiti{硕士学位论文}}\\
+\vspace*{0.5cm}
+{\zihao{-2} MASTER'S DISSERTATION}\\
+\vspace*{0.5cm}
+{\zihao{-2} {\heiti（\ \ 学\ \ 术\ \ 学\ \ 位\ \ ）}}\\%%%%2023.5.12修改
+\vspace*{3cm}
+\begin{tabular}{p{3cm}p{9cm}}
+\zihao{-2}{\heiti 论文题名} & \zihao{-2}{\kaishu\CAST@value@title}
+\end{tabular}
+\vfill
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{3cm}p{9cm}}
+\zihao{-2}{\heiti 作者姓名} & \zihao{-2}{\kaishu\CAST@value@author} \\
+\zihao{-2}{\heiti 学科专业} & \zihao{-2}{\kaishu\CAST@value@major}  \\
+\zihao{-2}{\heiti 指导教师} & \zihao{-2}{\kaishu\CAST@value@advisornamecn\quad\textcolor[RGB]{0,0,0}{\CAST@value@advisor}} %第一页添加了教授
+\end{tabular}\\
+\vspace*{2cm}
+%\zihao{-2}\songti\textbf{2024 年6月}%%%第一页上的日期，根据实际答辩时间填写，  mzhy55
+\zihao{-2}\songti{2024年 \textcolor[RGB]{0,0,0}{6} 月}%%%第一页上的日期，根据实际答辩时间填写，  mzhy55
+\end{center}
+\clearpage
+\if@twoside
+\thispagestyle{empty}
+\cleardoublepage
+\fi}
+\makeatother    %%%%%%%mzhy55
+
+% 生成封面
+\makecover
+
+% 生成中文封里
+\maketitle
+
+% 生成英文封里
+\makeenglishtitle
+
+% 生成原创性声明
+\makelicense
+
+% 以下为前言部分
+%----------------------------%
+\frontmatter
+\pagenumbering{Roman}
+
+% 摘要
+\include{chapter/abstract}
+% 目录
+\tableofcontents
+
+% 表格目录
+%\listoftables
+% 插图目录
+%\listoffigures
+
+% 以下为正文部分
+%----------------------------%
+\mainmatter
+\include{chapter/chap-intro}
+\include{chapter/chap-2}
+\include{chapter/chap-3}
+\include{chapter/chap-4}
+\include{chapter/chap-5}  %结论
+%\include{chapter/chap-conclusion}
+%\include{chapter/chap-6}
+\renewcommand{\chaptermark}[1]{\markboth{附录~\thechapter~\hspace{0.5em}#1}{}} % 页眉上“附录” mzhy55
+%% 附录
+\appendix
+%\include{chapter/appendix}
+%%%%\include{chapter/appendix1}
+
+% 以下为附件部分
+%----------------------------%
+\backmatter
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}} % 页眉上“参考文献、成果、致谢” mzhy55
+%%%%%%% 以下内容不要修改！！！ mzhy55
+\makeatletter
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+%  \renewcommand{\headrule}{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{\zihao{5} 参考文献}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+  }
+  \pagestyle{fancy}%%%%% 页眉 mzhy55
+  \fancyhf{}
+  \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
+  \fancyhead[CO]{{\zihao{5} 参考文献}}
+  \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
+\makeatother
+%%%%%%% 以上内容不要修改！！！ mzhy55
+
+% 参考文献
+%|- 使用 BibTeX
+\bibliography{bib/tex}
+%\nocite{*}
+%|-不使用 BibTeX
+%\include{chapter/bib}
+
+% 发表文章目录
+\include{chapter/achive}
+
+% 致谢
+\include{chapter/thanks}
+
+%  % 作者简介
+%  \include{chapter/resume}
+\begin{comment}
+\begin{thebibliography}{0}   %引用参考文献
+\end{comment}
+
+% \cleardoublepage % 偶数页留白
+\end{document}
+%%===========================%
+%% 全文结束

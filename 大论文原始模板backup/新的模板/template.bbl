@@ -1,0 +1,44 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Birks et al.(1997)]{Birks1997}
+\textup{Birks T~A, Knight J~C, Russell P~S}.
+\newblock Endlessly Single-mode Photonic Crystal Fiber [J].
+\newblock Opt. Lett., 1997, 22(13): 961--963.
+
+\bibitem[Ma et al.(2020)]{Huisheng}
+\textup{Ma H, Li S, Zhang E}, et al.
+\newblock Cooperative Autonomous Driving Oriented Mec-aided 5g-v2x: Prototype
+  System Design, Field Tests and Ai-based Optimization Tools [J].
+\newblock IEEE Access, 2020, 8: 54288--54302.
+
+\bibitem[Benabid et al.(2002)]{Benabid2002a}
+\textup{Benabid F, Knight J, Russell P}.
+\newblock Particle Levitation and Guidance in Hollow-core Photonic Crystal
+  Fiber [J].
+\newblock Opt. Express, 2002, 10(21): 1195--1203.
+
+\bibitem[Khuwaja et al.(2020)]{Effect2020}
+\textup{Khuwaja A~A, Chen Y, Zheng G}.
+\newblock Effect of User Mobility and Channel Fading on the Outage Performance
+  of Uav Communications [J].
+\newblock IEEE Wireless Communications Letters, 2020, 9(3): 367--370.
+
+\bibitem[Zhao et al.(2022)]{Performance2022}
+\textup{Zhao Z, Xu G, Zhang N}, et al.
+\newblock Performance Analysis of the Hybrid Satellite-terrestrial Relay
+  Network with Opportunistic Scheduling Over Generalized Fading Channels [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(3): 2914--2924.
+
+\bibitem[Agrawal(2001)]{Agrawal2001a}
+\textup{Agrawal G~P}.
+\newblock Nonlinear Fiber Optics [M].
+\newblock
+\newblock Third,
+\newblock OPTICS AND PHOTONICS.[S.l.]: Academic Press, 2001: ~9.
+
+\end{thebibliography}
