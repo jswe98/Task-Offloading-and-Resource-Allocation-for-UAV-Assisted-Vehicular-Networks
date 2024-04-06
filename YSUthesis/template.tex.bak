@@ -15,7 +15,7 @@
 \graphicspath{{chapter/}{figures/}}
 \usepackage{fontspec}
 %\setmainfont{Latin Modern Roman} % 设置默认字体为Latin Modern Roman，或者你喜欢的其他字体
-\newfontfamily\timesfont{Times New Roman} % 定义一个新的字体族为Times New Roman  
+\newfontfamily\timesfont{Times New Roman} % 定义一个新的字体族为Times New Roman
 %\newfontfamily\timetimefont{Time} % 定义一个新的字体族为Times New Roman
 \setmainfont{Times New Roman}
 %  执行下面的命令可以取消PDF文件中的链接颜色，使用 Adobe Acrobat Reader 查看
@@ -73,7 +73,7 @@
     % 这里还可以添加其他元数据，如pdfsubject, pdfkeywords等
 \title{无人机辅助的车联网络任务卸载与资源分配的研究}% 论文题目
 \school{燕山大学}                                 % 院校名称
-\author{}  %魏建帅
+\author{ }  %魏建帅
 \advisornamecn{   }     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
 \enauthor{xxx}        %Wei Jianshuai    xxx               % 作者英文姓名，注意：姓在前，名在后！！！
 \enadvisorname{ xxx} %Liu Zhixin           xxx
@@ -102,10 +102,10 @@
 %% 文档参数配置结束
 \newcommand{\addabstracttotoc}[1]{%
   \addtocontents{toc}{\protect\contentsline{chapter}{\protect\fontspec{Times New Roman}\protect #1}{}{}}%
-} 
+}
 \usepackage{titlesec}
 \usepackage{titletoc}%%%%%mzhy55 解决目录中章标题的黑体问题
-\titlecontents{chapter}[0pt]{\heiti\vspace{0mm}}
+\titlecontents{chapter}[0pt]{\heiti\zihao{-4}\vspace{0mm}}
 {\thecontentslabel\hskip.5em}{}
 {\titlerule*[0.45pc]{.}\contentspage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%mzhy55 解决目录中章标题的黑体问题
@@ -142,7 +142,7 @@ Resource Allocation for UAV-Assisted
 Vehicular Networks}                      % 英文题目，所有字母大写！！！
 %\enauthor{ Wei Jianshuai}        %Wei Jianshuai                   % 作者英文姓名，注意：姓在前，名在后！！！
 \enadvisor{Professor}                  % 导师英文姓名，注意：姓在前，名在后，若是“副教授”，加上“Associate” 词！！！
-%\enadvisorname{ Liu Zhixin} %Liu Zhixin  
+%\enadvisorname{ Liu Zhixin} %Liu Zhixin
 \enschool{School of Electrical Engineering, Yanshan University}                        % 院校英文名称
 \enathdate{June}                            % 英文答辩日期，注意：要依实际答辩时间修改！！！
 \enathdateyear{, 2024}
