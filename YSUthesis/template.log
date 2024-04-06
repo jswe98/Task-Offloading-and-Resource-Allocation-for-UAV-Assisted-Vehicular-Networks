@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 18:09
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 20:39
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2156,4 +2156,384 @@ Requested font "æ^^96°å®^^8bä½^^93/I/ICU" at 12.05pt
 . 
 . * 'bold' with NFSS spec.:
 . <->"新宋体/ICU:script=latn;language=DFLT;mapping=tex-text;embolden=4;"
-..............................................
+.................................................
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+ [7
+
+] [8
+
+
+]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/abstract.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xeCJK@family' on input line 21.
+
+Requested font "SimHei" at 12.05pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 12.05pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [Ligatures=TeX,BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;mapping=tex-text;" at 12.0
+5pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
+" at 10.54pt
+ -> C:/Windows/Fonts/times.ttf
+Requested font "æ^^96°å®^^8bä½^^93" at 10.54pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "æ^^96°å®^^8bä½^^93/ICU" at 10.54pt
+ -> C:/Windows/Fonts/simsun.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '新宋体(0)' created for font '新宋体' with options
+. [Ligatures=TeX,BoldFont={新宋体},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;" at 10.54pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;" at 10.54pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
+" at 9.03pt
+ -> C:/Windows/Fonts/times.ttf
+[1
+
+
+] [2]
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 12.05pt
+ -> C:/Windows/Fonts/timesbd.ttf
+ [3] [4]) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthe
+sis\template.toc [5
+
+
+
+])
+\tf@toc=\write5
+ [6]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-intro.tex
+第\nobreakspace {}1\ignorespaces \nobreakspace {}章
+Requested font "SimHei" at 15.06pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 15.06pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [Ligatures=TeX,BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;mapping=tex-text;" at 15.0
+6pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 12.05pt
+ -> C:/Windows/Fonts/times.ttf
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
+" at 9.03749pt
+ -> C:/Windows/Fonts/times.ttf
+[1
+
+
+
+]
+File: figures//chap1//车联网的干扰模型.pdf Graphic file (type QTm)
+ <use  "figures//chap1//车联网的干扰模型.pdf" > [2] [3] [4]
+File: figures//chap1//5G通信与车联网融合挑战.eps Graphic file (type e
+ps)
+
+<figures//chap1//5G通信与车联网融合挑战.eps> [5] [6]) [7]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-2.tex
+第\nobreakspace {}2\ignorespaces \nobreakspace {}章
+[8
+
+
+
+]
+File: figures//chap2//第二章系统模型.eps Graphic file (type eps)
+ <figures//chap2//第二章系统模型.eps> [9]
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
+" at 7.23007pt
+ -> C:/Windows/Fonts/times.ttf
+ [10] [11]
+Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 12.05pt
+ -> C:/Windows/Fonts/timesi.ttf
+Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 9.03749pt
+ -> C:/Windows/Fonts/timesi.ttf
+Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 7.23007pt
+ -> C:/Windows/Fonts/timesi.ttf
+ [12]
+Requested font "æ^^96°å®^^8bä½^^93" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "æ^^96°å®^^8bä½^^93/ICU" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '新宋体(0)' created for font '新宋体' with options
+. [Ligatures=TeX,BoldFont={新宋体},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;embolden=4;" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
+tex-text;embolden=4;" at 12.05pt
+ -> C:/Windows/Fonts/simsun.ttc
+
+Underfull \vbox (badness 7907) has occurred while \output is active []
+
+ [13]
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+ [14]
+Missing character: There is no 。 in font [xits-math.otf]/ICU:script=math;lang
+uage=DFLT;mapping=tex-text;!
+
+Overfull \hbox (5.75536pt too wide) in alignment at lines 367--383
+[] [] [] [] 
+ []
+
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 7.0pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 5.0pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 448.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 7.0001pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 448.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 5.00008pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 448.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 6.9999pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 448.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 4.99992pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+Requested font "msam7" at 7.0pt
+ -> msam7
+Requested font "msam5" at 5.0pt
+ -> msam5
+Requested font "msbm7" at 7.0pt
+ -> msbm7
+Requested font "msbm5" at 5.0pt
+ -> msbm5
+Requested font "psyr" at 7.0pt
+ -> psyr
+Requested font "psyr" at 5.0pt
+ -> psyr
+Requested font "lasy7" at 7.0pt
+ -> lasy7
+Requested font "lasy5" at 5.0pt
+ -> lasy5
+
+Package xeCJK Warning: Unknown CJK family `song' is ignored.
+Use \setCJKfamilyfont to define a CJK family. on input line 453.
+
+[15]
+File: figures//chap2//功率.eps Graphic file (type eps)
+ <figures//chap2//功率.eps>
+File: figures//chap2//价格.eps Graphic file (type eps)
+ <figures//chap2//价格.eps> [16]
+File: figures//chap2//中断概率.eps Graphic file (type eps)
+
+<figures//chap2//中断概率.eps>
+File: figures//chap2//传输速率对比.eps Graphic file (type eps)
+ <figures//chap2//传输速率对比.eps>
+[17]
+File: figures//chap2//不同车辆.eps Graphic file (type eps)
+ <figures//chap2//不同车辆.eps> [18]) [19]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-3.tex
+第\nobreakspace {}3\ignorespaces \nobreakspace {}章
+[20
+
+
+
+]
+File: figures//chap3//文章一在用model2.pdf Graphic file (type QTm)
+ <use  "figures//chap3//文章一在用model2.pdf" > [21]
+Underfull \vbox (badness 6859) has occurred while \output is active []
+
+ [22]
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 9.03749pt
+ -> C:/Windows/Fonts/timesbd.ttf
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 7.23007pt
+ -> C:/Windows/Fonts/timesbd.ttf
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+[27] [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+File: figures//chap3//pp.eps Graphic file (type eps)
+
+<figures//chap3//pp.eps> [30]
+File: figures//chap3//ff.eps Graphic file (type eps)
+ <figures//chap3//ff.eps> [31]
+File: figures//chap3//ee.eps Graphic file (type eps)
+
+<figures//chap3//ee.eps>
+File: figures//chap3//diffspeed1.eps Graphic file (type eps)
+ <figures//chap3//diffspeed1.eps> [32]
+File: figures//chap3//diff_e1.eps Graphic file (type eps)
+
+<figures//chap3//diff_e1.eps> [33]
+File: figures//chap3//compare.eps Graphic file (type eps)
+ <figures//chap3//compare.eps> [34]
+File: figures//chap3//diff_dup.eps Graphic file (type eps)
+
+<figures//chap3//diff_dup.eps>
+File: figures//chap3//diff_total.eps Graphic file (type eps)
+ <figures//chap3//diff_total.eps>
+File: figures//chap3//diff_c.eps Graphic file (type eps)
+
+<figures//chap3//diff_c.eps> [35]) [36]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-4.tex
+第\nobreakspace {}4\ignorespaces \nobreakspace {}章
+[37
+
+
+
+]
+File: figures//chap4//第四章系统模型图.pdf Graphic file (type QTm)
+ <use  "figures//chap4//第四章系统模型图.pdf" > [38] [39] [40]
+[41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+Underfull \vbox (badness 3590) has occurred while \output is active []
+
+ [44]
+[45] [46]
+File: figures//chap4//小轨迹.eps Graphic file (type eps)
+ <figures//chap4//小轨迹.eps>
+Overfull \hbox (14.21236pt too wide) in paragraph at lines 498--499
+ [][] 
+ []
+
+File: figures//chap4//无人机速度.eps Graphic file (type eps)
+<figures//chap4//无人机速度.eps>
+File: figures//chap4//不同的参数theta下的能效.eps Graphic file (type e
+ps)
+ <figures//chap4//不同的参数theta下的能效.eps> [47]
+File: figures//chap4//不同的方案下的能效.eps Graphic file (type eps)
+ <figures//chap4//不同的方案下的能效.eps> [48]
+File: figures//chap4//不同的参数在不同的方案下的能效.eps Graphic
+ file (type eps)
+
+<figures//chap4//不同的参数在不同的方案下的能效.eps>
+File: figures//chap4//双向车道.eps Graphic file (type eps)
+
+<figures//chap4//双向车道.eps> [49]) [50]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-5.tex
+第\nobreakspace {}5\ignorespaces \nobreakspace {}章
+) [51
+
+
+
+] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\temp
+late.bbl [52
+
+
+
+] [53] [54] [55]) [56]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/achive.tex) [57
+
+
+] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chap
+ter/thanks.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.05pt
+(hyperref)                replaced by space on input line 21.
+
+) [58
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
+ (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templ
+ate.aux (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesi
+s\chapter/abstract.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-intro.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革�
+�\YSUthesis\chapter/chap-2.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-3.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YS
+Uthesis\chapter/chap-4.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/chap-5.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YS
+Uthesis\chapter/achive.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
+r/thanks.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 269.
+ )
+(\end occurred when \iffalse on line 73 was incomplete) 
+Here is how much of TeX's memory you used:
+ 34073 strings out of 430478
+ 642947 string characters out of 3191501
+ 734777 words of memory out of 3000000
+ 36566 multiletter control sequences out of 15000+200000
+ 15272 words of font info for 154 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 62i,18n,94p,1397b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on template.pdf (72 pages).

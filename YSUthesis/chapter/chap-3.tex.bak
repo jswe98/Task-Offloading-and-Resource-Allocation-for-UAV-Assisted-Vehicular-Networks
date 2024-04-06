@@ -34,7 +34,7 @@ Cloud, R2C)链路。详细的卸载过程描述如下。首先，车辆通过无
 % 此外，本文中使用的一些术语如表所示。
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{figures//chap3//文章一在用model2.pdf}
+\includegraphics[width=12cm,height=8cm]{figures//chap3//文章一在用model2.pdf}
 \caption{C-MEC 系统模型图}
 \label{F1}
 \end{figure}
@@ -44,9 +44,9 @@ Cloud, R2C)链路。详细的卸载过程描述如下。首先，车辆通过无
 \begin{eqnarray}\label{E1}
 h=\xi{\widetilde{h}}+\sqrt{1-\xi^2}\zeta
 \end{eqnarray}
-假设估计的信道增益 $\widetilde{h}$ 表示对 $h$ 的估计，${\widetilde{h}}^2$ 是指数分布，具有单位平均值 \supercite{Sakr2014}。 此外，$\xi\in\left(0,1\right)$ 表示 V2R 链路上的相关系数，$\zeta$ 表示信道增益，其复高斯分布为 $\zeta\sim CN\left(0,\delta^2\right)$，与 $\widetilde{h}$ 无关。系数$\left(0<\zeta<1\right)$ 量化了两个连续时隙之间的信道相关性，假设所有车辆都存在相同的时间相关系数$\zeta$。Jakes 的衰落信道统计模型 \supercite{Kim2011} 指出：$\zeta=J_0\left(2\pi f_{max}T_s\right)$ ，其中$J_0$ 是第一类零阶贝塞尔函数。$f_{max}=\bar{\nu}f_c/c $ 是最大多普勒频率，其中 $\bar{\nu}$ 表示车辆速度，$f_c$ 表示 5.9 Ghz 的载波频率，$c=3\times{10}^8$m/s，$T_s$ 是周期反馈延迟。发射车和 RSU 都知道实际的 $\zeta$。
+假设信道增益 $\widetilde{h}$ 表示对 $h$ 的估计，小尺度快衰落${\widetilde{h}}^2$ 是指数分布，并具有单位平均值 \supercite{Sakr2014}。 此外，$\xi\in\left(0,1\right)$ 表示 V2R 链路上的相关系数，$\zeta$ 表示信道增益，其复高斯分布为 $\zeta\sim CN\left(0,\delta^2\right)$，与 $\widetilde{h}$ 无关。系数$\left(0<\zeta<1\right)$ 量化了两个连续时隙之间的信道相关性，假设所有车辆都存在相同的时间相关系数$\zeta$。Jakes 的衰落信道统计模型 \supercite{Kim2011} 指出：$\zeta=J_0\left(2\pi f_{max}T_s\right)$ ，其中$J_0$ 是第一类零阶贝塞尔函数。$f_{max}=\bar{\nu}f_c/c $ 是最大多普勒频率，其中 $\bar{\nu}$ 表示车辆速度，$f_c$ 表示 5.9 Ghz 的载波频率，$c=3\times{10}^8$m/s，$T_s$ 是周期反馈延迟。发射车和 RSU 都知道实际的 $\zeta$。
 
-根据上述讨论，从第$ i$ 个车辆发射器到第 $j $ 个接收器的第$ k $ 个时隙内，有效链路和干扰链路的移动 V2R 信道功率增益用共享表达式表示：
+根据上述讨论，从第$ i$ 个车辆发射器到第 $j $ 个接收器的第$ k $ 个时隙内，有效链路和干扰链路的移动 V2R 信道功率增益用如下表达式表示：
 \begin{eqnarray}\label{E2}
 G_{i,j}^k={\widetilde{g}}_{i,j}^k+{\hat{g}}_{i,j}^k
 \end{eqnarray}
