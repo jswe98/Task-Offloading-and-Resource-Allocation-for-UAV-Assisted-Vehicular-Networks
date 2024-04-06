@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 10:08
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 10:52
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2330,22 +2330,22 @@ Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.0pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 437.
+(Font)              scaled to size 7.0001pt on input line 448.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.0001pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 437.
+(Font)              scaled to size 5.00008pt on input line 448.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.00008pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 437.
+(Font)              scaled to size 6.9999pt on input line 448.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 6.9999pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 437.
+(Font)              scaled to size 4.99992pt on input line 448.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 4.99992pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
@@ -2367,12 +2367,13 @@ Requested font "lasy5" at 5.0pt
  -> lasy5
 
 Package xeCJK Warning: Unknown CJK family `song' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 442.
+Use \setCJKfamilyfont to define a CJK family. on input line 453.
 
+[15]
 File: figures//chap2//功率.eps Graphic file (type eps)
-<figures//chap2//功率.eps>
+ <figures//chap2//功率.eps>
 File: figures//chap2//价格.eps Graphic file (type eps)
- <figures//chap2//价格.eps> [15] [16]
+ <figures//chap2//价格.eps> [16]
 File: figures//chap2//中断概率.eps Graphic file (type eps)
 
 <figures//chap2//中断概率.eps>
@@ -2527,17 +2528,13 @@ Uthesis\chapter/achive.aux)
 r/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 269.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 269.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34074 strings out of 430478
- 642966 string characters out of 3191501
- 734806 words of memory out of 3000000
- 36567 multiletter control sequences out of 15000+200000
+ 34073 strings out of 430478
+ 642947 string characters out of 3191501
+ 734772 words of memory out of 3000000
+ 36566 multiletter control sequences out of 15000+200000
  15272 words of font info for 154 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,18n,94p,1397b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s

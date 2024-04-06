@@ -382,9 +382,20 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
     \bottomrule
 \end{tabular*}
 \end{center}
+
+前面各小节的分析总结见算法2-1。值得注意的是，由于每个车辆 VUE 之间不存在信息交换，
+因此，算法2-1是一种分布式算法，与集中式算法相比，其可以降低计算复杂度。
+信令开销定义为一次迭代中信息互变化的次数。BS作为领导者，首先向  VUE 发送一条信息， 其中包含BS
+的策略。然后，每个 VUE  做出反应，即回复一条信息给BS。因此，算法 2-1的信号开销为 $2N$，其中
+$N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在集中式算法中，每个 VUE
+都需要来自其他VUE 的状态信息。信令开销增加到 为$N^2+N$，计算复杂度为$\mathcal{O}\left(N^2\right)$。
+通过以上分析，与集中式算法相比，本算法具有更低的复杂度和更少的信号开销。
 \subsection{仿真分析}\label{section2-4-2}
-本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为 $500m$ 的 BS 覆盖范围内，模拟了一个包含 1 个 CU 和 9 个 V2U 集群的简化车辆通信模型，
-用于模拟异构通信场景。表 \ref{biao2-1} 列出了相应的系统参数。
+本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为 $500m$ 的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
+用于模拟异构通信场景，其中无人机用于悬停道路上方为VUE提供任务卸载，CUE 与BS在覆盖范围内正常通信。系统假设VUE和 UAV的集群都只使用
+单天线进行发射和接收。表 \ref{biao2-1} 列出了相应的系统仿真参数。
+
+%加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行
 \begin{comment}
 \begin{table}[htbp!]
  \centering\small
@@ -444,11 +455,14 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
     \qquad\qquad $W$      &\qquad\qquad 信道带宽                                     & \qquad\qquad 10 MHz \\
     \qquad\qquad $L$      &\qquad\qquad 阴影衰落效果                                 & \qquad\qquad 0.9    \\
     \qquad\qquad $\alpha$ &\qquad\qquad 路径损耗指数                                 & \qquad\qquad 1.4    \\
-    %    \qquad\qquad $\delta^2$    &\quad\qquad\qquad\qquad 噪声方差    & \quad\qquad\qquad\qquad -30 dBm      \\
+    \qquad\qquad $\delta^2$    &\quad\qquad 噪声方差    & \quad\qquad -30 dBm      \\
+    \qquad\qquad $p_{i,max}$   &\quad\qquad 车辆最大发射功率    & \quad\qquad 0.01 W       \\
+    \qquad\qquad $I_{th}$      &\quad\qquad 干扰阈值    & \quad\qquad ${10}^{-3}$  \\
+    \qquad\qquad $\varepsilon$ &\quad\qquad 中断概率阈值& \quad\qquad 0.1          \\
  \bottomrule
  \end{tabular*}
 \end{table}
-
+\begin{comment}
 \begin{table}[htbp!]
  \centering\small
  \renewcommand\arraystretch{1.5}
@@ -470,8 +484,12 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 % 手动减少表格下方与下一个元素的间距
 \vspace{-5pt} % 这里的值可以根据需要调整
 \end{table}
+\end{comment}
 
 基于鲁棒斯塔克尔伯格博弈的资源分配算法的收敛性能如图 \ref{功率收敛性能} 和图 \ref{价格收敛性能}所示。
+九个 VUE 的发射功率用 $p_{1}-p_{9}$ 表示，价格用 $c_{1}-c_{9}$ 表示。在图 \ref{功率收敛性能} 中，VUE的发射功率在第七步收敛到最优值，
+VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 中的结果表明，
+所提出的基于鲁棒博弈的资源分配算法是快速且有效的。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//功率.eps}
@@ -484,10 +502,6 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \caption{价格收敛性能}
 \label{价格收敛性能}
 \end{figure}
-
-九个 VUE 的发射功率用 $p_{1}-p_{9}$ 表示，
-价格用 $c_{1}-c_{9}$ 表示。在图 \ref{功率收敛性能} 中，功率在第七步收敛到最优值，VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。
-因此，图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 中的结果表明，所提出的基于鲁棒博弈的资源分配算法是快速有效的。
 
 为了进一步验证所提算法的性能，图 \ref{中断概率对此} 和图 \ref{传输速率对比} 完成了对系统鲁棒性和传输速率的验证。在复杂的通信场景中，严重的多用户干扰会影响用户的信号传输，甚至造成中断。
 \begin{figure}[H]
@@ -504,23 +518,20 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \label{F44}
 \end{figure}
 \end{comment}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{figures//chap2//传输速率对比.eps}
-\caption{传输速率对比}
-\label{传输速率对比}
-\end{figure}
 如图 \ref{中断概率对此} 所示，当 $\varepsilon$ 在 0.1 到 0.6 之间变化时，用户的实际中断概率总是小于给定的阈值。结果证实，不仅实现了有效的干扰管理，还保证了传输的鲁棒性。
 通过与 \cite{PCID}和基线(目标和实际中断概率相等)比较，本文所有用户的实际中断概率都是低于基准值的。这进一步说明本文提出的基于鲁棒博弈的算法在信道不确定性较高的实际场景中更加稳定。
 如图 \ref{传输速率对比} 所示，在不同的方案对比时，博弈论方法中的
 %本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，
 价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
 多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于 \cite{PCID}和 \cite{ACAR}中的传输速率。
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{figures//chap2//传输速率对比.eps}
+\caption{传输速率对比}
+\label{传输速率对比}
+\end{figure}
 
-图 \ref{不同车辆}表示了三种不同的方案下，随着系统中车辆数量的增加，每辆车的平均传输速率，可以看出，当车辆数量增加时，
-会对车联网系统中的车辆通信的平均传输速率产生一定的消极影响，所提出的鲁棒博弈论的方案在受到系统中越来越多车辆干扰时也能保持
-较高的传输速率。%\textcolor[RGB]{202,12,22}{需要添加一点}。
+图 \ref{不同车辆}表示了三种不同的方案下，随着系统中车辆数量的增加，每辆车的平均传输速率。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//不同车辆.eps}
@@ -528,6 +539,9 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \label{不同车辆}
 \end{figure}
 
+从图 \ref{不同车辆}可以看出，当车辆数量增加时，
+会对车联网系统中的车辆通信的平均传输速率产生一定的消极影响，所提出的鲁棒博弈论的方案在受到系统中越来越多车辆干扰时也能保持
+较高的传输速率。%\textcolor[RGB]{202,12,22}{需要添加一点}。
 \section{本章小结}\label{section2-5}
 在章节中，提出了一种基于博弈的鲁棒的资源分配算法，以实现 AGHVN 中的有效信息传输。该算法以用户间的博弈关系为核心，制定了实时功率分配和定价策略，
 在所提出的优化方案中实现了用户利益的最大化。具体而言，为了保证系统的鲁棒性，引入了概率约束，以确保用户服务的可靠性和稳定性。由于信道不确定性的存在，
