@@ -223,7 +223,7 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \end{equation}
 
 其中 $I_{n}^{(t)}=$$p_0 g_{0,n}+\sum_{k=1,k\neq n}^N p_k^{(t)} g_{k,n}$。
-$P3$ 的卡鲁什$-$库恩$-$塔克(KKT)条件为，
+$P_3$ 的卡鲁什$-$库恩$-$塔克(Karush-Kuhn-Tucker, KKT)条件为，
 \begin{equation}\label{E2-22}
 \begin{array}{rl}
 \left\{
@@ -252,7 +252,7 @@ $P3$ 的卡鲁什$-$库恩$-$塔克(KKT)条件为，
 
 要证明 \eqref{E2-23}是 GE，就要讨论 NE 的存在性和唯一性。
 
-存在性： 类似于文献 \cite{GT} 的描述，在 Stackelberg子博弈 \eqref{E2-12}中存在一个NE，条件是
+存在性： 类似于文献 \cite{GT} 的描述，在 Stackelberg子博弈 \eqref{E2-12}中存在一个NE，其条件为：
 
 1) $\mathbf{P}$ 是某个欧几里得空间 $\mathcal{R}^N$ 的非空凸紧凑子集，
 
@@ -444,6 +444,7 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
     \qquad\qquad $W$      &\qquad\qquad 信道带宽                                     & \qquad\qquad 10 MHz \\
     \qquad\qquad $L$      &\qquad\qquad 阴影衰落效果                                 & \qquad\qquad 0.9    \\
     \qquad\qquad $\alpha$ &\qquad\qquad 路径损耗指数                                 & \qquad\qquad 1.4    \\
+    %    \qquad\qquad $\delta^2$    &\quad\qquad\qquad\qquad 噪声方差    & \quad\qquad\qquad\qquad -30 dBm      \\
  \bottomrule
  \end{tabular*}
 \end{table}
@@ -506,8 +507,9 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \end{figure}
 \end{comment}
 
-如图 \ref{传输速率对比} 所示，本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，
-都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
+如图 \ref{传输速率对比} 所示，在不同的方案对比时，博弈论方法中的
+%本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，
+价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
 多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于 \cite{PCID}和 \cite{ACAR}中的传输速率。
 
 图 \ref{不同车辆}表示了三种不同的方案下，随着系统中车辆数量的增加，每辆车的平均传输速率，可以看出，当车辆数量增加时，

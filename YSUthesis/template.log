@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 09:56
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  6 APR 2024 10:08
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2527,6 +2527,10 @@ Uthesis\chapter/achive.aux)
 r/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 269.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 269.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
