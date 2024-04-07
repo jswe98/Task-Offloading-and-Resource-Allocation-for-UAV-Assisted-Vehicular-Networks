@@ -159,8 +159,8 @@ plot(indices, Total_theta(2, indices), '-sr', 'LineWidth', 1.5);
 plot(indices, Total_theta(3, indices), '-dg', 'LineWidth', 1.5);
 % 图形标题和标签
 %title('能效');
-xlabel('周期长度（秒）');
-ylabel('能效 (bits/J)');
+xlabel('\fontname{宋体}周期长度（秒）');
+ylabel('\fontname{宋体}能效 \fontname{Times New Roman}(bits/J)');
 % 设置 x 轴刻度标签
 set(gca, 'XTick', indices);
 set(gca, 'XTickLabel', {'70', '75', '80', '85', '90'});
@@ -168,7 +168,8 @@ set(gca, 'XTickLabel', {'70', '75', '80', '85', '90'});
 % legend('\theta=0.2', '\theta=0.4', '\theta=0.6');
 set(gca,'xlim',[56,76]);
 set(gca,'ylim',[10.5,14.5]);
-legend('优化轨迹','固定轨迹','悬停')
+legend('\fontname{宋体}优化轨迹','\fontname{宋体}固定轨迹','\fontname{宋体}悬停')
+set(gca,'FontName','Times New Roman')
 delete('cardatatemp3.mat');
 
 %{
