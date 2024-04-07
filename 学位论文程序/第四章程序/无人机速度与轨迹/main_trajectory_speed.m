@@ -144,8 +144,6 @@ bound2=T;
 % Total_theta(thetatheta,:)=0.01*sum(Total_T,1)
 Total_theta(programmatic,:)=0.01*sum(Total_T,1);
 % end %这个end表示最外面一个for循环的对应
-
-
 figure;
 zihao=24;
 hold on;
@@ -231,8 +229,7 @@ vx(vx < 0) = -vx(vx < 0);
 vy(vy < 0) = -vy(vy < 0); 
 
 % 创建一个新的图形窗口  
-figure;  
-  
+figure;   
 % 绘制x方向速度随时间变化的曲线  
 subplot(2, 1, 1); % 分割图形窗口为2行1列，当前激活第1个子图  
 plot(vx, '-db', 'LineWidth', 1);  

@@ -142,8 +142,6 @@ bound2=T;
 % Total_theta(thetatheta,:)=0.01*sum(Total_T,1)
 Total_theta(programmatic,:)=0.01*sum(Total_T,1);
 end %这个end表示最外面一个for循环的对应
-
-
 % 绘制图形
 figure;
 % 选择要显示的列索引

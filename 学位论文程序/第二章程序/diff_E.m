@@ -3,158 +3,107 @@ close all
 clear
 digits(3);
 EEE=6;
+global T
 for EE=1:EEE
-    E=0.1*EE;
+E=0.1*EE;
 e=E;
 %-------------------仿真参数------------------%
 h=27; %无人机高度
 M=10; %车辆数目
 N=10; %无人机数目
 L0=0.9; %慢衰落系数
-MUk=0.5;
-%g=rand(1); %信道随机变量
+MUk=0.5; %g=rand(1); %信道随机变量
 g=0.955477890177557;
 w=10; %带宽GHz
 Delta=1e-9;  %背景噪声
-% E=0.8;%第一个阈值
 e2=9;%SINR阈值设为9
-% wwwww=(-e2)/((1/log(2))*log(1-E));
-% Pr=1-exp(-(e2*I)/(P*G));
-
 W=[1900,140,400,200 500,430,610,90,330,405;1900,500,580,430,480,550,210,260,104,361];%车辆位置
 q=[2000,110,300,240,510,430,210,130,500,405;2000,420,580,430,480,550,210,460,344,361];%无人机初始位置
-
 G=ones(M,N);
- for n=1:N     
-  for m=1:M
-d(m,n)=sqrt(h^2+norm([q(1,n) q(2,n)]-[W(1,m) W(2,m)]))
-G(m,n)=g*L0*(d(m,n)^(-1.4));  %车车通信信道
-  end 
- end
-  for m=1:M
-G(m,m)=25*G(m,m)      ;
-  end
+d=ones(M,N);
+    for n=1:N     
+        for m=1:M
+            d(m,n)=sqrt(h^2+norm([q(1,n) q(2,n)]-[W(1,m) W(2,m)]));
+            G(m,n)=g*L0*(d(m,n)^(-1.4));  %车车通信信道
+        end 
+    end
+    for m=1:M
+        G(m,m)=25*G(m,m)      ;
+    end
 X=G+MUk;%xi部分  
-  
- %%%%%%%%%%%%%%%%%%求解功率%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%求解功率%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Pmax=0.5;%FUE最大功率值
-T=20;
+T =20;
 Lamda=zeros(T,10);
 Mu=zeros(T,10);
-
-
-global T
-T =20;
 SINR=zeros(T,10);
 P=zeros(T,10);
+I=zeros(T,10);
+b=zeros(T,10);
+a=b;f=a;c=f;z=c;g=z;h=g;
 P0=0.378*exp(e^2);
 P(1,:)=[0 7.5 7.5 7.5 7.5 7.5 7.5 7.5 7.5 7.5];
- C(1,:)=[0 400 400 400 400 400 400 400 400 400];
+C(1,:)=[0 400 400 400 400 400 400 400 400 400];
 Lamda(1,:)=0.1;
 Mu(1,:)=40;
 rth=0.5;
-
- for t=1:T-1
-     
-    for m=2:10
-        I(t,m)=P0*G(1,m)+P(t,:)*G(m,:)'+Delta-P(t,m)*G(m,m);
-        SINR(t,m)=P(t,m)*G(m,m)/I(t,m); 
-    end
-  
- 
- for m=2:10    
-      %A(t+1,m)= -rth*I(t,m)/(log(1-e))-P(t,m)*G(m,m)
-      Lamda(t+1,m)=Lamda(t,m)+0.001/sqrt(t)*(-rth*I(t,m)/(log(1-e))-P(t,m)*G(m,m))
-     b(t,m)=I(t,m)/G(m,m)     ;
-     a(t,m)=w/(C(t,m)*G(m,1)-Lamda(t,m)*G(m,m));
-  
- end   
-
-       P(t+1,:)=(a(t,:)-b(t,:))*exp(e^2)-4*exp(e^2); %
-
+    for t=1:T-1    
+        for m=2:10
+            I(t,m)=P0*G(1,m)+P(t,:)*G(m,:)'+Delta-P(t,m)*G(m,m);
+            SINR(t,m)=P(t,m)*G(m,m)/I(t,m); 
+        end
+        for m=2:10    
+            Lamda(t+1,m)=Lamda(t,m)+0.001/sqrt(t)*(-rth*I(t,m)/(log(1-e))-P(t,m)*G(m,m))
+            b(t,m)=I(t,m)/G(m,m)     ;
+            a(t,m)=w/(C(t,m)*G(m,1)-Lamda(t,m)*G(m,m)); 
+        end   
+            P(t+1,:)=(a(t,:)-b(t,:))*exp(e^2)-4*exp(e^2); %
 %-------------------上层博弈------------------%
-  for m=2:10
- z(t+1,m)=w*G(m,m)/(I(t,m)*a(t,m));
- Mu(t+1,m)=Mu(t,m)+0.001/sqrt(t)*(C(t,m)*G(m,1)*(a(t,m)-b(t,m))-Mu(t,m)*w*log(w*G(m,m)/(I(t,m)*a(t,m))))  ;   
-
-c(t,m)=sqrt(w^2*Mu(t,m)^2-4*w*Lamda(t,m)*(Mu(t,m)-1)^2*I(t,m))
-%c(t,m)=w^2*Mu(t,m)^2-4*w*Lamda(t,m)*(Mu(t,m)-1)^2*I(t,m)
-%d(t,m)=(Mu(t,m)-1)*I(t,m)
-d(t,m)=(Mu(t,m)-1)
-g(t,m)=c(t,m)/d(t,m)+Lamda(t,m);
-h(t,m)=Mu(t,m)/(2*Mu(t,m)-1)*I(t,m);
-f(t,m)=g(t,m)-h(t,m)
-
-
-C(t+1,m)=G(m,m)/G(m,1)*f(t,m);
-%C(t+1,m)=G(m,m)/G(m,1)*(c(t,m)/((Mu(t,m)-1)*I(t,m))+(Lamda(t,m)-w*Mu(t,m)/(2*Mu(t,m)-1)*I(t,m)));
-  end 
- C(t+1,1)=0; 
- end
- for m=1:10
-     if m==1
-%        Pr(m)=(P0)*(1-exp(-(e2*0.2)/(P0*G(m,m)))); 
-        Pr(m)=0.1*(P(T-1,2))*(1-exp(-(e2*I(T-1,2))/(P(T-1,2)*G(2,2))))
-     else
- Pr(m)=0.1*(P(T-1,m))*(1-exp(-(e2*I(T-1,m))/(P(T-1,m)*G(m,m)))); 
+        for m=2:10
+            z(t+1,m)=w*G(m,m)/(I(t,m)*a(t,m));
+            Mu(t+1,m)=Mu(t,m)+0.001/sqrt(t)*(C(t,m)*G(m,1)*(a(t,m)-b(t,m))-Mu(t,m)*w*log(w*G(m,m)/(I(t,m)*a(t,m))))  ;   
+            c(t,m)=sqrt(w^2*Mu(t,m)^2-4*w*Lamda(t,m)*(Mu(t,m)-1)^2*I(t,m))
+            d(t,m)=(Mu(t,m)-1)
+            g(t,m)=c(t,m)/d(t,m)+Lamda(t,m);
+            h(t,m)=Mu(t,m)/(2*Mu(t,m)-1)*I(t,m);
+            f(t,m)=g(t,m)-h(t,m)
+            C(t+1,m)=G(m,m)/G(m,1)*f(t,m);
+        end 
+            C(t+1,1)=0; 
      end
- end
+     for m=1:10
+         if m==1
+            Pr(m)=0.1*(P(T-1,2))*(1-exp(-(e2*I(T-1,2))/(P(T-1,2)*G(2,2))))
+         else
+            Pr(m)=0.1*(P(T-1,m))*(1-exp(-(e2*I(T-1,m))/(P(T-1,m)*G(m,m)))); 
+         end
+     end
+%  Prr=zeros(EEE,10);
+%  Pee=zeros(EEE,10);
  Prr(EE,:)=(Pr);
  Pee(EE,:)=(P(T,:))
  end
-  speed=linspace(0.1,0.1*EEE,EEE);
- sumsinr=zeros(1,M);
- dc= [true true true true true true true true true true];
-%   dc= [false true false false false false false false false false];
- Prrr=Prr(:,dc)
- 
- figure 
-% plot(speed,Prrr(:,1),'-*r','linewidth',4);   %宏用户   D.C.
+speed=linspace(0.1,0.1*EEE,EEE);
+sumsinr=zeros(1,M);
+dc= [true true true true true true true true true true];
+Prrr=Prr(:,dc)
+figure 
 hold on
 grid on
 box on
-% plot(speed,Prrr(:,2),'-*b','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,3),'-*b','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,4),'-*b','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,5),'-*b','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,6),'-*y','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,7),'-*g','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,8),'-*k','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,9),'-*b','linewidth',1.5);   %宏用户   D.C.
-% plot(speed,Prrr(:,10),'-*b','linewidth',1.5);   %宏用户   D.C.
-
-plot(speed,Prrr(:,2),'-*m','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,3),'-*c','linewidth',1);   %宏用户   D.C.
-% plot(speed,Prrr(:,4),'-*b','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,4),'-*', 'Color',[0.5, 0, 0.5]);
-plot(speed,Prrr(:,5),'-*r','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,6),'-*y','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,7),'-*g','linewidth',1);   %宏用户   D.C.
-% plot(speed,Prrr(:,8),'-*b','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,8),'-*', 'Color',[0, 0.5, 0]);   %宏用户   D.C.
-% plot(speed,Prrr(:,9),'-*b','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,9),'-*', 'Color',[1, 0.5, 0]);   %宏用户   D.C.
-plot(speed,Prrr(:,10),'-*k','linewidth',1);   %宏用户   D.C.
-plot(speed,Prrr(:,1),'-*b','linewidth',1.5);   %宏用户   D.C.
-
-
-% plot(speed,Prrr(:,2),'-or','linewidth',1);   %宏用户   D.C.        1
-% plot(speed,Prrr(:,3),'-*b','linewidth',1);   %宏用户   D.C.        2
-% % plot(speed,Prrr(:,4),'-*b','linewidth',1);   %宏用户   D.C.     
-% plot(speed,Prrr(:,4),'-k','linewidth',1);     %    3
-% plot(speed,Prrr(:,5),'-d', 'Color',[1, 0.5, 0],'linewidth',1);   %宏用户   D.C. 橘色是这个4
-% plot(speed,Prrr(:,6),'-og','linewidth',1);   %宏用户   D.C.  5   [0.5, 0, 0.5] 表示线条的颜色为紫色。  'Color',[0.5, 0, 0.5]','linewidth',1
-% plot(speed,Prrr(:,7),'-*','Color',[0.5, 0, 0.5]','linewidth',1);   %宏用户   D.C. 6
-% % plot(speed,Prrr(:,8),'-*b','linewidth',1);   %宏用户   D.C. 
-% plot(speed,Prrr(:,8),'-+y','linewidth',1);   %宏用户   D.C. 7
-% % plot(speed,Prrr(:,9),'-*b','linewidth',1);   %宏用户   D.C. 
-% plot(speed,Prrr(:,9),'-d', 'Color',[0, 0.5, 0],'linewidth',1);   %宏用户   D.C.  8  '-+b','linewidth',1
-% plot(speed,Prrr(:,10),'-sc','linewidth',1);   %宏用户   D.C.    9
-% plot(speed,Prrr(:,1),'-*b','linewidth',1.5);   %宏用户   D.C.   cue
+plot(speed,Prrr(:,2),'-*m','linewidth',1);       %车用户  
+plot(speed,Prrr(:,3),'-*c','linewidth',1);       %车用户   
+plot(speed,Prrr(:,4),'-*', 'Color',[0.5,0,0.5]); %车用户
+plot(speed,Prrr(:,5),'-*r','linewidth',1);       %车用户  
+plot(speed,Prrr(:,6),'-*y','linewidth',1);       %车用户  
+plot(speed,Prrr(:,7),'-*g','linewidth',1);       %车用户  
+plot(speed,Prrr(:,8),'-*', 'Color',[0,0.5,0]);   %车用户  .
+plot(speed,Prrr(:,9),'-*', 'Color',[1,0.5,0]);   %车用户  
+plot(speed,Prrr(:,10),'-*k','linewidth',1);      %车用户  
+plot(speed,Prrr(:,1),'-*b','linewidth',1.5);     %宏用户 
 set(gca,'xlim',[0,0.1*EEE]);
 set(gca,'ylim',[0,0.1*EEE]);
 legend('V1','V2','V3','V4','V5','V6','V7','V8','V9','CUE')
-% plot([0,0.1*EEE],[0,10*EEE],'k','linewidth',3);
 xlabel('\fontname{宋体}中断概率阈值', 'FontSize', 14);
 ylabel('\fontname{宋体}真实的中断概率', 'FontName', 'SimSun', 'FontSize', 14);
 kk=1;
@@ -163,19 +112,9 @@ b=y0-kk*x0;
 x=-5:20;
 y=kk*x+b;
 plot(x,y,'k','linewidth',3)
- set(gca,'FontName','Times New Roman')
+set(gca,'FontName','Times New Roman')
 
-% plot(C(:,2),'-or','linewidth',1.5);
-% hold on
-% plot(C(:,3),'-*b','linewidth',1.5);
-% plot(C(:,4),'-sk','linewidth',1.5);
-% plot(C(:,5),'-d','Color',[1, 0.5, 0],'linewidth',1.5);
-% plot(C(:,6),'-og','linewidth',1.5);
-% plot(C(:,7),'-*', 'Color',[0.5, 0, 0.5]','linewidth',1.5);
-% plot(C(:,8),'-+b','linewidth',1.5);
-% plot(C(:,9),'-d', 'Color',[0, 0.5, 0],'linewidth',1.5);
-% plot(C(:,10),'-sc','linewidth',1.5);
-
+%{
      for m=1:1
         I00(T-1,m)=sum(P(T-1,:)*G(m,:)'+Delta-P(T-1,m)*G(m,m),2); 
      end
@@ -213,6 +152,7 @@ for i=1:M
 binarySearchForMin_sum(i)=binarySearchForMin(fx);
     end
 end
+%}
 
 % figure 
 % TT=linspace(1,10,10);

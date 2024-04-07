@@ -7,26 +7,24 @@ programmatic=6;
 EEtotal=zeros(3,programmatic);
 for EEm = 1:programmatic
 %   M=  EEm;
-
     switch EEm 
     case 1  
-                              M=4;  %固定价格 
+            M=4;  %车的数量
     case 2  
-                               M=5;  %优化价格
+            M=5;  %车的数量
     case 3  
-                               M=6;  %优化价格
+            M=6;  %车的数量
     case 4  
-                               M=7;  %优化价格
+            M=7;  %车的数量
     case 5  
-                               M=8;  %优化价格
+            M=8;  %车的数量
     case 6  
-                               M=9;  %优化价格
+            M=9;  %车的数量
     otherwise  
-                              disp('Invalid value of programmatic'); 
+            disp('Invalid value of programmatic'); 
     end
-
 %  EE=EEE;
-    E=0.1*EEE;
+E=0.1*EEE;
 e=E;
 %-------------------仿真参数------------------%
 h=27; %无人机高度
@@ -42,13 +40,10 @@ Delta=1e-9;  %背景噪声
 e2=9;%SINR阈值设为9
 % wwwww=(-e2)/((1/log(2))*log(1-E));
 % Pr=1-exp(-(e2*I)/(P*G));
-
 % W=[1900,140,400,200 500,430,610,90,330,405;1900,500,580,430,480,550,210,260,104,361];%车辆位置
 % q=[2000,110,300,240,510,430,210,130,500,405;2000,420,580,430,480,550,210,460,344,361];%无人机初始位置
-
 W=[1900,140,400,200 500,430,210,90,370,405;1900,500,580,430,480,550,210,260,104,361];%车辆位置
 q=[2000,140,400,200,430,670,210,90,370,405;2000,500,580,430,480,720,210,260,104,361];%无人机初始位置
-
 G=ones(M,N);
  for n=1:N     
   for m=1:M
@@ -66,7 +61,6 @@ Pmax=0.5;%FUE最大功率值
 T=20;
 Lamda=zeros(T,M);
 Mu=zeros(T,M);
-
 
 global T
 T =20;
@@ -173,14 +167,11 @@ for i=1:M
 binarySearchForMin_sum(i)=binarySearchForMin(fx);
     end
 end
-
 EEtotal(1,EEm)= sum(sumsinr,2)/M;
 EEtotal(2,EEm)= sum(dc_sum,2)/M;
 EEtotal(3,EEm)= sum(binarySearchForMin_sum,2)/M;
-
 end 
-
- data= 0.4*EEtotal;
+data= 0.4*EEtotal;
 xxxx = 1:programmatic;
 hhh=bar(xxxx,data','stacked');
 % hhh(1).FaceColor = [0.2, 0.4, 0.6];  % 第一组柱子颜色
@@ -195,7 +186,7 @@ set(gca,'XTickLabel',{'4','5','6','7','8','9'})
 legend('\fontname{宋体}鲁棒博弈论','\fontname{宋体}二分法','\fontname{Times New Roman}D.C.\fontname{宋体}规划')
 xlabel('\fontname{宋体}车辆数量(辆)','FontSize',12);
 ylabel('\fontname{宋体}平均传输速率 \fontname{Times New Roman}(Mb/s)','FontSize',12);
- set(gca,'FontName','Times New Roman')
+set(gca,'FontName','Times New Roman')
 % bar(xxxx,data')
 %  dc= [true true true true true true true true true true];
 % %   dc= [false true false false false false false false false false];
