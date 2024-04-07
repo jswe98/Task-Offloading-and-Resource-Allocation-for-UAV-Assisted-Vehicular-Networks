@@ -148,10 +148,10 @@ plot(C(:,10),'-*k','linewidth',1);
 % plot(C(:,10),'-sc','linewidth',1.5);
 
 legend('C1','C2','C3','C4','C5','C6','C7','C8','C9')
-xlabel('迭代次数', 'FontName', 'SimSun','FontSize',14);
-ylabel('价格', 'FontName', 'SimSun','FontSize',14);   
+xlabel('\fontname{宋体}迭代次数', 'FontName', 'SimSun','FontSize',14);
+ylabel('\fontname{宋体}价格', 'FontName', 'SimSun','FontSize',14);   
 xlim([0 20])
-
+ set(gca,'FontName','Times New Roman')
 % plot(speed,Prrr(:,2),'-*m','linewidth',1);   %宏用户   D.C.
 % plot(speed,Prrr(:,3),'-*c','linewidth',1);   %宏用户   D.C.
 % plot(speed,Prrr(:,4),'-*', 'Color',[0.5, 0, 0.5]);

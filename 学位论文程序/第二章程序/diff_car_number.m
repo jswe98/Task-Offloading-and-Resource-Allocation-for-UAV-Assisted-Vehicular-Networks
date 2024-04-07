@@ -192,10 +192,10 @@ set(hhh(3),'FaceColor',[255,255,0]/255)
 grid on
 box on
 set(gca,'XTickLabel',{'4','5','6','7','8','9'})
-legend('鲁棒博弈论','二分法','D.C.规划')
-xlabel('车辆数量 （辆）','FontSize',12);
-ylabel('平均传输速率 (Mb/s)','FontSize',12);
-
+legend('\fontname{宋体}鲁棒博弈论','\fontname{宋体}二分法','\fontname{Times New Roman}D.C.\fontname{宋体}规划')
+xlabel('\fontname{宋体}车辆数量(辆)','FontSize',12);
+ylabel('\fontname{宋体}平均传输速率 \fontname{Times New Roman}(Mb/s)','FontSize',12);
+ set(gca,'FontName','Times New Roman')
 % bar(xxxx,data')
 %  dc= [true true true true true true true true true true];
 % %   dc= [false true false false false false false false false false];

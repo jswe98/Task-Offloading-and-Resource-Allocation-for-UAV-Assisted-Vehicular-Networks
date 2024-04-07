@@ -155,15 +155,15 @@ set(gca,'xlim',[0,0.1*EEE]);
 set(gca,'ylim',[0,0.1*EEE]);
 legend('V1','V2','V3','V4','V5','V6','V7','V8','V9','CUE')
 % plot([0,0.1*EEE],[0,10*EEE],'k','linewidth',3);
-xlabel('中断概率阈值', 'FontSize', 14);
-ylabel('真实的中断概率', 'FontName', 'SimSun', 'FontSize', 14);
+xlabel('\fontname{宋体}中断概率阈值', 'FontSize', 14);
+ylabel('\fontname{宋体}真实的中断概率', 'FontName', 'SimSun', 'FontSize', 14);
 kk=1;
 x0=0.15;y0=0.151;
 b=y0-kk*x0;
 x=-5:20;
 y=kk*x+b;
 plot(x,y,'k','linewidth',3)
-
+ set(gca,'FontName','Times New Roman')
 
 % plot(C(:,2),'-or','linewidth',1.5);
 % hold on

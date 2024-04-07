@@ -142,10 +142,10 @@ set(b(3),'FaceColor',[255,255,0]/255)
 
 ch = get(b,'children');
 set(gca,'XTickLabel',{'CUE','V1','V2','V3','V4','V5','V6','V7','V8','V9'})
-legend('鲁棒博弈论','二分法','D.C.规划')
-xlabel('通信用户','FontSize',14);
-ylabel('传输速率 (Mb/s)', 'FontName', 'SimSun','FontSize',14);
-
+legend('\fontname{宋体}鲁棒博弈论','\fontname{宋体}二分法','\fontname{Times New Roman}D.C.\fontname{宋体}规划')
+xlabel('\fontname{宋体}通信用户','FontSize',14);
+ylabel('\fontname{宋体}传输速率 \fontname{Times New Roman}(Mb/s)', 'FontName', 'SimSun','FontSize',14);
+ set(gca,'FontName','Times New Roman')
 
 %{
 for i=1:M
