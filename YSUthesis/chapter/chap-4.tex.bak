@@ -55,9 +55,9 @@ $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这�
 %{\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %h=\xi\tilde{h}+\sqrt{1-{{\xi }^{2}}}\zeta\    {\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %{\widetilde{h}}_{m,R}=L_{m,R}^2{\widetilde{h}}_{m,R}^2\xi_{m,R}^2
-h_{m}={\widetilde{h}}_{m}^2+{\hat{h}_{m}}^2,
+h_{m}={\widetilde{h}}\phantom{}_{m}^2+{\hat{h}\phantom{}_{m}}^2,
 \end{equation}
-这里的${\widetilde{h}}_{m}$ 是一个观测值，${\hat{h}}_{m}$ 是一个服从参数为$a=\frac{1}{{L_{i,j}^t}({1-{\zeta_{i,j}^t}^2})}$ 的指数分布，其中$\zeta$ 表示信道增益，其复高斯分布为 $\zeta\sim CN\left(0,\delta^2\right)$，
+这里的${\widetilde{h}}\phantom{}_{m}$ 是一个观测值，${\hat{h}}\phantom{}_{m}$ 是一个服从参数为$a=\frac{1}{{L_{i,j}^t}({1-{\zeta_{i,j}^t}^2})}$ 的指数分布，其中$\zeta$ 表示信道增益，其复高斯分布为 $\zeta\sim CN\left(0,\delta^2\right)$，
 $ {L_{i,j}^t}^2 $表示第 $t $ 个时隙的大规模衰减效应，包括阴影衰减路径损耗。
 在第$t$ 个时隙，地面基站收到的第$m$辆车的信噪比SNR可以表示为：
 \begin{equation} \label{E4-2}
@@ -175,7 +175,7 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 \begin{equation} \label{E4-14}
 \begin{gathered}
 p_m\left[t\right]x_m\left[t\right]\ln \left(1-a \varepsilon_3\right)+(\gamma_{th}-y_m\left[t\right]\gamma_{m,U})\left[t\right] a \sigma^2
-\leq a p_m\left[t\right]x_m\left[t\right]\hat{h}_{m}\left[t\right]
+\leq a p_m\left[t\right]x_m\left[t\right]\hat{h}\phantom{}_{m}\left[t\right]
 \end{gathered}
 \end{equation}
 %\textcolor[RGB]{202,12,22}{巴拉巴拉}
@@ -185,27 +185,27 @@ p_m\left[t\right]x_m\left[t\right]\ln \left(1-a \varepsilon_3\right)+(\gamma_{th
 \begin{align} \label{E4-15}
 \qquad & \frac{x_m[t]p_m[t]h_{m,R}[t]}{\sigma^2} \geq \gamma_{th} - y_m[t]\gamma_{m,U}[t] \\
 \Leftrightarrow \quad
-& p_m[t]{\widetilde{h}}_{m}[t] \geq \frac{(\gamma_{th} - y_m[t]\gamma_{m,U}[t])\sigma^2}{x_m[t]} - p_m[t]{\hat{h}}_{m}[t] \notag
+& p_m[t]{\widetilde{h}}\phantom{}_{m}[t] \geq \frac{(\gamma_{th} - y_m[t]\gamma_{m,U}[t])\sigma^2}{x_m[t]} - p_m[t]{\hat{h}}\phantom{}_{m}[t] \notag
 \end{align}
 %$\frac{{(SNR_{th}-y_m\left[t\right]\gamma_{m,U})\sigma^2}}{x_m\left[t\right]}$
 因此车辆用户的中断概率约束做出重新表述如下：
 \begin{align} \label{E4-16}
 \Pr\left\{ x_m[t]\gamma_{m,R}[t] + y_m[t]\gamma_{m,U}[t] \geq \gamma_{th} \right\} &\geq 1 - \varepsilon_3 \\
 \Leftrightarrow \quad
-\Pr\left\{ {\widetilde{h}}_{m}[t] \geq \frac{(\gamma_{th} - y_m[t]\gamma_{m,U}[t])\sigma^2}{p_m[t]x_m[t]} - {\hat{h}}_{m}[t] \right\} &\geq 1 - \varepsilon_3 \notag
+\Pr\left\{ {\widetilde{h}}\phantom{}_{m}[t] \geq \frac{(\gamma_{th} - y_m[t]\gamma_{m,U}[t])\sigma^2}{p_m[t]x_m[t]} - {\hat{h}}\phantom{}_{m}[t] \right\} &\geq 1 - \varepsilon_3 \notag
 \end{align}
 由于随机变量$\widetilde{h}$ 的概率密度函数为$f_x={{e}^{-ax}}$，通过积分变换可得：
 \begin{align} \label{E4-17}
-\int_{0}^{\frac{(\gamma_{th}-y_m[t]\gamma_{m,U})\sigma^2}{p_m[t]x_m[t]} - \hat{h}_{m}[t]}{e^{-ax}dx} &\leq \varepsilon_3  \\
+\int_{0}^{\frac{(\gamma_{th}-y_m[t]\gamma_{m,U})\sigma^2}{p_m[t]x_m[t]} - \hat{h}\phantom{}_{m}[t]}{e^{-ax}dx} &\leq \varepsilon_3  \\
 \Leftrightarrow \quad
-p_m[t]x_m[t]\ln(1-a\varepsilon_3) + (\gamma_{th}-y_m[t]\gamma_{m,U}[t])a\sigma^2 &\leq a p_m[t]x_m[t]\hat{h}_{m}[t] \notag
+p_m[t]x_m[t]\ln(1-a\varepsilon_3) + (\gamma_{th}-y_m[t]\gamma_{m,U}[t])a\sigma^2 &\leq a p_m[t]x_m[t]\hat{h}\phantom{}_{m}[t] \notag
 \end{align}
 %GVRR.* P_m.*X' >= SNRth*Delta+ GVUU.*P_m.*Y'+log(1-e1)*P_m.*X'
 
 为了表达方便，定义  %另起一段
 $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$\eta_{m,U}\left[t\right]=h_{m,U}\left[t\right]/{\sigma^2}$，进一步的可得：
 \begin{equation} \label{E4-1833}
-{{\kappa }_{m}}\left[ t \right]={{x}_{m}}\left[ t \right]\ln \left( 1-a{{\varepsilon }_{3}} \right)-{{y}_{m}}\left[ t \right]{{\eta }_{m,U}}\left[ t \right]a{{\sigma }^{2}}-a{{x}_{m}}\left[ t \right]{{\hat{h}}_{m}}\left[ t \right]
+{{\kappa }_{m}}\left[ t \right]={{x}_{m}}\left[ t \right]\ln \left( 1-a{{\varepsilon }_{3}} \right)-{{y}_{m}}\left[ t \right]{{\eta }_{m,U}}\left[ t \right]a{{\sigma }^{2}}-a{{x}_{m}}\left[ t \right]{{\hat{h}}\phantom{}_{m}}\left[ t \right]
 \end{equation}
  并将式子 \eqref{E4-17} 改写为：%\par
 %\textcolor[RGB]{202,12,22}{这里不太对}
@@ -263,13 +263,13 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 \begin{align}\label{E4-24}
 \frac{{{B}_{0}}x_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right] \right)}+\frac{{{B}_{0}}y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right] \right)}+\chi \left( \theta -x_{m}^{\left\{ l \right\}}\left[ t \right] \right) \\   \notag
 %-\sum\limits_{t=1}^{T}{{{\lambda }_{m,t}}}\left( {{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}} \right)=0
--\sum\limits_{t=1}^{T}{{{\lambda }_{m,t}}}\left( -{{y}_{m}}[t]{{\eta }_{m,U}}[t]a{{\sigma }^{2}}+{{x}_{m}}[t]{{{\hat{h}}}_{m}}[t]-\frac{{{x}_{m}}[t]a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right)=0,
+-\sum\limits_{t=1}^{T}{{{\lambda }_{m,t}}}\left( -{{y}_{m}}[t]{{\eta }_{m,U}}[t]a{{\sigma }^{2}}+{{x}_{m}}[t]{{{\hat{h}}}\phantom{}_{m}}[t]-\frac{{{x}_{m}}[t]a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right)=0,
 \end{align}
 由上式可得
 \begin{align}\label{E4-25}
-\!\!\!\!{{p}_{m}}\left[ t \right]=\frac{x_{m}^{\left\{ l \right\}}\left[ t \right]}{\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}+\frac{y_{m}^{\left\{ l \right\}}\left[ t \right]}{\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}-\frac{{{B}_{0}}}{\ln 2{{\lambda }_{m,t}}\left[ y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]a{{\sigma }^{2}}+x_{m}^{\left\{ l \right\}}\left( {{{\hat{h}}}_{m}}[t]-\frac{a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right) \right]}
+\!\!\!\!{{p}_{m}}\left[ t \right]=\frac{x_{m}^{\left\{ l \right\}}\left[ t \right]}{\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}+\frac{y_{m}^{\left\{ l \right\}}\left[ t \right]}{\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}-\frac{{{B}_{0}}}{\ln 2{{\lambda }_{m,t}}\left[ y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]a{{\sigma }^{2}}+x_{m}^{\left\{ l \right\}}\left( {{{\hat{h}}}\phantom{}_{m}}[t]-\frac{a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right) \right]}
 \end{align}
-为了简化表达，令${{c}_{m}}\left[ t \right]=y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]a{{\sigma }^{2}}+x_{m}^{\left\{ l \right\}}\left( {{{\hat{h}}}_{m}}[t]-\frac{a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right)$，
+为了简化表达，令${{c}_{m}}\left[ t \right]=y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]a{{\sigma }^{2}}+x_{m}^{\left\{ l \right\}}\left( {{{\hat{h}}}\phantom{}_{m}}[t]-\frac{a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right)$，
 
 根据 \eqref{E4-24}，功率分配通过以下方式迭代更新，
 \begin{align} \label{E4-26}
@@ -375,16 +375,16 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
 %\begin{tabular}{lcr}
     \toprule
-    算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
+    \zihao{-5}算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
     \midrule
-    Step1：开始。                                                    \\
-      Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
-           Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-          Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
-              Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-    Step6：执行更新$l=l+1$。                                         \\
-    Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
-    Step8：结束。                                                   \\
+   \zihao{-5} Step1：开始。                                                    \\
+    \zihao{-5}  Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
+    \zihao{-5}       Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+     \zihao{-5}     Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
+     \zihao{-5}         Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+   \zihao{-5} Step6：执行更新$l=l+1$。                                         \\
+  \zihao{-5}  Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
+   \zihao{-5} Step8：结束。                                                   \\
     \bottomrule
 \end{tabular*}
 \end{center}

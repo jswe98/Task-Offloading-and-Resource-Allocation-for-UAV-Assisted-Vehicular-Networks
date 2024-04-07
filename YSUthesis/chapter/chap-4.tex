@@ -375,16 +375,16 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
 %\begin{tabular}{lcr}
     \toprule
-    算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
+    \zihao{-5}算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
     \midrule
-    Step1：开始。                                                    \\
-      Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
-           Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-          Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
-              Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-    Step6：执行更新$l=l+1$。                                         \\
-    Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
-    Step8：结束。                                                   \\
+   \zihao{-5} Step1：开始。                                                    \\
+    \zihao{-5}  Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
+    \zihao{-5}       Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+     \zihao{-5}     Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
+     \zihao{-5}         Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+   \zihao{-5} Step6：执行更新$l=l+1$。                                         \\
+  \zihao{-5}  Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
+   \zihao{-5} Step8：结束。                                                   \\
     \bottomrule
 \end{tabular*}
 \end{center}
@@ -458,23 +458,23 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表\ref{biao4-1}：
 
 \begin{table}[htbp!]
- \centering\small
+ \centering
  \renewcommand\arraystretch{1.5}   %latex 三线表中各行间隔
- \Tablecaption{系统仿真参数}\label{biao4-1}
+ \Tablecaption{\zihao{-5}系统仿真参数}\label{biao4-1}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
  \toprule
-    \qquad\qquad 符号         &\quad\qquad\qquad 参数                       & \quad\qquad\qquad 数值   \\
+   \zihao{-5} \qquad\qquad 符号         &\quad\qquad\qquad \zihao{-5}参数                       & \quad\qquad\qquad \zihao{-5}数值   \\
  \midrule
-    \qquad\qquad $H$          &\quad\qquad\qquad 无人机的飞行高度           & \quad\qquad\qquad 100 m  \\
-    \qquad\qquad $T$          &\quad\qquad\qquad 时隙个数                   & \quad\qquad\qquad 70     \\
-    \qquad\qquad $h$          &\quad\qquad\qquad 地面基站高度               & \quad\qquad\qquad 5 m    \\
-    \qquad\qquad $W$          &\quad\qquad\qquad 信道带宽                   & \quad\qquad\qquad 10 MHz \\
-    \qquad\qquad $V_{max}$    &\quad\qquad\qquad 每个时隙无人机最大飞行距离 & \quad\qquad\qquad 2.5m   \\
-    \qquad\qquad $\sigma^2$   &\quad\qquad\qquad 噪声方差                   & \quad\qquad\qquad 5 dBm  \\
-    \qquad\qquad $\gamma_{th}$&\quad\qquad\qquad 信噪比阈值                 & \quad\qquad\qquad 96dBm  \\
-    \qquad\qquad $\varsigma_0$&\quad\qquad\qquad 路径损耗指数               & \quad\qquad\qquad 4      \\
-    \qquad\qquad $f_R$&\quad\qquad\qquad 路边单元计算频率               & \quad\qquad\qquad 1.5 MHz      \\
-    \qquad\qquad $\aleph$&\quad\qquad\qquad 有效开关电容系数               & \quad\qquad\qquad 1.2 cycles/bit     \\
+    \qquad\qquad \zihao{-5}$H$          &\quad\qquad\qquad \zihao{-5}无人机的飞行高度           & \quad\qquad\qquad \zihao{-5}100 m  \\
+    \qquad\qquad \zihao{-5}$T$          &\quad\qquad\qquad \zihao{-5}时隙个数                   & \quad\qquad\qquad \zihao{-5}70     \\
+    \qquad\qquad\zihao{-5} $h$          &\quad\qquad\qquad \zihao{-5}地面基站高度               & \quad\qquad\qquad \zihao{-5}5 m    \\
+    \qquad\qquad \zihao{-5}$W$          &\quad\qquad\qquad \zihao{-5}信道带宽                   & \quad\qquad\qquad \zihao{-5}10 MHz \\
+    \qquad\qquad \zihao{-5}$V_{max}$    &\quad\qquad\qquad \zihao{-5}每个时隙无人机最大飞行距离 & \quad\qquad\qquad \zihao{-5}2.5m   \\
+    \qquad\qquad \zihao{-5}$\sigma^2$   &\quad\qquad\qquad\zihao{-5} 噪声方差                   & \quad\qquad\qquad \zihao{-5}5 dBm  \\
+    \qquad\qquad \zihao{-5}$\gamma_{th}$&\quad\qquad\qquad \zihao{-5}信噪比阈值                 & \quad\qquad\qquad \zihao{-5}96dBm  \\
+    \qquad\qquad \zihao{-5}$\varsigma_0$&\quad\qquad\qquad \zihao{-5}路径损耗指数               & \quad\qquad\qquad \zihao{-5}4      \\
+    \qquad\qquad \zihao{-5}$f_R$&\quad\qquad\qquad \zihao{-5}路边单元计算频率               & \quad\qquad\qquad\zihao{-5} 1.5 MHz      \\
+    \qquad\qquad \zihao{-5}$\aleph$&\quad\qquad\qquad \zihao{-5}有效开关电容系数               & \quad\qquad\qquad \zihao{-5}1.2 cycles/bit     \\
  \bottomrule
  \end{tabular*}
 \end{table}

@@ -366,19 +366,19 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \begin{center}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
     \toprule
-    算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
+    \zihao{-5}算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
     \midrule
-    Step1： 开始。                                                                                            \\
-    Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
-    Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
-    Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
-    Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
-    Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
-    Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
-    Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
-    Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
-    Step10：设置 $t=t+1$                                                                                      \\
-    Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
+   \zihao{-5} Step1： 开始。                                                                                            \\
+   \zihao{-5} Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
+   \zihao{-5} Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
+   \zihao{-5} Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
+   \zihao{-5} Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
+   \zihao{-5} Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
+   \zihao{-5} Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
+   \zihao{-5} Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
+   \zihao{-5} Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
+  \zihao{-5}  Step10：设置 $t=t+1$                                                                                      \\
+  \zihao{-5}  Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
     \bottomrule
 \end{tabular*}
 \end{center}
@@ -443,7 +443,7 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 \begin{table}[htbp!]
  \centering\small
  \renewcommand\arraystretch{1.5}
- \caption{系统仿真参数} % 第一个表的标题
+ \caption{\zihao{-5}系统仿真参数} % 第一个表的标题
  \label{biao2-1} % 第一个表的标签
  \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
  \toprule
