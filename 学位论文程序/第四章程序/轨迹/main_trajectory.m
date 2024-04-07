@@ -181,8 +181,8 @@ hold off;
 hold on;
 plot(UAVX, UAVY, 'color', 'black','Marker', '+', 'LineWidth', 1.5)
 hold off;
-xlabel('道路长度 ','FontSize',12);
-ylabel('道路宽度','FontSize',12);
+xlabel('\fontname{宋体}道路长度 ','FontSize',12);
+ylabel('\fontname{宋体}道路宽度','FontSize',12);
 xlim = get(gca, 'XLim');
 ylim = get(gca, 'YLim');
 y_center = mean(ylim);
@@ -203,14 +203,15 @@ hold on;
 plot(xlim, [y_center+0.05, y_center+0.05],'-',  'color', 'yellow', 'LineWidth', 2);
 plot(xlim, [y_center-0.05, y_center-0.05],'-', 'color', 'yellow', 'LineWidth', 2);
 hold off;
-legend_entries{M+1} = '无人机初始轨迹';
-legend_entries{M+2} = 'Optimization UAV Trajectory';
-legend_entries{M+3} = '黄色双实线';
+legend_entries{M+1} = '\fontname{宋体}无人机初始轨迹';
+legend_entries{M+2} = '\fontname{宋体}最优无人机轨迹';  %Optimization UAV Trajectory
+legend_entries{M+3} = '\fontname{宋体}黄色双实线';
 % legend_entries{M+3} = '向右为正方向';
 %legend_entries{M+4} = '黄色双实线';
 legend(legend_entries, 'Location', 'best');
 YY=1-X'
 delete('cardatatemp4.mat');
+ set(gca,'FontName','Times New Roman')
 
 
 

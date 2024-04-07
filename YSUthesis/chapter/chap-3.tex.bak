@@ -79,7 +79,7 @@ D_i=\frac{1}{{\tau_iR}_i-k_i}
 \end{eqnarray}
 
 \subsection{车辆计算模型}\label{section3-2-2}
-将处理车辆 $i$ 的 1 位输入数据所需的 CPU 周期数表示为 $c_0$ \supercite{Zhang2017}，它不可分割，无法分解为更小的组件 \supercite{Saleem2021}。
+将处理车辆 $i$ 的 1 位输入数据所需的 CPU 周期数表示为 $c_0$ \supercite{Zhang2017}，它不可分割，无法分解为更小的组件 \supercite{Zhang2017,Saleem2021}。
 可以认为，在$ \mathcal{V}$ 中，每辆车每次都有不同的计算任务，记作 $T_i$，由两个参数组成的元组来定义，即 $\langle d_{i,up}, c_{i,e}\rangle$，其中 $c_{i,e}$ [cycles] 指定了工作量 \supercite{Tran2019}。 因此，完成任务的计算成本 $c_{i,e}$ 可以通过 $c_{0}*d_{i,up}$ 得到。每个任务都被卸载到 MEC 服务器，然后传输到云服务器。通过将计算任务卸载到 MEC 服务器，车辆可以获得更多计算资源。然而，在上行链路方向传输任务输入可能会消耗额外的时间。
 
 每个 RSU 上的 MEC 服务器按时段为车辆提供计算卸载服务。计算资源由固定速率 $\bar{f}$ （即每秒 CPU 周期数）量化。第 $i$ 辆车将每个任务的输入数据上传到最近的 RSU。RSU 首先处理小规模、对延迟敏感的数据，然后将剩余数据转发给远程云服务器。{云服务器同时为多个 RSU 提供计算服务。RSU 可用的计算资源取决于从云服务器分配的计算速率 $f_i$，}即每秒 CPU 周期数。因此，计算卸载造成的延迟可计算为,
@@ -105,7 +105,7 @@ t_{i,exe}=\frac{c_{i,e}}{\bar{f}+f_i}
 \begin{eqnarray}\label{E9}
  t_i=\frac{c_{i,e}}{\bar{f}+f_i}+T_c
 \end{eqnarray}
-其中，云服务器和 RSU 之间的传输延迟定义为 $T_c$，通常设为一个常量 \cite{Xiao2020}。 因此，任务完成时间的相对效用函数的特征为,
+其中，云服务器和 RSU 之间的传输延迟定义为 $T_c$，通常设为一个常量 \supercite{Xiao2020}。 因此，任务完成时间的相对效用函数的特征为,
 \begin{eqnarray}\label{E10}
 U_{i,exe}=\frac{t_{max}-t_{i,exe}}{t_{max}}
 \end{eqnarray}

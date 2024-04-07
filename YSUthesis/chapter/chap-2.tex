@@ -82,7 +82,7 @@ h_{0,0}=\sqrt{H_0^2+(\|W_0-W_{BS}\|)^2}
 g_{0,0}=L_{0,0}h_{0,0}^{-\alpha}
 \end{eqnarray}
 \begin{eqnarray}\label{E2-4}
-g_{n,n}=L_{k,n}h_{k,n}^{-\alpha},          &k, n\in \mathcal{N}, k=n
+g_{n,n}=L_{k,n}h_{k,n}^{-\alpha},          &k, n\in \mathcal{S}_l, k=n
 \end{eqnarray}
 其中，$L_{0,0}$ 和 $L_{n,n}$ 是蜂窝链路和同信道 V2U 链路的阴影衰减效应。$\alpha$ 是路径损耗指数。虽然车辆与无人机之间的传输链路可视为借助无人机在道路上空进行的 LoS 通信，
 但仍存在一些影响信道增益的因素，如通信终端的相对移动、信道估计误差以及不可避免的信道不确定性。因此，小尺度衰落不容忽视。根据文献 \cite{CCO}，它遵循截断指数分布。为了描述信
@@ -130,7 +130,7 @@ R_{er}=\int_{0}^{\infty} W \log(1+\gamma_{n})\Pr(\gamma_{n})\, d(\gamma_{n})
 \begin{eqnarray}\label{E2-10}
 R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in\mathcal{N}
 \end{eqnarray}
-\subsection{博弈论问题}\label{section2-2-2}
+\subsection{博弈论问题的描述}\label{section2-2-2}
 在空地一体化异构的车载网络(AGHVN)中，频谱所有者 CUE 可以对干扰进行定价，并将 VUE 的收费作为其利润。在 V2U 小区中，VUE 的效用是传输速率与购买干扰成本之间的差额。
 考虑到 CUE 和 VUE 都是自私自利的，它们都愿意为自己的利益而竞争。因此，数学框架自然符合 Stackelberg 博弈模型，其中 CUE 和 VUE 分别是领导者和追随者。此外，还考虑了
  CUE 的通信约束。第$n_{th}$ 个V2U 单元的下子博弈可表述为：
@@ -189,7 +189,7 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \int_{0}^{\frac{\gamma_{th}I_{n}}{p_n g_{n,n}}} e^{-x}\, dx\leq\varepsilon
 \end{equation}
 
-可以认为：
+%可以认为：
 \begin{equation}\label{E2-17}
 \frac{p_n g_{ n,n}}{I_{n}}\geq\frac{-\gamma_{th}}{\ln(1-\varepsilon)}
 \end{equation}
@@ -391,7 +391,7 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 都需要来自其他VUE 的状态信息。信令开销增加到 为$N^2+N$，计算复杂度为$\mathcal{O}\left(N^2\right)$。
 通过以上分析，与集中式算法相比，本算法具有更低的复杂度和更少的信号开销。
 \subsection{仿真分析}\label{section2-4-2}
-本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为 $500m$ 的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
+本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为500m的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
 用于模拟异构通信场景，其中无人机用于悬停道路上方为VUE提供任务卸载，CUE 与BS在覆盖范围内正常通信。系统假设VUE和 UAV的集群都只使用
 单天线进行发射和接收。表 \ref{biao2-1} 列出了相应的系统仿真参数。
 
@@ -547,6 +547,8 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 在所提出的优化方案中实现了用户利益的最大化。具体而言，为了保证系统的鲁棒性，引入了概率约束，以确保用户服务的可靠性和稳定性。由于信道不确定性的存在，
 概率形式非凸且难以处理，因此在凸优化过程中采用了指数积分法。根据仿真结果，功率值和价格在几步内收敛到最优值。还可以得出结论，斯塔克尔伯格博弈优化方
 案表现出更好的鲁棒性。因此，所提出的基于鲁棒博弈的资源分配算法在具有复杂多用户干扰和信道不确定性的空地一体化异构车载通信场景下是有效的。
+
+
 
 
 

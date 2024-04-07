@@ -165,12 +165,13 @@ for t=1:T
     car_x(m,t)=car_positions(m,1,t);
     car_y(m,t)=car_positions(m,2,t);
         if L(m)==-1;
-           legend_entries{m} = ['向左行驶的车 ' num2str(m)]; 
+           legend_entries{m} = ['\fontname{宋体}向左行驶的车 ', '\fontname{Times New Roman}{' num2str(m) '}']; 
         else
-           legend_entries{m} = ['向右行驶的车 ' num2str(m) ]; 
+           legend_entries{m} = ['\fontname{宋体}向右行驶的车 ', '\fontname{Times New Roman}{' num2str(m) '}'];   %num2str(m)
         end
     end
 end
+set(gca,'FontName','Times New Roman')
 for m = 1:M
     if L(m)==-1;
     plot(car_x(m, :), car_y(m, :), 'LineWidth', 1,'Marker', '<','MarkerFaceColor', 'auto');  % 绘制每辆车的轨迹
@@ -182,8 +183,8 @@ hold off;
 hold on;  % 绘制无人机未优化的初始轨迹
 plot(UAVX, UAVY, 'color', 'black','Marker', '+', 'LineWidth', 1.5)
 hold off;
-xlabel('道路长度', 'FontSize', zihao);
-ylabel('道路宽度', 'FontSize', zihao);
+xlabel('\fontname{宋体}道路长度', 'FontSize', zihao);
+ylabel('\fontname{宋体}道路宽度', 'FontSize', zihao);
 xlim = get(gca, 'XLim');
 ylim = get(gca, 'YLim');
 y_center = mean(ylim);
@@ -201,15 +202,17 @@ hold on;  % 添加黄色双实线
 plot(xlim, [y_center+0.09, y_center+0.09],'-',  'color', 'yellow', 'LineWidth', 2);
 plot(xlim, [y_center-0.09, y_center-0.09],'-', 'color', 'yellow', 'LineWidth', 2);
 hold off;
-legend_entries{M+1} = '固定无人机轨迹';
-legend_entries{M+2} = '最优无人机轨迹';
-legend_entries{M+3} = '黄色双实线';
+legend_entries{M+1} = '\fontname{宋体}固定无人机轨迹';
+legend_entries{M+2} = '\fontname{宋体}最优无人机轨迹';
+legend_entries{M+3} = '\fontname{宋体}黄色双实线';
 legend_handle = legend(legend_entries, 'FontSize', zihao); 
 legend(legend_entries, 'Location', 'best', 'FontSize', zihao-1);
 set(gcf, 'Position', [100, 100, 2000, 1000]);
+set(gca,'YTickLabel',{'0','5','10','15','20','25','30'}, 'FontSize', zihao-1)
+set(gca,'FontName','Times New Roman')
 YY=1-X'
-delete('cardatatemp.mat');
-
+%delete('cardatatemp.mat');
+set(gca,'FontName','Times New Roman')
 FinallyUAVpositions=q;
 delta_t = 1; % 例如，每个时隙间隔1秒  
 % 计算每个时隙的瞬时速度  
@@ -233,18 +236,19 @@ figure;
 % 绘制x方向速度随时间变化的曲线  
 subplot(2, 1, 1); % 分割图形窗口为2行1列，当前激活第1个子图  
 plot(vx, '-db', 'LineWidth', 1);  
-title('x方向速度随时间变化');  
-xlabel('时隙');  
-ylabel('速度 (m/s)');  
+title('x \fontname{宋体}方向速度随时间变化');  
+xlabel('\fontname{宋体}时隙');  
+ylabel('\fontname{宋体}速度 \fontname{Times New Roman}(m/s)');  
 grid on;  
-  
+set(gca,'FontName','Times New Roman')  
 % 绘制y方向速度随时间变化的曲线  
 subplot(2, 1, 2); % 激活第2个子图  
 plot(vy, '-db', 'LineWidth', 1);  
-title('y方向速度随时间变化');  
-xlabel('时隙');  
-ylabel('速度 (m/s)');  
+title('y \fontname{宋体}方向速度随时间变化');  
+xlabel('\fontname{宋体}时隙');  
+ylabel('\fontname{宋体}速度 \fontname{Times New Roman}(m/s)');  
 grid on;
+set(gca,'FontName','Times New Roman')
 %{
 figure;
 hold on;

@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  5 APR 2024 12:08
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  7 APR 2024 14:27
 entering extended mode
 **template.tex
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\template.
-tex
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\template.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\YSUthesis
-.cls
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\YSUthesis.cls
 Document Class: YSUthesis 2012/3/17 v0.3.3 YSUthesis document class
 (D:\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls
 Document Class: ctexbook 2011/03/11 v1.02c ctexbook document class
@@ -1340,8 +1340,8 @@ Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
 " at 12.05pt
  -> C:/Windows/Fonts/times.ttf
 )
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\YSUthesis
-.cfg
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\YSUthesis.cfg
 File: YSUthesis.cfg 2012/03/17 v0.3.3 YSUthesis configuration file
 \c@algo=\count323
 \c@thm=\count324
@@ -1432,7 +1432,8 @@ Package: arydshln 2004/08/31 v1.71
 \adl@everyvbox=\toks41
 \adl@LTpagetotal=\dimen277
 )
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\pmat.sty
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\pmat.sty
 Package: pmat 1996/01/01 v0.1
 \pmat@dashwidth=\dimen278
 \pmat@dashheight=\dimen279
@@ -1443,8 +1444,8 @@ Package: pmat 1996/01/01 v0.1
 \pmat@minentrydepth=\dimen284
 ) (D:\CTEX\MiKTeX\tex\latex\comment\comment.sty
 \CommentStream=\write3
- Excluding comment 'comment')
-(D:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+
+Excluding comment 'comment') (D:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
 (D:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
@@ -1596,12 +1597,14 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen292
 )
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\template.
-aux (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapt
-er/abstract.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命
-\精简\chapter/achive.aux)
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapter/t
-hanks.aux))
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\template.aux
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/abstract.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/achive.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/thanks.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
 LaTeX Font Info:    ... okay on input line 114.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
@@ -1694,9 +1697,9 @@ LaTeX Info: Redefining \ref on input line 114.
 LaTeX Info: Redefining \pageref on input line 114.
 LaTeX Info: Redefining \nameref on input line 114.
 
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\template.
-out) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\temp
-late.out)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\template.out) (F:\OneDrive\组内文献\次世代网络架构与矩阵
+革命\大论文模板精简版\template.out)
 \@outlinefile=\write4
 \c_siunitx_mathsf_int=\count353
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
@@ -1742,7 +1745,8 @@ Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.22995pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Try loading font information for U+msa on input line 114.
- (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+
+(D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 Requested font "msam10" at 12.05pt
@@ -2159,8 +2163,9 @@ tex-text;" at 12.05pt
 ] [8
 
 
-] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapter
-/abstract.tex
+]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/abstract.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\<def>-command' on input line 21.
@@ -2215,8 +2220,8 @@ Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
 Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
 t;" at 12.05pt
  -> C:/Windows/Fonts/timesbd.ttf
- [3] [4]) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简
-\template.toc)
+ [3] [4]) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论
+文模板精简版\template.toc)
 \tf@toc=\write5
  [5
 
@@ -2224,13 +2229,14 @@ t;" at 12.05pt
 
 ] [6
 
-] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\templat
-e.bbl [1
+]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\template.bbl [1
 
 
 ] [2] [3] [4]) [5]
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapter/a
-chive.tex
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/achive.tex
 Requested font "æ^^96°å®^^8bä½^^93" at 12.05pt
  -> C:/Windows/Fonts/simsun.ttc
 Requested font "æ^^96°å®^^8bä½^^93/ICU" at 12.05pt
@@ -2252,8 +2258,9 @@ tex-text;embolden=4;" at 12.05pt
 ) [6
 
 
-] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapter
-/thanks.tex
+]
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/thanks.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.05pt
@@ -2266,20 +2273,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
- (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\template
-.aux (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chap
-ter/abstract.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革�
-�\精简\chapter/achive.aux)
-(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\精简\chapter/t
-hanks.aux))
+ (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板
+精简版\template.aux
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/abstract.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/achive.aux)
+(F:\OneDrive\组内文献\次世代网络架构与矩阵革命\大论文模板�
+��简版\chapter/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 269.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 269.
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
  33649 strings out of 430478
- 636002 string characters out of 3191501
- 710619 words of memory out of 3000000
+ 636116 string characters out of 3191501
+ 711619 words of memory out of 3000000
  36234 multiletter control sequences out of 15000+200000
  13085 words of font info for 129 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191

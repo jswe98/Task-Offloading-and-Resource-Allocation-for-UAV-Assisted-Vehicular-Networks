@@ -161,9 +161,10 @@ set(b(2),'FaceColor',[204,124,113]/255)
 set(b(3),'FaceColor',[122,182,86]/255)    
 ch = get(b,'children');
 set(gca,'XTickLabel',{'\theta=0.2','\theta=0.4','\theta=0.6'})
-legend('优化轨迹','固定轨迹','悬停');
+legend('\fontname{宋体}优化轨迹','\fontname{宋体}固定轨迹','\fontname{宋体}悬停');
 % xlabel('Threshold value of computing total（GHz）')
-ylabel('能效 (bits/J)');
+ylabel('\fontname{宋体}能效 \fontname{Times New Roman}(bits/J)'); 
+set(gca,'FontName','Times New Roman')
 delete('cardatatemp2.mat');
 
 %{

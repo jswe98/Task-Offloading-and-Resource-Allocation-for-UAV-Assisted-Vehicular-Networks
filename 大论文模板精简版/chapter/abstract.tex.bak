@@ -37,6 +37,7 @@
 ，使得越来越多的设备加入车联网成为可能，更加多样化的车联网场景相继提出，本文聚焦于无人机作为空中基站辅助车辆与路边单元的通信与任务卸载，
 %并制定了合理的功率控制及轨迹优化等联合优化方案以全方位的提高车联网的系统性能。
 并制定了有效的功率控制及轨迹优化策略，通过联合优化方案提升车联网的系统性能。
+\[ {\widetilde{g}} = L_{i,j}^2 {\widetilde{h}}_{i,j}^2 \xi_{i,j}^2 \] 
 
 首先，针对空地一体化的大规模通信异构的车联网络，提出了一种基于博弈的鲁棒资源分配算法，该方案通过构建用户间的博弈关系，制定了实时功率分配和定价策略，在该优化方案中实现了用户利益的最大化。
 引入了概率约束，以确保用户服务的可靠性和稳定性。仿真结果表明，所提算法在复杂多用户干扰和信道不确定性的空地一体化异构车联网通信场景下是有效的。
@@ -47,13 +48,14 @@
 平衡方案。通过优化车辆的发射功率与无人机的飞行轨迹以及时隙的分配，可以使得系统的能效最大化，数值仿真表明，该方案在能效方面的性能明显高于其他方法并可显著提升车联网通信效率。
 
 \begin{keywords}
-车联网；无人机通信；吞吐量最大化；中断概率；边缘计算；轨迹优化；任务卸载
+\mykeywords
+%车联网；无人机通信；吞吐量最大化；中断概率；边缘计算；轨迹优化；任务卸载
 %关键词1；关键词2；关键词4；关键词4 \qquad(关键词是供检索用的主题词条。关键词应集中体现论文特色，反映研究成果的内涵，具有语义性，在论文中有明确的出处，并应尽量采用《汉语主题词表》或各专业主题词表提供的规范词，应列取3-8个关键词，按词条的外延层次从大到小排列。)
 \end{keywords}
 
 %\zhongtuanclassnum{TP391.41}
 \makeatletter
-\noindent{\heiti 分类号：}  \CAST@value@classification   %自动添加分类号
+\noindent{\zihao{-4}\heiti 分类号：}  \CAST@value@classification   %自动添加分类号
 \makeatother
 %\noindent\textbf{中图分类号：}  TP273.2 UDC： 623.1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,10 +67,10 @@
 \vspace{0.23cm}   %题目上间隔
 \begin{center}
 \makeatletter
-\zihao{-2}\textbf{\CAST@value@entitle}    %自动添加英文题目作为摘要
+\zihao{-2}\textbf{\timesfont{\CAST@value@entitle}}    %自动添加英文题目作为摘要
 \makeatother
 \end{center}
-\addcontentsline{toc}{chapter}{\bf Abstract}%%%%%目录 mzhy55     Abstract  ABSTRACT
+\addcontentsline{toc}{chapter}{\timesfont Abstract}%%%%%目录 mzhy55     Abstract  ABSTRACT \bf
 
 \makeatletter
   \fancypagestyle{plain}{%
@@ -77,27 +79,28 @@
   \renewcommand{\footrulewidth}{0pt}%
 %  \renewcommand{\headrule}{}
   \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
-  \fancyhead[CO]{\zihao{5} Abstract}
+  \fancyhead[CO]{\zihao{5}\timesfont Abstract}
   \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
   }
   \pagestyle{fancy}%%%%% 页眉 mzhy55
   \fancyhf{}
   \fancyhead[CE]{{\zihao{5} 燕山大学\CAST@value@degree 学位论文}}
-  \fancyhead[CO]{{\zihao{5} Abstract}}
+  \fancyhead[CO]{{\zihao{5}\timesfont Abstract}}
   \fancyfoot[C]{{\zihao{-5} -~\thepage~-}}
 \makeatother
 %%%%%%% 以上内容不要修改！！！ mzhy55
 \vspace{0.39cm}  %题目下间隔
-\noindent\textbf{Abstract: }In recent years, the density of road vehicles has increased, leading to prominent issues of traffic safety and vehicle communication congestion. Intelligent Traffic Systems (ITS) are being widely developed and deployed worldwide due to the continuous development of intelligence and networking. During the first four generations of mobile communication technology, it facilitated information exchange solely between people, without enabling connections between people and things, or things and things. However, with the advent of 5G, the concept of interconnectivity will become a reality. 5G boasts high capacity, speed, bandwidth, and mobility, as well as low latency. Multi-Access Edge Computing (MEC) can reduce end-to-end latency to 1 millisecond, making telematics a crucial component in the realization of smart cities and intelligent transportation. This proposal introduces the concept of the Internet of Everything. This paper focuses on the use of UAVs as airborne base stations to support communication and task offloading between vehicles and roadside units. It formulates power control and trajectory optimization schemes to improve the system performance of vehicle networking. The paper aims to achieve an all-round improvement in the system's performance.
+\noindent\textbf{\timesfont{Abstract: }}\timesfont{In recent years, the density of road vehicles has increased, leading to prominent issues of traffic safety and vehicle communication congestion. Intelligent Traffic Systems (ITS) are being widely developed and deployed worldwide due to the continuous development of intelligence and networking. During the first four generations of mobile communication technology, it facilitated information exchange solely between people, without enabling connections between people and things, or things and things. However, with the advent of 5G, the concept of interconnectivity will become a reality. 5G boasts high capacity, speed, bandwidth, and mobility, as well as low latency. Multi-Access Edge Computing (MEC) can reduce end-to-end latency to 1 millisecond, making telematics a crucial component in the realization of smart cities and intelligent transportation. This proposal introduces the concept of the Internet of Everything. This paper focuses on the use of UAVs as airborne base stations to support communication and task offloading between vehicles and roadside units. It formulates power control and trajectory optimization schemes to improve the system performance of vehicle networking. The paper aims to achieve an all-round improvement in the system's performance.
 
 Firstly, a game-based resource allocation algorithm is proposed for air-ground integrated large-scale communication heterogeneous vehicular networks. The algorithm centers on the game relationship between users and formulates real-time power allocation and pricing strategies to maximize user benefits in a novel optimization scheme. To ensure the reliability and stability of user services, probabilistic constraints are introduced. The simulation results demonstrate the effectiveness of the proposed algorithm in air-ground integrated heterogeneous vehicular communication scenarios, even in the presence of complex multi-user interference and channel uncertainty.
 
 Secondly, a new approach to robust power control and task offloading for cloud-assisted MEC is proposed to address the increasing demand for low-latency, high-data computation in vehicular networks. The optimization problem is limited by the form of transmission rate, computational communication delay, and co-channel interference probability due to the presence of channel uncertainty. The optimization problem is initially formulated as a robust power control and task offloading scheduling problem using the Successive Convex Approximation (SCA) technique to transform the variable-coupled NP-hard problem into a tractable convex problem.   Simulation results demonstrate that our proposed algorithm achieves a Compared to the existing methods, the average utility of system offloading has significantly improved.
 
-Finally, this paper considers a more realistic physical scenario that combines UAV-assisted communication with task offloading. The authors propose an efficient UAV-assisted vehicular communication scheme for two-way lanes. A balancing scheme is constructed to measure the basic throughput, communication, and UAV flight energy consumption during vehicular communication. By optimizing the transmit power of the vehicle and the flight trajectory of the UAV, as well as the allocation of time slots, the energy efficiency of the system can be maximized. Numerical simulations show that this scheme significantly outperforms other methods in terms of energy efficiency and can greatly improve vehicular communication efficiency.
+Finally, this paper considers a more realistic physical scenario that combines UAV-assisted communication with task offloading. The authors propose an efficient UAV-assisted vehicular communication scheme for two-way lanes. A balancing scheme is constructed to measure the basic throughput, communication, and UAV flight energy consumption during vehicular communication. By optimizing the transmit power of the vehicle and the flight trajectory of the UAV, as well as the allocation of time slots, the energy efficiency of the system can be maximized. Numerical simulations show that this scheme significantly outperforms other methods in terms of energy efficiency and can greatly improve vehicular communication efficiency.}
 
 \begin{englishkeywords}
-UAV Communication; Throughput Maximisation; Outage Probability; Edge Computing; Trajectory Optimisation; Task Offloading
+\myenkeywords
+%UAV Communication;Throughput Maximisation;Outage Probability;Edge Computing; Trajectory Optimisation;Task Offloading
 \end{englishkeywords}
 
 \makeatletter

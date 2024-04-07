@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.1}引言}{8}{section.2.1}
 \contentsline {section}{\numberline {2.2}系统模型与问题描述}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}系统及信道模型}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}博弈论问题}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}博弈论问题的描述}{10}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}博弈问题求解}{12}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}概率约束的转化}{12}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}求解下层子问题}{12}{subsection.2.3.2}
@@ -29,15 +29,15 @@
 \contentsline {subsection}{\numberline {3.2.2}车辆计算模型}{23}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}功率控制与任务卸载问题的定义}{23}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}功率控制与任务资源分配问题的求解}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}目标方程中的连续凸逼近方法}{25}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}中断概率的近似}{26}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}优化功率问题}{27}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}计算资源分配}{28}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.1} 目标函数的连续凸逼近方法}{25}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}中断概率近似}{26}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}功率优化分配}{27}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}计算资源优化分配}{28}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}算法与仿真验证}{30}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}鲁棒的功率控制任务卸载调度算法}{30}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}仿真分析}{30}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}本章小结}{36}{section.3.5}
-\contentsline {chapter}{\numberline {第\nobreakspace {}4\ignorespaces \nobreakspace {}章\hspace {0.3em}}基于能效最大化的无人机辅助的车辆任务卸载网络}{37}{chapter.4}
+\contentsline {chapter}{\numberline {第\nobreakspace {}4\ignorespaces \nobreakspace {}章\hspace {0.3em}}无人机辅助的车联网络任务卸载能效优化}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}引言}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}系统模型与问题描述}{37}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}车辆与地面基站通信与能耗模型}{39}{subsection.4.2.1}
@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {4.4.2}仿真分析}{46}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}本章小结}{50}{section.4.5}
 \contentsline {chapter}{\numberline {第\nobreakspace {}5\ignorespaces \nobreakspace {}章\hspace {0.3em}}结论}{51}{chapter.5}
-\contentsline {chapter}{参考文献}{52}{appendix*.93}
-\contentsline {chapter}{攻读硕士学位期间取得的成果}{57}{appendix*.94}
-\contentsline {chapter}{致\hskip 1em\relax 谢}{58}{appendix*.95}
+\contentsline {chapter}{参考文献}{52}{appendix*.92}
+\contentsline {chapter}{攻读硕士学位期间取得的成果}{57}{appendix*.93}
+\contentsline {chapter}{致\hskip 1em\relax 谢}{58}{appendix*.94}
 \contentsfinish 

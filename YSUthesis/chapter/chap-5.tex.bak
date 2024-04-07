@@ -1,5 +1,5 @@
 % !Mode:: "TeX:UTF-8"
-\chapter{结论} \label{chap:equ}
+\chapter{结论} \label{chap:equcc}
 \begin{comment}
 首先，针对空地一体化的大规模通信异构车载网络，提出了一种基于博弈的鲁
 棒资源分配算法，该方案以用户间的博弈关系为核心，制定了实时功率分配和定价
