@@ -26,7 +26,7 @@ $D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动
 在时隙$t$内，无人机的水平坐标为$q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$
 ，无人机在距离路面高度为$H$进行无障碍飞行，其飞行最大速度为$V_{max}$，车辆的集合为$\mathcal{M}=\{1,2,\cdots ,m,\cdots ,M\}$，车辆$m$ 的初始水平位置为$q_m\left[0\right]=\left\{\pi_0,\varpi_0\right\}$，
 假设车辆以速度$\nu_m$ 匀速直线行驶，根据之前定义的车道索引可以得出车辆$m$在第$t$时刻的水
-平位置变化为$\mathcal{x}_m\left[t\right]=x_0+l\nu_m t$，车辆$m$的水平位置 $q_m=\left\{\pi_m\left[n\right],\varpi_0\right\}$
+平位置变化为$\pi_m\left[t\right]=\pi_0+l\nu_m t$，车辆$m$的水平位置 $q_m=\left\{\pi_m\left[n\right],\varpi_0\right\}$
 根据位置信息即可得到在第$t$时刻的距离信息
 车辆$m$ 在$t$时隙与路边单元的距离为${{d}_{m,R}}\left[ t \right]=\left\| {{q}_{m}}\left[ t \right]-{{q}_{R}} \right\|=\sqrt{{{\pi}_{m}}{{\left[ t \right]}^{2}}+{{\varpi}_{0}}^{2}+{{H}^{2}}}$
 ，车辆$m$在$t$ 时隙与无人机的距离为
@@ -141,10 +141,10 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 & \qquad\qquad\textbf{P}:\qquad \max_{ \mathbf{P}, \mathbf{Q}, \mathbf{X} }  EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})                \label{E4-13}\\
 \text { s.t. }
 & \Pr\left\{x_m\left[t\right]\gamma_{m,R}\left[t\right]+y_m\left[t\right]\gamma_{m,U}\left[t\right]\geq \gamma_{th}\right\}\geq1-\varepsilon_3, \forall m,t   \tag{\ref{E4-13}{-1}}      \label{E4-13-1}\\  %信噪比中断概率约束
-& 0\le p_m\left[t\right]\le p_{max}, \forall m                           \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
-& x_m\left[t\right] + y_m\left[t\right]=1, \forall m                     \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
-& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m                           \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
-& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
+& 0\le p_m\left[t\right]\le p_{max}, \forall m,t                           \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
+& x_m\left[t\right] + y_m\left[t\right]=1, \forall m,t                     \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
+& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m,t                           \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
+& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
 上式子中的\eqref{E4-13-1} 表示了保证车辆通信的中断概率约束来保证服务质量，式子\eqref{E4-13-2} 给出了
@@ -258,7 +258,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 \begin{equation} \label{E4-23}
 \min_{\substack{\lambda_{m,t}\geq 0}} D\left(\mathbf{p_m},\mathbf{\lambda}\right)
 \end{equation}
-问题\eqref{E4-23} 是一个凸问题且满足Karush-Kuhn-Tucker （KKT）条件，
+问题\eqref{E4-23} 是一个凸问题且满足Karush-Kuhn-Tucker(KKT)条件，
 在使用KKT条件的类似求解过程中可令其一阶导数为等于零：
 \begin{align}\label{E4-24}
 \frac{{{B}_{0}}x_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right] \right)}+\frac{{{B}_{0}}y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right] \right)}+\chi \left( \theta -x_{m}^{\left\{ l \right\}}\left[ t \right] \right) \\   \notag
