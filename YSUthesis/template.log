@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  7 APR 2024 18:19
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  7 APR 2024 19:28
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2403,31 +2403,6 @@ Requested font "Times New Roman/ICU:script=latn;language=DFLT;mapping=tex-text;
  -> C:/Windows/Fonts/times.ttf
 Missing character: There is no 。 in font [xits-math.otf]/ICU:script=math;lang
 uage=DFLT;mapping=tex-text;+ssty=0;!
-Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
-+ssty=1;" at 7.0pt
- -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
-LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 448.
-Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
-+ssty=1;" at 7.0001pt
- -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
-LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 448.
-Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
-+ssty=1;" at 6.9999pt
- -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
-Requested font "msam7" at 7.0pt
- -> msam7
-Requested font "msbm7" at 7.0pt
- -> msbm7
-Requested font "psyr" at 7.0pt
- -> psyr
-Requested font "lasy7" at 7.0pt
- -> lasy7
-
-
-Package xeCJK Warning: Unknown CJK family `song' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 453.
 
 [15]
 File: figures//chap2//功率.eps Graphic file (type eps)
@@ -2486,7 +2461,29 @@ File: figures//chap3//diffspeed1.eps Graphic file (type eps)
  <figures//chap3//diffspeed1.eps>
 File: figures//chap3//diff_e1.eps Graphic file (type eps)
 
-<figures//chap3//diff_e1.eps> [33]
+<figures//chap3//diff_e1.eps>
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 7.0pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 539.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 7.0001pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 539.
+Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
++ssty=1;" at 6.9999pt
+ -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
+Requested font "msam7" at 7.0pt
+ -> msam7
+Requested font "msbm7" at 7.0pt
+ -> msbm7
+Requested font "psyr" at 7.0pt
+ -> psyr
+Requested font "lasy7" at 7.0pt
+ -> lasy7
+ [33]
 File: figures//chap3//compare.eps Graphic file (type eps)
  <figures//chap3//compare.eps> [34]
 File: figures//chap3//diff_dup.eps Graphic file (type eps)
@@ -2506,11 +2503,8 @@ r/chap-4.tex
 
 ]
 File: figures//chap4//第四章系统模型图.pdf Graphic file (type QTm)
- <use  "figures//chap4//第四章系统模型图.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-[39] [40] [41]
+ <use  "figures//chap4//第四章系统模型图.pdf" > [38] [39] [40]
+[41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
@@ -2588,17 +2582,13 @@ Uthesis\chapter/achive.aux)
 r/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 267.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34102 strings out of 430478
- 643901 string characters out of 3191501
- 734767 words of memory out of 3000000
- 36584 multiletter control sequences out of 15000+200000
+ 34101 strings out of 430478
+ 643884 string characters out of 3191501
+ 734782 words of memory out of 3000000
+ 36583 multiletter control sequences out of 15000+200000
  18008 words of font info for 174 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,18n,94p,1397b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s

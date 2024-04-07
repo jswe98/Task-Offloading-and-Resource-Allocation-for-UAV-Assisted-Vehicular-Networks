@@ -1,7 +1,7 @@
 % !Mode:: "TeX:UTF-8"
 %\chapter{车联网技术的网络资源优化理论基础}
-%\chapter{基于博弈论的鲁棒干扰管理异构车载网络中的大规模空地一体化通信异构车载网络}
-\chapter{基于博弈论的无人机辅助异构车辆网络的干扰管理与鲁棒功率控制}
+%\chapter{基于博弈论的鲁棒干扰管理异构车载网络中的大规模空地一体化通信异构车载网络}  基于博弈论的
+\chapter{基于博弈论的无人机辅助异构车联网络的鲁棒功率控制}
 \begin{comment}
 \label{chap:figures}
 插图主要涉及到：单个居中图形；两个并排图形；两个以上的并排或者堆叠的图形；图题；图形的引用；
@@ -130,7 +130,7 @@ R_{er}=\int_{0}^{\infty} W \log(1+\gamma_{n})\Pr(\gamma_{n})\, d(\gamma_{n})
 \begin{eqnarray}\label{E2-10}
 R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in\mathcal{N}
 \end{eqnarray}
-\subsection{博弈论问题}\label{section2-2-2}
+\subsection{博弈论问题的描述}\label{section2-2-2}
 在空地一体化异构的车载网络(AGHVN)中，频谱所有者 CUE 可以对干扰进行定价，并将 VUE 的收费作为其利润。在 V2U 小区中，VUE 的效用是传输速率与购买干扰成本之间的差额。
 考虑到 CUE 和 VUE 都是自私自利的，它们都愿意为自己的利益而竞争。因此，数学框架自然符合 Stackelberg 博弈模型，其中 CUE 和 VUE 分别是领导者和追随者。此外，还考虑了
  CUE 的通信约束。第$n_{th}$ 个V2U 单元的下子博弈可表述为：
@@ -189,7 +189,7 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \int_{0}^{\frac{\gamma_{th}I_{n}}{p_n g_{n,n}}} e^{-x}\, dx\leq\varepsilon
 \end{equation}
 
-可以认为：
+%可以认为：
 \begin{equation}\label{E2-17}
 \frac{p_n g_{ n,n}}{I_{n}}\geq\frac{-\gamma_{th}}{\ln(1-\varepsilon)}
 \end{equation}
@@ -366,19 +366,19 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \begin{center}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
     \toprule
-    算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
+    \zihao{-5}算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
     \midrule
-    Step1： 开始。                                                                                            \\
-    Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
-    Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
-    Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
-    Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
-    Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
-    Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
-    Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
-    Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
-    Step10：设置 $t=t+1$                                                                                      \\
-    Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
+   \zihao{-5} Step1： 开始。                                                                                            \\
+   \zihao{-5} Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
+   \zihao{-5} Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
+   \zihao{-5} Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
+   \zihao{-5} Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
+   \zihao{-5} Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
+   \zihao{-5} Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
+   \zihao{-5} Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
+   \zihao{-5} Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
+  \zihao{-5}  Step10：设置 $t=t+1$                                                                                      \\
+  \zihao{-5}  Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
     \bottomrule
 \end{tabular*}
 \end{center}
@@ -391,7 +391,7 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 都需要来自其他VUE 的状态信息。信令开销增加到 为$N^2+N$，计算复杂度为$\mathcal{O}\left(N^2\right)$。
 通过以上分析，与集中式算法相比，本算法具有更低的复杂度和更少的信号开销。
 \subsection{仿真分析}\label{section2-4-2}
-本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为 $500m$ 的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
+本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为500m的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
 用于模拟异构通信场景，其中无人机用于悬停道路上方为VUE提供任务卸载，CUE 与BS在覆盖范围内正常通信。系统假设VUE和 UAV的集群都只使用
 单天线进行发射和接收。表 \ref{biao2-1} 列出了相应的系统仿真参数。
 
@@ -547,6 +547,8 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 在所提出的优化方案中实现了用户利益的最大化。具体而言，为了保证系统的鲁棒性，引入了概率约束，以确保用户服务的可靠性和稳定性。由于信道不确定性的存在，
 概率形式非凸且难以处理，因此在凸优化过程中采用了指数积分法。根据仿真结果，功率值和价格在几步内收敛到最优值。还可以得出结论，斯塔克尔伯格博弈优化方
 案表现出更好的鲁棒性。因此，所提出的基于鲁棒博弈的资源分配算法在具有复杂多用户干扰和信道不确定性的空地一体化异构车载通信场景下是有效的。
+
+
 
 
 

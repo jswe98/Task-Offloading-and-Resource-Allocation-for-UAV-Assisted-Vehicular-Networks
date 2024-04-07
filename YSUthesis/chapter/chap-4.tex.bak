@@ -458,23 +458,23 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表\ref{biao4-1}：
 
 \begin{table}[htbp!]
- \centering\small
+ \centering
  \renewcommand\arraystretch{1.5}   %latex 三线表中各行间隔
- \Tablecaption{系统仿真参数}\label{biao4-1}
+ \Tablecaption{\zihao{-5}系统仿真参数}\label{biao4-1}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
  \toprule
-    \qquad\qquad 符号         &\quad\qquad\qquad 参数                       & \quad\qquad\qquad 数值   \\
+   \zihao{-5} \qquad\qquad 符号         &\quad\qquad\qquad \zihao{-5}参数                       & \quad\qquad\qquad \zihao{-5}数值   \\
  \midrule
-    \qquad\qquad $H$          &\quad\qquad\qquad 无人机的飞行高度           & \quad\qquad\qquad 100 m  \\
-    \qquad\qquad $T$          &\quad\qquad\qquad 时隙个数                   & \quad\qquad\qquad 70     \\
-    \qquad\qquad $h$          &\quad\qquad\qquad 地面基站高度               & \quad\qquad\qquad 5 m    \\
-    \qquad\qquad $W$          &\quad\qquad\qquad 信道带宽                   & \quad\qquad\qquad 10 MHz \\
-    \qquad\qquad $V_{max}$    &\quad\qquad\qquad 每个时隙无人机最大飞行距离 & \quad\qquad\qquad 2.5m   \\
-    \qquad\qquad $\sigma^2$   &\quad\qquad\qquad 噪声方差                   & \quad\qquad\qquad 5 dBm  \\
-    \qquad\qquad $\gamma_{th}$&\quad\qquad\qquad 信噪比阈值                 & \quad\qquad\qquad 96dBm  \\
-    \qquad\qquad $\varsigma_0$&\quad\qquad\qquad 路径损耗指数               & \quad\qquad\qquad 4      \\
-    \qquad\qquad $f_R$&\quad\qquad\qquad 路边单元计算频率               & \quad\qquad\qquad 1.5 MHz      \\
-    \qquad\qquad $\aleph$&\quad\qquad\qquad 有效开关电容系数               & \quad\qquad\qquad 1.2 cycles/bit     \\
+    \qquad\qquad \zihao{-5}$H$          &\quad\qquad\qquad \zihao{-5}无人机的飞行高度           & \quad\qquad\qquad \zihao{-5}100 m  \\
+    \qquad\qquad \zihao{-5}$T$          &\quad\qquad\qquad \zihao{-5}时隙个数                   & \quad\qquad\qquad \zihao{-5}70     \\
+    \qquad\qquad\zihao{-5} $h$          &\quad\qquad\qquad \zihao{-5}地面基站高度               & \quad\qquad\qquad \zihao{-5}5 m    \\
+    \qquad\qquad \zihao{-5}$W$          &\quad\qquad\qquad \zihao{-5}信道带宽                   & \quad\qquad\qquad \zihao{-5}10 MHz \\
+    \qquad\qquad \zihao{-5}$V_{max}$    &\quad\qquad\qquad \zihao{-5}每个时隙无人机最大飞行距离 & \quad\qquad\qquad \zihao{-5}2.5m   \\
+    \qquad\qquad \zihao{-5}$\sigma^2$   &\quad\qquad\qquad\zihao{-5} 噪声方差                   & \quad\qquad\qquad \zihao{-5}5 dBm  \\
+    \qquad\qquad \zihao{-5}$\gamma_{th}$&\quad\qquad\qquad \zihao{-5}信噪比阈值                 & \quad\qquad\qquad \zihao{-5}96dBm  \\
+    \qquad\qquad \zihao{-5}$\varsigma_0$&\quad\qquad\qquad \zihao{-5}路径损耗指数               & \quad\qquad\qquad \zihao{-5}4      \\
+    \qquad\qquad \zihao{-5}$f_R$&\quad\qquad\qquad \zihao{-5}路边单元计算频率               & \quad\qquad\qquad\zihao{-5} 1.5 MHz      \\
+    \qquad\qquad \zihao{-5}$\aleph$&\quad\qquad\qquad \zihao{-5}有效开关电容系数               & \quad\qquad\qquad \zihao{-5}1.2 cycles/bit     \\
  \bottomrule
  \end{tabular*}
 \end{table}

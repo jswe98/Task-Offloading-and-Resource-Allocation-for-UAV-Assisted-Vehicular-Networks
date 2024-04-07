@@ -20,7 +20,7 @@
 $D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动建模为常速度运动模型 \supercite{COIFMAN1998271}。 可以规定向右为正方向，定义车道索引$L=1$ 为车辆向右行驶，$L=-1$为向左行驶。  %\supercite{Fiore2008TheNS}
 由于基站位置固定，随者时间的推移，不可避免地存在一个方向的车辆会远离基站，势必影响其通过基站获取信息，此时，无人机向着基站的右方飞去，进而帮助远离基站的车辆获取需要的信息。
 为了决策道路上的车辆需要从无人机还是基站获取信息，根据由一阶马尔可夫过程预测到车辆到基站的信道状态信息与车辆与空中基站无人机视距链路得到的信道状态信息分别得出车辆与两个数据中中心通信的信噪比(Signal to Noise Ratio, SNR)，
-车辆会选择信噪比较大的一方请求资源，$x_m\left[t\right]=1$ 为车辆选择无人机进行通信，反之车辆选择基站进行通信。
+车辆会选择信噪比较大的一方请求资源，$x_m\left[t\right]=1$ 为车辆选择无人机进行通信，反之车辆选择地面的基站进行通信。
 
 无人机的飞行周期$\mathcal{T}$ 被离散划分为足够多相等的$T $个时隙，每个时隙$t$ 被认为是足够小的，即$\mathcal{T}=Tt $，时隙的集合为$\mathcal{T}=\{1,2,\cdots ,t,\cdots ,T\}$，
 在时隙$t$内，无人机的水平坐标为$q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$
@@ -375,16 +375,16 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
 %\begin{tabular}{lcr}
     \toprule
-    算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
+    \zihao{-5}算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
     \midrule
-    Step1：开始。                                                    \\
-      Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
-           Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-          Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
-              Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
-    Step6：执行更新$l=l+1$。                                         \\
-    Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
-    Step8：结束。                                                   \\
+   \zihao{-5} Step1：开始。                                                    \\
+    \zihao{-5}  Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\
+    \zihao{-5}       Step3：根据 \eqref{E4-26} 计算车辆的发射功率$ {{p}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+     \zihao{-5}     Step4：根据 \eqref{E4-34} 计算无人机轨迹$ {{Q}_{m}}{{\left[ t \right]}^{*}}$  。                                        \\
+     \zihao{-5}         Step5：根据 \eqref{E4-36} 确定时隙资源的分配$ {{X}_{m}}{{\left[ t \right]}^{*}}$。                                      \\
+   \zihao{-5} Step6：执行更新$l=l+1$。                                         \\
+  \zihao{-5}  Step7：重复执行Step3 至Step6，直到满足收敛条件。                  \\
+   \zihao{-5} Step8：结束。                                                   \\
     \bottomrule
 \end{tabular*}
 \end{center}
@@ -458,23 +458,23 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表\ref{biao4-1}：
 
 \begin{table}[htbp!]
- \centering\small
+ \centering
  \renewcommand\arraystretch{1.5}   %latex 三线表中各行间隔
- \Tablecaption{系统仿真参数}\label{biao4-1}
+ \Tablecaption{\zihao{-5}系统仿真参数}\label{biao4-1}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
  \toprule
-    \qquad\qquad 符号         &\quad\qquad\qquad 参数                       & \quad\qquad\qquad 数值   \\
+   \zihao{-5} \qquad\qquad 符号         &\quad\qquad\qquad \zihao{-5}参数                       & \quad\qquad\qquad \zihao{-5}数值   \\
  \midrule
-    \qquad\qquad $H$          &\quad\qquad\qquad 无人机的飞行高度           & \quad\qquad\qquad 100 m  \\
-    \qquad\qquad $T$          &\quad\qquad\qquad 时隙个数                   & \quad\qquad\qquad 70     \\
-    \qquad\qquad $h$          &\quad\qquad\qquad 地面基站高度               & \quad\qquad\qquad 5 m    \\
-    \qquad\qquad $W$          &\quad\qquad\qquad 信道带宽                   & \quad\qquad\qquad 10 MHz \\
-    \qquad\qquad $V_{max}$    &\quad\qquad\qquad 每个时隙无人机最大飞行距离 & \quad\qquad\qquad 2.5m   \\
-    \qquad\qquad $\sigma^2$   &\quad\qquad\qquad 噪声方差                   & \quad\qquad\qquad 5 dBm  \\
-    \qquad\qquad $\gamma_{th}$&\quad\qquad\qquad 信噪比阈值                 & \quad\qquad\qquad 96dBm  \\
-    \qquad\qquad $\varsigma_0$&\quad\qquad\qquad 路径损耗指数               & \quad\qquad\qquad 4      \\
-    \qquad\qquad $f_R$&\quad\qquad\qquad 路边单元计算频率               & \quad\qquad\qquad 1.5 MHz      \\
-    \qquad\qquad $\aleph$&\quad\qquad\qquad 有效开关电容系数               & \quad\qquad\qquad 1.2 cycles/bit     \\
+    \qquad\qquad \zihao{-5}$H$          &\quad\qquad\qquad \zihao{-5}无人机的飞行高度           & \quad\qquad\qquad \zihao{-5}100 m  \\
+    \qquad\qquad \zihao{-5}$T$          &\quad\qquad\qquad \zihao{-5}时隙个数                   & \quad\qquad\qquad \zihao{-5}70     \\
+    \qquad\qquad\zihao{-5} $h$          &\quad\qquad\qquad \zihao{-5}地面基站高度               & \quad\qquad\qquad \zihao{-5}5 m    \\
+    \qquad\qquad \zihao{-5}$W$          &\quad\qquad\qquad \zihao{-5}信道带宽                   & \quad\qquad\qquad \zihao{-5}10 MHz \\
+    \qquad\qquad \zihao{-5}$V_{max}$    &\quad\qquad\qquad \zihao{-5}每个时隙无人机最大飞行距离 & \quad\qquad\qquad \zihao{-5}2.5m   \\
+    \qquad\qquad \zihao{-5}$\sigma^2$   &\quad\qquad\qquad\zihao{-5} 噪声方差                   & \quad\qquad\qquad \zihao{-5}5 dBm  \\
+    \qquad\qquad \zihao{-5}$\gamma_{th}$&\quad\qquad\qquad \zihao{-5}信噪比阈值                 & \quad\qquad\qquad \zihao{-5}96dBm  \\
+    \qquad\qquad \zihao{-5}$\varsigma_0$&\quad\qquad\qquad \zihao{-5}路径损耗指数               & \quad\qquad\qquad \zihao{-5}4      \\
+    \qquad\qquad \zihao{-5}$f_R$&\quad\qquad\qquad \zihao{-5}路边单元计算频率               & \quad\qquad\qquad\zihao{-5} 1.5 MHz      \\
+    \qquad\qquad \zihao{-5}$\aleph$&\quad\qquad\qquad \zihao{-5}有效开关电容系数               & \quad\qquad\qquad \zihao{-5}1.2 cycles/bit     \\
  \bottomrule
  \end{tabular*}
 \end{table}
@@ -583,8 +583,7 @@ $\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通�
 \label{双向车道与单向车道的对比}
 \end{figure}
 \section{本章小结}\label{section4-6}
-
-在本章中，提出了一种高效的空地一体化的无人机辅助双向车道的车辆通信方案。通过优化车辆的发射功率与无人机的飞行轨迹，以及时隙的分配，
+本章提出了一种高效的空地一体化的无人机辅助双向车道的车辆通信方案。通过优化车辆的发射功率与无人机的飞行轨迹，以及时隙的分配，
 可以使得系统的能效最大化，并通过概率约束，保证了车辆通信的 服务质量，通过调整不同的参数$\theta$，可以发现其可以影响系统的能效。
 通过对比不同的无人机飞行方案，能看到优化轨迹的无人机方案最佳。同时，本章也研究了更加现实的方向车道的场景
 路边单元与服务器常常部署于道路的一侧，那么在双向车道的场景下，总有一向行驶的车辆势必会远离路边单元，从而造成通信的困难，

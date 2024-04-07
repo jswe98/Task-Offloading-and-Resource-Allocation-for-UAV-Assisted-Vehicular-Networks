@@ -1,5 +1,5 @@
 % !Mode:: "TeX:UTF-8"
-\chapter{基于云辅助的车辆网络功率控制与任务卸载} \label{chap:table 第三章}  %\cite{yaojianquan2009}
+\chapter{云边计算辅助的车联网络功率控制与资源分配} \label{chap:table 第三章}  %\cite{yaojianquan2009}
 
 \section{引言}\label{section3-1}
 云辅助移动边缘计算(C-MEC)为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本章提出了一种鲁棒的功率
@@ -373,9 +373,9 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
     Step1： 开始。                                                                      \\
     Step2： 初始化最大迭代次数$\mathcal{T}_{max}$ 和迭代初值 $\mathbf{f}$.              \\
     Step3： 初始化$\lambda, \mu$ 和 $\mathbf{f}$ 的可行解。                             \\ %, $n \in [1,2,...,N]$
-    Step4： 求解问题 $\mathbf{P1}$，并得到最优解  ${{\tilde{p}}^{(t+1)}}$               \\%                                   ${\tilde{p}}^{\left(t+1\right)}$。 \\
+    Step4： 求解问题 $\mathbf{P1}$，并得到最优解  ${{\tilde{p}}\phantom{}^{(t+1)}}$               \\%                                   ${\tilde{p}}^{\left(t+1\right)}$。 \\
     Step5： 初始化$\xi, \varphi$ 和 $\mathbf{p}$ 的可行解。                             \\
-    Step6： 求解问题 $\mathbf{P2}$，并得到最优解 ${\widetilde{f}}^{\left(t+1\right)}$。 \\
+    Step6： 求解问题 $\mathbf{P2}$，并得到最优解 ${\widetilde{f}}\phantom{}^{\left(t+1\right)}$。 \\
     Step7： 重复执行Step5 至Step8，直到满足算法收敛或 $t\geq\mathcal{T}_{max}$。        \\
     Step8： 输出$\mathbf{f},\mathbf{p}$。                                               \\
     Step9： 结束。                                                                      \\
@@ -383,7 +383,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \end{tabular*}
 \end{center}
 %\vspace*{0.25cm}% 设置了一点间距
-算法3-1 的时间复杂度由其重复循环中的最大循环次数$\mathcal{T}_{max}$ 决定。由于算法3-1 涉及 $V$ 集群进行功率迭代优化，其计算复杂度为 $O(V\mathcal{T}_{max})$。
+算法3-1 的时间复杂度由其重复循环中的最大循环次数$\mathcal{T}_{max}$ 决定。由于算法3-1 涉及 $V$ 个集群进行功率迭代优化，其计算复杂度为 $O(V\mathcal{T}_{max})$。
 \begin{comment}
 \begin{table}[htbp!]
 	\centering\small

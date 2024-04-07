@@ -366,19 +366,19 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 \begin{center}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
     \toprule
-    算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
+    \zihao{-5}算法2-1基于斯坦克尔伯格博弈的鲁棒资源分配算法                                                             \\
     \midrule
-    Step1： 开始。                                                                                            \\
-    Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
-    Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
-    Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
-    Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
-    Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
-    Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
-    Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
-    Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
-    Step10：设置 $t=t+1$                                                                                      \\
-    Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
+   \zihao{-5} Step1： 开始。                                                                                            \\
+   \zihao{-5} Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
+   \zihao{-5} Step3： 设置 $t=1$，$T=20$，$p_{n}(0)$ 为可行区域内的任意一点，且$0\leq p_{n}(0)\leq p_{n,\textrm{max}}$。\\ %, $n \in [1,2,...,N]$
+   \zihao{-5} Step4： 设置$\lambda_{n}>0$ ， $\mu_{n}>0$， $K_{\lambda} >0$，$K_{\mu} >0。$                             \\
+   \zihao{-5} Step5： 根据  \eqref{E2-19} 更新乘子 $\lambda_{n}$。                                                      \\
+   \zihao{-5} Step6： 更新第 $n$ 个 VUE 收到来自 BS 的干扰价格，然后根据 \eqref{E2-22}计算 $p_{n}^{(t+1)}$              \\
+   \zihao{-5} Step7： BS 收到 VUE用户的最优响应函数和反馈信息后，根据 \eqref{E2-29}更新乘子 $\mu_{n}^{(t+1)}$      \\
+   \zihao{-5} Step8： 根据 \eqref{E2-30} 计算干扰价格 $c_{n}^{(t+1)}$。                                                 \\
+   \zihao{-5} Step9： 重复执行Step5至Step8。                                   \\ %直到满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$
+  \zihao{-5}  Step10：设置 $t=t+1$                                                                                      \\
+  \zihao{-5}  Step11：若满足$p_{n}$ 和$c_{n}$ 收敛并且 $t<T$ ，结束。                                                                                            \\
     \bottomrule
 \end{tabular*}
 \end{center}
@@ -441,24 +441,24 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 \end{table}
 \end{comment}
 \begin{table}[htbp!]
- \centering\small
+ \centering%\small
  \renewcommand\arraystretch{1.5}
- \caption{系统仿真参数} % 第一个表的标题
+ \caption{\zihao{-5}系统仿真参数} % 第一个表的标题
  \label{biao2-1} % 第一个表的标签
  \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}c c c c}
  \toprule
-    \qquad\qquad 符号            &\qquad\qquad 参数                                  & \qquad\qquad 数值   \\
+    \qquad\qquad \zihao{-5}符号            &\qquad\qquad \zihao{-5}参数                                  & \qquad\qquad \zihao{-5}数值   \\
  \midrule
-    \qquad\qquad $R$      &\qquad\qquad \zihao{5}基站的通信范围                      & \qquad\qquad 500 m  \\
-    \qquad\qquad $H_n$    &\qquad\qquad {\CJKfamily{song}\zihao{5} 无人机的巡航高度} & \qquad\qquad 30 m   \\
-    \qquad\qquad $H_0$    &\qquad\qquad {\zihao{5} 基站上信号接收器的垂直高度}       & \qquad\qquad 30 m   \\
-    \qquad\qquad $W$      &\qquad\qquad 信道带宽                                     & \qquad\qquad 10 MHz \\
-    \qquad\qquad $L$      &\qquad\qquad 阴影衰落效果                                 & \qquad\qquad 0.9    \\
-    \qquad\qquad $\alpha$ &\qquad\qquad 路径损耗指数                                 & \qquad\qquad 1.4    \\
-    \qquad\qquad $\delta^2$    &\quad\qquad 噪声方差    & \quad\qquad -30 dBm      \\
-    \qquad\qquad $p_{i,max}$   &\quad\qquad 车辆最大发射功率    & \quad\qquad 0.01 W       \\
-    \qquad\qquad $I_{th}$      &\quad\qquad 干扰阈值    & \quad\qquad ${10}^{-3}$  \\
-    \qquad\qquad $\varepsilon$ &\quad\qquad 中断概率阈值& \quad\qquad 0.1          \\
+    \qquad\qquad \zihao{-5} $R$      &\qquad\qquad \zihao{-5}基站的通信范围                      & \qquad\qquad \zihao{-5}500 m  \\
+    \qquad\qquad \zihao{-5} $H_n$    &\qquad\qquad \zihao{-5} 无人机的巡航高度 & \qquad\qquad \zihao{-5}30 m   \\
+    \qquad\qquad \zihao{-5} $H_0$    &\qquad\qquad \zihao{-5} 基站上信号接收器的垂直高度       & \qquad\qquad \zihao{-5}30 m   \\
+    \qquad\qquad \zihao{-5} $W$      &\qquad\qquad \zihao{-5}信道带宽                                     & \qquad\qquad \zihao{-5}10 MHz \\
+    \qquad\qquad \zihao{-5} $L$      &\qquad\qquad \zihao{-5}阴影衰落效果                                 & \qquad\qquad \zihao{-5}0.9    \\
+    \qquad\qquad \zihao{-5} $\alpha$ &\qquad\qquad \zihao{-5}路径损耗指数                                 & \qquad\qquad \zihao{-5}1.4    \\
+    \qquad\qquad \zihao{-5} $\delta^2$    &\quad\qquad \zihao{-5}噪声方差    & \qquad\qquad \zihao{-5}-30 dBm      \\
+    \qquad\qquad \zihao{-5} $p_{i,max}$   &\quad\qquad \zihao{-5}车辆最大发射功率    & \qquad\qquad \zihao{-5}0.01 W       \\
+    \qquad\qquad \zihao{-5} $I_{th}$      &\quad\qquad \zihao{-5}干扰阈值    & \qquad\qquad \zihao{-5}${10}^{-3}$  \\
+    \qquad\qquad \zihao{-5} $\varepsilon$ &\quad\qquad \zihao{-5}中断概率阈值& \qquad\qquad \zihao{-5}0.1          \\
  \bottomrule
  \end{tabular*}
 \end{table}
@@ -487,15 +487,16 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 \end{comment}
 
 基于鲁棒斯塔克尔伯格博弈的资源分配算法的收敛性能如图 \ref{功率收敛性能} 和图 \ref{价格收敛性能}所示。
-九个 VUE 的发射功率用 $p_{1}-p_{9}$ 表示，价格用 $c_{1}-c_{9}$ 表示。在图 \ref{功率收敛性能} 中，VUE的发射功率在第七步收敛到最优值，
-VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 中的结果表明，
-所提出的基于鲁棒博弈的资源分配算法是快速且有效的。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//功率.eps}
 \caption{功率收敛性能}
 \label{功率收敛性能}
 \end{figure}
+
+九个 VUE 的发射功率用 $p_{1}-p_{9}$ 表示，价格用 $c_{1}-c_{9}$ 表示。在图 \ref{功率收敛性能} 中，VUE的发射功率在第七步收敛到最优值，
+VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 中的结果表明，
+所提出的基于鲁棒博弈的资源分配算法是快速且有效的。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//价格.eps}
@@ -520,10 +521,6 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 \end{comment}
 如图 \ref{中断概率对此} 所示，当 $\varepsilon$ 在 0.1 到 0.6 之间变化时，用户的实际中断概率总是小于给定的阈值。结果证实，不仅实现了有效的干扰管理，还保证了传输的鲁棒性。
 通过与 \cite{PCID}和基线(目标和实际中断概率相等)比较，本文所有用户的实际中断概率都是低于基准值的。这进一步说明本文提出的基于鲁棒博弈的算法在信道不确定性较高的实际场景中更加稳定。
-如图 \ref{传输速率对比} 所示，在不同的方案对比时，博弈论方法中的
-%本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，
-价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
-多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于 \cite{PCID}和 \cite{ACAR}中的传输速率。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//传输速率对比.eps}
@@ -531,7 +528,13 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 \label{传输速率对比}
 \end{figure}
 
-图 \ref{不同车辆}表示了三种不同的方案下，随着系统中车辆数量的增加，每辆车的平均传输速率。
+如图 \ref{传输速率对比} 所示，在不同的方案对比时，博弈论方法中的
+%本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，
+价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
+多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于 \cite{PCID}和 \cite{ACAR}中的传输速率。
+
+图 \ref{不同车辆}表示了三种不同的方案下，%随着系统中车辆数量的增加，
+每辆车的平均传输速率。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//不同车辆.eps}
