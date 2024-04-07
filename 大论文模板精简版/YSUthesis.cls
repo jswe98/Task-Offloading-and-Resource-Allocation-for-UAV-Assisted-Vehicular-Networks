@@ -393,7 +393,7 @@ By\\
 
     \vspace*{0.35cm}                                                                     %这里Professor改了红字                                                        
     \CAST@label@enadvisor\textcolor[RGB]{0,0,0}{\CAST@value@enadvisor}\CAST@value@enadvisorname\\   % \CAST@label@enadvisorname\CAST@value@enadvisorname\\    \textcolor[RGB]{0,0,0}{随}
-    \vspace*{5cm}
+    \vspace*{4cm}
    \zihao{-3}\textbf{\CAST@value@enschool}\\
     \vspace*{1cm}
  \zihao{-3}\textbf{\textcolor[RGB]{0,0,0}{\CAST@value@enathdate}}\textbf{\CAST@value@enathdateyear}       %这里英文月份改了黑体红字   

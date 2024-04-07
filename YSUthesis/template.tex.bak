@@ -71,7 +71,7 @@
             anchorcolor=black,
             citecolor=black}    %green  参考文献
     % 这里还可以添加其他元数据，如pdfsubject, pdfkeywords等
-\title{无人机辅助的车联网络任务卸载与资源分配的研究}% 论文题目
+\title{高动态车联异构网络通信资源联合鲁棒优化分配的研究}% 论文题目  高动态车联异构网络通信资源联合鲁棒优化分配的研究
 \school{燕山大学}                                 % 院校名称
 \author{ }  %魏建帅
 \advisornamecn{   }     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
@@ -83,7 +83,7 @@
     pdfauthor={\CAST@value@author},
     pdfsubject={\CAST@value@school 硕士学位论文},
     pdfkeywords={\mykeywords\myenkeywords},
-    pdfcreator={WinEdit7.0},  % 设置PDF的Creator元数据
+    pdfcreator={WinEdit 7.0},  % 设置PDF的Creator元数据
     pdfproducer={你的制作者名或软件名}} % 设置PDF的Producer元数据}
 \makeatother
 % \usepackage[english]{babel} 这些都是我加的

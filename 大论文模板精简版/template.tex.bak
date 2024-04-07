@@ -15,7 +15,7 @@
 \graphicspath{{chapter/}{figures/}}
 \usepackage{fontspec}
 %\setmainfont{Latin Modern Roman} % 设置默认字体为Latin Modern Roman，或者你喜欢的其他字体
-\newfontfamily\timesfont{Times New Roman} % 定义一个新的字体族为Times New Roman  
+\newfontfamily\timesfont{Times New Roman} % 定义一个新的字体族为Times New Roman
 %\newfontfamily\timetimefont{Time} % 定义一个新的字体族为Times New Roman
 \setmainfont{Times New Roman}
 %  执行下面的命令可以取消PDF文件中的链接颜色，使用 Adobe Acrobat Reader 查看
@@ -73,10 +73,10 @@
     % 这里还可以添加其他元数据，如pdfsubject, pdfkeywords等
 \title{无人机辅助的车联网络任务卸载与资源分配的研究}% 论文题目
 \school{燕山大学}                                 % 院校名称
-\author{魏建帅}  %魏建帅
-\advisornamecn{刘志新}     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
-\enauthor{ Wei Jianshuai}        %Wei Jianshuai    xxx               % 作者英文姓名，注意：姓在前，名在后！！！
-\enadvisorname{ Liu Zhixin} %Liu Zhixin           xxx
+\author{}  %魏建帅
+\advisornamecn{   }     %刘志新                      % 导师姓名，注意：姓在前，名在后，若是“副教授”，加上“副”字！！！
+\enauthor{xxx}        %Wei Jianshuai    xxx               % 作者英文姓名，注意：姓在前，名在后！！！
+\enadvisorname{ xxx} %Liu Zhixin           xxx
 \makeatletter
 \hypersetup{
     pdftitle={\CAST@value@title},
@@ -91,7 +91,6 @@
 % \usepackage{amsmath}
 % \usepackage{bm}
 \newcommand{\adots}{\mathinner{\mkern2mu%
-%\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  %参考文献上角标
 \raisebox{0.1em}{.}\mkern2mu\raisebox{0.4em}{.}%
 \mkern2mu\raisebox{0.7em}{.}\mkern1mu}}
 \begin{comment}
@@ -103,7 +102,7 @@
 %% 文档参数配置结束
 \newcommand{\addabstracttotoc}[1]{%
   \addtocontents{toc}{\protect\contentsline{chapter}{\protect\fontspec{Times New Roman}\protect #1}{}{}}%
-} 
+}
 \usepackage{titlesec}
 \usepackage{titletoc}%%%%%mzhy55 解决目录中章标题的黑体问题
 \titlecontents{chapter}[0pt]{\heiti\vspace{0mm}}
@@ -137,7 +136,7 @@
 
 % 英文封面内容
 \enstatement{Control Science and Engineering}     % 学科或领域
-%{Control Science and Engineering}%{Science}      % 学科或领域
+\enmajor{Master of Engineering}%{Science}      % 学科或领域
 \entitle{Task Offloading and
 Resource Allocation for UAV-Assisted
 Vehicular Networks}                      % 英文题目，所有字母大写！！！
@@ -147,7 +146,6 @@ Vehicular Networks}                      % 英文题目，所有字母大写！�
 \enschool{School of Electrical Engineering, Yanshan University}                        % 院校英文名称
 \enathdate{June}                            % 英文答辩日期，注意：要依实际答辩时间修改！！！
 \enathdateyear{, 2024}
-
 \makeatletter    %%%%%%%mzhy55
 \newcommand\makecover{%
 \cleardoublepage
@@ -212,11 +210,11 @@ Vehicular Networks}                      % 英文题目，所有字母大写！�
 % 以下为正文部分
 %----------------------------%
 \mainmatter
-\include{chapter/chap-intro}
-\include{chapter/chap-2}
-\include{chapter/chap-3}
-\include{chapter/chap-4}
-\include{chapter/chap-5}  %结论
+%\include{chapter/chap-intro}
+%\include{chapter/chap-2}
+%\include{chapter/chap-3}
+%\include{chapter/chap-4}
+%\include{chapter/chap-5}  %结论
 %\include{chapter/chap-conclusion}
 %\include{chapter/chap-6}
 \renewcommand{\chaptermark}[1]{\markboth{附录~\thechapter~\hspace{0.5em}#1}{}} % 页眉上“附录” mzhy55
