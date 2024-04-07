@@ -1,0 +1,90 @@
+@ARTICLE{yaojianquan2009,
+  author = {姚建铨 and 迟楠 and 杨鹏飞 and 崔海霞 and 汪静丽 and 李九生 and 徐德刚 and 丁欣},
+  title = {太赫兹通信技术的研究与展望},
+  journal = {中国激光},
+  year = {2009},
+  volume = {36},
+  pages = {2213-2233},
+  number = {9},
+  language = {Chinese},
+  owner = {Jason},
+  timestamp = {2011.05.22}
+}
+
+@BOOK{zhangwei2004,
+  title = {MATLAB外部接口编程},
+  publisher = {西安电子科技大学出版社},
+  year = {2004},
+  author = {张威},
+  pages = {88},
+  address = {西安},
+  month = {2},
+  language = {Chinese},
+  owner = {Jason},
+  timestamp = {2011.05.19}
+}
+
+@ARTICLE{lishuguang2004,
+  author = {李曙光 and 刘晓东 and 侯蓝田},
+  title = {一种晶体光纤基模色散特性的矢量法分析},
+  journal = {物理学报},
+  year = {2004},
+  volume = {53},
+  pages = {1873--1879},
+  number = {6},
+  language = {Chinese}
+}
+
+@ARTICLE{wangqingyue2006,
+  author = {王清月 and 胡明列 and 柴路},
+  title = {光子晶体光纤非线性光学研究新进展},
+  journal = {中国激光},
+  year = {2006},
+  volume = {33},
+  pages = {57--66},
+  number = {1},
+  file = {:2006. 光子晶体光纤非线性光学研究新进展.pdf:PDF},
+  language = {Chinese}
+}
+
+@patent{jxz,
+  author    = {姜锡洲 and 林良乐},
+  title     = {一种温热外敷药制备方案：中国，88105607.3},
+  year      = {1989-07-26},
+  language  = {Chinese}
+}
+
+@PHDTHESIS{Yu2004,
+  author =       {于克信},
+  title =        {国有企业改革过程中的管理重组研究},
+  school =       {复旦大学博士学位论文},
+  year =         {2004},
+  type =         {博士},
+  address =      {上海},
+  month =        {5},
+  pages =        {45--48},
+  language =     {Chinese}
+}
+
+@MASTERSTHESIS{Zhao2013,
+  author =       {赵天书},
+  title =        {诺西肽分阶段补料分批发酵过程优化研究},
+  school =       {东北大学硕士学位论文},
+  year =         {2013},
+  type =         {硕士},
+  address =      {沈阳},
+  month =        {5},
+  pages =        {5--13},
+  language =     {Chinese}
+}
+
+@CONFERENCE{Li1998,
+  author =       {Qi Li and Biing-Hwang Juang},
+  title   =      {Speaker Verification Using Verbal Information Verification for Automatic Enrollment},
+  booktitle =    {ICASSP},
+  year =         {1998},
+  editor =       {Editor},
+  address =      {Beijing},
+  organization = {Yanshan University},
+  publisher =    {Publisher},
+}
