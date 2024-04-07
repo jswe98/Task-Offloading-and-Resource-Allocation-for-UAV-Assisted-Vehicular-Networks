@@ -184,11 +184,12 @@ plot(exp(P(:,3)),'-*b','linewidth',1.5);
 plot(exp(P(:,4)),'-sk','linewidth',1.5);
 plot(exp(P(:,5)),'-dc','linewidth',1.5);
 legend('p1','p2','p3','p4','p5')
-xlabel('迭代次数');
+xlabel('\fontname{宋体}迭代次数');
 % set(gca,'ylim',[0,0.0020]); 
  set(gca,'xlim',[0,40]);
+ set(gca,'FontName','Times New Roman')
 % set(gca,'ylim',[0.00150,0.00185]); 
-ylabel('功率分配(瓦)');
+ylabel('\fontname{宋体}功率分配(瓦)');
 
 figure
 plot((fi(:,1)),'-+r','linewidth',1.5);
@@ -199,17 +200,19 @@ plot((fi(:,3)),'-*b','linewidth',1.5);
 plot((fi(:,4)),'-sk','linewidth',1.5);
 plot((fi(:,5)),'-dc','linewidth',1.5);
 legend('f1','f2','f3','f4','f5')
-xlabel('迭代次数');
+xlabel('\fontname{宋体}迭代次数');
 % axis([10 40 5.97 6.05]);
 % set(gca,'XTick',[0:10:50]);
  set(gca,'xlim',[0,40]);
+  set(gca,'FontName','Times New Roman')
 % set(gca,'ylim',[5.987,6.005]); 
-ylabel('计算资源分配');
+ylabel('\fontname{宋体}计算资源分配');
 
 figure
 plot((Total_T(:,1)),'-*b','linewidth',1.5);
 grid on
 % legend('F1')
-xlabel('迭代次数');
+xlabel('\fontname{宋体}迭代次数');
 %  axis([0 30 9 9.6]);
-ylabel('系统总效用');
+ylabel('\fontname{宋体}系统总效用');
+ set(gca,'FontName','Times New Roman')

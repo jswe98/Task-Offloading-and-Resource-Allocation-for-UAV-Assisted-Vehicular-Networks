@@ -23,7 +23,8 @@ set(b(4),'FaceColor',[50,24,60]/255)
 ch = get(b,'children');
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
 set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
-legend('Algorithm 1','Without-CRA','IOP','Without-VPC');
+legend('Algorithm 3-1','Without-CRA','IOP','Without-VPC');
 % legend('EE','no_p','no_f');
-xlabel('任务输入（MB）')
-ylabel('系统效用');
+xlabel('\fontname{宋体}任务输入 \fontname{Times New Roman}(MB)')
+ylabel('\fontname{宋体}系统效用');
+ set(gca,'FontName','Times New Roman')

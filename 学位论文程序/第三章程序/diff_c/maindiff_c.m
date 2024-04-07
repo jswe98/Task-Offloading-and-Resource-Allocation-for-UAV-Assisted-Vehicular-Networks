@@ -36,10 +36,11 @@ set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
 legend('JEE','no_f','no_p');
 legend('JEE','without_JR','no_f','no_p');
-legend('Algorithm 1','IOP','Without-CRA','Without-VPC');
-xlabel('任务量（Megzcycles）')
+legend('Algorithm 3-1','IOP','Without-CRA','Without-VPC');
+xlabel('\fontname{宋体}任务量 \fontname{Times New Roman}(Megzcycles)')
 % xlabel('\epsilon1','fontsize',13);
-ylabel('系统效用');
+ylabel('\fontname{宋体}系统效用');
+ set(gca,'FontName','Times New Roman')
 % 'distributed'  ;distributed
 % 
 % plot(EER,'-+r');

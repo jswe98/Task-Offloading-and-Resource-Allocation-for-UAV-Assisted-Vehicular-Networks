@@ -23,7 +23,8 @@ xlabel('iteration');
 ylabel('EE');
 plot((no_p(:,1)),'-+g','linewidth',2);
 legend('Algorithm 1','IOP','Without-CRA','Without-VPC')
-xlabel('迭代次数');
+xlabel('\fontname{宋体}迭代次数');
 % set(gca,'ylim',[0,12]); 
 set(gca,'xlim',[1,25]); 
-ylabel('系统效用');
+ylabel('\fontname{宋体}系统效用');
+ set(gca,'FontName','Times New Roman')
