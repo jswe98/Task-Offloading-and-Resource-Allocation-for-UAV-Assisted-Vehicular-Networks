@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  8 APR 2024 16:01
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  8 APR 2024 22:18
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2449,9 +2449,9 @@ File: figures//chap3//ff.eps Graphic file (type eps)
  <figures//chap3//ff.eps> [31]
 File: figures//chap3//ee.eps Graphic file (type eps)
 
-<figures//chap3//ee.eps>
+<figures//chap3//ee.eps> [32]
 File: figures//chap3//diffspeed1.eps Graphic file (type eps)
- <figures//chap3//diffspeed1.eps> [32]
+ <figures//chap3//diffspeed1.eps>
 File: figures//chap3//diff_e1.eps Graphic file (type eps)
 
 <figures//chap3//diff_e1.eps>
@@ -2459,12 +2459,12 @@ Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.0pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 526.
+(Font)              scaled to size 7.0001pt on input line 530.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.0001pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 526.
+(Font)              scaled to size 6.9999pt on input line 530.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 6.9999pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
@@ -2560,8 +2560,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templ
 ate.aux (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesi
 s\chapter/abstract.aux)
@@ -2576,15 +2576,15 @@ r/chap-5.aux) (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YS
 Uthesis\chapter/achive.aux)
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
 r/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 267.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34102 strings out of 430478
- 643922 string characters out of 3191501
- 734785 words of memory out of 3000000
- 36584 multiletter control sequences out of 15000+200000
+ 34101 strings out of 430478
+ 643941 string characters out of 3191501
+ 734781 words of memory out of 3000000
+ 36583 multiletter control sequences out of 15000+200000
  18008 words of font info for 174 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,18n,94p,1397b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s
