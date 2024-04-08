@@ -1,4 +1,4 @@
-% !Mode:: "TeX:UTF-8"
+%!Mode:: "TeX:UTF-8"
 \chapter{无人机辅助的车联网络任务卸载能效优化}
 \label{chap:table第四章}
 \section{引言}\label{section4-1}
@@ -20,7 +20,7 @@
 $D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动建模为常速度运动模型 \supercite{COIFMAN1998271}。 可以规定向右为正方向，定义车道索引$L=1$ 为车辆向右行驶，$L=-1$为向左行驶。  %\supercite{Fiore2008TheNS}
 由于基站位置固定，随者时间的推移，不可避免地存在一个方向的车辆会远离基站，势必影响其通过基站获取信息，此时，无人机向着基站的右方飞去，进而帮助远离基站的车辆获取需要的信息。
 为了决策道路上的车辆需要从无人机还是基站获取信息，根据由一阶马尔可夫过程预测到车辆到基站的信道状态信息与车辆与空中基站无人机视距链路得到的信道状态信息分别得出车辆与两个数据中中心通信的信噪比(Signal to Noise Ratio, SNR)，
-车辆会选择信噪比较大的一方请求资源，$x_m\left[t\right]=1$ 为车辆选择无人机进行通信，反之车辆选择基站进行通信。
+车辆会选择信噪比较大的一方请求资源，$x_m\left[t\right]=1$ 为车辆选择无人机进行通信，反之车辆选择地面的基站进行通信。
 
 无人机的飞行周期$\mathcal{T}$ 被离散划分为足够多相等的$T $个时隙，每个时隙$t$ 被认为是足够小的，即$\mathcal{T}=Tt $，时隙的集合为$\mathcal{T}=\{1,2,\cdots ,t,\cdots ,T\}$，
 在时隙$t$内，无人机的水平坐标为$q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$
@@ -33,7 +33,6 @@ $D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动
 $
 {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{m}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{\pi}_{m}}\left[ t \right]-{{\pi}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{\varpi}_{m}}\left[ t \right]-{{\varpi}_{u}}\left[ t \right] \right)}^{2}}+{{H}^{2}}}\
 $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这个图需要改}
-
 \begin{comment}  %这个也可以使用  \pi\ \varpi
 \begin{figure}[hptb!]
  \centering\small
@@ -47,10 +46,9 @@ $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这�
 \caption{无人机的系统模型}
 \label{systemuav2}
 \end{figure}
-
 \subsection{车辆与地面基站通信与能耗模型}\label{section4-2-1}
-由于车辆移动的快速性,对于车辆与路边单元的V2I通信，构建类似于前一章的一阶马尔可夫过程，在第$t$ 时刻的信道状态信息由前一时刻的状态预测得出，
-即
+由于车辆移动的快速性,对于车辆与路边单元的V2I通信，构建类似于前一章的一阶马尔可夫过程，
+在第$t$ 时刻的信道状态信息由前一时刻的状态预测得出，即
 \begin{equation} \label{E4-1}
 %{\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %h=\xi\tilde{h}+\sqrt{1-{{\xi }^{2}}}\zeta\    {\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
@@ -139,12 +137,12 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 最终的系统能效最大化问题如下表述：
 \begin{align}
 & \qquad\qquad\textbf{P}:\qquad \max_{ \mathbf{P}, \mathbf{Q}, \mathbf{X} }  EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})                \label{E4-13}\\
-\text { s.t. }
+\text { s.t. }                                                                                                                                              
 & \Pr\left\{x_m\left[t\right]\gamma_{m,R}\left[t\right]+y_m\left[t\right]\gamma_{m,U}\left[t\right]\geq \gamma_{th}\right\}\geq1-\varepsilon_3, \forall m,t   \tag{\ref{E4-13}{-1}}      \label{E4-13-1}\\  %信噪比中断概率约束
-& 0\le p_m\left[t\right]\le p_{max}, \forall m,t                           \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
-& x_m\left[t\right] + y_m\left[t\right]=1, \forall m,t                     \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
-& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m,t                           \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
-& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
+& 0\le p_m\left[t\right]\le p_{max}, \forall m,t                                                                                                              \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
+& x_m\left[t\right] + y_m\left[t\right]=1, \forall m,t                                                                                                        \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
+& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m,t                                                                                                  \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
+& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t                                                                                            \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
 上式子中的\eqref{E4-13-1} 表示了保证车辆通信的中断概率约束来保证服务质量，式子\eqref{E4-13-2} 给出了
@@ -281,7 +279,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 %\lambda_m^{\left(i+1\right)}=\left[\lambda_m^{\left(t\right)}+K_\lambda^{\left(i\right)}\left(\sum_{j\neq i}^{M}{\chi_{i,j}e^{{\widetilde{p}}_j}}+\mathrm{\Pi}_i\right)\right]^+,
 \end{equation}
 
-其中 ${{G}_{{{\lambda}_{m}}}}$ 代表拉格朗日乘法器的步长，且${{G}_{{{\lambda}_{m}}}}\geq0$ 。
+其中 ${{G}_{{{\lambda}_{m}}}}$ 代表拉格朗日乘子的步长，且${{G}_{{{\lambda}_{m}}}}\geq0$ 。
 变量 $i$ 是迭代指数，变量 $x$ 的正部分定义为 $\left[x\right]^+=\max{\left[0,x\right]} $ 。
 %$\lambda _{m}^{\left( i+1 \right)}={{\left[ \lambda _{m}^{\left( t \right)}+\Delta _{m}^{\left( t \right)}{{G}_{{{\lambda}_{m}}}} \right]}^{+}}$
 拉格朗日乘子由次梯度法更新如下，
@@ -583,8 +581,7 @@ $\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通�
 \label{双向车道与单向车道的对比}
 \end{figure}
 \section{本章小结}\label{section4-6}
-
-在本章中，提出了一种高效的空地一体化的无人机辅助双向车道的车辆通信方案。通过优化车辆的发射功率与无人机的飞行轨迹，以及时隙的分配，
+本章提出了一种高效的空地一体化的无人机辅助双向车道的车辆通信方案。通过优化车辆的发射功率与无人机的飞行轨迹，以及时隙的分配，
 可以使得系统的能效最大化，并通过概率约束，保证了车辆通信的 服务质量，通过调整不同的参数$\theta$，可以发现其可以影响系统的能效。
 通过对比不同的无人机飞行方案，能看到优化轨迹的无人机方案最佳。同时，本章也研究了更加现实的方向车道的场景
 路边单元与服务器常常部署于道路的一侧，那么在双向车道的场景下，总有一向行驶的车辆势必会远离路边单元，从而造成通信的困难，

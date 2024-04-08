@@ -1,4 +1,4 @@
-% !Mode:: "TeX:UTF-8"
+%!Mode:: "TeX:UTF-8"
 \chapter{无人机辅助的车联网络任务卸载能效优化}
 \label{chap:table第四章}
 \section{引言}\label{section4-1}
@@ -33,7 +33,6 @@ $D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动
 $
 {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{m}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{\pi}_{m}}\left[ t \right]-{{\pi}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{\varpi}_{m}}\left[ t \right]-{{\varpi}_{u}}\left[ t \right] \right)}^{2}}+{{H}^{2}}}\
 $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这个图需要改}
-
 \begin{comment}  %这个也可以使用  \pi\ \varpi
 \begin{figure}[hptb!]
  \centering\small
@@ -47,10 +46,9 @@ $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这�
 \caption{无人机的系统模型}
 \label{systemuav2}
 \end{figure}
-
 \subsection{车辆与地面基站通信与能耗模型}\label{section4-2-1}
-由于车辆移动的快速性,对于车辆与路边单元的V2I通信，构建类似于前一章的一阶马尔可夫过程，在第$t$ 时刻的信道状态信息由前一时刻的状态预测得出，
-即
+由于车辆移动的快速性,对于车辆与路边单元的V2I通信，构建类似于前一章的一阶马尔可夫过程，
+在第$t$ 时刻的信道状态信息由前一时刻的状态预测得出，即
 \begin{equation} \label{E4-1}
 %{\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %h=\xi\tilde{h}+\sqrt{1-{{\xi }^{2}}}\zeta\    {\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
@@ -139,12 +137,12 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 最终的系统能效最大化问题如下表述：
 \begin{align}
 & \qquad\qquad\textbf{P}:\qquad \max_{ \mathbf{P}, \mathbf{Q}, \mathbf{X} }  EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})                \label{E4-13}\\
-\text { s.t. }
+\text { s.t. }                                                                                                                                              
 & \Pr\left\{x_m\left[t\right]\gamma_{m,R}\left[t\right]+y_m\left[t\right]\gamma_{m,U}\left[t\right]\geq \gamma_{th}\right\}\geq1-\varepsilon_3, \forall m,t   \tag{\ref{E4-13}{-1}}      \label{E4-13-1}\\  %信噪比中断概率约束
-& 0\le p_m\left[t\right]\le p_{max}, \forall m,t                           \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
-& x_m\left[t\right] + y_m\left[t\right]=1, \forall m,t                     \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
-& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m,t                           \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
-& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
+& 0\le p_m\left[t\right]\le p_{max}, \forall m,t                                                                                                              \tag{\ref{E4-13}{-2}}      \label{E4-13-2}\\  %功率阈值
+& x_m\left[t\right] + y_m\left[t\right]=1, \forall m,t                                                                                                        \tag{\ref{E4-13}{-3}}      \label{E4-13-3}\\  %时隙分配加起来是一
+& \frac{D_R}{\nu_m} \geq t_{m}^{mec}+t_{wired} , \forall m,t                                                                                                  \tag{\ref{E4-13}{-4}}      \label{E4-13-4}\\  %这个是时隙的约束
+& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t                                                                                            \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
 上式子中的\eqref{E4-13-1} 表示了保证车辆通信的中断概率约束来保证服务质量，式子\eqref{E4-13-2} 给出了
@@ -155,7 +153,6 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 数据的计算，可以通过此约束进行时隙资源的分配，
 其中$t_{wired}$ 是路边单元向边缘服务器发送数据时的
 固定时间。无人机的飞行轨迹受到 \eqref{E4-13-5} 的约束，即无人机每秒的实际飞行距离要小于等于无人机最大可飞行距离。
-
 \section{能效最大化问题求解}\label{section4-3}
 在本节中，上一章节的能效最大化问题会分解为两个子问题进行求解。对于难以求解的分式规划，可以使用丁克尔巴赫方法
 将其转化为易于求解的减式规划进行求解。首先固定车辆的发射功率后求解无人机的飞行轨迹，然后固定无人机的飞行轨迹再求解
@@ -207,7 +204,7 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 \begin{equation} \label{E4-1833}
 {{\kappa }_{m}}\left[ t \right]={{x}_{m}}\left[ t \right]\ln \left( 1-a{{\varepsilon }_{3}} \right)-{{y}_{m}}\left[ t \right]{{\eta }_{m,U}}\left[ t \right]a{{\sigma }^{2}}-a{{x}_{m}}\left[ t \right]{{\hat{h}}\phantom{}_{m}}\left[ t \right]
 \end{equation}
- 并将式子 \eqref{E4-17} 改写为：%\par
+并将式 \eqref{E4-17} 改写为：%\par
 %\textcolor[RGB]{202,12,22}{这里不太对}
 \begin{equation} \label{E4-18}
 {{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}\le 0
@@ -232,11 +229,11 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 F(\chi)&=  \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right] %x_m\left[t\right]
 \log_2{\left(1+p_m\left[t\right]\eta_{m,R}^{\left\{ l \right\}}\left[t\right]\right)}                         \\       \label{E4-20}
 & -\chi \sum_{t=1}^T \sum_{m=1}^M{(1-\theta)x_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]
-+\theta y_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]}                           \\ \notag
++\theta y_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]}                                                           \\ \notag
 & + \sum_{t=1}^T \sum_{m=1}^M {B}_{0}y_{m}^{\left\{ l \right\}}\left[ t \right]
 \log_2{\left(1+p_m\left[t\right]\eta_{m,U}^{\left\{ l \right\}}\left[t\right]\right)}                                          \\ \notag
 &\text { s.t. }
- \eqref{E4-18},\eqref{E4-13-2}                                                           \tag{\ref{E4-20}{-1}}       \label{E4-20-1}
+\eqref{E4-18},\eqref{E4-13-2}                                                           \tag{\ref{E4-20}{-1}}       \label{E4-20-1}
 %& \eqref{E4-3end1},\eqref{E4-3end4}                                       \tag{\ref{E4-5end}{-1}}                      \label{E4-5end1}
 \end{align}
 上式中的$\eta_{m,R}^{\left\{ l \right\}}\left[t\right]=h_{m,R}\left[t\right]/{\sigma^2}$，
@@ -281,14 +278,13 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 %\lambda_m^{\left(i+1\right)}=\left[\lambda_m^{\left(t\right)}+K_\lambda^{\left(i\right)}\left(\sum_{j\neq i}^{M}{\chi_{i,j}e^{{\widetilde{p}}_j}}+\mathrm{\Pi}_i\right)\right]^+,
 \end{equation}
 
-其中 ${{G}_{{{\lambda}_{m}}}}$ 代表拉格朗日乘法器的步长，且${{G}_{{{\lambda}_{m}}}}\geq0$ 。
+其中 ${{G}_{{{\lambda}_{m}}}}$ 代表拉格朗日乘子的步长，且${{G}_{{{\lambda}_{m}}}}\geq0$ 。
 变量 $i$ 是迭代指数，变量 $x$ 的正部分定义为 $\left[x\right]^+=\max{\left[0,x\right]} $ 。
 %$\lambda _{m}^{\left( i+1 \right)}={{\left[ \lambda _{m}^{\left( t \right)}+\Delta _{m}^{\left( t \right)}{{G}_{{{\lambda}_{m}}}} \right]}^{+}}$
 拉格朗日乘子由次梯度法更新如下，
 \begin{equation}\label{E4-28}
 {{G}_{{{\lambda }_{m}}}}={{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}
-\end{equation}
-%\textcolor[RGB]{202,12,22}{再加上橙子梯度}
+\end{equation} %\textcolor[RGB]{202,12,22}{再加上橙子梯度}
 \subsection{计算时间约束转化与时隙资源分配问题}\label{section4-3-3}
 由式 \eqref{E4-13-4} 与$A_{R,m}={{z}_{m}}A_m$，时隙的分配受到服务器计算时间的制约，可得：
 \begin{equation} \label{E4-35}
@@ -344,8 +340,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \text { s.t. }
 & \eqref{E4-13-5}                                                       \tag{\ref{E4-34}{-1}}           \label{E4-34-1}
 \end{align}
-类似于问题 \eqref{E4-36}，问题 \eqref{E4-29} 的非凸问题部分转化成了凸问题，并且是容易求解的形式，可以使用CVX 工具箱进行迭代求解。%再加一行行不行再加一行行不行再加一行行不行再加一行行不行再加一行行不行再加一行行不行再加一行行不行行不行再加一行
-
+类似于问题 \eqref{E4-36}，问题 \eqref{E4-29} 的非凸问题部分转化成了凸问题，并且是容易求解的形式，可以使用CVX 工具箱进行迭代求解。%再加一行
 %\textcolor[RGB]{202,12,22}{与(3-17)类似，(3-31)中的分数形式的目标函数可以通过丁克尔巴赫方法转换为减法形式，因此可以通过使用凸优化工具包(例如CVX[51]) 迭代解决。}
 \begin{comment}  %这个也可以使用，就是字体有点粗
 \begin{table}[htbp!]
@@ -370,7 +365,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \end{comment}
 \section{算法与仿真验证}\label{section4-5}
 \subsection{总体算法设计}\label{section4-5-1}
-原始的问题\eqref{E4-13} 被分为三个子问题，分别为车辆发射功率优化问题、时隙资源分配问题以及无人机飞行轨迹规划问题，它们均已在上述小节中分别得到解决。然后使用交替迭代的方法交替求解，该算法如下所示，
+原始的问题 \eqref{E4-13} 被分为三个子问题，分别为车辆发射功率优化问题、时隙资源分配问题以及无人机飞行轨迹规划问题，它们均已在上述小节中分别得到解决。然后使用交替迭代的方法交替求解，该算法如下所示，
 \begin{center}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
 %\begin{tabular}{lcr}
@@ -388,10 +383,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
     \bottomrule
 \end{tabular*}
 \end{center}
-
-
 %\multicolumn{1}{c}{\centering 续表} \\ % 居中显示续表二字，并且不是粗体
-
 \begin{comment}
 \begin{table}[htbp!]
  \centering\small
@@ -455,8 +447,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 在本小节中，为了检验算法的有效性并评估其性能，提供了数值仿真结果，主要评估了联合优化无人机轨迹和信道功率分配方案的性能，并介绍了
 无人机固定位置悬浮方案与固定无人机轨迹的方式两种方案，并且将本章所提出的方案与之对比。
 悬浮方案中无人机在固定位置上方悬停以简化计算复杂度，其中本章所提出模拟的双向车道长度为800米，宽度为30 米，除非特别说明
-道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表\ref{biao4-1}：
-
+道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表 \ref{biao4-1}：
 \begin{table}[htbp!]
  \centering
  \renewcommand\arraystretch{1.5}   %latex 三线表中各行间隔
@@ -489,24 +480,23 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \end{figure}
 \end{comment}
 
-首先，展示了不同时隙下的系统总能效最大时的无人机轨迹优化如图 \ref{无人机轨迹优化}所示，其中黑色箭头代表车辆向右行驶为正方向，规定无人机从固定起点飞行至固定终点，
-可以发现，当任务时间足够时，无人机会倾向于贴近远离基站的车辆为其服务。图 \ref{无人机速度}展示了无人机在每个时隙的速度情况，当车辆需要无人机辅助时，无人机会放慢速度甚至悬停
+首先，展示了不同时隙下的系统总能效最大时的无人机轨迹优化如图 \ref{无人机轨迹优化} 所示，其中黑色箭头代表车辆向右行驶为正方向，规定无人机从固定起点飞行至固定终点，
+可以发现，当任务时间足够时，无人机会倾向于贴近远离基站的车辆为其服务。图 \ref{无人机速度} 展示了无人机在每个时隙的速度情况，当车辆需要无人机辅助时，无人机会放慢速度甚至悬停
 以匹配车辆速度为其服务。
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm,height=8cm]{figures//chap4//小轨迹.eps}   % width=16cm 大字体
 \caption{无人机轨迹优化.}
 \label{无人机轨迹优化}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap4//无人机速度.eps}
 \caption{无人机速度}
 \label{无人机速度}
 \end{figure}
-在验证了算法的优化轨迹的性能之后，进一步验证了所提方案在不同参数下的性能水平。图 \ref{不同的参数theta下的能效}显示了在使
+
+在验证了算法的优化轨迹的性能之后，进一步验证了所提方案在不同参数下的性能水平。图 \ref{不同的参数theta下的能效} 显示了在使
 用不同的 $\theta$ 时，在不同时隙，它们对系统的能效产生了不同的影响。其中$\theta$ 是
 描述车辆任务在无人机端与路边单元端的相对能量成本的系数。当 $\theta$ 发生变化时，系统效用也会发生变化。
 较高的参数代表了更加关注无人机的飞行能耗。整体的系统能效随着无人机飞行时间 $T$ 的增加而减小，
@@ -520,11 +510,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \label{不同的参数theta下的能效}
 \end{figure}
 
-
-
 %\begin{comment}
-
-
 在图 \ref{不同的方案下的能效}中，对比了固定位置的悬停方案FPHS（Fixed Position Hovering Solution），固定轨迹的方案FTS（Fixed Trajectory Solution）与优化无人机轨迹方案OPTS （Optimized Path Trajectory Solution）
 三种无人机通信方案在不同飞行周期$T$下的能效表现。
 
@@ -565,6 +551,7 @@ $\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通�
 观察图中趋势，可以发现，随着$\theta$ 的变化，三种方案的能效都经历了一个明显的下降过程，并在$\theta=0.8$ 时达到最低点。随后，能效呈现出略微上升的趋势。
 当$\theta$ 较小时，意味着无人机的飞行能耗在整体能量成本中的占比相对较低。因此，无人机可以更加积极地传输数据，从而提高了整体的能效。相反，当$\theta$ 较大时，无人机的飞行能耗成为主导，这限制了其数据传输的能力，进而影响了能效。
 综上所述，参数$\theta$ 通过影响无人机的飞行能耗与通信能耗之间的能量成本分配，进而影响了三种无人机通信方案的能效表现。在实际应用中，需要根据具体场景和需求来选择合适的$\theta$ 值，以优化无人机的通信效率。
+最后图 \ref{双向车道与单向车道的对比} 对比了双向车道场景与单向车道场景，在道路上车辆总数相同的情况下，由于双向车道场景可以更大限度的发挥路边单元与空中基站的协同作用，带来了更高的能效。
 \begin{comment}
 在图 \ref{不同的参数在不同的方案下的能效}中描述了 OPTS、 FHCS  和 FTS的能效与不同$\theta$ 的关系。注意到$\theta$
 是衡量浮标和传感器相对能量成本的一个因素，当θ 值较大时，整个能量消耗由浮标
@@ -573,9 +560,7 @@ $\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通�
 意味着浮标的能耗在总成本中相对不太重要；因此，浮标可以传输更多数据以获得
 更高的能效。相反，从传感器的角度来看，采用相对较大的θ 有利于传感器发送更多
 的数据，同时不会增加太多的总消耗，从而提高能效。
-
 \end{comment}
-最后图 \ref{双向车道与单向车道的对比}对比了双向车道场景与单向车道场景，在道路上车辆总数相同的情况下，由于双向车道场景可以更大限度的发挥路边单元与空中基站的协同作用，带来了更高的能效。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap4//双向车道.eps}
