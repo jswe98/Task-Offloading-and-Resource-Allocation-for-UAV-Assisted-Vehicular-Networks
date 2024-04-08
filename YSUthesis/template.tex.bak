@@ -67,7 +67,7 @@
 \newcommand{\myenkeywords}{UAV Communication; Throughput Maximisation; Outage Probability; Edge Computing; Trajectory Optimisation; Task Offloading} %
 \hypersetup{%hypertex=true,
             colorlinks=true,
-            linkcolor=blue,     %blue    公式与图与目录
+            linkcolor=black,     %blue    公式与图与目录
             anchorcolor=black,
             citecolor=black}    %green  参考文献
     % 这里还可以添加其他元数据，如pdfsubject, pdfkeywords等
