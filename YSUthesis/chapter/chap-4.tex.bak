@@ -5,7 +5,7 @@
 \label{chap:introduction第四章}
 在前一个章节中，主要研究了车联网的地面通信网络，然而随着城市化建设的加深，道路网络越来越复杂，车辆的地面通信网络容易受到建筑物的遮挡，同时地面基站也难以覆盖越来越多的通信车辆，
 通过引入移动无人机作为空中基站可以有效的解决这一难题  \textsuperscript{\cite{Effect2020,Performance2022}}，其中文献 \cite{WirelessRelay5937283} 便引入了无人机作
-为空中基站辅助地面用户更加高效通信的系统。因此本章研究了作为前沿通信技术的无人机作为空中基站辅助车联网通信，并着重考虑了更加实际的双向车道的场景。无人机具有灵活部署成本
+为空中基站辅助地面用户更加高效通信的系统。本章研究了作为前沿通信技术的无人机作为空中基站辅助车联网通信，并着重考虑了更加实际的双向车道的场景。无人机具有灵活部署成本
 低与高机动性的特性  \supercite{无人机技术辅助的车联网,王智煊2023无人机辅助下的车联边缘计算卸载机制研究,Joint9453853}，可以更加有效的作为空中基站辅助地面车辆进行任务卸载，
 并且更好的满足车辆用户的QoS需求 \supercite{无人机QoS9373692}。 由于本文考虑的车辆环境均为高速移动场景，固定轨迹的无人机难以适应实时变化网络拓扑环境，因此实时优化无人机的
 飞行的航迹有助于提高辅助车辆通信的服务质量。此外，无人机飞行与作为空中基站时均为耗能设备，所以整个系统的能量效率也应备受关注。
@@ -13,7 +13,7 @@
 综上所述，本章研究了一个类似于文献 \cite{twoway7091030} 中的双向车道下无人机辅助车辆网络能效最大化的场景，文献 \cite{twoway5753961,twoway575396233,Spatial4490168,Stochastic6576809} 中研究探讨了关于双向车道通信的好处，
 车辆高速行驶于双向的高速公路上，地面基站位于道路的一侧。随着对向行驶的车辆的高速移动，向右行驶的车辆会逐渐驶出当前通信小区，无法与地面基站进行通信，此时，
 无人机可作为空中基站以接收车辆通信信号。无人机以固定的高度平行于道路进行无障碍飞行，本章提出的算法可以实时的判断当前时隙车辆如何选择通信对象使得系统的能量效率最大化。
-本章的贡献可以做出如下总结：首先，本章提出了一种无人机辅助双向车道场景下规划无人机航迹的系统模型，为了提高整个网络系统的能量效率，采用丁克尔巴赫方法(Dinkelbach Method) 使得系
+本章的贡献可以做出如下总结：首先，本章提出了一种无人机辅助双向车道场景下规划无人机航迹的系统模型，为了提高整个网络系统的能量效率，采用丁克尔巴赫方法(Dinkelbach Method)使得系
 统在最小的能耗下可以最大化总吞吐量，为了保证地面车辆用户的服务质量，在优化问题中建立了时变的车辆移动模型下的概率约束，并以多普勒效应描述信道的不确定性。
 \section{系统模型与问题描述}\label{section4-2}
 本章考虑了一个空地一体化网络，其中车辆行驶于双向的高速公路上，无人机从基站附近起飞，作为地面车辆的空中基站进行任务的卸载，基站位于坐标原点，高度为$h_0$，
@@ -43,7 +43,7 @@ $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这�
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm,height=8cm]{figures//chap4//第四章系统模型图.pdf}
-\caption{无人机的系统模型}
+\caption{无人机辅助车联网系统模型}
 \label{systemuav2}
 \end{figure}
 \subsection{车辆与地面基站通信与能耗模型}\label{section4-2-1}
@@ -53,7 +53,7 @@ $,系统模型如图 \ref{systemuav2} 所示。%\textcolor[RGB]{18,220,168}{这�
 %{\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %h=\xi\tilde{h}+\sqrt{1-{{\xi }^{2}}}\zeta\    {\widetilde{g}}_{i,j}^k=L_{i,j}^2{\widetilde{h}}_{i,j}^2\xi_{i,j}^2
 %{\widetilde{h}}_{m,R}=L_{m,R}^2{\widetilde{h}}_{m,R}^2\xi_{m,R}^2
-h_{m}={\widetilde{h}}\phantom{}_{m}^2+{\hat{h}\phantom{}_{m}}^2,
+h_{m}={\widetilde{h}}\phantom{}_{m}^2+\hat{h}\phantom{}_{m}^2,
 \end{equation}
 这里的${\widetilde{h}}\phantom{}_{m}$ 是一个观测值，${\hat{h}}\phantom{}_{m}$ 是一个服从参数为$a=\frac{1}{{L_{i,j}^t}({1-{\zeta_{i,j}^t}^2})}$ 的指数分布，其中$\zeta$ 表示信道增益，其复高斯分布为 $\zeta\sim CN\left(0,\delta^2\right)$，
 $ {L_{i,j}^t}^2 $表示第 $t $ 个时隙的大规模衰减效应，包括阴影衰减路径损耗。
@@ -123,7 +123,7 @@ E_{m}^{mec}=\aleph A_{R,m}{f_R}^2% \quad m \in \mathcal{M}.
 \subsection{能效最大化问题的定义}\label{section4-2-3}
 在本节中，为无人机辅助的双向车道车辆制定了能效最大化问题。目的是通过联合优化双向车道
 上的车辆的发射功率以及无人机的轨迹来使得系统的总能效最大化.
-首先，该网络通信系统的能效定义为
+首先，该网络通信系统的能效定义为，
 \begin{equation} \label{E4-12}
 EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 {\frac{{{L}_{m}}\left( \mathbf{P}, \mathbf{Q}, \mathbf{X} \right)}
@@ -145,7 +145,7 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 & q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m,t                                                                                            \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
-上式子中的\eqref{E4-13-1} 表示了保证车辆通信的中断概率约束来保证服务质量，式子\eqref{E4-13-2} 给出了
+上式中的\eqref{E4-13-1} 表示了保证车辆通信的中断概率约束来保证服务质量，式子\eqref{E4-13-2} 给出了
 车辆最大最小发射功率的约束，式\eqref{E4-13-3} 则代表了每个车辆每个时刻的任务只能向无人机或者地面基站
 进行卸载，$\gamma_{th}$ 是信噪比的阈值为一个固定值，%表示了需要调度车辆在其驶出路边单元覆盖范围之前服务器要完成完成数据的计算，
 %可以通过约束 \eqref{E4-13-4} 进行时隙资源的分配，
@@ -221,10 +221,10 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
  \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
 \end{align}
-注意到问题\eqref{E4-19} 是一个分式规划问题，
+注意到问题 \eqref{E4-19} 是一个分式规划问题，
 %\textcolor[RGB]{202,12,22}{该该算法的主要思想是将原始非线性规划问题转化为一个系列的线性规划问题，然后使用线性规划的解法来逼近非线性规划问题的解。具体步骤可能因问题而异，但总体上，该方法尝试通过不断调整问题中的某些参数来逐步优化目标函数。}
 为了将其转化为减式规划问题，拟采用丁克尔巴赫方法求解，通过引入一个辅助变量，将原始的非线性规划问题转化为线性规划问题。然后，通过逐步迭代更新辅助变量的值，直到满足特定的收敛条件，从而找到目标函数的最优解。
-问题\eqref{E4-19} 转化为：
+问题 \eqref{E4-19} 转化为：
 \begin{align} \notag
 F(\chi)&=  \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right] %x_m\left[t\right]
 \log_2{\left(1+p_m\left[t\right]\eta_{m,R}^{\left\{ l \right\}}\left[t\right]\right)}                         \\       \label{E4-20}
@@ -238,7 +238,7 @@ F(\chi)&=  \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l
 \end{align}
 上式中的$\eta_{m,R}^{\left\{ l \right\}}\left[t\right]=h_{m,R}\left[t\right]/{\sigma^2}$，
 $\eta_{m,U}^{\left\{ l \right\}}\left[t\right]=h_{m,U}\left[t\right]/{\sigma^2}$
-在每$l$ 次迭代时视为常数，对于凸问题\eqref{E4-20}，
+在每$l$次迭代时视为常数，对于凸问题 \eqref{E4-20}，
 可以构建拉格朗日函数并运用拉格朗日对偶法进行求解：
 \begin{align} \label{E4-21}
 &\!\!\!\!\!\!L\left(\mathbf{p},\lambda\right)=B_{0}\sum_{t=1}^{T} \sum_{m=1}^{M}  \!\! x_{m}^{\{ l \}}[t] \log_{2}\left(1 + p_{m}[t]\eta_{m,R}^{\{ l \}}[t]\right) \! +\!  y_{m}^{\{ l \}}[t] \log_{2}\left(1 + p_{m}[t]\eta_{m,U}^{\{ l \}}[t]\right)  \\
@@ -247,7 +247,7 @@ $\eta_{m,U}^{\left\{ l \right\}}\left[t\right]=h_{m,U}\left[t\right]/{\sigma^2}$
 -\sum\limits_{t=1}^{T}{\sum\limits_{m=1}^{M}{{{\lambda }_{m,t}}}}\left( {{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}} \right) \notag
 \end{align}
 
-其中的拉格朗日乘子$\lambda_{m,t}\geq 0$，则\eqref{E4-21} 的拉格朗日对偶函数表示为：
+其中的拉格朗日乘子$\lambda_{m,t}\geq 0$，则 \eqref{E4-21} 的拉格朗日对偶函数表示为：
 \begin{equation} \label{E4-22}
 D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\mathbf{p_m},\mathbf{\lambda}\right)
 \end{equation}
@@ -279,7 +279,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 \end{equation}
 
 其中 ${{G}_{{{\lambda}_{m}}}}$ 代表拉格朗日乘子的步长，且${{G}_{{{\lambda}_{m}}}}\geq0$ 。
-变量 $i$ 是迭代指数，变量 $x$ 的正部分定义为 $\left[x\right]^+=\max{\left[0,x\right]} $ 。
+变量 $i$ 是迭代指数，变量 $\upsilon$ 的正部分定义为 $\left[\upsilon \right]^+=\max{\left[0,\upsilon \right]} $ 。
 %$\lambda _{m}^{\left( i+1 \right)}={{\left[ \lambda _{m}^{\left( t \right)}+\Delta _{m}^{\left( t \right)}{{G}_{{{\lambda}_{m}}}} \right]}^{+}}$
 拉格朗日乘子由次梯度法更新如下，
 \begin{equation}\label{E4-28}
@@ -446,7 +446,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \subsection{仿真分析}\label{section4-5-2}
 在本小节中，为了检验算法的有效性并评估其性能，提供了数值仿真结果，主要评估了联合优化无人机轨迹和信道功率分配方案的性能，并介绍了
 无人机固定位置悬浮方案与固定无人机轨迹的方式两种方案，并且将本章所提出的方案与之对比。
-悬浮方案中无人机在固定位置上方悬停以简化计算复杂度，其中本章所提出模拟的双向车道长度为800米，宽度为30 米，除非特别说明
+悬浮方案中无人机在固定位置上方悬停以简化计算复杂度，其中本章所提出模拟的双向车道长度为3000米，宽度为30米，除非特别说明
 道路上选取6辆车进行仿真，其中每辆车以不同的速度匀速直线行驶。仿真中的主要参数见表 \ref{biao4-1}：
 \begin{table}[htbp!]
  \centering
@@ -480,23 +480,23 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \end{figure}
 \end{comment}
 
-首先，展示了不同时隙下的系统总能效最大时的无人机轨迹优化如图 \ref{无人机轨迹优化} 所示，其中黑色箭头代表车辆向右行驶为正方向，规定无人机从固定起点飞行至固定终点，
-可以发现，当任务时间足够时，无人机会倾向于贴近远离基站的车辆为其服务。图 \ref{无人机速度} 展示了无人机在每个时隙的速度情况，当车辆需要无人机辅助时，无人机会放慢速度甚至悬停
+首先，展示了不同时隙下的系统总能效最大时的无人机轨迹优化如图 \ref{UAV Trajectory Optimisation} 所示，其中黑色箭头代表车辆向右行驶为正方向，规定无人机从固定起点飞行至固定终点，
+可以发现，当任务时间足够时，无人机会倾向于贴近远离基站的车辆为其服务。图 \ref{UAVspeed} 展示了无人机在每个时隙的速度情况，当车辆需要无人机辅助时，无人机会放慢速度甚至悬停
 以匹配车辆速度为其服务。
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm,height=8cm]{figures//chap4//小轨迹.eps}   % width=16cm 大字体
 \caption{无人机轨迹优化.}
-\label{无人机轨迹优化}
+\label{UAV Trajectory Optimisation}
 \end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap4//无人机速度.eps}
 \caption{无人机速度}
-\label{无人机速度}
+\label{UAVspeed}
 \end{figure}
 
-在验证了算法的优化轨迹的性能之后，进一步验证了所提方案在不同参数下的性能水平。图 \ref{不同的参数theta下的能效} 显示了在使
+在验证了算法的优化轨迹的性能之后，进一步验证了所提方案在不同参数下的性能水平。图 \ref{diffthet} 显示了在使
 用不同的 $\theta$ 时，在不同时隙，它们对系统的能效产生了不同的影响。其中$\theta$ 是
 描述车辆任务在无人机端与路边单元端的相对能量成本的系数。当 $\theta$ 发生变化时，系统效用也会发生变化。
 较高的参数代表了更加关注无人机的飞行能耗。整体的系统能效随着无人机飞行时间 $T$ 的增加而减小，
@@ -506,12 +506,12 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap4//不同的参数theta下的能效.eps}
-\caption{不同的参数$\theta$ 下的能效}
-\label{不同的参数theta下的能效}
+\caption{不同的参数$\theta$下的能效}
+\label{diffthet}
 \end{figure}
 
 %\begin{comment}
-在图 \ref{不同的方案下的能效}中，对比了固定位置的悬停方案FPHS（Fixed Position Hovering Solution），固定轨迹的方案FTS（Fixed Trajectory Solution）与优化无人机轨迹方案OPTS （Optimized Path Trajectory Solution）
+在图 \ref{DifferentSchemes} 中，对比了固定位置的悬停方案(Fixed Position Hovering Solution, FPHS)，固定轨迹的方案(Fixed Trajectory Solution, FTS)与优化无人机轨迹方案(Optimized Path Trajectory Solution, OPTS)
 三种无人机通信方案在不同飞行周期$T$下的能效表现。
 
 从整体趋势来看，随着无人机飞行时间的延长，各方案的能效均逐渐趋于稳定，这是因为无人机有了更充足的时间以合适的功率传输数据。
@@ -536,22 +536,22 @@ FPHS方案的能效最低，因为无人机悬停在某一固定位置，使无�
 \centering
 \includegraphics[width=10cm]{figures//chap4//不同的方案下的能效.eps}
 \caption{不同的方案下的能效}
-\label{不同的方案下的能效}
+\label{DifferentSchemes}
 \end{figure}
 
-下图展示了三种方案在不同参数$\theta$ 下的的对比。在图 \ref{不同的参数在不同的方案下的能效}中，探究了OPTS、FHCS 和FTS三种无人机通信方案的能效如何随参数$\theta$ 的变化而变化。
+下图展示了三种方案在不同参数$\theta$ 下的的对比。在图 \ref{DifferentSchemesANDdifftheta} 中，探究了OPTS、FHCS 和FTS三种无人机通信方案的能效如何随参数$\theta$ 的变化而变化。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap4//不同的参数在不同的方案下的能效.eps}
 \caption{不同的参数$\theta$ 在不同的方案下的能效}
-\label{不同的参数在不同的方案下的能效}
+\label{DifferentSchemesANDdifftheta}
 \end{figure}
-
-$\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通信能耗之间相对能量成本的比重。当$\theta$ 值较大时，无人机的飞行能耗成为整体能耗的主导因素。
+ 
+图 \ref{DifferentSchemesANDdifftheta}中$\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通信能耗之间相对能量成本的比重。当$\theta$ 值较大时，无人机的飞行能耗成为整体能耗的主导因素。
 观察图中趋势，可以发现，随着$\theta$ 的变化，三种方案的能效都经历了一个明显的下降过程，并在$\theta=0.8$ 时达到最低点。随后，能效呈现出略微上升的趋势。
 当$\theta$ 较小时，意味着无人机的飞行能耗在整体能量成本中的占比相对较低。因此，无人机可以更加积极地传输数据，从而提高了整体的能效。相反，当$\theta$ 较大时，无人机的飞行能耗成为主导，这限制了其数据传输的能力，进而影响了能效。
 综上所述，参数$\theta$ 通过影响无人机的飞行能耗与通信能耗之间的能量成本分配，进而影响了三种无人机通信方案的能效表现。在实际应用中，需要根据具体场景和需求来选择合适的$\theta$ 值，以优化无人机的通信效率。
-最后图 \ref{双向车道与单向车道的对比} 对比了双向车道场景与单向车道场景，在道路上车辆总数相同的情况下，由于双向车道场景可以更大限度的发挥路边单元与空中基站的协同作用，带来了更高的能效。
+最后图 \ref{comparetwoway} 对比了双向车道场景与单向车道场景，在道路上车辆总数相同的情况下，由于双向车道场景可以更大限度的发挥路边单元与空中基站的协同作用，带来了更高的能效。
 \begin{comment}
 在图 \ref{不同的参数在不同的方案下的能效}中描述了 OPTS、 FHCS  和 FTS的能效与不同$\theta$ 的关系。注意到$\theta$
 是衡量浮标和传感器相对能量成本的一个因素，当θ 值较大时，整个能量消耗由浮标
@@ -565,7 +565,7 @@ $\theta$ 是一个关键的参数，它反映了无人机的飞行能耗与通�
 \centering
 \includegraphics[width=10cm]{figures//chap4//双向车道.eps}
 \caption{双向车道与单向车道能效对比}
-\label{双向车道与单向车道的对比}
+\label{comparetwoway}
 \end{figure}
 \section{本章小结}\label{section4-6}
 本章提出了一种高效的空地一体化的无人机辅助双向车道的车辆通信方案。通过优化车辆的发射功率与无人机的飞行轨迹，以及时隙的分配，

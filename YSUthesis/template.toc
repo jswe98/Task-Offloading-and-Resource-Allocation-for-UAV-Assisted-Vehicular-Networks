@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {3.2.2}车辆计算模型}{23}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}功率控制与任务卸载问题的定义}{23}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}功率控制与任务资源分配问题的求解}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1} 目标函数的连续凸逼近方法}{25}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}目标函数的连续凸逼近方法}{25}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}中断概率近似}{26}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}功率优化分配}{27}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}计算资源优化分配}{28}{subsection.3.3.4}

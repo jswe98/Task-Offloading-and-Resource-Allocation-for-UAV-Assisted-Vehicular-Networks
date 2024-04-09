@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  8 APR 2024 22:18
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  9 APR 2024 17:00
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2305,6 +2305,9 @@ tex-text;embolden=4;" at 12.05pt
 Requested font "æ^^96°å®^^8bä½^^93/ICU:script=latn;language=DFLT;mapping=
 tex-text;embolden=4;" at 12.05pt
  -> C:/Windows/Fonts/simsun.ttc
+
+Underfull \vbox (badness 7907) has occurred while \output is active []
+
  [13]
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
@@ -2341,32 +2344,32 @@ Requested font "cmmi9" at 9.03pt
 Requested font "cmmi6" at 6.0pt
  -> cmmi6
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.03014pt on input line 373.
+(Font)              scaled to size 9.03014pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=0;" at 9.03014pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 373.
+(Font)              scaled to size 6.00009pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 6.00009pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 373.
+(Font)              scaled to size 5.00008pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.00008pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.02985pt on input line 373.
+(Font)              scaled to size 9.02985pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=0;" at 9.02985pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 373.
+(Font)              scaled to size 5.99991pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.99991pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 373.
+(Font)              scaled to size 4.99992pt on input line 362.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 4.99992pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
@@ -2459,12 +2462,12 @@ Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.0pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 530.
+(Font)              scaled to size 7.0001pt on input line 528.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 7.0001pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 530.
+(Font)              scaled to size 6.9999pt on input line 528.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 6.9999pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
@@ -2510,7 +2513,7 @@ Underfull \vbox (badness 3590) has occurred while \output is active []
 [45]
 File: figures//chap4//小轨迹.eps Graphic file (type eps)
  <figures//chap4//小轨迹.eps>
-Overfull \hbox (14.21236pt too wide) in paragraph at lines 488--489
+Overfull \hbox (14.21236pt too wide) in paragraph at lines 486--487
  [][] 
  []
 
@@ -2581,12 +2584,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34101 strings out of 430478
- 643941 string characters out of 3191501
- 734781 words of memory out of 3000000
- 36583 multiletter control sequences out of 15000+200000
+ 34100 strings out of 430478
+ 643940 string characters out of 3191501
+ 735739 words of memory out of 3000000
+ 36582 multiletter control sequences out of 15000+200000
  18008 words of font info for 174 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,18n,94p,1397b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,18n,94p,1397b,1160s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on template.pdf (72 pages).

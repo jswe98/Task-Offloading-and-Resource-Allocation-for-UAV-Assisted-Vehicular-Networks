@@ -1,7 +1,6 @@
 %!Mode:: "TeX:UTF-8"
 %chcp 65001
 \chapter{云边计算辅助的车联网络功率控制与资源分配} \label{chap:table 第三章}  %\cite{yaojianquan2009}
-
 \section{引言}\label{section3-1}
 云辅助移动边缘计算C-MEC为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本章提出了一种鲁棒的功率
 控制和任务卸载方案，以卸载计算任务并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为
@@ -17,7 +16,7 @@ MEC 的计算资源仍显不足。由于高性能计算由云服务器提供，�
 然而，云计算中心往往远离主干道，导致云计算延迟较长并造成网络拥堵与隐私泄露等问题 \supercite{Qian2023, 曹宇慧车载边缘计算环境下任务协同卸载方法研究,云计算隐私10418975}。
 在高动态车联网中，车辆传输的数据必须实时处理。因此，在网络架构中部署C-MEC的异构网络，以提供丰富的计算资源并减少数据传输延迟。
 
-本章提出了一种鲁棒的云计算辅助的功率控制和任务卸载算法，以辅助高动态车辆网络中的 MEC。 与现有的功率控制或资源分配计算方面的单边研
+本章提出了一种鲁棒的云计算辅助的功率控制和任务卸载算法，以辅助高动态车辆网络。与现有的功率控制或资源分配计算方面的单边研
 究不同，本章研究了一个云边协作的网络系统，并通过满足概率约束保证了通信延迟和计算延迟；在该框架中，车辆通信的服务质量(Quality of Service, QoS)
 也得到了保证。 综上所述，本章的主要贡献可概述如下：
 %\begin{itemize}
@@ -39,7 +38,6 @@ Cloud, R2C)链路。详细的卸载过程描述如下。首先，车辆通过无
 \caption{C-MEC系统模型图}
 \label{F3-1}
 \end{figure}
-
 \subsection{通信模型}\label{section3-2-1}
 由于车辆移动速度快，通信模式与传统的蜂窝通信不同。因此，很难直接获得 CSI。 其中，RSU 仅能准确获取车辆到 RSU 链路的大尺度衰落 $L^2$，而小尺度衰落 $h$ 受多普勒效应引起的快速信道变化影响较大。可以假设CSI 是通过信道估计获得的，因此，可以利用一阶高斯$-$马尔可夫过程 \supercite{Kim2011} 对每个传输时间间隔内的信道估计$h$ 建模如下，%小尺度衰落
 \begin{eqnarray}\label{E3-1}
@@ -131,7 +129,7 @@ U=\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
 \section{功率控制与任务资源分配问题的求解}\label{section3-3}
 在本节中，提出了一种基于 BCD 的算法来求解优化问题 \eqref{E3-13}。BCD 方法将复杂的原问题分解为一系列较简单的子问题。BCD 方法首先将所有变量分成两块，交替优化。
 
-为了解决 \eqref{E3-13} 问题，可以通过固定计算率向量 $\mathbf{f}$ 的优化变量来优化问题。该问题通过交替优化两个子问题来解决。去掉向量 $\mathbf{f}$ 后，问题 \eqref{E3-13-1} 可以转化为下面的问题，
+为了解决 \eqref{E3-13} 问题，可以通过固定计算资源分配向量 $\mathbf{f}$ 的优化变量来优化问题。该问题通过交替优化两个子问题来解决。去掉向量 $\mathbf{f}$ 后，问题 \eqref{E3-13-1} 可以转化为下面的问题，
 \begin{align}
 & \textbf{P1}:\qquad\max\limits_{\mathbf{p}}\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}                                  \label{E3-14}\\
 \text { s.t. }
@@ -141,11 +139,11 @@ U=\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
 %& 0\le p_i\le p_{max},                                                                                          \tag{\ref{E3-13}{-4}}      \label{E3-13-4} % 这个是时隙的约束
 %& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E2-13end}{-5}}      \label{E2-13end5}    % 无人机飞行轨迹
 \end{align}
-\subsection{ 目标函数的连续凸逼近方法}\label{section3-3-1}
+\subsection{目标函数的连续凸逼近方法}\label{section3-3-1}
 由于$t_{i,up}$ 中的香农定理的形式，目标函数 \eqref{E3-14} 是对数形式，因此 \eqref{E3-14-1} 是一个非凸和非确定多项式困难(NP-hard)问题。这里使用 SCA方法将问题 \eqref{E3-14-1} 简化为可解问题。利用近似约束来近似原始函数如下，
 \begin{eqnarray}\label{E15}
 \begin{array}{ll}
-\alpha \ln{\left(z\right)}+\beta\le \ln{\left(1+z\right)},\\
+\alpha \ln{\left(z\right)}+\beta\le \ln{\left(1+z\right)}
 \end{array}
 \end{eqnarray}
 其中 $\alpha=\frac{z_0}{1+z_0}$ 并且 $\beta=\ln{\left(1+z_0\right)}-\frac{z_0}{1+z_0}\ln{\left(z_0\right)}$。 \eqref{E15} 中的每个项都可以通过连续凸近似转换为 $A_k\ln\left(\gamma_k\left(e^{\widetilde{\mathbf{p}}}\right)\right)+B_k$ 。 其中，$A_k$ 和$B_k$ 分别选为$A_k=\gamma_i/\left(1+\gamma_i\right)$ 和$B_k=\ln{\left(1+\gamma_i\right)}-A_k\ln{\left(\gamma_i\right)}$，其中$A_k=1$，$B_k=0$。目标函数的每项都可以写成如下形式，
@@ -339,7 +337,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \begin{equation}\label{E37}
 {f_i}^\ast=\sqrt{\frac{\mathrm{\Omega}_yR_i\left(P\right)-{c_{i,e}\xi}_k}{\sum_{i=1}^{N}\varphi_k}}-\bar{f}
 \end{equation}
-根据 \eqref{E37}，第 $(t+1)$ 次迭代的最优计算率分配为，
+根据 \eqref{E37}，第 $(t+1)$ 次迭代的最优计算资源分配为，
 \begin{equation}\label{E38}
 {\tilde{f}}\phantom{}^{\left(t+1\right)}=\left[\sqrt{\frac{\mathrm{\Omega}_yR_i\left(P\right)
 -{c_{i,e}\xi}_k}{\sum_{i=1}^{M}\varphi_k}}-\bar{f}\right]_0^{f_{total}\ }
@@ -488,7 +486,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \end{table}
 %\end{comment}
 
-图 \ref{F2} 和图 \ref{F3} 分别显示了算法3-1 中每个车载发射机的功率分配和云分配给RSU的相应计算资源。从图中可以看出，云端分配的计算资源在第五次迭代时达到峰值，
+图 \ref{F2} 和图 \ref{F3} 分别显示了算法3-1 中每个车辆发射机的功率分配和云分配给RSU的相应计算资源。从图中可以看出，云端分配的计算资源在第五次迭代时达到峰值，
 并在达到云端总计算资源$f_{total}$的限制后开始下降。由于鲁棒功率控制和任务卸载调度互相影响，相应的计算资源分配也发生了变化。
 \begin{figure}[H]
 \centering
@@ -497,7 +495,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \label{F2}
 \end{figure}
 
-图 \ref{F4} 显示了联合优化时系统总效用的收敛情况。从图中可以看出，网络系统总效用的收敛趋势与功率分配和计算率分配有关。观察到这一现象是合理的，因为方程 \eqref{E12} 给出了 $U$ 的定义。随着功率矢量 $\mathbf{p}$ 的增加，$R_i$ 也会对数增加，从而导致边际收益递减。因此，随着迭代次数的增加，效用值的增量会越来越小，最终导致效用值趋于稳定。当功率矢量$\mathbf{p}$ 和分子部分的执行效用$t_{i,exe}$ 随着计算功率矢量$\mathbf{f}$ 的增加而成反比减少时，$U$ 的分母会减少，分子会随着矢量$\mathbf{f}$ 的增加而增加。
+图 \ref{F4} 显示了联合优化时系统总效用的收敛情况。从图中可以看出，网络系统总效用的收敛趋势与功率分配和计算资源分配有关。观察到这一现象是合理的，因为方程 \eqref{E12} 给出了$U$ 的定义。随着功率矢量$\mathbf{p}$的增加，$R_i$ 也会对数增加，从而导致其单调递减。因此，随着迭代次数的增加，效用值的增量会越来越小，最终导致效用值趋于稳定。当功率矢量$\mathbf{p}$ 和分子部分的执行效用$t_{i,exe}$ 随着计算资源矢量$\mathbf{f}$ 的增加而成反比减少时，$U$ 的分母会减少，分子会随着矢量$\mathbf{f}$ 的增加而增加。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//ff.eps}
@@ -507,36 +505,37 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//ee.eps}
-\caption{系统总效用的收敛.}
+\caption{系统总效用的收敛}
 \label{F4}
 \end{figure}
 
-在支持 MEC 的车载云系统中，有必要考虑车辆的移动性。接下来探讨了车辆移动对系统性能的影响。可以假设在指定时间段内车辆速度的任何变化都是微不足道的。为了进一步明确速度引起的多普勒频移对系统性能的影响，
-%模拟了在系统中车辆速度恒定的条件下，基准值与增速测量值之间的比较。
-图 \ref{F5} 展示了高动态车辆环境下不同速度对系统性能的影响。在考虑了车辆的动态性之后，进一步验证了所提方案的性能。图 \ref{F6} 显示了在使用不同的$\varepsilon_1$ 时，每辆车的相同速度和不同速度对总效用的影响。
+在支持 MEC 的车载云系统中，有必要考虑车辆的移动性。接下来探讨了车辆移动对系统性能的影响。可以假设在指定时间段内车辆速度的任何变化都是微不足道的。
+在系统中模拟了车速不断提高时的对比实验，如图 \ref{F5} 所示，通信过程中的车速分别设置为20 m/s、30 m/s、40 m/s、50 m/s 和60 m/s。
+这种配置导致一个事实，随着车辆速度的提升，系统性能会下降，因为车速越快，网络内的多普勒频移越大，这会导致信道不确定性增加，效用值随之下降。
+
+为了进一步明确速度引起的多普勒频移对系统性能的影响，
+图 \ref{F6} 描述了不同$\varepsilon_1$值下的每辆车相同速度与不同速度的时候对总效用的影响，从图中可以看出随着$\varepsilon_1$的改变，系统效用也随之变化，
+在每辆车速度不同时的效用要高于所有车相同的速度，表征了提出的方法在复杂的动态车辆环境下具有较高的鲁棒性
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//diffspeed1.eps}
-\caption{不同速度下系统总效用的对比.}
+\caption{不同速度下系统总效用的对比}
 \label{F5}
 \end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//diff_e1.eps}
-\caption{不同 $\varepsilon_1$ 下系统总效用的变化.}
+\caption{不同 $\varepsilon_1$ 下系统总效用的变化}
 \label{F6}
 \end{figure}
 
-车辆环境下不同速度对系统性能的影响。由于 V2R 链路中的相对速度为零，且同一网络中所有车辆的速度相同，因此不存在多普勒效应。如图 \ref{F5} 所示，通信过程中的车速分别设置为20 m/s、30 m/s、40 m/s、50 m/s 和60 m/s。 因为车速越快，网络内的多普勒频移越大，这反过来又会导致信道不确定性增加，效用值随之下降。
-从图 \ref{F6} 中可以看出，当 $\varepsilon_1$ 发生变化时，系统效用也会发生变化。每辆车在不同速度下的效用都高于所有车辆在相同速度下的效用。这一结果说明所提出的方法在复杂动态车辆网络中实施时具有很高的鲁棒性。
+在计算资源分配方面，选择默认的任务输入大小为 $d_u=420$KB (可参考 \cite{Xu2015})。它将展示本章提出的算法的收敛性能。仿真结果表明，本章提出的方法优于三种对比方案。对比方案描述如下：
 
-在计算率分配方面，选择默认的任务输入大小为 $d_u=420$KB (可参考 \cite{Xu2015})。它将展示本章提出的算法的收敛性能。仿真结果表明，本章提出的方法优于三种对比方案。对比方案描述如下，
-
-(1) 独立卸载和功率控制(简称 “IOP”)，即车辆独立执行功率控制和计算率分配，而不考虑彼此的最优值。
+(1) 独立卸载和功率控制(简称 “IOP”)，即车辆独立执行功率控制和计算资源分配，而不考虑彼此的最优值。
 
 (2) 在无车辆功率控制(简称 “Without-VPC”)情况下，车辆的发射功率设定为卸载期间的平均功率。
 
-(3) 无计算资源分配(表示为 “Without-CRA”)，即在卸载过程中将云的计算速率分配设为固定值。
+(3) 无计算资源分配(表示为 “Without-CRA”)，即在卸载过程中将云的计算资源分配设为固定值。
 
 图 \ref{F7} 显示了不同情况下系统总效用的迭代收敛情况，图中显示鲁棒联合优化性能优于其他三种方案。从图中可以看出，四种方法在迭代后期都收敛到了一个稳定的值，其中本章提出的方案的性能最好。
 
@@ -544,23 +543,24 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//compare.eps}
-\caption{不同方案下系统总效用的收敛.}
+\caption{不同方案下系统总效用的收敛}
 \label{F7}
 \end{figure}
 
-从 \ref{F7} 可以看出，随着迭代次数的增加，车辆的平均系统效用逐渐发生变化并趋于稳定。在独立优化过程中，首先进行的是计算率分配，此时还不知道最优功率分配。采用功率和计算率交替优化的方法，每次迭代都能得到相应的最优值。单独优化首先优化功率向量 $\mathbf{p}$。得到结果后，利用该结果优化计算率分配，然后优化计算率，得到系统。但是，如果采用联合优化，则两个变量都能达到最优值。
+从 \ref{F7} 可以看出，随着迭代次数的增加，车辆的平均系统效用逐渐发生变化并趋于稳定。在独立的优化过程中，首先进行计算资源分配，此时不知道最优的功率分配，而使用功率与计算资源交替优化的方式，每次迭代都可以得到相应的最优值。
+单独优化就是首先优化功率$\mathbf{p}$，得到结果后，将结果用于计算资源的优化，然后对计算资源进行优化，最终得到系统的效用。但是如果使用的是联合优化，那么两个变量都能取到最优值。
 
 图 \ref{F8} 中绘制了不同任务输入大小 $d_u$ 时四种对比方案的平均系统效用。图 \ref{F9} 显示了不同 $f_{total}$ 时的系统总成本比较。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//diff_dup.eps}
-\caption{不同输入数据 $d_u$ 下的系统效用.}
+\caption{不同输入数据 $d_u$ 下的系统效用}
 \label{F8}
 \end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//diff_total.eps}
-\caption{不同计算能力约束下的 $f_{total}$ 系统效用.}
+\caption{不同计算能力约束下的 $f_{total}$ 系统效用}
 \label{F9}
 \end{figure}
 
@@ -571,7 +571,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap3//diff_c.eps}
-\caption{不同计算数据 $c_{i,e}$ 下的系统效用.}
+\caption{不同计算数据 $c_{i,e}$ 下的系统效用}
 \label{F10}
 \end{figure}
 \section{本章小结}\label{section3-5}

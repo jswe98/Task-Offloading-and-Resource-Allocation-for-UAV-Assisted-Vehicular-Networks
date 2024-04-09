@@ -204,7 +204,6 @@
 %\listoftables
 % 插图目录
 %\listoffigures
-
 % 以下为正文部分
 %----------------------------%
 \mainmatter
@@ -246,7 +245,7 @@
 
 % 参考文献
 %|- 使用 BibTeX
-\bibliography{bib/tex}
+\bibliography{bib/textex}
 %\nocite{*}
 %|-不使用 BibTeX
 %\include{chapter/bib}

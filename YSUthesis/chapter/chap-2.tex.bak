@@ -42,7 +42,6 @@
     \Figcaption{两个并排图形}\label{fig-dbfig}
  \end{figure}
 \end{comment}
-
 \section{系统模型与问题描述}\label{section2-2}
 \subsection{系统及信道模型}\label{section2-2-1}
 本章考虑了一种上行链路空地一体化通信场景，在这种场景中，众多车对无人机(V2U)小区覆盖在一个宏蜂窝之下。
@@ -66,7 +65,7 @@ h_{0,0}=\sqrt{H_0^2+(\|W_0-W_{BS}\|)^2}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//第二章系统模型.eps}
-\caption{天地网络系统模型}
+\caption{空地网络系统模型}
 \label{天地网络系统模型}
 \end{figure}
 \begin{comment}
@@ -137,7 +136,6 @@ R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in\mathcal{N}
 \begin{comment}
 \begin{eqnarray}\label{11}
 \end{comment}
-
 \begin{align} \label{E2-11}
 &P_1: \max\limits_{p_{n}} U_{n}=R_{n}\!\!-c_{n} p_n g_{n,0}                                                          \\
 &\text { s.t. }
@@ -172,7 +170,6 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 该组合下，没有任何一方能够通过单方面改变其策略来获得更高的效用。
 
 %因此，GE 的计算过程如下 ：在领导者与追随者的博弈中，领导者宣布非统一价格 领导者$-$追随者博弈中宣布非统一价格，首先计算第 $i$ 个追随者的最佳响应 $p_i$。然后，领导者观察并调整干扰定价策略 $c_i$，其目的是最大化上层网络的总效用。根据上层网络的总效用最大化结果，跟随者也可预见调整后的价格策略，并反复执行上述过程，直到最优价格策略 $c_i^*$ 和最优 功率策略$p_i^*$ 得出。
-
 因此，通用均衡(GE)的计算过程如下：在领导者与追随者构成的Stackelberg博弈中，领导者首先宣布非统一价格策略。随后，
 计算第$i$ 个追随者在给定领导者价格策略下的最佳响应$p_i$，接着，领导者根据观察到的追随者响应，调整其干扰定价策略$c_i$，
 旨在最大化上层网络的总效用。基于上层网络总效用的最大化结果，追随者能够预见领导者调整后的价格策略，并据此
@@ -188,7 +185,6 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \begin{equation}\label{E2-16}
 \int_{0}^{\frac{\gamma_{th}I_{n}}{p_n g_{n,n}}} e^{-x}\, dx\leq\varepsilon
 \end{equation}
-
 %可以认为：
 \begin{equation}\label{E2-17}
 \frac{p_n g_{ n,n}}{I_{n}}\geq\frac{-\gamma_{th}}{\ln(1-\varepsilon)}
@@ -275,12 +271,7 @@ $P_3$ 的卡鲁什$-$库恩$-$塔克(Karush-Kuhn-Tucker, KKT)条件为，
 唯一性： 当$g_{n,n}$$>$$\sum\limits_{k=0,k\neq n}^N g_{k,n}$时，在所提的 Stackelberg子博弈中，NE是唯一的。
 
 \begin{proof}
-令 $p_{-n}(t)=[p_k(t)]_{k\in\mathcal{K},k\neq n}$，那么
-%\begin{eqnarray}\label{25}
-%\begin{array}{lll}。
-%G_{-n}p_{-n}(t)=\sum\limits_{k=1,k\neq n}^N g_{k,n}p_k(t)、
-%\end{array}
-%\end{eqnarray}
+令 $p_{-n}(t)=[p_k(t)]_{k\in\mathcal{K},k\neq n}$，则
 \begin{equation} \label{E2-27}
 G_{-n}p_{-n}(t)=\sum\limits_{k=1,k\neq n}^N g_{k,n}p_k(t)
 \end{equation}

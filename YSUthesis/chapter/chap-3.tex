@@ -1,7 +1,6 @@
 %!Mode:: "TeX:UTF-8"
 %chcp 65001
 \chapter{云边计算辅助的车联网络功率控制与资源分配} \label{chap:table 第三章}  %\cite{yaojianquan2009}
-
 \section{引言}\label{section3-1}
 云辅助移动边缘计算C-MEC为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本章提出了一种鲁棒的功率
 控制和任务卸载方案，以卸载计算任务并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为
@@ -17,7 +16,7 @@ MEC 的计算资源仍显不足。由于高性能计算由云服务器提供，�
 然而，云计算中心往往远离主干道，导致云计算延迟较长并造成网络拥堵与隐私泄露等问题 \supercite{Qian2023, 曹宇慧车载边缘计算环境下任务协同卸载方法研究,云计算隐私10418975}。
 在高动态车联网中，车辆传输的数据必须实时处理。因此，在网络架构中部署C-MEC的异构网络，以提供丰富的计算资源并减少数据传输延迟。
 
-本章提出了一种鲁棒的云计算辅助的功率控制和任务卸载算法，以辅助高动态车辆网络中的 MEC。 与现有的功率控制或资源分配计算方面的单边研
+本章提出了一种鲁棒的云计算辅助的功率控制和任务卸载算法，以辅助高动态车辆网络。与现有的功率控制或资源分配计算方面的单边研
 究不同，本章研究了一个云边协作的网络系统，并通过满足概率约束保证了通信延迟和计算延迟；在该框架中，车辆通信的服务质量(Quality of Service, QoS)
 也得到了保证。 综上所述，本章的主要贡献可概述如下：
 %\begin{itemize}
@@ -39,7 +38,6 @@ Cloud, R2C)链路。详细的卸载过程描述如下。首先，车辆通过无
 \caption{C-MEC系统模型图}
 \label{F3-1}
 \end{figure}
-
 \subsection{通信模型}\label{section3-2-1}
 由于车辆移动速度快，通信模式与传统的蜂窝通信不同。因此，很难直接获得 CSI。 其中，RSU 仅能准确获取车辆到 RSU 链路的大尺度衰落 $L^2$，而小尺度衰落 $h$ 受多普勒效应引起的快速信道变化影响较大。可以假设CSI 是通过信道估计获得的，因此，可以利用一阶高斯$-$马尔可夫过程 \supercite{Kim2011} 对每个传输时间间隔内的信道估计$h$ 建模如下，%小尺度衰落
 \begin{eqnarray}\label{E3-1}
@@ -127,7 +125,7 @@ U=\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
 \end{align}
 %& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E2-13end}{-5}}      \label{E2-13end5}    % 无人机飞行轨迹
 其中，$U$ 表示网络系统总效用。\eqref{E3-13} 中的约束条件解释如下： 约束条件 \eqref{E3-13-1} 保证了车辆的 QoS 要求。然而，在车辆通
-信场景中，网络拓扑结构的时变会导致实时 SINR 难以量化获取。由于 CSI 反馈的时间间隔非常小，因此用长期 SINR 代替实时 SINR，所以用 $\gamma_i$ 表示第$i$ 个 V2R {链路的平均 SINR，使用较小的 CSI 反馈时间间隔}。为确保任务成功卸载到 RSU，真实的SINR 必须大于 SINR 阈值 \cite{liu2021}。$\gamma_{th}$ 是检测 V2R 链路通信的 SINR 阈值。$\textrm{Pr}\left\{\cdot\right\}$ 定义了输入 SINR 的概率。中断概率约束保证了车辆链路的可靠性。$D_{max}$ 表示第 $i$ 个 V2R 链路在数据传输过程中允许的最大延迟。此外，$\varepsilon_1$ 和$\varepsilon_2$ 分别是与SINR 和延迟约束相关的中断概率阈值，其中$\varepsilon_1,\varepsilon_2\in\left(0,1\right)$。 约束 \eqref{E3-13-2} 表示通信和计算的总延迟大于延迟阈值。约束 \eqref{E3-13-3} 确保云服务器必须为与其相关联的 RSU 分配计算资源，约束 \eqref{E3-13-3} 还确保分配给所有相关联 RSU 的总计算资源不得超过云服务器的计算能力。因此，传输给云服务器所服务的计算量必须低于其最大容量。在约束条件 \eqref{E3-13-4} 中，$p_{max}$ 是车辆通信网络中发射车辆的最大发射功率，且车辆发射功率大于零。
+信场景中，网络拓扑结构的时变会导致实时 SINR 难以量化获取。由于 CSI 反馈的时间间隔非常小，因此用长期 SINR 代替实时 SINR，所以用 $\gamma_i$ 表示第$i$ 个 V2R {链路的平均 SINR，使用较小的 CSI 反馈时间间隔}。为确保任务成功卸载到 RSU，真实的SINR 必须大于 SINR 阈值 \cite{RAI}。$\gamma_{th}$ 是检测 V2R 链路通信的 SINR 阈值。$\textrm{Pr}\left\{\cdot\right\}$ 定义了输入 SINR 的概率。中断概率约束保证了车辆链路的可靠性。$D_{max}$ 表示第 $i$ 个 V2R 链路在数据传输过程中允许的最大延迟。此外，$\varepsilon_1$ 和$\varepsilon_2$ 分别是与SINR 和延迟约束相关的中断概率阈值，其中$\varepsilon_1,\varepsilon_2\in\left(0,1\right)$。 约束 \eqref{E3-13-2} 表示通信和计算的总延迟大于延迟阈值。约束 \eqref{E3-13-3} 确保云服务器必须为与其相关联的 RSU 分配计算资源，约束 \eqref{E3-13-3} 还确保分配给所有相关联 RSU 的总计算资源不得超过云服务器的计算能力。因此，传输给云服务器所服务的计算量必须低于其最大容量。在约束条件 \eqref{E3-13-4} 中，$p_{max}$ 是车辆通信网络中发射车辆的最大发射功率，且车辆发射功率大于零。
 \section{功率控制与任务资源分配问题的求解}\label{section3-3}
 在本节中，提出了一种基于 BCD 的算法来求解优化问题 \eqref{E3-13}。BCD 方法将复杂的原问题分解为一系列较简单的子问题。BCD 方法首先将所有变量分成两块，交替优化。
 
@@ -141,11 +139,11 @@ U=\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
 %& 0\le p_i\le p_{max},                                                                                          \tag{\ref{E3-13}{-4}}      \label{E3-13-4} % 这个是时隙的约束
 %& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E2-13end}{-5}}      \label{E2-13end5}    % 无人机飞行轨迹
 \end{align}
-\subsection{ 目标函数的连续凸逼近方法}\label{section3-3-1}
+\subsection{目标函数的连续凸逼近方法}\label{section3-3-1}
 由于$t_{i,up}$ 中的香农定理的形式，目标函数 \eqref{E3-14} 是对数形式，因此 \eqref{E3-14-1} 是一个非凸和非确定多项式困难(NP-hard)问题。这里使用 SCA方法将问题 \eqref{E3-14-1} 简化为可解问题。利用近似约束来近似原始函数如下，
 \begin{eqnarray}\label{E15}
 \begin{array}{ll}
-\alpha \ln{\left(z\right)}+\beta\le \ln{\left(1+z\right)},\\
+\alpha \ln{\left(z\right)}+\beta\le \ln{\left(1+z\right)}
 \end{array}
 \end{eqnarray}
 其中 $\alpha=\frac{z_0}{1+z_0}$ 并且 $\beta=\ln{\left(1+z_0\right)}-\frac{z_0}{1+z_0}\ln{\left(z_0\right)}$。 \eqref{E15} 中的每个项都可以通过连续凸近似转换为 $A_k\ln\left(\gamma_k\left(e^{\widetilde{\mathbf{p}}}\right)\right)+B_k$ 。 其中，$A_k$ 和$B_k$ 分别选为$A_k=\gamma_i/\left(1+\gamma_i\right)$ 和$B_k=\ln{\left(1+\gamma_i\right)}-A_k\ln{\left(\gamma_i\right)}$，其中$A_k=1$，$B_k=0$。目标函数的每项都可以写成如下形式，
