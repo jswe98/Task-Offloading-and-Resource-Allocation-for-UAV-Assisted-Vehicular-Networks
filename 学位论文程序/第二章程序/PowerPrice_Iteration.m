@@ -82,9 +82,10 @@ plot(PPP(:,8),'-+', 'Color',[0, 0.5, 0]','linewidth',1.5);
 plot(PPP(:,9),'-d', 'Color',[1, 0.5, 0],'linewidth',1.5);
 plot(PPP(:,10),'-*k','linewidth',1);
 legend('P1','P2','P3','P4','P5','P6','P7','P8','P9')
-xlabel('迭代次数', 'FontName', 'SimSun','FontSize',14);
-ylabel('功率(瓦)', 'FontName', 'SimSun','FontSize',14);  
+xlabel('\fontname{宋体}迭代次数', 'FontName', 'SimSun','FontSize',14);
+ylabel('\fontname{宋体}功率(瓦)', 'FontName', 'SimSun','FontSize',14);  
 xlim([0 20])
+set(gca,'FontName','Times New Roman')
 
 figure 
 plot(C(:,2),'-om','linewidth',1.5);

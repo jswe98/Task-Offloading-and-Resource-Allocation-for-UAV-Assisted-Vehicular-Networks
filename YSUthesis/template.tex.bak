@@ -81,7 +81,7 @@
 \hypersetup{
     pdftitle={\CAST@value@title},
     pdfauthor={\CAST@value@author},
-    pdfsubject={\CAST@value@school 硕士学位论文},
+    pdfsubject={ 硕士学位论文},  %\CAST@value@school
     pdfkeywords={\mykeywords\myenkeywords},
     pdfcreator={WinEdit 7.0},  % 设置PDF的Creator元数据
     pdfproducer={你的制作者名或软件名}} % 设置PDF的Producer元数据}
@@ -245,7 +245,7 @@
 
 % 参考文献
 %|- 使用 BibTeX
-\bibliography{bib/textex}
+\bibliography{bib/首字母大写}
 %\nocite{*}
 %|-不使用 BibTeX
 %\include{chapter/bib}

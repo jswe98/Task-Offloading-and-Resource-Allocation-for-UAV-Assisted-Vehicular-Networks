@@ -91,7 +91,7 @@ g_{n,n}=L_{k,n}h_{k,n}^{-\alpha},          &k, n\in \mathcal{S}_l, k=n
 \end{eqnarray}
 其中，$g_{n,n}$ 是给定时隙内的估计增益。同信道 V2U 链路 $n$ 的干扰可视为测量值，其表达式为：
 \begin{eqnarray}\label{E2-6}
-I_n=p_0 g_{0,n}+\!\!\!\sum\limits_{k=1,k\neq n}^N\!\!\!\! p_k g_{k,n}+\delta^2, \quad k\in\mathcal{N},n\in\mathcal{N}
+I_n=p_0 g_{0,n}+\!\!\!\sum\limits_{k=1,k\neq n}^N\!\!\!\! p_k g_{k,n}+\delta^2, \quad k,n\in \mathcal{S}_l
 \end{eqnarray}
 其中，$p_k$ 表示第 $k$ 个 VUE 的传输功率。$p_0$ 是 CUE 的传输功率。$\delta^2$ 是噪声干扰。
 
@@ -340,7 +340,6 @@ c_n^{(t+1)}=\frac{g_{n,n}}{g_{n,0}}\left(\frac{ \sqrt{(W\mu_n^{(t)})^{2}-4W\lamb
 根据 \eqref{E2-32} 可以计算干扰价格的最优值 $c_{n}^{(t+1)}$。
 
 $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此处省略相应内容。
-
 \begin{comment}
 \begin{verbatim}
 要证明 \eqref{E2-21}是 GE，就要讨论 NE 的存在性和唯一性。
@@ -351,7 +350,6 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 
 2) $U_{\textrm{n}}(p_n)$ 在 $\mathbf{P}$ 中是连续的，在 $p_n$ 中是凹的。
 \end{comment}
-
 \section{算法与仿真验证}\label{section2-4}
 \subsection{斯塔克尔伯格博弈的迭代算法}\label{section2-4-1}
 本节提出了一种基于斯台克尔伯格博弈的鲁棒资源分配算法来解决优化问题 \eqref{E2-13}和 \eqref{E2-14}。该算法如下所示：
@@ -387,7 +385,6 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 用于模拟异构通信场景，其中无人机用于悬停道路上方为VUE提供任务卸载，CUE 与BS在覆盖范围内正常通信。
 %系统假设VUE和 UAV的集群都只使用单天线进行发射和接收。
 表 \ref{biao2-1} 列出了相应的系统仿真参数。
-
 %加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行加两行
 \begin{comment}
 \begin{table}[htbp!]
@@ -525,7 +522,7 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 如图 \ref{传输速率对比} 所示，在不同的方案对比时，博弈论方法中的
 %本文中 CUE 和 VUE 的传输速率比 \cite{PCID}和 \cite{ACAR}更均衡。这是因为本章构建了一个非合作博弈框架，在这个框架中，VUE 都是自私的，都在为自己的利益而竞争。在原问题 \eqref{E2-14}和 \eqref{E2-15}中，
 价格是实现 VUE 之间平衡的关键变量。当一个 VUE 通过增加功率来提高传输速率时，它将受到来自 BS 的更
-多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于文献 \cite{PCID}中使用的方法和 使用二分法的传输速率。
+多干扰费的惩罚。通过多轮博弈，每个用户都达到了自己最满意的状态，因此用户的传输速率得到了很好的平衡，也高于文献 \cite{Ren2015}中使用的方法和 使用二分法的传输速率。
 
 图 \ref{不同车辆} 表示了三种不同的方案下，%随着系统中车辆数量的增加，
 每辆车的平均传输速率。

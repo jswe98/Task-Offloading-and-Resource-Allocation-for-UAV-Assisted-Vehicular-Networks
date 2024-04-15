@@ -11,7 +11,7 @@
   {c}{o}{n}{t}{r}{o}{l} {t}{e}{c}{h}{n}{i}{q}{u}{e}{s} {a}{n}{d}
   {a}{p}{p}{l}{i}{c}{a}{t}{i}{o}{n}{s} {i}{n} {connected} {a}{n}{d}
   {a}{u}{t}{o}{m}{a}{t}{e}{d} {v}{e}{h}{i}{c}{l}{e}{s} [J].
-\newblock IEEE Internet of Things Journal, 2023, 10(24): 21892--21916.
+\newblock IEEE Internet of Things Journal, 2023, 10(24): 21892\textbf{--}21916.
 
 \bibitem[Haydari and Yılmaz(2022)]{DeepReinforcement9146378}
 \textup{Haydari A, Yılmaz Y}.

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  3 APR 2024 11:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  15 APR 2024 09:30
 entering extended mode
-**F:/OneDrive/Documents/WeChat*File/2024-04/Wei*0403/Computing_Enable_Vehicular
-_Networks.tex
+**F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小论
+文/Wei*0403/Computing_Enable_Vehicular_Networks.tex
 
-("F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/Computing_Enable_Vehicular
-_Networks.tex"
+("F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小论
+文/Wei 0403/Computing_Enable_Vehicular_Networks.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
@@ -123,6 +123,15 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
+(D:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+(D:\CTEX\MiKTeX\tex\latex\caption\subcaption.sty
+Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
+
 (D:\CTEX\MiKTeX\tex\latex\caption\caption.sty
 Package: caption 2011/11/10 v3.2e Customizing captions (AR)
 
@@ -152,18 +161,10 @@ footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent
 t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
 \footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
 \c@ContinuedFloat=\count92
-) (D:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks16
-\verbatim@line=\toks17
-\verbatim@in@stream=\read1
 )
-(D:\CTEX\MiKTeX\tex\latex\caption\subcaption.sty
-Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
 \c@subfigure=\count93
 \c@subtable=\count94
-)
-(D:\CTEX\MiKTeX\tex\latex\cite\cite.sty
+) (D:\CTEX\MiKTeX\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
@@ -448,8 +449,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
-("F:\OneDrive\Documents\WeChat File\2024-04\Wei 0403\Computing_Enable_Vehicular
-_Networks.aux")
+("F:\OneDrive\组内文献\次世代网络架构与矩阵革命\第一篇小论
+文\Wei 0403\Computing_Enable_Vehicular_Networks.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
@@ -464,7 +465,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
- (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+
+(D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
 \scratchdimen=\dimen138
@@ -496,10 +498,10 @@ LaTeX Info: Redefining \ref on input line 52.
 LaTeX Info: Redefining \pageref on input line 52.
 LaTeX Info: Redefining \nameref on input line 52.
 
-("F:\OneDrive\Documents\WeChat File\2024-04\Wei 0403\Computing_Enable_Vehicular
-_Networks.out")
-("F:\OneDrive\Documents\WeChat File\2024-04\Wei 0403\Computing_Enable_Vehicular
-_Networks.out")
+("F:\OneDrive\组内文献\次世代网络架构与矩阵革命\第一篇小论
+文\Wei 0403\Computing_Enable_Vehicular_Networks.out")
+("F:\OneDrive\组内文献\次世代网络架构与矩阵革命\第一篇小论
+文\Wei 0403\Computing_Enable_Vehicular_Networks.out")
 \@outlinefile=\write3
 
 Underfull \hbox (badness 1939) in paragraph at lines 68--68
@@ -517,8 +519,6 @@ ty, Qin-huang-
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 100.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
@@ -545,27 +545,27 @@ ted-to.pdf figures//model22.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//model22-eps-converted-to.pdf, id=109, 1556.81625pt x 904.37875pt>
+<figures//model22-eps-converted-to.pdf, id=110, 1556.81625pt x 904.37875pt>
 File: figures//model22-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//model22-eps-converted-to.pdf>
 Package pdftex.def Info: figures//model22-eps-converted-to.pdf used on input li
 ne 117.
 (pdftex.def)             Requested size: 227.62204pt x 132.22864pt.
- [2] [3 <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//model22-ep
-s-converted-to.pdf>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+ [2] [3 <F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一�
+�小论文/Wei 0403/figures//model22-eps-converted-to.pdf>] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 []\OT1/ptm/m/n/10 Since [] is non-convex and Non-deterministic
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 241--242
+Underfull \hbox (badness 3428) in paragraph at lines 242--243
 \OT1/ptm/m/n/10 Polynomial-hard (NP-hard) s-ince the ob-jec-tive func-tion
  []
 
 [5] [6]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 416.
+put line 417.
 Package epstopdf Info: Source file: <figures//pp.eps>
 (epstopdf)                    date: 2023-08-30 09:46:37
 (epstopdf)                    size: 125692 bytes
@@ -574,14 +574,14 @@ Package epstopdf Info: Source file: <figures//pp.eps>
 (epstopdf)                    size: 10261 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//pp-eps-converted-t
 o.pdf figures//pp.eps>
-(epstopdf)             \includegraphics on input line 463.
+(epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
- <figures//pp-eps-converted-to.pdf, id=315, 402.50375pt x 335.2525pt>
+ <figures//pp-eps-converted-to.pdf, id=316, 402.50375pt x 335.2525pt>
 File: figures//pp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//pp-eps-converted-to.pdf>
 Package pdftex.def Info: figures//pp-eps-converted-to.pdf used on input line 46
-3.
+4.
 (pdftex.def)             Requested size: 199.16928pt x 165.89166pt.
 Package epstopdf Info: Source file: <figures//ff.eps>
 (epstopdf)                    date: 2023-08-30 09:44:09
@@ -591,55 +591,56 @@ Package epstopdf Info: Source file: <figures//ff.eps>
 (epstopdf)                    size: 9641 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//ff-eps-converted-t
 o.pdf figures//ff.eps>
-(epstopdf)             \includegraphics on input line 469.
+(epstopdf)             \includegraphics on input line 470.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//ff-eps-converted-to.pdf, id=316, 402.50375pt x 329.23pt>
+<figures//ff-eps-converted-to.pdf, id=317, 402.50375pt x 329.23pt>
 File: figures//ff-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//ff-eps-converted-to.pdf>
-Package pdftex.def Info: figures//ff-eps-converted-to.pdf used on input line 46
-9.
+Package pdftex.def Info: figures//ff-eps-converted-to.pdf used on input line 47
+0.
 (pdftex.def)             Requested size: 199.16928pt x 162.91158pt.
 Package epstopdf Info: Source file: <figures//ee.eps>
-(epstopdf)                    date: 2023-08-30 09:45:35
-(epstopdf)                    size: 32481 bytes
+(epstopdf)                    date: 2024-04-12 10:37:23
+(epstopdf)                    size: 32449 bytes
 (epstopdf)             Output file: <figures//ee-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-08-30 09:46:44
-(epstopdf)                    size: 5109 bytes
+(epstopdf)                    date: 2024-04-12 10:39:53
+(epstopdf)                    size: 4991 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//ee-eps-converted-t
 o.pdf figures//ee.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 476.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//ee-eps-converted-to.pdf, id=317, 402.50375pt x 332.24126pt>
+<figures//ee-eps-converted-to.pdf, id=318, 421.575pt x 316.18124pt>
 File: figures//ee-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//ee-eps-converted-to.pdf>
 Package pdftex.def Info: figures//ee-eps-converted-to.pdf used on input line 47
-5.
-(pdftex.def)             Requested size: 199.16928pt x 164.40161pt.
- [7 <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//pp-eps-convert
-ed-to.pdf> <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//ff-eps-
-converted-to.pdf>]
+6.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+ [7 <F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小
+论文/Wei 0403/figures//pp-eps-converted-to.pdf> <F:/OneDrive/组内文献/次
+世代网络架构与矩阵革命/第一篇小论文/Wei 0403/figures//ff-eps-c
+onverted-to.pdf>]
 Package epstopdf Info: Source file: <figures//diffspeed1.eps>
-(epstopdf)                    date: 2023-08-30 09:49:21
-(epstopdf)                    size: 19870 bytes
+(epstopdf)                    date: 2024-04-12 10:47:18
+(epstopdf)                    size: 102257 bytes
 (epstopdf)             Output file: <figures//diffspeed1-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-08-30 09:56:18
-(epstopdf)                    size: 3669 bytes
+(epstopdf)                    date: 2024-04-12 10:47:27
+(epstopdf)                    size: 4527 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//diffspeed1-eps-con
 verted-to.pdf figures//diffspeed1.eps>
-(epstopdf)             \includegraphics on input line 491.
+(epstopdf)             \includegraphics on input line 492.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//diffspeed1-eps-converted-to.pdf, id=361, 402.50375pt x 338.26375pt>
+<figures//diffspeed1-eps-converted-to.pdf, id=363, 421.575pt x 316.18124pt>
 File: figures//diffspeed1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//diffspeed1-eps-converted-to.pdf>
 Package pdftex.def Info: figures//diffspeed1-eps-converted-to.pdf used on input
- line 491.
-(pdftex.def)             Requested size: 199.16928pt x 167.3817pt.
+ line 492.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 Package epstopdf Info: Source file: <figures//diff_e1.eps>
 (epstopdf)                    date: 2023-08-30 09:56:15
 (epstopdf)                    size: 23055 bytes
@@ -648,26 +649,27 @@ Package epstopdf Info: Source file: <figures//diff_e1.eps>
 (epstopdf)                    size: 4535 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//diff_e1-eps-conver
 ted-to.pdf figures//diff_e1.eps>
-(epstopdf)             \includegraphics on input line 499.
+(epstopdf)             \includegraphics on input line 500.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//diff_e1-eps-converted-to.pdf, id=363, 402.50375pt x 344.28625pt>
+<figures//diff_e1-eps-converted-to.pdf, id=365, 402.50375pt x 344.28625pt>
 File: figures//diff_e1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//diff_e1-eps-converted-to.pdf>
 Package pdftex.def Info: figures//diff_e1-eps-converted-to.pdf used on input li
-ne 499.
+ne 500.
 (pdftex.def)             Requested size: 199.16928pt x 170.3618pt.
- [8 <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//ee-eps-convert
-ed-to.pdf> <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//diffspe
-ed1-eps-converted-to.pdf> <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/f
-igures//diff_e1-eps-converted-to.pdf>]
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
+ [8 <F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小
+论文/Wei 0403/figures//ee-eps-converted-to.pdf> <F:/OneDrive/组内文献/次
+世代网络架构与矩阵革命/第一篇小论文/Wei 0403/figures//diffspee
+d1-eps-converted-to.pdf> <F:/OneDrive/组内文献/次世代网络架构与矩�
+��革命/第一篇小论文/Wei 0403/figures//diff_e1-eps-converted-to.pdf>]
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--510
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 []\OT1/ptm/m/n/10 ``Without com-put-ing rate al-lo-ca-tion'' (de-not-ed as
  []
 
@@ -679,14 +681,14 @@ Package epstopdf Info: Source file: <figures//compare.eps>
 (epstopdf)                    size: 5791 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//compare-eps-conver
 ted-to.pdf figures//compare.eps>
-(epstopdf)             \includegraphics on input line 514.
+(epstopdf)             \includegraphics on input line 515.
 Package epstopdf Info: Output file is already uptodate.
-<figures//compare-eps-converted-to.pdf, id=386, 422.57875pt x 350.30875pt>
+<figures//compare-eps-converted-to.pdf, id=390, 422.57875pt x 350.30875pt>
 File: figures//compare-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//compare-eps-converted-to.pdf>
 Package pdftex.def Info: figures//compare-eps-converted-to.pdf used on input li
-ne 514.
+ne 515.
 (pdftex.def)             Requested size: 199.16928pt x 165.11017pt.
 Package epstopdf Info: Source file: <figures//diff_dup.eps>
 (epstopdf)                    date: 2023-08-30 09:59:00
@@ -696,15 +698,15 @@ Package epstopdf Info: Source file: <figures//diff_dup.eps>
 (epstopdf)                    size: 3921 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//diff_dup-eps-conve
 rted-to.pdf figures//diff_dup.eps>
-(epstopdf)             \includegraphics on input line 522.
+(epstopdf)             \includegraphics on input line 523.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//diff_dup-eps-converted-to.pdf, id=387, 422.57875pt x 347.2975pt>
+<figures//diff_dup-eps-converted-to.pdf, id=391, 422.57875pt x 347.2975pt>
 File: figures//diff_dup-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//diff_dup-eps-converted-to.pdf>
 Package pdftex.def Info: figures//diff_dup-eps-converted-to.pdf used on input l
-ine 522.
+ine 523.
 (pdftex.def)             Requested size: 199.16928pt x 163.69089pt.
 Package epstopdf Info: Source file: <figures//diff_total.eps>
 (epstopdf)                    date: 2023-08-30 09:55:01
@@ -714,15 +716,15 @@ Package epstopdf Info: Source file: <figures//diff_total.eps>
 (epstopdf)                    size: 3812 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//diff_total-eps-con
 verted-to.pdf figures//diff_total.eps>
-(epstopdf)             \includegraphics on input line 528.
+(epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//diff_total-eps-converted-to.pdf, id=388, 402.50375pt x 341.275pt>
+<figures//diff_total-eps-converted-to.pdf, id=392, 402.50375pt x 341.275pt>
 File: figures//diff_total-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//diff_total-eps-converted-to.pdf>
 Package pdftex.def Info: figures//diff_total-eps-converted-to.pdf used on input
- line 528.
+ line 529.
 (pdftex.def)             Requested size: 199.16928pt x 168.87175pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -735,43 +737,45 @@ Package epstopdf Info: Source file: <figures//diff_c.eps>
 (epstopdf)                    size: 3900 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures//diff_c-eps-convert
 ed-to.pdf figures//diff_c.eps>
-(epstopdf)             \includegraphics on input line 534.
+(epstopdf)             \includegraphics on input line 535.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures//diff_c-eps-converted-to.pdf, id=389, 422.57875pt x 350.30875pt>
+<figures//diff_c-eps-converted-to.pdf, id=393, 422.57875pt x 350.30875pt>
 File: figures//diff_c-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures//diff_c-eps-converted-to.pdf>
 Package pdftex.def Info: figures//diff_c-eps-converted-to.pdf used on input lin
-e 534.
+e 535.
 (pdftex.def)             Requested size: 199.16928pt x 165.11017pt.
- [9 <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//compare-eps-co
-nverted-to.pdf> <F:/OneDrive/Documents/WeChat File/2024-04/Wei 0403/figures//di
-ff_dup-eps-converted-to.pdf> <F:/OneDrive/Documents/WeChat File/2024-04/Wei 040
-3/figures//diff_total-eps-converted-to.pdf> <F:/OneDrive/Documents/WeChat File/
-2024-04/Wei 0403/figures//diff_c-eps-converted-to.pdf>]
-("F:\OneDrive\Documents\WeChat File\2024-04\Wei 0403\Computing_Enable_Vehicular
-_Networks.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 552.
+ [9 <F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小
+论文/Wei 0403/figures//compare-eps-converted-to.pdf> <F:/OneDrive/组内文�
+�/次世代网络架构与矩阵革命/第一篇小论文/Wei 0403/figures//dif
+f_dup-eps-converted-to.pdf> <F:/OneDrive/组内文献/次世代网络架构与�
+��阵革命/第一篇小论文/Wei 0403/figures//diff_total-eps-converted-to.pd
+f> <F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小�
+��文/Wei 0403/figures//diff_c-eps-converted-to.pdf>]
+("F:\OneDrive\组内文献\次世代网络架构与矩阵革命\第一篇小论
+文\Wei 0403\Computing_Enable_Vehicular_Networks.bbl")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 552.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
 
-("F:\OneDrive\Documents\WeChat File\2024-04\Wei 0403\Computing_Enable_Vehicular
-_Networks.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 552.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 552.
+("F:\OneDrive\组内文献\次世代网络架构与矩阵革命\第一篇小论
+文\Wei 0403\Computing_Enable_Vehicular_Networks.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `Computing_Enable_Vehicular_Networks.out' has
  not changed.
 (rerunfilecheck)             Checksum: F0C10E9D109C3AD3C715E29BDAB084A2;1031.
  ) 
 Here is how much of TeX's memory you used:
- 8428 strings out of 495354
- 127265 string characters out of 3183858
- 246031 words of memory out of 3000000
- 11316 multiletter control sequences out of 15000+200000
+ 8431 strings out of 495354
+ 127805 string characters out of 3183858
+ 247062 words of memory out of 3000000
+ 11317 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 42i,16n,38p,2552b,563s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,16n,40p,2591b,563s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbx10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
 x7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/CTEX/MiKTeX
@@ -791,10 +795,10 @@ s/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 615134 byt
+Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 618997 byt
 es).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
+ 532 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,34 @@
+    近年来，随着道路交通车辆密度的不断增大，道路交通安全以及车辆通信拥
+堵等问题日益凸显。随着智能化、联网化程度的不断发展，智能交通系统 (Intelligent
+Traffic Systems, ITS) 正在世界各地得到广泛开发和部署。纵观前四代移动通信技
+术，仅仅实现了人与人之间的信息交互，并未真正转变到人与物、物与物之间的
+互联。而 5G 的出现，使得万物互联不再停留在概念阶段。5G 具有大容量、高速
+率、低时延、高带宽和高移动性等特点。借助多路访问边缘计算 (Multi-Access Edge
+Computing, MEC)，端到端延迟缩短至 1 毫秒。因此，作为一项实现智慧城市、智能
+交通的重要手段，车联网被寄予厚望。万物互联的提出，使得越来越多的设备加入
+车联网成为可能，更加多样化的车联网场景相继提出，本文聚焦于无人机作为空中
+基站辅助车辆与路边单元的通信与任务卸载，并制定了有效的功率控制及轨迹优化
+策略，通过联合优化方案提升车联网的系统性能。
+    首先，针对空地一体化的大规模通信异构的车联网络，提出了一种基于博弈的
+鲁棒资源分配算法，该方案通过构建用户间的博弈关系，制定了实时功率分配和定
+价策略，在该优化方案中实现了用户利益的最大化。引入了概率约束，以确保用户
+服务的可靠性和稳定性。仿真结果表明，所提算法在复杂多用户干扰和信道不确定
+性的空地一体化异构车联网通信场景下是有效的。
+    其次，针对车辆网络越来越高的低延迟高数据计算的需求，提出了云辅助动
+态车联网的鲁棒功率控制和任务卸载的新方法。根据系统模型构建了鲁棒性功
+率控制和任务卸载调度的优化问题，由于信道存在不确定性，优化问题受到传
+输速率、计算通信延迟和概率形式的限制。应用了连续凸近似 (Successive Convex
+Approximation, SCA) 技术，将变量耦合的 NP 难问题 (Non-deterministic Polynomial-
+time hard problem, NP-hard problem) 转化为可处理的凸问题。仿真结果表明，所提出
+的算法得到了近似最优解。与现有方法相比，系统平均卸载效用得到显著改善。
+    最后，考虑了将无人机辅助动态异构车联网通信与任务卸载相结合的物理场景，
+提出了一种空地一体化的无人机辅助双向车道的车辆通信方案。设计了车辆通信时
+的吞吐量最大化与通信及无人机飞行能耗最小化的平衡方案。通过优化车辆的发射
+功率与无人机的飞行轨迹以及时隙的分配，可以使得系统的能效最大化，数值仿真
+表明，该方案在能效方面的性能明显高于其他方法并可显著提升车联网通信效率。
+
+
+     In recent years, the density of road vehicles has increased, leading to prominent issues of traffic safety and vehicle communication congestion. Intelligent Traffic Systems (ITS) are being widely developed and deployed worldwide due to the continuous development of intelligence and networking. During the first four generations of mobile communication technology, it facilitated information exchange solely between people, without enabling connections between people and things, or things and things. However, with the advent of 5G, the concept of interconnectivity will become a reality. 5G boasts high capacity, speed, bandwidth, and mobility, as well as low latency. Multi-Access Edge Computing (MEC) can reduce end-to-end latency to 1 millisecond, making telematics a crucial component in the realization of smart cities and intelligent transportation. This proposal introduces the concept of the Internet of Everything. This paper focuses on the use of UAVs as airborne base stations to support communication and task offloading between vehicles and roadside units. It formulates power control and trajectory optimization schemes to improve the system performance of vehicle networking. The paper aims to achieve an all-round improvement in the system's performance.
+    Firstly, a game-based resource allocation algorithm is proposed for air-ground integrated large-scale communication heterogeneous vehicular networks. The algorithm centers on the game relationship between users and formulates real-time power allocation and pricing strategies to maximize user benefits in a novel optimization scheme. To ensure the reliability and stability of user services, probabilistic constraints are introduced. The simulation results demonstrate the effectiveness of the proposed algorithm in air-ground integrated heterogeneous vehicular communication scenarios, even in the presence of complex multi-user interference and channel uncertainty.
+     Secondly, a new approach to robust power control and task offloading for cloud-assisted MEC is proposed to address the increasing demand for low-latency, high-data computation in vehicular networks. The optimization problem is limited by the form of transmission rate, computational communication delay, and co-channel interference probability due to the presence of channel uncertainty. The optimization problem is initially formulated as a robust power control and task offloading scheduling problem using the Successive Convex Approximation (SCA) technique to transform the variable-coupled NP-hard problem into a tractable convex problem.   Simulation results demonstrate that our proposed algorithm achieves a Compared to the existing methods, the average utility of system offloading has significantly improved.
+     Finally, this paper considers a more realistic physical scenario that combines UAV-assisted communication with task offloading. The authors propose an efficient UAV-assisted vehicular communication scheme for two-way lanes. A balancing scheme is constructed to measure the basic throughput, communication, and UAV flight energy consumption during vehicular communication. By optimizing the transmit power of the vehicle and the flight trajectory of the UAV, as well as the allocation of time slots, the energy efficiency of the system can be maximized. Numerical simulations show that this scheme significantly outperforms other methods in terms of energy efficiency and can greatly improve vehicular communication efficiency.

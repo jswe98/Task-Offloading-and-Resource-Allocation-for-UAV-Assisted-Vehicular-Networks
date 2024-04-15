@@ -143,6 +143,10 @@ Total_sum(programmatic,thetatheta)=0.01*sum(Total_T(:));
 end %这个end表示最外面一个for循环的对应
 end
 
+
+% Varin2=load('data.mat');
+% data = Varin2.data';  %调用了之前的数据S
+
 data =0.01* Total_sum ;
 % 将第1行和第3行进行交换  
 % row1 = data(1, :);  

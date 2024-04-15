@@ -87,11 +87,11 @@ g_{n,n}=L_{k,n}h_{k,n}^{-\alpha},          &k, n\in \mathcal{S}_l, k=n
 但仍存在一些影响信道增益的因素，如通信终端的相对移动、信道估计误差以及不可避免的信道不确定性。因此，小尺度衰落不容忽视。根据文献 \cite{CCO}，它遵循截断指数分布。为了描述信
 道增益的不确定性，引入了一个参数 $G$，$G$ 是一个独立的同分布随机变量，其概率密度函数为 $f_G (x)=e^{-x}$ 。信号链路 $n$ 的实时信干噪比(Signal to Interference plus Noise Ratio ,SINR)可表示为：
 \begin{eqnarray}\label{E2-5}
-\gamma_{n}(p_n)=\frac{p_{n}G g_{n,n}}{I_n}, k\in\mathcal{N},n\in\mathcal{N}
+\gamma_{n}(p_n)=\frac{p_{n}G g_{n,n}}{I_n}, k,n\in \mathcal{S}_l
 \end{eqnarray}
 其中，$g_{n,n}$ 是给定时隙内的估计增益。同信道 V2U 链路 $n$ 的干扰可视为测量值，其表达式为：
 \begin{eqnarray}\label{E2-6}
-I_n=p_0 g_{0,n}+\!\!\!\sum\limits_{k=1,k\neq n}^N\!\!\!\! p_k g_{k,n}+\delta^2, \quad k\in\mathcal{N},n\in\mathcal{N}
+I_n=p_0 g_{0,n}+\!\!\!\sum\limits_{k=1,k\neq n}^N\!\!\!\! p_k g_{k,n}+\delta^2, \quad k,n\in \mathcal{S}_l
 \end{eqnarray}
 其中，$p_k$ 表示第 $k$ 个 VUE 的传输功率。$p_0$ 是 CUE 的传输功率。$\delta^2$ 是噪声干扰。
 
@@ -127,12 +127,12 @@ R_{er}=\int_{0}^{\infty} W \log(1+\gamma_{n})\Pr(\gamma_{n})\, d(\gamma_{n})
 \!=\!\frac{p_{n}g_{n,n}}{I_n}$ ，是香农容量是遍历容量的上限，通过信道编码技术可以使遍历容量接近上限。
 因此，根据香农定理计算出的 VUE 的确定性等效传输速率为：
 \begin{eqnarray}\label{E2-10}
-R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in\mathcal{N}
+R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in \mathcal{S}_l
 \end{eqnarray}
 \subsection{博弈论问题的描述}\label{section2-2-2}
 在空地一体化异构的车载网络(AGHVN)中，频谱所有者 CUE 可以对干扰进行定价，并将 VUE 的收费作为其利润。在 V2U 小区中，VUE 的效用是传输速率与购买干扰成本之间的差额。
 考虑到 CUE 和 VUE 都是自私自利的，它们都愿意为自己的利益而竞争。因此，数学框架符合 Stackelberg 博弈模型，其中 CUE 和 VUE 分别是领导者和追随者。此外，还考虑了
- CUE 的通信约束。第$n_{th}$ 个V2U 单元的下子博弈可表述为：
+ CUE 的通信约束。第$n$ 个V2U 单元的下子博弈可表述为：
 \begin{comment}
 \begin{eqnarray}\label{11}
 \end{comment}

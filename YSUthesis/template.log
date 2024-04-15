@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  9 APR 2024 17:00
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2023.11.13)  9 APR 2024 21:35
 entering extended mode
 **template.tex
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\templa
@@ -2530,10 +2530,10 @@ File: figures//chap4//不同的方案下的能效.eps Graphic file (type eps)
 File: figures//chap4//不同的参数在不同的方案下的能效.eps Graphic
  file (type eps)
 
-<figures//chap4//不同的参数在不同的方案下的能效.eps>
+<figures//chap4//不同的参数在不同的方案下的能效.eps> [49]
 File: figures//chap4//双向车道.eps Graphic file (type eps)
 
-<figures//chap4//双向车道.eps> [49]) [50]
+<figures//chap4//双向车道.eps>) [50]
 (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\chapte
 r/chap-5.tex
 第\nobreakspace {}5\ignorespaces \nobreakspace {}章
@@ -2542,7 +2542,11 @@ r/chap-5.tex
 
 
 ] (F:\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthesis\temp
-late.bbl [52
+late.bbl
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;" at 10.54pt
+ -> C:/Windows/Fonts/timesbd.ttf
+ [52
 
 
 
@@ -2584,11 +2588,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34100 strings out of 430478
- 643940 string characters out of 3191501
- 735739 words of memory out of 3000000
- 36582 multiletter control sequences out of 15000+200000
- 18008 words of font info for 174 fonts, out of 3000000 for 9000
+ 34102 strings out of 430478
+ 644039 string characters out of 3191501
+ 735780 words of memory out of 3000000
+ 36583 multiletter control sequences out of 15000+200000
+ 18016 words of font info for 175 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,18n,94p,1397b,1160s stack positions out of 5000i,500n,10000p,200000b,50000s
 

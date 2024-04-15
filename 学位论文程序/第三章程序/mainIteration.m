@@ -28,6 +28,7 @@ t_imax=0.25; %执行时候最大可以容忍的时间
 Tc=0.001;%transmission latency between RSU to Cloud is set to fix
 f_ba=5;%边缘的固定算力
 d_up=0.5;%上传的数据量
+U00=0.1;
 % CE=[1.8,1.8,1.8,1.8,1.8];
 c_exe=CE;%执行的数据量
 tau=100;%数据包长度
@@ -94,7 +95,7 @@ Lamda(1,:)=linspace(20,20,5);
 Miu(1,:)=linspace(20,20,5);
 for k=1:N
     fiI(N,:)=[f1,f2,f3,f4,f5];%这是每个云给边缘分配的算力
-    u_iexe(k,:)=1*(t_imax*C1-(Tc+(c_exe./(f_ba*C1+fiI(N,:)))))/t_imax*(1/d_up/log(2));%这是执行时间的效用多乘了一个上传前缀
+    u_iexe(k,:)=0.1+1*(t_imax*C1-(Tc+(c_exe./(f_ba*C1+fiI(N,:)))))/t_imax*(1/d_up/log(2));%这是执行时间的效用多乘了一个上传前缀
     for i=1:5
     I1(i)=exp(P(k,:))*G(:,i)+Delta-G(i,i)*exp(P(k,i));
     SINR(k,i)=G(i,i)*exp(P(k,i))/I1(i);      
@@ -214,5 +215,8 @@ grid on
 % legend('F1')
 xlabel('\fontname{宋体}迭代次数');
 %  axis([0 30 9 9.6]);
+set(gca,'ylim',[3,19]); 
 ylabel('\fontname{宋体}系统总效用');
+% xlabel('Iteration');
+% ylabel('Utility');
  set(gca,'FontName','Times New Roman')
