@@ -177,9 +177,8 @@ The packet arrival process at the $i$th V2R receiver follows a Poisson process w
 \begin{eqnarray}\label{E7}
 D_i=\frac{1}{{\tau_iR}_i-k_i}.
 \end{eqnarray}
-
 \subsection{Vehicle Computing Model}
-We denote the number of CPU cycles required to process 1-bit of input data at vehicle $i$ as $c_0$ \cite{Zhang2017}, which is indivisible and cannot be broken down into smaller components \cite{Saleem2021}.
+We denote the number of CPU cycles required to process 1-bit of input data at vehicle $i$ as $c_0$, which is indivisible and cannot be broken down into smaller components \cite{Saleem2021,Zhang2017}.
 %$c_0$ can be obtained through carefully profiling of the task execution \cite{Yang2015}.
 We consider that each vehicle $v\in \mathcal{V}$ has a different computational task at a time, denoted as $T_i$, which is defined by a tuple consisting of two parameters, $\langle d_{i,up}, c_{i,e}\rangle$, in which $c_{i,e}$ [cycles] specifies the workload \cite{Tran2019}. Hence, the computation cost to accomplish the task, $c_{i,e}$, can be obtained through $c_{0}d_{i,up}$ \cite{Shuang2021}. Each task is offloaded to the MEC server and then transmitted to the cloud servers. By offloading the computation task to the MEC servers, the vehicles have more computing resources. However, additional time is likely to be consumed for transmitting the task input in the uplink direction.
 
@@ -187,7 +186,6 @@ The MEC server at each RSU provides the computational offloading service to a ve
 \begin{eqnarray}\label{E8}
 t_{i,exe}=\frac{c_{i,e}}{\bar{f}+f_i}.
 \end{eqnarray}
-
 %\subsection{Problem  Definition}
 \subsection{Problem Formulation}
 Given that the computational rate $f_i$, the total delay experienced by vehicle $i$ caused by offloading is given by,
@@ -422,9 +420,9 @@ After transformed the original problem into two convex subproblems, an alternati
 \REPEAT
 %\STATE \textbf{Repeat:}
 \STATE Initialize the feasible points $\lambda, \mu$ and $\mathbf{f}$.
-\STATE Solve problem $\mathbf{P1}$, and determine the current optimal solution ${\widetilde{p}}^{\left(t+1\right)}$.
+\STATE Solve problem $\mathbf{P1}$, and determine the current optimal solution ${\widetilde{p}}^{\left(t+1\right)}$ by \eqref{E29}.
 \STATE Initialize the feasible points $\xi, \varphi$ and $\mathbf{p}$.
-\STATE Solve the problem $\mathbf{P2}$, and determine the current optimal solution ${\widetilde{f}}^{\left(t+1\right)}$.
+\STATE Solve the problem $\mathbf{P2}$, and determine the current optimal solution ${\widetilde{f}}^{\left(t+1\right)}$ by \eqref{E38}.
 \UNTIL algorithm converges synchronously to the optimal result or $t\geq\mathcal{T}_{max}$
 \STATE \textbf{Output:} $\mathbf{f},\mathbf{p}$.
 \end{algorithmic}}
@@ -451,8 +449,8 @@ CSI feedback period of vehicle $(T)$    & 1 ms  \\\hline
  Mean of background noise $(\sigma^2)$  &  -30 dBm  \\\hline
 Maximum transmitter power $(p_{i,max})$ & 0.05 W \\\hline
 threshold parameter &${10}^{-6}$ \\\hline
-outage probability threshold $\varepsilon_1$ &0.1 \\\hline
-outage probability threshold $\varepsilon_2$ &0.1 \\\hline
+outage probability threshold $\varepsilon_1,\varepsilon_2$ &0.1 \\\hline
+%outage probability threshold $\varepsilon_2$ &0.1 \\\hline
 %,$d$ in m
 Pathloss exponent $(\theta)$&3 \\\hline
 Log-normal shadowing standard deviation &10 dB
@@ -461,7 +459,7 @@ Log-normal shadowing standard deviation &10 dB
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//pp.eps}
+\includegraphics[width=8cm]{figures//pp.eps}
 \caption{Power convergence performance.}
 \label{F2}
 \end{figure}
@@ -509,15 +507,21 @@ For the computation rate allocation, we choose the default task input size as $d
 \item[3)]``¡°Without computing rate allocation'' (denoted as ``Without-CRA''), the computing rate allocation of the cloud is set as a fixed value during the offloading.
     %Similar to [?]Jiang2016  Similar to: \cite{Jiang2016},
 \end{itemize}
+
 Fig. \ref{F7} shows the iterative convergence of the total utility of the system in different cases, and the figure that shows the robust joint optimization performance is better than the other three schemes. The figure show that the four methods converge to a stable value in the late iteration and the performance of proposed scheme is the best.
+
+In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, therefore we set the CPU task load (Megzcycles) of the five vehicles to 1600, 1700, 1800, 1900 and 2000.
 \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{figures//compare.eps}
 \caption{System utility convergence for different methods.}
 \label{F7}
 \end{figure}
-In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, therefore we set the CPU task load (Megzcycles) of the five vehicles to 1600, 1700, 1800, 1900 and 2000.
-As we can see, with the increase of the iteration number, the average system utility of vehicles changes gradually and tends to be stable. In the independent optimization process, the computational  rate allocation is performed first, and the optimal power allocation is not known at this time. The power and computing rate alternate optimization method is used, and the corresponding optimal value can be obtained for each iteration. Individual optimization first optimizes the power vector $\mathbf{p}$. After the result is obtained, the result is used to optimize of computational rate allocation, and then the computing rate are optimized, the system is obtained. However, if joint optimization is used, then both variables can achieve the optimal value if the joint optimization is used.
+
+In Fig. \ref{F7}, with the increase of the iteration number, the average system utility of vehicles changes gradually and tends to be stable. In the independent optimization process, the computational  rate allocation is performed first, and the optimal power allocation is not known at this time. The power and computing rate alternate optimization method is used, and the corresponding optimal value can be obtained for each iteration. Individual optimization first optimizes the power vector $\mathbf{p}$. After the result is obtained, the result is used to optimize of computational rate allocation, and then the computing rate are optimized, the system is obtained. However, if joint optimization is used, then both variables can achieve the optimal value if the joint optimization is used.
+
+The average system utility of the four competing schemes is plotted in Fig. \ref{F8} with different task input sizes $d_u$. The figure shows that the average system utilities of all schemes decrease as the task input sizes increase. The figure also shows that the performance gains of the other schemes also have a similar trend.
+This phenomenon is reasonable, since the definition of $U$ in \eqref{E12} shows that the increase in workload has a negative impact on the system performance.
 \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{figures//diff_dup.eps}
@@ -536,8 +540,7 @@ As we can see, with the increase of the iteration number, the average system uti
 \caption{Comparison of average system utility with different task workloads $c_{i,e}$.}
 \label{F10}
 \end{figure}
-The average system utility of the four competing schemes is plotted in Fig. \ref{F8} with different task input sizes $d_u$. The figure shows that the average system utilities of all schemes decrease as the task input sizes increase. The figure also shows that the performance gains of the other schemes also have a similar trend.
-This phenomenon is reasonable, since the definition of $U$ in \eqref{E12} shows that the increase in workload has a negative impact on the system performance.
+
 Fig. \ref{F9} shows the total system cost comparisons with different $f_{total}$. The system utility is small when the computational capability is small, since the computational capability in the cloud is limited.
 It is found that in Fig. \ref{F10} the system utility tends to decrease when the data size increases. This is because the computational tasks require more upload time when the data sizes are larger.
 \section{Conclusions}\label{Conclusions}

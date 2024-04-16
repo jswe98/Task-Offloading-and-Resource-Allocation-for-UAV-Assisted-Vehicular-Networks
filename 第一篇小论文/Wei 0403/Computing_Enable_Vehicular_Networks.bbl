@@ -160,17 +160,17 @@ C.~Guo, L.~Liang, and G.~Y. Li, ``Resource allocation for high-reliability
   low-latency vehicular communications with packet retransmission,'' \emph{IEEE
   Transactions on Vehicular Technology}, vol.~68, no.~7, pp. 6219--6230, 2019.
 
-\bibitem{Zhang2017}
-K.~Zhang, Y.~Mao, S.~Leng, Y.~He, and Y.~ZHANG, ``{Mobile-Edge Computing} for
-  {Vehicular Networks: A Promising Network Paradigm} with {Predictive
-  Off-Loading},'' \emph{IEEE Vehicular Technology Magazine}, vol.~12, no.~2,
-  pp. 36--44, 2017.
-
 \bibitem{Saleem2021}
 U.~Saleem, Y.~Liu, S.~Jangsher, Y.~Li, and T.~Jiang, ``Mobility-aware joint
   task scheduling and resource allocation for cooperative mobile edge
   computing,'' \emph{IEEE Transactions on Wireless Communications}, vol.~20,
   no.~1, pp. 360--374, 2021.
+
+\bibitem{Zhang2017}
+K.~Zhang, Y.~Mao, S.~Leng, Y.~He, and Y.~ZHANG, ``{Mobile-Edge Computing} for
+  {Vehicular Networks: A Promising Network Paradigm} with {Predictive
+  Off-Loading},'' \emph{IEEE Vehicular Technology Magazine}, vol.~12, no.~2,
+  pp. 36--44, 2017.
 
 \bibitem{Shuang2021}
 S.~Liu, J.~Tian, X.~Deng, Y.~Zhi, and J.~Bian, ``Stackelberg game-based task
