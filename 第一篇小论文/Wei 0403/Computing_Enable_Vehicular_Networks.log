@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  16 APR 2024 10:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  26 APR 2024 10:12
 entering extended mode
 **F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第一篇小论
 文/Wei*0403/Computing_Enable_Vehicular_Networks.tex
@@ -582,7 +582,7 @@ File: figures//pp-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//pp-eps-converted-to.pdf>
 Package pdftex.def Info: figures//pp-eps-converted-to.pdf used on input line 46
 2.
-(pdftex.def)             Requested size: 227.62204pt x 189.58682pt.
+(pdftex.def)             Requested size: 199.16928pt x 165.89166pt.
 Package epstopdf Info: Source file: <figures//ff.eps>
 (epstopdf)                    date: 2023-08-30 09:44:09
 (epstopdf)                    size: 63169 bytes
@@ -795,7 +795,7 @@ s/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 619461 byt
+Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 619442 byt
 es).
 PDF statistics:
  535 PDF objects out of 1000 (max. 8388607)

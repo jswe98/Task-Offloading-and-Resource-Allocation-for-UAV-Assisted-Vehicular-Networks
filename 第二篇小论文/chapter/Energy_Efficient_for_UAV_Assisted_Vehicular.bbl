@@ -21,6 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{TFL}
+W.~Y.~B. Lim, J.~Huang, Z.~Xiong, J.~Kang, D.~Niyato, X.-S. Hua, C.~Leung, and
+  C.~Miao, ``{Towards Federated Learning} in {UAV-Enabled Internet} of
+  {Vehicles}: {A Multi-Dimensional Contract-Matching Approach},'' \emph{{IEEE
+  Transactions} on {Intelligent Transportation Systems}}, vol.~22, no.~8, pp.
+  5140--5154, 2021.
+
 \bibitem{twoway7091030}
 F.~Liu, Z.~Chen, and B.~Xia, ``Data dissemination with network coding in
   {Two-Way} {Vehicle-to-Vehicle} networks,'' \emph{IEEE Transactions on
@@ -117,6 +124,12 @@ J.~Wang, X.~Zhou, H.~Zhang, and D.~Yuan, ``Joint trajectory design and power
   allocation for uav assisted network with user mobility,'' \emph{IEEE
   Transactions on Vehicular Technology}, vol.~72, no.~10, pp. 13\,173--13\,189,
   2023.
+
+\bibitem{OSI}
+N.~Kato, Z.~M. Fadlullah, F.~Tang, B.~Mao, S.~Tani, A.~Okamura, and J.~Liu,
+  ``{Optimizing {Space-Air-Ground} Integrated Networks} by {Artificial
+  Intelligence},'' \emph{IEEE Wireless Communications}, vol.~26, no.~4, pp.
+  140--147, 2019.
 
 \bibitem{LIU20231399}
 ``Joint computation offloading and resource allocation in vehicular edge
