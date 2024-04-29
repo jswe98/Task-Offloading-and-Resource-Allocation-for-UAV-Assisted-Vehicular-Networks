@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  27 APR 2024 14:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2023.11.13)  29 APR 2024 13:26
 entering extended mode
 **F:/OneDrive/组内文献/次世代网络架构与矩阵革命/第二篇小论
 文/chapter/Energy_Efficient_for_UAV_Assisted_Vehicular.tex
@@ -580,36 +580,37 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 574.
 [6]
 Package epstopdf Info: Source file: <..//figures//trajectory.eps>
-(epstopdf)                    date: 2024-03-13 11:24:39
-(epstopdf)                    size: 301489 bytes
+(epstopdf)                    date: 2024-04-28 19:22:44
+(epstopdf)                    size: 178501 bytes
 (epstopdf)             Output file: <..//figures//trajectory-eps-converted-to.p
 df>
-(epstopdf)                    date: 2024-03-18 17:19:42
-(epstopdf)                    size: 59447 bytes
+(epstopdf)                    date: 2024-04-29 13:20:03
+(epstopdf)                    size: 24991 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//trajectory-eps
 -converted-to.pdf ..//figures//trajectory.eps>
 (epstopdf)             \includegraphics on input line 597.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//trajectory-eps-converted-to.pdf, id=479, 1505.625pt x 752.8125pt>
+<..//figures//trajectory-eps-converted-to.pdf, id=503, 1159.33125pt x 669.50125
+pt>
 File: ..//figures//trajectory-eps-converted-to.pdf Graphic file (type pdf)
-<use ..//figures//trajectory-eps-converted-to.pdf>
+ <use ..//figures//trajectory-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//trajectory-eps-converted-to.pdf used on i
 nput line 597.
-(pdftex.def)             Requested size: 455.25195pt x 227.62596pt.
+(pdftex.def)             Requested size: 455.23311pt x 227.6172pt.
 Package epstopdf Info: Source file: <..//figures//UAVspeed.eps>
-(epstopdf)                    date: 2024-03-22 19:10:41
-(epstopdf)                    size: 95250 bytes
+(epstopdf)                    date: 2024-04-28 19:20:03
+(epstopdf)                    size: 49472 bytes
 (epstopdf)             Output file: <..//figures//UAVspeed-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2024-03-27 09:51:33
-(epstopdf)                    size: 28871 bytes
+(epstopdf)                    date: 2024-04-29 13:17:44
+(epstopdf)                    size: 8695 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//UAVspeed-eps-c
 onverted-to.pdf ..//figures//UAVspeed.eps>
 (epstopdf)             \includegraphics on input line 636.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//UAVspeed-eps-converted-to.pdf, id=482, 421.575pt x 316.18124pt>
+<..//figures//UAVspeed-eps-converted-to.pdf, id=506, 421.575pt x 316.18124pt>
 File: ..//figures//UAVspeed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//UAVspeed-eps-converted-to.pdf>
@@ -617,18 +618,18 @@ Package pdftex.def Info: ..//figures//UAVspeed-eps-converted-to.pdf used on inp
 ut line 636.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 Package epstopdf Info: Source file: <..//figures//difftheta.eps>
-(epstopdf)                    date: 2024-03-09 17:05:30
-(epstopdf)                    size: 117699 bytes
+(epstopdf)                    date: 2024-04-28 20:23:35
+(epstopdf)                    size: 22623 bytes
 (epstopdf)             Output file: <..//figures//difftheta-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2024-03-18 17:28:12
-(epstopdf)                    size: 12559 bytes
+(epstopdf)                    date: 2024-04-29 13:17:44
+(epstopdf)                    size: 5457 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//difftheta-eps-
 converted-to.pdf ..//figures//difftheta.eps>
 (epstopdf)             \includegraphics on input line 655.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//difftheta-eps-converted-to.pdf, id=484, 421.575pt x 316.18124pt>
+<..//figures//difftheta-eps-converted-to.pdf, id=508, 421.575pt x 316.18124pt>
 File: ..//figures//difftheta-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//difftheta-eps-converted-to.pdf>
@@ -636,18 +637,18 @@ Package pdftex.def Info: ..//figures//difftheta-eps-converted-to.pdf used on in
 put line 655.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 Package epstopdf Info: Source file: <..//figures//DifferentSchemes.eps>
-(epstopdf)                    date: 2024-03-09 17:27:53
-(epstopdf)                    size: 50190 bytes
+(epstopdf)                    date: 2024-04-28 19:57:52
+(epstopdf)                    size: 20320 bytes
 (epstopdf)             Output file: <..//figures//DifferentSchemes-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2024-03-18 17:30:31
-(epstopdf)                    size: 18559 bytes
+(epstopdf)                    date: 2024-04-29 13:17:45
+(epstopdf)                    size: 3872 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//DifferentSchem
 es-eps-converted-to.pdf ..//figures//DifferentSchemes.eps>
 (epstopdf)             \includegraphics on input line 663.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//DifferentSchemes-eps-converted-to.pdf, id=486, 421.575pt x 316.18
+<..//figures//DifferentSchemes-eps-converted-to.pdf, id=510, 421.575pt x 316.18
 124pt>
 File: ..//figures//DifferentSchemes-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -663,19 +664,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package epstopdf Info: Source file: <..//figures//DifferentSchemesANDdifftheta.
 eps>
-(epstopdf)                    date: 2024-03-08 18:22:21
-(epstopdf)                    size: 124179 bytes
+(epstopdf)                    date: 2024-04-28 20:01:09
+(epstopdf)                    size: 22410 bytes
 (epstopdf)             Output file: <..//figures//DifferentSchemesANDdifftheta-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2024-03-18 17:32:14
-(epstopdf)                    size: 15457 bytes
+(epstopdf)                    date: 2024-04-29 13:17:45
+(epstopdf)                    size: 5539 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//DifferentSchem
 esANDdifftheta-eps-converted-to.pdf ..//figures//DifferentSchemesANDdifftheta.e
 ps>
 (epstopdf)             \includegraphics on input line 671.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf, id=519, 421.57
+<..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf, id=539, 421.57
 5pt x 316.18124pt>
 File: ..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -684,18 +685,19 @@ le (type pdf)
 Package pdftex.def Info: ..//figures//DifferentSchemesANDdifftheta-eps-converte
 d-to.pdf used on input line 671.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+
+
+LaTeX Warning: File `..//figures//twoway.eps' not found on input line 680.
+
 Package epstopdf Info: Source file: <..//figures//twoway.eps>
-(epstopdf)                    date: 2024-03-22 14:01:13
-(epstopdf)                    size: 47242 bytes
 (epstopdf)             Output file: <..//figures//twoway-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-03-27 09:51:34
-(epstopdf)                    size: 15819 bytes
+(epstopdf)                    date: 2024-04-29 13:17:46
+(epstopdf)                    size: 4103 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//twoway-eps-con
 verted-to.pdf ..//figures//twoway.eps>
 (epstopdf)             \includegraphics on input line 680.
 Package epstopdf Info: Output file is already uptodate.
-
-<..//figures//twoway-eps-converted-to.pdf, id=521, 421.575pt x 316.18124pt>
+<..//figures//twoway-eps-converted-to.pdf, id=541, 421.575pt x 316.18124pt>
 File: ..//figures//twoway-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//twoway-eps-converted-to.pdf>
@@ -734,8 +736,8 @@ out' has not changed.
 (rerunfilecheck)             Checksum: CD64E4F7ADDD5BBFFC65B0CB7B8121FB;1227.
  ) 
 Here is how much of TeX's memory you used:
- 8396 strings out of 495354
- 127844 string characters out of 3183858
+ 8397 strings out of 495354
+ 127868 string characters out of 3183858
  245542 words of memory out of 3000000
  11289 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
@@ -761,10 +763,10 @@ EX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/fonts/
 type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D
 :/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on Energy_Efficient_for_UAV_Assisted_Vehicular.pdf (10 pages, 57
-2527 bytes).
+Output written on Energy_Efficient_for_UAV_Assisted_Vehicular.pdf (10 pages, 50
+5823 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
+ 680 PDF objects out of 1000 (max. 8388607)
  118 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
