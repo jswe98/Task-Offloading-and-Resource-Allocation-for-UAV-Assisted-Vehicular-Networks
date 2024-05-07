@@ -16,15 +16,23 @@ data = [EER;no_fR;without_JR;no_pR] ;
 % data = [EER; no_pR;no_fR] ;
 b = bar(data');
 grid on
-set(b(1),'FaceColor',[224,84,28]/255)     
-set(b(2),'FaceColor',[162,26,84]/255)    
+% set(b(1),'FaceColor',[224,84,28]/255)     
+% set(b(2),'FaceColor',[162,26,84]/255)    
+% set(b(3),'FaceColor',[240,180,28]/255)    
+% set(b(4),'FaceColor',[50,24,60]/255)   
+
+set(b(1),'FaceColor',[8,116,188]/255)     
+set(b(2),'FaceColor',[224,84,28]/255)    
 set(b(3),'FaceColor',[240,180,28]/255)    
-set(b(4),'FaceColor',[50,24,60]/255)   
+set(b(4),'FaceColor',[128,44,140]/255)  
+
 ch = get(b,'children');
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
 set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
 legend('Algorithm 3-1','Without-CRA','IOP','Without-VPC');
 % legend('EE','no_p','no_f');
-xlabel('\fontname{宋体}任务输入 \fontname{Times New Roman}(MB)')
-ylabel('\fontname{宋体}系统效用');
+% xlabel('\fontname{宋体}任务输入 \fontname{Times New Roman}(MB)')
+xlabel('\fontname{Times New Roman}Task Input(KB)')
+% ylabel('\fontname{宋体}系统效用');
+ylabel('\fontname{Times New Roman}Utility');
  set(gca,'FontName','Times New Roman')
