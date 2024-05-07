@@ -261,13 +261,13 @@ where $\textbf{G}_m=\left[G_{1,m},G_{2,m},\ldots,-\frac{G_{m,m}}{\gamma_{th}},\l
 \end{eqnarray}
 
 %\begin{theorem}
-According to the Bernstein optimization theory \cite{Nemirovski2007}, 
+According to the Bernstein optimization theory \cite{Nemirovski2007},
 the outage probability of all V2R links represented as $ \textrm{Pr}\left\{\gamma_i\geq\gamma_{th}\right\}\geq1-\varepsilon_1$
 {can be reformulated as separable constraints,}
 \begin{eqnarray}\label{E19}
 \!\!\!\sigma^2+\!\sum_{i\neq j}^{M}{\chi_{i,j}e^{{\widetilde{p}}_i}}+\sqrt{2\ln\left(\frac{1}{\varepsilon_1}\right)}\left(\sum_{i\neq j}^{M}\left(\sigma_{i,j}\beta_{i,j}p_i\right)^2\right)^\frac{1}{2}\!\!\!\!\!\le0,
 \end{eqnarray}
-where $\chi_{i,j}=\mu_{i,j}^+\alpha_{i,j}+\beta_{i,j}+g_{i,j}$. The parameters (i.e., $\sigma_{i,j}$ and $\alpha_{i,j}$), are deduced to be positive in \cite{Liu2019}. 
+where $\chi_{i,j}=\mu_{i,j}^+\alpha_{i,j}+\beta_{i,j}+g_{i,j}$. The parameters (i.e., $\sigma_{i,j}$ and $\alpha_{i,j}$), are deduced to be positive in \cite{Liu2019}.
 %\end{theorem}
 
 In the last term of \eqref{E19}, the variables $p_i$ are coupled nonlinearly. Hence, determining an acceptable good solution to \eqref{E14b} is time consuming by the Bernstein method when $k$ increases and the number of vehicles is large. Therefore, it is necessary to introduce a $\ell_2$-norm approximate problem for any $\mathbf{x}\in \mathbb{R}^k$. Hence, the last term in \eqref{E19} containing the $\ell_2$-norm of the vector $\mathbf{x}=\left[\sigma_{i,1}\beta_{i,1}p_i,\cdots,\sigma_{i,M}\beta_{i,M}p_i\right]$ is further approximated by $\parallel x\parallel_2 \le \parallel x\parallel_1$. The constraint in \eqref{E14a} is further formulated as \eqref{E21}, where the complexity is reduced and the reliability is improved.
@@ -508,7 +508,7 @@ For the computation rate allocation, we choose the default task input size as $d
 
 Fig. \ref{F7} shows the iterative convergence of the total utility of the system in different cases, and the figure that shows the robust joint optimization performance is better than the other three schemes. The figure show that the four methods converge to a stable value in the late iteration and the performance of proposed scheme is the best.
 
-In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, therefore we set the CPU task load (Megzcycles) of the five vehicles to 1600, 1700, 1800, 1900 and 2000.
+In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, therefore we set the CPU task load (Megzcycles) of the five vehicles to 1500,1600, 1700, 1800 and 1900 .
 \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{figures//compare.eps}

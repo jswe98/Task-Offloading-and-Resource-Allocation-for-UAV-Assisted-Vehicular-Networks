@@ -1,6 +1,7 @@
 clc
 close all
 clear
+zihao=18;
 for FF=1:5
 V1=-10*ones(1,5)+10*FF*ones(1,5);%发送车CM速度
 V1=15*ones(1,5)+5*FF*ones(1,5);%发送车CM速度
@@ -27,9 +28,13 @@ set(gca,'XTickLabel',{'0.1','0.15','0.2','0.25','0.3','0.35','0.4','0.45','0.5'}
 set(gca,'XTickLabel',{'20','25','30','35','40','45','50','55','60'})
 % set(gca,'YTickLabel',{'12.5','12.6','12.7','12.8','12.9','13'})
 set(gca,'FontName','Times New Roman')
-xlabel('\fontname{宋体}车辆速度 \fontname{Times New Roman}(m/s)');
-ylabel('\fontname{宋体}系统效用 ');
+% xlabel('\fontname{宋体}车辆速度 \fontname{Times New Roman}(m/s)');
+% ylabel('\fontname{宋体}系统效用 ');
 xlabel('\nu(m/s)','FontName','Times New Roman');
 ylabel('Utility','FontName','Times New Roman');
+ylabel('\fontname{Times New Roman}Utility');
+ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
 %ax = gca;  % 获取当前坐标轴对象
 %ax.XAxis.FontName = 'Times New Roman';  % 设置 x 轴标签字体为 Times New Roman

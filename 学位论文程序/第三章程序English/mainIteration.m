@@ -176,7 +176,7 @@ end
 %         U=1-(Tc+c_exe./(fi(:,i)+f_ba))/t_imax;
 %         Total_T=R.*U/d_up;
 %     end
-
+zihao=18;
 plot(exp(P(:,1)),'-+r','linewidth',1.5);
 grid on
 hold on
@@ -193,6 +193,9 @@ xlabel('\fontname{Times New Roman}iteration');
 % set(gca,'ylim',[0.00150,0.00185]); 
 % ylabel('\fontname{宋体}功率分配(瓦)');
 ylabel('\fontname{Times New Roman}Power value(W)');
+ ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
 
 figure
 plot((fi(:,1)),'-+r','linewidth',1.5);
@@ -211,7 +214,10 @@ xlabel('\fontname{Times New Roman}iteration');
   set(gca,'FontName','Times New Roman')
 % set(gca,'ylim',[5.987,6.005]); 
 % ylabel('\fontname{宋体}计算资源分配');
-ylabel('\fontname{{Times New Roman}computing');
+ylabel('\fontname{{Times New Roman}Computing');
+ ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
 
 figure
 plot((Total_T(:,1)),'-*b','linewidth',1.5);
@@ -226,3 +232,6 @@ ylabel('\fontname{{Times New Roman}Utility');
 % xlabel('Iteration');
 % ylabel('Utility');
  set(gca,'FontName','Times New Roman')
+ ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
