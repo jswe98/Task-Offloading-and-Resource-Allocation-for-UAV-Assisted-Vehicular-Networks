@@ -1,6 +1,7 @@
 clc
 close all
 clear
+zihao=18;
 for FF=1:4 
 dddd=25+2*FF;
 aqa(FF)=0.1*dddd;
@@ -18,21 +19,26 @@ b = bar(data');
 grid on
 
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
-% set(b(1),'FaceColor',[8,116,188]/255)     
-% set(b(2),'FaceColor',[224,84,28]/255)    
-% set(b(3),'FaceColor',[240,180,28]/255)    
-% set(b(4),'FaceColor',[128,44,140]/255) 
-
-set(b(1),'FaceColor',[224,84,28]/255)     
-set(b(2),'FaceColor',[162,26,84]/255)    
+set(b(1),'FaceColor',[8,116,188]/255)     
+set(b(2),'FaceColor',[224,84,28]/255)    
 set(b(3),'FaceColor',[240,180,28]/255)    
-set(b(4),'FaceColor',[50,24,60]/255)   
+set(b(4),'FaceColor',[128,44,140]/255) 
+
+% set(b(1),'FaceColor',[224,84,28]/255)     
+% set(b(2),'FaceColor',[162,26,84]/255)    
+% set(b(3),'FaceColor',[240,180,28]/255)    
+% set(b(4),'FaceColor',[50,24,60]/255)   
 ch = get(b,'children');
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
 set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
 legend('EE','without_JR]','no_p','no_f');
 legend('Algorithm 3-1','IOP','Without-CRA','Without-VPC');
 % legend('EE','no_p','no_f');
-xlabel('\fontname{宋体}总计算能力的阈值 \fontname{Times New Roman}(GHz)')
-ylabel('\fontname{宋体}系统效用');
+% xlabel('\fontname{宋体}总计算能力的阈值 \fontname{Times New Roman}(GHz)')
+xlabel('\fontname{Times New Roman}Threshold value of computing total(GHz)')
+% ylabel('\fontname{宋体}系统效用');
+ylabel('\fontname{Times New Roman}Utility');
+ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
  set(gca,'FontName','Times New Roman')
