@@ -1,6 +1,7 @@
 clc
 close all
 clear
+zihao=18;
 for FF=1:4 
 %%dddd=0.35+0.05*FF; backup
 dddd=0.35+0.05*FF;
@@ -35,4 +36,7 @@ legend('Algorithm 3-1','Without-CRA','IOP','Without-VPC');
 xlabel('\fontname{Times New Roman}Task Input(KB)')
 % ylabel('\fontname{宋体}系统效用');
 ylabel('\fontname{Times New Roman}Utility');
+ax = gca;
+ax.YLabel.FontSize = zihao;
+ax.XLabel.FontSize = zihao;
  set(gca,'FontName','Times New Roman')
