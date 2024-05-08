@@ -33,7 +33,7 @@ set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
 legend('Algorithm 3-1','Without-CRA','IOP','Without-VPC');
 % legend('EE','no_p','no_f');
 % xlabel('\fontname{宋体}任务输入 \fontname{Times New Roman}(MB)')
-xlabel('\fontname{Times New Roman}Task Input(KB)')
+xlabel('\fontname{Times New Roman}Task Input(kb)')
 % ylabel('\fontname{宋体}系统效用');
 ylabel('\fontname{Times New Roman}Utility');
 ax = gca;
