@@ -42,12 +42,6 @@ Y.~Wang, P.~Lang, D.~Tian, J.~Zhou, X.~Duan, Y.~Cao, and D.~Zhao, ``A
 Q.~Liu, J.~Gong, and Q.~Liu, ``Blockchain-assisted reputation management scheme
   for internet of vehicles,'' \emph{Sensors}, vol.~23, no.~10, 2023.
 
-\bibitem{Xuy2023}
-Y.~Xu, S.~Jiang, Q.~Xue, X.~Li, and C.~Yuen, ``Throughput maximization for
-  {NOMA}-based cognitive backscatter communication networks with imperfect
-  {CSI},'' \emph{IEEE Internet of Things Journal}, vol.~10, no.~22, pp.
-  19\,595--19\,606, 2023.
-
 \bibitem{Pang2021}
 S.~Pang, N.~Wang, M.~Wang, S.~Qiao, X.~Zhai, and N.~N.~Xiong, ``A smart network
   resource management system for high mobility edge computing in {5G} internet
@@ -113,6 +107,11 @@ Y.~Xie, Z.~Liu, K.~Y. Chan, and X.~Guan, ``Energy-spectral efficiency
 H.~Zhou, W.~Xu, Y.~Bi, J.~Chen, Q.~Yu, and X.~S. Shen, ``{Toward 5G} spectrum
   sharing for immersive-experience-driven vehicular communications,''
   \emph{IEEE Wireless Communications}, vol.~24, no.~6, pp. 30--37, 2017.
+
+\bibitem{a7517217}
+X.~Lyu, H.~Tian, C.~Sengul, and P.~Zhang, ``Multiuser joint task offloading and
+  resource optimization in proximate clouds,'' \emph{IEEE Transactions on
+  Vehicular Technology}, vol.~66, no.~4, pp. 3435--3447, 2017.
 
 \bibitem{Tran2019}
 T.~X. Tran and D.~Pompili, ``Joint task offloading and resource allocation for

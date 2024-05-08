@@ -87,7 +87,9 @@ Recently, some researches have been conducted to improve the effectiveness and r
 
 Unlike traditional mobile communication networks with low mobility, the Doppler effect in highly mobile vehicles poses a challenge to C-MEC communication when fast-moving vehicles communicate with different MEC servers. Deterministic channel state information (CSI) is no longer sufficient to describe the channel state in network scenarios with dynamic characteristics. The Doppler effect created during transmission significantly impacts the small-scale fading of CSI, resulting in fast channel variations. In other words, the used CSIs are outdated. To depict the effects of Doppler frequency shift on the channel, the First-order Gauss-Markov process is utilized \cite{Liu2019}. To improve performance with low communication and computing delays, vehicle equipment has a reduced tolerance for delay and transmission reliability. Therefore, higher requirements are essential. In \cite{Li2020}, Li et al. introduced an outage probability constraint to ensure the reliability of vehicular communication links. When the exact expression includes the exponential integral function, it is necessary to consider an approximate closed-form expression to make it tractable and reduce the computational complexity.
 
-In C-MEC vehicular networks, authorized vehicles with spectrum resources directly communicate with RSU. However, scarce spectrum resources are inadequate in high-density vehicular networks \cite{Xie2020}. Zhou et al. \cite{Zhou2017} developed a dynamic sharing approach for 5G spectrums, and they proposed a sharing architecture of Dedicated Short Range Communications (DSRC) and the 5G spectrum to enable immersive experience-driven vehicular communications. Tran et al. \cite{Tran2019} proposed a comprehensive approach to tackle the challenge of task offloading and resource allocation in a multi-server MEC-assisted network. The results showed that effective channel reusing is crucial when the spectrum resources are scarce \cite{Liang2021}. However, the approach generally creates interference, where the interference caused by channel reuse in the vehicle communication scenario often degrades communication quality sharply. To deal with the outage probability constraint, Xiao et al. \cite{Xiao2020} assumed that the CSIs can be obtained by estimation. Therefore, the outage constraint is transformed into the Bernstein-type inequality to formulate the deterministic optimization problem \cite{Chen2022}.
+In C-MEC vehicular networks, authorized vehicles with spectrum resources directly communicate with RSU. However, scarce spectrum resources are inadequate in high-density vehicular networks \cite{Xie2020}. Zhou et al. \cite{Zhou2017} developed a dynamic sharing approach for 5G spectrums, and they proposed a sharing architecture of Dedicated Short Range Communications (DSRC) and the 5G spectrum to enable immersive experience-driven vehicular communications. 
+Lyu et al. present a heuristic offload decision algorithm that is semi-distributed and jointly optimises the task of offloading and the resource allocation process.
+Tran et al. \cite{Tran2019} proposed a comprehensive approach to tackle the challenge of task offloading and resource allocation in a multi-server MEC-assisted network. The results showed that effective channel reusing is crucial when the spectrum resources are scarce \cite{Liang2021}. However, the approach generally creates interference, where the interference caused by channel reuse in the vehicle communication scenario often degrades communication quality sharply. To deal with the outage probability constraint, Xiao et al. \cite{Xiao2020} assumed that the CSIs can be obtained by estimation. Therefore, the outage constraint is transformed into the Bernstein-type inequality to formulate the deterministic optimization problem \cite{Chen2022}.
 To simulate the interference constraint, the probability constraints are introduced to resolve the uncertain co-channel interference, and the Bernstein approximation method is used to transform the interference constraint into a solvable closed form. The method has been widely used to solve the hard non-convex problems \cite{Wang2015}. Describing the dynamic topology of vehicle networks by the probabilistic constraints can improve QoS.
 Additionally, the paper employs the Bernstein method because of the uncertain constraint characteristics. In summary, existing research has tackled power control and computing resource allocation problems, which assists MEC in vehicular networks in highly dynamic environments. %Also, no research attempts to ensure communication quality and latency requirements are satisfactory.
 \subsection{Contributions}
@@ -457,19 +459,19 @@ Log-normal shadowing standard deviation &10 dB
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//pp.eps}
+\includegraphics[width=8cm]{figures//pp.eps}
 \caption{Power convergence performance.}
 \label{F2}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//ff.eps}
+\includegraphics[width=8cm]{figures//ff.eps}
 \caption{Computational resource of cloud allocation to RSU.}
 \label{F3}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//ee.eps}
+\includegraphics[width=8cm]{figures//ee.eps}
 \caption{Convergence of average system utility.}
 \label{F4}
 \end{figure}
@@ -485,7 +487,7 @@ vehicular environment. Since the relative speed in the V2R link is zero and the 
 %The result also proves that methods tend to obtain better utility when the vehicle speed is low.
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//diffspeed1.eps}
+\includegraphics[width=8cm]{figures//diffspeed1.eps}
 \caption{Comparison of average system utilities with different speeds.}
 \label{F5}
 \end{figure}
@@ -493,7 +495,7 @@ vehicular environment. Since the relative speed in the V2R link is zero and the 
 After considering the vehicle mobility, the performance of the proposed scheme is further verified. Fig. \ref{F6} shows the effect of the same and different speeds of each vehicle when different $\varepsilon_1$ is used on the total utility. The figure shows that the system utility changes when $\varepsilon_1$ changes. The utility of each vehicle at different speeds is higher than that of all vehicles at the same speed. This result characterizes the high robustness of the proposed method when implemented in complex dynamic vehicle networks.
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//diff_e1.eps}
+\includegraphics[width=8cm]{figures//diff_e1.eps}
 \caption{Comparison of average system utility with different $\varepsilon_1$.}
 \label{F6}
 \end{figure}
@@ -511,7 +513,7 @@ Fig. \ref{F7} shows the iterative convergence of the total utility of the system
 In order to reflect a more realistic situation, the CPU task lode (Megzcycles) required for each vehicle are often different, therefore we set the CPU task load (Megzcycles) of the five vehicles to 1500,1600, 1700, 1800 and 1900 .
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//compare.eps}
+\includegraphics[width=8cm]{figures//compare.eps}
 \caption{System utility convergence for different methods.}
 \label{F7}
 \end{figure}
@@ -522,19 +524,19 @@ The average system utility of the four competing schemes is plotted in Fig. \ref
 This phenomenon is reasonable, since the definition of $U$ in \eqref{E12} shows that the increase in workload has a negative impact on the system performance.
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//diff_dup.eps}
+\includegraphics[width=8cm]{figures//diff_dup.eps}
 \caption{Comparison of average system utility with different task input sizes $d_u$.}
 \label{F8}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//diff_total.eps}
+\includegraphics[width=8cm]{figures//diff_total.eps}
 \caption{Comparison for average system utility with different $f_{total}$.}
 \label{F9}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{figures//diff_c.eps}
+\includegraphics[width=8cm]{figures//diff_c.eps}
 \caption{Comparison of average system utility with different task workloads $c_{i,e}$.}
 \label{F10}
 \end{figure}
