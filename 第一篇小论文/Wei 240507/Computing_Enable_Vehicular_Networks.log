@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  8 MAY 2024 21:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  9 MAY 2024 20:38
 entering extended mode
 **C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第一
 篇小论文/Wei*240507/Computing_Enable_Vehicular_Networks.tex
@@ -534,17 +534,6 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 100.
 (D:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package epstopdf Info: Source file: <figures//model22.eps>
-(epstopdf)                    date: 2023-08-30 15:19:34
-(epstopdf)                    size: 6388806 bytes
-(epstopdf)             Output file: <figures//model22-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:47
-(epstopdf)                    size: 223648 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//model22-eps-conver
-ted-to.pdf figures//model22.eps>
-(epstopdf)             \includegraphics on input line 117.
-Package epstopdf Info: Output file is already uptodate.
-
 <figures//model22-eps-converted-to.pdf, id=113, 1556.81625pt x 904.37875pt>
 File: figures//model22-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -781,8 +770,8 @@ Package rerunfilecheck Info: File `Computing_Enable_Vehicular_Networks.out' has
  ) 
 Here is how much of TeX's memory you used:
  8434 strings out of 495354
- 127985 string characters out of 3183860
- 247225 words of memory out of 3000000
+ 128004 string characters out of 3183860
+ 247226 words of memory out of 3000000
  11319 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
@@ -806,7 +795,7 @@ s/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 620524 byt
+Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 620520 byt
 es).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)

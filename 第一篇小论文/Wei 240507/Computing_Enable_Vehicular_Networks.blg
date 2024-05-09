@@ -1,32 +1,32 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Computing_Enable_Vehicular_Networks.aux
 The style file: IEEEtran.bst
 Database file #1: ./reference/reference.bib
-You're missing a field name---line 42 of file ./reference/reference.bib
+You're missing a field name---line 31 of file ./reference/reference.bib
  : 
  : %doi = {https://doi.org/10.1016/B978-0-12-407948-9.00010-4},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 64 of file ./reference/reference.bib
+You're missing a field name---line 53 of file ./reference/reference.bib
  : 
  : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 79 of file ./reference/reference.bib
+You're missing a field name---line 68 of file ./reference/reference.bib
  : 
  : %URL = {https://www.mdpi.com/1424-8220/23/5/2553},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 112 of file ./reference/reference.bib
+You're missing a field name---line 101 of file ./reference/reference.bib
  :   
  :   %volume = {PP},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 140 of file ./reference/reference.bib
+I was expecting a `,' or a `}'---line 129 of file ./reference/reference.bib
  : 
  : @ARTICLE{Ramesh2023,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 149 of file ./reference/reference.bib
+You're missing a field name---line 138 of file ./reference/reference.bib
  :   
  :   %https://www.sciencedirect.com/science/article/abs/pii/S1570870522002165
 (Error may have been on previous line)
