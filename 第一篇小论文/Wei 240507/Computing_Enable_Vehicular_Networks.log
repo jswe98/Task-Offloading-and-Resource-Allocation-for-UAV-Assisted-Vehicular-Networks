@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  9 MAY 2024 20:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  9 MAY 2024 20:50
 entering extended mode
 **C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第一
 篇小论文/Wei*240507/Computing_Enable_Vehicular_Networks.tex
@@ -567,16 +567,6 @@ Underfull \hbox (badness 1584) in paragraph at lines 267--270
 [5] [6]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 416.
-Package epstopdf Info: Source file: <figures//pp.eps>
-(epstopdf)                    date: 2024-05-07 22:04:20
-(epstopdf)                    size: 126218 bytes
-(epstopdf)             Output file: <figures//pp-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:49
-(epstopdf)                    size: 10212 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//pp-eps-converted-t
-o.pdf figures//pp.eps>
-(epstopdf)             \includegraphics on input line 463.
-Package epstopdf Info: Output file is already uptodate.
  <figures//pp-eps-converted-to.pdf, id=322, 421.575pt x 316.18124pt>
 File: figures//pp-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -584,16 +574,6 @@ File: figures//pp-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//pp-eps-converted-to.pdf used on input line 46
 3.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//ff.eps>
-(epstopdf)                    date: 2024-05-07 22:03:50
-(epstopdf)                    size: 64038 bytes
-(epstopdf)             Output file: <figures//ff-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:50
-(epstopdf)                    size: 9665 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//ff-eps-converted-t
-o.pdf figures//ff.eps>
-(epstopdf)             \includegraphics on input line 469.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//ff-eps-converted-to.pdf, id=323, 421.575pt x 316.18124pt>
 File: figures//ff-eps-converted-to.pdf Graphic file (type pdf)
@@ -602,16 +582,6 @@ File: figures//ff-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//ff-eps-converted-to.pdf used on input line 46
 9.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//ee.eps>
-(epstopdf)                    date: 2024-05-07 22:02:58
-(epstopdf)                    size: 32376 bytes
-(epstopdf)             Output file: <figures//ee-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:51
-(epstopdf)                    size: 5094 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//ee-eps-converted-t
-o.pdf figures//ee.eps>
-(epstopdf)             \includegraphics on input line 475.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//ee-eps-converted-to.pdf, id=324, 421.575pt x 316.18124pt>
 File: figures//ee-eps-converted-to.pdf Graphic file (type pdf)
@@ -624,17 +594,6 @@ Package pdftex.def Info: figures//ee-eps-converted-to.pdf used on input line 47
 一篇小论文/Wei 240507/figures//pp-eps-converted-to.pdf> <C:/Users/we/OneDr
 ive/组内文献/次世代网络架构与矩阵革命/第一篇小论文/Wei 24
 0507/figures//ff-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures//diffspeed1.eps>
-(epstopdf)                    date: 2024-05-07 21:59:04
-(epstopdf)                    size: 102150 bytes
-(epstopdf)             Output file: <figures//diffspeed1-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:52
-(epstopdf)                    size: 4524 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//diffspeed1-eps-con
-verted-to.pdf figures//diffspeed1.eps>
-(epstopdf)             \includegraphics on input line 491.
-Package epstopdf Info: Output file is already uptodate.
-
 <figures//diffspeed1-eps-converted-to.pdf, id=368, 421.575pt x 316.18124pt>
 File: figures//diffspeed1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -642,16 +601,6 @@ File: figures//diffspeed1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//diffspeed1-eps-converted-to.pdf used on input
  line 491.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//diff_e1.eps>
-(epstopdf)                    date: 2024-05-07 21:56:48
-(epstopdf)                    size: 182841 bytes
-(epstopdf)             Output file: <figures//diff_e1-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:54
-(epstopdf)                    size: 5660 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//diff_e1-eps-conver
-ted-to.pdf figures//diff_e1.eps>
-(epstopdf)             \includegraphics on input line 499.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_e1-eps-converted-to.pdf, id=370, 421.575pt x 316.18124pt>
 File: figures//diff_e1-eps-converted-to.pdf Graphic file (type pdf)
@@ -675,16 +624,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--510
 []\OT1/ptm/m/n/10 ``Without com-put-ing rate al-lo-ca-tion'' (de-not-ed as
  []
 
-Package epstopdf Info: Source file: <figures//compare.eps>
-(epstopdf)                    date: 2024-05-07 22:12:34
-(epstopdf)                    size: 38301 bytes
-(epstopdf)             Output file: <figures//compare-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:12:39
-(epstopdf)                    size: 5735 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//compare-eps-conver
-ted-to.pdf figures//compare.eps>
-(epstopdf)             \includegraphics on input line 517.
-Package epstopdf Info: Output file is already uptodate.
 <figures//compare-eps-converted-to.pdf, id=403, 421.575pt x 316.18124pt>
 File: figures//compare-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -692,16 +631,6 @@ File: figures//compare-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//compare-eps-converted-to.pdf used on input li
 ne 517.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//diff_dup.eps>
-(epstopdf)                    date: 2024-05-08 21:42:22
-(epstopdf)                    size: 22831 bytes
-(epstopdf)             Output file: <figures//diff_dup-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-08 21:42:35
-(epstopdf)                    size: 3875 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//diff_dup-eps-conve
-rted-to.pdf figures//diff_dup.eps>
-(epstopdf)             \includegraphics on input line 528.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_dup-eps-converted-to.pdf, id=407, 421.575pt x 316.18124pt>
 File: figures//diff_dup-eps-converted-to.pdf Graphic file (type pdf)
@@ -710,16 +639,6 @@ File: figures//diff_dup-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//diff_dup-eps-converted-to.pdf used on input l
 ine 528.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//diff_total.eps>
-(epstopdf)                    date: 2024-05-07 21:48:35
-(epstopdf)                    size: 20103 bytes
-(epstopdf)             Output file: <figures//diff_total-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:57
-(epstopdf)                    size: 3744 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//diff_total-eps-con
-verted-to.pdf figures//diff_total.eps>
-(epstopdf)             \includegraphics on input line 534.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_total-eps-converted-to.pdf, id=408, 421.575pt x 316.18124pt>
 File: figures//diff_total-eps-converted-to.pdf Graphic file (type pdf)
@@ -728,16 +647,6 @@ File: figures//diff_total-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//diff_total-eps-converted-to.pdf used on input
  line 534.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-Package epstopdf Info: Source file: <figures//diff_c.eps>
-(epstopdf)                    date: 2024-05-07 21:45:42
-(epstopdf)                    size: 22368 bytes
-(epstopdf)             Output file: <figures//diff_c-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-07 22:05:58
-(epstopdf)                    size: 3824 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures//diff_c-eps-convert
-ed-to.pdf figures//diff_c.eps>
-(epstopdf)             \includegraphics on input line 540.
-Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_c-eps-converted-to.pdf, id=409, 421.575pt x 316.18124pt>
 File: figures//diff_c-eps-converted-to.pdf Graphic file (type pdf)
@@ -769,8 +678,8 @@ Package rerunfilecheck Info: File `Computing_Enable_Vehicular_Networks.out' has
 (rerunfilecheck)             Checksum: F0C10E9D109C3AD3C715E29BDAB084A2;1031.
  ) 
 Here is how much of TeX's memory you used:
- 8434 strings out of 495354
- 128004 string characters out of 3183860
+ 8433 strings out of 495354
+ 128153 string characters out of 3183860
  247226 words of memory out of 3000000
  11319 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
