@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  9 MAY 2024 20:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  10 MAY 2024 11:30
 entering extended mode
 **C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第一
 篇小论文/Wei*240507/Computing_Enable_Vehicular_Networks.tex
@@ -631,6 +631,16 @@ File: figures//compare-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//compare-eps-converted-to.pdf used on input li
 ne 517.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+Package epstopdf Info: Source file: <figures//diff_dup.eps>
+(epstopdf)                    date: 2024-05-10 11:27:31
+(epstopdf)                    size: 22826 bytes
+(epstopdf)             Output file: <figures//diff_dup-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-05-10 11:30:52
+(epstopdf)                    size: 3868 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures//diff_dup-eps-conve
+rted-to.pdf figures//diff_dup.eps>
+(epstopdf)             \includegraphics on input line 528.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_dup-eps-converted-to.pdf, id=407, 421.575pt x 316.18124pt>
 File: figures//diff_dup-eps-converted-to.pdf Graphic file (type pdf)
@@ -639,6 +649,16 @@ File: figures//diff_dup-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//diff_dup-eps-converted-to.pdf used on input l
 ine 528.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+Package epstopdf Info: Source file: <figures//diff_total.eps>
+(epstopdf)                    date: 2024-05-10 11:30:34
+(epstopdf)                    size: 20097 bytes
+(epstopdf)             Output file: <figures//diff_total-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-05-10 11:30:53
+(epstopdf)                    size: 3740 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures//diff_total-eps-con
+verted-to.pdf figures//diff_total.eps>
+(epstopdf)             \includegraphics on input line 534.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_total-eps-converted-to.pdf, id=408, 421.575pt x 316.18124pt>
 File: figures//diff_total-eps-converted-to.pdf Graphic file (type pdf)
@@ -647,6 +667,16 @@ File: figures//diff_total-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//diff_total-eps-converted-to.pdf used on input
  line 534.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+Package epstopdf Info: Source file: <figures//diff_c.eps>
+(epstopdf)                    date: 2024-05-10 11:29:50
+(epstopdf)                    size: 22362 bytes
+(epstopdf)             Output file: <figures//diff_c-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-05-10 11:30:54
+(epstopdf)                    size: 3820 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures//diff_c-eps-convert
+ed-to.pdf figures//diff_c.eps>
+(epstopdf)             \includegraphics on input line 540.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures//diff_c-eps-converted-to.pdf, id=409, 421.575pt x 316.18124pt>
 File: figures//diff_c-eps-converted-to.pdf Graphic file (type pdf)
@@ -678,8 +708,8 @@ Package rerunfilecheck Info: File `Computing_Enable_Vehicular_Networks.out' has
 (rerunfilecheck)             Checksum: F0C10E9D109C3AD3C715E29BDAB084A2;1031.
  ) 
 Here is how much of TeX's memory you used:
- 8433 strings out of 495354
- 128153 string characters out of 3183860
+ 8434 strings out of 495354
+ 128106 string characters out of 3183860
  247226 words of memory out of 3000000
  11319 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
@@ -704,7 +734,7 @@ s/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 620520 byt
+Output written on Computing_Enable_Vehicular_Networks.pdf (10 pages, 620507 byt
 es).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)

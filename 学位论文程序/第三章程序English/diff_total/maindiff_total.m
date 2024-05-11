@@ -32,7 +32,7 @@ ch = get(b,'children');
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
 set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4)})
 legend('EE','without_JR]','no_p','no_f');
-legend('Algorithm 3-1','IOP','Without-CRA','Without-VPC');
+legend('Algorithm 1','IOP','Without-CRA','Without-VPC');
 % legend('EE','no_p','no_f');
 % xlabel('\fontname{宋体}总计算能力的阈值 \fontname{Times New Roman}(GHz)')
 xlabel('\fontname{Times New Roman}Threshold value of computing total(GHz)')
