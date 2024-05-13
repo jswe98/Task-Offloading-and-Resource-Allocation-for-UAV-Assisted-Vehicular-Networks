@@ -3,7 +3,7 @@ close all
 clear
 digits(3);
 EEE=1;
-programmatic=6;
+programmatic=5;
 EEtotal=zeros(3,programmatic);
 for EEm = 1:programmatic
 %   M=  EEm;
@@ -18,8 +18,8 @@ for EEm = 1:programmatic
             M=7;  %车的数量
     case 5  
             M=8;  %车的数量
-    case 6  
-            M=9;  %车的数量
+%     case 6  
+%             M=9;  %车的数量
     otherwise  
             disp('Invalid value of programmatic'); 
     end
@@ -136,7 +136,7 @@ C(t+1,m)=G(m,m)/G(m,1)*fz(t,m);
      if m==1
        sumsinr(1,m)=(1/log(2))*log(1+(P0*G(1,m))/(0.01/w*I0+Delta));     
     else
-     sumsinr(1,m)=w*(1/log(2))*log(SINR(T-1,m))-log(2*w)/L0; 
+     sumsinr(1,m)=(w*(1/log(2))*log(SINR(T-1,m)))/(1/L0^2);
      end
      end
  end   
@@ -159,27 +159,28 @@ binarySearchForMin_sum=zeros(1,M);
 for i=1:M
     if i==1
         GbinarySearchForMin = G(i,i);
-        fx = @(x) -((1/log(2))*log(1+x*GbinarySearchForMin/Delta)-2*w+x*GbinarySearchForMin)-log(w);
+        fx = @(x) ((1/log(2))*log(1+x*GbinarySearchForMin/Delta)-2*w+x*GbinarySearchForMin)-log(w);
         binarySearchForMin_sum(i)=binarySearchForMin(fx);
     else
     GbinarySearchForMin=G(i,i)/I(T-1,i);
-    fx = @(x) -((1/log(2))*log(1+x*GbinarySearchForMin/Delta)-2*w+x*GbinarySearchForMin*I(T-1,i));
-binarySearchForMin_sum(i)=binarySearchForMin(fx);
+    fx = @(x) ((1/log(2))*log(1+x*GbinarySearchForMin/Delta)-2*w+x*GbinarySearchForMin*I(T-1,i));
+    lyapunov=fx;
+binarySearchForMin_sum(i)=binarySearchForMin(lyapunov);
     end
 end
 EEtotal(1,EEm)= sum(sumsinr,2)/M;
-EEtotal(2,EEm)= sum(dc_sum,2)/M;
-EEtotal(3,EEm)= sum(binarySearchForMin_sum,2)/M;
+EEtotal(3,EEm)= sum(dc_sum,2)/M;
+EEtotal(2,EEm)= sum(binarySearchForMin_sum,2)/M;
 end 
 data= 0.4*EEtotal;
 xxxx = 1:programmatic;
-hhh=bar(xxxx,data','stacked');
+hhh=bar(xxxx,data');  %,'stacked'
 % hhh(1).FaceColor = [0.2, 0.4, 0.6];  % 第一组柱子颜色
 % hhh(2).FaceColor = [0.8, 0.2, 0.2];  % 第二组柱子颜色
 % hhh(3).FaceColor = [0.4, 0.7, 0.3];  % 第三组柱子颜色
 set(hhh(1),'FaceColor',[126,153,244]/255)     
-set(hhh(2),'FaceColor',[204,124,113]/255)    
-set(hhh(3),'FaceColor',[122,182,86]/255)  
+set(hhh(3),'FaceColor',[204,124,113]/255)    
+set(hhh(2),'FaceColor',[122,182,86]/255)  
 % set(hhh(1),'FaceColor',[240,1,233]/255)     
 % set(hhh(2),'FaceColor',[0,250,8]/255)    
 % set(hhh(3),'FaceColor',[255,255,0]/255) 
