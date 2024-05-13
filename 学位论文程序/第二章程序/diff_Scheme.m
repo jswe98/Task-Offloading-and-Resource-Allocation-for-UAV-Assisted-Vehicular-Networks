@@ -135,9 +135,13 @@ xlim([0 11])
 grid on
 
 % set(gca,'XTickLabel',{aqa(1),aqa(2),aqa(3),aqa(4),aqa(5)})
-set(b(1),'FaceColor',[240,1,233]/255)     
-set(b(2),'FaceColor',[0,250,8]/255)    
-set(b(3),'FaceColor',[255,255,0]/255)    
+% set(b(1),'FaceColor',[240,1,233]/255)     
+% set(b(2),'FaceColor',[0,250,8]/255)    
+% set(b(3),'FaceColor',[255,255,0]/255)    
+
+set(b(1),'FaceColor',[126,153,244]/255)     
+set(b(2),'FaceColor',[204,124,113]/255)    
+set(b(3),'FaceColor',[122,182,86]/255)  
 % set(b(4),'FaceColor',[128,44,140]/255) 
 
 ch = get(b,'children');

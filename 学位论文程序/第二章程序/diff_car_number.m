@@ -177,9 +177,12 @@ hhh=bar(xxxx,data','stacked');
 % hhh(1).FaceColor = [0.2, 0.4, 0.6];  % 第一组柱子颜色
 % hhh(2).FaceColor = [0.8, 0.2, 0.2];  % 第二组柱子颜色
 % hhh(3).FaceColor = [0.4, 0.7, 0.3];  % 第三组柱子颜色
-set(hhh(1),'FaceColor',[240,1,233]/255)     
-set(hhh(2),'FaceColor',[0,250,8]/255)    
-set(hhh(3),'FaceColor',[255,255,0]/255) 
+set(hhh(1),'FaceColor',[126,153,244]/255)     
+set(hhh(2),'FaceColor',[204,124,113]/255)    
+set(hhh(3),'FaceColor',[122,182,86]/255)  
+% set(hhh(1),'FaceColor',[240,1,233]/255)     
+% set(hhh(2),'FaceColor',[0,250,8]/255)    
+% set(hhh(3),'FaceColor',[255,255,0]/255) 
 grid on
 box on
 set(gca,'XTickLabel',{'4','5','6','7','8','9'})
