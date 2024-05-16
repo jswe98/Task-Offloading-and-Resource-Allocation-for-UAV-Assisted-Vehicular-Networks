@@ -125,7 +125,7 @@ U=\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}
 \end{align}
 %& q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E2-13end}{-5}}      \label{E2-13end5}    % 无人机飞行轨迹
 其中，$U$ 表示网络系统总效用。\eqref{E3-13} 中的约束条件解释如下： 约束条件 \eqref{E3-13-1} 保证了车辆的 QoS 要求。然而，在车辆通
-信场景中，网络拓扑结构的时变会导致实时 SINR 难以量化获取。由于 CSI 反馈的时间间隔非常小，因此用长期 SINR 代替实时 SINR，所以用 $\gamma_i$ 表示第$i$ 个 V2R {链路的平均 SINR，使用较小的 CSI 反馈时间间隔}。为确保任务成功卸载到 RSU，真实的SINR 必须大于 SINR 阈值 \cite{liu2021}。$\gamma_{th}$ 是检测 V2R 链路通信的 SINR 阈值。$\textrm{Pr}\left\{\cdot\right\}$ 定义了输入 SINR 的概率。中断概率约束保证了车辆链路的可靠性。$D_{max}$ 表示第 $i$ 个 V2R 链路在数据传输过程中允许的最大延迟。此外，$\varepsilon_1$ 和$\varepsilon_2$ 分别是与SINR 和延迟约束相关的中断概率阈值，其中$\varepsilon_1,\varepsilon_2\in\left(0,1\right)$。 约束 \eqref{E3-13-2} 表示通信和计算的总延迟大于延迟阈值。约束 \eqref{E3-13-3} 确保云服务器必须为与其相关联的 RSU 分配计算资源，约束 \eqref{E3-13-3} 还确保分配给所有相关联 RSU 的总计算资源不得超过云服务器的计算能力。因此，传输给云服务器所服务的计算量必须低于其最大容量。在约束条件 \eqref{E3-13-4} 中，$p_{max}$ 是车辆通信网络中发射车辆的最大发射功率，且车辆发射功率大于零。
+信场景中，网络拓扑结构的时变会导致实时 SINR 难以量化获取。由于 CSI 反馈的时间间隔非常小，因此用长期 SINR 代替实时 SINR，所以用 $\gamma_i$ 表示第$i$ 个 V2R {链路的平均 SINR，使用较小的 CSI 反馈时间间隔}。为确保任务成功卸载到 RSU，真实的SINR 必须大于 SINR 阈值 \cite{RAI}。$\gamma_{th}$ 是检测 V2R 链路通信的 SINR 阈值。$\textrm{Pr}\left\{\cdot\right\}$ 定义了输入 SINR 的概率。中断概率约束保证了车辆链路的可靠性。$D_{max}$ 表示第 $i$ 个 V2R 链路在数据传输过程中允许的最大延迟。此外，$\varepsilon_1$ 和$\varepsilon_2$ 分别是与SINR 和延迟约束相关的中断概率阈值，其中$\varepsilon_1,\varepsilon_2\in\left(0,1\right)$。 约束 \eqref{E3-13-2} 表示通信和计算的总延迟大于延迟阈值。约束 \eqref{E3-13-3} 确保云服务器必须为与其相关联的 RSU 分配计算资源，约束 \eqref{E3-13-3} 还确保分配给所有相关联 RSU 的总计算资源不得超过云服务器的计算能力。因此，传输给云服务器所服务的计算量必须低于其最大容量。在约束条件 \eqref{E3-13-4} 中，$p_{max}$ 是车辆通信网络中发射车辆的最大发射功率，且车辆发射功率大于零。
 \section{功率控制与任务资源分配问题的求解}\label{section3-3}
 在本节中，提出了一种基于 BCD 的算法来求解优化问题 \eqref{E3-13}。BCD 方法将复杂的原问题分解为一系列较简单的子问题。BCD 方法首先将所有变量分成两块，交替优化。
 
@@ -452,7 +452,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
     \qquad\qquad \zihao{-5}符号  &\quad\qquad\qquad\qquad \zihao{-5}参数           & \quad\qquad\qquad\qquad \zihao{-5}数值    \\
  \midrule
     \qquad\qquad \zihao{-5}$R_a$ &\quad\qquad\qquad\qquad \zihao{-5}基站的通信范围 & \quad\qquad\qquad\qquad \zihao{-5}300 m   \\
-  %  \qquad\qquad \zihao{-5}$f_c$ &\quad\qquad\qquad\qquad \zihao{-5}载波频率       & \quad\qquad\qquad\qquad \zihao{-5}5.9 GHz \\
+    \qquad\qquad \zihao{-5}$f_c$ &\quad\qquad\qquad\qquad \zihao{-5}载波频率       & \quad\qquad\qquad\qquad \zihao{-5}5.9 GHz \\
  \bottomrule
  \end{tabular*}
 \end{table}
