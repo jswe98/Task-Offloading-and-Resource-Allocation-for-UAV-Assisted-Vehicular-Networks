@@ -6,7 +6,7 @@ REM 预先定义文件名和变量
 set "filename=202121030188_魏建帅_学位论文.pdf"    
 set "authorname=魏建帅"        
 set "StudentNumber=202121030188"       
-set "Title=高动态异构车联网络资源联合鲁棒优化分配的研究"         
+set "Title=无人机辅助的车联网络任务卸载与资源分配的研究"         
 set "yuanfilename=template.pdf"      
 set "newfilename=!StudentNumber!_!authorname!_!Title!.pdf"     
   

@@ -1,0 +1,564 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
+The style file: ysubst.bst
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/chap-intro.aux
+A level-1 auxiliary file: chapter/chap-2.aux
+A level-1 auxiliary file: chapter/chap-3.aux
+A level-1 auxiliary file: chapter/chap-4.aux
+A level-1 auxiliary file: chapter/chap-5.aux
+A level-1 auxiliary file: chapter/achive.aux
+A level-1 auxiliary file: chapter/thanks.aux
+format.conference.title is an unknown function---line 2787 of file ysubst.bst
+format.cconference.title is an unknown function---line 2822 of file ysubst.bst
+format.patent.continue.vol.num is an unknown function---line 2951 of file ysubst.bst
+format.patent.crossref is an unknown function---line 2959 of file ysubst.bst
+"}" can't start a style-file command---line 2967 of file ysubst.bst
+ : }
+ :  }
+Database file #1: bib/首字母大写.bib
+You're missing a field name---line 83 of file bib/首字母大写.bib
+ : 
+ : %url = {https://www.infocomm-journal.com/txxb/CN/abstract/article_173287.shtml},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 493 of file bib/首字母大写.bib
+ : 
+ : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 506 of file bib/首字母大写.bib
+ : 
+ : %pages =        {45--48},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 628 of file bib/首字母大写.bib
+ :  number = 1262
+ :               -1272,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 681 of file bib/首字母大写.bib
+ :   
+ :   year={2011},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 730 of file bib/首字母大写.bib
+ : 
+ : %url = {https://www.sciencedirect.com/science/article/pii/S0968090X98000199},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry SystematicSurvey10225497
+while executing---line 3783 of file ysubst.bst
+Warning--"{s}{u}{r}{v}{e}{y}}" isn't a brace-balanced string for entry DeepReinforcement9146378
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{u}{r}{v}{e}{y}}" isn't a brace-balanced string for entry DeepReinforcement9146378
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DeepReinforcement9146378
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Autonomous9351818
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SecurityandPrivacy
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 刘雪娇186
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 6GforVehicle
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SurveyofDeep8951131
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Edge10213996
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry EdgeComputing2019
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Autonomous9756370
+while executing---line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Zhou2019
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhou2019
+while executing---line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{a}{t}{i}{o}{n} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g}} {i}{n} {MEC-assisted} {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{a}{t}{i}{o}{n} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g}} {i}{n} {MEC-assisted} {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{o}{f}{f}{l}{o}{a}{d}{i}{n}{g}} {i}{n} {MEC-assisted} {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{o}{f}{f}{l}{o}{a}{d}{i}{n}{g}} {i}{n} {MEC-assisted} {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}" isn't a brace-balanced string for entry Dai2022
+while executing--line 3783 of file ysubst.bst
+Warning--empty year in Dai2022
+You can't pop an empty literal stack for entry Dai2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Dai2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Dai2022
+while executing---line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{d}{e}{e}{p} {reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{reinforcement} {l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+Warning--"{l}{e}{a}{r}{n}{i}{n}{g}}" isn't a brace-balanced string for entry Tan2018
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Tan2018
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Wang2020
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{e}{q}{u}{e}{s}{t}{s}}" isn't a brace-balanced string for entry Wang2022
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Wang2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li2023
+while executing---line 3783 of file ysubst.bst
+Warning--"approximations} of {chance constrained programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"APPROXIMATIONS} OF {chance constrained programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"constrained programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"CONSTRAINED PROGRAMS}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"programs}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+Warning--"PROGRAMS}" isn't a brace-balanced string for entry Nemirovski2007
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Nemirovski2007
+while executing---line 3783 of file ysubst.bst
+Warning--empty journal in bertsekas1999nonlinear
+You can't pop an empty literal stack for entry bertsekas1999nonlinear
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry bertsekas1999nonlinear
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}}" isn't a brace-balanced string for entry Zhou2017
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhou2017
+while executing---line 3783 of file ysubst.bst
+Warning--"{a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r} {{m}{u}{l}{t}{i}-{s}{e}{r}{v}{e}{r} {m}{o}{b}{i}{l}{e}-{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r} {{m}{u}{l}{t}{i}-{s}{e}{r}{v}{e}{r} {m}{o}{b}{i}{l}{e}-{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{o}{b}{i}{l}{e}-{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{o}{b}{i}{l}{e}-{e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Tran2019
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Tran2019
+while executing---line 3783 of file ysubst.bst
+Warning--"{p}{a}{i}{r}{i}{n}{g}} {a}{n}{d} {{s}{u}{b}{c}{a}{r}{r}{i}{e}{r} {m}{a}{t}{c}{h}{i}{n}{g}} {f}{o}{r} {{d}{o}{w}{n}{l}{i}{n}{k}} {{n}{o}{n}-{o}{r}{t}{h}{o}{g}{o}{n}{a}{l}} {{m}{u}{l}{t}{i}{p}{l}{e} {a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{a}{i}{r}{i}{n}{g}} {a}{n}{d} {{s}{u}{b}{c}{a}{r}{r}{i}{e}{r} {m}{a}{t}{c}{h}{i}{n}{g}} {f}{o}{r} {{d}{o}{w}{n}{l}{i}{n}{k}} {{n}{o}{n}-{o}{r}{t}{h}{o}{g}{o}{n}{a}{l}} {{m}{u}{l}{t}{i}{p}{l}{e} {a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{a}{t}{c}{h}{i}{n}{g}} {f}{o}{r} {{d}{o}{w}{n}{l}{i}{n}{k}} {{n}{o}{n}-{o}{r}{t}{h}{o}{g}{o}{n}{a}{l}} {{m}{u}{l}{t}{i}{p}{l}{e} {a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{a}{t}{c}{h}{i}{n}{g}} {f}{o}{r} {{d}{o}{w}{n}{l}{i}{n}{k}} {{n}{o}{n}-{o}{r}{t}{h}{o}{g}{o}{n}{a}{l}} {{m}{u}{l}{t}{i}{p}{l}{e} {a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Liang2021
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Liang2021
+while executing---line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry Xiao2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xiao2020
+while executing---line 3783 of file ysubst.bst
+Warning--"{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{t} {s}{u}{r}{f}{a}{c}{e} {a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{t} {s}{u}{r}{f}{a}{c}{e} {a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{u}{r}{f}{a}{c}{e} {a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{u}{r}{f}{a}{c}{e} {a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{i}{l}{l}{i}{m}{e}{t}{e}{r} {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h} {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}}" isn't a brace-balanced string for entry Chen2022
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Chen2022
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {communication} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {communication} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"{communication} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"{communication} {n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}}" isn't a brace-balanced string for entry CCO
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry CCO
+while executing---line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h} {i}{m}{p}{e}{r}{f}{e}{c}{t}} {{C}{S}{I}}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h} {i}{m}{p}{e}{r}{f}{e}{c}{t}} {{C}{S}{I}}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{i}{m}{p}{e}{r}{f}{e}{c}{t}} {{C}{S}{I}}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{i}{m}{p}{e}{r}{f}{e}{c}{t}} {{C}{S}{I}}" isn't a brace-balanced string for entry Li2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Li2020
+while executing---line 3783 of file ysubst.bst
+Warning--"{communications}: {j}{o}{i}{n}{t} {c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{communications}: {j}{o}{i}{n}{t} {c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{j}{o}{i}{n}{t} {c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{j}{o}{i}{n}{t} {c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d} {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{o}{w}{e}{r} {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry Xie2020
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xie2020
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {networks}: {a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {networks}: {a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{networks}: {a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{networks}: {a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry OUC
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry OUC
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry SDR
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SDR
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry UAV10403831
+while executing---line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s} {w}{i}{t}{h}} {{U}{A}{V}{s}}: {{f}{r}{o}{m} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s} {w}{i}{t}{h}} {{U}{A}{V}{s}}: {{f}{r}{o}{m} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h}} {{U}{A}{V}{s}}: {{f}{r}{o}{m} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"{w}{i}{t}{h}} {{U}{A}{V}{s}}: {{f}{r}{o}{m} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}} {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry ACO
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry ACO
+while executing---line 3783 of file ysubst.bst
+Warning--"{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+Warning--"{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}}" isn't a brace-balanced string for entry OSI
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry OSI
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DSF
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 无人机辅助230770
+while executing---line 3783 of file ysubst.bst
+Warning--"{I}{n}{t}{e}{r}{n}{e}{t}} {o}{f} {vehicles}: {{a} {m}{u}{l}{t}{i}-{d}{i}{m}{e}{n}{s}{i}{o}{n}{a}{l} {c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{I}{n}{t}{e}{r}{n}{e}{t}} {o}{f} {vehicles}: {{a} {m}{u}{l}{t}{i}-{d}{i}{m}{e}{n}{s}{i}{o}{n}{a}{l} {c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{u}{l}{t}{i}-{d}{i}{m}{e}{n}{s}{i}{o}{n}{a}{l} {c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{u}{l}{t}{i}-{d}{i}{m}{e}{n}{s}{i}{o}{n}{a}{l} {c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h}}" isn't a brace-balanced string for entry TFL
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry TFL
+while executing---line 3783 of file ysubst.bst
+Warning--"{a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r} {{M}2{M} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {i}{n} {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r} {{M}2{M} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {i}{n} {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {i}{n} {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {i}{n} {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{u}{t}{o}{m}{a}{t}{i}{o}{n}}" isn't a brace-balanced string for entry ACAR
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry ACAR
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 胡益恺智能车辆决策方法研究综述
+while executing---line 3783 of file ysubst.bst
+Warning--"{e}{n}{a}{b}{l}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{e}{n}{a}{b}{l}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{r}{o}{b}{u}{s}{t} {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{a}{p}{p}{r}{o}{a}{c}{h} {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y} {m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+Warning--"{m}{e}{c}{h}{a}{n}{i}{s}{m}}" isn't a brace-balanced string for entry RAI
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry RAI
+while executing---line 3783 of file ysubst.bst
+Warning--empty author in GT
+You can't pop an empty literal stack for entry GT
+while executing---line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+Warning--"{v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}}" isn't a brace-balanced string for entry Ren2015
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Ren2015
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SurveyMEC2017
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry SurveyMEC2018
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DistributedTask2024
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry DistributedTask2024
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Qian2023
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 云计算隐私10418975
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 云计算隐私10418975
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Kim2011
+while executing---line 3783 of file ysubst.bst
+Warning--"{h}{a}{r}{v}{e}{s}{t}{i}{n}{g}-{b}{a}{s}{e}{d}} {{D}2{D} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r} {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y} {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s}" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"{h}{a}{r}{v}{e}{s}{t}{i}{n}{g}-{b}{a}{s}{e}{d}} {{D}2{D} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r} {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y} {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s}" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r} {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y} {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s}" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+Warning--"{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r} {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y} {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s}" isn't a brace-balanced string for entry Sakr2014
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Sakr2014
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Guo2019
+while executing---line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k}{s}: {a} {p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{a} {p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+Warning--"{p}{a}{r}{a}{d}{i}{g}{m}} {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}} {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}}" isn't a brace-balanced string for entry Zhang2017
+while executing--line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Zhang2017
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Saleem2021
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Xu2015
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Effect2020
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Performance2022
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry WirelessRelay5937283
+while executing---line 3783 of file ysubst.bst
+Warning--empty year in 无人机技术辅助的车联网
+You can't pop an empty literal stack for entry 无人机技术辅助的车联网
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 无人机技术辅助的车联网
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Joint9453853
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry 无人机QoS9373692
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway7091030
+while executing---line 3783 of file ysubst.bst
+Warning--empty year in twoway5753961
+You can't pop an empty literal stack for entry twoway5753961
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway5753961
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway5753961
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry twoway575396233
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Spatial4490168
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry Stochastic6576809
+while executing---line 3783 of file ysubst.bst
+Warning--empty author in COIFMAN1998271
+You can't pop an empty literal stack for entry COIFMAN1998271
+while executing---line 3783 of file ysubst.bst
+You can't pop an empty literal stack for entry JointTrajectory9627548
+while executing---line 3783 of file ysubst.bst
+(There were 82 error messages)

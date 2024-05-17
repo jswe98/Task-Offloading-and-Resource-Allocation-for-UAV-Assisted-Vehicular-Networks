@@ -1,0 +1,526 @@
+\begin{thebibliography}{66}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Liu et al.(2023){\natexlab{a}}]{SystematicSurvey10225497}
+\textup{Liu W, Hua M, Deng Z}, et al.
+\newblock A {s}{y}{s}{t}{e}{m}{a}{t}{i}{c} {s}{u}{r}{v}{e}{y} {o}{f}
+  {c}{o}{n}{t}{r}{o}{l} {t}{e}{c}{h}{n}{i}{q}{u}{e}{s} {a}{n}{d}
+  {a}{p}{p}{l}{i}{c}{a}{t}{i}{o}{n}{s} {i}{n} {connected} {a}{n}{d}
+  {a}{u}{t}{o}{m}{a}{t}{e}{d} {v}{e}{h}{i}{c}{l}{e}{s} [J].
+\newblock IEEE Internet of Things Journal, 2023, 10(24): 21892\textbf{--}21916.
+
+\bibitem[Haydari and Yılmaz(2022)]{DeepReinforcement9146378}
+\textup{Haydari A, Yılmaz Y}.
+\newblock Deep {r}{e}{i}{n}{f}{o}{r}{c}{e}{m}{e}{n}{t} {l}{e}{a}{r}{n}{i}{n}{g}
+  {f}{o}{r} {i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{t}
+  {t}{r}{a}{n}{s}{p}{o}{r}{t}{a}{t}{i}{o}{n} {s}{y}{s}{t}{e}{m}{s}: {{a}
+  {s}{u}{r}{v}{e}{y}} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022, 23(1):
+  11--32.
+
+\bibitem[Kiran et al.(2022)]{Autonomous9351818}
+\textup{Kiran B~R, Sobh I, Talpaert V}, et al.
+\newblock Deep {r}{e}{i}{n}{f}{o}{r}{c}{e}{m}{e}{n}{t} {l}{e}{a}{r}{n}{i}{n}{g}
+  {f}{o}{r} {a}{u}{t}{o}{n}{o}{m}{o}{u}{s} {d}{r}{i}{v}{i}{n}{g}: {a}
+  {s}{u}{r}{v}{e}{y} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022, 23(6):
+  4909--4926.
+
+\bibitem[Lai et al.(2020)]{SecurityandPrivacy}
+\textup{Lai C, Lu R, Zheng D}, et al.
+\newblock Security {a}{n}{d} {p}{r}{i}{v}{a}{c}{y}
+  {c}{h}{a}{l}{l}{e}{n}{g}{e}{s} {i}{n} {5{G}-{e}{n}{a}{b}{l}{e}{d}}
+  {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Network, 2020, 34(2): 37--45.
+
+\bibitem[刘雪娇(2023)]{刘雪娇186}
+\textup{刘雪娇 , 曹天聪}.
+\newblock 区块链架构下高效的车联网跨域数据安全共享研究
+  [J].
+\newblock 通信学报, 2023, 44(3): 186--198.
+
+\bibitem[Noor-A-Rahim et al.(2022)]{6GforVehicle}
+\textup{Noor-A-Rahim M, Liu Z, Lee H}, et al.
+\newblock {6G} {f}{o}{r}
+  {{v}{e}{h}{i}{c}{l}{e}-{t}{o}-{e}{v}{e}{r}{y}{t}{h}{i}{n}{g}} {({V}2{X})}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {enabling}
+  {t}{e}{c}{h}{n}{o}{l}{o}{g}{i}{e}{s}, {c}{h}{a}{l}{l}{e}{n}{g}{e}{s},
+  {a}{n}{d} {o}{p}{p}{o}{r}{t}{u}{n}{i}{t}{i}{e}{s} [J].
+\newblock Proceedings of the IEEE, 2022, 110(6): 712--734.
+
+\bibitem[Kuutti et al.(2021)]{SurveyofDeep8951131}
+\textup{Kuutti S, Bowden R, Jin Y}, et al.
+\newblock A {s}{u}{r}{v}{e}{y} {o}{f} {d}{e}{e}{p} {l}{e}{a}{r}{n}{i}{n}{g}
+  {a}{p}{p}{l}{i}{c}{a}{t}{i}{o}{n}{s} {t}{o} {a}{u}{t}{o}{n}{o}{m}{o}{u}{s}
+  {v}{e}{h}{i}{c}{l}{e} {c}{o}{n}{t}{r}{o}{l} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2021, 22(2):
+  712--733.
+
+\bibitem[Katare et al.(2023)]{Edge10213996}
+\textup{Katare D, Perino D, Nurmi J}, et al.
+\newblock A {s}{u}{r}{v}{e}{y} {o}{n} {a}{p}{p}{r}{o}{x}{i}{m}{a}{t}{e}
+  {e}{d}{g}{e} {{a}{i}} {f}{o}{r} {e}{n}{e}{r}{g}{y}
+  {e}{f}{f}{i}{c}{i}{e}{n}{t} {a}{u}{t}{o}{n}{o}{m}{o}{u}{s}
+  {d}{r}{i}{v}{i}{n}{g} {s}{e}{r}{v}{i}{c}{e}{s} [J].
+\newblock IEEE Communications Surveys \& Tutorials, 2023, 25(4): 2714--2754.
+
+\bibitem[Liu et al.(2019){\natexlab{a}}]{EdgeComputing2019}
+\textup{Liu S, Liu L, Tang J}, et al.
+\newblock Edge {c}{o}{m}{p}{u}{t}{i}{n}{g} {f}{o}{r}
+  {a}{u}{t}{o}{n}{o}{m}{o}{u}{s} {d}{r}{i}{v}{i}{n}{g}:
+  {o}{p}{p}{o}{r}{t}{u}{n}{i}{t}{i}{e}{s} {a}{n}{d}
+  {c}{h}{a}{l}{l}{e}{n}{g}{e}{s} [J].
+\newblock Proceedings of the IEEE, 2019, 107(8): 1697--1716.
+
+\bibitem[Wu et al.(2022)]{Autonomous9756370}
+\textup{Wu M, Yu F~R, Liu P~X}.
+\newblock Intelligence {n}{e}{t}{w}{o}{r}{k}{i}{n}{g} {f}{o}{r}
+  {a}{u}{t}{o}{n}{o}{m}{o}{u}{s} {d}{r}{i}{v}{i}{n}{g} {i}{n}
+  {b}{e}{y}{o}{n}{d} {5{G}} {n}{e}{t}{w}{o}{r}{k}{s} {w}{i}{t}{h}
+  {{m}{u}{l}{t}{i}-{a}{c}{c}{e}{s}{s}} {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}
+  [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(6): 5853--5866.
+
+\bibitem[Zhou et al.(2019){\natexlab{a}}]{Zhou2019}
+\textup{Zhou Z, Feng J, Chang Z}, et al.
+\newblock {Energy-efficient} {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}
+  {s}{e}{r}{v}{i}{c}{e} {p}{r}{o}{v}{i}{s}{i}{o}{n}{i}{n}{g} {f}{o}{r}
+  {{v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}: {a}
+  {c}{o}{n}{s}{e}{n}{s}{u}{s} {a}{d}{m}{m} {a}{p}{p}{r}{o}{a}{c}{h}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5087--5099.
+
+\bibitem[Dai et al.()]{Dai2022}
+\textup{Dai P, Hu K, Wu X}, et al.
+\newblock {A} {p}{r}{o}{b}{a}{b}{i}{l}{i}{s}{t}{i}{c} {a}{p}{p}{r}{o}{a}{c}{h}
+  {f}{o}{r} {{c}{o}{o}{p}{e}{r}{a}{t}{i}{v}{e}
+  {c}{o}{m}{p}{u}{t}{a}{t}{i}{o}{n} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g}} {i}{n}
+  {MEC-assisted} {v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems.
+
+\bibitem[Tan and Hu(2018)]{Tan2018}
+\textup{Tan L~T, Hu R~Q}.
+\newblock {Mobility-aware} {e}{d}{g}{e} {c}{a}{c}{h}{i}{n}{g} {a}{n}{d}
+  {{c}{o}{m}{p}{u}{t}{i}{n}{g}} {i}{n} {{v}{e}{h}{i}{c}{l}{e}
+  {n}{e}{t}{w}{o}{r}{k}{s}: {a} {d}{e}{e}{p} {reinforcement}
+  {l}{e}{a}{r}{n}{i}{n}{g}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2018, 67(11):
+  10190--10203.
+
+\bibitem[Wang et al.(2020)]{Wang2020}
+\textup{Wang Y, Lang P, Tian D}, et al.
+\newblock {A} {game-based} {computation} {offloading} {method} in {vehicular}
+  {multiaccess} {edge} {computing} {networks} [J].
+\newblock IEEE Internet of Things Journal, 2020, 7(6): 4987--4996.
+
+\bibitem[Wang et al.(2022)]{Wang2022}
+\textup{Wang J, Zhu K, Chen B}, et al.
+\newblock {Distributed} {{c}{l}{u}{s}{t}{e}{r}{i}{n}{g}-{b}{a}{s}{e}{d}}
+  {{c}{o}{o}{p}{e}{r}{a}{t}{i}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {e}{d}{g}{e}
+  {c}{o}{m}{p}{u}{t}{i}{n}{g}} {f}{o}{r} {{r}{e}{a}{l}-{t}{i}{m}{e}
+  {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {r}{e}{q}{u}{e}{s}{t}{s}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(1): 653--669.
+
+\bibitem[Li et al.(2023)]{Li2023}
+\textup{Li Z, Yang C, Huang X}, et al.
+\newblock Coor: {c}{o}{l}{l}{a}{b}{o}{r}{a}{t}{i}{v}{e} {t}{a}{s}{k}
+  {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {a}{n}{d} {s}{e}{r}{v}{i}{c}{e}
+  {c}{a}{c}{h}{i}{n}{g} {r}{e}{p}{l}{a}{c}{e}{m}{e}{n}{t} {f}{o}{r}
+  {v}{e}{h}{i}{c}{u}{l}{a}{r} {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}
+  {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2023, 72(7): 9676--9681.
+
+\bibitem[Nemirovski and Shapiro(2007)]{Nemirovski2007}
+\textup{Nemirovski A, Shapiro A}.
+\newblock {Convex Approximations} of {chance Constrained Programs} [J].
+\newblock SIAM Journal on Optimization, 2007, 17(4): 969--996.
+
+\bibitem[Bertsekas(1999)]{bertsekas1999nonlinear}
+\textup{Bertsekas D}.
+\newblock Nonlinear {p}{r}{o}{g}{r}{a}{m}{m}{i}{n}{g} ({a}{t}{h}{e}{n}{a}
+  {s}{c}{i}{e}{n}{t}{i}{f}{i}{c}, {n}{a}{s}{h}{u}{a}, {n}{h}) [J].
+\newblock 1999.
+
+\bibitem[Zhou et al.(2017)]{Zhou2017}
+\textup{Zhou H, Xu W, Bi Y}, et al.
+\newblock {Toward} {5{G}} {s}{p}{e}{c}{t}{r}{u}{m} {s}{h}{a}{r}{i}{n}{g}
+  {f}{o}{r}
+  {{i}{m}{m}{e}{r}{s}{i}{v}{e}-{e}{x}{p}{e}{r}{i}{e}{n}{c}{e}-{d}{r}{i}{v}{e}{n}
+  {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} [J].
+\newblock IEEE Wireless Communications, 2017, 24(6): 30--37.
+
+\bibitem[Tran and Pompili(2019)]{Tran2019}
+\textup{Tran T~X, Pompili D}.
+\newblock {Joint} {t}{a}{s}{k} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {a}{n}{d}
+  {{r}{e}{s}{o}{u}{r}{c}{e} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r}
+  {{m}{u}{l}{t}{i}-{s}{e}{r}{v}{e}{r} {m}{o}{b}{i}{l}{e}-{e}{d}{g}{e}
+  {c}{o}{m}{p}{u}{t}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k}{s}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(1): 856--868.
+
+\bibitem[Liu et al.(2021){\natexlab{a}}]{Liang2021}
+\textup{Liu Z, Liang C, Yuan Y}, et al.
+\newblock {Resource} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {b}{a}{s}{e}{d} {o}{n}
+  {{u}{s}{e}{r} {p}{a}{i}{r}{i}{n}{g}} {a}{n}{d}
+  {{s}{u}{b}{c}{a}{r}{r}{i}{e}{r} {m}{a}{t}{c}{h}{i}{n}{g}} {f}{o}{r}
+  {{d}{o}{w}{n}{l}{i}{n}{k}} {{n}{o}{n}-{o}{r}{t}{h}{o}{g}{o}{n}{a}{l}}
+  {{m}{u}{l}{t}{i}{p}{l}{e} {a}{c}{c}{e}{s}{s} {n}{e}{t}{w}{o}{r}{k}{s}} [J].
+\newblock IEEE/CAA Journal of Automatica Sinica, 2021, 8(3): 679--689.
+
+\bibitem[Xiao et al.(2020)]{Xiao2020}
+\textup{Xiao H, Zhu D, Chronopoulos A~T}.
+\newblock {Power} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {w}{i}{t}{h}
+  {e}{n}{e}{r}{g}{y} {e}{f}{f}{i}{c}{i}{e}{n}{c}{y}
+  {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} {i}{n} {{c}{e}{l}{l}{u}{l}{a}{r}}
+  {{D}2{D}-{b}{a}{s}{e}{d}} {{V}2{X} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}
+  {n}{e}{t}{w}{o}{r}{k}} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2020,
+  21(12): 4947--4957.
+
+\bibitem[Chen et al.(2022)]{Chen2022}
+\textup{Chen Y, Wang Y, Jiao L}.
+\newblock {Robust} {t}{r}{a}{n}{s}{m}{i}{s}{s}{i}{o}{n} {f}{o}{r}
+  {{r}{e}{c}{o}{n}{f}{i}{g}{u}{r}{a}{b}{l}{e} {i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{t}
+  {s}{u}{r}{f}{a}{c}{e} {a}{i}{d}{e}{d} {m}{i}{l}{l}{i}{m}{e}{t}{e}{r}
+  {w}{a}{v}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} {w}{i}{t}{h}
+  {s}{t}{a}{t}{i}{s}{t}{i}{c}{a}{l}} {{C}{S}{I}} [J].
+\newblock IEEE Transactions on Wireless Communications, 2022, 21(2): 928--944.
+
+\bibitem[Liu et al.(2019){\natexlab{b}}]{CCO}
+\textup{Liu Z, Xie Y, Chan K~Y}, et al.
+\newblock {Chance-constrained} {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} {i}{n}
+  {{D}2{D}-{b}{a}{s}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r} {communication}
+  {n}{e}{t}{w}{o}{r}{k}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(5): 5045--5058.
+
+\bibitem[Li et al.(2020)]{Li2020}
+\textup{Li X, Ma L, Xu Y}, et al.
+\newblock {Resource} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {f}{o}{r}
+  {{D}2{D}-{B}{a}{s}{e}{d}} {{V}2{X}} {{c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}
+  {w}{i}{t}{h} {i}{m}{p}{e}{r}{f}{e}{c}{t}} {{C}{S}{I}} [J].
+\newblock IEEE Internet of Things Journal, 2020, 7(4): 3545--3558.
+
+\bibitem[Xie et al.(2020)]{Xie2020}
+\textup{Xie Y~a, Liu Z, Chan K~Y}, et al.
+\newblock {Energy-spectral} {e}{f}{f}{i}{c}{i}{e}{n}{c}{y}
+  {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} {i}{n} {{v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {communications}: {j}{o}{i}{n}{t} {c}{l}{u}{s}{t}{e}{r}{i}{n}{g}} {a}{n}{d}
+  {{p}{r}{i}{c}{i}{n}{g}-{b}{a}{s}{e}{d} {r}{o}{b}{u}{s}{t} {p}{o}{w}{e}{r}
+  {c}{o}{n}{t}{r}{o}{l} {a}{p}{p}{r}{o}{a}{c}{h}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2020, 69(11):
+  13673--13685.
+
+\bibitem[Wu et al.(2020)]{OUC}
+\textup{Wu H, Lyu F, Zhou C}, et al.
+\newblock {Optimal} {UAV} {{c}{a}{c}{h}{i}{n}{g}} {a}{n}{d}
+  {{t}{r}{a}{j}{e}{c}{t}{o}{r}{y}} {i}{n}
+  {{a}{e}{r}{i}{a}{l}-{a}{s}{s}{i}{s}{t}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {networks}: {a} {l}{e}{a}{r}{n}{i}{n}{g}-{b}{a}{s}{e}{d}
+  {a}{p}{p}{r}{o}{a}{c}{h}} [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2020, 38(12):
+  2783--2797.
+
+\bibitem[Lyu et al.(2022)]{SDR}
+\textup{Lyu F, Yang P, Wu H}, et al.
+\newblock {Service-oriented} {d}{y}{n}{a}{m}{i}{c} {r}{e}{s}{o}{u}{r}{c}{e}
+  {s}{l}{i}{c}{i}{n}{g} {a}{n}{d} {{o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n}}
+  {f}{o}{r} {{s}{p}{a}{c}{e}-{a}{i}{r}-{g}{r}{o}{u}{n}{d}}
+  {{i}{n}{t}{e}{g}{r}{a}{t}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {n}{e}{t}{w}{o}{r}{k}{s}} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022, 23(7):
+  7469--7483.
+
+\bibitem[Zhang et al.(2023)]{UAV10403831}
+\textup{Zhang J, Han K, Zhang P}, et al.
+\newblock A {s}{u}{r}{v}{e}{y} {o}{n}
+  {j}{o}{i}{n}{t}-{o}{p}{e}{r}{a}{t}{i}{o}{n} {a}{p}{p}{l}{i}{c}{a}{t}{i}{o}{n}
+  {f}{o}{r} {u}{n}{m}{a}{n}{n}{e}{d} {s}{w}{a}{r}{m}
+  {f}{o}{r}{m}{a}{t}{i}{o}{n}{s} {u}{n}{d}{e}{r} {a} {c}{o}{m}{p}{l}{e}{x}
+  {c}{o}{n}{f}{r}{o}{n}{t}{a}{t}{i}{o}{n} {e}{n}{v}{i}{r}{o}{n}{m}{e}{n}{t}
+  [J].
+\newblock Journal of Systems Engineering and Electronics, 2023, 34(6):
+  1432--1446.
+
+\bibitem[Wu et al.(2021)]{ACO}
+\textup{Wu Q, Xu J, Zeng Y}, et al.
+\newblock {A} {c}{o}{m}{p}{r}{e}{h}{e}{n}{s}{i}{v}{e} {o}{v}{e}{r}{v}{i}{e}{w}
+  {o}{n} {5{G}}-{a}{n}{d}-{{b}{e}{y}{o}{n}{d} {n}{e}{t}{w}{o}{r}{k}{s}
+  {w}{i}{t}{h}} {{U}{A}{V}{s}}: {{f}{r}{o}{m}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {t}{o} {{s}{e}{n}{s}{i}{n}{g}}
+  {a}{n}{d} {{i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}} [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2021, 39(10):
+  2912--2945.
+
+\bibitem[Kato et al.(2019)]{OSI}
+\textup{Kato N, Fadlullah Z~M, Tang F}, et al.
+\newblock {Optimizing} {{s}{p}{a}{c}{e}-{a}{i}{r}-{g}{r}{o}{u}{n}{d}}
+  {i}{n}{t}{e}{g}{r}{a}{t}{e}{d} {n}{e}{t}{w}{o}{r}{k}{s} {b}{y}
+  {{a}{r}{t}{i}{f}{i}{c}{i}{a}{l} {i}{n}{t}{e}{l}{l}{i}{g}{e}{n}{c}{e}} [J].
+\newblock IEEE Wireless Communications, 2019, 26(4): 140--147.
+
+\bibitem[Liu et al.(2019){\natexlab{c}}]{DSF}
+\textup{Liu M, Yang J, Gui G}.
+\newblock {DSF-NOMA}: {UAV-assisted} {emergency} {communication} {technology}
+  in a {heterogeneous} {internet} of {things} [J].
+\newblock IEEE Internet of Things Journal, 2019, 6(3): 5508--5519.
+
+\bibitem[Yang et al.(2021)]{无人机辅助230770}
+\textup{Yang G, Dai R, Liang Y~C}.
+\newblock {Energy-efficient} {UAV} {b}{a}{c}{k}{s}{c}{a}{t}{t}{e}{r}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n} {w}{i}{t}{h} {j}{o}{i}{n}{t}
+  {t}{r}{a}{j}{e}{c}{t}{o}{r}{y} {d}{e}{s}{i}{g}{n} {a}{n}{d}
+  {r}{e}{s}{o}{u}{r}{c}{e} {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} [J].
+\newblock IEEE Transactions on Wireless Communications, 2021, 20(2): 926--941.
+
+\bibitem[Lim et al.(2021)]{TFL}
+\textup{Lim W~Y~B, Huang J, Xiong Z}, et al.
+\newblock {Towards} {f}{e}{d}{e}{r}{a}{t}{e}{d} {l}{e}{a}{r}{n}{i}{n}{g} {i}{n}
+  {{U}{A}{V}-{e}{n}{a}{b}{l}{e}{d} {I}{n}{t}{e}{r}{n}{e}{t}} {o}{f} {vehicles}:
+  {{a} {m}{u}{l}{t}{i}-{d}{i}{m}{e}{n}{s}{i}{o}{n}{a}{l}
+  {c}{o}{n}{t}{r}{a}{c}{t}-{m}{a}{t}{c}{h}{i}{n}{g} {a}{p}{p}{r}{o}{a}{c}{h}}
+  [J].
+\newblock {IEEE Transactions} on {Intelligent Transportation Systems}, 2021,
+  22(8): 5140--5154.
+
+\bibitem[Zhou et al.(2019){\natexlab{b}}]{ACAR}
+\textup{Zhou Z, Guo Y, He Y}, et al.
+\newblock {Access} {c}{o}{n}{t}{r}{o}{l} {a}{n}{d} {{r}{e}{s}{o}{u}{r}{c}{e}
+  {a}{l}{l}{o}{c}{a}{t}{i}{o}{n}} {f}{o}{r} {{M}2{M}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}} {i}{n}
+  {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}} [J].
+\newblock IEEE Transactions on Industrial Informatics, 2019, 15(5): 3093--3103.
+
+\bibitem[胡益恺(2021)]{胡益恺智能车辆决策方法研究综述}
+\textup{胡益恺 , 王春香}.
+\newblock 智能车辆决策方法研究综述 [J].
+\newblock 上海交通大学学报, 2021, 55(8): 1035.
+
+\bibitem[Liu et al.(2021){\natexlab{b}}]{RAI}
+\textup{Liu Z, Su J, Xie Y~a}, et al.
+\newblock {Resource} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {i}{n} {{D}2{D}
+  {e}{n}{a}{b}{l}{e}{d} {v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}: {a} {r}{o}{b}{u}{s}{t}
+  {s}{t}{a}{c}{k}{e}{l}{b}{e}{r}{g} {g}{a}{m}{e} {a}{p}{p}{r}{o}{a}{c}{h}
+  {b}{a}{s}{e}{d}} {o}{n} {{p}{r}{i}{c}{e}-{p}{e}{n}{a}{l}{t}{y}
+  {m}{e}{c}{h}{a}{n}{i}{s}{m}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2021, 70(8): 8186--8200.
+
+\bibitem[GT(1968)]{GT}
+Back Matter [J].
+\newblock Econometrica, 1968, 36(3/4).
+
+\bibitem[Ren et al.(2015)]{Ren2015}
+\textup{Ren Y, Liu F, Liu Z}, et al.
+\newblock {Power} {c}{o}{n}{t}{r}{o}{l} {i}{n} {{D}2{D}-{b}{a}{s}{e}{d}
+  {v}{e}{h}{i}{c}{u}{l}{a}{r} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}
+  {n}{e}{t}{w}{o}{r}{k}{s}} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2015, 64(12): 5547--5562.
+
+\bibitem[王小进(2023)]{基于车辆边缘计算的任务卸载策略研究}
+\textup{王小进}.
+\newblock 基于车辆边缘计算的任务卸载策略研究 [D].
+\newblock 南京邮电大学, 2023.
+
+\bibitem[Mao et al.(2017)]{SurveyMEC2017}
+\textup{Mao Y, You C, Zhang J}, et al.
+\newblock A {survey} {on} {mobile} {edge} {computing:} {the} {communication}
+  {perspective} [J].
+\newblock IEEE Communications Surveys \& Tutorials, 2017, 19(4): 2322--2358.
+
+\bibitem[Abbas et al.(2018)]{SurveyMEC2018}
+\textup{Abbas N, Zhang Y, Taherkordi A}, et al.
+\newblock Mobile {e}{d}{g}{e} {c}{o}{m}{p}{u}{t}{i}{n}{g}: {a}
+  {s}{u}{r}{v}{e}{y} [J].
+\newblock IEEE Internet of Things Journal, 2018, 5(1): 450--465.
+
+\bibitem[Li et al.(2024)]{DistributedTask2024}
+\textup{Li Z, Zhang H, Li X}, et al.
+\newblock Distributed {t}{a}{s}{k} {s}{c}{h}{e}{d}{u}{l}{i}{n}{g} {f}{o}{r}
+  {{M}{E}{C}-{a}{s}{s}{i}{s}{t}{e}{d}} {v}{i}{r}{t}{u}{a}{l}
+  {r}{e}{a}{l}{i}{t}{y}: {a}
+  {{f}{u}{l}{l}{y}-{c}{o}{o}{p}{e}{r}{a}{t}{i}{v}{e}}
+  {{m}{u}{l}{t}{i}-{a}{g}{e}{n}{t}} {p}{e}{r}{s}{p}{e}{c}{t}{i}{v}{e} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2024: 1--15.
+
+\bibitem[Liu et al.(2023){\natexlab{b}}]{Qian2023}
+\textup{Liu Q, Gong J, Liu Q}.
+\newblock {Blockchain-assisted} {r}{e}{p}{u}{t}{a}{t}{i}{o}{n}
+  {m}{a}{n}{a}{g}{e}{m}{e}{n}{t} {s}{c}{h}{e}{m}{e} {f}{o}{r}
+  {i}{n}{t}{e}{r}{n}{e}{t} {o}{f} {v}{e}{h}{i}{c}{l}{e}{s} [J].
+\newblock Sensors, 2023, 23(10).
+
+\bibitem[曹宇慧(2023)]{曹宇慧车载边缘计算环境下任务协同卸载方法研究}
+\textup{曹宇慧}.
+\newblock 车载边缘计算环境下任务协同卸载方法研究 [D].
+\newblock 重庆交通大学, 2023.
+
+\bibitem[Zhang et al.(2024)]{云计算隐私10418975}
+\textup{Zhang Y, Xiong L, Li F}, et al.
+\newblock {Blockchain-based}
+  {{p}{r}{i}{v}{a}{c}{y}-{p}{r}{e}{s}{e}{r}{v}{i}{n}{g}}
+  {a}{u}{t}{h}{e}{n}{t}{i}{c}{a}{t}{i}{o}{n} {w}{i}{t}{h}
+  {h}{i}{e}{r}{a}{r}{c}{h}{i}{c}{a}{l} {a}{c}{c}{e}{s}{s} {c}{o}{n}{t}{r}{o}{l}
+  {u}{s}{i}{n}{g} {p}{o}{l}{y}{n}{o}{m}{i}{a}{l} {c}{o}{m}{m}{i}{t}{m}{e}{n}{t}
+  {f}{o}{r} {m}{o}{b}{i}{l}{e} {c}{l}{o}{u}{d} {c}{o}{m}{p}{u}{t}{i}{n}{g} [J].
+\newblock IEEE Internet of Things Journal, 2024: 1--1.
+
+\bibitem[Kim et al.(2011)]{Kim2011}
+\textup{Kim T, Love D~J, Clerckx B}.
+\newblock {Does} {frequent} {low} {resolution} {feedback} {outperform}
+  {infrequent} {high} {resolution} {feedback} {for} {multiple} {antenna}
+  {beamforming} {systems?} [J].
+\newblock IEEE Transactions on Signal Processing, 2011, 59(4): 1654--1669.
+
+\bibitem[Sakr and Hossain(2014)]{Sakr2014}
+\textup{Sakr A, Hossain E}.
+\newblock Cognitive {a}{n}{d} {{e}{n}{e}{r}{g}{y}
+  {h}{a}{r}{v}{e}{s}{t}{i}{n}{g}-{b}{a}{s}{e}{d}} {{D}2{D}
+  {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r}
+  {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y}
+  {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s} [J].
+\newblock IEEE Transactions on Communications, 2014, 63: 1867--1880.
+
+\bibitem[Guo et al.(2019)]{Guo2019}
+\textup{Guo C, Liang L, Li G~Y}.
+\newblock Resource {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {f}{o}{r}
+  {h}{i}{g}{h}-{r}{e}{l}{i}{a}{b}{i}{l}{i}{t}{y}
+  {l}{o}{w}-{l}{a}{t}{e}{n}{c}{y} {v}{e}{h}{i}{c}{u}{l}{a}{r} {communications}
+  {w}{i}{t}{h} {p}{a}{c}{k}{e}{t} {r}{e}{t}{r}{a}{n}{s}{m}{i}{s}{s}{i}{o}{n}
+  [J].
+\newblock IEEE Transactions on Vehicular Technology, 2019, 68(7): 6219--6230.
+
+\bibitem[Zhang et al.(2017)]{Zhang2017}
+\textup{Zhang K, Mao Y, Leng S}, et al.
+\newblock {Mobile-edge} {c}{o}{m}{p}{u}{t}{i}{n}{g} {f}{o}{r}
+  {{v}{e}{h}{i}{c}{u}{l}{a}{r} {n}{e}{t}{w}{o}{r}{k}{s}: {a}
+  {p}{r}{o}{m}{i}{s}{i}{n}{g} {n}{e}{t}{w}{o}{r}{k} {p}{a}{r}{a}{d}{i}{g}{m}}
+  {w}{i}{t}{h} {{p}{r}{e}{d}{i}{c}{t}{i}{v}{e}}
+  {{o}{f}{f}-{l}{o}{a}{d}{i}{n}{g}} [J].
+\newblock IEEE Vehicular Technology Magazine, 2017, 12(2): 36--44.
+
+\bibitem[Saleem et al.(2021)]{Saleem2021}
+\textup{Saleem U, Liu Y, Jangsher S}, et al.
+\newblock {Mobility-aware} {joint} {task} {scheduling} {and} {resource}
+  {allocation} {for} {cooperative} {mobile} {edge} {computing} [J].
+\newblock IEEE Transactions on Wireless Communications, 2021, 20(1): 360--374.
+
+\bibitem[Chen et al.(2016)]{Xu2015}
+\textup{Chen X, Jiao L, Li W}, et al.
+\newblock Efficient {{m}{u}{l}{t}{i}-{u}{s}{e}{r}}
+  {c}{o}{m}{p}{u}{t}{a}{t}{i}{o}{n} {o}{f}{f}{l}{o}{a}{d}{i}{n}{g} {f}{o}{r}
+  {{m}{o}{b}{i}{l}{e}-{e}{d}{g}{e}} {c}{l}{o}{u}{d} {c}{o}{m}{p}{u}{t}{i}{n}{g}
+  [J].
+\newblock IEEE/ACM Transactions on Networking, 2016, 24(5): 2795--2808.
+
+\bibitem[Khuwaja et al.(2020)]{Effect2020}
+\textup{Khuwaja A~A, Chen Y, Zheng G}.
+\newblock Effect {o}{f} {u}{s}{e}{r} {m}{o}{b}{i}{l}{i}{t}{y} {a}{n}{d}
+  {c}{h}{a}{n}{n}{e}{l} {f}{a}{d}{i}{n}{g} {o}{n} {t}{h}{e} {o}{u}{t}{a}{g}{e}
+  {performance} {of} {U}{A}{V} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} [J].
+\newblock IEEE Wireless Communications Letters, 2020, 9(3): 367--370.
+
+\bibitem[Zhao et al.(2022)]{Performance2022}
+\textup{Zhao Z, Xu G, Zhang N}, et al.
+\newblock Performance {a}{n}{a}{l}{y}{s}{i}{s} {o}{f} {t}{h}{e}
+  {h}{y}{b}{r}{i}{d}
+  {s}{a}{t}{e}{l}{l}{i}{t}{e}-{t}{e}{r}{r}{e}{s}{t}{r}{i}{a}{l} {r}{e}{l}{a}{y}
+  {n}{e}{t}{w}{o}{r}{k} {w}{i}{t}{h} {o}{p}{p}{o}{r}{t}{u}{n}{i}{s}{t}{i}{c}
+  {s}{c}{h}{e}{d}{u}{l}{i}{n}{g} {o}{v}{e}{r} {g}{e}{n}{e}{r}{a}{l}{i}{z}{e}{d}
+  {f}{a}{d}{i}{n}{g} {c}{h}{a}{n}{n}{e}{l}{s} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(3): 2914--2924.
+
+\bibitem[Zhan et al.(2011)]{WirelessRelay5937283}
+\textup{Zhan P, Yu K, Swindlehurst A~L}.
+\newblock Wireless {r}{e}{l}{a}{y} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s}
+  {w}{i}{t}{h} {u}{n}{m}{a}{n}{n}{e}{d} {a}{e}{r}{i}{a}{l}
+  {v}{e}{h}{i}{c}{l}{e}{s}: {p}{e}{r}{f}{o}{r}{m}{a}{n}{c}{e} {a}{n}{d}
+  {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} [J].
+\newblock IEEE Transactions on Aerospace and Electronic Systems, 2011, 47(3):
+  2068--2085.
+
+\bibitem[方宇杰 et al.()]{无人机技术辅助的车联网}
+\textup{方宇杰, 李萌, 司鹏搏}, et al.
+\newblock 无人机技术辅助的车联网:发展与展望 [J].
+\newblock 高技术通讯, 32(1262).
+
+\bibitem[王智煊(2023)]{王智煊2023无人机辅助下的车联边缘计算卸载机制研究}
+\textup{王智煊}.
+\newblock 无人机辅助下的车联边缘计算卸载机制研究 [D].
+\newblock 电子科技大学, 2023.
+
+\bibitem[Do-Duy et al.(2021)]{Joint9453853}
+\textup{Do-Duy T, Nguyen L~D, Duong T~Q}, et al.
+\newblock Joint {o}{p}{t}{i}{m}{i}{s}{a}{t}{i}{o}{n} {o}{f}
+  {{r}{e}{a}{l}-{t}{i}{m}{e}} {d}{e}{p}{l}{o}{y}{m}{e}{n}{t} {a}{n}{d}
+  {r}{e}{s}{o}{u}{r}{c}{e} {a}{l}{l}{o}{c}{a}{t}{i}{o}{n} {f}{o}{r}
+  {{U}{A}{V}-{A}{i}{d}{e}{d}} {d}{i}{s}{a}{s}{t}{e}{r}
+  {e}{m}{e}{r}{g}{e}{n}{c}{y} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}{s} [J].
+\newblock IEEE Journal on Selected Areas in Communications, 2021, 39(11):
+  3411--3424.
+
+\bibitem[Zhang et al.(2021)]{无人机QoS9373692}
+\textup{Zhang R, Lu R, Cheng X}, et al.
+\newblock A {{U}{A}{V}-{E}{n}{a}{b}{l}{e}{d}} {d}{a}{t}{a}
+  {d}{i}{s}{s}{e}{m}{i}{n}{a}{t}{i}{o}{n} {p}{r}{o}{t}{o}{c}{o}{l} {w}{i}{t}{h}
+  {p}{r}{o}{a}{c}{t}{i}{v}{e} {c}{a}{c}{h}{i}{n}{g} {a}{n}{d} {f}{i}{l}{e}
+  {s}{h}{a}{r}{i}{n}{g} {i}{n} {{V}2{X}} {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Communications, 2021, 69(6): 3930--3942.
+
+\bibitem[Liu et al.(2016)]{twoway7091030}
+\textup{Liu F, Chen Z, Xia B}.
+\newblock Data {d}{i}{s}{s}{e}{m}{i}{n}{a}{t}{i}{o}{n} {w}{i}{t}{h}
+  {n}{e}{t}{w}{o}{r}{k} {c}{o}{d}{i}{n}{g} {i}{n} {{t}{w}{o}-{w}{a}{y}}
+  {{v}{e}{h}{i}{c}{l}{e}-{t}{o}-{v}{e}{h}{i}{c}{l}{e}} {n}{e}{t}{w}{o}{r}{k}{s}
+  [J].
+\newblock IEEE Transactions on Vehicular Technology, 2016, 65(4): 2445--2456.
+
+\bibitem[Zhang et al.()]{twoway5753961}
+\textup{Zhang Z, Mao G, Anderson B~D~O}.
+\newblock On {t}{h}{e} {i}{n}{f}{o}{r}{m}{a}{t}{i}{o}{n}
+  {p}{r}{o}{p}{a}{g}{a}{t}{i}{o}{n} {p}{r}{o}{c}{e}{s}{s} {i}{n}
+  {m}{o}{b}{i}{l}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {a}{d} {h}{o}{c}
+  {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Vehicular Technology.
+
+\bibitem[Baccelli et al.(2012)]{twoway575396233}
+\textup{Baccelli E, Jacquet P, Mans B}, et al.
+\newblock Highway {v}{e}{h}{i}{c}{u}{l}{a}{r} {d}{e}{l}{a}{y}
+  {t}{o}{l}{e}{r}{a}{n}{t} {n}{e}{t}{w}{o}{r}{k}{s}: {information}
+  {propagation} {s}{p}{e}{e}{d} {p}{r}{o}{p}{e}{r}{t}{i}{e}{s} [J].
+\newblock IEEE Transactions on Information Theory, 2012, 58(3): 1743--1756.
+
+\bibitem[Wu et al.(2009)]{Spatial4490168}
+\textup{Wu H, Fujimoto R~M, Riley G~F}, et al.
+\newblock Spatial {p}{r}{o}{p}{a}{g}{a}{t}{i}{o}{n} {o}{f}
+  {i}{n}{f}{o}{r}{m}{a}{t}{i}{o}{n} {i}{n} {v}{e}{h}{i}{c}{u}{l}{a}{r}
+  {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2009, 58(1): 420--431.
+
+\bibitem[Zhang et al.(2014)]{Stochastic6576809}
+\textup{Zhang Z, Mao G, Anderson B~D~O}.
+\newblock Stochastic {c}{h}{a}{r}{a}{c}{t}{e}{r}{i}{z}{a}{t}{i}{o}{n} {o}{f}
+  {i}{n}{f}{o}{r}{m}{a}{t}{i}{o}{n} {p}{r}{o}{p}{a}{g}{a}{t}{i}{o}{n}
+  {p}{r}{o}{c}{e}{s}{s} {i}{n} {v}{e}{h}{i}{c}{u}{l}{a}{r} {a}{d} {h}{o}{c}
+  {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2014, 15(1):
+  122--135.
+
+\bibitem[COI(1998)]{COIFMAN1998271}
+A {r}{e}{a}{l}-{t}{i}{m}{e} {c}{o}{m}{p}{u}{t}{e}{r} {v}{i}{s}{i}{o}{n}
+  {s}{y}{s}{t}{e}{m} {f}{o}{r} {v}{e}{h}{i}{c}{l}{e} {t}{r}{a}{c}{k}{i}{n}{g}
+  {a}{n}{d} {t}{r}{a}{f}{f}{i}{c} {s}{u}{r}{v}{e}{i}{l}{l}{a}{n}{c}{e} [J].
+\newblock Transportation Research Part C: Emerging Technologies, 1998, 6(4):
+  271--288.
+
+\bibitem[Liang et al.(2022)]{JointTrajectory9627548}
+\textup{Liang Y, Xiao L, Yang D}, et al.
+\newblock Joint {t}{r}{a}{j}{e}{c}{t}{o}{r}{y} {a}{n}{d}
+  {r}{e}{s}{o}{u}{r}{c}{e} {o}{p}{t}{i}{m}{i}{z}{a}{t}{i}{o}{n} {f}{o}{r}
+  {{U}{A}{V}-{a}{i}{d}{e}{d}} {{t}{w}{o}-{w}{a}{y}} {r}{e}{l}{a}{y}
+  {n}{e}{t}{w}{o}{r}{k}{s} [J].
+\newblock IEEE Transactions on Vehicular Technology, 2022, 71(1): 639--652.
+
+\end{thebibliography}
