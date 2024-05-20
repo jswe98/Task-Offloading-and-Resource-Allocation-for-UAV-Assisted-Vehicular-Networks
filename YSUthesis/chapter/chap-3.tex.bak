@@ -3,7 +3,7 @@
 \chapter{云边计算辅助的车联网络功率控制与资源分配} \label{chap:table 第三章}  %\cite{yaojianquan2009}
 \section{引言}\label{section3-1}
 云辅助移动边缘计算C-MEC为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本章提出了一种鲁棒的功率
-控制和任务卸载方案，以卸载计算任务并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为
+控制和任务卸载方案，以卸载计算任务到云端并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为
 了模拟信道的不确定性，采用了一阶马尔可夫过程，并考虑了车辆的移动性。此外，由于频谱资源有限，假设信道重用会导致复杂的同
 信道干扰。为了克服这些限制，对信号链路实施了概率约束，以确保通信质量。采用伯恩斯坦近似法将原始约束转化为可解约束。此外，
 还进一步采用了块坐标下降BCD方法和连续凸近似SCA技术来解决非凸鲁棒性优化问题。为确定最优解，提出了一种鲁棒功率控
@@ -442,6 +442,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
  \end{tabular*}
 \end{table}
 \end{comment}
+%\begin{comment}
 \begin{table}[htbp!]
  \centering
  \renewcommand\arraystretch{1.5}
@@ -451,12 +452,22 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
  \toprule
     \qquad\qquad \zihao{-5}符号  &\quad\qquad\qquad\qquad \zihao{-5}参数           & \quad\qquad\qquad\qquad \zihao{-5}数值    \\
  \midrule
-    \qquad\qquad \zihao{-5}$R_a$ &\quad\qquad\qquad\qquad \zihao{-5}基站的通信范围 & \quad\qquad\qquad\qquad \zihao{-5}300 m   \\
-    \qquad\qquad \zihao{-5}$f_c$ &\quad\qquad\qquad\qquad \zihao{-5}载波频率       & \quad\qquad\qquad\qquad \zihao{-5}5.9 GHz \\
+   \zihao{-5} \qquad\qquad $R_a$ &\quad\qquad\qquad\qquad \zihao{-5}基站的通信范围 & \quad\qquad\qquad\qquad \zihao{-5}300 m   \\
+   \zihao{-5} \qquad\qquad $f_c$ &\quad\qquad\qquad\qquad \zihao{-5}载波频率       & \quad\qquad\qquad\qquad \zihao{-5}5.9 GHz \\
+      \zihao{-5}  \qquad\qquad $T$             &\quad\qquad\qquad\qquad \zihao{-5}车辆的 CSI 反馈周期 & \quad\qquad\qquad\qquad \zihao{-5}1 ms         \\
+  \zihao{-5}  \qquad\qquad $\nu$           &\quad\qquad\qquad\qquad \zihao{-5}平均车速            & \quad\qquad\qquad\qquad \zihao{-5}30 m/s       \\
+ \zihao{-5}   \qquad\qquad $L$             &\quad\qquad\qquad\qquad \zihao{-5}阴影衰落效果        & \quad\qquad\qquad\qquad \zihao{-5}0.9          \\
+ \zihao{-5}   \qquad\qquad $\theta$        &\quad\qquad\qquad\qquad \zihao{-5}路径损耗指数        & \quad\qquad\qquad\qquad \zihao{-5}3            \\
+ \zihao{-5}   \qquad\qquad $\delta^2$      &\quad\qquad\qquad\qquad \zihao{-5}噪声方差            & \quad\qquad\qquad\qquad \zihao{-5}-30 dBm      \\
+  \zihao{-5}  \qquad\qquad $p_{i,max}$     &\quad\qquad\qquad\qquad \zihao{-5}最大功率            & \quad\qquad\qquad\qquad \zihao{-5}0.01 W       \\
+ \zihao{-5}   \qquad\qquad $I_{th}$        &\quad\qquad\qquad\qquad \zihao{-5}干扰阈值            & \quad\qquad\qquad\qquad \zihao{-5}${10}^{-3}$  \\
+  \zihao{-5}  \qquad\qquad $\varepsilon_1$ &\quad\qquad\qquad\qquad \zihao{-5}中断概率阈值        & \quad\qquad\qquad\qquad \zihao{-5}0.1          \\
+  \zihao{-5}  \qquad\qquad $\varepsilon_2$ &\quad\qquad\qquad\qquad \zihao{-5}中断概率阈值        & \quad\qquad\qquad\qquad \zihao{-5}0.1          \\
  \bottomrule
  \end{tabular*}
 \end{table}
-%\begin{comment}
+%\end{comment}
+\begin{comment}
 \begin{table}[htbp!]
  \centering
  \renewcommand\arraystretch{1.5}
@@ -470,6 +481,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
  \toprule
  \zihao{-5}   \qquad\qquad 符号            &\quad\qquad\qquad\qquad \zihao{-5}参数                & \quad\qquad\qquad\qquad \zihao{-5}数值         \\
  \midrule
+ \qquad\qquad \zihao{-5}$R_a$ &\quad\qquad\qquad\qquad \zihao{-5}基站的通信范围 & \quad\qquad\qquad\qquad \zihao{-5}300 m   \\
    \zihao{-5}\qquad\qquad $f_c$            &\quad\qquad\qquad\qquad \zihao{-5}载波频率            & \quad\qquad\qquad\qquad \zihao{-5}5.9 GHz \\
   \zihao{-5}  \qquad\qquad $T$             &\quad\qquad\qquad\qquad \zihao{-5}车辆的 CSI 反馈周期 & \quad\qquad\qquad\qquad \zihao{-5}1 ms         \\
   \zihao{-5}  \qquad\qquad $\nu$           &\quad\qquad\qquad\qquad \zihao{-5}平均车速            & \quad\qquad\qquad\qquad \zihao{-5}30 m/s       \\
@@ -484,7 +496,7 @@ Q\left(\mathbf{f},\xi,\varphi\right)=\frac{1}{\ln{2}}\sum_{i=1}^{M}\frac{R_i\lef
  \end{tabular*}% 手动减少表格下方与下一个元素的间距
 \vspace{-5pt} % 这里的值可以根据需要调整
 \end{table}
-%\end{comment}
+\end{comment}
 
 图 \ref{F2} 和图 \ref{F3} 分别显示了算法3-1 中每个车辆发射机的功率分配和云分配给RSU的相应计算资源。从图中可以看出，云端分配的计算资源在第五次迭代时达到峰值，
 并在达到云端总计算资源$f_{total}$的限制后开始下降。由于鲁棒功率控制和任务卸载调度互相影响，相应的计算资源分配也发生了变化。
