@@ -173,7 +173,7 @@ for t=1:T
 end
 set(gca,'FontName','Times New Roman')
 for m = 1:M
-    if L(m)==-1;
+    if car_y(m, 1) < 15   %L(m)==-1;
     plot(car_x(m, :), car_y(m, :), 'LineWidth', 1,'Marker', '<','MarkerFaceColor', 'auto');  % 绘制每辆车的轨迹
     else
     plot(car_x(m, :), car_y(m, :), 'LineWidth', 1,'Marker', '>','MarkerFaceColor', 'auto');  % 绘制每辆车的轨迹  

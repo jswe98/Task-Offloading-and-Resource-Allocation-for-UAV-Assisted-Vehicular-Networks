@@ -67,25 +67,6 @@ jswe@stumail.ysu.edu.cn, Sjw@stumail.ysu.edu.cn, yzyuan@ysu.edu.cn.}
 \maketitle
 \begin{abstract}
 \begin{comment}
-Cloud-assisted mobile-edge computing (C-MEC) has emerged as a promising solution for task offloading in vehicular networks, offering abundant computing resources. In this paper, a robust power control and task offloading scheme is proposed to offload the computation task and maximize the utility of C-MEC networks. However, an uncertain channel state influences the stability of transmitting the offloading task significantly. In order to simulate channel uncertainty, a first-order Markov process is adopted, where the vehicular mobility is considered. Moreover, channel reusing is assumed to be caused by the limited spectrum resources which leads to complex co-channel interference. To overcome the limitations, probability constraints of signal links are enforced to ensure communication quality. A Bernstein approximations method is adopted to transform the original constraints into solvable constraints. Scrupulously, the block coordinate descent (BCD) method and the successive convex approximation (SCA) technique are further adopted to solve the nonconvex robust optimization problem. A robust power control and task offloading scheduling algorithm is proposed to determine the optimal solutions. The proposed algorithm undergoes numerical simulations to evaluate the performance of the system. The obtained results demonstrate its effectiveness compared to benchmark models, particularly in communication environments with channel uncertainty.
-
-本文主要研究了车联网的地面通信网络，然而随着城市化建设的加深，道路网络越来越复杂，车辆的地面通信网络容易受到建筑物的遮挡，同时地面基站也难以覆盖越来越多的通信车辆，
-通过引入移动无人机作为空中基站可以有效的解决这一难题  \textsuperscript{\cite{Effect2020,Performance2022}}，其中文献 \cite{WirelessRelay5937283} 便引入了无人机作
-为空中基站辅助地面用户更加高效通信的系统。因此本章研究了作为前沿通信技术的无人机作为空中基站辅助车联网通信，并着重考虑了更加实际的双向车道的场景。无人机具有灵活部署成本
-低与高机动性的特性  \supercite{无人机技术辅助的车联网,王智煊2023无人机辅助下的车联边缘计算卸载机制研究,Joint9453853}，可以更加有效的作为空中基站辅助地面车辆进行任务卸载，
-并且更好的满足车辆用户的QoS需求 \supercite{无人机QoS9373692}。由于本文考虑的车辆环境均为高速移动场景，固定轨迹的无人机难以适应实时变化网络拓扑环境，因此实时优化无人机的
-飞行的航迹有助于提高辅助车辆通信的服务质量。此外，无人机飞行与作为空中基站时均为耗能设备，所以整个系统的能量效率也应备受关注。
-
-云辅助移动边缘计算（C-MEC）为车载网络提供了丰富的计算资源，是一种前景广阔的任务卸载解决方案。本文提出了一种鲁棒的功率控制和任务卸载方案，以卸载计算任务并最大化 C-MEC 网络的效用。
-然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为了模拟信道的不确定性，采用了一阶马尔可夫过程，并考虑了车辆的移动性。此外，由于频谱资源有限，假设信道重用会导致复杂的同信道干扰。
-为了克服这些限制，对信号链路实施了概率约束，以确保通信质量。采用伯恩斯坦近似法将原始约束转化为可解约束。此外，还进一步采用了块坐标下降（BCD）方法和连续凸近似（SCA）技术来解决非凸鲁棒性优化问题。
-为确定最优解，提出了一种鲁棒的功率控制和任务卸载调度算法。对提出的算法进行了数值模拟，以评估系统的性能。结果表明，与基准模型相比，该算法非常有效，尤其是在信道不确定的通信环境中。
-
-无人机作为空中基站辅助的车联网任务卸载是一种前景广阔的解决方案，尤其是在双向行驶的道路上。本文提出了一种无人机辅助车联网能效最大化的方案，并应用于地面基站与空中基站同时存在的
-双向车道场景。然而，不确定的信道状态会严重影响卸载任务的传输稳定性。为了模拟信道的不确定性，采用了一阶马尔可夫过程，并考虑了车辆的移动性。此外，由于车辆每个时隙的高速移动，固定或悬停
-的无人机无人机难以适应实时变化网络拓扑环境追踪任务车辆以提高能量效率，因此实时优化无人机的飞行的航迹有助于提高辅助车辆通信的服务质量。无人机作为耗能设备，其能耗问题在系统中也应备受关注。
-在最大化能效效率时，还进一步采Dinkelbach方法来解决非凸分式规划的优化问题。
-为确定最优解，提出了一种能效最大化的功率控制与无人机轨迹规划算法。对提出的算法进行了数值模拟，以评估系统的性能。结果表明，该算法非常有效，尤其是在相比于其他无人机方案和单向车道场景时。
 \end{comment}
 UAV-assisted Telematics mission offloading as an airborne base station is a promising solution, especially on two-way driving roads.
 This paper proposes a scheme to maximize energy efficiency in UAV-assisted Telematics and applies it to scenarios where both ground and
@@ -95,52 +76,11 @@ vehicle's mobility. Real-time optimization of UAV flight trajectory can improve 
 Additionally, energy consumption is a crucial concern for UAVs in the system. The Dinkelbach method is used to solve non-convex fractional programming optimization problems while maximizing energy efficiency.
 A power control and UAV trajectory planning algorithm for maximizing energy efficiency is proposed to determine the optimal solution. Numerical simulations are performed to evaluate the algorithm's
 performance. The results demonstrate its effectiveness, particularly when compared to other UAV and one-way lane scenarios.
-%This paper mainly studies the ground communication network of vehicle networking, however, with the deepening of urbanisation, the road network is becoming more and more complex, the ground communication network of vehicles is easily blocked by buildings, at the same time, it is difficult for the ground base station to cover more and more communication vehicles, this problem can be effectively solved by introducing the mobile drone as an aerial base station , in which the literature introduces a system in which drones are used as aerial base stations to assist ground users to communicate more efficiently. Therefore, this chapter investigates UAVs as cutting-edge communication technologies to assist Telematics communication as aerial base stations, with a focus on a more practical two-way lane scenario. Drones have the characteristics of flexible deployment at low cost and high mobility , which can better solve today's increasingly complex communication networks and better meet the QoS needs of vehicular users. Since the vehicular environments considered in this paper are all high-speed moving scenarios, it is difficult for a fixed-trajectory UAV to adapt to real-time changes in the network topology environment, so real-time optimisation of the trajectory of the UAV's flight can help to improve the quality of service of auxiliary vehicular communications. In addition, UAVs are energy-consuming devices both when flying and when acting as an airborne base station, so the energy efficiency of the whole system should also be of great concern.
 \end{abstract}
 \begin{IEEEkeywords}
 \mykeywords
 \end{IEEEkeywords}
 \section{Introduction} \label{introduction}
-\begin{comment}
-Mobile Edge Computing (MEC) and Mobile Cloud Computing (MCC), as two new architectures for the emerging 5G networks, are commonly used to support
-task offloading for Internet of Things devices. The MEC acts as a cloud service provider at the edge of the network center, providing storage, image,
-caching, and third-party access capabilities, which not only reduces the bandwidth pressure on the wireless network, but also provides the low-latency
- and high-reliability computing services %\cite{sym2019},\cite{Ramesh2023}. MEC also reduces the transmission delay and allocates computing resources
- to vehicles to relieve the computing pressure \cite{Wang2020}. MEC plays an important role in providing intelligent traffic identification and control,
-enabling the disaggregation of the mobile network.However, the computational resources of MEC are still inadequately when the computational tasks are
-demanding. Since the high performance computing is provided by cloud servers, cloud-based computing networks have been deployed to satisfy explosive-growth
- demands of computation offloading. However, cloud computing centers tend to be far from the main roads, resulting in long latency for cloud computing. \
- cite{Qian2023}. In the high-dynamic Internet of Vehicles, the data transmitted by vehicles must be processed in a real time \cite{Pang2021}. Therefore,
- the Cloud-assisted mobile-edge computing (C-MEC) is deployed for the network architecture, in order to provide rich computing resources and reduce transmission latency.
-
-However, the past experience has shown that interference in the dynamic vehicle scenario often results in a significantly deteriorated Quality of Service
-(QoS) for communication in current Mobile-Edge computing which enables vehicular networks \cite{Guan2023}. In addition, vehicle mobility causes an uncertain
-channel state and it further significantly impact and destabilize communication quality.Deploying joint power control and computing resource allocation
-in the multi-vehicles in multi-MEC systems will resolve the task offloading problem in a C-MEC vehicular network and will guarantee the QoS.
-
-云辅助移动边缘计算（C-MEC）为车载网络提供了丰富的计算资源，是一种前                         无人机辅助的车联网可以提高系统的能效，本文提出了一种双向车道下无人机辅助车辆网络能效最大化的场景，
-景广阔的任务卸载解决方案。本章提出了一种鲁棒的功率控制和任务卸载方案，以                 然而，不确定的信道状态会严重影响数据传输的稳定性，为了考虑车辆的移动性，模拟信道的不确定性，可以采用一阶马尔可夫过程，
-卸载计算任务并最大化 C-MEC 网络的效用。然而，不确定的信道状态会严重影响                  在复杂的双向车道场景下，引入无人机与地面基站合作的方式，通过规划车辆选择不同的时隙分别向接收端通信，可以提高系统资源
-卸载任务的传输稳定性。为了模拟信道的不确定性，采用了一阶马尔可夫过程，并                 的利用率。为确保通信质量，对信号链路实施了概率约束，采用积分变换方法将原始约束转化为可解约束。此外，还进一步采用了
-考虑了车辆的移动性。此外，由于频谱资源有限，假设信道重用会导致复杂的同信                 Dinkelbach方法来解决非凸鲁棒性优化问题。为确定最优，将初始问题分解为三个子问题，通过交替迭代的方式进行求解。
-道干扰。为了克服这些限制，对信号链路实施了概率约束，以确保通信质量。采用
-伯恩斯坦近似法将原始约束转化为可解约束。此外，还进一步采用了块坐标下降
-（BCD）方法和连续凸近似（SCA）技术来解决非凸鲁棒性优化问题。为确定最优
-解，提出了一种鲁棒功率控制和任务卸载调度算法。对提出的算法进行了数值仿真，
-以评估系统的性能。结果表明，与基准模型相比，该算法非常有效，尤其是在信道
-不确定的通信环境中。
-移动边缘计算（MEC）和移动云计算（MCC）作为新兴的
-5G 网络的两种新架构，通常用于支持物联网设备的任务卸载、特别是提供低延迟、
-高可靠性的计算服务。MEC 可以充当网络中心边缘的云服务提供商，提供存储、图
-像、缓存和第三方访问功能，这不仅减轻了无线网络的带宽压力，还提供了低延迟、
-高可靠性的计算服务 [39]。并且 MEC 在网络中心的边缘，可以减少传输延迟，并为
-车辆分配计算资源，以缓解计算压力 [24]。然而，当计算任务要求较高时，MEC 的
-计算资源仍显不足。由于高性能计算由云服务器提供，基于云的计算网络已被部署
-以满足爆炸式增长的计算卸载需求[40–42]。然而，云计算中心往往远离主干道，导致
-云计算延迟较长并造成网络拥堵与隐私泄露等问题[43–45]。在高动态车联网中，车辆
-传输的数据必须实时处理。因此，在网络架构中部署 C-MEC，以提供丰富的计算资
-源并减少传输延迟。
-\end{comment}
 As the most promising solution for Intelligent Transportation Systems (ITS), the Internet of Vehicles (IoV) is expected to meet the rapidly growing demands of modern society, including those related to traffic efficiency, driving experience, and accident handling \cite{TFL}. Unmanned aerial vehicle (UAV)-assisted vehicular networking can improve the energy efficiency of the system, and this paper proposes a scenario to maximize the energy efficiency of UAV-assisted vehicular network under Two-ways Street, however, the uncertain channel state can seriously affect the stability of data transmission, in order to consider the mobility of the vehicle and to simulate the uncertainty of the channel, In complex Two-ways Street scenarios, cooperation between the UAV and the ground base station can improve the utilization of system resources. A first-order Markov process can be used to plan the vehicles to select different time slots for communication with the receiver. To ensure high-quality communication, we implement probabilistic constraints on the signal link and use an integral transformation method to convert the original constraints into solvable ones. Additionally, we employ the Dinkelbach method to solve the non-convex robust optimization problem. To determine the optimal solution, we decompose the initial problem into three subproblems, which we solve through alternating iterations.
 
 A scenario similar to the one in literature \cite{twoway7091030} for maximizing the energy efficiency of UAV-Assisted vehicular networks under Two-ways Street has been investigated \cite{twoway575396145}, and in literature \cite{twoway575396233} the study The advantages of Two-ways Street communication are explored, vehicles
@@ -159,63 +99,11 @@ The maximization of energy efficiency (EE) is a critical problem that requires a
 Extensive attention and researches have been devoted to the area of air-ground integrated communications \cite{OUC,SDR}. The authors focus on the air-ground integrated network architecture design and resource management \cite{OUC,OSI}. In the heterogeneous cellular networks, the UAV is utilized to assist with emergency communications. A control framework that dynamically slices the spectrum resource for vehicular users is proposed in \cite{SDR}, where Lyapunov optimization theory is adopted. Nevertheless, despite the aforementioned works having sought to enhance the performance of AGHVNs, research into the integration of system robustness and resource allocation has not yet received sufficient attention.
 In \cite{LIU20231399,Dissemination7091030}, the study investigated the advantages of bidirectional lane communication on highways where vehicles travel at high speeds and ground stations are located on one side of the road. As vehicles moving in the opposite direction travel at high speeds, vehicles moving to the right will gradually leave the current communication cell and will not be able to communicate with ground base stations.
 In such cases, UAVs can serve as aerial base stations to receive vehicle communication signals, it is evident from the preceding discussion that optimizing the trajectory of UAVs and controlling their power is essential for energy-efficient UAV-assisted vehicular networks.
+%Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network.
 
-Motivated by these points, we study the problem of system
-EE maximization in a UAV-assisted Vehicular communication network.
-\begin{comment}
-Recently, some research has been conducted to improve the effectiveness and robustness of IoV edge computing networks, which consist of a cloud computing layers and MEC layer vehicle network architectures. Zhou et al. \cite{Zhou2019} proposed a computing framework for vehicular networks with a hierarchical structure, which is composed of the control layer, the vehicular edge computing server layer, and the vehicular network layer. Dai et al. \cite{Dai2022} conducted researched on enhancing the cooperativecomputation offloading service in MEC-assisted service architecture, where the multiple MEC servers and remote cloud offloading of computation-intensive tasks are implemented in a collaborative way. Some research proposed methods to improve computation offloading performance in the C-MEC vehicular network scenario. Tan and Hu \cite{Tan2018} have formulated and solved the joint communication, caching, and computing problem, in order to optimize the operational excellence and cost efficiency of vehicular networks. Wang et al. \cite{Wang2020} formulated the problem as a generalized NE problem and proposed a game theory algorithm to analyze the equilibrium problem. Wang et al. \cite{Wang2022} developed a distributed clustering mechanism which organizes vehicles into several cooperative edge servers to optimize the total revenue during the entire scheduling process. Li et al. \cite{Li2023} developed an analytical model of the service cache at the edge of the vehicle, mainly considering the computational task offloading and task interdependence between Road Side Units (RSUs). However, the
-
-aforementioned methods only optimized one of the two indexes, power control and computing resource allocation. Some research assumed that the vehicles maintain a constant transmit power, our approach takes a multi-faceted approach towards optimization whith includes optimizing both the vehicle's transmit power and the computational resource allocation for a mult-vehicles and mult-MEC servers system. A new challenge is created since the objective function is difficult to optimize. A convex approximation approach for optimizing the objective function has been suggested by Nemirovski and Shapiro. \cite{Nemirovski2007}. To solve the non-convex problems with two variables, some research decouples the original problem into two subproblems and the BCD method is employed to address the two subproblems.
-
-Unlike the traditional mobile communications networks with low mobility, the Doppler effect in the high mobility of vehicles poses a challenge to C-MEC communication, when the fast-moving vehicles communicate with different MEC servers. The deterministic channel state information (CSI) is no longer sufficient to describe the channel state in network scenarios with dynamic characteristics. The Doppler effect created during transmission significantly impacts the small-scale fading of CSI, resulting in fast channel variations. In other words, the used CSIs are obsolete. To depict the effects of Doppler frequency shift on the channel, the First-order Gauss-Markov process is utilized \cite{Liu2019}. In order to improve the performance with low communication delay and computing delays, vehicle equipment has a reduced delay tolerance and transmission reliability. Therefore, higher requirements are essential. In \cite{Li2020}, Li et al. in order to ensure the reliability of vehicular communication links, an outage probability constraint is introduced. When the exact expression exists the exponential integral function, it is necessary to consider an approximate closed-form expression to make it tractable so as to reduce the computational complexity.
-
-In C-MEC vehicular networks, authorized vehicles with spectrum resources directly communicate with RSU. However, scarce spectrum resources is inadequate in high-density vehicular networks \cite{Xie2020}. Zhou et al. \cite{Zhou2017} developed a dynamic sharing approach for 5G spectrums and they proposed a sharing architecture of Dedicated Short Range Communications (DSRC) and the 5G spectrum to enable immersive experience-driven vehicular communications. Tran et al. \cite{Tran2019} proposed a comprehensive approach to tackle the challenge of task offloading and resource allocation in a multi-server MEC-assisted network. The results showed that  effective channel reusing is crucial when the spectrum resources are scarce \cite{Liang2021}. However, the approach generally creates interference, where the interference caused by channel reuse in the vehicle communication scenario often degrades acutely the communication quality. To deal with the outage probability constraint, Xiao et al. \cite{Xiao2020} assumed the CSIs are can be obtained by estimation. Therefore, the outage constraint is transformed as the Bernstein-type inequality, in order to formulate the deterministic optimization problem \cite{Chen2022}.
-To simulate the interference constraint, the probability constraints are introduced to resolve the uncertain co-channel interference, and the Bernstein approximation method is used to transform the interference constraint into a solvable closed form. The method has commonly been used to solve the hard non-convex problems \cite{Wang2015}. Describing the dynamic topology of vehicle networks through the probabilistic constraints can enhance QoS. Additionally, the paper employs the Bernstein method because of the uncertain constraint characteristics. In summary, existing research has tackled power control and computing resource allocation problems in cloud which assists MEC in vehicular networks in high dynamic environments; also no research attempts to ensure communication quality and latency requirements are satisfactory.
-\end{comment}
-\begin{comment}
-本章提出了一种鲁棒的云功率控制和任务卸载算法，以辅助高动态车辆网络中
-的 MEC。与现有的功率控制或资源分配计算方面的单边研究不同，本章研究了一个
-非常强调协作的网络系统，并通过满足概率约束保证了通信延迟和计算延迟；在该
-框架中，车辆的服务质量 (Quality of Service, QoS) 也得到了保证。综上所述，本章的
-主要贡献可概述如下：
-(1) 建立了用于计算卸载架构的实用 C-MEC 车辆网络。由于 MEC 层部署在网
-络附近并具有计算能力，因此 MEC 层可作为车辆与云服务器之间的桥梁。云计算层
-处理 MEC 层无法处理的对延迟不敏感的大规模数据。这种网络结构缩短了传输时
-间，并提供了大量的计算资源。
-(2) 采用一阶马尔可夫过程来处理 C-MEC 车辆网络环境高速移动引起的信道不
-确定性。使用概率约束保证了车辆的 QoS 并采用 Bernstein 方法逼近大规模动态车载
-网络环境中的非凸的概率约束。
-(3) 建立了一种处理传输任务的高效结构，并提出了一种鲁棒的功率控制和任务
-卸载调度算法，以接近最优解。在 C-MEC 车辆网络下，该算法可在低运算复杂度下
-得到车辆的发射功率与计算资源分配。模拟仿真验证了系统卸载效用的提高。
-
-In this paper, a robust power control and task offloading algorithm is proposed for the cloud, in order to assist MEC in vehicular networks with highly dynamic vehicles.
-Unlike the existing unilateral research on power control or resource allocation computation, a network system that heavily emphasizes collaboration is investigated and
-the communication delay and computing delay are guaranteed by satisfying the probabilistic constraints; vehicle QoS is also guaranteed in the framework. To summarize,
-this paper's primary contributions can be outlined as follows:
-
-The practical C-MEC vehicular networks for computation offloading architecture is considered. Since the MEC layer is deployed close to the networks and has
-computation capacity, the MEC layer can serve as a bridge between vehicles and the cloud server. The cloud computing layer process delay-insensitive and large-scale
-data which the MEC layer cannot process. This network architecture reduces transmission time and provides large computing resource.
-
-The first-order Markov process is used to handle the channel uncertainty caused by the high-speed movement of the C-MEC vehicular network environment.
-In order to simulate the dynamic characteristics of C-MEC vehicular networks, a Bernstein method is employed to approximate the non-convex outage constraint
-in large-scale dynamic in-vehicle network environments.
-
-An efficient structure for processing transmission tasks is proposed and a robust power control and task offloading scheduling algorithm
-is developed to approach the optimal solutions. V2R transmission is utilized to reduce delays when a task-initiating vehicle is unable to
-complete a task independently under C-MEC vehicular networks. The simulations verified that the improved system offloading utility is achieved.
-
-本文提出了一种无人机辅助的车联网能效最大化的方案，以辅助动态行驶在双向高速公路的车辆进行任务卸载，与现有的考虑固定基站在单向车道的
-研究不同，本文研究了一个非常强调无人机轨迹规划与功率控制合作的网络系统，并通过中断概率约束保证了车辆的通信质量，综上所述，本文的
-主要贡献可概述如下：
-
-将无人机辅助车联网通信与任务卸载融为一体，提出了一种高效的在双向行驶的车道中通过无人机轨迹优化找到车辆选择卸载基站的最优车辆通信方案。
-采用一阶马尔可夫过程来处理辆网络环境高速移动引起的信道不确定性。使用概率约束保证了车辆的 QoS 并采用 积分变换的方法逼近大规模动态车载网络环境中的非凸的概率约束。
-通过优化车辆的发射功率、无人机的飞行轨迹以及时隙的分配，并提出了一种使用Dinkelbach的转化非凸问题的方案，成功实现了系统能效的最大化。
-\end{comment}
+Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network. The paper proposes a scheme to maximize energy efficiency in vehicular networking by using UAV assistance for task offloading.
 \subsection{Contributions}
-Motivated by these points, this paper proposes a scheme to maximize energy efficiency in vehicular networking by using UAV assistance for task offloading.
+
 The scheme is designed for vehicles dynamically traveling on two-way streets. Unlike existing studies that consider fixed base
 stations in one-way lanes, this paper investigates a network system that places great emphasis on UAV trajectory optimization in
 cooperation with power control. The scheme ensures the quality of vehicular communication through outage probability constraints.
@@ -234,22 +122,21 @@ The rest of this paper is organized as follows: the model energy efficiency in v
 In Section \ref{Simulation results and performance analysis}, the performance evaluations are presented. Finally, we conclusion the paper in Section \ref{Conclusions}.
 \section{System model}\label{System model}
 \begin{figure*}[!t]\centering  %跨栏图
-	\includegraphics[width=16cm,height=8cm]{..//figures//model4.pdf}
+	\includegraphics[width=16cm,height=6cm]{..//figures//model4.pdf}
 	\caption{UAV-Assisted Vehicular Networks model.} \label{systemuav2}
 \end{figure*}
 
-The system model is shown in Fig. \ref{systemuav2}, we consider an integrated celestial and terrestrial network in which vehicles are traveling on a bidirectional highway and UAVs take off from the vicinity of the base station and cache the resources provided by the base station for download by the vehicles on the road, since it is a bidirectional lane, The base station is located at the origin of the coordinates at a height of $h_0$, and the $D_R$ represents the radius length of the coverage of the roadside cell, and in order to consider a more realistic road scenario, we model the vehicle motion as a constant velocity motion model \cite{Fiore2008TheNS}. We specify right as the positive direction and define the lane index $L=1$ as the vehicle traveling to the right and $L=-1$ as the vehicle traveling to the left. Due to the fixed location of the base station, with the passage of time, there is inevitably a direction of the vehicle will be far away from the base station, which will inevitably affect its access to information through the base station, at this time, the UAV flew toward the right side of the base station, which in turn helps the vehicle away from the base station to obtain the necessary information. In order to decide whether the vehicle on the road needs to obtain information from the drone or the base station, we based on the channel state information predicted by the first-order Markov process from the vehicle to the base station and the channel state information obtained by the vehicle and the aerial base station drone line-of-sight link to the vehicle and the two data in the center of the communication of the signal-to-noise ratio, respectively, the vehicle will select the party with the larger signal-to-noise ratio to request resources, $x_m\left[t\right]=1$ for the vehicle to select the UAV for communication, and vice versa for the vehicle to select the base station for communication.
+The system model is shown in Fig. \ref{systemuav2}, we consider an integrated celestial and terrestrial network in which vehicles travel on a bidirectional highway and UAVs take off from the vicinity of the base station and cache the resources provided by the base station for download by the vehicles on the road, since it is a bidirectional lane, The base station is located at the origin of the coordinates at a height of $h_0$, and the $D_R$ represents the radius length of the coverage of the roadside cell.To consider a more realistic road scenario, we model the vehicle motion as a constant velocity motion model \cite{Fiore2008TheNS}. We specify right as the positive direction and define the lane index $L=1$ as the vehicle travelling to the right and $L=-1$ as the vehicle travelling to the left. Due to the fixed location of the base station, with the passage of time, there is inevitably a direction of the vehicle will be far away from the base station, which will inevitably affect its access to information from the base station. In order to decide whether the vehicle on the road needs to obtain information from the drone or the base station, we based on the channel state information predicted by the first-order Markov process from the vehicle to the base station and the channel state information obtained by the vehicle and the aerial base station drone line-of-sight link to the vehicle and the two data in the middle of the communication of the signal-to-noise ratio, respectively, the vehicle will select the party with the larger signal-to-noise ratio to request resources, $x_m\left[t\right]=1$ for the vehicle to select the UAV for communication, and vice versa for the vehicle to select the base station for communication.
 
-In the time slot $t$, the horizontal coordinates of the drone are $q_U\left[t\right]=\left\{x_u\left[t\right],y_u\left[t\right]\right\}$.
-The UAV is flying unobstructed at a height of $H$ from the road surface with a maximum speed of $V_{max}$ and the initial horizontal position of the vehicle $M$ is $q_M\left[0\right]=\left\{x_0,y_0\right\}$.
+In the time slot $t$, the horizontal coordinates of the drone are $q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$.
+The UAV is flying unobstructed at a height of $H$ from the road surface with a maximum speed of $V_{max}$ and the initial horizontal position of the vehicle $M$ is $q_m\left[0\right]=\left\{\pi_0,\varpi_0\right\}$.
 Assuming that the vehicle is travelling at speed $\nu_m$ in a uniform straight line, based on the previously defined lane index it can be derived that the vehicle $M$ at the $t$th moment of the water
-The horizontal position changes to $x_m\left[t\right]=x_0+l\nu_m t$, and the horizontal position of vehicle $M$ $q_M=\left\{x_m\left[n\right],y_0\right\}$.
+The horizontal position changes to $\pi_m\left[t\right]=\pi_0+l\nu_m t$, and the horizontal position of vehicle $M$ is $q_m=\left\{\pi_m\left[n\right],\varpi_0\right\}$.
 Based on the position information we can get the distance information at the $t$th moment
-The distance between vehicle $M$ and the roadside unit at $t$ time slot is ${{d}_{m,R}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{R}} \right\|=\sqrt{{{x}_{m}}{{\left[ t \right]}^{2}}+{{y}_{0}}^{2}+{{H}^{2}}}$
-,The distance of vehicle $M$ from the UAV at $t$ time slot is $ {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{x}_{m}}\left[ t \right]-{{x}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{y}_{m}}\left[ t \right]-{{y}_{u}}\left[ t \right] \right)}^{2}}+{{H}^{2}}}\ $.
+The distance between vehicle $M$ and the roadside unit at $t$ time slot is ${{d}_{m,R}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{R}} \right\|=\sqrt{{{\pi}_{m}}{{\left[ t \right]}^{2}}+{{\varpi}_{0}}^{2}+{{H}^{2}}}$
+,The distance of vehicle $M$ from the UAV at $t$ time slot is $ {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{\pi}_{m}}\left[ t \right]-{{\pi}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{\varpi}_{m}}\left[ t \right]-{{\varpi}_{u}}\left[ t \right] \right)}^{2}}+{{H}^{2}}}\ $.
 Furthermore, some notations used in this paper are given in Table \ref{table:1}.
 \begin{comment} %原来的图的位置
-
 \begin{figure}[H] \centering
 \includegraphics[width=8cm]{model4.pdf}
 \caption{UAV-Assisted Vehicular Networks model} \label{systemuav2}
@@ -279,75 +166,73 @@ $\textrm{E}\{\cdot\}$ & \!\!\!\!\!\!\!Expected value of a random variable. \\
 \end{tabular}}
 \end{table}
 \subsection{Channel and Energy Consumption Models of V2R Communication}
-Due to the rapidity of vehicle movement, for the V2I communication between the vehicle and the roadside unit, a first-order Markov process similar to the one in the previous chapter is constructed, where the channel state information at the $t$th moment is predicted from the state prediction of the previous moment.
+Due to the fast movement of the vehicle, a first-order Markov process is constructed for the V2R communication between the vehicle and the roadside device, where the channel state information at the $t$th instant is predicted based on the state prediction at the previous instant.
 i.e.
 \begin{equation} \label{E4-1}
 h_{m}={\widetilde{h}}_{m}^2+{\hat{h}_{m}}^2,
 \end{equation}
-Here ${\widetilde{h}}_{m}$ is an observation and ${\hat{h}}_{m}$ is an exponential distribution obeying the parameter $a=\frac{1}{{L_{i,j}^k}^2({1-{\zeta_{i,j}^k}^2})}$.
+here ${\widetilde{h}}_{m}$ is an observation and ${\hat{h}}_{m}$ is an exponential distribution obeying the parameter $a=\frac{1}{{L_{i,j}^k}^2({1-{\zeta_{i,j}^k}^2})}$ \cite{Xie2020}.
 The signal-to-noise ratio (SNR) of the $m$th vehicle received by the ground base station at the $t$th time slot can be expressed as:
 \begin{equation} \label{E4-2}
 \gamma_{m,R}\left[t\right]=\frac{p_m\left[t\right]h_{m,R}\left[t\right]}{\sigma^2}
 \end{equation}
-According to Shannon's capacity theorem, the transmission rate from the vehicle to the terrestrial base station can be expressed as:
+According to Shannon's capacity theorem, the transmission rate from the vehicle to the terrestrial base station can be expressed as follows:
 \begin{equation} \label{E4-3}
-R_{m,R}\left[t\right]=\log_2{\left(1+\gamma_{m,R}\left[t\right]\right)}
+R_{m,R}\left[t\right]=\log_2{\left(1+\gamma_{m,R}\left[t\right]\right)}.
 \end{equation}
-The amount of data transmitted by the vehicle to the terrestrial base station can be expressed as.
+The amount of data transmitted from the vehicle to the terrestrial base station can be expressed as,
 \begin{equation} \label{E4-4}
 {{L}_{m,R}}={{B}_{0}}\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{x}_{m}}\left[ t \right]R_{m,R}\left[t\right],
 \end{equation}
-Where $B_0$ denotes the bandwidth and ${{x}_{m}}\left[ t \right]=1$ indicates that the vehicle has chosen to transmit data to the terrestrial base station at the current moment and ${{x}_{m}}\left[ t \right]=0$ vice versa.
-
+where $B_0$ denotes the bandwidth, ${{x}_{m}}\left[ t \right]=1$ indicates that the vehicle decides to transmit data to the terrestrial base station at this time, and ${{x}_{m}}\left[ t \right]=0$ conversely indicates that the vehicle decides to transmit data to the UAV base station at this time.
 \begin{equation} \label{E4-6}
 {{E}_{m,R}}=\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{x}_{m}}\left[ t \right]{{p}_{m}}\left[ t \right]\
 \end{equation}
 \subsection{Channel and Energy Consumption Models of V2U Communication}
-For the communication between the vehicle and the UAV without obstacle occlusion in the middle, which is a line-of-sight link, an airborne RF link model is constructed, and the channel gain from the $m$ vehicle to the UAV at $t$th time slot is
+For the communication between the vehicle and the UAV without obstacle occlusion in the middle, which is a line-of-sight link, an airborne RF link model is constructed, and the channel gain from the $m$ vehicle to the UAV at $t$th time slot is,
 \begin{equation} \label{E4-7}
 h_{m,U}\left[t\right]=\frac{\varsigma_0}{{d_{m,U}\left[t\right]}^2}
 \end{equation}
-Here $\varsigma_0$ is the power gain per unit distance of 1 metre, with the above information, the transmission rate from UAV to vehicle is
+Here the symbol $\varsigma_0$ represents the power gain per unit distance of one metre. With the aforementioned information in mind, the transmission rate from the unmanned aerial vehicle (UAV) to the vehicle can be calculated as:
 \begin{equation} \label{E4-8}
 R_{m,U}\left[t\right]=\log_2{\left(1+\gamma_{m,U}\left[t\right]\right)},
 \end{equation}
 \begin{equation} \label{E4-9}
 \gamma_{m,U}\left[t\right]=\frac{p_m\left[t\right]h_{m,U}\left[t\right]}{\sigma^2},
 \end{equation}
-where denotes the signal-to-noise ratio of the vehicle-to-UAV communication, and the amount of data transmitted by the vehicle to the UAV airborne base station can be expressed as
+the SNR of the vehicle-to-UAV communication is denoted by the symbol. The amount of data transmitted by the vehicle to the UAV airborne base station can be expressed as,
 \begin{equation} \label{E4-10}
 %{{L}_{m,U}}={{B}_{0}}\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{x}_{m}}\left[ t \right]{{\log }_{2}}\left( 1+{\gamma_{m,U}}\left[ t \right] \right)\
 {{L}_{m,U}}={{B}_{0}}\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{x}_{m}}R_{m,U}\left[t\right],
 \end{equation}
-Where $B_0$ denotes the bandwidth, the transmission energy consumption of a vehicle communicating to an airborne base station UAV is calculated as follows.
+where the bandwidth, denoted by $B_0$, is used to calculate the transmission energy consumption of a vehicle communicating with an airborne base station UAV.
 \begin{equation} \label{E4-11}
-{{E}_{m,U}}=\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{y}_{m}}\left[ t \right]{{p}_{m}}\left[ t \right]\
+{{E}_{m,U}}=\underset{m=1}{\overset{M}{\mathop{\sum }}}\,\underset{t=1}{\overset{T}{\mathop{\sum }}}\,{{y}_{m}}\left[ t \right]{{p}_{m}}\left[ t \right]\ .
 \end{equation}
-Since there is a good line-of-sight link between the UAV and the roadside unit, we believe that the data sent from the vehicle to the UAV can be efficiently transmitted to the ground base station and processed by the edge server attached to the roadside unit.
+Given the existence of a robust line-of-sight link between the UAV and the roadside unit, it is postulated that the data transmitted from the vehicle to the UAV can be efficiently transmitted to the ground base station and processed by the edge server attached to the roadside unit.
 \subsection{Vehicle Computing Task Offloading and Energy Model}
-The edge server attached to the roadside unit can perform data computational processing for the received vehicle data, so the computational offloading process requires computational resources to perform the subtasks split by the collaborative computational model. The entire computational task for the $m$th vehicle is denoted as $A_m$, and at some time slot when it splits the task to the roadside unit it is denoted as $A_{R,m}={{z}_{m}}A_m$
-Defining $f_R$ as the acceleration frequency of the CPU of the edge server of the roadside unit, the computation time can be expressed as:
+The edge server connected to the roadside unit is capable of performing data computational processing on the received vehicle data. Consequently, the computational offloading process necessitates the utilisation of computational resources to execute the subtasks divided by the collaborative computational model. The computational task for the $m$th vehicle is denoted as $A_m$. At a specific time interval, when the task is split to the roadside unit, it is denoted as $A_{R,m}={{z}_{m}}A_m$. The computation time can be expressed as:
 \begin{equation} \label{E4-5}
 t_{m}^{mec}=\frac{A_{R,m}}{f_R}% \quad m \in \mathcal{M}.
 \end{equation}
-The time taken by the vehicle to complete the task upload and computation is the sum of the fixation time when the roadside unit sends data to the edge server and the computation time, which should be less than the traveling time of the vehicle within the unit's coverage area in order to ensure the smooth transmission of the task and its computation.
 
-The computational energy consumption of the edge server after the $m$th sub-task needs to be uploaded is:
+The time taken by the vehicle to complete the task upload and computation is the sum of the fixation time, which is the period of time required for the roadside unit to send data to the edge server, and the computation time. In order to ensure the smooth transmission of the task and its computation, the computation time should be less than the travelling time of the vehicle within the unit's coverage area.
+
+The computational energy consumption of the edge server subsequent to the $m$th sub-task is as follows:
 \begin{equation} \label{E4-55}
 E_{m}^{mec}=\aleph A_{R,m}{f_R}^2% \quad m \in \mathcal{M}.
 \end{equation}
-where $\aleph > 0 $ is the effective switching capacitance of the CPU, depending on the chip architecture.
+where the effective switching capacitance of the CPU, denoted by the symbol $\aleph$, is greater than zero, this value depends on the specific chip architecture.
 \subsection{Problem Formulation}
-In this section, we formulate the energy efficiency maximisation problem for UAV-assisted two-way lane vehicles. We aim to maximise the total energy efficiency of the system by jointly optimising the transmit power of the vehicles on the two-way lanes as well as the trajectory of the UAV. First, the energy efficiency of this network communication system is defined as
-
+In this section, we formulate the energy efficiency maximisation problem for UAV-assisted two-way lane vehicles. Our objective is to maximise the total energy efficiency of the system by jointly optimising the transmit power of the vehicles on the two-way lanes as well as the trajectory of the UAV. First, we define the energy efficiency of this network communication system.
 \begin{equation} \label{E4-12}
-EE(\mathbf{P}, \mathbf{Q})=
-{\frac{{{L}_{m}}\left( \mathbf{P}, \mathbf{Q} \right)}
-{{{E}_{m}}\left( \mathbf{P} \right)}}
+EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
+{\frac{{{L}_{m}}\left( \mathbf{P}, \mathbf{Q}, \mathbf{X} \right)}
+{{{E}_{m}}\left( \mathbf{P}, \mathbf{X} \right)}}
 %EE(P,Q)=\sum\limits_{m=1}^{M}{\sum\limits_{n=1}^{N}{\frac{{{L}_{m,R}}\left[ n \right]+{{L}_{m,U}}\left[ n \right]}{{{E}_{m}}\left[ n \right]}}}
 \end{equation}
 
-Where ${{L}_{m}={L}_{m,R}+{L}_{m,U}}$ is the total amount of data sent by the vehicle to the ground base station and the aerial base station, and ${E}_{m,R}$ and ${E}_{m,U}$ are the energy consumptions of the vehicle and the ground base station aerial base station respectively. Since there will be energy consumption during the UAV flight, we will pay more attention to the energy consumption when the vehicle communicates with the UAV and consider the energy trade-off between the air base station communication and the ground base station communication, so the total power consumption of the system is expressed as ${{E}_{m}=(1-\theta){L}_{m,R} + \theta{L}_{m,U}}$, where $0\le \theta \le 1$ is a weighting factor for the energy cost of the vehicle when communicating with the UAV. When $\theta$ is large it means that we are more concerned about the energy cost of the UAV. The final system energy efficiency maximisation problem is formulated as follows:
+The total amount of data sent by the vehicle to the ground base station and the air base station is given by ${{L}_{m}={L}_{m,R}+{L}_{m,U}}$. The energy consumption of the vehicle and the air base station of the ground base station, as well as the computational energy consumption of the edge server, is included in the term ${E}_{m}$. Given that energy consumption will occur during the flight of the unmanned aerial vehicle (UAV), it is important to consider this when evaluating the energy consumption of the vehicle in communication with the UAV. Additionally, the energy trade-off between the communication with the air base station and the ground base station should be taken into account. Consequently, the total power consumption of the system is expressed as $E_m = E_m^{mec} + (1 - \theta)E_{m,R} + \theta E_{m,U}$, where $0 \le \theta \le 1$ represents the weighting coefficient of the energy cost of the vehicle when communicating with the UAV. When $\theta$ is larger, it signifies that greater consideration is given to the energy cost of the UAV. The system energy efficiency maximisation problem is formulated as follows:
 \begin{align}
 & \textbf{P}:\qquad \max_{ \mathbf{P}, \mathbf{Q}, \mathbf{X} }  EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})                \label{E4-13}\\
 \text { s.t. }
@@ -359,9 +244,7 @@ Where ${{L}_{m}={L}_{m,R}+{L}_{m,U}}$ is the total amount of data sent by the ve
 & q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
-The \eqref{E4-13-1} in the above equation represents the interruption probability constraint to ensure the quality of service by guaranteeing vehicle communication, the \eqref{E4-13-2} gives the constraint on the maximum and minimum transmit power of the vehicle, the \eqref{E4-13-3} represents the fact that the task of each vehicle at each moment in time can only be offloaded to either the UAV or the terrestrial base station, $\gamma_{th}$ is the threshold of the signal-to-noise ratio as a fixed value, \eqref{E4-13-4} represents the need to dispatch the vehicle before it leaves the roadside cell coverage area.
-before the server has to complete the computation of the completion data, and the allocation of time slot resources can be carried out by this constraint, where $t_{wired}$ is the time when the roadside unit sends data to the edge server for a fixed time. The flight trajectory of the UAV is constrained by \eqref{E4-13-5}, i.e., the actual distance flown by the UAV per second must be less than or equal to the maximum flyable distance of the UAV.
-
+The \eqref{E4-13-1} in the aforementioned equation represents the interruption probability constraint, which is designed to guarantee the quality of service by ensuring vehicle communication. The \eqref{E4-13-2} represents the constraint on the maximum and minimum transmit power of the vehicle, The equation \eqref{E4-13-3} demonstrates that the task of each vehicle at any given moment in time can only be offloaded to either the UAV or the terrestrial base station. The threshold of the signal-to-noise ratio, denoted by $\gamma_{th}$, is a fixed value, \eqref{E4-13-4} represents the necessity to dispatch the vehicle before it leaves the roadside cell coverage area. Prior to the server completing the computation of completion data and the allocation of time slot resources, this constraint can be employed. The time point $t_{wired}$ is defined as the time at which the roadside unit transmits data to the edge server for a fixed duration. The flight trajectory of the UAV is constrained by the inequality given in Equation \ref{E4-13-5}, which states that the actual distance flown by the UAV per second must be less than or equal to the maximum flyable distance of the UAV.
 \begin{comment}
 where $U$ is a more enormous execution time utility with a minor upload time cost. We formulate the robust optimization problem namely Power Control and Task Offloading Problem as a system utility maximization problem,
 \begin{subequations}\label{E13}
@@ -380,9 +263,9 @@ where $U$ is a more enormous execution time utility with a minor upload time cos
 \end{subequations}
 \end{comment}
 \section{Solving the EE maximization problem} \label{Problem solutions}
-In this section, the energy efficiency maximisation problem from the previous section is broken down into two sub-problems to be solved. For the fractional programming which is difficult to solve, it can be solved by using Dinkelbach's method to transform it into an easy-to-solve reduced-form programming. First fix the vehicle's launch power and then solve for the UAV's flight trajectory, then fix the UAV's flight trajectory and then solve for the vehicle's launch power, and so on in alternating iterations of optimisation until the algorithm converges. Noting that question \eqref{E4-13} in the previous section is a non-convex problem, we propose a joint power allocation and UAV trajectory planning scheme to deal with this problem efficiently by decoupling the problem \eqref{E4-13} into three subproblems \cite{JointTrajectory9627548}.
+In this section, the energy efficiency maximisation problem from the previous section is broken down into two sub-problems to be solved. For the fractional programming which is difficult to solve, it can be solved by using Dinkelbach's method to transform it into an easy-to-solve reduced-form programming. The vehicle's launch power should first be fixed, after which the UAV's flight trajectory can be solved. This process is then repeated for the UAV's flight trajectory, with the vehicle's launch power being fixed in each iteration. This alternating process of optimisation continues until the algorithm converges. It should be noted that question \eqref{E4-13} in the previous section is a non-convex problem. In order to deal with this problem efficiently, we propose a joint power allocation and UAV trajectory planning scheme which decouples the problem \eqref{E4-13} into three subproblems. \cite{JointTrajectory9627548}.
 \subsection{Probabilistic Constrained Approximation and Optimal Power Control Problems}
-In the previous section of the equation \eqref{E4-13-1} we found that the vehicle's power power in the probabilistic constraints in the existence of more complex coupling relationship, is difficult to solve directly, is difficult to solve.For this situation, we will use the integral transformation to transform the complex probability constraint problem into a simpler form.
+In the preceding section of the equation  \eqref{E4-13-1}, it was demonstrated that the vehicle's power in the context of probabilistic constraints is challenging to resolve directly. In this instance, the integral transformation will be employed to transform the complex probability constraint problem into a simpler form.
 
 \begin{theorem} For \eqref{E4-13-1}, the interruption probability constraints of vehicle users
 \begin{align}
@@ -430,26 +313,25 @@ Rewrite the equation \eqref{E4-17} as.
 %p_m\left[t\right]x_m\left[t\right]\ln \left(1-a \varepsilon_3\right)+(\gamma_{th}-y_m\left[t\right]p_m\left[t\right]\eta_{m,U}\left[t\right]) a \sigma^2
 %\leq a p_m\left[t\right]x_m\left[t\right]\hat{h}_{m}\left[t\right]
 \end{equation}
-The process of solving for the vehicle's transmit power requires each time slot to perform power
-rate allocation with UAV trajectory planning and multiple iterations.
-The subproblem on vehicle launch power $p_m\left[t\right]$ is described as follows:
+The process of determining the vehicle's transmit power necessitates the execution of power rate allocation procedures in conjunction with UAV trajectory planning and a multitude of iterations. The subproblem pertaining to the vehicle launch power, $p_m\left[t\right]$, is elucidated as follows:
 \begin{align}  \label{E4-19}
 \max _{ \mathbf{P}} &   ={\frac{{{L}_{m}}\left( \mathbf{P} \right)}
-{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,R}\left( \mathbf{P} \right)}}        \\
-\text { s.t. }
+{E_m^{mec} +(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
+&\text { s.t. }
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
-& \eqref{E4-18},\eqref{E4-13-4}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
+ \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
 \end{align}
-Notice that the problem \eqref{E4-19} is a fractional planning problem, and in order to transform it into a subtractive planning problem, it is proposed to solve it using the Dinkelbach method.
+
+Notice that the problem \eqref{E4-19} is a fractional planning problem. In order to transform it into a subtractive planning problem, it is proposed that it be solved using the Dinkelbach method.
 \begin{align} \notag
-F(\chi)= & \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right] %x_m\left[t\right]
+F(\chi)&=  \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right] %x_m\left[t\right]
 \log_2{\left(1+p_m\left[t\right]\eta_{m,R}^{\left\{ l \right\}}\left[t\right]\right)}                         \\       \label{E4-20}
-& \!\!\!\!\!\!+ \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right]
-\log_2{\left(1+p_m\left[t\right]\eta_{m,U}^{\left\{ l \right\}}\left[t\right]\right)}                         \\ \notag
-& \!\!\!\!\!\!-\chi \sum_{t=1}^T \sum_{m=1}^M{(1-\theta)x_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]
-+\theta y_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]}                                          \\ \notag
-\text { s.t. }
-& \eqref{E4-17},\eqref{E4-13-4}                                                           \tag{\ref{E4-20}{-1}}       \label{E4-20-1}
+& -\chi \sum_{t=1}^T \sum_{m=1}^M{(1-\theta)x_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]
++\theta y_{m}^{\left\{ l \right\}}\left[ t \right]p_m\left[t\right]}                                                           \\ \notag
+& + \sum_{t=1}^T \sum_{m=1}^M {B}_{0}y_{m}^{\left\{ l \right\}}\left[ t \right]
+\log_2{\left(1+p_m\left[t\right]\eta_{m,U}^{\left\{ l \right\}}\left[t\right]\right)}                                          \\ \notag
+&\text { s.t. }
+\eqref{E4-18},\eqref{E4-13-2}                                                           \tag{\ref{E4-20}{-1}}       \label{E4-20-1}
 %& \eqref{E4-3end1},\eqref{E4-3end4}                                       \tag{\ref{E4-5end}{-1}}                      \label{E4-5end1}
 \end{align}
 $\eta_{m,R}^{\left\{ l \right\}}\left[t\right]=h_{m,R}\left[t\right]/{\sigma^2}$ in the above equation.
@@ -510,17 +392,33 @@ We can update the Lagrange multiplier $\lambda_m$ using the subgradient method a
 \end{equation}
 where ${{G}_{{{\lambda}_{m}}}}$ represents the step size of the Lagrange multiplier and ${{G}_{{{\lambda}_{m}}}}\geq0$.
 The variable $i$ is the iteration index and the positive part of the variable $x$ is defined as $\left[x\right]^+=\max{\left[0,x\right]} $ .
-The Lagrange multipliers are updated by the subgradient method as follows
+The Lagrange multipliers are updated by the subgradient method as follows:
 \begin{equation}\label{E4-28}
 {{G}_{{{\lambda }_{m}}}}={{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}
 \end{equation}
+%\begin{comment}
+\begin{algorithm}[ht!]
+\caption{Power Allocation Algorithm}
+\label{alg:algorithm1}
+\small{\begin{algorithmic}[1]
+\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{Q}^{\left\{ l+1 \right\}}} $, set $\chi(n)=0$, $n=1$ as iteration index and $\epsilon_1 \textgreater 0$ as accuracy threshold.
+\REPEAT
+\STATE Obtain ${{p}_{n}}={{p}_{m}}{{\left[ t \right]}^{*}}$ by solving \eqref{E4-26} with $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Q}^{\left\{ l+1 \right\}}} $ and $\epsilon_1$.
+%\STATE Update
+\STATE Update $F(\chi(n))={{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)-\chi(n){{E}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)$;
+\STATE Update $F(\chi(n+1))=\frac{{{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)}{{{E}_{n}}\left( \mathbf{P_n}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)}$;
+\STATE $n=n+1$;
+\UNTIL $F(\chi(n)) \textless \epsilon_1 $.
+\STATE \textbf{Output:} $ {\mathbf{P}^{\left\{ l+1 \right\}}}=\mathbf{P(n)}$.
+\end{algorithmic}}
+\end{algorithm}
+%\end{comment}
 \subsection{UAV trajectory Optimization Design}
-The optimisation problem for the UAV trajectory can be solved as follows when the vehicle power allocation is obtained through the previous section:
-When the vehicle transmit power $\left\{ {{P_m}^{\left\{ l \right\}}} \right\}$ and the time slot allocation for each iteration are given, the optimisation with respect to the UAV trajectory is described as follows:
-
+The optimisation problem for the UAV trajectory can be solved as follows when the vehicle power allocation is obtained through the previous section.
+When the vehicle transmit power, denoted by $\left\{ {{P_m}^{\left\{ l \right\}}} \right\}$ and the time slot allocation for each iteration are given, the optimisation with respect to the UAV trajectory is described as follows:
 \begin{align} \label{E4-29}
 \max _{ \mathbf{Q}} &   ={\frac{{{L}_{m,R}+{{L}_{m,U}}\left( \mathbf{Q} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
 \text { s.t. }
 & \eqref{E4-13-2}                                                       \tag{\ref{E4-29}{-1}}           \label{E4-29-1}
 \end{align}
@@ -529,10 +427,8 @@ the，
 {{L}_{m,U}}\left( \mathbf{Q} \right)={{\log }_{2}}\left( 1+\frac{\varphi _{m,U}^{\{l\}}\left[ t \right]}{\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|+{{H}^{2}}} \right)\
 \end{equation}
 
-Here ${\varphi _{m,U}^{\{l\}}\left[ t \right]}=\frac{p_{_{m}}^{\{l\}}\left[ t \right]\varsigma_0}{\sigma^2}$.
-We note that the numerator part of the objective function of problem \eqref{E4-29} is non-concave, and propose to approximate the objective function by a continuous convex approximation method. In
-${{q}^{\left\{ l \right\}}}\left[t\right]$
-the local point of the first order Taylor expansion of the logarithmic form of the numerator part of Eq. \eqref{E4-29} is performed as follows:
+Here, ${\varphi _{m,U}^{\{l\}}\left[ t \right]}=\frac{p_{_{m}}^{\{l\}}\left[ t \right]\varsigma_0}{\sigma^2}$.
+The numerator part of the objective function of problem \eqref{E4-29} is non-concave. We propose to approximate it by a continuous convex approximation method. In ${{q}^{\left\{ l \right\}}}\left[t\right]$, the first-order Taylor expansion of the logarithmic form of the numerator part of Eq. \eqref{E4-29} is performed as follows:
 \begin{align} \label{E4-31}
 &{{\log }_{2}}\left( 1+\frac{\varphi _{m,U}^{\{l\}}\left[ t \right]}{\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|+{{H}^{2}}} \right)\ \\    \notag
 &\geq\left(\omega _{_{m}}^{\{l\}}\left[ t \right] {{\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|}^{2}}-{{\left\| {{q}_{M}}\left[ t \right]-q_{U}^{\{l\}}\left[ t \right] \right\|}^{2}}+\rho _{m}^{\{l\}}\left[ t \right] \right) \\  \notag
@@ -549,56 +445,71 @@ and,
 \end{equation}
 
 The problem \eqref{E4-29} is further transformed into:
-
 \begin{align} \label{E4-34}
 \max _{ \mathbf{Q}}  &  ={\frac{{{L}_{m,R}+\sum\limits_{t=1}^{T}{\sum\limits_{m=1}^{M}{{{B}_{0}}}}y_{m}^{\left\{ l \right\}}\left[ t \right]R_{m,U}^{\{l\}}(\mathbf{q}[t])}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
 \text { s.t. }
 & \eqref{E4-13-2}                                                       \tag{\ref{E4-34}{-1}}           \label{E4-34-1}
 \end{align}
 At this point, the non-convex part of the problem \eqref{E4-29} is transformed into a convex solvable form that can be solved using the convex optimisation toolbox CVX.
+%\begin{comment}
+\begin{algorithm}[ht!]
+\caption{SCA-Based Algorithm for Trajectory Design}
+\label{alg:algorithm2}
+\small{\begin{algorithmic}[1]
+\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{P}^{\left\{ l \right\}}} $, set $n=1$ as iteration index and $\epsilon_2 \textgreater 0$ as accuracy threshold.
+\REPEAT
+\STATE Obtain ${\mathbf{Q}_{n}}={{q}_{m}}{{\left[ t \right]}^{*}}$ by solving \eqref{E4-34} with $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{P}^{\left\{ l \right\}}} $ and $\epsilon_1$.
+%\STATE Update
+%\STATE Update $F(\chi(n))={{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)-\chi(n){{E}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)$;
+\STATE Update the local points at the $n$th iteration as $R_{m,U}^{\{l\}}(\mathbf{q}[t])=R_{m,U}^{\{l\}}(\mathbf{Q}[n])$; 
+\STATE $n=n+1$;
+\UNTIL Converge to the prescribed accuracy $\epsilon_2$.
+\STATE \textbf{Output:} $ {\mathbf{Q}^{\left\{ l+1 \right\}}}=\mathbf{Q(n)}$.
+\end{algorithmic}}
+\end{algorithm}
+%\end{comment}
 \subsection{Subslot Resource Allocation Problems}
 From the inequality \eqref{E4-13-4} with $A_{R,m}={{z}_{m}}A_m$, we learn that the allocation of time slots is constrained by the server's computation time, and thus can be easily obtained:
 \begin{equation} \label{E4-35}
 {{z}_{m}}=\underset{t=1}{\overset{T}{\mathop{\sum }}}{{x}_{m}}\left[ t \right]   ,\qquad\forall \!\!\!\!\!\! \quad m \in \mathcal{M}
 \end{equation}
-That is, all the time slots for the vehicle to communicate to the terrestrial base station add up to less than the vehicle is within the coverage area of the base station. When the power and trajectory {} are given, the subproblem on allocating time slots is as follows:
+This implies that the total duration of all time slots required for the vehicle to communicate with the terrestrial base station is less than the vehicle's presence within the base station's coverage area. Once the power and trajectory parameters have been specified, the subproblem of time slot allocation can be formulated as follows:
 \begin{align} \label{E4-36}
 \max _{ \mathbf{X},\mathbf{Y}}  &  ={\frac{{{L}_{m,R}\left( \mathbf{X} \right)+{{L}_{m,U}}\left( \mathbf{Y} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
 \text { s.t. }
 & \eqref{E4-13-3},\eqref{E4-13-4}                                                        \tag{\ref{E4-36}{-1}}           \label{E4-36-1}
 \end{align}
 
-This is a fractional programming problem, and we can use a Dinkelbach method similar to that used for problem \eqref{E4-19} to transform the original problem into an easily solvable reduced-form programming, i.e., equation \eqref{E4-36} is equivalent to a linear programming problem that can be solved iteratively using the Convex Optimisation Toolbox (CVX).
+This is a fractional programming problem. We can use a Dinkelbach method to transform it into an easily solvable reduced-form programming problem. Equation \eqref{E4-36} is equivalent to a linear programming problem that can be solved iteratively using the Convex Optimisation Toolbox (CVX).
 \subsection{Overall Algorithm Design}
-The original problem \eqref{E4-13} is divided into three subproblems which have been solved separately in the above subsections. They are then solved alternatively using an alternating iteration method, which is shown in the following in Algorithm~\ref{alg:algorithm1}.
+The original problem is divided into three subproblems, which are solved separately in the above subsections. They are then solved alternatively using an alternating iteration method, shown in Algorithm~\ref{alg:algorithm4}.
 \begin{algorithm}[ht]
 \caption{Power allocation and UAV trajectory optimization scheme based on Dinkelbach's method Algorithm}
-\label{alg:algorithm1}
+\label{alg:algorithm4}
 \small{\begin{algorithmic}[1]
-\STATE \textbf{Input:} Set the maximum number of iterations $\mathcal{L}_{max}$, and the iterative index $l=0$.
-%\STATE \textbf{Initialization:} $\mathbf{P}^i[n], \mathbf{q}^i[n], \boldsymbol{\Upsilon}_k^i[n]$,
+\STATE Initialize variables $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$, $\epsilon_3 \textgreater 0$ and let $l=1$.
 \REPEAT
-%\STATE \textbf{Repeat:}
-\STATE Initialize the feasible points $\lambda$, power $P$, trajectory $Q$ and time slot $X$.
-\STATE Obtain $ {{p}_{m}}{{\left[ t \right]}^{*}}$ by solving \eqref{E4-26}.
-\STATE Solve the $ {{Q}_{m}}{{\left[ t \right]}^{*}}$ based on \eqref{E4-34}.
-\STATE Solve the $ {{X}_{m}}{{\left[ t \right]}^{*}}$ based on \eqref{E4-36}.
-\STATE $l=l+1$.
-\UNTIL algorithm converges synchronously to the optimal result or $l\geq\mathcal{T}_{max}$
+\STATE Calculate the UAV's trajectory $\left\{ {\mathbf{Q_m}^{\left\{ l+1 \right\}}} \right\}$ for given $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ by solving Algorithm~\ref{alg:algorithm2};
+\STATE Get the optimal power allocation $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ for given $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ by solving Algorithm~\ref{alg:algorithm1};
+%\STATE Solve the $ {{Q}_{m}}{{\left[ t \right]}^{*}}$ for given $ {{p}_{m}}{{\left[ t \right]}^{*}}$ and $ {{X}_{m}}{{\left[ t \right]}^{*}}$ based on \eqref{E4-34}
+\STATE Solve the subslot scheduling $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ for given $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$ based on \eqref{E4-36};
+\STATE Update $l=l+1$.
+\UNTIL Converge to the prescribed accuracy $\epsilon_3$.
 \STATE \textbf{Output:} $l$,$ {{p}_{m}}{{\left[ t \right]}^{*}}$,$ {{Q}_{m}}{{\left[ t \right]}^{*}}$,$ {{X}_{m}}{{\left[ t \right]}^{*}}$.
 \end{algorithmic}}
 \end{algorithm}
 
 \begin{remark}
-Computational complexity of Algorithm~\ref{alg:algorithm1} is analyzed as follows.
+The computational complexity of algorithm~\ref{alg:algorithm4} is analysed as follows. First, we focus on the inner loop. In step 3, the transformed UAV trajectory design problem is a linear program with $T$ variables, so the complexity of step 3 is $\mathcal{O}\left(T^3 \log \left(1 / \epsilon_2 \right)\right)$. In step 4, the complexity of Dinkelbach's method is $\mathcal{O}\left(1/\epsilon_1^3 \log \left(MT \right)\right)$ \cite{Crouzeix1991}, while each convex problem is solved by the Lagrange dual method with a complexity order of $\mathcal{O}\left(MT \log \left(1 / \epsilon_3 \right)\right)$. Similarly to step 4, Dinkelbach's method is used to solve the subslot scheduling problem in step 5, and the complexity to solve a linear problem at each iteration is $\mathcal{O}\left((MT)^3 \right)$. We also assume that the BCD-based algorithm converges after $L_c$ rounds in the outer loop. The total complexity of algorithm~\ref{alg:algorithm4} is $\mathcal{O}\left(L_c\left((T^3 \log \left(1 / \epsilon_2 \right)+MT/ \epsilon_1^3 \log \left(MT \right)\log \left(1/\epsilon_1 \right)+ \\ \left((MT)^3 /\epsilon_1^3\right) \log \left(MT \right)\right) \right)$
+%$\mathcal{O}\left(L_c(T^3 \log \left(1 / \epsilon_2 \right)+MT/ \epsilon_1^3 \log \left(MT \right)\log \left(1/\epsilon_1 \right)+ \\ (\left((MT)^3 \right))/\epsilon_1^3 \log \left(MT \right)) \right)$.
 \end{remark}
 \section{Simulation results and performance analysis}\label{Simulation results and performance analysis}
-In this subsection, in order to test the effectiveness of the algorithms and to evaluate their performance, we provide numerical simulation results that mainly evaluate the performance of the joint optimisation of the UAV trajectory and the channel power allocation scheme, and present two schemes, the UAV hovering over a fixed position scheme and the way of fixing the UAV trajectory, and compare our scheme with them. In the hovering scheme, the UAV hovers above the fixed position to simplify the computational complexity, in which we simulate a two-way lane with a length of 3000 m and a width of 30 m. Unless otherwise specified, six vehicles are selected for the simulation on the road, in which each vehicle travels in a straight line at a constant speed with different speeds. The main parameters in the simulation are shown in Table \ref{table:2}.
+In this section, we test the algorithms and evaluate their performance using numerical simulations. We mainly evaluate the performance of the joint optimisation of the UAV trajectory and the channel power allocation scheme. We present two schemes: the UAV hovering over a fixed position scheme and the way of fixing the UAV trajectory. We compare our scheme with them. In the hovering scheme, the UAV hovers above a fixed position to reduce the computational complexity. We simulate a two-way lane with a length of 3000 m and a width of 30 m. We select six vehicles for the simulation on the road, each travelling in a straight line at a constant speed with different speeds. The main parameters in the simulation are shown in Table \ref{table:2}.
 \begin{figure*}[!t]\centering
 	\includegraphics[width=16cm,height=8cm]{..//figures//trajectory.eps}
-	\caption{Dual-arm robotic system.}
+	\caption{UAV’s trajectory for different $T$.}
     \label{UAV Trajectory Optimisation}
 \end{figure*}
 
@@ -619,7 +530,7 @@ Average speed of vehicle  & 30 m/s \\\hline
 Mean of background noise $(\sigma^2)$  &  -30 dBm  \\\hline
 Maximum transmitter power $(p_{i,max})$ & 0.05 W \\\hline
 threshold parameter &${10}^{-6}$ \\\hline
-UAV ?ying altitude ($H$)  &100 m  \\\hline
+UAV flying altitude ($H$)  &100 m  \\\hline
 Number of slots   ($T$)   &80 \\\hline
 RSU altitude ($h_0$) &5 m  \\\hline
 Bandwidth of VUE channel ($W$) &10 MHz \\\hline
@@ -632,17 +543,14 @@ Log-normal shadowing standard deviation &10 dB
 \end{tabular}}}
 \end{table}
 
-Firstly, we show the optimisation of the UAV trajectory when the total energy efficiency of the system is maximised for different time slots as shown in Fig. \ref{UAV Trajectory Optimisation}, where the black arrow represents the vehicle travelling to the right as the positive direction, and we stipulate that the UAV flies from a fixed starting point to a fixed end point.
-We find that when the task time is sufficient, the UAV will tend to stick close to the vehicle that is far away from the base station to serve it.Figure \ref{UAVspeed} shows the speed of the drone at each time slot, when the vehicle needs drone assistance, the drone will slow down or even hover to match the vehicle speed for it.
+Firstly, we show how to optimise the UAV trajectory to maximise the system's energy efficiency for different time slots. The black arrow represents the vehicle travelling to the right. We stipulate that the UAV flies from a fixed starting point to a fixed end point. When there's enough time, the UAV will stay close to the far vehicle to help it. Figure \ref{UAVspeed} shows the drone's speed at each time slot. When the vehicle needs help, the drone slows down or hovers to match the vehicle's speed.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//UAVspeed.eps}
-\caption{UAVspeed}
+\caption{UAV speed with different $T$}
 \label{UAVspeed}
 \end{figure}
 \begin{comment}
-
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm,height=8cm]{figures//chap4//trajectory.eps}   % width=16cm 大字体
@@ -651,33 +559,33 @@ We find that when the task time is sufficient, the UAV will tend to stick close 
 \end{figure}
 \end{comment}
 
-After verifying the performance of the optimised trajectory of the algorithm, the performance level of the proposed scheme under different parameters is further verified. Fig. \ref{diffthet} shows that when using the different $\theta$, they have different effects on the energy efficiency of the system at different time slots when using different $\theta$. The $\theta$ is a coefficient that describes the relative energy cost of the vehicle task at the drone end versus the roadside unit end. When $\theta$ changes, the system utility also changes. Higher parameters represent a greater focus on the UAV's flight energy consumption. The overall system energy efficiency decreases as the UAV flight time $T$ increases, as longer time is sufficient for the UAV to traverse more vehicles to obtain better channels and save energy. In addition, we find that a lower $\theta$ leads to higher energy efficiency. This is because when we consider the UAV's energy consumption to be relatively important, vehicles tend to increase their power to transmit more
-data, thus increasing energy efficiency.
+After testing the optimised algorithm, we tested the scheme with different parameters. Fig. \ref{UAV Trajectory Optimisation} shows that different $\theta$ affect energy efficiency at different times. $\theta$ is a coefficient that compares energy costs at the drone and roadside units. When $\theta$ changes, the system utility also changes. Higher parameters mean more focus on the UAV's flight energy consumption. The overall system energy efficiency decreases as the UAV flight time $T$ increases. Longer time allows the UAV to traverse more vehicles to obtain better channels and save energy. Lower $\theta$ leads to higher energy efficiency. This is because when we consider the UAV's energy consumption to be important, vehicles increase their power to transmit more data, thus increasing energy efficiency.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//difftheta.eps}
-\caption{diffthet$\theta$}
+\caption{EE versus collection time $T$ with different $\theta$}
 \label{diffthet}
 \end{figure}
 
-In Fig. \ref{DifferentSchemes}, we compare the energy efficiency performance of the three UAV communication schemes, OPTS, FPHS and FTS, under different flight cycles T . From the overall trend, the energy efficiency of each scheme gradually stabilises as the UAV's flight time increases, which is due to the fact that the UAV has more sufficient time to transmit data at the right power. Further observation reveals that the two schemes, OPTS and FPHS, are suitable for different scenarios. Despite the higher complexity of the OPTS algorithm, it is able to achieve higher energy efficiency in a shorter flight cycle, showing better timeliness. This means that OPTS is an advantageous choice in situations where fast response is required. Comparatively, when the flight cycle is longer, the energy efficiency of FPHS, although slightly inferior to OPTS, is simpler to implement due to its lower algorithmic complexity. Therefore, in environments with less stringent time requirements, FPHS may be a more economical solution. As for the FPHS solution, its energy efficiency performance is relatively poor. This is due to the fact that the UAV hovers at a fixed position, resulting in a long distance from the ground vehicle, which affects the efficiency of data transmission. In addition, as the flight cycle increases, the energy efficiency gap between OPTS and FPHS gradually narrows. This is mainly due to the fact that when the flight cycle is short, the data transmission time in the OPTS is limited and the vehicle needs to send information to the UAV within a limited time, which leads to a decrease in energy efficiency. Whereas, as the flight cycle increases, the OPTS has more time to optimise the data transmission process, which leads to improved energy efficiency.
+Fig. \ref{DifferentSchemes} compares the energy efficiency of three UAV communication schemes, OPTS, FPHS and FTS, under different flight cycles T. As the UAV's flight time increases, each scheme's energy efficiency gradually stabilises. This is because the UAV has more time to transmit data at the right power. Further observation shows that the two schemes, OPTS and FPHS, are suitable for different scenarios. OPTS is better for situations where fast response is required. If the flight cycle is longer, FPHS is simpler to implement than OPTS. Therefore, in environments with less time requirements, FPHS may be a more economical solution. However, FPHS is less energy efficient. The UAV hovers at a fixed position, which affects the efficiency of data transmission. As the flight cycle increases, the energy efficiency gap between OPTS and FPHS narrows. When the flight cycle is short, the OPTS has less time to send data to the UAV, so it uses less energy. As the flight cycle increases, the OPTS has more time to send data, so it uses more energy.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//DifferentSchemes.eps}
-\caption{DifferentSchemes}
+\caption{EE of different schemes versus collection time $T$}
 \label{DifferentSchemes}
 \end{figure}
 
-The following figure shows the comparison of the three schemes with different parameters $\theta$.
+%The following figure shows the comparison of the three schemes with different parameters $\theta$.
+
+
+Fig. \ref{DifferentSchemesANDdifftheta} shows how the energy efficiency of three UAV communication scenarios, OPTS, FHCS and FTS, varies with the parameter $\theta$. The parameter $\theta$ reflects the weighting of the relative energy cost between the UAV's flight energy consumption and its communication energy consumption. When $\theta$ is large, the UAV's flight energy consumption is the main factor in overall energy consumption. The figure shows that as $\theta$ changes, the energy efficiency of all three scenarios decreases and reaches a low point at $\theta=0.8$. It then increases slightly.
+When $\theta$ is small, the UAV's flight energy consumption is low, so it can transmit data more. This improves energy efficiency. When $\theta$ is large, the UAV's flight energy consumption is high, so it can't transmit data, which affects energy efficiency. The parameter $\theta$ affects the energy efficiency of the three UAV communication schemes by influencing how much energy is used for flight and communication. In practice, we need to choose the right $\theta$ value for each situation to make UAV communication more efficient.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//DifferentSchemesANDdifftheta.eps}
-\caption{DifferentSchemesANDdifftheta$\theta$}
+\caption{EE of different schemes with different $\theta$}
 \label{DifferentSchemesANDdifftheta}
 \end{figure}
-
-In Fig. \ref{DifferentSchemesANDdifftheta}, we explore how the energy efficiency of three UAV communication scenarios, OPTS, FHCS and FTS, varies with the parameter $\theta$. The $\theta$ is a key parameter that reflects the weighting of the relative energy cost between the UAV's flight energy consumption and its communication energy consumption. When the value of $\theta$ is large, the UAV's flight energy consumption becomes the dominant factor in the overall energy consumption. Observing the trend in the figure, we can find that with the change of $\theta$, the energy efficiency of all the three scenarios undergoes a significant decreasing process and reaches the lowest point at $\theta=0.8$. Subsequently, the energy efficiency shows a slightly increasing trend.
-When $\theta$ is small, it means that the UAV's flight energy consumption accounts for a relatively low percentage of the overall energy cost. As a result, the UAV can transmit data more aggressively, which improves the overall energy efficiency. On the contrary, when $\theta$ is large, the UAV's flight energy consumption becomes dominant, which restricts its ability to transmit data, and thus affects energy efficiency. In summary, the parameter $\theta$ affects the energy efficiency performance of the three UAV communication schemes by influencing the energy cost distribution between the UAV's flight energy consumption and communication energy consumption. In practical applications, we need to choose the appropriate $\theta$ value according to specific scenarios and requirements in order to optimise the communication efficiency of UAVs.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//twoway.eps}
@@ -685,7 +593,7 @@ When $\theta$ is small, it means that the UAV's flight energy consumption accoun
 \label{comparetwoway}
 \end{figure}
 
-Finally Fig. \ref{comparetwoway} compares the two-way lane scenario with the one-way lane scenario, which brings higher energy efficiency due to the fact that the two-way lane scenario can utilize the synergy between the roadside unit and the airborne base station to a greater extent, given that the total number of vehicles on the road is the same.
+Fig. \ref{comparetwoway} compares the two-way lane scenario with the one-way lane scenario. The two-way lane scenario is more energy efficient because it can use the roadside unit and airborne base station together more effectively.
 \begin{comment}
 
 \begin{itemize}
@@ -697,7 +605,7 @@ Finally Fig. \ref{comparetwoway} compares the two-way lane scenario with the one
 
 \end{comment}
 \section{Conclusions}\label{Conclusions}
-In this paper, we propose an efficient air-ground integrated UAV-assisted vehicular communication scheme for two-way lanes. In this paper, we propose a basic balancing scheme between the throughput during vehicular communication and the energy consumption for communication and UAV flight. By optimising the vehicle's transmit power and the UAV's flight trajectory, as well as the allocation of time slots, the energy efficiency of the system can be maximised, and the quality of service of vehicular communication is guaranteed by probabilistic constraints, which can be found to affect the energy efficiency of the system by adjusting different parameters $\theta$. By comparing different UAV flight scenarios, it can be seen that the UAV scenario with optimised trajectory is the best. At the same time, this chapter also studies the more realistic scenario of directional lanes roadside units and servers are often deployed on one side of the road, so in the two-way lane scenario, there is always always a vehicle will be driving away from the roadside unit, thus causing communication difficulties, we use the drone to assist its communication can be a better solution to the difficulty.
+In this paper, we propose an efficient air-ground integrated UAV-assisted vehicular communication scheme for two-way lanes. It also proposes a basic balancing scheme between throughput and energy consumption. By adjusting the vehicle's transmit power and the UAV's flight trajectory, as well as the allocation of time slots, the energy efficiency of the system can be maximised. This also ensures the quality of service of vehicular communication. Different parameters affect the energy efficiency of the system. By comparing different UAV flight scenarios, it can be seen that the UAV scenario with an optimised trajectory is the best. This chapter also looks at a more realistic scenario where roadside units and servers are often on one side of the road. In this case, vehicles driving away from the roadside unit cause communication difficulties. Using a drone to assist in communication could be a solution.
 
 %\section*{Acknowledgment}
 %This work is supported partly by National Natural Science Foundation of China under Grant 62273298, 62273295.

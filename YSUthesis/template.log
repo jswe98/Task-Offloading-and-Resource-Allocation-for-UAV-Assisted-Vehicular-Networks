@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2024.5.5)  20 MAY 2024 22:19
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2024.5.5)  25 MAY 2024 10:33
 entering extended mode
 **template.tex
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthes
@@ -2352,32 +2352,32 @@ Requested font "cmmi9" at 9.03pt
 Requested font "cmmi6" at 6.0pt
  -> cmmi6
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.03014pt on input line 365.
+(Font)              scaled to size 9.03014pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=0;" at 9.03014pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 365.
+(Font)              scaled to size 6.00009pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 6.00009pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 365.
+(Font)              scaled to size 5.00008pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.00008pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.02985pt on input line 365.
+(Font)              scaled to size 9.02985pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=0;" at 9.02985pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 365.
+(Font)              scaled to size 5.99991pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 5.99991pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
 LaTeX Font Info:    Font shape `EU1/xits-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 365.
+(Font)              scaled to size 4.99992pt on input line 364.
 Requested font "[xits-math.otf]/ICU:script=math;language=DFLT;mapping=tex-text;
 +ssty=1;" at 4.99992pt
  -> D:/CTEX/MiKTeX/fonts/opentype/public/xits/xits-math.otf
@@ -2606,7 +2606,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
 Here is how much of TeX's memory you used:
  34104 strings out of 430478
  644372 string characters out of 3191503
- 735812 words of memory out of 3000000
+ 735822 words of memory out of 3000000
  36584 multiletter control sequences out of 15000+200000
  18016 words of font info for 175 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191

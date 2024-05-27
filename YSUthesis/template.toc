@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.3.2}求解下层子问题}{12}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}求解上层子问题}{14}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}算法与仿真验证}{15}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}斯塔克尔伯格博弈的迭代算法}{15}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Stackelberg博弈的迭代算法}{15}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}仿真分析}{15}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}本章小结}{19}{section.2.5}
 \contentsline {chapter}{\numberline {第\nobreakspace {}3\ignorespaces \nobreakspace {}章\hspace {0.3em}}云边计算辅助的车联网络功率控制与资源分配}{20}{chapter.3}

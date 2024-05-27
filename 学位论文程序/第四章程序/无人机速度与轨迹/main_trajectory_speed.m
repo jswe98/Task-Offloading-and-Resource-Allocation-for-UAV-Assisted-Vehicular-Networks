@@ -144,6 +144,7 @@ bound2=T;
 % Total_theta(thetatheta,:)=0.01*sum(Total_T,1)
 Total_theta(programmatic,:)=0.01*sum(Total_T,1);
 % end %这个end表示最外面一个for循环的对应
+
 figure;
 zihao=24;
 hold on;

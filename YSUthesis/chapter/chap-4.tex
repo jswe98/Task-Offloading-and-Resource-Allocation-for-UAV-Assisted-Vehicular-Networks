@@ -130,7 +130,7 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 \end{equation}
 式中的${{L}_{m}={L}_{m,R}+{L}_{m,U}}$ 是车辆向地面基站与空中基站发送的总的数据量，${E}_{m}$ 包括车辆与地面基站空中基站的能量消耗与边缘服务器的计算能耗。
 由于无人机飞行过程中会有能量的消耗，因此应更加关注车辆与无人机通信时的能耗问题，并考虑空中基站通信与地面基站通信的能量权衡，
-因此系统的总功耗表示为${{E}_{m}=E_{m}^{mec}+(1-\theta){L}_{m,R}+\theta{L}_{m,U}}$，其中$0\le \theta \le 1$是车辆与无人机通信时的能量成本的权重系数。
+因此系统的总功耗表示为${{E}_{m}=E_{m}^{mec}+(1-\theta){E}_{m,R}+\theta{E}_{m,U}}$，其中$0\le \theta \le 1$是车辆与无人机通信时的能量成本的权重系数。
 当$\theta$ 较大时意味着更加关注无人机的能耗成本。
 最终的系统能效最大化问题如下表述：
 \begin{align}
@@ -152,7 +152,7 @@ EE(\mathbf{P}, \mathbf{Q}, \mathbf{X})=
 其中$t_{wired}$ 是路边单元向边缘服务器发送数据时的
 固定时间。无人机的飞行轨迹受到 \eqref{E4-13-5} 的约束，即无人机每秒的实际飞行距离要小于等于无人机最大可飞行距离。
 \section{能效最大化问题求解}\label{section4-3}
-在本节中，上一章节的能效最大化问题会分解为两个子问题进行求解。对于难以求解的分式规划，可以使用丁克尔巴赫方法
+在本节中，上一章节的能效最大化问题会分解为两个子问题进行求解。对于难以求解的分式规划，可以使用Dinkelbach方法
 将其转化为易于求解的减式规划进行求解。首先固定车辆的发射功率后求解无人机的飞行轨迹，然后固定无人机的飞行轨迹再求解
 车辆的发射功率，如此进行交替迭代优化，直至算法收敛。注意到前一节中问题\eqref{E4-13} 是一个非凸的问题，本节提出了
 一种联合功率分配与无人机轨迹规划的方案来有效地处理这个问题，将问题\eqref{E4-13} 解耦成三个子问题 \supercite{JointTrajectory9627548}。
@@ -214,14 +214,14 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 关于车辆发射功率$p_m\left[t\right]$ 的子问题如下描述：
 \begin{align}  \label{E4-19}
 \max _{ \mathbf{P}} &   ={\frac{{{L}_{m}}\left( \mathbf{P} \right)}
-{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,R}\left( \mathbf{P} \right)}}        \\
+{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
 &\text { s.t. }
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
  \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
 \end{align}
 注意到问题 \eqref{E4-19} 是一个分式规划问题，
 %\textcolor[RGB]{202,12,22}{该该算法的主要思想是将原始非线性规划问题转化为一个系列的线性规划问题，然后使用线性规划的解法来逼近非线性规划问题的解。具体步骤可能因问题而异，但总体上，该方法尝试通过不断调整问题中的某些参数来逐步优化目标函数。}
-为了将其转化为减式规划问题，拟采用丁克尔巴赫方法求解，通过引入一个辅助变量，将原始的非线性规划问题转化为线性规划问题。然后，通过逐步迭代更新辅助变量的值，直到满足特定的收敛条件，从而找到目标函数的最优解。
+为了将其转化为减式规划问题，拟采用Dinkelbach方法求解，通过引入一个辅助变量，将原始的非线性规划问题转化为线性规划问题。然后，通过逐步迭代更新辅助变量的值，直到满足特定的收敛条件，从而找到目标函数的最优解。
 问题 \eqref{E4-19} 转化为：
 \begin{align} \notag
 F(\chi)&=  \max _{ \mathbf{P}} \sum_{t=1}^T \sum_{m=1}^M {B}_{0}x_{m}^{\left\{ l \right\}}\left[ t \right] %x_m\left[t\right]
@@ -296,7 +296,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 \text { s.t. }
 & \eqref{E4-13-3},\eqref{E4-13-4}                                                        \tag{\ref{E4-36}{-1}}           \label{E4-36-1}
 \end{align}
-这是一个分式规划的问题，可以使用与问题 \eqref{E4-19} 类似的丁克尔巴赫方法将原问题转化为
+这是一个分式规划的问题，可以使用与问题 \eqref{E4-19} 类似的Dinkelbach方法将原问题转化为
 易于求解的减式规划，即式子 \eqref{E4-36} 等价于一个可以使用凸优化工具箱(CVX)迭代求解的线性规划问题。
 \subsection{无人机飞行轨迹规划问题}\label{section4-3-2}
 %\textcolor[RGB]{202,12,22}{ }
@@ -368,7 +368,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
 %\begin{tabular}{lcr}
     \toprule
-    \zihao{-5}算法4-3 基于丁克尔巴赫方法的功率分配与无人机轨迹优化方案                  \\
+    \zihao{-5}算法4-3 基于Dinkelbach方法的功率分配与无人机轨迹优化方案                  \\
     \midrule
    \zihao{-5} Step1：开始。                                                    \\
     \zihao{-5}  Step2：初始化功率矩阵$P$，无人机轨迹$Q$ 和时隙资源的分配$X$       \\

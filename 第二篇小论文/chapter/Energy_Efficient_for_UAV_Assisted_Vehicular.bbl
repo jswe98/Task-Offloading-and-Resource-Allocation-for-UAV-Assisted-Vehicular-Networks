@@ -146,9 +146,20 @@ M.~Fiore and J.~H\"{a}rri, ``The networking shape of vehicular
   mobility.''\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA:
   Association for Computing Machinery, 2008.
 
+\bibitem{Xie2020}
+Y.~Xie, Z.~Liu, K.~Y. Chan, and X.~Guan, ``Energy-spectral efficiency
+  optimization in vehicular communications: Joint clustering and pricing-based
+  robust power control approach,'' \emph{IEEE Transactions on Vehicular
+  Technology}, vol.~69, no.~11, pp. 13\,673--13\,685, 2020.
+
 \bibitem{JointTrajectory9627548}
 Y.~Liang, L.~Xiao, D.~Yang, Y.~Liu, and T.~Zhang, ``Joint trajectory and
   resource optimization for {UAV-Aided} {Two-Way} relay networks,'' \emph{IEEE
   Transactions on Vehicular Technology}, vol.~71, no.~1, pp. 639--652, 2022.
+
+\bibitem{Crouzeix1991}
+J.-P. Crouzeix and J.~A. Ferland, ``Algorithms for generalized fractional
+  programming,'' \emph{Mathematical Programming}, vol.~52, no.~1, pp. 191--207,
+  1991.
 
 \end{thebibliography}
