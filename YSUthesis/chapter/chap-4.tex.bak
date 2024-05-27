@@ -214,7 +214,7 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 关于车辆发射功率$p_m\left[t\right]$ 的子问题如下描述：
 \begin{align}  \label{E4-19}
 \max _{ \mathbf{P}} &   ={\frac{{{L}_{m}}\left( \mathbf{P} \right)}
-{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,R}\left( \mathbf{P} \right)}}        \\
+{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
 &\text { s.t. }
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
  \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}

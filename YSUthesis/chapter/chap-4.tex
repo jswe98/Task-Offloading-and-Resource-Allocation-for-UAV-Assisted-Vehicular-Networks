@@ -214,7 +214,7 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 关于车辆发射功率$p_m\left[t\right]$ 的子问题如下描述：
 \begin{align}  \label{E4-19}
 \max _{ \mathbf{P}} &   ={\frac{{{L}_{m}}\left( \mathbf{P} \right)}
-{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
+{E_m^{mec} +(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
 &\text { s.t. }
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
  \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
@@ -292,7 +292,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 车辆在基站的覆盖范围内。当功率 和轨迹 {}给定时，关于分配时隙的子问题如下：
 \begin{align} \label{E4-36}
 \max _{ \mathbf{X},\mathbf{Y}}  &  ={\frac{{{L}_{m,R}\left( \mathbf{X} \right)+{{L}_{m,U}}\left( \mathbf{Y} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
 \text { s.t. }
 & \eqref{E4-13-3},\eqref{E4-13-4}                                                        \tag{\ref{E4-36}{-1}}           \label{E4-36-1}
 \end{align}
@@ -306,7 +306,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 给定后，关于无人机的轨迹的优化描述如下：
 \begin{align} \label{E4-29}
 \max _{ \mathbf{Q}} &   ={\frac{{{L}_{m,R}+{{L}_{m,U}}\left( \mathbf{Q} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
 \text { s.t. }
 & \eqref{E4-13-5}                                                       \tag{\ref{E4-29}{-1}}           \label{E4-29-1}
 \end{align}
@@ -334,7 +334,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 问题 \eqref{E4-29} 进一步转化为：
 \begin{align} \label{E4-34}
 \max _{ \mathbf{Q}}  &  ={\frac{{{L}_{m,R}+\sum\limits_{t=1}^{T}{\sum\limits_{m=1}^{M}{{{B}_{0}}}}y_{m}^{\left\{ l \right\}}\left[ t \right]R_{m,U}^{\{l\}}(\mathbf{q}[t])}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
 \text { s.t. }
 & \eqref{E4-13-5}                                                       \tag{\ref{E4-34}{-1}}           \label{E4-34-1}
 \end{align}
