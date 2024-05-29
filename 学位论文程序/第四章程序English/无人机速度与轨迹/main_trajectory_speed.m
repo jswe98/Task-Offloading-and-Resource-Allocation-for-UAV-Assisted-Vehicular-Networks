@@ -162,7 +162,7 @@ for t=1:T
     car_positions(m,1:2,t)=CARposition(m,1:2,t);
     car_x(m,t)=car_positions(m,1,t);
     car_y(m,t)=car_positions(m,2,t);
-        if L(m)==-1
+        if car_y(m, 1) < 15  %L(m)==-1
            legend_entries{m} = ['LeftVehicle ' num2str(m)]; 
            % legend_entries{m} = ['\fontname{Times New Roman}leftvehicle', '\fontname{Times New Roman}{' num2str(m) '}']; 
         else

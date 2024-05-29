@@ -137,8 +137,8 @@ bound2=T;
 Total_chedao(chedao,:)=0.01*sum(Total_T,1);
 %EE_total_recodchedao(chedao,:)=EE_total_recod;
 end %这个end表示最外面一个for循环的对应
-% Varin2=load('Total_chedao.mat');
-% Total_chedao = Varin2.Total_chedao;  %调用了之前的数据S
+Varin2=load('Total_chedao.mat');
+Total_chedao = Varin2.Total_chedao;  %调用了之前的数据S
 
 zhishu =  ( 20:5:70);
 zhishu =  ( 10:10:70);

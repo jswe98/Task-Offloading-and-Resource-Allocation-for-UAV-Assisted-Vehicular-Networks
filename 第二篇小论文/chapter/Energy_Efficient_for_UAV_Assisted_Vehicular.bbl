@@ -141,6 +141,17 @@ F.~Liu, Z.~Chen, and B.~Xia, ``Data dissemination with network coding in
   two-way vehicle-to-vehicle networks,'' \emph{IEEE Transactions on Vehicular
   Technology}, vol.~65, no.~4, pp. 2445--2456, 2016.
 
+\bibitem{Dai2023}
+X.~Dai, Z.~Xiao, H.~Jiang, and J.~C.~S. Lui, ``{UAV-Assisted} task offloading
+  in vehicular edge computing networks,'' \emph{IEEE Transactions on Mobile
+  Computing}, vol.~23, no.~4, pp. 2520--2534, 2024.
+
+\bibitem{Li2024Wide}
+H.~Li, X.~Li, M.~Zhang, and B.~Ulziinyam, ``System-wide energy efficient
+  computation offloading in vehicular edge computing with speed adjustment,''
+  \emph{IEEE Transactions on Green Communications and Networking}, vol.~8,
+  no.~2, pp. 701--715, 2024.
+
 \bibitem{Fiore2008TheNS}
 M.~Fiore and J.~H\"{a}rri, ``The networking shape of vehicular
   mobility.''\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA:
@@ -157,9 +168,24 @@ Y.~Liang, L.~Xiao, D.~Yang, Y.~Liu, and T.~Zhang, ``Joint trajectory and
   resource optimization for {UAV-Aided} {Two-Way} relay networks,'' \emph{IEEE
   Transactions on Vehicular Technology}, vol.~71, no.~1, pp. 639--652, 2022.
 
-\bibitem{Crouzeix1991}
+\bibitem{crouzeix1991algorithms}
 J.-P. Crouzeix and J.~A. Ferland, ``Algorithms for generalized fractional
-  programming,'' \emph{Mathematical Programming}, vol.~52, no.~1, pp. 191--207,
-  1991.
+  programming,'' \emph{Mathematical Programming}, vol.~52, pp. 191--207, 1991.
+
+\bibitem{HosseiniTvT2023}
+M.~Hosseini and R.~Ghazizadeh, ``Stackelberg game-based deployment design and
+  radio resource allocation in coordinated {UAVs-Assisted} vehicular
+  communication networks,'' \emph{IEEE Transactions on Vehicular Technology},
+  vol.~72, no.~1, pp. 1196--1210, 2023.
+
+\bibitem{He2020}
+Y.~He, D.~Zhai, Y.~Jiang, and R.~Zhang, ``Relay selection for {UAV-Assisted}
+  urban vehicular ad hoc networks,'' \emph{IEEE Wireless Communications
+  Letters}, vol.~9, no.~9, pp. 1379--1383, 2020.
+
+\bibitem{XiaoshuaiD2DIoT2020}
+X.~Li, L.~Ma, Y.~Xu, and R.~Shankaran, ``Resource allocation for {D2D-Based}
+  {V2X} communication with imperfect csi,'' \emph{IEEE Internet of Things
+  Journal}, vol.~7, no.~4, pp. 3545--3558, 2020.
 
 \end{thebibliography}

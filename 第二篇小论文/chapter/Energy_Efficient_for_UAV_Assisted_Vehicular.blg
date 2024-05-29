@@ -1,22 +1,22 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Energy_Efficient_for_UAV_Assisted_Vehicular.aux
 The style file: IEEEtran.bst
 Database file #1: ../reference/referencepaper.bib
-You're missing a field name---line 133 of file ../reference/referencepaper.bib
+You're missing a field name---line 155 of file ../reference/referencepaper.bib
  : 
  : %url = {https://www.sciencedirect.com/science/article/pii/S2352864822002620},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 271 of file ../reference/referencepaper.bib
+I was expecting a `,' or a `}'---line 293 of file ../reference/referencepaper.bib
  : 
  : @ARTICLE{twoway575396233,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 280 of file ../reference/referencepaper.bib
+I was expecting a `,' or a `}'---line 302 of file ../reference/referencepaper.bib
  : 
  : @ARTICLE{Spatial4490168,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 309 of file ../reference/referencepaper.bib
+You're missing a field name---line 331 of file ../reference/referencepaper.bib
  : 
  : %url = {https://doi.org/10.1145/1374618.1374654},
 (Error may have been on previous line)

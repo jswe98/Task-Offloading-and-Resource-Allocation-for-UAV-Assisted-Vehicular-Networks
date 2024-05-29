@@ -2,11 +2,11 @@
 %\documentclass[onecolumn]{IEEEtran}
 \documentclass[journal,10pt]{IEEEtran}
 \usepackage{graphicx}
-%\usepackage{caption}
+\usepackage{caption}
 %\usepackage[numbers]{natbib}
 %\usepackage[sort,numbers]{natbib}
 \usepackage{verbatim}
-\usepackage{subcaption}
+%\usepackage{subcaption}
 \usepackage[nocompress]{cite}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{enumerate}
@@ -29,20 +29,21 @@
 \usepackage{hyperref} %
 \hypersetup{%hypertex=true,
             colorlinks=true,
-            linkcolor=green,   %blue    公式与图与目录
+            linkcolor=green,                  %blue    公式与图与目录  black
             anchorcolor=blue,
-            citecolor=blue} %green  参考文献
+            citecolor=blue}                   %green  参考文献    black
 \title{Energy-Efficient for UAV-Assisted Vehicular Networks Under the Two-ways Street: Joint UAV Trajectory Optimization and Robust Power Control Approach}   %
+%\title{Energy-Efficient Optimization for UAV-Assisted Vehicular Networks in a Two-Way Traffic}   %
 \newcommand{\mykeywords}{Internet of Vehicle (IoV), Computation Offloading, Robust Power Control, Edge Computing, UAV Communication, Trajectory Optimisation} %
 \makeatletter
 \newcommand{\ALOOP}[1]{\ALC@it\algorithmicloop\ #1
-  \begin{ALC@loop}}
+\begin{ALC@loop}}
 \newcommand{\ENDALOOP}{\end{ALC@loop}\ALC@it\algorithmicendloop}
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
 \newcommand{\algorithmicbreak}{\textbf{break}}
 \newcommand{\BREAK}{\STATE \algorithmicbreak}
-\hypersetup{pdftitle={\@title},pdfauthor={Zhixin Liu},pdfkeywords={\mykeywords},pdfsubject={ },pdfproducer={WinEdit 7.0}} % 设置PDF的Producer元数据 主题 制作者}  ,pdfauthor={\@author}   ,pdfproducer={}
+\hypersetup{pdftitle={\@title},pdfauthor={Zhixin Liu},pdfkeywords={\mykeywords},pdfsubject={pdfsubject},pdfproducer={WinEdit 7.0}} % 设置PDF的Producer元数据 主题 制作者}  ,pdfauthor={\@author}   ,pdfproducer={}
 \makeatother
 \graphicspath{{../figures/}}  %搜索图路径
 % *** GRAPHICS RELATED PACKAGES ***
@@ -68,7 +69,7 @@ jswe@stumail.ysu.edu.cn, Sjw@stumail.ysu.edu.cn, yzyuan@ysu.edu.cn.}
 \begin{abstract}
 \begin{comment}
 \end{comment}
-UAV-assisted Telematics mission offloading as an airborne base station is a promising solution, especially on two-way driving roads.
+Unmanned Aerial Vehicle (UAV)-assisted Telematics mission offloading as an airborne base station is a promising solution, especially on two-way driving roads.
 This paper proposes a scheme to maximize energy efficiency in UAV-assisted Telematics and applies it to scenarios where both ground and
 Air Base Stations are present on two-way streets. However, the stability of the transmission for the offloading task can be seriously
 affected by the uncertain channel state. To model channel uncertainty, we employ a first-order Markov process and take into account the
@@ -84,7 +85,7 @@ performance. The results demonstrate its effectiveness, particularly when compar
 As the most promising solution for Intelligent Transportation Systems (ITS), the Internet of Vehicles (IoV) is expected to meet the rapidly growing demands of modern society, including those related to traffic efficiency, driving experience, and accident handling \cite{TFL}. Unmanned aerial vehicle (UAV)-assisted vehicular networking can improve the energy efficiency of the system, and this paper proposes a scenario to maximize the energy efficiency of UAV-assisted vehicular network under Two-ways Street, however, the uncertain channel state can seriously affect the stability of data transmission, in order to consider the mobility of the vehicle and to simulate the uncertainty of the channel, In complex Two-ways Street scenarios, cooperation between the UAV and the ground base station can improve the utilization of system resources. A first-order Markov process can be used to plan the vehicles to select different time slots for communication with the receiver. To ensure high-quality communication, we implement probabilistic constraints on the signal link and use an integral transformation method to convert the original constraints into solvable ones. Additionally, we employ the Dinkelbach method to solve the non-convex robust optimization problem. To determine the optimal solution, we decompose the initial problem into three subproblems, which we solve through alternating iterations.
 
 A scenario similar to the one in literature \cite{twoway7091030} for maximizing the energy efficiency of UAV-Assisted vehicular networks under Two-ways Street has been investigated \cite{twoway575396145}, and in literature \cite{twoway575396233} the study The advantages of Two-ways Street communication are explored, vehicles
-vehicles traveling at high speed on a two-way highway \cite{Stochastic6576809}, the ground base station is located on one side of the road, with the high speed of the
+vehicles traveling at high speed on a two-ways highway \cite{Stochastic6576809}, the ground base station is located on one side of the road, with the high speed of the
 vehicles traveling in the opposite direction \cite{Spatial4490168}, the vehicles traveling to the right will gradually move out of the current communication
 cell and cannot communicate with the ground base station, at this time, the UAV can be used as an airborne base station to receive the communication
 signal from the vehicles. The UAV flies parallel to the road at a fixed altitude without any obstacles, and our proposed algorithm can determine in real time
@@ -96,14 +97,16 @@ To enhance the flexibility of vehicle networks, UAVs can replace ground-based st
 Meanwhile, optimizing the trajectory of the UAV can improve communication links between the unmanned aerial vehicle and other vehicles, particularly in environments where vehicles travel at high speeds in various directions. Yang et al. allocated resources and optimized the trajectory of the UAV in an energy-efficient UAV backscatter communication system in \cite{Backscatter9222571}. Optimizing the trajectory of the UAV can improve throughput, reduce energy consumption, and decrease latency \cite{Maximizing10214196}.
 
 The maximization of energy efficiency (EE) is a critical problem that requires a tradeoff between throughput and energy consumption to be solved. Some studies aim to decrease the energy consumption of UAVs through joint UAV trajectory design and resource allocation. Effective power control and altitude planning algorithms are required to maximize the energy efficiency of UAV-BS systems, and Aslani et al. reformulate the nonconvex problem into a convex problem using the Dinkelbach and alternating optimization methods in \cite{aslani2023energy}. Wang et al. proposed an optimization problem to jointly determine subchannel allocation, optimize the UAV trajectory, and allocate power for each time slot to maximize system throughput \cite{UserMobility10123705}.
-Extensive attention and researches have been devoted to the area of air-ground integrated communications \cite{OUC,SDR}. The authors focus on the air-ground integrated network architecture design and resource management \cite{OUC,OSI}. In the heterogeneous cellular networks, the UAV is utilized to assist with emergency communications. A control framework that dynamically slices the spectrum resource for vehicular users is proposed in \cite{SDR}, where Lyapunov optimization theory is adopted. Nevertheless, despite the aforementioned works having sought to enhance the performance of AGHVNs, research into the integration of system robustness and resource allocation has not yet received sufficient attention.
+Extensive attention and researches have been devoted to the area of air-ground integrated communications \cite{OUC}. The authors focus on the air-ground integrated network architecture design and resource management \cite{OSI}. In the heterogeneous cellular networks, the UAV is utilized to assist with emergency communications. A control framework that dynamically slices the spectrum resource for vehicular users is proposed in \cite{SDR}, where Lyapunov optimization theory is adopted. Nevertheless, despite the aforementioned works having sought to enhance the performance of AGHVNs, research into the integration of system robustness and resource allocation has not yet received sufficient attention.
 In \cite{LIU20231399,Dissemination7091030}, the study investigated the advantages of bidirectional lane communication on highways where vehicles travel at high speeds and ground stations are located on one side of the road. As vehicles moving in the opposite direction travel at high speeds, vehicles moving to the right will gradually leave the current communication cell and will not be able to communicate with ground base stations.
 In such cases, UAVs can serve as aerial base stations to receive vehicle communication signals, it is evident from the preceding discussion that optimizing the trajectory of UAVs and controlling their power is essential for energy-efficient UAV-assisted vehicular networks.
 %Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network.
 
-Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network. The paper proposes a scheme to maximize energy efficiency in vehicular networking by using UAV assistance for task offloading.
+%Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network. The paper proposes a scheme to maximize energy efficiency in vehicular networking by using UAV assistance for task offloading.
+%From the above discussion, it can be noted that UAV technology significantly improves the MEC network performance, especially in multiuser vehicular communication scenarios.
+Based on the previous discussion, it can be noted that the integration of UAV technology significantly enhances the performance of MEC networks, particularly in multi-user vehicular communication environments \cite{Dai2023,Li2024Wide}.
+Motivated by these points, we study the problem of system EE maximization in a UAV-assisted Vehicular communication network. The paper proposes a novel UAV-assisted vehicular communication scheme that not only improves communication performance but also considers energy efficiency and realistic deployment scenarios. The proposed optimization techniques and insights into system parameters make this work a valuable contribution to the field of intelligent transportation systems and aerial communication networks.
 \subsection{Contributions}
-
 The scheme is designed for vehicles dynamically traveling on two-way streets. Unlike existing studies that consider fixed base
 stations in one-way lanes, this paper investigates a network system that places great emphasis on UAV trajectory optimization in
 cooperation with power control. The scheme ensures the quality of vehicular communication through outage probability constraints.
@@ -122,28 +125,19 @@ The rest of this paper is organized as follows: the model energy efficiency in v
 In Section \ref{Simulation results and performance analysis}, the performance evaluations are presented. Finally, we conclusion the paper in Section \ref{Conclusions}.
 \section{System model}\label{System model}
 \begin{figure*}[!t]\centering  %跨栏图
-	\includegraphics[width=16cm,height=6cm]{..//figures//model4.pdf}
+	\includegraphics[width=16cm,height=6cm]{..//figures//model44.pdf}
 	\caption{UAV-Assisted Vehicular Networks model.} \label{systemuav2}
 \end{figure*}
 
-The system model is shown in Fig. \ref{systemuav2}, we consider an integrated celestial and terrestrial network in which vehicles travel on a bidirectional highway and UAVs take off from the vicinity of the base station and cache the resources provided by the base station for download by the vehicles on the road, since it is a bidirectional lane, The base station is located at the origin of the coordinates at a height of $h_0$, and the $D_R$ represents the radius length of the coverage of the roadside cell.To consider a more realistic road scenario, we model the vehicle motion as a constant velocity motion model \cite{Fiore2008TheNS}. We specify right as the positive direction and define the lane index $L=1$ as the vehicle travelling to the right and $L=-1$ as the vehicle travelling to the left. Due to the fixed location of the base station, with the passage of time, there is inevitably a direction of the vehicle will be far away from the base station, which will inevitably affect its access to information from the base station. In order to decide whether the vehicle on the road needs to obtain information from the drone or the base station, we based on the channel state information predicted by the first-order Markov process from the vehicle to the base station and the channel state information obtained by the vehicle and the aerial base station drone line-of-sight link to the vehicle and the two data in the middle of the communication of the signal-to-noise ratio, respectively, the vehicle will select the party with the larger signal-to-noise ratio to request resources, $x_m\left[t\right]=1$ for the vehicle to select the UAV for communication, and vice versa for the vehicle to select the base station for communication.
+The system model is shown in Fig. \ref{systemuav2}. We consider an integrated celestial and terrestrial network where vehicles travel on a bidirectional highway, and UAVs take off from the vicinity of the base station, caching resources provided by the base station for download by the vehicles on the road. Since it is a bidirectional lane, the base station is located at the origin of the coordinates at a height of $h_0$, and $D_R$ represents the radius length of the roadside cell's coverage.
+To consider a more realistic road scenario, we model the vehicle motion as a constant velocity motion model \cite{Fiore2008TheNS}. We specify right as the positive direction and define the lane index $L=1$ for vehicles traveling to the right and $L=-1$ for vehicles traveling to the left. Due to the fixed location of the base station, vehicles will inevitably move away from it over time, affecting their ability to access information from the base station.
+To determine whether a vehicle on the road should obtain information from the UAV or the base station, we rely on the channel state information predicted by the first-order Markov process for the vehicle-to-base station link and the channel state information for the vehicle-to-UAV line-of-sight link. Based on the SNR of these links, the vehicle will select the source with the higher SNR to request resources. If $x_m\left[t\right]=1$, the vehicle selects the UAV for communication; otherwise, it selects the base station.
 
-In the time slot $t$, the horizontal coordinates of the drone are $q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$.
-The UAV is flying unobstructed at a height of $H$ from the road surface with a maximum speed of $V_{max}$ and the initial horizontal position of the vehicle $M$ is $q_m\left[0\right]=\left\{\pi_0,\varpi_0\right\}$.
-Assuming that the vehicle is travelling at speed $\nu_m$ in a uniform straight line, based on the previously defined lane index it can be derived that the vehicle $M$ at the $t$th moment of the water
-The horizontal position changes to $\pi_m\left[t\right]=\pi_0+l\nu_m t$, and the horizontal position of vehicle $M$ is $q_m=\left\{\pi_m\left[n\right],\varpi_0\right\}$.
-Based on the position information we can get the distance information at the $t$th moment
-The distance between vehicle $M$ and the roadside unit at $t$ time slot is ${{d}_{m,R}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{R}} \right\|=\sqrt{{{\pi}_{m}}{{\left[ t \right]}^{2}}+{{\varpi}_{0}}^{2}+{{H}^{2}}}$
-,The distance of vehicle $M$ from the UAV at $t$ time slot is $ {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{\pi}_{m}}\left[ t \right]-{{\pi}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{\varpi}_{m}}\left[ t \right]-{{\varpi}_{u}}\left[ t \right] \right)}^{2}}+{{H}^{2}}}\ $.
-Furthermore, some notations used in this paper are given in Table \ref{table:1}.
-\begin{comment} %原来的图的位置
-\begin{figure}[H] \centering
-\includegraphics[width=8cm]{model4.pdf}
-\caption{UAV-Assisted Vehicular Networks model} \label{systemuav2}
-\end{figure}
-\begin{remark}
-\end{remark}
-\end{comment}
+In time slot $t$, the horizontal coordinates of the drone are $q_U\left[t\right]=\left\{\pi_u\left[t\right],\varpi_u\left[t\right]\right\}$. The UAV flies unobstructed at a height of $H$ from the road surface with a maximum speed of $V_{max}$, and the initial horizontal position of vehicle $M$ is $q_m\left[0\right]=\left\{\pi_0,\varpi_0\right\}$.
+Assuming the vehicle is traveling at a constant speed $\nu_m$ in a straight line, based on the previously defined lane index, the horizontal position of vehicle $M$ at time $t$ can be derived as $\pi_m\left[t\right]=\pi_0+l\nu_m t$, and the horizontal position of vehicle $M$ is $q_m=\left\{\pi_m\left[t\right],\varpi_0\right\}$.
+Using this position information, we can determine the distance at time $t$. The distance between vehicle $M$ and the roadside unit at time slot $t$ is ${{d}_{m,R}}\left[ t \right]=\left\| {{q}_{m}}\left[ t \right]-{{q}_{R}} \right\|=\sqrt{{{\pi}_{m}}{{\left[ t \right]}^{2}}+{{\varpi}_{0}}^{2}+{{H}^{2}}}$.
+The distance between vehicle $M$ and the UAV at time slot $t$ is $ {{d}_{m,U}}\left[ t \right]=\left\| {{q}_{m}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|=\sqrt{{{\left( {{\pi}_{m}}\left[ t \right]-{{\pi}_{u}}\left[ t \right] \right)}^{2}}+{{\left( {{\varpi}_{0}}-\varpi_u\left[ t \right] \right)}^{2}}+{{H}^{2}}}$.
+Additionally, some notations used in this paper are provided in Table \ref{table:1}.
 \begin{table}[!ht]  %表格1
 \caption{Notations}
 \centering
@@ -166,13 +160,12 @@ $\textrm{E}\{\cdot\}$ & \!\!\!\!\!\!\!Expected value of a random variable. \\
 \end{tabular}}
 \end{table}
 \subsection{Channel and Energy Consumption Models of V2R Communication}
-Due to the fast movement of the vehicle, a first-order Markov process is constructed for the V2R communication between the vehicle and the roadside device, where the channel state information at the $t$th instant is predicted based on the state prediction at the previous instant.
-i.e.
+Due to the fast movement of the vehicle, a first-order Markov process is constructed for the V2R communication between the vehicle and the roadside device, where the channel state information at the $t$th instant is predicted based on the state prediction at the previous instant.i.e.
 \begin{equation} \label{E4-1}
 h_{m}={\widetilde{h}}_{m}^2+{\hat{h}_{m}}^2,
 \end{equation}
 here ${\widetilde{h}}_{m}$ is an observation and ${\hat{h}}_{m}$ is an exponential distribution obeying the parameter $a=\frac{1}{{L_{i,j}^k}^2({1-{\zeta_{i,j}^k}^2})}$ \cite{Xie2020}.
-The signal-to-noise ratio (SNR) of the $m$th vehicle received by the ground base station at the $t$th time slot can be expressed as:
+The SNR of the $m$th vehicle received by the ground base station at the $t$th time slot can be expressed as:
 \begin{equation} \label{E4-2}
 \gamma_{m,R}\left[t\right]=\frac{p_m\left[t\right]h_{m,R}\left[t\right]}{\sigma^2}
 \end{equation}
@@ -191,9 +184,9 @@ where $B_0$ denotes the bandwidth, ${{x}_{m}}\left[ t \right]=1$ indicates that 
 \subsection{Channel and Energy Consumption Models of V2U Communication}
 For the communication between the vehicle and the UAV without obstacle occlusion in the middle, which is a line-of-sight link, an airborne RF link model is constructed, and the channel gain from the $m$ vehicle to the UAV at $t$th time slot is,
 \begin{equation} \label{E4-7}
-h_{m,U}\left[t\right]=\frac{\varsigma_0}{{d_{m,U}\left[t\right]}^2}
+h_{m,U}\left[t\right]=\frac{\varsigma_0}{{d_{m,U}\left[t\right]}^2},
 \end{equation}
-Here the symbol $\varsigma_0$ represents the power gain per unit distance of one metre. With the aforementioned information in mind, the transmission rate from the unmanned aerial vehicle (UAV) to the vehicle can be calculated as:
+here the symbol $\varsigma_0$ represents the power gain per unit distance of one metre. With the aforementioned information in mind, the transmission rate from the UAV to the vehicle can be calculated as:
 \begin{equation} \label{E4-8}
 R_{m,U}\left[t\right]=\log_2{\left(1+\gamma_{m,U}\left[t\right]\right)},
 \end{equation}
@@ -222,7 +215,8 @@ The computational energy consumption of the edge server subsequent to the $m$th 
 \begin{equation} \label{E4-55}
 E_{m}^{mec}=\aleph A_{R,m}{f_R}^2% \quad m \in \mathcal{M}.
 \end{equation}
-where the effective switching capacitance of the CPU, denoted by the symbol $\aleph$, is greater than zero, this value depends on the specific chip architecture.
+%where the effective switching capacitance of the CPU, denoted by the symbol $\aleph$, is greater than zero, this value depends on the specific chip architecture.
+where the effective switching capacitance of the CPU, denoted by  $\aleph$, is greater than zero. This value depends on the specific chip architecture.
 \subsection{Problem Formulation}
 In this section, we formulate the energy efficiency maximisation problem for UAV-assisted two-way lane vehicles. Our objective is to maximise the total energy efficiency of the system by jointly optimising the transmit power of the vehicles on the two-way lanes as well as the trajectory of the UAV. First, we define the energy efficiency of this network communication system.
 \begin{equation} \label{E4-12}
@@ -244,30 +238,14 @@ The total amount of data sent by the vehicle to the ground base station and the 
 & q_U^{n\mathrm{\ }+1}-q_U^{n\mathrm{\ }}\le tV_{max}, \forall m         \tag{\ref{E4-13}{-5}}      \label{E4-13-5}    %无人机飞行轨迹
 \end{align}
 
-The \eqref{E4-13-1} in the aforementioned equation represents the interruption probability constraint, which is designed to guarantee the quality of service by ensuring vehicle communication. The \eqref{E4-13-2} represents the constraint on the maximum and minimum transmit power of the vehicle, The equation \eqref{E4-13-3} demonstrates that the task of each vehicle at any given moment in time can only be offloaded to either the UAV or the terrestrial base station. The threshold of the signal-to-noise ratio, denoted by $\gamma_{th}$, is a fixed value, \eqref{E4-13-4} represents the necessity to dispatch the vehicle before it leaves the roadside cell coverage area. Prior to the server completing the computation of completion data and the allocation of time slot resources, this constraint can be employed. The time point $t_{wired}$ is defined as the time at which the roadside unit transmits data to the edge server for a fixed duration. The flight trajectory of the UAV is constrained by the inequality given in Equation \ref{E4-13-5}, which states that the actual distance flown by the UAV per second must be less than or equal to the maximum flyable distance of the UAV.
-\begin{comment}
-where $U$ is a more enormous execution time utility with a minor upload time cost. We formulate the robust optimization problem namely Power Control and Task Offloading Problem as a system utility maximization problem,
-\begin{subequations}\label{E13}
-\begin{align}\label{E13a}   \notag
-%&\  \textbf{P}:U=\max\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}} &
-&\ %\max\limits_{\mathbf{p},\mathbf{f}}\emph{U}(\mathbf{p},\mathbf{f})=\max\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}&
-\max\limits_{\mathbf{p},\mathbf{f}}\sum_{i=1}^{M}\frac{U_{i,exe}}{t_{i,up}}&
-\end{align}         \notag
-	\!\!\!\begin{numcases}{s.t.}\label{E13b}  \notag
-	\!\!\!\textrm{Pr}\left\{\gamma_i\geq\gamma_{th}\right\}\geq1-\varepsilon_1,\\ \label{E13c}  \notag
-    \!\!\!\textrm{Pr}\left\{\frac{1}{\tau_iR_i-k_i}+\frac{c_{i,e}}{\bar{f}+f_i}\le D_{max}\right\}\geq1-\varepsilon_2,\\  \label{E13d} \notag
-	\!\!\!\sum_{i=1}^{N}f_i\le f_{total},\\  \label{E13e} \notag
-    \!\!\!0\le p_i\le p_{max},  \label{E13f} \notag
-	\end{numcases}
-	\label{eq} \notag
-\end{subequations}
-\end{comment}
+The \eqref{E4-13-1} in the above equation represents the interruption probability constraint, which is intended to guarantee the quality of service by ensuring vehicle communication. The equation \eqref{E4-13-3} shows that the task of each vehicle at any given time can only be offloaded to either the UAV or the terrestrial base station. The signal-to-noise ratio threshold, denoted by $\gamma_{th}$, is a fixed value, \eqref{E4-13-4} represents the need to dispatch the vehicle before it leaves the coverage area of the roadside cell. This constraint can be applied before the server has finished calculating the completion data and allocating the time slot resources. The time $t_{wired}$ is defined as the time at which the roadside unit transmits data to the edge server for a fixed duration. The trajectory of the UAV is constrained by the inequality given in equation \ref{E4-13-5}, which states that the actual distance flown by the UAV per second must be less than or equal to the maximum flyable distance of the UAV.
 \section{Solving the EE maximization problem} \label{Problem solutions}
-In this section, the energy efficiency maximisation problem from the previous section is broken down into two sub-problems to be solved. For the fractional programming which is difficult to solve, it can be solved by using Dinkelbach's method to transform it into an easy-to-solve reduced-form programming. The vehicle's launch power should first be fixed, after which the UAV's flight trajectory can be solved. This process is then repeated for the UAV's flight trajectory, with the vehicle's launch power being fixed in each iteration. This alternating process of optimisation continues until the algorithm converges. It should be noted that question \eqref{E4-13} in the previous section is a non-convex problem. In order to deal with this problem efficiently, we propose a joint power allocation and UAV trajectory planning scheme which decouples the problem \eqref{E4-13} into three subproblems. \cite{JointTrajectory9627548}.
+In this section, the energy efficiency maximisation problem from the previous section is broken down into two sub-problems to be solved. For the fractional programming which is difficult to solve, it can be solved by using Dinkelbach's method to transform it into an easy-to-solve reduced-form programming. The vehicle's launch power should first be fixed, after which the UAV's flight trajectory can be solved. This process is then repeated for the UAV's flight trajectory, with the vehicle's launch power being fixed in each iteration. This alternating process of optimisation continues until the algorithm converges. It should be noted that question \eqref{E4-13} in the previous section is a non-convex problem. In order to deal with this problem efficiently, we propose a joint power allocation and UAV trajectory planning scheme which decouples the problem \eqref{E4-13} into three subproblems \cite{JointTrajectory9627548}.
 \subsection{Probabilistic Constrained Approximation and Optimal Power Control Problems}
 In the preceding section of the equation  \eqref{E4-13-1}, it was demonstrated that the vehicle's power in the context of probabilistic constraints is challenging to resolve directly. In this instance, the integral transformation will be employed to transform the complex probability constraint problem into a simpler form.
 
-\begin{theorem} For \eqref{E4-13-1}, the interruption probability constraints of vehicle users
+\begin{theorem}
+For \eqref{E4-13-1}, the interruption probability constraints for vehicular users is:
 \begin{align}
 \Pr\left\{x_m\left[t\right]\gamma_{m,R}\left[t\right]+y_m\left[t\right]\gamma_{m,U}\left[t\right] \geq \gamma_{th}\right\}\geq1-\varepsilon_3    \notag
 \end{align}
@@ -285,9 +263,9 @@ p_m\left[t\right]x_m\left[t\right]\ln \left(1-a \varepsilon_3\right)+(\gamma_{th
 &\frac{x_m\left[t\right]p_m\left[t\right]h_{m,R}\left[t\right]}{\sigma^2}\geq \gamma_{th}-y_m\left[t\right]\gamma_{m,U}\left[t\right] \\
 \Leftrightarrow
 &p_m\left[t\right]{\widetilde{h}}_{m}\left[t\right]\geq \frac{{(\gamma_{th}-y_m\left[t\right]\gamma_{m,U}\left[t\right])\sigma^2}}{x_m\left[t\right]}
--p_m\left[t\right]{\hat{h}}_{m}\left[t\right]   \notag
+-p_m\left[t\right]{\hat{h}}_{m}\left[t\right],   \notag
 \end{align}
-Therefore the vehicle user's interruption probability constraint makes a reformulation as follows:
+therefore the vehicle user's interruption probability constraint makes a reformulation as follows:
 \begin{align} \label{E4-16}
 &Pr\left\{x_m\left[t\right]\gamma_{m,R}\left[t\right]+y_m\left[t\right]\gamma_{m,U}\left[t\right] \geq \gamma_{th}\right\}\geq1-\varepsilon_3    \\
 &\!\!\Leftrightarrow
@@ -309,7 +287,7 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，the $\et
 ${{\kappa }_{m}}\left[ t \right]={{x}_{m}}\left[ t \right]\ln \left( 1-a{{\varepsilon }_{3}} \right)-{{y}_{m}}\left[ t \right]{{\eta }_{m,U}}\left[ t \right]a{{\sigma }^{2}}-a{{x}_{m}}\left[ t \right]{{\hat{h}}_{m}}\left[ t \right]$
 Rewrite the equation \eqref{E4-17} as.
 \begin{equation} \label{E4-18}
-{{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}\le 0
+{{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}\le 0.
 %p_m\left[t\right]x_m\left[t\right]\ln \left(1-a \varepsilon_3\right)+(\gamma_{th}-y_m\left[t\right]p_m\left[t\right]\eta_{m,U}\left[t\right]) a \sigma^2
 %\leq a p_m\left[t\right]x_m\left[t\right]\hat{h}_{m}\left[t\right]
 \end{equation}
@@ -357,14 +335,6 @@ where the dyadic problem of \eqref{E4-22} is:
 \min_{\substack{\lambda_{m,t}\geq 0}} D\left(\mathbf{p_m},\mathbf{\lambda}\right)
 \end{equation}
 The problem \eqref{E4-23} is a convex problem and satisfies the Karush-Kuhn-Tucker (KKT) condition, which can be made to have a first-order derivative equal to zero in an analogous solution process using the KKT condition:
-\begin{comment}
-\begin{align}\label{E4-24}
-\frac{{{B}_{0}}x_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right] \right)}+\frac{{{B}_{0}}y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right] \right)}\\   \notag
-+\chi \left( \theta -x_{m}^{\left\{ l \right\}}\left[ t \right] \right) \\   \notag
--\sum\limits_{t=1}^{T}{{{\lambda }_{m,t}}}\left( -{{y}_{m}}[t]{{\eta }_{m,U}}[t]a{{\sigma }^{2}}+{{x}_{m}}[t]{{{\hat{h}}}_{m}}[t]-\frac{{{x}_{m}}[t]a{{\varepsilon }_{3}}}{1-a{{\varepsilon }_{3}}} \right)=0,
-\end{align}
-
-\end{comment}
 \begin{equation}\label{E4-24}
 \begin{array}{ll}
 \frac{{{B}_{0}}x_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,R}^{\left\{ l \right\}}\left[ t \right] \right)}+\frac{{{B}_{0}}y_{m}^{\left\{ l \right\}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right]}{\ln 2\left( 1+{{p}_{m}}\left[ t \right]\eta _{m,U}^{\left\{ l \right\}}\left[ t \right] \right)}
@@ -397,18 +367,18 @@ The Lagrange multipliers are updated by the subgradient method as follows:
 {{G}_{{{\lambda }_{m}}}}={{p}_{m}}\left[ t \right]{{\kappa }_{m}}\left[ t \right]+a{{\sigma }^{2}}{{\gamma }_{th}}
 \end{equation}
 %\begin{comment}
-\begin{algorithm}[ht!]
+\begin{algorithm}[ht!] %Power Allocation Algorithm
 \caption{Power Allocation Algorithm}
 \label{alg:algorithm1}
 \small{\begin{algorithmic}[1]
-\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{Q}^{\left\{ l+1 \right\}}} $, set $\chi(n)=0$, $n=1$ as iteration index and $\epsilon_1 \textgreater 0$ as accuracy threshold.
+\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{Q}^{\left\{ l+1 \right\}}} $, set $\chi(n)=0$, $n=1$ as iteration index and $\epsilon_1 >0$ as accuracy threshold.
 \REPEAT
 \STATE Obtain ${{p}_{n}}={{p}_{m}}{{\left[ t \right]}^{*}}$ by solving \eqref{E4-26} with $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Q}^{\left\{ l+1 \right\}}} $ and $\epsilon_1$.
 %\STATE Update
 \STATE Update $F(\chi(n))={{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)-\chi(n){{E}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)$;
 \STATE Update $F(\chi(n+1))=\frac{{{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)}{{{E}_{n}}\left( \mathbf{P_n}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)}$;
 \STATE $n=n+1$;
-\UNTIL $F(\chi(n)) \textless \epsilon_1 $.
+\UNTIL $F(\chi(n)) < \epsilon_1 $.
 \STATE \textbf{Output:} $ {\mathbf{P}^{\left\{ l+1 \right\}}}=\mathbf{P(n)}$.
 \end{algorithmic}}
 \end{algorithm}
@@ -422,7 +392,6 @@ When the vehicle transmit power, denoted by $\left\{ {{P_m}^{\left\{ l \right\}}
 \text { s.t. }
 & \eqref{E4-13-2}                                                       \tag{\ref{E4-29}{-1}}           \label{E4-29-1}
 \end{align}
-the，
 \begin{equation} \label{E4-30}
 {{L}_{m,U}}\left( \mathbf{Q} \right)={{\log }_{2}}\left( 1+\frac{\varphi _{m,U}^{\{l\}}\left[ t \right]}{\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|+{{H}^{2}}} \right)\
 \end{equation}
@@ -434,12 +403,12 @@ The numerator part of the objective function of problem \eqref{E4-29} is non-con
 &\geq\left(\omega _{_{m}}^{\{l\}}\left[ t \right] {{\left\| {{q}_{M}}\left[ t \right]-{{q}_{U}}\left[ t \right] \right\|}^{2}}-{{\left\| {{q}_{M}}\left[ t \right]-q_{U}^{\{l\}}\left[ t \right] \right\|}^{2}}+\rho _{m}^{\{l\}}\left[ t \right] \right) \\  \notag
 &\triangleq R_{m,U}^{\{l\}}(\mathbf{q}[t])  \notag
 \end{align}
-and,
+where
 \begin{align} \label{E4-32}
 \omega _{_{m}}^{\{l\}}\left[ t \right]=\frac{-\varphi _{m,U}^{\{l\}}\left[ t \right]}{\ln 2\left( {{\left\| {{q}_{M}}\left[ t \right]-q_{U}^{\{l\}}\left[ t \right] \right\|}^{2}}+{{H}^{2}} \right)}\cdot \\    \notag
 \frac{1}{{{\left\| {{q}_{M}}\left[ t \right]-q_{U}^{\{l\}}\left[ t \right] \right\|}^{2}}+{{H}^{2}}+\varphi _{m,U}^{\{l\}}\left[ t \right]}
 \end{align}
-and,
+and
 \begin{equation} \label{E4-33}
 \rho_{_{m}}^{\{l\}}\left[ t \right]={{\log }_{2}}\left( 1+\frac{\varphi _{m,U}^{\{l\}}\left[ t \right]}{\left\| {{q}_{M}}\left[ t \right]-q_{U}^{\{l\}}\left[ t \right] \right\|+{{H}^{2}}} \right)\
 \end{equation}
@@ -451,18 +420,17 @@ The problem \eqref{E4-29} is further transformed into:
 \text { s.t. }
 & \eqref{E4-13-2}                                                       \tag{\ref{E4-34}{-1}}           \label{E4-34-1}
 \end{align}
-At this point, the non-convex part of the problem \eqref{E4-29} is transformed into a convex solvable form that can be solved using the convex optimisation toolbox CVX.
+At this point, the non-convex part of the problem \eqref{E4-29} is transformed into a convex solvable form that can be solved using the Convex Optimisation Toolbox (CVX).
 %\begin{comment}
-\begin{algorithm}[ht!]
+\begin{algorithm}[ht!]  %SCA-Based Algorithm for Trajectory Design
 \caption{SCA-Based Algorithm for Trajectory Design}
 \label{alg:algorithm2}
 \small{\begin{algorithmic}[1]
-\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{P}^{\left\{ l \right\}}} $, set $n=1$ as iteration index and $\epsilon_2 \textgreater 0$ as accuracy threshold.
+\STATE \textbf{Input:} Initialize variables $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{Y}^{\left\{ l \right\}}} $and $ {\mathbf{P}^{\left\{ l \right\}}} $, set $n=1$ as iteration index and $\epsilon_2 > 0$ as accuracy threshold.
 \REPEAT
 \STATE Obtain ${\mathbf{Q}_{n}}={{q}_{m}}{{\left[ t \right]}^{*}}$ by solving \eqref{E4-34} with $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{X}^{\left\{ l \right\}}} $, $ {\mathbf{P}^{\left\{ l \right\}}} $ and $\epsilon_1$.
 %\STATE Update
-%\STATE Update $F(\chi(n))={{L}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}}, {\mathbf{Y}^{\left\{ l \right\}}}, {\mathbf{Q}^{\left\{ l+1 \right\}}}  \right)-\chi(n){{E}_{n}}\left( \mathbf{P(n)}, {\mathbf{X}^{\left\{ l \right\}}},{\mathbf{Y}^{\left\{ l \right\}}} \right)$;
-\STATE Update the local points at the $n$th iteration as $R_{m,U}^{\{l\}}(\mathbf{q}[t])=R_{m,U}^{\{l\}}(\mathbf{Q}[n])$; 
+\STATE Update the local points at the $n$th iteration as $R_{m,U}^{\{l\}}(\mathbf{q}[t])=R_{m,U}^{\{l\}}(\mathbf{Q}[n])$;
 \STATE $n=n+1$;
 \UNTIL Converge to the prescribed accuracy $\epsilon_2$.
 \STATE \textbf{Output:} $ {\mathbf{Q}^{\left\{ l+1 \right\}}}=\mathbf{Q(n)}$.
@@ -482,16 +450,16 @@ This implies that the total duration of all time slots required for the vehicle 
 & \eqref{E4-13-3},\eqref{E4-13-4}                                                        \tag{\ref{E4-36}{-1}}           \label{E4-36-1}
 \end{align}
 
-This is a fractional programming problem. We can use a Dinkelbach method to transform it into an easily solvable reduced-form programming problem. Equation \eqref{E4-36} is equivalent to a linear programming problem that can be solved iteratively using the Convex Optimisation Toolbox (CVX).
+This is a fractional programming problem. We can use a Dinkelbach method to transform it into an easily solvable reduced-form programming problem. Equation \eqref{E4-36} is equivalent to a linear programming problem that can be solved iteratively using the CVX.
 \subsection{Overall Algorithm Design}
 The original problem is divided into three subproblems, which are solved separately in the above subsections. They are then solved alternatively using an alternating iteration method, shown in Algorithm~\ref{alg:algorithm4}.
 \begin{algorithm}[ht]
 \caption{Power allocation and UAV trajectory optimization scheme based on Dinkelbach's method Algorithm}
 \label{alg:algorithm4}
 \small{\begin{algorithmic}[1]
-\STATE Initialize variables $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$, $\epsilon_3 \textgreater 0$ and let $l=1$.
+\STATE Initialize variables $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$, $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$, $\epsilon_3 > 0$ and let $l=1$.
 \REPEAT
-\STATE Calculate the UAV's trajectory $\left\{ {\mathbf{Q_m}^{\left\{ l+1 \right\}}} \right\}$ for given $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ by solving Algorithm~\ref{alg:algorithm2};
+\STATE Calculate the UAV's trajectory $\left\{ {\mathbf{Q_m}^{\left\{ l+1 \right\}}} \right\}$ for given $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{X_m}^{\left\{ l  \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ by solving Algorithm~\ref{alg:algorithm2};
 \STATE Get the optimal power allocation $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ for given $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ by solving Algorithm~\ref{alg:algorithm1};
 %\STATE Solve the $ {{Q}_{m}}{{\left[ t \right]}^{*}}$ for given $ {{p}_{m}}{{\left[ t \right]}^{*}}$ and $ {{X}_{m}}{{\left[ t \right]}^{*}}$ based on \eqref{E4-34}
 \STATE Solve the subslot scheduling $\left\{ {\mathbf{X_m}^{\left\{ l \right\}}},{\mathbf{Y_m}^{\left\{ l \right\}}} \right\}$ for given $\left\{ {\mathbf{P_m}^{\left\{ l \right\}}} \right\}$ and $\left\{ {\mathbf{Q_m}^{\left\{ l \right\}}} \right\}$ based on \eqref{E4-36};
@@ -500,29 +468,27 @@ The original problem is divided into three subproblems, which are solved separat
 \STATE \textbf{Output:} $l$,$ {{p}_{m}}{{\left[ t \right]}^{*}}$,$ {{Q}_{m}}{{\left[ t \right]}^{*}}$,$ {{X}_{m}}{{\left[ t \right]}^{*}}$.
 \end{algorithmic}}
 \end{algorithm}
-
 \begin{remark}
-The computational complexity of algorithm~\ref{alg:algorithm4} is analysed as follows. First, we focus on the inner loop. In step 3, the transformed UAV trajectory design problem is a linear program with $T$ variables, so the complexity of step 3 is $\mathcal{O}\left(T^3 \log \left(1 / \epsilon_2 \right)\right)$. In step 4, the complexity of Dinkelbach's method is $\mathcal{O}\left(1/\epsilon_1^3 \log \left(MT \right)\right)$ \cite{Crouzeix1991}, while each convex problem is solved by the Lagrange dual method with a complexity order of $\mathcal{O}\left(MT \log \left(1 / \epsilon_3 \right)\right)$. Similarly to step 4, Dinkelbach's method is used to solve the subslot scheduling problem in step 5, and the complexity to solve a linear problem at each iteration is $\mathcal{O}\left((MT)^3 \right)$. We also assume that the BCD-based algorithm converges after $L_c$ rounds in the outer loop. The total complexity of algorithm~\ref{alg:algorithm4} is:
+The computational complexity of Algorithm~\ref{alg:algorithm4} is analyzed as follows. First, we focus on the inner loop. In Step 3, the transformed UAV trajectory design problem is a linear program with $T$ variables, resulting in a complexity of $\mathcal{O}\left(T^3 \log \left(1 / \epsilon_2 \right)\right)$. In Step 4, the complexity of Dinkelbach's method is $\mathcal{O}\left(1/\epsilon_1^3 \log \left(MT \right)\right)$ \cite{crouzeix1991algorithms}, and each convex problem is solved using the Lagrange dual method with a complexity of $\mathcal{O}\left(MT \log \left(1 / \epsilon_3 \right)\right)$. Similarly to Step 4, Dinkelbach's method is used to solve the subslot scheduling problem in Step 5, with a complexity of $\mathcal{O}\left((MT)^3 \right)$ for each iteration. We assume the BCD-based algorithm converges after $L_c$ rounds in the outer loop. Therefore, the total complexity of Algorithm~\ref{alg:algorithm4} is:
 \begin{equation}
-\begin{split} 
+\begin{split}
 \mathcal{O}\left( L_c \left( T^3 \log \left( \frac{1}{\epsilon_2} \right) \right. \right. &    \notag
  \left. + \frac{MT}{\epsilon_1^3} \log (MT) \log \left( \frac{1}{\epsilon_1} \right) \right. \\
  \left. \left. + \frac{(MT)^3}{\epsilon_1^3} \log (MT) \right) \right)
 \end{split}
-\end{equation}  
+\end{equation}
 %$\mathcal{O}\left(L_c(T^3 \log \left(1 / \epsilon_2 \right)+MT/ \epsilon_1^3 \log \left(MT \right)\log \left(1/\epsilon_1 \right)+ \\ (\left((MT)^3 \right))/\epsilon_1^3 \log \left(MT \right)) \right)$.
 \end{remark}
 %$\mathcal{O}\left(L_c\left((T^3 \log \left(1 / \epsilon_2 \right)+MT/ \epsilon_1^3 \log \left(MT \right)\log \left(1/\epsilon_1 \right)+ \\ \left((MT)^3 /\epsilon_1^3\right) \log \left(MT \right)\right) \right)$
 \section{Simulation results and performance analysis}\label{Simulation results and performance analysis}
 In this section, we test the algorithms and evaluate their performance using numerical simulations. We mainly evaluate the performance of the joint optimisation of the UAV trajectory and the channel power allocation scheme. We present two schemes: the UAV hovering over a fixed position scheme and the way of fixing the UAV trajectory. We compare our scheme with them. In the hovering scheme, the UAV hovers above a fixed position to reduce the computational complexity. We simulate a two-way lane with a length of 3000 m and a width of 30 m. We select six vehicles for the simulation on the road, each travelling in a straight line at a constant speed with different speeds. The main parameters in the simulation are shown in Table \ref{table:2}.
 \begin{figure*}[!t]\centering
-	\includegraphics[width=16cm,height=8cm]{..//figures//trajectory.eps}
-	\caption{UAV’s trajectory for different $T$.}
-    \label{UAV Trajectory Optimisation}
+\includegraphics[width=16cm,height=8cm]{..//figures//trajectory.eps}
+\caption{UAV’s trajectory for different $T$.}
+\label{UAV Trajectory Optimisation}
 \end{figure*}
-
 \begin{table}[ht!]
-	\centering
+\centering
 \caption{System parameters}
 {\scriptsize% 字体大小
   %\resizebox{\textwidth}{0.9cm}
@@ -532,26 +498,26 @@ In this section, we test the algorithms and evaluate their performance using num
 \hline
   $\bf{Parameter}$ & $\bf{Value}$ \\\hline
 Radio Range $(R_a)$   & $300$ m  \\\hline
-Carrier frequency $(f_c)$        & 5.9 GHz  \\\hline
-CSI feedback period of vehicle $(T)$    & 1 ms  \\\hline
-Average speed of vehicle  & 30 m/s \\\hline
-Mean of background noise $(\sigma^2)$  &  -30 dBm  \\\hline
-Maximum transmitter power $(p_{i,max})$ & 0.05 W \\\hline
-threshold parameter &${10}^{-6}$ \\\hline
-UAV flying altitude ($H$)  &100 m  \\\hline
-Number of slots   ($T$)   &80 \\\hline
-RSU altitude ($h_0$) &5 m  \\\hline
-Bandwidth of VUE channel ($W$) &10 MHz \\\hline
-UAV Maximum Flight Distance $(V_{max})$ &2.5m  \\\hline
-%信噪比阈值 $\gamma_{th}$ &0.1 \\\hline
+Carrier Frequency $(f_c)$        & 5.9 GHz  \\\hline
+Size of each Time Slot $(T)$ \cite{HosseiniTvT2023}   & 1 sec  \\\hline
+Average Speed of Vehicle  \cite{He2020} & 30 m/s \\\hline
+Mean of Background Noise $(\sigma^2)$  &  -30 dBm  \\\hline
+Maximum Transmitter Power $(p_{i,max})$ & 0.05 W \\\hline
+%threshold parameter &${10}^{-6}$ \\\hline
+UAV Flying Altitude ($H$)  &100 m  \\\hline
+Number of Slots   ($T$)   &80 \\\hline
+RSU Altitude ($h_0$) &5 m  \\\hline
+Uplink Bandwidth ($B_0$) \cite{XiaoshuaiD2DIoT2020} &10 MHz \\\hline
+%UAV Maximum Flight Distance per sec$(V_{max})$  &2.5m  \\\hline
+SNR Threshold $\gamma_{th}$ \cite{SpectrumSharing2022}&20dB  \\\hline
 %,$d$ in m
-Pathloss exponent $(\theta)$&4 \\\hline
-Log-normal shadowing standard deviation &10 dB
+Pathloss Exponent $(\theta)$&4 \\\hline
+Log-normal Shadowing Standard Deviation &10 dB
 \\\hline
 \end{tabular}}}
 \end{table}
 
-Firstly, we show how to optimise the UAV trajectory to maximise the system's energy efficiency for different time slots. The black arrow represents the vehicle travelling to the right. We stipulate that the UAV flies from a fixed starting point to a fixed end point. When there's enough time, the UAV will stay close to the far vehicle to help it. Figure \ref{UAVspeed} shows the drone's speed at each time slot. When the vehicle needs help, the drone slows down or hovers to match the vehicle's speed.
+Firstly, we illustrate the optimization of the UAV trajectory to maximize the system's energy efficiency across different time slots, as shown in Fig. \ref{UAV Trajectory Optimisation}. The black arrow indicates the vehicle traveling to the right. We assume that the UAV flies from a fixed starting point to a fixed endpoint. When there is sufficient time, the UAV remains close to the farthest vehicle to provide assistance. Figure \ref{UAVspeed} depicts the UAV's speed at each time slot. When the vehicle requires assistance, the UAV slows down or hovers to match the vehicle's speed.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//UAVspeed.eps}
@@ -567,7 +533,7 @@ Firstly, we show how to optimise the UAV trajectory to maximise the system's ene
 \end{figure}
 \end{comment}
 
-After testing the optimised algorithm, we tested the scheme with different parameters. Fig. \ref{UAV Trajectory Optimisation} shows that different $\theta$ affect energy efficiency at different times. $\theta$ is a coefficient that compares energy costs at the drone and roadside units. When $\theta$ changes, the system utility also changes. Higher parameters mean more focus on the UAV's flight energy consumption. The overall system energy efficiency decreases as the UAV flight time $T$ increases. Longer time allows the UAV to traverse more vehicles to obtain better channels and save energy. Lower $\theta$ leads to higher energy efficiency. This is because when we consider the UAV's energy consumption to be important, vehicles increase their power to transmit more data, thus increasing energy efficiency.
+After testing the optimized algorithm, we examined the scheme with various parameters. Fig. \ref{diffthet} demonstrates that different values of $\theta$ affect energy efficiency at different times. Here, $\theta$ serves as a coefficient comparing energy costs between the drone and roadside units. As $\theta$ varies, the system utility also fluctuates. Higher values of $\theta$ signify a greater emphasis on the UAV's flight energy consumption. Overall system energy efficiency diminishes as the UAV flight time $T$ extends. Longer durations permit the UAV to traverse more vehicles, thereby accessing better channels and conserving energy. Conversely, lower $\theta$ values result in higher energy efficiency. This occurs because as we prioritize the UAV's energy consumption, vehicles increase their power to transmit more data, consequently enhancing energy efficiency.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//difftheta.eps}
@@ -575,7 +541,9 @@ After testing the optimised algorithm, we tested the scheme with different param
 \label{diffthet}
 \end{figure}
 
-Fig. \ref{DifferentSchemes} compares the energy efficiency of three UAV communication schemes, OPTS, FPHS and FTS, under different flight cycles T. As the UAV's flight time increases, each scheme's energy efficiency gradually stabilises. This is because the UAV has more time to transmit data at the right power. Further observation shows that the two schemes, OPTS and FPHS, are suitable for different scenarios. OPTS is better for situations where fast response is required. If the flight cycle is longer, FPHS is simpler to implement than OPTS. Therefore, in environments with less time requirements, FPHS may be a more economical solution. However, FPHS is less energy efficient. The UAV hovers at a fixed position, which affects the efficiency of data transmission. As the flight cycle increases, the energy efficiency gap between OPTS and FPHS narrows. When the flight cycle is short, the OPTS has less time to send data to the UAV, so it uses less energy. As the flight cycle increases, the OPTS has more time to send data, so it uses more energy.
+Fig. \ref{DifferentSchemes} compares the energy efficiency of three UAV communication schemes: Optimized Path Trajectory Solution (OPTS), Fixed Position Hovering Solution (FPHS), and Fixed Trajectory Solution (FTS), across different flight cycles $T$. As the UAV's flight time increases, the energy efficiency of each scheme gradually stabilizes. This phenomenon arises because the UAV has more time to transmit data at optimal power levels.
+Further analysis reveals that OPTS and FPHS are suitable for distinct scenarios. OPTS excels in situations demanding rapid response, while FPHS proves simpler to implement when flight cycles are prolonged. Consequently, in environments with relaxed time constraints, FPHS may emerge as a more cost-effective solution. However, it is worth noting that FPHS exhibits lower energy efficiency. The UAV's fixed position hovering adversely affects data transmission efficiency. As flight cycles extend, the energy efficiency gap between OPTS and FPHS diminishes.
+In shorter flight cycles, OPTS consumes less energy as it has limited time for data transmission. Conversely, as flight cycles elongate, OPTS consumes more energy due to increased data transmission duration.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//DifferentSchemes.eps}
@@ -583,25 +551,25 @@ Fig. \ref{DifferentSchemes} compares the energy efficiency of three UAV communic
 \label{DifferentSchemes}
 \end{figure}
 
-%The following figure shows the comparison of the three schemes with different parameters $\theta$.
+Fig. \ref{DifferentSchemesANDdifftheta} illustrates the variation in energy efficiency across three UAV communication scenarios: OPTS, FHCS, and FTS, with respect to the parameter $\theta$. This parameter reflects the weighting of relative energy costs between the UAV's flight energy consumption and its communication energy consumption. When $\theta$ assumes a large value, the UAV's flight energy consumption becomes the dominant factor in overall energy consumption.
+The figure demonstrates that as $\theta$ undergoes changes, the energy efficiency of all three scenarios decreases, reaching a nadir at $\theta=0.8$, before experiencing a slight increase. When $\theta$ is small, the UAV's flight energy consumption is minimal, allowing for more data transmission and thus improving energy efficiency. Conversely, when $\theta$ is large, the UAV's flight energy consumption escalates, impeding data transmission and adversely impacting energy efficiency.
+The parameter $\theta$ exerts a notable influence on the energy efficiency of the three UAV communication schemes by determining the allocation of energy between flight and communication. In practical applications, selecting an appropriate $\theta$ value for each scenario is imperative to enhance UAV communication efficiency.
 
-
-Fig. \ref{DifferentSchemesANDdifftheta} shows how the energy efficiency of three UAV communication scenarios, OPTS, FHCS and FTS, varies with the parameter $\theta$. The parameter $\theta$ reflects the weighting of the relative energy cost between the UAV's flight energy consumption and its communication energy consumption. When $\theta$ is large, the UAV's flight energy consumption is the main factor in overall energy consumption. The figure shows that as $\theta$ changes, the energy efficiency of all three scenarios decreases and reaches a low point at $\theta=0.8$. It then increases slightly.
-When $\theta$ is small, the UAV's flight energy consumption is low, so it can transmit data more. This improves energy efficiency. When $\theta$ is large, the UAV's flight energy consumption is high, so it can't transmit data, which affects energy efficiency. The parameter $\theta$ affects the energy efficiency of the three UAV communication schemes by influencing how much energy is used for flight and communication. In practice, we need to choose the right $\theta$ value for each situation to make UAV communication more efficient.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//DifferentSchemesANDdifftheta.eps}
 \caption{EE of different schemes with different $\theta$}
 \label{DifferentSchemesANDdifftheta}
-\end{figure}
+\end{figure}\
+
+Fig. \ref{comparetwoway} compares the two-way lane scenario with the one-way lane scenario. The two-way lane scenario is more energy efficient because it can use the roadside unit and airborne base station together more effectively.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{..//figures//twoway.eps}
-\caption{twoway}
+\caption{EE with different numbers of lanes}
 \label{comparetwoway}
 \end{figure}
 
-Fig. \ref{comparetwoway} compares the two-way lane scenario with the one-way lane scenario. The two-way lane scenario is more energy efficient because it can use the roadside unit and airborne base station together more effectively.
 \begin{comment}
 
 \begin{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  27 MAY 2024 15:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.5.7)  29 MAY 2024 16:19
 entering extended mode
 **C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第二
 篇小论文/chapter/Energy_Efficient_for_UAV_Assisted_Vehicular.tex
@@ -123,15 +123,6 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-(D:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks16
-\verbatim@line=\toks17
-\verbatim@in@stream=\read1
-)
-(D:\CTEX\MiKTeX\tex\latex\caption\subcaption.sty
-Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
-
 (D:\CTEX\MiKTeX\tex\latex\caption\caption.sty
 Package: caption 2011/11/10 v3.2e Customizing captions (AR)
 
@@ -161,10 +152,13 @@ footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent
 t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
 \footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
 \c@ContinuedFloat=\count92
+) (D:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
 )
-\c@subfigure=\count93
-\c@subtable=\count94
-) (D:\CTEX\MiKTeX\tex\latex\cite\cite.sty
+(D:\CTEX\MiKTeX\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
@@ -189,13 +183,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -204,15 +198,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen127
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks19
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks20
 \eqnshift@=\dimen128
 \alignsep@=\dimen129
@@ -304,11 +298,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-\c@theorem=\count107
-\c@lemma=\count108
-\c@definition=\count109
-\c@remark=\count110
-\c@example=\count111
+\c@theorem=\count105
+\c@lemma=\count106
+\c@definition=\count107
+\c@remark=\count108
+\c@example=\count109
 
 (D:\CTEX\MiKTeX\tex\latex\extarrows\extarrows.sty
 Package: extarrows 2008/05/15 v1.0b Some extensible arrows
@@ -319,7 +313,7 @@ nment
 
 (D:\CTEX\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count112
+\c@float@type=\count110
 \float@exts=\toks30
 \float@box=\box29
 \@float@everytoks=\toks31
@@ -329,14 +323,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks32
-\c@algorithm=\count113
+\c@algorithm=\count111
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count114
-\c@ALC@line=\count115
-\c@ALC@rem=\count116
-\c@ALC@depth=\count117
+\c@ALC@unique=\count112
+\c@ALC@line=\count113
+\c@ALC@rem=\count114
+\c@ALC@depth=\count115
 \ALC@tlm=\skip50
 \algorithmicindent=\skip51
 )
@@ -396,13 +390,13 @@ Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \@linkdim=\dimen135
-\Hy@linkcounter=\count118
-\Hy@pagecounter=\count119
+\Hy@linkcounter=\count116
+\Hy@pagecounter=\count117
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count120
+\Hy@SavedSpaceFactor=\count118
 
 (D:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -414,9 +408,9 @@ Package hyperref Info: Plain pages OFF on input line 4061.
 Package hyperref Info: Backreferencing OFF on input line 4066.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
-\c@Hy@tempcnt=\count121
+\c@Hy@tempcnt=\count119
 LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count122
+\Fld@menulength=\count120
 \Field@Width=\dimen136
 \Fld@charsize=\dimen137
 Package hyperref Info: Hyper figures OFF on input line 5757.
@@ -428,17 +422,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5782.
 Package hyperref Info: PDF/A mode OFF on input line 5787.
 LaTeX Info: Redefining \ref on input line 5827.
 LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count123
-\c@Item=\count124
-\c@Hfootnote=\count125
+\Hy@abspage=\count121
+\c@Item=\count122
+\c@Hfootnote=\count123
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
-\Fld@listcount=\count126
-\c@bookmark@seq@number=\count127
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
 
 (D:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -451,33 +445,33 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\第二�
 ��小论文\chapter\Energy_Efficient_for_UAV_Assisted_Vehicular.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
+\scratchcounter=\count126
 \scratchdimen=\dimen138
 \scratchbox=\box31
-\nofMPsegments=\count129
-\nofMParguments=\count130
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count131
+\MPscratchCnt=\count129
 \MPscratchDim=\dimen139
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks34
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -485,18 +479,18 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 54.
  (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\第二�
 ��小论文\chapter\Energy_Efficient_for_UAV_Assisted_Vehicular.out)
@@ -504,13 +498,13 @@ LaTeX Info: Redefining \nameref on input line 53.
 ��小论文\chapter\Energy_Efficient_for_UAV_Assisted_Vehicular.out)
 \@outlinefile=\write3
 
-Underfull \hbox (badness 1939) in paragraph at lines 68--68
+Underfull \hbox (badness 1939) in paragraph at lines 69--69
 [][][]\OT1/ptm/m/n/8 Zhixin Li-u, Jian-shuai Wei, Ji-awei Su and Yazhou Yuan ar
 e with
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 68--68
+Underfull \hbox (badness 2837) in paragraph at lines 69--69
 \OT1/ptm/m/n/8 the School of Elec-tri-cal En-gi-neer-ing, Yan-shan U-ni-ver-si-
 ty, Qin-huang-
  []
@@ -519,59 +513,56 @@ ty, Qin-huang-
 
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 112.
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 112.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 115.
 
 (D:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+<..//figures//model44.pdf, id=118, 1042.9765pt x 496.61536pt>
+File: ..//figures//model44.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex.exe (file C:/Users/we/OneDrive/组内文献/次世代�
-��络架构与矩阵革命/第二篇小论文/figures/model4.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<..//figures//model4.pdf, id=118, 1042.9765pt x 496.61536pt>
-File: ..//figures//model4.pdf Graphic file (type pdf)
-
-<use ..//figures//model4.pdf>
-Package pdftex.def Info: ..//figures//model4.pdf used on input line 125.
+<use ..//figures//model44.pdf>
+Package pdftex.def Info: ..//figures//model44.pdf used on input line 128.
 (pdftex.def)             Requested size: 455.23482pt x 170.7111pt.
+ [2]
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--168
-\OT1/ptm/m/n/10 ,The dis-tance of ve-hi-cle $\OML/cmm/m/it/10 M$ \OT1/ptm/m/n/1
-0 from the UAV at
+Underfull \hbox (badness 10000) in paragraph at lines 136--162
+\OT1/ptm/m/n/10 The dis-tance be-tween ve-hi-cle $\OML/cmm/m/it/10 M$ \OT1/ptm/
+m/n/10 and the UAV
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--168
-$\OML/cmm/m/it/10 t$ \OT1/ptm/m/n/10 time s-lot is $[] [] \OT1/cmr/m/n/10 = [] 
-=$
+Underfull \hbox (badness 5862) in paragraph at lines 136--162
+\OT1/ptm/m/n/10 at time s-lot $\OML/cmm/m/it/10 t$ \OT1/ptm/m/n/10 is $[] [] \O
+T1/cmr/m/n/10 = [] =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--168
-$[] $\OT1/ptm/m/n/10 .
+Underfull \hbox (badness 10000) in paragraph at lines 136--162
+$[]$\OT1/ptm/m/n/10 . Ad-di-tion-al-ly,
  []
 
-[2] [3 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/
-第二篇小论文/figures/model4.pdf>] [4]
-Underfull \hbox (badness 1888) in paragraph at lines 267--267
+[3 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第�
+��篇小论文/figures/model44.pdf>] [4]
+Underfull \hbox (badness 1888) in paragraph at lines 244--244
  \OT1/ptm/m/it/10 A. Prob-a-bilis-tic Con-strained Ap-prox-i-ma-tion and Op-ti-
 mal
  []
 
 
-Overfull \hbox (4.77081pt too wide) in paragraph at lines 296--296
+Overfull \hbox (4.77081pt too wide) in paragraph at lines 274--274
 [] 
  []
 
@@ -580,67 +571,31 @@ Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 
-Overfull \hbox (13.98286pt too wide) detected at line 375
+Overfull \hbox (13.98286pt too wide) detected at line 345
 [][]
  []
 
 [5]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 401.
+put line 371.
 
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 404.
-
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 404.
-
-(D:\CTEX\MiKTeX\tex\latex\psnfss\omlptm.fd
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 404.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 404.
-
-
-Underfull \hbox (badness 2173) in paragraph at lines 408--409
+Underfull \hbox (badness 2173) in paragraph at lines 378--379
 [] []\OT1/ptm/m/n/9 Update $\OML/cmm/m/it/9 F\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 \
 OT1/cmr/m/n/9 (\OML/cmm/m/it/9 n\OT1/cmr/m/n/9 )) = [] [] \OMS/cmsy/m/n/9  $
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 411.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 411.
-
-Missing character: There is no � in font ptmr7t!
-Missing character: There is no � in font ptmr7t!
-
-Overfull \hbox (9.9055pt too wide) in paragraph at lines 436--436
+Overfull \hbox (9.9055pt too wide) in paragraph at lines 405--405
 [] 
  []
 
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 460.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 460.
-
 [6]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 492.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 492.
-
-
-Underfull \hbox (badness 3579) in paragraph at lines 494--495
+Underfull \hbox (badness 3579) in paragraph at lines 462--463
 [] []\OT1/ptm/m/n/9 Calculate the UAV's tra-jec-to-ry $[]$ for giv-en
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 495--497
+Underfull \hbox (badness 2521) in paragraph at lines 463--465
 [] []\OT1/ptm/m/n/9 Get the op-ti-mal pow-er al-lo-ca-tion $[]$ for giv-en
  []
 
@@ -653,14 +608,14 @@ df>
 (epstopdf)                    size: 19816 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//trajectory-eps
 -converted-to.pdf ..//figures//trajectory.eps>
-(epstopdf)             \includegraphics on input line 519.
+(epstopdf)             \includegraphics on input line 486.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//trajectory-eps-converted-to.pdf, id=517, 1505.625pt x 752.8125pt>
+<..//figures//trajectory-eps-converted-to.pdf, id=532, 1505.625pt x 752.8125pt>
 File: ..//figures//trajectory-eps-converted-to.pdf Graphic file (type pdf)
 <use ..//figures//trajectory-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//trajectory-eps-converted-to.pdf used on i
-nput line 519.
+nput line 486.
 (pdftex.def)             Requested size: 455.25195pt x 227.62596pt.
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
@@ -675,15 +630,15 @@ Package epstopdf Info: Source file: <..//figures//UAVspeed.eps>
 (epstopdf)                    size: 8695 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//UAVspeed-eps-c
 onverted-to.pdf ..//figures//UAVspeed.eps>
-(epstopdf)             \includegraphics on input line 557.
+(epstopdf)             \includegraphics on input line 523.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//UAVspeed-eps-converted-to.pdf, id=519, 421.575pt x 316.18124pt>
+<..//figures//UAVspeed-eps-converted-to.pdf, id=539, 421.575pt x 316.18124pt>
 File: ..//figures//UAVspeed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//UAVspeed-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//UAVspeed-eps-converted-to.pdf used on inp
-ut line 557.
+ut line 523.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 Package epstopdf Info: Source file: <..//figures//difftheta.eps>
 (epstopdf)                    date: 2024-04-28 20:23:35
@@ -694,15 +649,15 @@ f>
 (epstopdf)                    size: 5457 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//difftheta-eps-
 converted-to.pdf ..//figures//difftheta.eps>
-(epstopdf)             \includegraphics on input line 573.
+(epstopdf)             \includegraphics on input line 539.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//difftheta-eps-converted-to.pdf, id=521, 421.575pt x 316.18124pt>
+<..//figures//difftheta-eps-converted-to.pdf, id=541, 421.575pt x 316.18124pt>
 File: ..//figures//difftheta-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//difftheta-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//difftheta-eps-converted-to.pdf used on in
-put line 573.
+put line 539.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
  [7 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第
 二篇小论文/figures/UAVspeed-eps-converted-to.pdf>]
@@ -715,17 +670,23 @@ d-to.pdf>
 (epstopdf)                    size: 3872 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//DifferentSchem
 es-eps-converted-to.pdf ..//figures//DifferentSchemes.eps>
-(epstopdf)             \includegraphics on input line 581.
+(epstopdf)             \includegraphics on input line 549.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//DifferentSchemes-eps-converted-to.pdf, id=549, 421.575pt x 316.18
+<..//figures//DifferentSchemes-eps-converted-to.pdf, id=573, 421.575pt x 316.18
 124pt>
 File: ..//figures//DifferentSchemes-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ..//figures//DifferentSchemes-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//DifferentSchemes-eps-converted-to.pdf use
-d on input line 581.
+d on input line 549.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+ [8 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第
+二篇小论文/figures/trajectory-eps-converted-to.pdf> <C:/Users/we/OneDrive/
+组内文献/次世代网络架构与矩阵革命/第二篇小论文/figures/di
+fftheta-eps-converted-to.pdf> <C:/Users/we/OneDrive/组内文献/次世代网�
+�架构与矩阵革命/第二篇小论文/figures/DifferentSchemes-eps-converte
+d-to.pdf>]
 Package epstopdf Info: Source file: <..//figures//DifferentSchemesANDdifftheta.
 eps>
 (epstopdf)                    date: 2024-04-28 20:01:09
@@ -737,41 +698,35 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=..//figures//DifferentSchem
 esANDdifftheta-eps-converted-to.pdf ..//figures//DifferentSchemesANDdifftheta.e
 ps>
-(epstopdf)             \includegraphics on input line 593.
+(epstopdf)             \includegraphics on input line 560.
 Package epstopdf Info: Output file is already uptodate.
 
-<..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf, id=551, 421.57
+<..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf, id=591, 421.57
 5pt x 316.18124pt>
 File: ..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
 <use ..//figures//DifferentSchemesANDdifftheta-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//DifferentSchemesANDdifftheta-eps-converte
-d-to.pdf used on input line 593.
+d-to.pdf used on input line 560.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
- [8 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第
-二篇小论文/figures/trajectory-eps-converted-to.pdf> <C:/Users/we/OneDrive/
-组内文献/次世代网络架构与矩阵革命/第二篇小论文/figures/di
-fftheta-eps-converted-to.pdf> <C:/Users/we/OneDrive/组内文献/次世代网�
-�架构与矩阵革命/第二篇小论文/figures/DifferentSchemes-eps-converte
-d-to.pdf>]
-
-LaTeX Warning: File `..//figures//twoway.eps' not found on input line 599.
-
 Package epstopdf Info: Source file: <..//figures//twoway.eps>
+(epstopdf)                    date: 2024-05-27 16:08:52
+(epstopdf)                    size: 23262 bytes
 (epstopdf)             Output file: <..//figures//twoway-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-04-29 13:17:46
-(epstopdf)                    size: 4103 bytes
+(epstopdf)                    date: 2024-05-27 16:08:58
+(epstopdf)                    size: 4084 bytes
 (epstopdf)             Command: <epstopdf --outfile=..//figures//twoway-eps-con
 verted-to.pdf ..//figures//twoway.eps>
-(epstopdf)             \includegraphics on input line 599.
+(epstopdf)             \includegraphics on input line 568.
 Package epstopdf Info: Output file is already uptodate.
-<..//figures//twoway-eps-converted-to.pdf, id=569, 421.575pt x 316.18124pt>
+
+<..//figures//twoway-eps-converted-to.pdf, id=593, 421.575pt x 316.18124pt>
 File: ..//figures//twoway-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ..//figures//twoway-eps-converted-to.pdf>
 Package pdftex.def Info: ..//figures//twoway-eps-converted-to.pdf used on input
- line 599.
+ line 568.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\第二�
@@ -779,35 +734,36 @@ Package pdftex.def Info: ..//figures//twoway-eps-converted-to.pdf used on input
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
-Missing character: There is no � in font ptmr7t!
-Missing character: There is no � in font ptmr7t!
-Missing character: There is no � in font ptmr7t!
  [9 <C:/Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第
 二篇小论文/figures/DifferentSchemesANDdifftheta-eps-converted-to.pdf> <C:/
 Users/we/OneDrive/组内文献/次世代网络架构与矩阵革命/第二篇�
-�论文/figures/twoway-eps-converted-to.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+�论文/figures/twoway-eps-converted-to.pdf>]
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
  [10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
 
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\第二�
 ��小论文\chapter\Energy_Efficient_for_UAV_Assisted_Vehicular.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 626.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 626.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
 Package rerunfilecheck Info: File `Energy_Efficient_for_UAV_Assisted_Vehicular.
 out' has not changed.
 (rerunfilecheck)             Checksum: CD64E4F7ADDD5BBFFC65B0CB7B8121FB;1227.
  ) 
 Here is how much of TeX's memory you used:
- 8437 strings out of 495354
- 128544 string characters out of 3183860
- 246842 words of memory out of 3000000
- 11307 multiletter control sequences out of 15000+200000
+ 8372 strings out of 495354
+ 127529 string characters out of 3183860
+ 247173 words of memory out of 3000000
+ 11243 multiletter control sequences out of 15000+200000
  45085 words of font info for 97 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 42i,18n,40p,1917b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,18n,38p,1573b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbx10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
 x5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><D:/CTEX/MiKTeX
@@ -830,10 +786,10 @@ ublic/amsfonts/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols
 CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/ti
 mes/utmbi8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTe
 X/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Energy_Efficient_for_UAV_Assisted_Vehicular.pdf (10 pages, 50
-9903 bytes).
+Output written on Energy_Efficient_for_UAV_Assisted_Vehicular.pdf (10 pages, 51
+7938 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
+ 731 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
