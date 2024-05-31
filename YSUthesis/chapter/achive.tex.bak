@@ -37,11 +37,12 @@
 \end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\publications
-{\noindent\textbf{1. 发表的学术论文}}    % 无学术论文时此项不必列出
+{\noindent\textbf{1. 撰写和发表的学术论文}}    % 无学术论文时此项不必列出
 \begin{enumerate}\setlength{\itemsep}{-0.4em}\zihao{5}%%%%%%%这一行的设定不要修改！！！
 \renewcommand{\labelenumi}{[\theenumi]}
-\item %第二作者 ，SCI II区(在投)。% Computer Networks, 2024.
-\item %×××, ×××. 并联2-RRR/UPRR踝关节康复机器人机构及其运动学 [J]. 机器人, 2010, 32(1): 6-12. (EI收录号: 20101212786168).
+%\item %第二作者 ，SCI II区(在投)。% Computer Networks, 2024.
+\item %Zhixin Liu;  Jianshuai Wei, Jiawei Su, Kit Yan Chan, and Yazhou Yuan. Robust Power Control and Task Offloading for Cloud Assisted MEC in Vehicular Networks[J]. Measurement.(已投稿)
+%×××, ×××. 并联2-RRR/UPRR踝关节康复机器人机构及其运动学 [J]. 机器人, 2010, 32(1): 6-12. (EI收录号: 20101212786168).
 %\item $\cdots$要与参考文献格式一致！！！
 \end{enumerate}
 
