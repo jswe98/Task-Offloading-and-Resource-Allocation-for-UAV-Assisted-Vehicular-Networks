@@ -21,26 +21,26 @@ You're missing a field name---line 83 of file bib/首字母大写.bib
  : %url = {https://www.infocomm-journal.com/txxb/CN/abstract/article_173287.shtml},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 493 of file bib/首字母大写.bib
+You're missing a field name---line 504 of file bib/首字母大写.bib
  : 
  : %URL = {https://www.mdpi.com/1424-8220/23/10/4624},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 506 of file bib/首字母大写.bib
+You're missing a field name---line 517 of file bib/首字母大写.bib
  : 
  : %pages =        {45--48},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 628 of file bib/首字母大写.bib
+I was expecting a `,' or a `}'---line 639 of file bib/首字母大写.bib
  :  number = 1262
  :               -1272,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 681 of file bib/首字母大写.bib
+I was expecting a `,' or a `}'---line 713 of file bib/首字母大写.bib
  :   
  :   year={2011},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 730 of file bib/首字母大写.bib
+You're missing a field name---line 772 of file bib/首字母大写.bib
  : 
  : %url = {https://www.sciencedirect.com/science/article/pii/S0968090X98000199},
 (Error may have been on previous line)
@@ -484,8 +484,6 @@ You can't pop an empty literal stack for entry Qian2023
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry 云计算隐私10418975
 while executing---line 3783 of file ysubst.bst
-You can't pop an empty literal stack for entry 云计算隐私10418975
-while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry Kim2011
 while executing---line 3783 of file ysubst.bst
 Warning--"{h}{a}{r}{v}{e}{s}{t}{i}{n}{g}-{b}{a}{s}{e}{d}} {{D}2{D} {c}{o}{m}{m}{u}{n}{i}{c}{a}{t}{i}{o}{n}} {i}{n} {c}{e}{l}{l}{u}{l}{a}{r} {networks}: {s}{t}{o}{c}{h}{a}{s}{t}{i}{c} {g}{e}{o}{m}{e}{t}{r}{y} {m}{o}{d}{e}{l}{i}{n}{g} {a}{n}{d} {a}{n}{a}{l}{y}{s}{i}{s}" isn't a brace-balanced string for entry Sakr2014
@@ -532,9 +530,6 @@ You can't pop an empty literal stack for entry Performance2022
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry WirelessRelay5937283
 while executing---line 3783 of file ysubst.bst
-Warning--empty year in 无人机技术辅助的车联网
-You can't pop an empty literal stack for entry 无人机技术辅助的车联网
-while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry 无人机技术辅助的车联网
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry Joint9453853
@@ -543,12 +538,7 @@ You can't pop an empty literal stack for entry 无人机QoS9373692
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry twoway7091030
 while executing---line 3783 of file ysubst.bst
-Warning--empty year in twoway5753961
-You can't pop an empty literal stack for entry twoway5753961
-while executing---line 3783 of file ysubst.bst
-You can't pop an empty literal stack for entry twoway5753961
-while executing---line 3783 of file ysubst.bst
-You can't pop an empty literal stack for entry twoway5753961
+You can't pop an empty literal stack for entry zhang2011information
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry twoway575396233
 while executing---line 3783 of file ysubst.bst
@@ -556,9 +546,8 @@ You can't pop an empty literal stack for entry Spatial4490168
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry Stochastic6576809
 while executing---line 3783 of file ysubst.bst
-Warning--empty author in COIFMAN1998271
-You can't pop an empty literal stack for entry COIFMAN1998271
+You can't pop an empty literal stack for entry coifman1998real
 while executing---line 3783 of file ysubst.bst
 You can't pop an empty literal stack for entry JointTrajectory9627548
 while executing---line 3783 of file ysubst.bst
-(There were 82 error messages)
+(There were 78 error messages)

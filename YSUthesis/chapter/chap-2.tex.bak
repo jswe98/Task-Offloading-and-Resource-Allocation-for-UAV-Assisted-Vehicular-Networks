@@ -156,9 +156,9 @@ R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in \mathcal{S}_l
 \end{align}
 其中，$U_{0}$ 是蜂窝链接的效用，$c_{n,\textrm{max}}$ 是价格上限。
 
-此外，通过寻找子博弈的纳什均衡(Nash Equilibrium, NE)，可以得到所提出的斯塔克尔伯格博弈的博弈均衡(Game Equilibrium, GE)。关于NE和GE在文献 \cite{RAI}中有如下的详细描述：
+此外，通过寻找子博弈的纳什均衡(Nash Equilibrium, NE)，可以得到所提出的Stackelberg博弈的博弈均衡(Game Equilibrium, GE)。关于NE和GE在文献 \cite{RAI}中有如下的详细描述：
 
-设 $c_i^*$ 是上层子博弈优化问题 \eqref{E2-12} 的解，$p_i^*$ 是下层子博弈优化问题 \eqref{E2-11} 的解。那么，对于任意 $(c_i,p_i)$，如果满足以下条件，点 $(c_i^*,p_i^*)$就是所提议的斯台克尔伯格博弈的 GE：
+设 $c_i^*$ 是上层子博弈优化问题 \eqref{E2-12} 的解，$p_i^*$ 是下层子博弈优化问题 \eqref{E2-11} 的解。那么，对于任意 $(c_i,p_i)$，如果满足以下条件，点 $(c_i^*,p_i^*)$就是所提议的Stackelberg博弈的 GE：
 \begin{equation} \label{E2-13}
 U_0\left(c_i^*, \mathbf{c}_{-i}^*, \mathbf{p}_i^*\right) \geq U_0\left(c_i, \mathbf{c}_{-i}^*, \mathbf{p}_i^*\right), \quad i \geq 1, i \in \mathcal{I}
 \end{equation}
@@ -167,17 +167,16 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \end{equation}
 %一般来说，可以通过确定子博弈的完美纳什均衡(NE)来获得 Stackelberg 博弈的通用均衡。在 Stackelberg 博弈中，车辆用户和宏用户以非合作博弈竞争。下层网络中的每个用户都希望通过调整其功率策略来实现效用总和的最大化。对于非合作博弈，NE 被定义为没有一方能提高其效用的可行点。在此点上，任何一方都无法通过单方面改变策略来提高其效用。  调整一下这句话使其更加通顺
 
-一般而言，为了获取塔克尔伯格博弈的通用均衡，首先需要确定其子博弈的完美纳什均衡。在塔克尔伯格
-博弈框架下，车辆用户和宏用户进行非合作博弈，竞争各自的利益。在下层网络中，每个用户均致力于通过优化其功率策
+一般而言，为了获取Stackelberg博弈的通用均衡，首先需要确定其子博弈的完美纳什均衡。在Stackelberg博弈框架下，车辆用户和宏用户进行非合作博弈，竞争各自的利益。在下层网络中，每个用户均致力于通过优化其功率策
 略，实现效用总和的最大化。对于非合作博弈而言，纳什均衡(NE)是一个至关重要的概念，它代表了一种策略组合，在
 该组合下，没有任何一方能够通过单方面改变其策略来获得更高的效用。
 
 %因此，GE 的计算过程如下 ：在领导者与追随者的博弈中，领导者宣布非统一价格 领导者$-$追随者博弈中宣布非统一价格，首先计算第 $i$ 个追随者的最佳响应 $p_i$。然后，领导者观察并调整干扰定价策略 $c_i$，其目的是最大化上层网络的总效用。根据上层网络的总效用最大化结果，跟随者也可预见调整后的价格策略，并反复执行上述过程，直到最优价格策略 $c_i^*$ 和最优 功率策略$p_i^*$ 得出。
-因此，通用均衡(GE)的计算过程如下：在领导者与追随者构成的塔克尔伯格博弈中，领导者首先宣布非统一价格策略。随后，
+因此，通用均衡(GE)的计算过程如下：在领导者与追随者构成的Stackelberg博弈中，领导者首先宣布非统一价格策略。随后，
 计算第$i$ 个追随者在给定领导者价格策略下的最佳响应$p_i$，接着，领导者根据观察到的追随者响应，调整其干扰定价策略$c_i$，
 旨在最大化上层网络的总效用。基于上层网络总效用的最大化结果，追随者能够预见领导者调整后的价格策略，并据此
 调整自身的功率策略。这一过程反复进行，直至达到最优价格策略$c_i^*$和最优功率策略$p_i^*$
-，从而确保塔克尔伯格博弈达到均衡状态。
+，从而确保Stackelberg博弈达到均衡状态。
 \section{博弈问题求解}\label{section2-3}
 \subsection{概率约束的转化}\label{section2-3-1}
 从 \eqref{E2-6}和 \eqref{E2-7}可以看出，中断概率约束可以表示为：
@@ -197,7 +196,7 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \begin{equation}\label{E2-18}
 \frac{-\gamma_{th} I_{n}}{\ln(1-\varepsilon)}-p_n g_{n,n}\leq0,\quad\forall n\in\mathcal{S}_l%\mathcal{N}
 \end{equation}
-\subsection{求解下层子问题}\label{section2-3-2}
+\subsection{下层子问题的求解}\label{section2-3-2}
 通过转换概率约束条件，可以得到一个资源分配的确定性优化问题。
 \begin{align}  \label{E2-19}
 &P_3: \max \limits_{p_{n}} R_{n}\!\!-c_{n} p_n g_{n,0}              \\
@@ -251,7 +250,7 @@ $P_3$ 的卡鲁什$-$库恩$-$塔克(Karush-Kuhn-Tucker, KKT)条件为，
 
 要证明 \eqref{E2-23}是 GE，就要讨论 NE 的存在性和唯一性。
 
-存在性： 类似于文献 \cite{GT} 的描述，在塔克尔伯格子博弈 \eqref{E2-12}中存在一个NE，其条件为：
+存在性： 类似于文献 \cite{GT} 的描述，在Stackelberg子博弈 \eqref{E2-12}中存在一个NE，其条件为：
 
 1) $\mathbf{P}$ 是某个欧几里得空间 $\mathcal{R}^N$ 的非空凸紧凑子集，
 
@@ -268,10 +267,10 @@ $P_3$ 的卡鲁什$-$库恩$-$塔克(Karush-Kuhn-Tucker, KKT)条件为，
 \begin{equation}\label{26}
 \frac{\partial^2 U_{n}}{\partial p_n^2}=-\frac{W(g_{n,n})^2}{\big(p_n g_{n,n} +I_n\big)^2}<0
 \end{equation}
-由于 $U_{\textrm{n}}(p_n)$ 相对于 $p_n$ 的二阶导数总是小于 0，所以 $U_{\textrm{n}}(p_n)$ 在 $p_n$ 中是凹的。因此，在塔克尔伯格子博弈 \ref{E2-12}中存在一个NE 。
+由于 $U_{\textrm{n}}(p_n)$ 相对于 $p_n$ 的二阶导数总是小于 0，所以 $U_{\textrm{n}}(p_n)$ 在 $p_n$ 中是凹的。因此，在Stackelberg子博弈 \ref{E2-12}中存在一个NE 。
 \end{proof}\par
 
-唯一性： 当$g_{n,n}$$>$$\sum\limits_{k=0,k\neq n}^N g_{k,n}$时，在所提的塔克尔伯格子博弈中，NE是唯一的。
+唯一性： 当$g_{n,n}$$>$$\sum\limits_{k=0,k\neq n}^N g_{k,n}$时，在所提的Stackelberg子博弈中，NE是唯一的。
 
 \begin{proof}
 令 $p_{-n}(t)=[p_k(t)]_{k\in\mathcal{K},k\neq n}$，则
@@ -290,9 +289,9 @@ G_{-n}p_{-n}(t)=\sum\limits_{k=1,k\neq n}^N g_{k,n}p_k(t)
 
 一般情况下，V2U 信号链路的信道增益大于干扰链路，所以 $g_{n,n}$$>$$\sum_{k=0,k\neq n}^N g_{k,n}$ 是可行的。然后，可以得到 $\|\frac{G_{-n}}{g_{n,n}}\|$$<$$1$ 。
 $\big\|\sum_{k=0,k\neq n}^N\Delta p_{k}(t)\big\|_\infty=\max [\Delta p_{k}(t)]_{k\in\mathcal{N},k\neq n}$。因此，    %根据$l_\infty-$norm的定义，可以得出
-$\delta p_{n}(t+1)$ 在迭代一段时间后可以趋近于零，而 $p_{n}(t+1)$ 可以趋近于唯一的最优点 $p_{n}^*$。因此，在塔克尔伯格子博弈中，NE 是唯一的。
+$\delta p_{n}(t+1)$ 在迭代一段时间后可以趋近于零，而 $p_{n}(t+1)$ 可以趋近于唯一的最优点 $p_{n}^*$。因此，在Stackelberg子博弈中，NE 是唯一的。
 \end{proof}
-\subsection{求解上层子问题}\label{section2-3-3}
+\subsection{上层子问题的求解}\label{section2-3-3}
 由\ref{section2-3-2}得到的VUE 的最优传输功率 $p_n$可用来求解上层子问题。
 在上层网络中，根据 VUE 的最优传输功率 $p_n$，原来的上层子博弈可以重写为，
 \begin{align}  \label{E2-29}
@@ -354,12 +353,12 @@ $c_n$的GE证明与上一小节 \ref{section2-3-2} 中$p_n$的证明类似。此
 2) $U_{\textrm{n}}(p_n)$ 在 $\mathbf{P}$ 中是连续的，在 $p_n$ 中是凹的。
 \end{comment}
 \section{算法与仿真验证}\label{section2-4}
-\subsection{斯塔克尔伯格博弈的迭代算法}\label{section2-4-1}
-本节提出了一种基于斯塔克尔伯格博弈的鲁棒资源分配算法来解决优化问题 \eqref{E2-13}和 \eqref{E2-14}。该算法如下所示：
+\subsection{Stackelberg博弈的迭代算法}\label{section2-4-1}
+本节提出了一种基于Stackelberg博弈的鲁棒资源分配算法来解决优化问题 \eqref{E2-13}和 \eqref{E2-14}。该算法如下所示：
 \begin{center}
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l l l}
     \toprule
-    \zihao{-5}算法2-1基于斯塔克尔伯格博弈的鲁棒资源分配算法                                                             \\
+    \zihao{-5}算法2-1基于Stackelberg博弈的鲁棒资源分配算法                                                             \\
     \midrule
    \zihao{-5} Step1： 开始。                                                                                            \\
    \zihao{-5} Step2： 初始化功率$p_{n}(0)$ 和干扰价格$c_{n}(0)$                                                         \\
@@ -384,7 +383,7 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 都需要来自其他VUE 的状态信息。信令开销增加到 为$N^2+N$，计算复杂度为$\mathcal{O}\left(N^2\right)$。
 通过以上分析，与集中式算法相比，本算法具有更低的复杂度和更少的信号开销。
 \subsection{仿真分析}\label{section2-4-2}
-本节将进行数值模拟，以评估基于鲁棒的斯塔克尔伯格博弈的资源分配算法的性能。在半径为500m的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
+本节将进行数值模拟，以评估基于鲁棒的Stackelberg博弈的资源分配算法的性能。在半径为500m的 BS 覆盖范围内，模拟了一个包含 1 个 CUE 和 9 个 V2U 集群的简化车辆通信模型，
 用于模拟异构通信场景，其中无人机用于悬停道路上方为VUE提供任务卸载，CUE 与BS在覆盖范围内正常通信。
 %系统假设VUE和 UAV的集群都只使用单天线进行发射和接收。
 表 \ref{biao2-1} 列出了相应的系统仿真参数。
@@ -479,7 +478,7 @@ $N$ 是  VUE  的数量。计算复杂度为$\mathcal{O}\left(N\right)$。 在�
 \end{table}
 \end{comment}
 
-基于鲁棒斯塔克尔伯格博弈的资源分配算法的收敛性能如图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 所示。
+基于鲁棒Stackelberg博弈的资源分配算法的收敛性能如图 \ref{功率收敛性能} 和图 \ref{价格收敛性能} 所示。
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{figures//chap2//功率.eps}
@@ -543,7 +542,7 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 \section{本章小结}\label{section2-5}
 在章节中，提出了一种基于博弈的鲁棒的资源分配算法，以实现 AGHVN 中的有效信息传输。该算法以用户间的博弈关系为核心，制定了实时功率分配和定价策略，
 在所提出的优化方案中实现了用户利益的最大化。具体而言，为了保证系统的鲁棒性，引入了概率约束，以确保用户服务的可靠性和稳定性。由于信道不确定性的存在，
-概率形式非凸且难以处理，因此在凸优化过程中采用了指数积分法。根据仿真结果，功率值和价格在几步内收敛到最优值。还可以得出结论，斯塔克尔伯格博弈优化方
+概率形式非凸且难以处理，因此在凸优化过程中采用了指数积分法。根据仿真结果，功率值和价格在几步内收敛到最优值。还可以得出结论，Stackelberg博弈优化方
 案表现出更好的鲁棒性。因此，所提出的基于鲁棒博弈的资源分配算法在具有复杂多用户干扰和信道不确定性的空地一体化异构车载通信场景下是有效的。
 
 

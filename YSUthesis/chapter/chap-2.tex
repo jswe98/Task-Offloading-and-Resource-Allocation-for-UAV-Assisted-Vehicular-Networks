@@ -8,7 +8,7 @@
 \end{comment}
 \section{引言}\label{section2-1}
 作为智能交通系统(Intelligent Traffic Systems, ITS)最有前途的解决方案，车联网(Internet of Vehicles, IoV)有望满足快速增长的需求，如交通效率、
-驾驶体验和事故处理。然而，由于车辆密度和用户需求的快速增加，单小区网络的频谱效率变得较低 \supercite{TFL}。因此，异构车联网络的部署已成为一种趋势 \cite{ACAR}。
+驾驶体验和事故处理。然而，由于车辆密度和用户需求的快速增加，单小区网络的频谱效率变得较低 \supercite{TFL}。因此，异构车联网络的部署已成为一种趋势 \supercite{ACAR}。
 
 近年来，空地一体化作为提高无线通信质量的最可行的解决方案之一，引起了工业界和学术界的广泛关注。由于无人机具有部署灵活、远程操作和中继能力，选择空中无人机来辅助地面网络可提升网络效率 \supercite{ACO}。然而，当无人机加入异构场景时，空地综合通信网络将
 面临两大挑战。首先，当使用信道复用模式来提高频谱效率时，多用户干扰是一个棘手的问题。有效和鲁棒的通信在很大程度上受到多用户干扰的影响，特别是在不确定的信道环境中，因此实现有效的干扰管理是一个重大挑战\supercite{CCO}。 其次，空地异构车辆网络(AGHVN)是分层的，其中蜂窝用户CUE和车辆用户VUE分别充当领导者和追随者。然而，CUE和VUE是不同的利益相关者，他们为自己的利益而竞争，平衡各方利益是一项挑战，使用博弈论的决策方法可以有效的构建CUE和VUE之间复杂利
@@ -132,7 +132,7 @@ R_{er}=\int_{0}^{\infty} W \log(1+\gamma_{n})\Pr(\gamma_{n})\, d(\gamma_{n})
 \begin{eqnarray}\label{E2-10}
 R_{n}=W\log(1+\bar{\gamma}_{n}(p_n)),\quad  n\in \mathcal{S}_l
 \end{eqnarray}
-\subsection{博弈论问题的描述}\label{section2-2-2}
+\subsection{博弈问题描述}\label{section2-2-2}
 在空地一体化异构的车载网络(AGHVN)中，频谱所有者 CUE 可以对干扰进行定价，并将 VUE 的收费作为其利润。在 V2U 小区中，VUE 的效用是传输速率与购买干扰成本之间的差额。
 考虑到 CUE 和 VUE 都是自私自利的，它们都愿意为自己的利益而竞争。因此，数学框架符合Stackelberg博弈模型，其中 CUE 和 VUE 分别是领导者和追随者。此外，还考虑了
  CUE 的通信约束。第$n$ 个V2U 单元的下子博弈可表述为：
@@ -196,7 +196,7 @@ U_{\text {sum }}\left(p_i^*, \mathbf{p}_{-i}^*, \mathbf{c}_i^*\right) \geq U_{\t
 \begin{equation}\label{E2-18}
 \frac{-\gamma_{th} I_{n}}{\ln(1-\varepsilon)}-p_n g_{n,n}\leq0,\quad\forall n\in\mathcal{S}_l%\mathcal{N}
 \end{equation}
-\subsection{求解下层子问题}\label{section2-3-2}
+\subsection{下层子问题的求解}\label{section2-3-2}
 通过转换概率约束条件，可以得到一个资源分配的确定性优化问题。
 \begin{align}  \label{E2-19}
 &P_3: \max \limits_{p_{n}} R_{n}\!\!-c_{n} p_n g_{n,0}              \\
@@ -291,7 +291,7 @@ G_{-n}p_{-n}(t)=\sum\limits_{k=1,k\neq n}^N g_{k,n}p_k(t)
 $\big\|\sum_{k=0,k\neq n}^N\Delta p_{k}(t)\big\|_\infty=\max [\Delta p_{k}(t)]_{k\in\mathcal{N},k\neq n}$。因此，    %根据$l_\infty-$norm的定义，可以得出
 $\delta p_{n}(t+1)$ 在迭代一段时间后可以趋近于零，而 $p_{n}(t+1)$ 可以趋近于唯一的最优点 $p_{n}^*$。因此，在Stackelberg子博弈中，NE 是唯一的。
 \end{proof}
-\subsection{求解上层子问题}\label{section2-3-3}
+\subsection{上层子问题的求解}\label{section2-3-3}
 由\ref{section2-3-2}得到的VUE 的最优传输功率 $p_n$可用来求解上层子问题。
 在上层网络中，根据 VUE 的最优传输功率 $p_n$，原来的上层子博弈可以重写为，
 \begin{align}  \label{E2-29}
@@ -511,7 +511,7 @@ VUE 的非均匀价格逐渐趋于稳定，最终达到收敛。因此，图 \re
 \label{F44}
 \end{figure}
 \end{comment}
-如图 \ref{中断概率对此} 所示，当真实的阈值 $\varepsilon$ 在 0.1 到 0.6 之间变化时，用户的实际中断概率总是小于给定的阈值。结果证实，本章方法不仅实现了有效的干扰管理，还保证了传输的鲁棒性。
+如图 \ref{中断概率对此} 所示，当中断概率的阈值 $\varepsilon$ 在 0.1 到 0.6 之间变化时，用户的实际中断概率总是小于给定的阈值。结果证实，本章方法不仅实现了有效的干扰管理，还保证了传输的鲁棒性。
 %通过与 \cite{PCID}和基线(目标和实际中断概率相等)比较，本章所有用户的实际中断概率都是低于基准值的。这进一步
 说明本文提出的基于鲁棒博弈的算法在信道不确定性较高的实际场景中更加稳定。
 \begin{figure}[H]

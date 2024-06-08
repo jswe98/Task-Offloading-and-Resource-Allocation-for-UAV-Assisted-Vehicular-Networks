@@ -11,7 +11,7 @@
   {c}{o}{n}{t}{r}{o}{l} {t}{e}{c}{h}{n}{i}{q}{u}{e}{s} {a}{n}{d}
   {a}{p}{p}{l}{i}{c}{a}{t}{i}{o}{n}{s} {i}{n} {connected} {a}{n}{d}
   {a}{u}{t}{o}{m}{a}{t}{e}{d} {v}{e}{h}{i}{c}{l}{e}{s} [J].
-\newblock IEEE Internet of Things Journal, 2023, 10(24): 21892\textbf{--}21916.
+\newblock IEEE Internet of Things Journal, 2023, 10(24): 21892--21916.
 
 \bibitem[Haydari and Yılmaz(2022)]{DeepReinforcement9146378}
 \textup{Haydari A, Yılmaz Y}.
@@ -293,10 +293,12 @@
   {{i}{n}{d}{u}{s}{t}{r}{i}{a}{l} {a}{u}{t}{o}{m}{a}{t}{i}{o}{n}} [J].
 \newblock IEEE Transactions on Industrial Informatics, 2019, 15(5): 3093--3103.
 
-\bibitem[胡益恺(2021)]{胡益恺智能车辆决策方法研究综述}
-\textup{胡益恺 , 王春香}.
-\newblock 智能车辆决策方法研究综述 [J].
-\newblock 上海交通大学学报, 2021, 55(8): 1035.
+\bibitem[Yang et al.(2023)]{胡益恺智能车辆决策方法研究综述}
+\textup{Yang Y, Wang W, Liu L}, et al.
+\newblock Aoi {optimization} in the {UAV-aided} {traffic} {monitoring}
+  {network} {under} {attack:} a {stackelberg} {game} {viewpoint} [J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2023, 24(1):
+  932--941.
 
 \bibitem[Liu et al.(2021){\natexlab{b}}]{RAI}
 \textup{Liu Z, Su J, Xie Y~a}, et al.
@@ -365,7 +367,7 @@ Back Matter [J].
   {h}{i}{e}{r}{a}{r}{c}{h}{i}{c}{a}{l} {a}{c}{c}{e}{s}{s} {c}{o}{n}{t}{r}{o}{l}
   {u}{s}{i}{n}{g} {p}{o}{l}{y}{n}{o}{m}{i}{a}{l} {c}{o}{m}{m}{i}{t}{m}{e}{n}{t}
   {f}{o}{r} {m}{o}{b}{i}{l}{e} {c}{l}{o}{u}{d} {c}{o}{m}{p}{u}{t}{i}{n}{g} [J].
-\newblock IEEE Internet of Things Journal, 2024: 1--1.
+\newblock IEEE Internet of Things Journal, 2024, 11(10): 18266--18280.
 
 \bibitem[Kim et al.(2011)]{Kim2011}
 \textup{Kim T, Love D~J, Clerckx B}.
@@ -441,10 +443,11 @@ Back Matter [J].
 \newblock IEEE Transactions on Aerospace and Electronic Systems, 2011, 47(3):
   2068--2085.
 
-\bibitem[方宇杰 et al.()]{无人机技术辅助的车联网}
-\textup{方宇杰, 李萌, 司鹏搏}, et al.
-\newblock 无人机技术辅助的车联网:发展与展望 [J].
-\newblock 高技术通讯, 32(1262).
+\bibitem[Xu et al.(2023)]{无人机技术辅助的车联网}
+\textup{Xu Y~H, Li J~H, Zhou W}, et al.
+\newblock Learning-empowered {resource} {allocation} {for} {air} {slicing} {in}
+  {UAV-assisted} {cellular} {V2X} {communications} [J].
+\newblock IEEE Systems Journal, 2023, 17(1): 1008--1011.
 
 \bibitem[王智煊(2023)]{王智煊2023无人机辅助下的车联边缘计算卸载机制研究}
 \textup{王智煊}.
@@ -477,13 +480,11 @@ Back Matter [J].
   [J].
 \newblock IEEE Transactions on Vehicular Technology, 2016, 65(4): 2445--2456.
 
-\bibitem[Zhang et al.()]{twoway5753961}
-\textup{Zhang Z, Mao G, Anderson B~D~O}.
-\newblock On {t}{h}{e} {i}{n}{f}{o}{r}{m}{a}{t}{i}{o}{n}
-  {p}{r}{o}{p}{a}{g}{a}{t}{i}{o}{n} {p}{r}{o}{c}{e}{s}{s} {i}{n}
-  {m}{o}{b}{i}{l}{e} {v}{e}{h}{i}{c}{u}{l}{a}{r} {a}{d} {h}{o}{c}
-  {n}{e}{t}{w}{o}{r}{k}{s} [J].
-\newblock IEEE Transactions on Vehicular Technology.
+\bibitem[Zhang et al.(2011)]{zhang2011information}
+\textup{Zhang Z, Mao G, Anderson B~D}.
+\newblock On the Information Propagation Process in Mobile Vehicular Ad Hoc
+  Networks [J].
+\newblock IEEE Transactions on Vehicular Technology, 2011, 60(5): 2314--2325.
 
 \bibitem[Baccelli et al.(2012)]{twoway575396233}
 \textup{Baccelli E, Jacquet P, Mans B}, et al.
@@ -508,10 +509,12 @@ Back Matter [J].
 \newblock IEEE Transactions on Intelligent Transportation Systems, 2014, 15(1):
   122--135.
 
-\bibitem[COI(1998)]{COIFMAN1998271}
-A {r}{e}{a}{l}-{t}{i}{m}{e} {c}{o}{m}{p}{u}{t}{e}{r} {v}{i}{s}{i}{o}{n}
-  {s}{y}{s}{t}{e}{m} {f}{o}{r} {v}{e}{h}{i}{c}{l}{e} {t}{r}{a}{c}{k}{i}{n}{g}
-  {a}{n}{d} {t}{r}{a}{f}{f}{i}{c} {s}{u}{r}{v}{e}{i}{l}{l}{a}{n}{c}{e} [J].
+\bibitem[Coifman et al.(1998)]{coifman1998real}
+\textup{Coifman B, Beymer D, McLauchlan P}, et al.
+\newblock A {r}{e}{a}{l}-{t}{i}{m}{e} {c}{o}{m}{p}{u}{t}{e}{r}
+  {v}{i}{s}{i}{o}{n} {s}{y}{s}{t}{e}{m} {f}{o}{r} {v}{e}{h}{i}{c}{l}{e}
+  {t}{r}{a}{c}{k}{i}{n}{g} {a}{n}{d} {t}{r}{a}{f}{f}{i}{c}
+  {s}{u}{r}{v}{e}{i}{l}{l}{a}{n}{c}{e} [J].
 \newblock Transportation Research Part C: Emerging Technologies, 1998, 6(4):
   271--288.
 

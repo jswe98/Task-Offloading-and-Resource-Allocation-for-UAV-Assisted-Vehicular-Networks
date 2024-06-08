@@ -13,11 +13,11 @@
 \contentsline {section}{\numberline {2.1}引言}{8}{section.2.1}
 \contentsline {section}{\numberline {2.2}系统模型与问题描述}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}系统及信道模型}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}博弈论问题的描述}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}博弈问题描述}{10}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}博弈问题求解}{12}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}概率约束的转化}{12}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}求解下层子问题}{12}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}求解上层子问题}{14}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}下层子问题的求解}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}上层子问题的求解}{14}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}算法与仿真验证}{15}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stackelberg博弈的迭代算法}{15}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}仿真分析}{15}{subsection.2.4.2}
@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {4.2.2}车辆与无人机通信与能耗模型}{39}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}车辆计算任务卸载模型}{40}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}能效最大化问题的定义}{40}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}能效最大化问题求解}{41}{section.4.3}
+\contentsline {section}{\numberline {4.3}能效最大化问题的求解}{41}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}概率约束的近似与车辆发射功率优化问题}{41}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}计算时间约束转化与时隙资源分配问题}{44}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}无人机飞行轨迹规划问题}{44}{subsection.4.3.3}

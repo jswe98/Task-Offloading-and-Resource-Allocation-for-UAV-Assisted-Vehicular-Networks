@@ -105,7 +105,7 @@ set(gca,'xlim',[0,0.1*EEE]);
 set(gca,'ylim',[0,0.1*EEE]);
 legend('V1','V2','V3','V4','V5','V6','V7','V8','V9','CUE')
 xlabel('\fontname{宋体}中断概率阈值', 'FontSize', 14);
-ylabel('\fontname{宋体}真实的中断概率', 'FontName', 'SimSun', 'FontSize', 14);
+ylabel('\fontname{宋体}实际的中断概率', 'FontName', 'SimSun', 'FontSize', 14);
 kk=1;
 x0=0.15;y0=0.151;
 b=y0-kk*x0;

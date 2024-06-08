@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2024.5.5)  31 MAY 2024 16:24
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2024.5.5)  3 JUN 2024 11:26
 entering extended mode
 **template.tex
 (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUthes
@@ -2553,11 +2553,7 @@ is\chapter/chap-5.tex
 
 
 ] (C:\Users\we\OneDrive\组内文献\次世代网络架构与矩阵革命\YSUth
-esis\template.bbl
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;mapping=tex-tex
-t;" at 10.54pt
- -> C:/Windows/Fonts/timesbd.ttf
- [52
+esis\template.bbl [52
 
 
 
@@ -2604,12 +2600,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
  )
 (\end occurred when \iffalse on line 73 was incomplete) 
 Here is how much of TeX's memory you used:
- 34101 strings out of 430478
- 644344 string characters out of 3191503
- 735822 words of memory out of 3000000
- 36581 multiletter control sequences out of 15000+200000
- 18016 words of font info for 175 fonts, out of 3000000 for 9000
+ 34099 strings out of 430478
+ 644269 string characters out of 3191503
+ 735847 words of memory out of 3000000
+ 36580 multiletter control sequences out of 15000+200000
+ 18008 words of font info for 174 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,18n,94p,1397b,1160s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,18n,94p,1397b,1158s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on template.pdf (72 pages).

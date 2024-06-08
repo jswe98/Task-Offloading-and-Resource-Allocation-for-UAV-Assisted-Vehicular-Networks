@@ -15,7 +15,7 @@
 统在最小的能耗下可以最大化总吞吐量，为了保证地面车辆用户的服务质量，在优化问题中建立了时变的车辆移动模型下的概率约束，并以多普勒效应描述信道的不确定性。
 \section{系统模型与问题描述}\label{section4-2}
 本章考虑了一个空地一体化网络，其中车辆行驶于双向的高速公路上，无人机从基站附近起飞，作为地面车辆的空中基站进行任务的卸载，基站位于坐标原点，高度为$h_0$，
-$D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动建模为常速度运动模型 \supercite{COIFMAN1998271}。 可以规定向右为正方向，定义车道索引$L=1$ 为车辆向右行驶，$L=-1$为向左行驶。  %\supercite{Fiore2008TheNS}
+$D_R$代表了路边单元的覆盖范围的半径长度，可以将车辆运动建模为常速度运动模型 \supercite{coifman1998real}。 可以规定向右为正方向，定义车道索引$L=1$ 为车辆向右行驶，$L=-1$为向左行驶。  %\supercite{Fiore2008TheNS}
 由于基站位置固定，随者时间的推移，不可避免地存在一个方向的车辆会远离基站，势必影响其通过基站获取信息，此时，无人机向着基站的右方飞去，进而帮助远离基站的车辆获取需要的信息。
 为了决策道路上的车辆需要从无人机还是基站获取信息，根据由一阶马尔可夫过程预测到车辆到基站的信道状态信息与车辆与空中基站无人机视距链路得到的信道状态信息分别得出车辆与两个数据中中心通信的信噪比(Signal to Noise Ratio, SNR)，
 车辆会选择信噪比较大的一方请求资源，$x_m\left[t\right]=1$ 为车辆选择无人机进行通信，反之车辆选择地面的基站进行通信。
@@ -214,7 +214,7 @@ $\gamma_{m,U}\left[t\right]=p_m\left[t\right]\eta_{m,U}\left[t\right]$，其中$
 关于车辆发射功率$p_m\left[t\right]$ 的子问题如下描述：
 \begin{align}  \label{E4-19}
 \max _{ \mathbf{P}} &   ={\frac{{{L}_{m}}\left( \mathbf{P} \right)}
-{(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
+{E_m^{mec} +(1-\theta){E}_{m,R}\left( \mathbf{P} \right)+\theta{E}_{m,U}\left( \mathbf{P} \right)}}        \\
 &\text { s.t. }
 %& \eqref{E4-3end1},\eqref{E4-3end4}        \tag{\ref{E4-4end}{-1}}      \label{E4-4end1}
  \eqref{E4-18},\eqref{E4-13-2}                                                  \tag{\ref{E4-19}{-1}}      \label{E4-19-1}
@@ -292,7 +292,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 车辆在基站的覆盖范围内。当功率 和轨迹 {}给定时，关于分配时隙的子问题如下：
 \begin{align} \label{E4-36}
 \max _{ \mathbf{X},\mathbf{Y}}  &  ={\frac{{{L}_{m,R}\left( \mathbf{X} \right)+{{L}_{m,U}}\left( \mathbf{Y} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}\left( \mathbf{X} \right)+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}\left( \mathbf{Y} \right)}}     \\
 \text { s.t. }
 & \eqref{E4-13-3},\eqref{E4-13-4}                                                        \tag{\ref{E4-36}{-1}}           \label{E4-36-1}
 \end{align}
@@ -306,7 +306,7 @@ D(\mathbf{\lambda})=\max _{\substack{0 \leq P_m[t] \leq P_{\max }}} L\left(\math
 给定后，关于无人机的轨迹的优化描述如下：
 \begin{align} \label{E4-29}
 \max _{ \mathbf{Q}} &   ={\frac{{{L}_{m,R}+{{L}_{m,U}}\left( \mathbf{Q} \right)}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}        \\
 \text { s.t. }
 & \eqref{E4-13-5}                                                       \tag{\ref{E4-29}{-1}}           \label{E4-29-1}
 \end{align}
@@ -334,7 +334,7 @@ ${{q}^{\left\{ l \right\}}}\left[t\right]$
 问题 \eqref{E4-29} 进一步转化为：
 \begin{align} \label{E4-34}
 \max _{ \mathbf{Q}}  &  ={\frac{{{L}_{m,R}+\sum\limits_{t=1}^{T}{\sum\limits_{m=1}^{M}{{{B}_{0}}}}y_{m}^{\left\{ l \right\}}\left[ t \right]R_{m,U}^{\{l\}}(\mathbf{q}[t])}}
-{(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
+{E_m^{mec} +(1-\theta){{E}_{\text{t}}}^{R,\left\{ l \right\}}+\theta{{E}_{\text{t}}}^{U,\left\{ l \right\}}}}       \\
 \text { s.t. }
 & \eqref{E4-13-5}                                                       \tag{\ref{E4-34}{-1}}           \label{E4-34-1}
 \end{align}
