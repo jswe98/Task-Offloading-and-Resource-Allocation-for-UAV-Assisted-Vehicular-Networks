@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="RibbonOnLoad" loadImage="RibbonLoadImage">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabInsert">
+      <!--<tab id="aurora-tab" label="Aurora">-->
+        <group id="GroupAurora" label="Aurora" insertAfterMso="GroupInsertIllustrations">
+          <button id="insert" label="Equation" supertip="Insert a display equation." size="large" keytip="Q"
+                  tag="aurora:insert-display" onAction="RibbonButtonPress" image="aurora:insert-display"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

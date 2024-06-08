@@ -1,0 +1,659 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{bbm}
+\usepackage{color}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{cases}%必须放在在{amsmath}后面
+\newcounter{mytempeqncnt}
+\usepackage{amssymb}
+\pagestyle{empty} \textwidth 17cm \textheight 22.5cm
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}%%%
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\BOX}{\hfill $\Box$}
+\newcommand{\NAB}{\hfill $\nabla \nabla \nabla$}
+\newcommand{\BYDEF}{\stackrel{\rm \Delta}{=}}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+\topmargin -2.0cm \oddsidemargin 0.0cm \evensidemargin 0.0cm
+\parskip 0.3cm
+\parindent 0.0cm
+\baselineskip 0.5cm \makeatletter
+\def\EquationsBySection{\def\theequation{\thesection.\arabic{equation}}%
+\@addtoreset{equation}{section}}
+\def\TheoremsBySection{\def\thetheorem{\thesection.\arabic{theorem}}%
+\@addtoreset{theorem}{section}}
+\def\DefinitionsBySection{\def\thedefinition{\thesection.\arabic{definition}}%
+\@addtoreset{definition}{section}}
+\def\RemarksBySection{\def\theremark{\thesection.\arabic{remark}}%
+\@addtoreset{remark}{section}}
+\def\LemmasBySection{\def\thelemma{\thesection.\arabic{lemma}}%
+\@addtoreset{lemma}{section}}
+\def\AssumptionsBySection{\def\theassumption{\thesection.\arabic{assumption}}%
+\@addtoreset{assumption}{section}} \makeatother
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\hs}{\hspace}
+\newcommand{\vs}{\vspace}
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\bib}{\bibitem}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\fc}{\frac}
+\newcommand{\nm}{\nonumber}
+\newcommand{\ol}{\overline}
+\newcommand{\da}{\Delta}
+\newcommand\old[1]{}
+\newtheorem{remark}{Remark}
+\EquationsBySection \TheoremsBySection \DefinitionsBySection
+\RemarksBySection \LemmasBySection \AssumptionsBySection
+\begin{document}
+\begin{flushright}
+    Dr. Zhixin Liu \\
+    Institute of Electrical Engineering\\
+    Yanshan University \\
+    Qinhuangdao, 066004 China  \\
+    E-mail: lzxauto@ysu.edu.cn
+    \\
+%    \today
+\end{flushright}
+\begin{flushleft}
+Dr. Shahram Minaei\\
+AEUE-International Journal of Electronics and Communications\\
+%Editor-in-Chief\\
+
+
+
+\end{flushleft}
+Dear Editor,\\
+
+ Thank you very much for your email and the review comments on our
+paper:
+\begin{center}
+
+     {\bf Ref.  Number AEUE-D-20-00022
+}  \\
+ { ``Game-based Approach of Fair Resource Allocation in Wireless Powered Cooperative Cognitive Radio Networks"}
+\end{center}
+
+
+As kindly suggested by you and the reviewers, the paper has been
+seriously revised in accordance to the constructive and helpful
+comments from you and the reviewers for improving the quality
+further. All the modifications in the revision have been marked \textcolor {blue} {in
+blue}. For more information, please see the detailed Responses to Reviewers.
+
+We would like to express our sincere appreciation to you for your
+prompt and professional handling of our manuscript.
+
+Looking forward to hearing from you.
+
+Yours sincerely,
+
+\vspace{3mm} Zhixin Liu
+
+
+\newpage
+\pagestyle{plain}
+\title{\Huge{Response to Reviewers\thanks{For the paper, Ref. Number AEUE-D-20-00022,
+ ``Game-based Approach of Fair Resource Allocation in Wireless Powered Cooperative Cognitive Radio Networks," submitted to {\em AEUE-International Journal of Electronics and Communications}.}}}
+\author{}
+\date{}
+\maketitle We would like to thank the reviewers for their careful
+assessments and constructive comments on our submission,
+particularly the time being spent. We take the reviewers' views very
+seriously, and have made every possible effort in order to address
+the concerns raised by the reviewers and modify the paper according
+to his/her suggestions and comments. We have corrected all the
+errors and typos. The details are explained below:
+
+
+
+\newpage
+
+{\Large \underline{Response to Reviewer 1}}
+
+We appreciate the review's patience and carefulness very much. We would like to thank the reviewer for spending his/her time to
+assess the paper, and make some very constructive and detailed informative comments. Our responses are given as follows:
+
+\begin{enumerate}
+%R1Q1
+\item
+\textbf{Question}: The linear energy harvesting model is too ideal. Due to the nonlinearities of EH circuit, the used EH model in the paper will be invalid.
+
+
+\textbf{Answer}: Thanks for the reviewer's comment! We agree with the reviewer's point that non-linear EH model is more closed to reality. In practice, the conversion efficiency is a fundamental performance metric for radio frequency (RF) energy harvesting (EH) circuits, and various experiments for practical EH circuits have shown that their input-output characteristic is non-linear.
+We would like to explain why linear EH model is used in our work by comparing two different EH models. The non-linear EH model from [12] is given by:
+\begin{align}
+&E_{har}^{non-linear}=\frac{\Psi_{har}^{non-linear}-M\Omega}{1-\Omega},\\ &\Omega=\frac{1}{1+\exp(ab)},\\
+&\Psi_{har}^{non-linear}=\frac{M}{1+\exp(-a(P_{r}-b))},
+\end{align}
+where $E_{har}^{non-linear}$ is the harvested energy at wireless powered user by non-linear EH model, $\Psi_{har}^{non-linear}$ is the conventional logistic function with respect to the received RF power $P_{r}$, $M$ denotes the maximum power that the wireless powered user can harvest, $a$ and $b$ account for the circuit sensitivity limitation and the leakage current.
+
+The linear EH model adopted in our work is given by:
+\begin{align}
+&E_{har}^{linear}=\eta P_{r},
+\end{align}
+where $E_{har}^{linear}$ is the harvested energy at wireless powered user by linear EH model, $\eta$ is the energy conversion efficiency factor with $0\leq \eta \leq1$.
+These two energy harvesting models are illustrated in Fig. R1. It's worth noting that when the received RF power is low, the non-linear EH model in [12] closely matches with the linear model in our proposed model. Since the received RF power of secondary users (SUs) is characterized by low-power in this paper, the linear model is employed for simplicity. Thanks for the reviewer's comment which opens up an interesting future direction to study the non-linear EH model in wireless powered communication networks (WPCNs).
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{EH.eps}%
+\center{\footnotesize   Fig. R1 Comparison between the non-linear EH model and the linear EH model with $a=150, b=0.014, M=0.025, \eta=0.8$. }
+\label{fig1}
+\end{figure}
+
+[12] E. {Boshkovska}, D. W. K. {Ng}, N. {Zlatanov}, A. {Koelpin} and R. {Schober}, "Robust Resource Allocation for MIMO Wireless Powered Communication Networks Based on a Non-Linear EH Model, " \textit{IEEE Transactions on Communications}, vol. 65, no. 5, pp.~1984-1999, 2017.
+
+\item%R1Q2
+\textbf{Question}: In this paper, the authors decomposed the original problem into two subproblems. Please further prove and analyze the optimality of the solution. The alternating optimization approach cannot guarantee the optimality of the proposed algorithm. Please analyze the performance gap of the proposed algorithm and the optimal solution. Moreover, add the simulation comparison.
+
+\textbf{Answer}: Thanks for the reviewer's comment! We are sorry for our negligence that two subproblems (\textbf{SP1} and \textbf{SP2}) are alternately solved by the block coordinate descent method. Since three different variables ( $t_a$, $\bm{E_{cs}}$ and $t_c$) need to be solved in original problem,  it is necessary to find a iterative algorithm to compute the optimal solution efficiently. An important advantage of the block coordinate descent method is that it is well suited for parallel computation. Thus, at each iteration, $t_a$, $\bm{E_{cs}}$ and $t_c$ are updated in parallel [R1], which makes algorithm more efficient. Literature [R1] showed that the block coordinate descent method can find the unique optimal solution, if the following conditions are satisfied:
+\begin{enumerate}
+  \item The optimization function is continuously differentiable and concave.
+  \item All variables of an optimization problem are closed, convex subsets of corresponding Euclidean spaces.
+\end{enumerate}
+Now we prove that the proposed optimization problem satisfies the above conditions. The optimization problem is given by:
+\begin{align}
+\max\limits_{\emph{$\bm{E_{cs}}$},t_c,t_a}U_p\!\!=&t_cW\ln\left(1\!+\!\frac{P_ph_{pp}}{N_0}\!+\!\sum\limits_{i=1}^{N}\!\frac{E_{ci}h_{ip}}{t_cN_0}\right)\!-\!bt_a\sum\limits_{i=1}^{N}\!P_i\\
+s.t.\qquad &P_it_a+E_{ci} \leq E_{hari},\ \forall i,  \tag{0.5a}\\
+&t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)\geq \bar{R}_a,\ \forall i,  \tag{0.5b}\\
+&P_i=P_i^{\ast},\ \forall i, \tag{0.5c}\\
+&0\leq t_c \leq 1,  \tag{0.5d}\\
+&0\leq t_a \leq 1,  \tag{0.5e}\\
+&1-2t_c-t_a\geq 0,      \tag{0.5f}
+\end{align}
+where $\bm {E_{cs}}=\left[E_{c1},\cdots, E_{cN}\right]$.
+
+Given a logarithmic function $f(x)=\ln(a+x)$ is concave, where $a$ denotes a constant. Since the perspective operation preserves convexity [27], the function $f(x,y)=y\ln(a+\frac{x}{y})$ is also concave with respect to $x$ and $y$. Therefore, the objective function $U_p$ in (0.5) is concave with respect to $\bm {E_{cs}}$ and $t_c$, and $U_p$ is obviously differentiable within domain. Meanwhile, it is obvious that $U_p$ is a monotonous decreasing function with respect to $t_a$.
+Therefore, the objective function in (0.5) is a continuously differentiable and concave with respect to $t_a$, $\bm {E_{cs}}$ and $t_c$. And constraints (0.5a) to (0.5f) are affine. Hence, the solution obtained by the block coordinate descent method is optimal, and the performance gap of the proposed algorithm and the optimal solution is zero. The revised parts are marked {\color{blue}in blue}.
+
+`` The optimal solution of (11) can be obtained by solving \textbf{SP1} and \textbf{SP2} alternately {\color{blue}based on the block coordinate descent method},"
+
+[R1] D. P. Bertsekas, Nonlinear Programming. Athena Scientific, 2nd ed., 1999.
+
+[27] S. Boyd and L. Vandenberghe, Convex optimization. Cambridge University Press, 2004.
+
+\item%R1Q3
+\textbf{Question}: The authors should provide more insightful analysis of the simulation results rather than superficial statement. Additionally, the fairness is not proved by simulation results, although the authors claim the fair resource allocation.
+
+\textbf{Answer}: Thanks for the reviewer's suggestion! We have made some modifications in the revision, and some explanations are also given as follows. Considering the fairness among SUs, we propose an evaluation coefficient and consider it into the utility function of SUs. The form of evaluation coefficient is $F_{i}^{(k)}=F_{i}^{(k-1)}+c\left[\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d\right]$, where $F_{i}^{(k)}$ and $F_{i}^{(k-1)}$ are the evaluation
+values of SU$_i$ in the $k$th and $(k-1)$th iteration, respectively. $d$ is a fairness evaluation standard with $d=\frac{1}{N-1}$, which denotes the situation that all SUs achieve the same throughput (best fairness). Hence, $\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d$ means the variation of SU$_i$ in each iteration. $c$ is the speed control coefficient, which is used to adjust the convergence speed. It is clear that $F_{i}^{(k)}$ is an accumulation function, which means that $F_{i}^{(k)}$ can adjust the behavior of SU$_i$ during the entire iteration process. If other SU$_j$'s behavior $\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j$ increases in the last iteration, the SU$_i$ will increases the $P_{i}$ for avoiding the reduction of $F_{i}^{(k)}$. Therefore, the existence of the evaluation coefficient can inhibit the selfish behavior of SUs efficiently. The Jain's fairness index is employed in the simulation results, where $\mathcal{J}=\frac{(\sum\nolimits_{i=1}^{N}x_i)^2}{N\sum\nolimits_{i=1}^{N}x_i^2}$, $x_i$ is the throughput of SU$_i$ in the rewarded period. $\mathcal{J}$ ranges from $\frac{1}{N}$ (worst fairness) to 1 (best fairness).
+Fig. 7 (a) shows that GFRAA has the maximum fairness compared with the other two algorithms, which shows the validity of introducing evaluation coefficient in the proposed fair resource allocation.
+
+We have added deeper analysis as supplement of the simulation results in the revision. The revised parts are marked {\color{blue}in blue}, which are as follows:
+\begin{figure}[htbp]
+\centering
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{piconvergence.eps}
+\center{\footnotesize Fig. 3 Power allocation convergence of rewarded period.}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{pciconvergence.eps}
+\center{\footnotesize Fig. 4 Power allocation convergence of relaying period.}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{tconvergence.eps}
+\center{\footnotesize Fig. 5 Time allocation convergence.}
+\end{minipage}
+}
+\end{figure}
+
+
+
+
+`` Fig. 3 shows the iterative process of all $P_i$. It can be observed that all $P_i$ quickly reach a point. Then under the influence of $F_{i}^{(k)}$, each $P_i$ makes an adjustment, which validates the effectiveness of $F_{i}^{(k)}$. All $P_i$ are converged after 35th iteration. {\color{blue}Fig. 4 and Fig. 5 show the iterative processes of $t_a$, $t_c$ and $P_{ci}$. It is found that $P_{ci}$ and $t_c$ fluctuate mutually in the early iterations. That's because $t_c$ is coupled with $P_{ci}$, which can be seen from (24) and (29). Since the block coordinate descent method is employed, $t_c$ and $P_{ci}$ are updated in parallel and interact on another side at each iteration. It can be seen that $t_a$, $t_c$ and $P_{ci}$ are converged after 25th iteration. Meanwhile, since the Stackelberg game is constructed between PU and SUs, all variables will interact until NE is reached.} The simulation results show the fast convergence indicating the good performance of GFRAA.
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{EHandEAs.eps}
+\center{\footnotesize Fig. 6 Energy statuses of SUs with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+Energy utilization efficiency is an important evaluating indicator of the proposed system. Since the absence of energy storage or management, the energy harvested in this frame can not be allocated in the next frame. {\color{blue}Resource allocation algorithm adopted in WPCNs should use fully energy as much as possible. Since $U_p$ is a monotonous increasing function with respect to $E_{ci}$, PU prefer SUs to apply more energy to the relay phase, which will lead to the full usage of energy harvested by each SU.} Fig. 6 shows the statuses of harvested energy and allocated energy in a frame, which indicate that each user can exhaust the harvested energy by using our algorithm. Hence,  GFRAA shows good performance on energy utilization efficiency.
+
+
+
+\begin{figure}[htbp]
+\centering
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness1.eps}
+\center{\footnotesize (a) Fairness among SUs}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness2.eps}
+\center{\footnotesize (b) The sum-throughput of SUs}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness3.eps}
+\center{\footnotesize (c) The throughput of PU}
+\end{minipage}
+}
+\center{\footnotesize Fig. 7 Effect of the number of SUs on (a), (b) and (c) with $P_e=30$ dBm and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+In Fig. 7, GFRAA is compared with EPOTA and OTPNF with different number of SUs. Fig. 7(b) and (c) show that increasing the number of SUs can improve the SU sum-throughput in the rewarded period and increase the achievable throughput at PT. {\color{blue}The reason is that, as increasing the number of SUs, more SUs will participate in relaying information for PU, which improves the channel condition of PU. Meanwhile, more SUs are involved in communication with SAP, which results in a higher performance of the sum-throughput of SUs.} The fairness that applying Jain's fairness index $\mathcal{J}$ [35] achieved by each algorithm is shown in Fig. 7(a), where $\mathcal{J}=\frac{(\sum\nolimits_{i=1}^{N}x_i)^2}{N\sum\nolimits_{i=1}^{N}x_i^2}$, $x_i$ is the throughput of SU$_i$ in the rewarded period. The result of applying Jain's fairness index ranges from $\frac{1}{N}$ (worst fairness) to 1 (best fairness). The results of Fig. 7 highlight the trade-off between fairness, the achievable throughput of PU, and the SU sum-throughput. That is, GFRAA has the maximum fairness due to the introduction of fairness evaluation coefficient, and GFRAA achieves the highest throughput of PU, but the lowest SU sum-throughput.
+OPTNF has the minimum fairness since fairness is not taken into account, and OPTNF achieves the lowest throughput of PU, but the highest SU sum-throughput. In EPOTA, since allocating power equally to each SU$_i$ results in some fairness, both the throughput of PU and the SU sum-throughput are the intermediate level.
+In the proposed model, PU is at the leadership position indicating that PU's benefit needs to be satisfied firstly. Through the analyses above, GFRAA has better applicability than the other two algorithms."
+
+
+\item%R1Q4
+\textbf{Question}: In practical scenarios, the efficiency of radio frequency energy harvesting is not high. How to ensure the harvested energy is sufficient for the third and fourth stages in the article.
+
+\textbf{Answer}: Thanks for the reviewer's comment! The problem you mentioned is seriously considered in the paper. Constraints $P_it_a+P_{ci}t_c \leq E_{hari}$ in (9) and (11) indicate that  the allocated energy for each SU cannot exceed the harvested energy in a frame, which can guarantee that the harvested energy is sufficient for the third and fourth stages.
+
+\item%R1Q5
+\textbf{Question}: The authors should give more comparisons with the existing algorithms to verify the superiority of the proposed algorithm.
+
+\textbf{Answer}: Thanks very much for the reviewer's valuable suggestion! In the revised version, we have added two comparisons, which are given by:
+\begin{enumerate}
+\item PU throughput versus the transmit power $P_e$, as shown in Fig. 9,
+\item PU throughput versus the distance between the SAP and SUs, as shown in Fig. 10.
+\end{enumerate}
+
+The newly added contents in the revision are as follows, which are marked {\color{blue}in blue}.
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{PE}
+\center{\footnotesize Fig. 9 Effect of PT's transmit power $P_e$ with $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+ `` {\color{blue} Fig. 9 investigates the PU throughput versus the PT's transmit power $P_e$. The PU throughput of three algorithms increase as the $P_e$ increases. The reason is that, as the $P_e$ increases, SUs will harvest higher energy, which leads to the increase of available energy in the relaying process. Furthermore, the evaluation coefficient are introduced in GFRAA, which can inhibit the selfish behavior that SUs tend to consume more energy for their own transmissions. Hence, GFRAA can allocate higher energy for relaying, and achieve a better performance of PU throughput compared with EPOTA and OTPNF.}"
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{R}
+\center{\footnotesize Fig. 10 Effect of SUs’ distribution around SAP with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+`` {\color{blue} With the increase of distances between SUs and SAP, SUs need higher energy to communicate with SAP for a target SU Throughput, which leads to energy reduction for relaying. Hence, we test the PU throughput versus the distances between SUs and SAP, which is illustrated in Fig. 10. It is worth noting that GFRAA achieve a higher PU throughput by comparing with the other two algorithms. The reason is that the evaluation coefficient are introduced in GFRAA, SUs can achieve the target SU throughput with lower energy consumption, and higher energy can be allocated for relaying.}"
+\item%R1Q6
+\textbf{Question}: Some related works with the resource allocation problems in wireless-powered newtorks, cognitive networks, 'Optimal Resource Allocation for Wireless Powered Multi-Carrier Backscatter Communication Networks', 'Rate Maximization of Wireless Powered Cognitive Massive MIMO Systems'.
+
+\textbf{Answer}: Thanks for the reviewer's comment! The literatures mentioned by the author are indeed of great significance to us. we have added these two papers to section II, which are cited as [15] and [16]. The revised parts are marked {\color{blue}in blue}.
+
+`` {\color{blue}The authors in [15] proposed an optimization scheme in wireless powered backscatter communication networks, where power allocation, time allocation, reflection coefficient and energy allocation are jointly optimized.}
+
+{\color{blue}In [16], rate maximization is studied for underlay massive multiple-input multiple-output (MIMO) WPCNs, wherein the impacts of antenna number and spatial correlations are investigated.}"
+
+
+\end{enumerate}
+
+Finally, the authors thank the reviewer for the comments provided,
+and the time and efforts he/she has spent in the review again.
+Without the careful comments, the paper would not reach its current
+quality. We hope that the above modifications have answered the
+reviewer's concerns.
+
+\newpage
+
+{\Large \underline{Response to Reviewer 2}}
+
+We would like to thank the reviewer for his/her careful review
+work and the time spent.
+
+Our responses to the reviewer's comments are given as
+follows:
+
+\begin{enumerate}
+%R2Q1
+\item
+\textbf{Question}: The structure and content of section "I. Introduction", "II. Related Works", and mainly section "V. Numerical Results" should be improved substantially.
+1a. At the end of section II, authors should highlight (by contrast/comparison) the differences amongst the proposed approach and the "related recent works" expressing the contribution and probably the novelty w.r.t. state-of-art.
+1b. Other important variables described in section II should be aggregated to Fig.2, aiming at improving the system model comprehensiveness; please identify phases 1, 2, 3, and 4. Authors should also represent SU's distribution and involved distances in Fig. 2, as adopted in the numerical results.
+
+
+\textbf{Answer}: Thanks for the reviewer's comment!
+
+For the question 1a, we have added additional contents at the end of section II, which are marked {\color{blue}in blue}.
+
+ `` Although a few of the related works of WP-CCRN have been investigated, there are still many difficulties need further study and improvement, such as low efficiency problem caused by selfishness of SUs and coupled resource scheduling problem. In this paper, {\color{blue} a cooperation protocol is developed to regulate the behavior of PU and SUs. Moreover, a novel fairness evaluation mechanism is introduced to inhibit the selfish behavior among SUs. Aiming to improve the PU throughput and meet the throughput requirement for each SU, GFRAA is proposed in this paper. Through numerical results, we demonstrate that GFRAA can achieve a better performance for the primary network compared with baseline methods. Furthermore, we study the trade-off between fairness, the achievable throughput of PU, and the SU sum-throughput, which is rarely studied by other papers.}"
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=7.9cm]{model.eps}
+\center{\footnotesize Fig. 1 System model}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=8cm]{frame.eps}
+\center{\footnotesize Fig. 2 Cooperation protocol between primary and secondary networks}
+\end{figure}
+
+For the question 1b, we have labeled the channel gain in Fig. 1 and the phase division in Fig. 2. Location distributions of all nodes have been described at the beginning of section \uppercase\expandafter{\romannumeral5}. That is: `` {\color{blue}In the proposed scenario, PT and PR are located at (0,0) and (50,0) (unit:m), respectively. SAP is deployed at (25,0), where SUs are randomly deployed in a circle with a radius of 10 meters around SAP.}" The specific coordinates of SUs are as follows:
+SU$_1$ (25.0669,-8.4069), SU$_2$ (24.9186,2.5415), SU$_3$ (16.8629,-0.3047), SU$_4$ (24.2340,-2.3117), SU$_5$ (32.1936,-5.8826), SU$_6$ (28.3860,-0.8855), SU$_7$ (23.1199,-0.5747), SU$_8$ (26.6171,1.9207), SU$_9$ (28.6431,4.9678), SU$_{10}$ (24.7768,4.7276). In this paper, the specific coordinates of SUs are skipped for brevity.
+%R2Q2
+\item
+\textbf{Question}: Some equations in the system model require clarification or redefinition, such as:\\
+2a. why equation throughput equations across section III and IV, e.g., eq. (4), (6), (8), (10), (11b), (14), supposedly based on Shannon equation use $\rm{ln(.)}$ instead $\rm{log_2(.)}$?\\
+2b. $P_p$ and $h_{pp}$ has not been defined at the first time that they appear, eq. (2).\\
+2c. Frame duration (Phase 1 to 4) has been normalized in Fig.1. Authors should explicitly call attention to this assumption.\\
+2d. Authors have inverted the description of terms after eq. (5).
+
+
+\textbf{Answer}:Thanks for the reviewer's comment!
+
+For the question 2a, considering that $\rm{log_2(.)=\frac{ln(.)}{ln(2)}}$, $\rm{ln(.)}$ and $\rm{log_2(.)}$ have the similar features. Referring to [R2], for the convenience of finding derivatives in mathematical derivation, we employ $\rm{ln(.)}$ in Shannon equation in this paper.
+
+For the question 2b, we are sorry for our negligence! In the revised version, we have added the definitions of $P_p$ and $h_{pp}$ when they appear for the first time in this paper. And the revised part is marked {\color{blue}in blue}, which is given by:
+
+ `` where {\color{blue}$P_p$ denotes the power of PT in phase two, and $h_{pp}$ is the channel power gain between PT and PR.} $h_{ip}$ is the channel power gain between SU$_i$ and PR $\cdots$"
+
+For the question 2c, we are sorry for our negligence! In the revised version, the revised part is marked {\color{blue}in blue}. That is:
+
+`` A cooperation protocol is designed for SUs, which instructs harvesting energy, forwarding data and transmitting their own data. {\color{blue} Without loss of generality, a frame divided into four phases is normalized to a unit time, which is shown in Fig. 2."}
+
+For the question 2d, We have revised this error in the revised version, which is as follows:
+
+`` {\color{blue}where the terms $P_{ci}t_c$ and $P_it_a$ are the allocated energy by SU$_i$ in phase three and four, respectively.}"
+
+[R2] D. Li and Y. Liang, "Price-Based Bandwidth Allocation for Backscatter Communication With Bandwidth Constraints," IEEE Transactions on Wireless Communications, vol. 18, no. 11, pp. 5170-5180, 2019.
+%R2Q3
+\item
+\textbf{Question}: In section \uppercase\expandafter{\romannumeral2}.B, the authors state that the adopted game (Stackelberg game) presents Nash Equilibrium (NE). However, at that point, the game has not been formulated. Hence, authors should give evidence that the proposed game with two types of players (leader and followers) attains a NE.
+
+\textbf{Answer}: Thanks for the reviewer's suggestion! We have added the corresponding explanations in the revision. The Nash Equilibrium (NE) is defined as the operating point where no player can improve its own utility by changing its own strategy unilaterally. In section \uppercase\expandafter{\romannumeral3}.B, we first introduce two types of players (i.e., leader and
+followers). Then we depict that `` all players aim to maximize their utilities until Nash Equilibrium (NE) is reached." We would like to express that all users are rational, and want to maximize their own benefits. Thus, it is convenient for the game problem formulation in the following.
+
+Next, we want to illustrate that two types of players (leader and followers) attains a NE in the proposed game, which is marked {\color{blue}in blue} in the revision.
+
+``{\color{blue}Since the relationship among SUs has been proven to be a Supermodular game, the unique optimal solution exists in the secondary network. Meanwhile, we have obtained the unique optimal solution of primary network. Referring to [32], since both players can obtain the only optimal solution, the proposed Stackelberg game can reach a unique NE.}"
+
+[32] X. Dong, X. Li and S. Cheng, "Energy Management Optimization of Microgrid Cluster Based on Multi-Agent-System and Hierarchical Stackelberg Game Theory," IEEE Access, vol. 8, pp. 206183-206197, 2020.
+%R2Q4
+\item
+\textbf{Question}: Fairness definition in eq. (7) lacks a discussion and justification (including reference). Fairness coefficient "d" and "c" require explanation, as well as a rationale for the values adopted in section V. Numerical results (parameters values Table 1 are quite incomplete to support the Fig. 3 to 8. Same for other coefficient values, e.g. "a" and "b"; the last parameter has not been defined at the first time that it appears.
+
+\begin{table}[htbp]\label{table1}
+\caption{ System Parameters }
+\centering  % 表居中
+%\scalebox{0.05}
+{
+\begin{tabular}{cll}  % {lccc} 表示各列元素对齐方式，left-l,right-r,center-c
+\hline
+Variable &Parameter &Value\\ \hline  % \hline 在此行下面画一横线         % \\ 表示重新开始一行 % & 表示列的分隔线
+$N$ & number of SUs & 10 \\
+$P_{max}$ & maximum transmitting power of SUs & 0.5 W\\
+$\bar{R}_a$ & target secondary throughput of SUs & 0.5 Mbps\\
+$W$ & bandwidth of licensed spectrum & 10 MHz \\
+$N_{0}$ &power of White Gaussian Noise & ${10^{-5}}$ W \\
+$P_{e}$ &power of PT in phase one & 1W\\
+$P_{p}$ &power of PT in phase two & 1W\\
+$a$     &equilibrium coefficient  &$2000$\\
+$b$     &equilibrium coefficient  &$2000$\\
+$\eta$  &energy conversion efficiency factor & 0.8\\
+$c$ &speed control coefficient of $F_{i}^{(k)}$ & $1.8$ \\
+$d$ &fairness evaluation standard of $F_{i}^{(k)}$ & $\frac{1}{N-1}$\\
+$\beta$ &fixed loss               &$100$\\
+$m$     &path fading exponent    &$3$\\
+\hline
+\end{tabular}}
+\end{table}
+
+\textbf{Answer}: Thanks for the reviewer's comment! We have made some modifications in the revision, and some explanations are also given as follows. Considering the fairness among SUs, we propose an evaluation coefficient and consider it into the utility function of SUs. The form of evaluation coefficient is $F_{i}^{(k)}=F_{i}^{(k-1)}+c\left[\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d\right]$, where $F_{i}^{(k)}$ and $F_{i}^{(k-1)}$ are the evaluation
+values of SU$_i$ in the $k$th and $(k-1)$th iteration, respectively. $d$ is a fairness evaluation standard with $d=\frac{1}{N-1}$, which denotes the situation that all SUs achieve the same throughput (best fairness). Hence, $\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d$ means the variation of SU$_i$ in each iteration. $c$ is the speed control coefficient, which is used to adjust the convergence speed. In section \uppercase\expandafter{\romannumeral5}, we found out when $c=1.8$, the proposed algorithm has a good convergence speed. It is clear that $F_{i}^{(k)}$ is an accumulation function, which means that $F_{i}^{(k)}$ can adjust the behavior of SU$_i$ during the entire iteration process. If other SU$_j$'s behavior $\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j$ increases in the last iteration, the SU$_i$ will increase the $P_{i}$ for avoiding the reduction of $F_{i}^{(k)}$. Therefore, the existence of the evaluation coefficient can inhibit the selfish behavior of SUs efficiently.
+
+The above content is added briefly in the revision, which is marked {\color{blue}in blue}. That is:
+
+ ``where $F_{i}^{(k)}$ and $F_{i}^{(k-1)}$ are fairness evaluation coefficients of SU$_i$ in the $k$th and $(k-1)$th iteration, respectively. $d$ is a fairness evaluation standard, {\color{blue} where $d=\frac{1}{N-1}$ denotes the situation that all SUs achieve the same throughput (best fairness). $\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d$ means the variation of SU$_i$ in each iteration.} And $c$ is the speed control coefficient to control the changing rate of $F_{i}^{(k)}$. {\color{blue} If other SU$_j$'s behavior $\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j$ increases in the last iteration, the SU$_i$ will increase the $P_{i}$ for avoiding the reduction of $F_{i}^{(k)}$.}"
+
+In the revised version, we have updated the Table 1 where $P_{max}$ and $\bar{R}_a$ are added.
+Furthermore, "$a$" and "$b$" are equilibrium coefficients which first appear in eq. (8) and eq. (10). That is:
+\begin{eqnarray}\label{8}
+&U_i = t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aF_{i}^{(k)}P_it_a,\\
+&U_p = t_cW\ln\left(1+\frac{P_ph_{pp}}{N_0}+\sum\limits_{i=1}^{N}\frac{P_{ci}h_{ip}}{N_0}\right)-bt_a\sum\limits_{i=1}^{N}P_i,
+\end{eqnarray}
+where the first terms of both utility functions are achievable throughput, and the second terms denote energy. Because of the different units of physical significances, equilibrium coefficients $a$ and $b$ are needed to combine this two parts. And $a=2000, b=2000$ are obtained by numerical test in section \uppercase\expandafter{\romannumeral5}.
+
+We are sorry for our negligence, we have added the definition of $b$ in the revision, which are as follows:
+`` {\color{blue} where $b$ is the equilibrium coefficient.}$\cdots$"
+
+
+%R2Q5
+\item
+\textbf{Question}: Numerical results must be developed accordingly to support the proposed game-based scheme. The associated analyses should also be improved and deepened to reveal and support the findings in the conclusion section. For instance, analysis of Fig. 4 and 5 is limited (naive) and summarized by just one phrase. The authors should carry out a more comprehensive analysis.
+
+
+\textbf{Answer}: Thanks for the reviewer's comment! We have added deeper analysis as the supplement of the simulation results in the revision. In addition, two more comparisons are added to verify the superiority of GFRAA. The revised parts are marked {\color{blue}in blue}, which are as follows:
+\begin{figure}[htbp]
+\centering
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{piconvergence.eps}
+\center{\footnotesize Fig. 3 Power allocation convergence of rewarded period.}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{pciconvergence.eps}
+\center{\footnotesize Fig. 4 Power allocation convergence of relaying period.}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{tconvergence.eps}
+\center{\footnotesize Fig. 5 Time allocation convergence.}
+\end{minipage}
+}
+\end{figure}
+
+`` Fig. 3 shows the iterative process of all $P_i$. It can be observed that all $P_i$ quickly reach a point. Then under the influence of $F_{i}^{(k)}$, each $P_i$ makes an adjustment, which validates the effectiveness of $F_{i}^{(k)}$. All $P_i$ are converged after 35th iteration. {\color{blue}Fig. 4 and Fig. 5 show the iterative processes of $t_a$, $t_c$ and $P_{ci}$. It is found that $P_{ci}$ and $t_c$ fluctuate mutually in the early iterations. That's because $t_c$ is coupled with $P_{ci}$, which can be seen from (24) and (29). Since the block coordinate descent method is employed, $t_c$ and $P_{ci}$ are updated in parallel and interact on another side at each iteration. It can be seen that $t_a$, $t_c$ and $P_{ci}$ are converged after 25th iteration. Meanwhile, since the Stackelberg game is constructed between PU and SUs, all variables will interact until NE is reached.} The simulation results show the fast convergence indicating the good performance of GFRAA."
+
+`` Energy utilization efficiency is an important evaluating indicator of the proposed system. Since the absence of energy storage or management, the energy harvested in this frame can not be allocated in the next frame. {\color{blue}Resource allocation algorithm adopted in WPCNs should use fully energy as much as possible. Since $U_p$ is a monotonous increasing function with respect to $E_{ci}$, PU prefers SUs to apply more energy to the relay phase, which will lead to the full usage of energy harvested at each SU.} Fig. 6 shows the statuses of harvested energy and allocated energy in a frame, which indicate that each user can exhaust the harvested energy by using our algorithm. Hence,  GFRAA shows good performance on energy utilization efficiency.
+
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{EHandEAs.eps}
+\center{\footnotesize Fig. 6 Energy statuses of SUs with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness1.eps}
+\center{\footnotesize (a) Fairness among SUs}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness2.eps}
+\center{\footnotesize (b) The sum-throughput of SUs}
+\end{minipage}
+}
+{
+\begin{minipage}{5cm}
+\centering
+\includegraphics[width=5cm]{Fairness3.eps}
+\center{\footnotesize (c) The throughput of PU}
+\end{minipage}
+}
+\center{\footnotesize Fig. 7 Effect of the number of SUs on (a), (b) and (c) with $P_e=30$ dBm and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+In Fig. 7, GFRAA is compared with EPOTA and OTPNF with different number of SUs. Fig. 7(b) and (c) show that increasing the number of SUs can improve the SU sum-throughput in the rewarded period and increase the achievable throughput at PT. {\color{blue}The reason is that, as increasing the number of SUs, more SUs will participate in relaying information for PU, which improves the channel condition of PU. Meanwhile, more SUs are involved in communication with SAP, which results in a higher performance of the sum-throughput of SUs.} The fairness that applying Jain's fairness index $\mathcal{J}$ [35] achieved by each algorithm is shown in Fig. 7(a), where $\mathcal{J}=\frac{(\sum\nolimits_{i=1}^{N}x_i)^2}{N\sum\nolimits_{i=1}^{N}x_i^2}$, $x_i$ is the throughput of SU$_i$ in the rewarded period. The result of applying Jain's fairness index ranges from $\frac{1}{N}$ (worst fairness) to 1 (best fairness). The results of Fig. 7 highlight the trade-off between fairness, the achievable throughput of PU, and the SU sum-throughput. That is, GFRAA has the maximum fairness due to the introduction of fairness evaluation coefficient, and GFRAA achieves the highest throughput of PU, but the lowest SU sum-throughput.
+OPTNF has the minimum fairness since fairness is not taken into account, and OPTNF achieves the lowest throughput of PU, but the highest SU sum-throughput. In EPOTA, since allocating power equally to each SU$_i$ results in some fairness, both the throughput of PU and the SU sum-throughput are the intermediate level.
+In the proposed model, PU is at the leadership position indicating that PU's benefit needs to be satisfied firstly. Through the analyses above, GFRAA has better applicability than the other two algorithms."
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{PE}
+\center{\footnotesize Fig. 9 Effect of PT's transmit power $P_e$ with $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+ `` {\color{blue} Fig. 9 investigates the PU throughput versus the PT's transmit power $P_e$. The PU throughput of three algorithms increase as the $P_e$ increases. The reason is that, as the $P_e$ increases, SUs will harvest higher energy, which leads to the increase of available energy in the relaying process. Furthermore, the evaluation coefficient are introduced in GFRAA, which can inhibit the selfish behavior that SUs tend to consume more energy for their own transmissions. Hence, GFRAA can allocate higher energy for relaying, and achieve a better performance of PU throughput compared with EPOTA and OTPNF.}"
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{R}
+\center{\footnotesize Fig. 10 Effect of SUs’ distribution around SAP with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+`` {\color{blue} With the increase of distances between SUs and SAP, SUs need higher energy to communicate with SAP for a target SU Throughput, which leads to energy reduction for relaying. Hence, we test the PU throughput versus the distances between SUs and SAP, which is illustrated in Fig. 10. It is worth noting that GFRAA achieve a higher PU throughput by comparing with the other two algorithms. The reason is that the evaluation coefficient are introduced in GFRAA, SUs can achieve the target SU throughput with lower energy consumption, and higher energy can be allocated for relaying.}"
+%R2Q6
+\item
+\textbf{Question}: The authors should compare more competitive and recently published algorithms available in the literature. Notice that the EPOTA [17] uses equal power (not optimal), and it was published in 2017, while OTPNF has not been published. Hence authors should aggregate a brief description for these algorithms (adopted parameter values etc.).
+
+\textbf{Answer}: Thanks for the reviewer's comment! In this paper, the proposed algorithm (GFRAA) are compared with two different algorithms, namely equal power and optimal time allocation (EPOTA) and optimal time and power but non-fairness allocation (OTPNF). We are sorry for our negligence that we omitted the reference cited for OTPNF. The rule of OTPNF is joint optimization of transmission power and time based on the block coordinate descent method, but fairness is not considered. Actually, OTPNF is widely used in wireless powered communication networks (WPCNs) recently, such as:
+
+[34]D. Xu and Q. Li, "Resource Allocation for Secure Communications in Cooperative Cognitive Wireless Powered Communication Networks," IEEE Systems Journal, vol. 13, no. 3, pp. 2431-2442, 2019.
+
+[R4]H. Yu, M. Ju and C. Jeong, "Sum-Throughput Maximization in Dual-Hop Wireless Powered DF-Based Relay Networks," IEEE Access, vol. 7, pp. 162268-162281, 2019.
+
+[10] S. S. Kalamkar, J. P. Jeyaraj, A. Banerjee, and K. Rajawat, “Resource allocation and fairness in wireless powered cooperative cognitive radio networks,” IEEE Transactions on Communications, vol. 64, no. 8, pp. 3246-3261, 2016.
+
+We want to explain the reason for comparing with EPOTA and OTPNF, which is as follows:
+
+In this paper, a cooperation protocol is proposed to instruct each user's behavior, and a novel fairness evaluation mechanism is introduced to inhibit the selfishness of SUs. Furthermore, GFRAA is proposed to tackle the Game-based optimization problem. In order to validate the superiority of GFRAA, comparing with EPOTA is for highlighting the efficiency of GFRAA, and comparing with OTPNF is for highlighting the fairness evaluation mechanism of GFRAA. To guarantee the fair comparison in section \uppercase\expandafter{\romannumeral5}, three algorithms are the same in formulating PU's utility function. But the differences is that:
+
+In EPOTA, each SU$_i$ allocates power equally for its own transmission in phase four. Notice that allocating power equally results in some fairness, but it's not optimal.
+
+In OTPNF, SUs' utility function do not introduce any fairness, that is
+\begin{eqnarray}
+U_i = t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aP_it_a
+\end{eqnarray}
+From Fig. 7 to Fig. 10 in section \uppercase\expandafter{\romannumeral5}, simulation results reveal the trade-off between fairness, SU sum-throughput and PU throughput. That is, higher of the fairness among SUs results in higher throughput of PU and lower SU sum-throughput in the proposed scene. Meanwhile, it illustrate that GFRAA has a significant performance by introducing fairness evaluation mechanism.
+
+We have added a explanation that three algorithms adopt the same parameter values from Table1, and reference [34] is cited for OTPNF in the revised version. The revised parts are marked {\color{blue}in blue.}
+
+`` Furthermore, GFRAA is compared with two other algorithms, namely equal power and optimal time allocation (EPOTA) [19] and optimal time and power but non-fairness allocation (OTPNF) {\color{blue}[34]} in different scenarios. To guarantee the comparability of the simulation results, EPOTA allocates power equally in the rewarded period and optimizes the other variables in the same way as GFRAA. OTPNF optimizes time and power by the same method as GFRAA, but does not introduce the fairness evaluation coefficient. {\color{blue}Moreover, three algorithms adopt the same parameter values from Table1.}"
+
+[34]D. Xu and Q. Li, "Resource Allocation for Secure Communications in Cooperative Cognitive Wireless Powered Communication Networks," IEEE Systems Journal, vol. 13, no. 3, pp. 2431-2442, 2019.
+
+%R2Q7
+\item
+\textbf{Question}: Authors claim the distributed nature of the proposed algorithm and briefly discuss the complexity order (subsection IV.C). It is paramount authors explore and analyze on a comparative basis how the algorithm distributed version could be implemented while comparing other selected (from the literature)algorithms implementation.
+
+\textbf{Answer}: Thanks for the reviewer’s comment! To better explain how the algorithm distributed version could be implemented, the execution process is shown in the Algorithm 1. There are two parts of operations, one for the SUs side and another for the PU side. It is worth noting that each SU$_i$ make a strategy (i.e., $P_i^{k}$) only depend on the message of PU (i.e., $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$,  $t_c^{(k+1)}$ and $F_i^{(k)}$) in each iteration. And there is no information interchange among SUs. As a result, GFRAA a distributed algorithm. Since PT and SUs have twice information interchange in each iteration, the signal overhead is $2N$, and the computational complexity is $\mathcal{O}(N)$, where $N$ is the number of SUs. Comparing with the centralized algorithm in reference [33], each SU$_i$ needs the status information from the other SUs. Thus, the signal overhead of centralized algorithm is increased to $N^2+N$, and the computational complexity is $\mathcal{O}(N^2)$. In the revised version, we have corrected some mistakes, and the modifications have been marked {\color{blue}in blue.}
+
+`` Therefore, the signal overhead of Algorithm 1 is $2N$, where $N$ is the number of the SUs. {\color{blue}And the computational complexity is $\mathcal{O}(N)$. For a centralized algorithm in reference [33], each SU$_i$ needs the status information from the other SUs. The signal overhead is increased to $N^2+N$ and the computational complexity is $\mathcal{O}(N^2)$ $\cdots$"}
+
+[33] L. Venturino, N. Prasad and X. Wang, "Coordinated Scheduling and Power Allocation in Downlink Multicell OFDMA Networks," IEEE Transactions on Vehicular Technology, vol. 58, no. 6, pp. 2835-2848, 2009.
+
+\begin{algorithm}
+\caption{The Distributed Resource Allocation Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Initialization:}}
+\begin{algorithmic}[1]
+\STATE Initialization: Primal variables $t_a^{(1)}$, $t_c^{(1)}$, $P_i^{(1)}$, $E_{ci}^{(1)}$, dual variables $\mu_i^{(1)}$, $\gamma^{(1)}$, $\nu_i^{(1)}$, and fairness coefficient $F_i^{(1)},\forall i$. $k\leftarrow1$.
+\REPEAT
+\STATE PT computes $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$ and $t_c^{(k+1)}$ according to (22), (24), (29). And PT computes the fairness coefficient $F_i^{(k)}$ according to (7), $\forall i$.
+\STATE The dual variables $\gamma^{(k+1)}$ and $\nu_i^{(k+1)}$ are updated by (30), $\forall i$.
+\STATE PT broadcasts $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$, $t_c^{(k+1)}$ and $F_i^{(k)}$to each SU$_i, \forall i$.
+\STATE Each SU$_i$ receives the $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$, $t_c^{(k+1)}$ and $F_i^{(k)}$ transmitted by PT. Then the $P_i^{(k+1)}$ is computed by (18), $\forall i$.
+\STATE The dual variable $\mu_i^{(k+1)}$ is updated by (19), $\forall i$.
+\STATE Each SU$_i$ transmit $P_i^{(k+1)}$ to PT simultaneously.
+\STATE $k\leftarrow k+1$
+\UNTIL{The iteration goes to convergence.}
+\STATE Compute the optimal powers of relaying links $P_{ci}^{\ast}=\frac{E_{ci}^{\ast}}{t_c^{\ast}},\forall i$.
+\STATE Output the stable $t_a^\ast$, $t_c^\ast$, $\bm{P_{ci}^{\ast}}$, and $\bm{P_s^{\ast}}$, which is the optimal resource allocation of system.
+\end{algorithmic}
+\end{algorithm}
+
+
+\newpage
+%R2Q8
+\item
+\textbf{Question}:  In Table 1; include the adopted values for the following parameters
+  $P_{max}$,  target secondary throughput $\bar{R}_a$, justify the values adopted for the parameters/coefficients: a, b, c, d.
+
+\textbf{Answer}: Thanks for the reviewer’s comment! In the revision, we have added $P_{max}$ and $\bar{R}_a$ into Table 1 with $P_{max}=0.5$ W and $\bar{R}_a=0.5$ Mbps.
+
+"$a$" and "$b$" are equilibrium coefficients which first appear in eq. (8) and eq. (10). That is:
+\begin{eqnarray}\label{8}
+&U_i = t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aF_{i}^{(k)}P_it_a,\\
+&U_p = t_cW\ln\left(1+\frac{P_ph_{pp}}{N_0}+\sum\limits_{i=1}^{N}\frac{P_{ci}h_{ip}}{N_0}\right)-bt_a\sum\limits_{i=1}^{N}P_i,
+\end{eqnarray}
+where the first terms of both utility functions are achievable throughput, and the second terms denote energy. Because of the different units of physical significances, equilibrium coefficients $a$ and $b$ are needed to combine this two parts. And $a=2000, b=2000$ are obtained by numerical test in section \uppercase\expandafter{\romannumeral5}.
+
+The form of evaluation coefficient is $F_{i}^{(k)}=F_{i}^{(k-1)}+c\left[\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d\right]$, where $F_{i}^{(k)}$ and $F_{i}^{(k-1)}$ are the evaluation
+values of SU$_i$ in the $k$th and $(k-1)$th iteration, respectively. $d$ is a fairness evaluation standard with $d=\frac{1}{N-1}$, which denotes the situation that all SUs achieve the same throughput (best fairness). Hence, $\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d$ means the variation of SU$_i$ in each iteration. $c$ is the speed control coefficient, which is used to adjust the convergence speed. In section \uppercase\expandafter{\romannumeral5}, we found out when $c=1.8$, the proposed algorithm has a good convergence speed.
+
+%R2Q9
+\item
+\textbf{Question}: y-axis values in Fig 4: please, become explicit the power reference or change the scale for [dBm]
+
+\textbf{Answer}: Thanks for the reviewer’s comment! In the revised version, we have changed the scales for [dBm] in Fig. 3 and Fig. 4.
+
+\begin{figure}[htbp]
+\centering
+{
+\begin{minipage}{7cm}
+\centering
+\includegraphics[width=6cm]{piconvergence.eps}
+\center{\footnotesize Fig. 3 Power allocation convergence of rewarded period.}
+\end{minipage}
+}
+{
+\begin{minipage}{7cm}
+\centering
+\includegraphics[width=6cm]{pciconvergence.eps}
+\center{\footnotesize Fig. 4 Power allocation convergence of relaying period.}
+\end{minipage}
+}
+\end{figure}
+
+
+
+%R2Q10
+\item
+\textbf{Question}: Typos and grammatical issues: pg. 4, 2nd col.: "...The leader (i.e., the PU) acts first depended on the best response of the follower ..."
+
+
+\textbf{Answer}: Thanks for the reviewers comment! The revised parts are marked {\color{blue}in blue.}
+
+{\color{blue} The leader, PU, first adjusts its strategy based on the best response of the followers
+(i.e., the SUs).}
+\end{enumerate}
+
+Thanks for the reviewer's constructive comments and time spent, and we have
+revised our paper and we hope that the above responses have answered
+the reviewer's concerns and meet her/his expectations. We will
+happily welcome any additional suggestions and feedback by the
+reviewers.
+
+\newpage
+
+
+
+\end{document}

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="RibbonOnLoad" loadImage="RibbonLoadImage">
+	<ribbon>
+		<tabs>
+			<tab idMso="TabInsert">
+				<group id="GroupAurora" label="Aurora" insertAfterMso="GroupInsertIllustrations">
+					<splitButton id="aurora-insert-split" size="large" keytip="Y">
+						<button id="aurora-insert" label="Equation" supertip="Insert an inline equation at the current point in the document."
+                    tag="aurora:insert"
+                    image="aurora:insert"
+										onAction="RibbonButtonPress"/>
+						<menu id="aurora-insert-split-menu" itemSize="large">
+							<button id="aurora-insert-inline" label="Inline Equation" description="Insert an inline equation."
+											tag="aurora:insert"
+											image="aurora:insert"
+											keytip="Q" 
+											onAction="RibbonButtonPress"/>
+							<button id="aurora-display-eq" label="Display Equation" description="Insert an equation on a line by itself."
+                      tag="aurora:insert-display"
+                      image="aurora:insert-display"
+											keytip="D" 
+											onAction="RibbonButtonPress"/>
+							<button id="aurora-numbered-eq" label="Numbered Equation" description="Insert a numbered equation."
+                      tag="aurora:insert-numbered"
+                      image="aurora:insert-numbered"
+											keytip="N" 
+											onAction="RibbonButtonPress"/>
+						</menu>
+					</splitButton>
+					<box id="aurora-insert-box" boxStyle="vertical">
+						<button id="aurora-manual-break" label="Section Break"
+										supertip="Insert a manual section/chapter break at the current point in the document."
+										tag="aurora:manual-section-break"
+										image="aurora:manual-section-break-small"
+										keytip="B" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-equation-number" label="Equation Number"
+										supertip="Insert an equation number at the current location."
+										tag="aurora:insert-equation-number"
+										image="aurora:insert-equation-number-small"
+										keytip="A" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-paste-reference" label="Reference"
+										supertip="After pressing this button, find an equation you want to
+                    reference and double-click its number to insert a reference to it at the current location."
+										tag="aurora:insert-reference"
+										image="aurora:insert-reference-small"
+										keytip="R" 
+										onAction="RibbonButtonPress"/>
+						<!--
+						<gallery id="aurora-insert-reference" label="Reference"
+										 image="aurora:insert-reference"
+										 description="Numbered equations in this chapter"
+										 itemWidth="380" itemHeight="75"
+										 columns="1" supertip="Insert a reference to a numbered equation."
+										 onAction="RibbonRefOnAction"
+										 showItemLabel="true"
+										 invalidateContentOnDrop="true"
+										 getItemCount="RibbonRefItemCount"
+										 getItemImage="RibbonRefItemImage"
+										 getItemLabel="RibbonRefItemLabel">
+							<button id="aurora-paste-reference2" label="Reference an equation in another chapter"
+											supertip="After pressing this button, find an equation you want to
+                    reference and double-click its number to insert a reference to it at the current location."
+											tag="aurora:insert-reference"
+											image="aurora:insert-reference-small"
+											onAction="RibbonButtonPress"/>
+						</gallery>
+-->
+					</box>
+				</group>
+			</tab>
+			<tab id="aurora-tab" label="Aurora" keytip="U">
+				<group id="aurora-equation-group" label="Equations">
+					<button id="aurora-insert2" label="Inline Equation" supertip="Insert an inline equation at the current point in the document."
+                  tag="aurora:insert"
+                  image="aurora:insert"
+									size="large"
+									keytip="Q"
+									onAction="RibbonButtonPress"/>
+					<box id="aurora-box1" boxStyle="vertical">
+						<button id="aurora-display-eq2" label="Display" supertip="Insert an equation on a line by itself."
+										tag="aurora:insert-display"
+										image="aurora:insert-display-small"
+										keytip="D"
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-numbered-eq2" label="Numbered" supertip="Insert a numbered equation."
+										tag="aurora:insert-numbered"
+										image="aurora:insert-numbered-small"
+										keytip="N"
+										onAction="RibbonButtonPress"/>
+					</box>
+				</group>
+				<group id="aurora-editing-group" label="Editing">
+					<box id="aurora-box2" boxStyle="vertical">
+						<button id="aurora-edit-left" label="Previous" supertip="Edit the previous equation in the document."
+										tag="aurora:edit-left"
+										image="aurora:edit-left-small"
+										keytip="L" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-edit-right" label="Next" supertip="Edit next equation in the document."
+										tag="aurora:edit-right"
+										image="aurora:edit-right-small"
+										keytip="'" 
+										onAction="RibbonButtonPress"/>
+<!--
+						<button id="aurora-find-replace" label="Replace" supertip="Find and replace text inside equations."
+										tag="aurora:replace"
+										keytip="H"
+										onAction="RibbonButtonPress"/>
+-->
+					</box>
+				</group>
+				<group id="aurora-numbers" label="Equation Numbers">
+					<button id="aurora-number" label="Insert Number" supertip="Insert an equation number at the current location."
+									tag="aurora:insert-equation-number"
+									image="aurora:insert-equation-number"
+									size="large"
+									keytip="A" 
+									onAction="RibbonButtonPress"/>
+					<button id="aurora-reference" label="Insert Reference" supertip="Insert an equation reference at the current location."
+									tag="aurora:insert-reference"
+									image="aurora:insert-reference"
+									size="large"
+									keytip="R" 
+									onAction="RibbonButtonPress"/>
+					<box id="aurora-box4" boxStyle="vertical">
+						<button id="aurora-format-numbers" label="Format Numbers"
+										supertip="Select the way equation numbers are formatted."
+										tag="aurora:edit-number-format"
+										image="aurora:edit-number-format-small"
+										keytip="F" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-update-numbers" label="Update Numbers"
+										supertip="Update all equation numbers in the document."
+										tag="aurora:update-equation-numbers"
+										image="aurora:update-equation-numbers-small"
+										keytip="U" 
+										onAction="RibbonButtonPress"/>
+					</box>
+					<separator id="aurora-separator2"/>
+					<box id="aurora-box3" boxStyle="vertical">
+						<button id="aurora-manual-break2" label="Insert Section Break"
+										supertip="Insert a manual section/chapter break at the current point in the document."
+										tag="aurora:manual-section-break"
+										image="aurora:manual-section-break-small"
+										keytip="B" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-toggle-breaks" label="Show Section Breaks"
+										supertip="Show/hide chapter and section breaks."
+										tag="aurora:toggle-markers"
+										image="aurora:toggle-markers-small"
+										keytip="T" 
+										onAction="RibbonButtonPress"/>
+						<button id="aurora-manage-numbering" label="Manage Numbering"
+										supertip="Manage the way Aurora assigns chapter and section numbers in this document."
+										tag="aurora:manage-equation-numbering"
+										image="aurora:manage-equation-numbering-small"
+										keytip="M" 
+										onAction="RibbonButtonPress"/>
+					</box>
+				</group>
+				<group id="aurora-tools" label="Tools">
+					<button id="aurora-paste" supertip="Interpret TeX input from the clipboard and paste the result."
+							label="Paste from TeX"
+							tag="aurora:paste-from-TeX"
+							image="aurora:paste-from-TeX"
+							size="large"
+							keytip="V" 
+							onAction="RibbonButtonPress"/>
+					<button id="aurora-selection-properties"
+							supertip="Modify font size, rendering options, and package information of several equations at once."
+							label="Selection Properties"
+							tag="aurora:selection-properties"
+							image="aurora:selection-properties"
+							size="large"
+							keytip="S" 
+							onAction="RibbonButtonPress"/>
+					<separator id="aurora-separator3"/>
+					<button id="aurora-settings" supertip="Control Aurora's behaviour."
+							label="Aurora Settings"
+							tag="aurora:addin-settings"
+							image="aurora:addin-settings"
+							size="large"
+							keytip="Y" 
+							onAction="RibbonButtonPress"/>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>

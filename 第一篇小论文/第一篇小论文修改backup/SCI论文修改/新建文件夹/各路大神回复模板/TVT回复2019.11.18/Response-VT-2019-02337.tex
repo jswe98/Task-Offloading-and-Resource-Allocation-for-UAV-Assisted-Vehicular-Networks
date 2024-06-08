@@ -1,0 +1,665 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{bbm}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{cases}%必须放在在{amsmath}后面
+\newcounter{mytempeqncnt}
+\usepackage{amssymb}
+\pagestyle{empty} \textwidth 17cm \textheight 22.5cm
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\BOX}{\hfill $\Box$}
+\newcommand{\NAB}{\hfill $\nabla \nabla \nabla$}
+\newcommand{\BYDEF}{\stackrel{\rm \Delta}{=}}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+\topmargin -2.0cm \oddsidemargin 0.0cm \evensidemargin 0.0cm
+\parskip 0.3cm
+\parindent 0.0cm
+\baselineskip 0.5cm \makeatletter
+\def\EquationsBySection{\def\theequation{\thesection.\arabic{equation}}%
+\@addtoreset{equation}{section}}
+\def\TheoremsBySection{\def\thetheorem{\thesection.\arabic{theorem}}%
+\@addtoreset{theorem}{section}}
+\def\DefinitionsBySection{\def\thedefinition{\thesection.\arabic{definition}}%
+\@addtoreset{definition}{section}}
+\def\RemarksBySection{\def\theremark{\thesection.\arabic{remark}}%
+\@addtoreset{remark}{section}}
+\def\LemmasBySection{\def\thelemma{\thesection.\arabic{lemma}}%
+\@addtoreset{lemma}{section}}
+\def\AssumptionsBySection{\def\theassumption{\thesection.\arabic{assumption}}%
+\@addtoreset{assumption}{section}} \makeatother
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\hs}{\hspace}
+\newcommand{\vs}{\vspace}
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\bib}{\bibitem}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\fc}{\frac}
+\newcommand{\nm}{\nonumber}
+\newcommand{\ol}{\overline}
+\newcommand{\da}{\Delta}
+\newcommand\old[1]{}
+\newtheorem{remark}{Remark}
+\EquationsBySection \TheoremsBySection \DefinitionsBySection
+\RemarksBySection \LemmasBySection \AssumptionsBySection
+\begin{document}
+\begin{flushright}
+    Dr. Zhixin Liu \\
+    Institute of Electrical Engineering\\
+    Yanshan University \\
+    Qinhuangdao, 066004 China  \\
+    E-mail: lzxauto@ysu.edu.cn
+    \\
+%    \today
+\end{flushright}
+\begin{flushleft}
+Dr. Berk Canberk\\
+IEEE Transactions on Vehicular Technology\\
+%Editor-in-Chief\\
+Email: canberk@itu.edu.tr
+
+
+\end{flushleft}
+Dear Editor,\\
+
+ Thank you very much for your email and the review comments on our
+paper:
+\begin{center}
+
+     {\bf Ref.  Number VT-2019-02337
+}  \\
+ { ``Rate Maximization for Hybrid Access Femtocell Networks with Outage Constraints Based on Pricing
+Incentive Mechanism"}
+\end{center}
+
+
+As kindly suggested by you and the reviewers, the paper has been
+seriously revised in accordance to the constructive and helpful
+comments from you and the reviewers for improving the quality
+further. All the modifications in the revision have been marked \textcolor {blue} {in
+blue}. For more information, please see the detailed Responses to Reviewers.
+
+We would like to express our sincere appreciation to you for your
+prompt and professional handling of our manuscript.
+
+Looking forward to hearing from you.
+
+Yours sincerely,
+
+\vspace{3mm} Zhixin Liu
+
+
+\newpage
+\pagestyle{plain}
+\title{\Huge{Response to Reviewers\thanks{For the paper, Ref. Number VT-2019-02337,
+ ``Rate Maximization for Hybrid Access Femtocell Networks with Outage Constraints Based on Pricing
+Incentive Mechanism," submitted to {\em IEEE Transactions on Vehicular Technology}.}}}
+\author{}
+\date{}
+\maketitle We would like to thank the reviewers for their careful
+assessments and constructive comments on our submission,
+particularly the time being spent. We take the reviewers' views very
+seriously, and have made every possible effort in order to address
+the concerns raised by the reviewers and modify the paper according
+to his/her suggestions and comments. We have corrected all the
+errors and typos. The details are explained below:
+
+
+
+\newpage
+
+{\Large \underline{Response to Reviewer 1}}
+
+We have received the reviewer's comments and the marked-up copy. You are the most serious and patient reviewer we have ever encountered. We appreciate the review's patience and carefulness very much. We would like to thank the reviewer for spending his/her time to
+assess the paper, and make some very constructive and detailed informative comments. Our responses are given as follows:
+
+\begin{enumerate}
+%R1Q1
+\item
+\textbf{Question}: In Fig. 1, for the reader's benefit, you should provide labels for MBS, MUE, FBS, and FUE.
+
+
+\textbf{Answer}: Thanks for the reviewer's suggestion!  In the revised version, we provide the labels of MBS, MUE, FBS and FUE at the top left of Fig. 1.
+
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6cm]{systemmodel.eps}% 名字不能有空格  6cm  11cm
+\center{\footnotesize   Fig. 1 System model. }
+\label{fig1}
+\end{figure}
+
+
+\item%R1Q2
+\textbf{Question}: Cite a reference for ``Stackelberg game" where first mentioned on p. 2, col. 2, line 11.
+
+\textbf{Answer}: Thanks for the reviewer's comment! We quote the corresponding reference in the revision, when ``Stackelberg game'' appears for the first time .
+
+This mechanism is developed based on a Stackelberg game [29] in which the MBS is a leader and the FBSs are followers.
+
+[29] R. B. Myerson, Game Theory. USA: Harvard University Press, 2013.
+
+\item%R1Q3
+\textbf{Question}: Skip a line after the end of Definition 1 (wherever it is supposed to be).
+
+\textbf{Answer}: Thanks for the reviewer's comment! In the revised version, the line is skipped after the end of every Definition.
+
+\item%R1Q4
+\textbf{Question}: When you define the variables in an equation, write "where ... is ..., ... is ..., ... , and ... is ...". (Don't start a new sentence for each term - use commas instead.)
+
+\textbf{Answer}: Thanks for the reviewer's comment! In the revision, we have made corresponding modifications, and the revised parts are marked {in blue}.
+
+\item%R1Q5
+\textbf{Question}: On p. 5. col. 1, you need to explain the connection between Definition 2 and Theorem 2.
+
+\textbf{Answer}: Thanks for the reviewer's comment! We think it is more appropriate to change the previous definition to proposition. In the revised version, we have explained the connection between two parts. Proposition 1 gives the conditions for the existence of NE, and Theorem 2 proves that the constructed game problem satisfies the above conditions, so the NE exists. The revised parts are marked {\color{blue}in blue}.
+
+{\color{blue}Next, according to Proposition 1, it is proved that the NE exists in proposed game. It is given as Theorem 2.}
+
+\item%R1Q6
+\textbf{Question}: The first sentence of the proof of Theorem 2 makes no logical sense. I don't understand what you are trying to say.
+
+\textbf{Answer}: Thanks very much for the reviewer's comment! We are sorry for the unclear expression. We want to say that the set of one-dimensional linear intervals is convex. Actually, the conclusion is obvious in the optimization theory. In the revised version, we have deleted the redundant sentence.
+
+\item%R1Q7
+\textbf{Question}: In equations like (25)-(27) and (29), extend the vertical length of absolute value $|~|$, braces \{ \}, brackets [ ], and parentheses ( ) to encompass the height of their contents (or learn how to use Latex, which does all of this and more automatically).
+
+\textbf{Answer}: Thanks very much for the reviewer's comment! In the revised version, we extend the vertical length of absolute value $\|$, brace {}, square bracket [ ] and round bracket ( ) to encompass the height of their contents. All the equations in the paper have been checked carefully to avoid any nonstandard mathematical notation.
+
+\item%R1Q8
+\textbf{Question}: Don't cite an equation, like (26) on p. 6, col. 1, line 2, until it has been properly introduced (lines 6-9).
+
+\textbf{Answer}: Thanks for the reviewer's comment! In the revised version, we adjusted the position of (26) and sentences ``The power iteration update in (26) is carried out according to $\bm{p}(t+1)= \bm{A}[p(t)]$. The variable update strategy of FBS $i$ is expressed as $\bm{A}[\bm{p}(t)]$."
+
+\begin{align}\tag{26}
+\!\!\!\!\!\!p_{i}^{*}(t\!+\!1)&\!=\left[\!\frac{m_{i}}{\ln 2E_{i}(t)}-
+\!\!\frac{p_{0}\overline h_{0,i}\!+\displaystyle\sum_{j=1,j\neq i}^{N}p_{j}(t)\overline h_{j,i}\!+\!\sigma^2}{\overline h_{i,i}}\right]_{0}^{p_{i}^{{\textrm{max}}}},
+\end{align}
+where $E_{i}(t)=\nu_{i}(t)\overline g_{i,i}\ln(1-\epsilon_{1})+\mu_{i}(t)\overline h_{i,i}\ln(1-\epsilon_{2})+\displaystyle \sum_{m=1}^{M}Z_{m}(t)\overline \gamma_{{\textrm{th}}}^{{\textrm{M}}}\overline g_{i,m}$.
+
+The power iteration update in (26) is carried out according to $\bm{p}(t+1)= \bm{A}[p(t)]$. The variable update strategy of FBS $i$ is expressed as $\bm{A}[\bm{p}(t)]$.
+
+\item%R1Q9
+\textbf{Question}: Why are you citing (25) in definitions P3 and P4?  This doesn't make any sense.
+
+\textbf{Answer}: Thanks very much for the reviewer's comment! We agree with your point. In the revised version, we have deleted the constraint (25) in P3 and P4, and added the notation in the text. It just wants to say that, in the nonuniform price bargaining optimization problem, the transmission power is fixed. The power is determined by Eq.(25).
+
+
+
+\item%R1Q10
+\textbf{Question}: Define and give a reference for CVX where first cited on p. 6, col. 2, line 36.
+
+\textbf{Answer}: Thanks for the reviewer's suggestion! In the revised version, we have added the reference of CVX. Because CVX is defined in the references we quoted, due to limited space, the definition of CVX is omitted in our paper.
+
+In particular, when solving problem (31), the MATLAB toolkit CVX [35] is adopted to determine the optimal nonuniform price.
+
+[35] M. Grant and S. Boyd: ``CVX: Matlab software for disciplined convex programming, version 2.1", http://cvxr.com/cvx, Mar. 2014.
+
+\item%R1Q11
+\textbf{Question}: Some minor points of form and style: ordinary words or abbreviations of words in mathematical symbols, particularly subscripts and superscripts, should be roman font, not italic, so that they are not misinterpreted as (italic) math variables themselves, e.g.,
+$R_{\textrm{m}}$ ("m" for "macro"), $R_{\textrm{f}}$ ("f" for "femto"), $K_{\textrm{f}}, K_{\textrm{fo}}$ ("o" for "other"), $K_0$ (roman"0", not italic "o").
+$f_0, \alpha_0, script{G}_\textrm{s}$ ("s" for "Stackelberg"), $script{P}_\textrm{s}, script{U}_\textrm{f}$ ("f" for "femto" ?), $\gamma_m^\textrm{m}$ ("m" for "macrocell ?"), $\gamma_\textrm{f}$ ("f" for "femto"), $p_i^\textrm{max}, \gamma_\textrm{h}$ ("h" for "hybrid"), $\gamma_\textrm{th}$ ("th" for "threshold"), $\gamma_\textrm{th}^\textrm{M}$ ("M" for "macro" ?); multi-character math operators and functions like "min" and "max" should be roman font, not italic; likewise, text in equations, like "s.t.", should be roman; don't start a sentence with a math variable (the reader is looking for a capitalized ordinary word), e.g., on p. 4, col. 1, line 40, write "Also, $\gamma_\textrm{f}$, i ... ; nested parentheses (()), e.g., in (21)-(23), should be avoided, preferring the standard hierarchy {[()]} instead (although nested parentheses are used in Matlab and c-code, the human eye/mind is not well suited for such parsing); note that the overall braces {} in (25) are superfluous, confusing, and unnecessary; use a space between a number and its unit, e.g., "10 MHz" on p. 7, col. 1, line 33; use IEEE style in reference listings - in particular, use proper abbreviations of journal names (see
+IEEE Citation Reference) and include month (or no. if no month) of publication for journal articles; also, more information is needed for reference [24] (book or article? publisher, etc.).
+
+\textbf{Answer}: Thanks for the reviewer's comments and careful corrections! According to your suggestion, we have made revises in corresponding positions and the modifications have been marked {\color{blue}in blue} in the revision.
+
+\end{enumerate}
+
+Finally, the authors thank the reviewer for the comments provided,
+and the time and efforts he/she has spent in the review again.
+Without the careful comments, the paper would not reach its current
+quality. We hope that the above modifications have answered the
+reviewer's concerns.
+
+\newpage
+
+{\Large \underline{Response to Reviewer 2}}
+
+We would like to thank the reviewer for his/her careful review
+work and the time spent.
+
+Our responses to the reviewer's comments are given as
+follows:
+
+\begin{enumerate}
+%R2Q1
+\item
+\textbf{Question}: The problem discussed here is too old under the frequency where it's performance has been tested.
+
+\textbf{Answer}: Thanks for the reviewer's comment! We would like to explain the background, difference from the existing works, and the main contributions of our work.
+
+First of all, although this problem has been discussed by many scholars, it still is a hot topic and has important research significance. In recent years, many studies have focused on the Rate Maximization(RM) or Energy Efficiency Maximization(EEM) through different means of optimization, such as literature [R1,17,18,25].
+Khamidehi et al. [R1] studied the problem of joint channel and power allocation in a two-tier femtocell networks. Specifically, they used two different standards to limit the interference in the two-tier femtocell networks. Sun et al. [17] proposed an interference management strategy in two-tier femtocell networks, which effectively mitigated co-channel interference and achieved effective utilization of energy. Leanh et al. [18] presented an optimization scheme for joint subchannel and power optimization in a two-tier femtocell network, and solved the NP-hard problem with a coalition game. Jiang et al. [25] proposed an optimization algorithm using double auction. So the RM and EEM problems in wireless communications, especially in the heterogenous networks with hybrid accessing, are still active and interesting, and they attract much attention of researchers in present.
+
+Secondly, many difficulties have not been completely solved in this problem such as the timing of inter layer handover and the choice of access mode.  Many existing approaches are only able to tackle the power control scheme in a deterministic communication environment. In fact, the actual communication environment is inevitably affected by many factors, such as uncertainty in channel gains, changing number of access users. User experience may be very poor in real environment with the power control scheme which uses deterministic or ideal channel parameters. Therefore, in the design of relevant power control, it is important to consider the uncertainties of channel state information (CSI). In addition, an effective transmission rate pricing mechanism has still not been developed to perform macrocell user (MUE) access to femtocell base stations (FBSs), and also an effective interference management is lacking in hybrid access networks.
+
+Finally, we focus on the problem that MUEs are in a dead zone when the femtocells and macrocell are in the same frequency domain.
+We consider how to serve the users in a dead zone. This paper has two main contributions. Firstly, we propose a pricing-incentive mechanism to encourage the FBSs to adopt a hybrid access strategy, which is able to realize rate maximization of downlink transmission in two-tier femtocell networks. A stackelberg game model with the macrocell base station (MBS) as the leader and the FBSs as the followers is established. This incentive strategy attempts to maximize the utility of the base station and promote the effective cooperation between the MBS and the FBSs. It not only improves the total throughput of the network, but also reduces the outage probability of users. Secondly, our proposed mechanism tackles more practical and dynamic communication environments that are involved with channel gain uncertainty. A probabilistic constraint method is adopted to deal with channel gain uncertainty. In addition, a power control and nonuniform price bargaining algorithm is developed to determine the optimal solution.  While some classic femtocell articles, such as literature [R2], only focus on the interference management under the same frequency. They usually choose the admission control to kick away the users in a dead zone. They are different from our concerns. Compared with some existing works, such as [5] and [9], the simulation results show that the outage probabilities of users are reduced and the throughput of system is improved.
+
+{It is noted that, in this response,  [NUMBER] indicates that the literature is quoted in the  revised version, the order is same as the reference in the manuscript, such as [5]. [LETTER] indicates that the literature is not quoted in the  revision, but only in this response, such as [R1].}
+
+%\bibitem{4}%新找的一个
+[R1] B. Khamidehi, and M. Sabbaghian.: ``Resource Allocation for SC-FDMA Femtocell Networks",\textit{IEEE Trans. Veh. Technol.}, vol. 68, no. 5, pp.~ 4573-4585, May 2019.
+
+%\bibitem{5}%新找的有接入控制的
+[R2] D. T. Ngo and L. B. Le and T. Le-Ngoc and E. Hossain and D. I. Kim.: ``Distributed Interference Management in Two-Tier CDMA Femtocell Networks", \textit{IEEE Trans. Wireless Commun.}, vol. 11,  no. 3, pp.~979--989, Mar. 2012.
+
+[5] L. Li, M. Wei, C. Xu, and Z. Zhou.: ``Rate-based pricing framework in hybrid access femtocell networks", \textit{IEEE Commun. Lett.}, vol. 19, no. 9, pp. 1560--1563, Sept. 2015.
+
+
+%\bibitem{11}%本文第七个参考文献
+[9] L. Zhang, T. Jiang, and K. Luo.: ``Dynamic spectrum allocation for the downlink of OFDMA-based hybrid-access cognitive femtocell networks", \textit{IEEE Trans. Veh. Technol.}, vol. 65, no. 3, pp. 1772--1781, Mar. 2016.
+
+%\bibitem{1}%本文第13个参文
+[17] Y. Sun, J. Wang, F. Sun, and J. Zhang.: ``Energy-aware joint user scheduling and power control for two-tier femtocell networks: A hierarchical game approach", \textit{IEEE Syst. J.}, vol. 12, no. 3, pp.~ 2533--2544, Sept. 2018.
+
+%\bibitem{2}%本文第14个参文
+[18] T. Leanh, N. H. Tran, S. Lee, E. Huh, Z. Han, and C. S. Hong.: ``Distributed power and channel allocation for cognitive femtocell network using a coalitional game in partition-form approach", \textit{IEEE Trans. Veh. Technol.}, vol. 66,  no. 4, pp.~3475--3490, Apr. 2017.
+
+%\bibitem{3}%本文第21个参文
+[25] L. Jiang, Q. Wang, R. Song, B. Ye, and J. Dai.: ``A truthful double auction framework for promoting femtocell access", \textit{IEEE Access}, vol. 7, pp.~34991--35000, 2019.
+
+%R2Q2
+\item
+\textbf{Question}: Novelty is very weak and even we can say there is no novelty. This problem is discussed several times and an almost similar solution is presented. How your problem and solution is different from the existing.
+
+\textbf{Answer}: Thanks for the reviewer's comments! We agree with the reviewer's point that there some similar works dedicating to the problem of power control and rate maximization in Femtocell network. However, we believe that the problem has not been completely solved, and there are some differences and advantages compared with some existing works. {In two-tier hierarchical networks, how to switch users from MBS service to FBS service and how to access FBS are always the focus of research.} The resource management is still a hot topic in the hierarchical network. We focus on the problem that MUEs are in a dead zone, when the femtocells and macrocell share the same frequency resource. We consider how to serve the users in a dead zone. We think this paper has two main contributions. Firstly, we propose a pricing-incentive mechanism to encourage the FBSs to adopt a hybrid access strategy, which can improve the performance of downlink transmission in two-tier femtocell networks. A stackelberg game model, where the MBS is the leader and the FBSs are the followers, is established. This incentive strategy can maximize the utility of the base station and promote the effective cooperation between the MBS and the FBSs. It is able to improve the total throughput of the network and guarantee the QoS(Quality of Service) requirement, such as keeping the outage probability of users below the required threshold. Secondly, our proposed mechanism attempts to tackle more practical communication environments that are involved with channel gain uncertainty and imperfect CSI(Channel State Information). A probabilistic constraint method is developed to deal with uncertain channel gain. In addition, a power control and nonuniform price bargaining algorithm is developed to determine the optimal solutions. While some existing articles, such as literature [R2], only focus on the interference management under the same frequency. They usually choose the admission control to remove the users in a dead zone, which will result in poor user experience. Therefore, we think there are following differences compared with the existing works that address the similar access mode.
+
+{
+1. Different from some existing literatures, the more practical interference sources and channel description are considered in the heterogenous network. Both the co-layer and cross-layer interference are included in the model. While, one or both kinds of the interference are ignored in the existing work. For example, in literature [8], the cross-layer interference is omitted; in literature [10], based on the OFDMA, both two kinds of interferences are not considered. In addition, the channel gains are usually assumed to be known and deterministic, and the uncertainties are ignored, such as literature [5]. The resource allocation algorithm under ideal assumptions may reduce the spectrum utilization in practice. In our work, we focus on the problem that MUEs are in a dead zone when the femtocells and macrocell share the same frequency resource. The proposed mechanism attempts to tackle more practical communication environments that are involved with channel gain uncertainty, the co-layer interference and cross-layer interference.}
+
+%{
+%2. Compared with some existing literatures, in the two-tier spectrum sharing network of downlink communication, the power allocation manner of FBS transmitting information to users is different. Some literatures distribute some specific power of FBS to specific user (i.e., a user corresponds to the transmission power of a base station), such as literature [R4], but this power distribution method is very complex, in the case of many users coexisting, it is difficult to meet the real-time need of user. However, we consider that FBS only uses specific power to send information uniformly to multiple users. When a large number of users coexist, this power distribution method is more practical and reasonable.}
+
+
+2. The idea and approach of solving the rate maximization problem in hybrid access network are different. The purpose of the work is to establish incentive strategy to encourage the FBSs to adopt a hybrid access strategy and maximize the downlink sum rate. So, a stackelberg game model with the macrocell base station (MBS) as the leader and the FBSs as the followers is established. Different utility functions of  MBS and FBS are designed, which can promote the effective cooperation between the MBS and the FBSs. The pricing incentive mechanism and power allocation strategy are developed. There are some related works, such as literature [5], [9], and [11]. They are similar to our work in terms of background and mathematical processing, for instance, the purpose is to connect the users in a dead zone to femtocell and consider how to serve these users. However, the specific implementation consideration of each paper is different, and the strategy adopted is also different. Specifically, literature [5] does not consider the uncertainty of channel gain;  literature [9]'s OP-THA algorithm does not adopt the incentive mechanism. Literature [11] studies the incentive problem of cellular operator in two-tier heterogeneous networks, however the effective transmission rate pricing mechanism has not been developed to perform MUE access to FBSs, and also an effective interference management is lacking in hybrid access networks. In this paper, we adopt the mechanism of pricing the dead zone users' rate to establish the game problem, which is rarely seen in previous articles. Compared with some existing works, such as [5], [9], the simulations show that our proposed scheme not only improves the total throughput of the network, but also reduces the outage probability of users.
+
+%Based on the above points, it can be said that the considered problem in our work is different from the problems and solutions of the existing literatures. %\textcolor {red}{In this response,  [\emph{number}] indicates that the literature is quoted in the  revised version, such as [5]. [\emph{R}] indicates that the literature is not quoted in the  revised version, but only in this response.}
+
+
+%\bibitem{10}%本文第三个参考文献
+[5] L. Li, M. Wei, C. Xu, and Z. Zhou.: ``Rate-based pricing framework in hybrid access femtocell networks", \textit{IEEE Commun. Lett.}, vol. 19, no. 9, pp. 1560--1563, Sept. 2015.
+
+%\bibitem{6}%Q21
+[8] D. Kim, T. Park, S. Kim, H. Kim, and S. Choi: ``Load balancing in two-tier cellular networks with open and hybrid access femtocells", \textit{IEEE/ACM Trans. Netw.}, vol. 24, no. 6, pp.~3397--3411, Dec. 2016.
+
+%\bibitem{11}%本文第七个参考文献
+[9] L. Zhang, T. Jiang, and K. Luo.: ``Dynamic spectrum allocation for the downlink of OFDMA-based hybrid-access cognitive femtocell networks", \textit{IEEE Trans. Veh. Technol.}, vol. 65, no. 3, pp. 1772-1781, Mar. 2016.
+
+%\bibitem{7}
+[10] Q. Deng, Z. Li, J. Chen, F. Zeng, H. Wang, L. Zhou, and Y. Choi: ``Dynamic spectrum sharing for hybrid access in OFDMA-based cognitive femtocell networks", \textit{IEEE Trans. Veh. Technol.}, vol. 67, no. 11, pp.~10830--10840, Nov. 2018.
+
+
+%\bibitem{9}%Q23
+[11] L. Duan, J. Huang, and B. Shou: ``Economics of femtocell service provision", \textit{IEEE Trans. Mobile Comput.}, vol. 12, no. 11, pp.~2261--2273, Nov. 2013.
+
+[R3] D. T. Ngo and L. B. Le and T. Le-Ngoc and E. Hossain and D. I. Kim.: ``Distributed Interference Management in Two-Tier CDMA Femtocell Networks", \textit{IEEE Trans. Wireless Commun.}, vol. 11,  no. 3, pp.~979--989, Mar. 2012.
+
+%\bibitem{8}%Q22
+%[R4] C. Liu, S. Xing and L. Shen: ``Dynamic hybrid-access control in multi-user and multi-femtocell networks via Stackelberg game competition", \textit{IET Commun.}, vol. 10, no. 7, pp.~862--872, May 2016.
+
+%R2Q3
+\item
+\textbf{Question}: Results are not convincing at all. No comparison is done with benchmark schemes and state-of-the-art schemes. Only independent performance with respect to each user was analyzed. This does not make sense here.
+
+\textbf{Answer}:  Thanks for the reviewer's valuable comments! In the previous version, too much
+attention is paid to the performance test of the proposed algorithm, such as convergence of power, outage probability, utility and the throughput. The performance comparisons with similar algorithms are indeed less, except that the outage performance is simply compared with two solutions. In the revision, we have enriched the simulation and more comparisons are taken to validate our proposed algorithm.  We have added more performance comparisons with literature [5] and literature [9] in aspect of outage percentages of users, the system throughput %with different accessing modes
+and the sum throughput of FUEs and HMUE.
+The modifications are as follows.
+
+
+1. In the revised version, we have added a comparison with literature [5] and [9] on actual outage percentage, as shown in Fig. 9, to verify the quality of service of FUEs.
+
+
+2. We have compared the throughput with the algorithm in [5] and the OP-THA algorithm in [9], as shown in Fig. 10, and Fig. 11, respectively. In the revised version, we have considered the fairly comprehensive performance comparison, including the respective performance of FUEs and the overall performance of the system.
+
+In addition, we make the following supplement to the simulation results.
+
+The simulation results are divided into two parts: one is to test the performance of the proposed algorithm; the other is to make a comparative analysis with the existing algorithms.
+In the first part, the performance test is carried out from the power convergence of base station, the price convergence of users, the outage percentage of FUEs, the utilities both of MBS and FBS, etc. The results are given in Fig.2 to Fig.7.
+In the second part, the comparisons with different schemes are given.  The compared result of system throughput for different access methods is given in Fig. 8. From Fig. 9, to Fig. 11, we compare the throughput and outage percentage with existing works proposed in Ref. [5] and Ref. [9], respectively.
+
+The modified parts in the revision are as follows.
+
+\textcolor {blue}{Further, for the sake of {more systematically evaluating} the performance of our method, we compare the proposed method to the other methods in terms of system robustness and {system throughput}. For the system robustness, we compare the performance of our proposed algorithm to {Li et al. [5]'s algorithm and OP-THA algorithm of Zhang et al. [9].} Li et al. [5]'s algorithm  {does} not address the uncertainties of channel gains. Hence{,} the system robustness is poor when uncertainties exist in the channel gains. {The OP-THA algorithm of Zhang et al. [9], which is a traditional hybrid access algorithm, that does not address the incentive return mechanism.} To achieve a fair comparison, three methods are applied to the same {topology}, simulation parameters and communication environment. The {actual} outage percentage is shown in Fig. 9. The target outage probability threshold $\epsilon_{1}$ is 0.05 in Fig. 9. It is evident that the actual outage percentage of Li et al. [5] {and Zhang et al. [9]} is higher than our proposed algorithm. {However, our} proposed algorithm  displays better performance than Li et al. [5] {and Zhang et al. [9]} in term of system robustness. This result shows that our proposed algorithm is more effective {in adapting} to {a} real communication environment.}
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=3in]{outagepercentage.eps}% 1in=2.54cm
+\center{\footnotesize   Fig. 9 Comparison of {actual} outage percentages.}
+%\label{fig10}
+\end{figure}
+
+\textcolor {blue}{
+To evaluate the {system throughput, we also compare our proposed algorithm to the algorithm of Li et al. [5] and the OP-THA algorithm of Zhang et al. [9]. Specifically, we compare the throughput of the whole system and the total throughput of all FUEs and HMUEs respectively with the above two algorithms.}  To achieve a fair comparison, the same {topology}, simulation parameters{,} and communication environment are applied in the {three} methods. {Fig. 10 shows the throughput of the system. As can be seen from the figure, our algorithm can achieve higher system throughput than Li et al. [5] and Zhang et al. [9]. This proves that our method has obvious advantage in improving system throughput.} Fig. 11 shows the sum throughput of FUEs and HMUEs.  Our proposed algorithm is able to achieve higher sum throughput compared to {Li et al. [5] and} Zhang et al. [9]. This shows that {a} better sum rate of {femtocells} can be achieved by the proposed method.}
+
+\begin{figure}[htbp]
+%\begin{minipage}
+\centering
+\includegraphics[width=3in]{sysduibi.eps}
+\center{\footnotesize   Fig. 10 System throughput comparison. }
+%\caption{System throughput comparison.}
+%\label{10}
+%\end{minipage}
+%\begin{minipage}[t]{0.5\linewidth}
+\end{figure}
+
+\begin{figure}[htbp]
+%\begin{minipage}[t]{0.5\linewidth}
+\centering
+\includegraphics[width=3in]{sumthroughput.eps}
+\center{\footnotesize   Fig. 11 Comparison of sum throughputs of FUEs and HMUEs.}
+%\label{fig12}
+%\end{minipage}
+%\begin{minipage}[t]{0.5\linewidth}
+\end{figure}
+[5] L. Li, M. Wei, C. Xu, and Z. Zhou.: ``Rate-based pricing framework in hybrid access femtocell networks", \textit{IEEE Commun. Lett.}, vol. 19, no. 9, pp. 1560-1563, Sept. 2015.
+
+%\bibitem{11}%本文第七个参考文献
+[9] L. Zhang, T. Jiang, and K. Luo.: ``Dynamic spectrum allocation for the downlink of OFDMA-based hybrid-access cognitive femtocell networks", \textit{IEEE Trans. Veh. Technol.}, vol. 65, no. 3, pp. 1772-1781, Mar. 2016.
+
+%R2Q4
+\item
+\textbf{Question}: Outage and Sum-throughput were compared with two different papers. How can the same system model results be compared with different models ?
+
+\textbf{Answer}: {Thanks for the reviewer's comment!  In the revised version, we have added  comparisons with literatures [5] and [9] on both outage and system throughput, in order to verify the effectiveness of our proposed scheme. Also, we have updated Fig. 9 and Fig. 11, and added the Fig. 10. In the revision, Fig. 9, Fig. 10, and Fig. 11 are the comparisons between our algorithm and the algorithm in [5] and OP-THA  algorithm in [9]. We take literatures [5] and [9] as comparison objects. There are two main reasons. First of all, the two works in [5] and [9] are similar to ours in terms of background. All three works concern the downlink transmission in hybrid access femtocell networks. The purpose is to connect the users in a dead zone to femtocell and consider how to serve these users and guarantee the transmission rate of MUE. Secondly, there are some similar scenario and mathematical processing concerned in literature [5] and our work. For the OP-THA algorithm in literature [9], although the subcarrier allocation is studied, which is not considered in our work, the objective of rate maximization through power control is same. Thus, we can compare with these two literatures.
+However, the specific implementation consideration of each paper is different, and the strategy adopted is different. Specifically, literature [5] does not consider the uncertainty of channel gain, that is considered in this paper. Literature [9]'s OP-THA algorithm does not consider incentive mechanism and the utility functions are quit different. In order to verify the robustness of the system, system throughput and sum throughput of FUEs and HMUEs, we have made comparisons with them in terms of outage probability and system throughput respectively, as shown in Fig. 9, Fig. 10, and Fig. 11.  From Fig. 9, it is found that the actual outage percentage of Li et al. [5] and Zhang et al. [9] is higher than our proposed algorithm. Our proposed algorithm behaves better system robustness. This result shows that our proposed algorithm is more effective in adapting to a changing communication environment. Fig. 10 shows the throughput of the system. As seen from the figure, our algorithm achieves higher system throughput than Li et al. [5] and Zhang et al. [9]. This proves that our method has obvious advantage in improving system throughput. In order to evaluate the total throughput of users in femtocell after hybrid access, we also give the comparison on the sum throughput of FUEs and HMUEs. Our proposed algorithm also achieves better performance. }
+
+
+
+%R2Q5
+\item
+\textbf{Question}: Related work related to hybrid access are missing:
+
+``QoS priority-based coordinated scheduling and hybrid spectrum access for femtocells in dense cooperative 5G cellular networks," Transactions on Emerging  Telecommunications Technologies, DOI: 10.1002/ett.3207 , vol. 29, no. 1, pp. 1-17, 11 Jan. 2018
+
+
+\textbf{Answer}: Thanks for the reviewer's comment! In the revised version, we have added the work review related to hybrid access, the mentioned paper is cited as [13]. The revised parts are marked {\color{blue}in blue}.
+
+{\color{blue}Kaleem et al. [13] proposed an optimization scheme based on QoS priority in the downlink scenario of two-tier networks in dense deployment.}
+
+%\bibitem{12}%审稿人给的第一个参考文献
+[13] Z. Kaleem, K. Chang.: ``QoS priority-based coordinated scheduling and hybrid spectrum access for femtocells in dense cooperative 5G cellular networks", \textit{Trans. Emerging Tel. Tech.},  vol. 29, no. 1, pp.~1-17, Jan. 2018.
+
+\end{enumerate}
+
+Thanks for the reviewer's constructive comments and time spent, and we have
+revised our paper and we hope that the above responses have answered
+the reviewer's concerns and meet her/his expectations. We will
+happily welcome any additional suggestions and feedback by the
+reviewers.
+
+\newpage
+
+{\Large \underline{Response to Reviewer 3}}
+
+We would like to thank the reviewer for spending his/her time to
+assess the paper, and make some very constructive and detailed
+comments. Our responses are given
+as follows:
+
+\begin{enumerate}
+
+%R3Q1
+\item
+\textbf{Question}: For the presentation of eq. (1), I suggest the authors to present this formula more properly. For example, the usages of symbols D1, and D2 are very easy to be understood. Also, the authors should give some explanations on why the expressions are different when (a) $i$ equals $j$ and (b) $i$ does not equal $j$.
+
+\textbf{Answer}: Thanks for the reviewer's comment! We have added the corresponding explanation in the revision. The subscripts $(i, j)$ refer to the receiver $i$ and the transmitter $j$, respectively. $i=j$ indicates the transmitter, i.e. FBS, and the receiver including FUE and HMUE, are in the same femtocell. Otherwise, $i\neq j$. The modified contents are as follows.
+
+\begin{align}\tag{1}
+&\left\{
+\begin{aligned}
+&\overline g_{j,i}=\left\{
+\begin{array}{lll}
+     \displaystyle K_{\textcolor{blue}{\textrm{f}}i}R^{-\beta}, i=j>0\\
+     K_{\textcolor{blue}{\textrm{fo}}}W^{2}\textcolor{blue}{\textrm{min}}(D_{i,j}^{-\alpha_{\textcolor{blue}{\textrm{f0}}}},1),  i\neq j, i,j>0,\\
+\end{array}
+\right. \\
+&\overline h_{j,i}=\left\{
+\begin{array}{lll}
+     \displaystyle K_{\textcolor{blue}{\textrm{f}}i}R_{\textcolor{blue}{\textrm{f}}}^{-\beta}, i=j>0\\
+     K_{\textcolor{blue}{\textrm{fo}}}W^{2}\textcolor{blue}{\textrm{min}}(D1_{i,j}^{-\alpha_{\textcolor{blue}{\textrm{f0}}}},1),  i\neq j, i,j>0,\\
+\end{array}
+\right. \\
+&\overline g_{0,i}=K_{\textcolor{blue}{\textrm{fo}}}W\textcolor{blue}{\textrm{min}}(D_{i,0}^{-\alpha_{\textcolor{blue}{\textrm{f0}}}},1),j=0,i>0,\\
+&\overline h_{0,i}=K_{\textcolor{blue}{\textrm{fo}}}W\textcolor{blue}{\textrm{min}}(D1_{i,0}^{-\alpha_{\textcolor{blue}{\textrm{f0}}}},1),j=0,i>0,\\
+&\overline g_{j,m}=K_{\textcolor{blue}{\textrm{fo}}}W\textcolor{blue}{\textrm{min}}(D2_{j,m}^{-\alpha_{\textcolor{blue}{\textrm{f0}}}},1),j>0,\\
+&\overline g_{0,m}=K_{\textcolor{blue}{\textrm{0}}}\textcolor{blue}{\textrm{min}}(D2_{0,m}^{-\alpha_{\textcolor{blue}{\textrm{0}}}},1),j=0,  \label{9}
+\end{aligned}
+\right.
+\end{align}
+where $\overline g_{j,i}$ denotes the average channel gain between FBS $j$ and FUE $i$, $i, j\in \mathcal{I}=\{1,2,\cdots,N\}${\color{blue},} $\overline h_{j,i}$ denotes the average channel gain between FBS $j$ and HMUE $i${\color{blue},} $\overline g_{0,i}$ denotes the average channel gain between {\color{blue}the} MBS and FUE $i${\color{blue},} $\overline h_{0,i}$ denotes the average channel gain between the MBS and HMUE $i${\color{blue},} $\overline g_{j,m}$ denotes the average channel gain between FBS $j$ and  MUE $m$ with $m\in \mathcal{L}=\{1,2,\cdots,N\}${\color{blue},} $\overline g_{0,m}$ denotes the average channel gain between {\color{blue}the} MBS and MUE $m${\color{blue},}
+$K_{{\color{blue}\textrm{f}}i}$ is the fixed loss between either FUE $i$ or HMUE $i$ to its own base station{\color{blue},} $K_{{\color{blue}\textrm{fo}}}$ is the fixed loss between {\color{blue}a} FBS or MBS and {\color{blue}an other} user{\color{blue}, and} $f$ is the carrier frequency.
+The fixed decibel propagation loss between {\color{blue}the} MUE and {\color{blue}the} MBS is given as $K_{{\color{blue}\textrm{0}}}=30\log10(f)-71$dB. {\color{blue}Also,} $R$ is the distance between FBS $i$ and FUE $i${\color{blue},} $D_{i,j}$ denotes the distance between FBS $j$ and FUE $i${\color{blue},} $D1_{i,j}$ denotes the distance between FBS $j$ and HMUE $i${\color{blue}, and} $D_{i,0}$ denotes the distance between {\color{blue}the} MBS and FUE $i$. The $D1_{i,0}$ denotes the distance between {\color{blue}the} MBS and HMUE $i${\color{blue},} $D2_{j, m}$ denotes the distance between FBS $j$ and MUE $m${\color{blue},} $D2_{0, m}$ denotes the distance between MBS and MUE $m${\color{blue},} $\beta$, $\alpha_{{\color{blue}\textrm{0}}}$, and $\alpha_{{\color{blue}\textrm{f0}}}$ are path loss exponents for indoor, outdoor{\color{blue},} and indoor-to-outdoor, respectively{\color{blue}, and} $W$ is the specific value to simulate the loss during indoor-outdoor propagation, {\color{blue}It is noted that the subscripts $i, j$ refer to the receiver $i$ and the transmitter $j$, respectively. $i=j$ indicates the transmitter, i.e. FBS, and the receiver including FUE and HMUE, are in the same femtocell. Otherwise, $i\neq j$. }
+%R3Q2
+\item
+\textbf{Question}: To my understanding, the FBSs provide services for HMUE and FUE. Therefore, the power transmitted by FBS is used for FUE and HMUE. If I do not miss something, I do not see the power for the FUE in eqs. (2) and (3).
+
+\textbf{Answer}:  Thanks for the reviewer's comment! We are sorry for the unclear presentations. It is right that the FBSs provide services for HMUE and FUE. In this paper, we consider the downlink communication scenario (that is, FBS transmits signals to HMUE and FUE). In the equations (2) and (3),  $p_{0}$ is the power of MBS, $p_{i}$ is the power of FBS $i$. It is assumed that the downlink transmission powers are same for all the users in the same cell. Equations (2) and (3) denote the SINR of FUE and HMUE from the same FBS, respectively,  hence the power is same in two equations.  For the benefit of reader, we have added some explanations in the revision, we marked them {\color{blue}in blue}. They are as follows.
+
+The SINR between FUE $i$ and FBS $i$ is defined as
+\begin{align}\tag{2}
+\gamma_{\textcolor{blue}{\textrm{f}},i}=\frac{p_{i}G_{1}\overline g_{i,i}}{p_{0}\overline g_{0,i}+\sum_{j=1,j\neq i}^{N}p_{j}\overline g_{j,i}+\sigma^2}, \forall i\in \mathcal{I},
+\end{align}
+where $p_{i}$ is the transmission power of {\color{blue}the} FBS $i$, $p_{0}$ is the fixed transmission power of {\color{blue}the} MBS{\color{blue}, and} $\sigma^2$ denotes the background noise. In this paper, the background noise $\sigma^2$ received at every user is assumed to be the same.
+
+{\color{blue}FBS also provides communication transmission power for HMUE. The SINR between HMUE $i$ and FBS $i$ is defined as}
+\begin{align}\tag{3}
+\gamma_{\textcolor{blue}{\textrm{h}},i}=\frac{p_{i}G_{2}\overline h_{i,i}}{p_{0}\overline h_{0,i}+\sum_{j=1,j\neq i}^{N}p_{j}\overline h_{j,i}+\sigma^2}, \forall i\in \mathcal{I}.
+\end{align}
+{\color{blue} It is noted that the downlink transmission powers are same for all the users (FUE, HMUE) in the same cell. }
+%R3Q3
+\item
+\textbf{Question}: If possible, the power consumption is better to be considered when defining the utility functions of MBS and FBSs.
+
+\textbf{Answer}: Thanks for the reviewer's constructive comment! We totally agree with the point that the power consumption should be included in the utility functions. It is also a common form to construct the utility function in the resource allocation optimization problem. That is, the utility equals benefit minus cost, and the power consumption is considered as the cost. However, there are some differences in our formulated problem.
+In this paper, power consumption is reflected in an indirect way. In utility functions, power consumption is indirectly reflected by rate. The utility function of the MBS is the net income obtained by the MBS when the HMUE $i$ is served by the FBS, and the net income is income minus expenditure of the MBS. We attempt to develop a pricing-incentive mechanism to encourage the FBSs to adopt a hybrid access strategy to improve the whole utility of network.
+It is required that the benefit of HMUE is increased when it is switched from the macrocell to femtocell. While the utility of the FBS $i$ is the benefit obtained by the FBS $i$ when it serves the HMUE $i$.  In addition, power consumption is directly reflected in the constraint condition (6d), i.e. $0\leq p_i\leq p_{i}^{\max}$. Although the power consumption is included in utility function indirectly and in constraint directly, it is different from the common form of utility functions, because the optimization objectives are different.
+
+%R3Q4
+\item
+\textbf{Question}: Although the authors provide a literature review on the rapid data growth and heterogonous networks, some very important ones, such as non-orthogonal multiple access: achieving sustainable future radio access, IEEE Communications Magazine, achieving sustainable ultra-dense heterogeneous networks for 5G, IEEE Communications Magazine, may be considered in the updated version.
+
+\textbf{Answer}: Thanks for the reviewer's suggestions! In the revision, we have added the relevant literature of non-orthogonal multiple access [1] and ultra-dense heterogeneous networks [2] and they were reviewed in the Introduction.
+
+In recent years, wireless services have been rapidly developed to satisfy the increasing demand for data traffic.
+{\color{blue}The limited wireless resources become more and more scarce [1]. In the future networks, ultra-dense heterogeneous networks (UDHN) is an inevitable trend of development, An et al. [2] proposed a potential the UDHN network structure and pointed out the key challenges of the UDHN. The femtocell network is one of the potential modes of realizing the UDHN.}
+
+%\bibitem{13}%审稿人给的第二个参考文献
+[1] K. Yang, N. Yang, N. Ye, M. Jia, and R. Fan, ``Non-orthogonal multiple access: Achieving sustainable future radio access", \textit{IEEE Commun. Mag.}, vol. 57, no. 2, pp.~116-121, Feb. 2019.
+
+%\bibitem{14}%审稿人给的第三个参考文献
+[2] J. An, K. Yang, J. Wu, N. Ye, S. Guo, and Z. Liao, ``Achieving sustainable ultra-dense heterogeneous networks for 5G", \textit{IEEE Commun. Mag.}, vol. 55, no. 12, pp.~84-90, Dec. 2017.
+
+%R3Q5
+\item
+\textbf{Question}: The authors should provide some discussions on the convergence of Algorithm 1.
+
+\textbf{Answer}: Thanks for the reviewer's comment! Actually, we have given the proof of the convergence of power control and price bargaining algorithm in Part B and Part C, Section III, respectively. Algorithm 1 is the combination of two optimization strategies. For clarity, we have annotated Algorithm 1 in the revision.
+
+The discussions about the convergence of power control update are give as follows, which are included in the Part B of Section III.
+
+By setting the first-order derivative of {the} Lagrange function (17) to be 0, the optimal response of FBS $i$ can be obtained{, which are} expressed in (24). If the NE in the feasible region is the local optimum, the range of {the} feasible region is $[0, p_{i}^{{\textrm{max}}}]${,} and $\bm{p}_{-i}(\bm{p}_{-i}=[p_{j}(t)]_{j\in I,j\neq i})$ is given, then the solution of (17) is unique. Otherwise, if the NE in the feasible region is not the local optimum,  FBS $i$ chooses its transmission power {as} either $p_{i}^{{\textrm{max}}}$ or 0. Moreover, when the power constraint $0\leq p_{i}\leq p_{i}^{{\textrm{max}}}$ is considered, the local optimum is
+\begin{align}\tag{25}
+p_{i}^{*}&\!=\!\!\left[\frac{m_{i}}{\ln 2E_{i}}-
+\frac{p_{0}\overline h_{0,i}+\!\!\!\!\!\!\displaystyle\sum_{j=1,j\neq i}^{N}p_{j}\overline h_{j,i}+\sigma^2}{\overline h_{i,i}}\right]_{0}^{p_{i}^{{\textrm{max}}}},
+\end{align}
+where $[y]_{a}^{b}=a\leq y\leq b$.
+
+In addition, another form of (25) {is given by}
+\begin{align}\tag{26}
+p_{i}^{*}(t\!+\!1)&\!=\!\!\left[\!\frac{m_{i}}{\ln 2E_{i}(t)}-
+\!\!\frac{p_{0}\overline h_{0,i}\!+\displaystyle\sum_{j=1,j\neq i}^{N}p_{j}(t)\overline h_{j,i}\!+\!\sigma^2}{\overline h_{i,i}}\!\!\right]_{0}^{p_{i}^{{\textrm{max}}}},
+\end{align}
+where $E_{i}(t)=\nu_{i}(t)\overline g_{i,i}\ln(1-\epsilon_{1})+\mu_{i}(t)\overline h_{i,i}\ln(1-\epsilon_{2})+\displaystyle \sum_{m=1}^{M}Z_{m}(t)\overline \gamma_{{\textrm{th}}}^{{\textrm{M}}}\overline g_{i,m}$.
+
+The power iteration update in (26) is carried out according to $\bm{p}(t+1)= \bm{A}[p(t)]$. The variable update strategy of FBS $i$ is expressed as $\bm{A}[\bm{p}(t)]$. In the power iteration of step $t$, the power of FBS $i$ is $p_{i}(t)$. Define $\Delta p_{i}(t)=p_{i}(t)-p_{i}^{*}$. By substituting (25) and (26) into $\Delta p_{i}(t)$, (27) can be elaborated as,
+\begin{align}\tag{27}
+\textstyle|\Delta p_{i}(t+1)|=&| p_{i}(t+1)-p_{i}^{*}|\notag\\
+=&\textstyle\left|\frac{\sum_{j=0,j\neq i}^{N}\overline h_{i,j}(p_{j}^{(t)}-p_{j}^{*})}{\overline h_{i,i}}\right|\notag\\
+\leq&\textstyle\left\| \frac{\sum_{j=0,j\neq i}^{N}\overline h_{i,j}}{\overline h_{i,i}}\right\|_{\infty}\!\!\!\| \sum_{j=0,j\neq i}^{N}\Delta p_{j}(t)\|_{\infty} \notag
+\end{align}
+
+Generally, {the channel} gain of {a} direct communication link dominates{the} channel gain of {the} interference link{. Therefore,} $\sum_{j=0,j\neq i}^{N}\overline h_{i,j}$ is small in (27) when analyzing the two-tier femtocell system. Since $\sum_{j=0,j\neq i}^{N}\overline h_{i,j}<\overline h_{i,i}$, $\left\| \frac{\sum_{j=0,j\neq i}^{N}\overline h_{i,j}}{h_{i,i}}\right\|_{\infty}<1$. Based on the definition of {the} $l_{\infty}$-norm, we know $\| \sum_{j=0,j\neq i}^{N}\Delta p_{j}(t)\|_{\infty}=$max$|\Delta p_{j}(t)|_{j\in\mathcal{I},j\neq i}$. Therefore, $\Delta p_{i}(t+1)$ can converge after some iterations. Finally, $p_{i}(t+1)$ converges to the unique optimal point $p^{*}$, that is the unique equilibrium point.
+
+The discussion of the nonuniform price bargaining is included in the Part C of Section III. It is proved that the second-order derivative of the objective function $U_{s}$ of $\textbf{P1}$ with respect to $m_{i}$ is less than 0. Then it is concluded that $U_{m}$ is a concave function of $m_{i}$ and the optimization problem is convex. It can be found that the price bargaining algorithm can converge to the unique optimal point.
+
+%R3Q6
+\item
+\textbf{Question}: The authors should consider how to proceed the payment (reward) between the MBS and FBS in practical, and the method in the following paper, Auction-based time scheduling for backscatter-aided RF-powered cognitive radio networks, IEEE Transactions on Wireless Communications, may be considered.
+
+\textbf{Answer}: Thanks very much for the reviewer's comments! According to the suggestion, we referred to the mentioned method of auction based back scattering assisted radio cognitive radio network time scheduling, the paper was cited as Ref. [14] in the revision. And the corresponding explanations are as follows.
+
+In practice, we consider the payment between MBS and FBS. The specific steps are as follows:
+
+Step 1: HMUE $i$ initiates a data transmission request to the corresponding FBS $i$, which receives the request from HMUE $i$ and reports the user's request to {the} MBS.
+
+Step 2: {The} MBS sets the price $m_{i}$ to compensate the FBS $i${, which services} HMUE $i$ according to {its} request.
+
+Step 3: FBS $i$ receives the price $m_{i}$ from {the} MBS. If the utility function of FBS $i$ is greater than zero, {it} uses the hybrid access strategy, and {the} MBS pays $U_{i}$ to FBS$i$ to motivate that service {to} HMUE $i$; otherwise, {the} FBS will adopt closed access strategy.
+
+{\color{blue}Gao et al. [14] proposed two auction schemes, which are heuristic and optimal, based on time allocation mechanism in cognitive wireless networks, and the effectiveness of the two schemes is proved in the simulations.}
+
+%\bibitem{15}%审稿人给的第四个参考文献
+[14] X. Gao, P. Wang, D. Niyato, K. Yang, and J. An, ``Auction-based time scheduling for backscatter-aided RF-powered cognitive radio network",  \textit{IEEE Trans. Wireless Commun.}, vol. 18, no. 3, pp.~1684-1697, Mar. 2019.
+
+%R3Q7
+\item
+\textbf{Question}: The simulation results should be provided in a more detailed and a more comprehensive manner. More results are encouraged to be presented.
+
+\textbf{Answer}:  Thanks for the reviewer's constructive comment! In the revised version, we have added comparisons with literatures [5] and [9] on system throughput, as shown in Fig. 10, to verify the overall performance of the system.  Also, we have updated Fig. 9 and Fig. 11.
+
+The simulation results are divided into two parts: one is to test the performance of the proposed algorithm; the other is to make a comparative analysis with the existing algorithm.
+In the first part, the performance test is carried out from the power convergence of base station, the price convergence of users, the outage percentage of FUEs, the utilities both of MBS and FBS, etc. The results are given in Fig.2 to Fig.7.
+In the second part, the comparisons with different schemes are given.  The compared result of system throughput for different access methods is given in Fig. 8. From Fig. 9, to Fig. 11, we compare the throughput and outage percentage with existing works proposed in Ref. [5] and Ref. [9], respectively.
+
+The modified parts in the revision are as follows.
+
+Further, for the sake of {more systematically evaluating} the performance of our method, we compare the proposed method to the other methods in terms of system robustness and {system throughput}. For the system robustness, we compare the performance of our proposed algorithm to {Li et al. [5]'s algorithm and OP-THA algorithm of Zhang et al. [9].} Li et al. [5]'s algorithm  {does} not address the uncertainties of channel gains. Hence{,} the system robustness is poor when uncertainties exist in the channel gains. {The OP-THA algorithm of Zhang et al. [9], which is a traditional hybrid access algorithm, that does not address the incentive return mechanism.} To achieve a fair comparison, three methods are applied to the same {topology}, simulation parameters and communication environment. The {actual} outage percentage is shown in Fig. 9. The target outage probability threshold $\epsilon_{1}$ is 0.05 in Fig. 9. It is evident that the actual outage percentage of Li et al. [5] {and Zhang et al. [9]} is higher than our proposed algorithm. {However, our} proposed algorithm  displays better performance than Li et al. [5] {and Zhang et al. [9]} in term of system robustness. This result shows that our proposed algorithm is more effective {in adapting} to {a} real communication environment.
+\begin{figure}[htbp]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=3in]{outagepercentage.eps}% 1in=2.54cm
+\center{\footnotesize   Fig. 9 Comparison of {actual} outage percentages.}
+%\label{fig10}
+\end{figure}
+
+\begin{figure}[htbp]
+%\begin{minipage}
+\centering
+\includegraphics[width=3in]{sysduibi.eps}
+\center{\footnotesize   Fig. 10 System throughput comparison. }
+%\caption{System throughput comparison.}
+%\label{10}
+%\end{minipage}
+%\begin{minipage}[t]{0.5\linewidth}
+\end{figure}
+
+\begin{figure}[htbp]
+%\begin{minipage}[t]{0.5\linewidth}
+\centering
+\includegraphics[width=3in]{sumthroughput.eps}
+\center{\footnotesize   Fig. 11 Comparison of sum throughputs of FUEs and HMUEs.}
+%\label{fig12}
+%\end{minipage}
+%\begin{minipage}[t]{0.5\linewidth}
+\end{figure}
+To evaluate the {system throughput, we also compare our proposed algorithm to the algorithm of Li et al. [5] and the OP-THA algorithm of Zhang et al. [9]. Specifically, we compare the throughput of the whole system and the total throughput of all FUEs and HMUEs respectively with the above two algorithms.}  To achieve a fair comparison, the same {topology}, simulation parameters{,} and communication environment are applied in the {three} methods. {Fig. 10 shows the throughput of the system. As can be seen from the figure, our algorithm can achieve higher system throughput than Li et al. [5] and Zhang et al. [9]. This proves that our method has obvious advantage in improving system throughput.} Fig. 11 shows the sum throughput of FUEs and HMUEs.  Our proposed algorithm is able to achieve higher sum throughput compared to {Li et al. [5] and} Zhang et al. [9]. This shows that {a} better sum rate of {femtocells} can be achieved by the proposed method.
+
+
+[5] L. Li, M. Wei, C. Xu, and Z. Zhou.: ``Rate-based pricing framework in hybrid access femtocell networks", \textit{IEEE Commun. Lett.}, vol. 19, no. 9, pp. 1560-1563, Sept. 2015.
+
+%\bibitem{11}%本文第七个参考文献
+[9] L. Zhang, T. Jiang, and K. Luo.: ``Dynamic spectrum allocation for the downlink of OFDMA-based hybrid-access cognitive femtocell networks", \textit{IEEE Trans. Veh. Technol.}, vol. 65, no. 3, pp. 1772-1781, Mar. 2016.
+
+\end{enumerate}
+
+Thanks for the constructive comments and time spent, and we have
+revised our paper and we hope that the above comments have answered
+the reviewer's concerns and meet her/his expectations. We will
+happily welcome any additional suggestions and feedback by the
+reviewers.
+
+Finally, the authors thank the reviewer for the comments provided,
+and the time and efforts he/she has spent in the review again.
+Without the careful comments, the paper would not reach its current
+quality. We hope that the above modifications have answered the
+reviewer's concerns.
+
+We look forward to hearing from you regarding our submission. We would be glad
+to respond to any further questions and comments that you may have.
+
+%\begin{thebibliography}{99}
+%\bibitem{1}%本文第13个参文
+%Y. Sun, J. Wang, F. Sun, and J. Zhang.: `Energy-aware joint user scheduling and power control for two-tier femtocell networks: A hierarchical game approach', \textit{IEEE Syst. J.}, vol. 12, no. 3, pp.~ 2533–2544, Sept. 2018.
+%\bibitem{2}%本文第14个参文
+%T. Leanh, N. H. Tran, S. Lee, E. Huh, Z. Han, and C. S. Hong.: `Distributed power and channel allocation for cognitive femtocell network using a coalitional game in partition-form approach', \textit{IEEE Trans. Veh. Technol.}, vol. 66,  no. 4, pp.~3475–3490, Apr. 2017.
+%\bibitem{3}%本文第21个参文
+%L. Jiang, Q. Wang, R. Song, B. Ye, and J. Dai.: `A truthful double auction framework for promoting femtocell access", \textit{IEEE Access}, vol. 7, pp.~34991–35000, 2019.
+%\bibitem{4}%新找的一个
+%B. Khamidehi, and M. Sabbaghian.: `Resource Allocation for SC-FDMA Femtocell Networks',\textit{IEEE Trans. Veh. Technol.}, vol. 68, no. 5, May 2019.
+%%@ARTICLE{8031344,
+%%author={B. {Khamidehi} and M. {Sabbaghian}},
+%%journal={IEEE Transactions on Vehicular Technology},
+%%title={Resource Allocation for SC-FDMA Femtocell Networks},
+%%year={2019},
+%%volume={68},
+%%number={5},
+%%pages={4573-4585},
+%%month={May},
+%%}
+%\bibitem{5}%新找的有接入控制的
+%D. T. Ngo and L. B. Le and T. Le-Ngoc and E. Hossain and D. I. Kim.: `Distributed Interference Management in Two-Tier CDMA Femtocell Networks', \textit{IEEE Trans. Wireless Commun.}, vol. 11,  no. 3, pp.~979-989, Mar. 2012.
+%%@ARTICLE{6144758,
+%%author={D. T. {Ngo} and L. B. {Le} and T. {Le-Ngoc} and E. {Hossain} and D. I. {Kim}},
+%%journal={IEEE Transactions on Wireless Communications},
+%%title={Distributed Interference Management in Two-Tier CDMA Femtocell Networks},
+%%year={2012},
+%%volume={11},
+%%number={3},
+%%pages={979-989},
+%%month={March},}
+%
+%\bibitem{6}%Q21
+%D. Kim, T. Park, S. Kim, H. Kim, and S. Choi: `Load balancing in two-tier cellular networks with open and hybrid access femtocells', \textit{IEEE/ACM Trans. Netw.}, vol. 24, no. 6, pp.~3397–3411, Dec. 2016.
+%\bibitem{7}
+%Q. Deng, Z. Li, J. Chen, F. Zeng, H. Wang, L. Zhou, and Y. Choi: `Dynamic spectrum sharing for hybrid access in OFDMA-based cognitive femtocell networks', \textit{IEEE Trans. Veh. Technol.}, vol. 67, no. 11, pp.~10830–10840, Nov. 2018.
+%\bibitem{8}%Q22
+%C. Liu, S. Xing and L. Shen: `Dynamic hybrid-access control in multi-user and multi-femtocell networks via Stackelberg game competition', \textit{IET Commun.}, vol. 10, no. 7, pp.~862-872, May 2016.
+%
+%\bibitem{9}%Q23
+%L. Duan, J. Huang, and B. Shou: `Economics of femtocell service provision', \textit{IEEE Trans. Mobile Comput.}, vol. 12, no. 11, pp.~2261–2273, Nov. 2013.
+%
+%\bibitem{10}%本文第三个参考文献
+%L. Li, M. Wei, C. Xu, and Z. Zhou.: `Rate-based pricing framework in hybrid access femtocell networks', \textit{IEEE Commun. Lett.}, vol. 19, no. 9, pp. 1560–1563, Sept. 2015.
+%\bibitem{11}%本文第七个参考文献
+%L. Zhang, T. Jiang, and K. Luo.: `Dynamic spectrum allocation for the downlink of OFDMA-based hybrid-access cognitive femtocell networks', \textit{IEEE Trans. Veh. Technol.}, vol. 65, no. 3, pp. 1772–1781, Mar. 2016.
+%\bibitem{12}%审稿人给的第一个参考文献
+%Z. Kaleem, K. Chang.: `QoS priority-based coordinated scheduling and hybrid spectrum access for femtocells in dense cooperative 5G cellular networks', \textit{T. Emerg. Telecommun. ELECOMMUN. T.}, DOI: 10.1002/ett.3207, vol. 29, no. 1, pp.~1–17, 11 Jan. 2018.
+%
+%\bibitem{13}%审稿人给的第二个参考文献
+%K. Yang, N. Yang, N. Ye, M. Jia, \& R. Fan.: `Non-orthogonal multiple access: achieving sustainable future radio access', \textit{IEEE Commun. Mag.}, vol. 57, no. 2, pp.~116-121, Feb. 2019.
+%
+%\bibitem{14}%审稿人给的第三个参考文献
+%J. An, K. Yang, J. Wu, N. Ye, S. Guo, \&Z. Liao.: `Achieving sustainable ultra-dense heterogeneous networks for 5g', \textit{IEEE Commun. Mag.}, vol. 55, no. 12, pp.~84-90, Dec. 2017.
+%
+%\bibitem{15}%审稿人给的第四个参考文献
+%X. Gao, P. Wang, D. Niyato, K. Yang, \& J. An.: `Auction-based time scheduling for backscatter-aided rf-powered cognitive radio network',  \textit{IEEE Trans. Wireless Commun.}, vol. 18, no. 3, pp.~1684-1697, Mar. 2019.
+%
+%
+%\end{thebibliography}
+
+
+\end{document}

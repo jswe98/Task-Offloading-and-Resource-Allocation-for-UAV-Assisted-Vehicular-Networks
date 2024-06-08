@@ -1,0 +1,106 @@
+% accents
+\def\`#1{#1\char768\relax} % grave
+\def\'#1{#1\char769\relax} % acute
+\def\^#1{#1\char770\relax} % circumflex
+\def\~#1{#1\char771\relax} % tilde
+\def\=#1{#1\char772\relax} % macron
+\def\u#1{#1\char774\relax} % breve
+\def\.#1{#1\char775\relax} % dot above
+\def\"#1{#1\char776\relax} % diaeresis
+\def\H#1{#1\char779\relax} % double acute accent (Hungarian umlaut)
+\def\v#1{#1\char780\relax} % caron
+
+\def\d#1{#1\char803\relax} % dot below
+\def\c#1{#1\char807\relax} % cedilla
+\def\b#1{#1\char817\relax} % macron below
+
+% \t{oo} is supposed to produce a "tie" (inverted u) over the
+% two letters, but there seems to be no unicode symbol for that
+
+% soft hyphen the way Word does it
+\def\-{\char31\relax}
+
+% spaces
+\def~{\char160\relax}   % nbsp
+\def\,{\char8198\relax} % 3/8em
+\def\:{\char8201\relax} % 1/5em ~= 4/18em
+\def\;{\char8197\relax} % 1/4em ~= 5/18em
+\def\ {\char8196\relax} % 1/3em
+\def\@{\char8194\relax} % en space
+\let\enspace\@
+\def\thinspace{\char8202\relax} % hair space
+\def\quad{\char8195\relax}
+\def\qquad{\quad\quad}
+
+% ellipsis
+\def\ldots{\char8230\relax}
+\def\vdots{\char8942\relax}
+
+% ligatures and special symbols
+\def\ae{\char230\relax}
+\def\AE{\char198\relax}
+\def\oe{\char339\relax}
+\def\OE{\char338\relax}
+\def\aa{\char229\relax}
+\def\AA{\char197\relax}
+\def\o{\char248\relax}
+\def\O{\char216\relax}
+\def\l{\char322\relax}
+\def\L{\char321\relax}
+\def\ss{\char223\relax}
+\def\dag{\char8224\relax}
+\def\ddag{\char8225\relax}
+\def\S{\char167\relax}
+\def\P{\char182\relax}
+\def\pounds{\char163\relax}
+\def\copyright{\char169\relax}
+
+\def\{{\char123\relax}
+\def\}{\char125\relax}
+\def\${\char36\relax}
+\def\&{\char38\relax}
+\def\#{\char35\relax}
+\def\_{\char95\relax}
+\def\%{\char37\relax}
+
+% weirdness
+\def<{\char161\relax} % inverted exclamation mark
+\def>{\char191\relax} % inverted question mark
+
+% dotless i and j
+\def\i{\char305\relax}
+% \def\j{\char567\relax}
+% unicode has no good dotless j character (U+0237 is only available in
+% Arial Unicode and it looks *jarring* when mixed with regular text)
+\def\j{j}
+
+% size commands (\relfontsize is an Aurora-only hack)
+\def\ssmall       {\relfontsize 402\relax}
+\def\tiny         {\relfontsize 482\relax}
+\def\scriptsize   {\relfontsize 579\relax}
+\def\footnotesize {\relfontsize 694\relax}
+\def\small        {\relfontsize 833\relax}
+\def\normalsize   {\relfontsize1000\relax}
+\def\large        {\relfontsize1200\relax}
+\def\Large        {\relfontsize1440\relax}
+\def\LARGE        {\relfontsize1728\relax}
+\def\huge         {\relfontsize2074\relax}
+\def\Huge         {\relfontsize2488\relax}
+\def\HUGE         {\relfontsize2986\relax}
+
+% treat italics correction as a no-op (Word gets it right without it anyway)
+\def\/{}
+
+\let\it\sl
+\def\textbf#1{{\bf #1}}
+\def\textsl#1{{\sl #1}}
+\let\textit\textsl
+\def\emph#1{{\em #1}}
+
+% gets unexpanded back to \ensuremath{...} when used inside a math environment
+\def\ensuremath#1{$#1$}
+
+\def\({$}
+\def\){$}
+\def\[{$$}
+\def\]{$$}

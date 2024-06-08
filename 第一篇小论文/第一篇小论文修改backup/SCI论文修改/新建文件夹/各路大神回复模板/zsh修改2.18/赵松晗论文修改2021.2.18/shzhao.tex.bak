@@ -1,0 +1,624 @@
+%%Designed for IEEE Transactions on Vehicular Technology, based on bare_jrnl.tex by Michael Shell.
+%%December. 2015
+%%Length Requirements: The complete manuscript  should be prepared in final IEEE typesetting with maximum page length limited to 15 pages for a Regular Paper and 5 pages  for a Correspondence.
+%%Contact Info: admin-tvt@ece.ufl.edu
+%%Designed by TVT editorial office
+
+%\documentclass[onecolumn,dvipdfm]{ieeetran}
+\documentclass[journal,10pt]{IEEEtran}
+\usepackage{mathrsfs}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{cases}%必须放在在{amsmath}后面
+\newcounter{mytempeqncnt}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{setspace}
+\usepackage[numbers,sort&compress]{natbib}%参加文献压缩引用
+%\usepackage{tabularx}
+%\doublespacing
+\usepackage{dsfont}
+%\usepackage{tikz}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\newcommand\old[1]{}
+\def\bi{\bibitem}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+\newtheorem{definition}{Definition}
+%\newtheorem{algorithm}{Algorithm}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{assumption}{Assumption}
+
+\begin{document}
+
+\title{Game-based Approach of Fair Resource Allocation in Wireless Powered Cooperative Cognitive Radio Networks}
+
+
+\author{Zhixin Liu, Songhan Zhao, Yazhou Yuan, Yi Yang, Xinping Guan
+
+\thanks{Zhixin Liu, Songhan Zhao, Yazhou Yuan and Yi Yang
+are with the School of Electrical Engineering, Yanshan
+University, Qinhuangdao 066004, China. Emails: lzxauto@ysu.edu.cn,
+zsh951227233@163.com, yzyuan@ysu.edu.cn, yyi@ysu.edu.cn}
+%\thanks{Kit Yan Chan is with the School of Electrical Engineering, Computing and Mathematical Sciences, Curtin University, Perth, Australia. Email: kit.chan@curtin.edu.au.}
+\thanks{Xinping Guan is with School of Electronic, Information and Electrical Engineering, Shanghai Jiaotong University,
+Shanghai 200240, China. Email: xpguan@sjtu.edu.cn.}}
+
+\markboth{}
+{}
+
+
+\maketitle
+
+
+\begin{abstract}
+A resource allocation approach is proposed for wireless powered cooperative cognitive radio network (WP-CCRN) in this paper, where multiple secondary users (SUs) capture both the wireless energy and the authorized spectrum from primary user (PU) to communicate with a secondary access point (SAP). In return, SUs serve as relay nodes to help primary transmitter (PT) forwarding data to primary receiver (PR). For the sake of the stable cooperation between PU and SUs, we present a game-based fair resource allocation algorithm (GFRAA) which takes into account the utilities of both sides. The Stackelberg game is applied for solving the resource allocation problem between PU and SUs, where PU acts as a leader while SUs are followers. To solve the non-convex  optimization problem in primary network, a new variable namely allocated energy is introduced to transform the primal problem into a convex problem. Meanwhile, the relationship among SUs is modeled as a Supermodular game. Since SUs are rational and selfish, a fairness evaluation mechanism is designed to adjust the fairness among SUs. Simulation results unveil the trade-off between the fairness of SUs, the throughput of PU, and the sum-throughput of SUs. GFRAA is validated the superiority by comparing with the other two algorithms.
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+Wireless powered cooperative cognitive radio network, resource allocation, non-convex optimization, fairness, Stackelberg game, Supermodular game.
+\end{IEEEkeywords}
+
+
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+Recently, wireless energy harvesting techniques have drawn wide attention in green communication, which can convert ambient renewable resources into electricity. These techniques have been the promising solutions to energy-constrained problems of wireless network, for example, nodes of wireless sensor network have a limited service life due to lack of sustainable energy supply. Although there are various resources (e.g., solar, wind, and thermoelectric effects) that can be acquired from natural environment, the unpredictability and instability make these resources difficult to be applied widely in practice. Currently, radio frequency (RF) energy transfer techniques \cite{XLu} have become the backbone of wireless powered communication networks (WPCNs), since RF signals can be predictable or controllable that are radiated from the known access point. Although RF energy transfer is characterized by low-power, it is sufficient to be used in networks with low energy consumption and large-scale deployments \cite{Krikidis2014}, such as sensor networks and multiple-relay networks. To obtain stable and continuous RF signals, controllable RF sources (e.g. primary users, hybrid access point, and energy trading market) are applied \cite{XLu2014,Huang2015}. With the application of RF energy transfer, the wireless devices are liberated from changing batteries. Therefore, wireless powered devices can be deployed in more complex environments.
+
+However, WPCN is challenged by complex schedule that the coupled information and energy are interwoven in one time slot. Therefore, simultaneous wireless information and power transfer (SWIPT) is proposed to solve the above problem \cite{DWKNG2013,Tang2019}, where the techniques for SWIPT (e.g., time switching, power splitting,  antenna splitting and spatial switching) can coordinate the scheduling problem between energy and information.
+
+Due to advantages of wireless energy harvesting technology, the classical networks can coexist with WPCN turning into novel combination networks. An attracting paradigm is wireless powered cooperative cognitive radio network (WP-CCRN). In cooperative cognitive radio network (CCRN), secondary users (SUs) serve as relay nodes for primary users (PUs) in exchange for authorized spectrum access time. Assuming that the direct link in primary network is in deep fade \cite{Zhao2020} and PUs fail to meet their target  requirements, the cooperation can significantly enhance PUs' quality-of-service (QoS) \cite{Shih2015,Gao2020}. Now, in WP-CCRNs, SUs capture not only the spectrum resources, but also the RF energy of PUs, which is a win-win strategy for both PUs and SUs.
+
+Since cognitive users are rational and selfish \cite{Zhao2020}, some SUs tend to reduce their contribution in the cooperation task, and utilize more resources for their own transmission. The above behaviors extremely weaken the PU's motivation for cooperation.
+In this paper, our goal is to study an effective cooperation protocol to optimize the utilities of both PU and SUs.
+
+Specifically, an underlay WP-CCRN is considered, where a PU pair and multiple SUs are involved. It is assumed that PT has authorized spectrum and stable energy supply, which are the resources exactly needed for SUs, also, primary direct link is in deep fade due to the environmental impact \cite{Zhao2020,Kalamkar2016}. Therefore, both PU and SUs seek to negotiate a cooperation protocol. That is, SUs act as relays forwarding PT's information to PR. In return, PU shares spectrum and energy resources to SUs for their own transmission.
+
+With the proposed cooperation paradigm, we investigate the optimal resource allocation algorithm based on game theory. Different from past researches that used to consider the utility for one side, this paper studies the utilities of both PU and SUs. To be specific, the relationship between PU and SUs is formulated as a Stackelberg game. Considering that PU has the first priority on resource allocation \cite{Balapuwaduge2016} in WP-CCRN, we set PU as the leader while SUs are followers. Moreover, since the selfish behaviors of SUs will harm cooperative relationship, we present a novel fairness evaluation mechanism to improve the fairness among SUs, and fetters among SUs are modeled as a Supermodular game.
+
+The main contributions of this paper are summarized as follows:
+\begin{itemize}
+\item A cooperation scene  between PU and SUs in WP-CCRN is proposed, and a cooperation protocol is developed to schedule the behaviors of both sides, where the structure includes three parts: SUs harvest energy from PT, SUs forward PT's data to PR, and SUs transmit their own data.
+\item To reduce the selfish SUs from disturbing cooperation between PU and SUs, a novel fairness evaluation mechanism is introduced to boost the benign cooperation among SUs, and thus the assignment of network resources becomes more rational so as to raise the operation effectiveness.
+\item Based on the proposed cooperation protocol and fairness evaluation mechanism, the Game theory is employed to describe the complex interrelationships between primary network and secondary network, where a Stackelberg game is formulated to reveal the interaction between PU and SUs, and the relationship among SUs is modeled as a Supermodular game. To tackle two optimization problems designed for achieving optimal utilities of both networks, a game-based fair resource allocation algorithm (GFRAA) is proposed.
+%we present a game-based fair resource allocation algorithm (GFRAA) to determine the optimal solution. For the sake of meeting requirements of primary network and secondary network, two optimization problems are formulated to describe utilities of PU and SUs, respectively, where the interaction between PU and SUs is formulated as a Stackelberg game, and a Supermodular game is modeled to reveal the relationship among the SUs.
+\end{itemize}
+
+The rest of the paper is organized as follows: Section II discusses the related works. Section III introduces the system
+model and the construction of game problems. In Section IV, the GFRAA is proposed to solve the optimization problems. Simulation results and performance analysis are discussed in Section V. Finally, Section VI summarizes the main conclusions of this paper.
+\section{Related Works}
+In recent years, the wireless energy transfer techniques have received attention in various network scenarios \cite{DWKNG2013,Tang2019,Boshkovska2017,Fan2019,Yang2018}. In \cite{DWKNG2013}, an optimal power splitting ratios and power allocation policy is proposed to maximize the energy efficiency in a orthogonal frequency division multiple access (OFDMA) system, which considers the hybrid receivers can split the signals into two streams for information decoding (ID) and energy harvesting (EH). In order to solve the non-convex problem caused by the fractional form of energy efficiency, Dinkelbach method is employed to find the optimal resource allocation in \cite{DWKNG2013,Tang2019}. When circuit power consumption is considered, authors in \cite{Yang2018} compare the total energy consumption of wireless powered devices under high and low circuit power regimes. Different from the conventional lineal EH model, \cite{Yang2018,Boshkovska2017} adopt a non-linear EH model to design the resource allocation, which shows a higher gains in performance. Furthermore, a novel power allocation is investigated in \cite{Fan2019}, where energy state information (ESI) of future fading blocks is assumed to be known in advance. {\color{blue}The authors in \cite{XU2020} proposed an optimization scheme in wireless powered backscatter communication networks, where power allocation, time allocation, reflection coefficient and energy allocation are jointly optimized.} {\color{blue}In \cite{zhang2020}, rate maximization is studied for underlay massive multiple-input multiple-output (MIMO) WPCNs, wherein the impacts of antenna number and spatial correlations are investigated.}
+%The above works show the advantages of introducing wireless energy transfer techniques in networks.
+
+On the other hand, with the proliferation of wireless devices, the shortage of spectrum is becoming increasingly serious. Cognitive radio (CR) techniques have been proposed to solve these problems, and a significant application is CCRN. To maximize the long-term secondary network throughput in CCRN, the work in \cite{Long2014} formulates the optimal resource allocation scheme which includes relay selection, secondary transmission scheduling and power allocation, but the utility of primary network is not considered in \cite{Long2014}. Game theory is an effective method which considers the utility of each player, therefore, some studies apply game theory to solve cooperation problems. In \cite{Yuan2019}, A Stackelberg game is employed to formulate the topology control problem aiming to find the optimal transmission power strategies for all players. A novel framework is developed in \cite{Zhao2020} to solve the power and time allocation problems in a spectrum leasing mode, where the relationship between PT and SUs is modeled as a Bargain game.
+
+The above researches show the wide applications of WPCN and CCRN. So what will be if energy harvesting is adopted in CCRN combining into WP-CCRN? Some researchers have made contributions to this scheme. \cite{Kalamkar2016} investigates a scenario where multiple SUs  relay PU's information by using harvested wireless energy form a hybrid access point (HAP), in return, PT leases partial spectrum access time to SUs. In \cite{Xu2017}, to maximize the end-to-end throughput of SUs, the joint optimal time and power allocation algorithm is proposed. Although a few of the related works of WP-CCRN have been investigated, there are still many difficulties need further study and improvement, such as low efficiency problem caused by selfishness of SUs and coupled resource scheduling problem. In this paper, {\color{blue} a cooperation protocol is developed to regulate the behavior of PU and SUs. Moreover, a novel fairness evaluation mechanism is introduced to inhibit the selfish behavior among SUs. Aiming to improve the PU throughput and meet the throughput requirement for each SU, GFRAA is proposed in this paper. Through numerical results, we demonstrate that GFRAA can achieve a better performance for the primary network compared with baseline methods. Furthermore, we study the trade-off between fairness, the achievable throughput of PU, and the SU sum-throughput, which is rarely studied by other papers.}
+
+\newpage
+
+\section{Problem Definition}
+%----------------------------------------------------------------------------------%
+\subsection{System Model}
+Fig. 1 shows the system model, where a primary network consisting of a primary transmitter (PT) and a primary receiver (PR) coexists with a secondary network. $N$ secondary users (SUs) in the secondary network, denoted as SU$_i$ ($i = 1,\cdots,N$), communicate with a secondary access point (SAP).
+The PT is allocated with authorized spectrum and charged by a stable power grid. Since the SUs are battery-free and limited to authorized spectrum, a cooperation between SUs and PU is established. The SUs are employed as relays in decode-and-forward (DF) mode to transmit information from PT to PR. In return, SUs are allowed to access licensed spectrum and use a portion of harvested energy for their own communication. Therefore, the PU achieves a higher quality-of-service (QoS) and the SUs obtain spectrum and energy resources.
+
+A cooperation protocol is designed for SUs, which instructs harvesting energy, forwarding data and transmitting their own data. {\color{blue} Without loss of generality, a frame divided into four phases is normalized to a unit time, which is shown in Fig. 2.}
+\begin{figure}[h]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=9cm]{model.eps}
+\caption{System model}
+\end{figure}
+\begin{figure}[h]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=9cm]{frame.eps}
+\caption{Cooperation protocol between primary and secondary networks}
+\end{figure}
+\subsubsection{Phase One}
+In this phase, the PT broadcasts data with power $P_e$, while the SUs harvest energy from PT's transmission signals. It is noted that, since all SUs are equipped with single antenna, the data transmission and energy harvesting cannot be executed simultaneously. According to \cite{Nasir2013,Zhou2013}, the energy harvested by SU$_i$ is formulated as
+\begin{eqnarray}\label{1}
+E_{hari}=\eta P_eh_{pi}(1-2t_c-t_a),
+\end{eqnarray}
+where $\eta$ is the energy conversion efficiency factor with $0\leq\eta\leq1$. $h_{pi}$ is the channel power gain between PT and SU$_i$. $P_e$ is the transmit power of PT, and $(1-2t_c-t_a)$ is the energy harvesting duration of SUs. The harvested energy during this duration is applied to relay the data of PT and communicate with SAP in phase three and four.\footnote{It is assumed that each SU has the same energy conversion efficiency factor, and the harvested energy can activate the energy harvesting circuit adequately \cite{DWKNG2013}.}
+\subsubsection{Phase Two and Three}
+Based on \cite{ZhouX2014,SuW2012}, the relaying process is composed with two identical duration, i.e., the second and third durations have the same length, denoted as $t_c$. PT transmits data to SUs and PR in the phase two, and SUs relay the received data to PR in phase three. The Signal to Noise Ratio (SNR) at PR based on the cooperation protocol is given by
+\begin{eqnarray}\label{2}
+\Gamma_{coop}=\frac{P_ph_{pp}}{N_0}+\sum\limits_{i=1}^{N}\frac{P_{ci}h_{ip}}{N_0},
+\end{eqnarray}
+where {\color{blue}$P_p$ denotes the power of PT in phase two, and $h_{pp}$ is the channel power gain between PT and PR.} $h_{ip}$ is the channel power gain between SU$_i$ and PR. $N$ is the number of SUs, and $P_{ci}$ is the power of SU$_i$ in relaying link. $N_0$ is the additive white Gaussian noise (AWGN) power, which is the same constant for all users. The achievable throughput of the PU is expressed as \cite{Kalamkar2016}
+\begin{eqnarray}\label{3}
+R_{p}=t_cW\ln(1+\Gamma_{coop}),
+\end{eqnarray}
+where $W$ is the bandwidth of the licensed spectrum at PT.
+\subsubsection{Phase Four}
+The last phase is the rewarded period that SUs access the channel for transmitting their own data to SAP in an OFDMA fashion. The throughput achieved by SU$_i$ is formulated as
+\begin{eqnarray}\label{4}
+R_{i}=t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right),
+\end{eqnarray}
+where $P_i$ is the power used by SU$_i$ for communicating with SAP. $h_i$ is the channel power gain between SU$_i$ and SAP, and the term $\frac{W}{N}$ is the licensed spectrum bandwidth allocated to SU$_i$.
+
+\subsection{Problem Formulation}
+In Stackelberg game, two types of players (i.e., leader and followers) are used to describe the hierarchy of behaviors \cite{Yuan2019,LIUY2020}. The leader is visionary, that is, the leader can foresee the followers' actions to select a strategy. Then, the followers make the best responses based on the leader's actions. All players aim to maximize their utilities until Nash Equilibrium (NE) is reached. In WP-CCRN, we set PT as the leader while multiples SUs are the followers. PT first decides relaying time, rewarded time, and relaying power by the anticipation of SUs strategies. Each SU reacts, i.e., it selects a transmission power to communicate with SAP by following the actions of PT. Furthermore, a Supermodular game is modeled to reveal the relationship among the SUs.
+
+We first give some definitions, which are considered in formulation of the optimization problem.
+\subsubsection{Energy Neutrality Constraint}
+The energy allocated for relaying time and rewarded time can not exceed the energy harvested in phase one. Using (\ref{1}), we can write the constraint as
+\begin{eqnarray}\label{5}
+P_it_a+P_{ci}t_c \leq E_{hari},\ \forall i,  %\quad(i=1,\cdots,N)
+\end{eqnarray}
+{\color{blue}where the terms $P_{ci}t_c$ and $P_it_a$ are the allocated energy by SU$_i$ in phase three and four, respectively.}
+\subsubsection{SU$_i$ Throughput Constraint}
+In the cooperative relationship, the target throughput of SU$_i$ should be satisfied, otherwise SUs will have no incentive to cooperate with the PUs. And it is given by
+\begin{eqnarray}\label{6}
+t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)\geq \bar{R}_a,\ \forall i,  %\quad(i=1,\cdots,N)
+\end{eqnarray}
+where $\bar{R}_a$ is the target secondary throughput, which is the same for all SU$_i$.
+\subsubsection{Fairness Evaluation Coefficient}
+Since the selfishness of all nodes, some SUs attempt to use more harvested energy to transmit their own data, which leads to the reduction of contribution to relay task. The above situation seriously harm the enthusiasm of PU to collaborate with SUs. Hence, a fairness evaluation coefficient is defined to evaluate the fairness among SUs and is given by
+\begin{eqnarray}\label{7}
+F_{i}^{(k)}=F_{i}^{(k-1)}+c\left[\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}-d\right],\ \forall i,
+\end{eqnarray}
+where $F_{i}^{(k)}$ and $F_{i}^{(k-1)}$ are fairness evaluation coefficient of SU$_i$ in the $k$th and $(k-1)$th iteration, respectively. $d$ is a fairness evaluation standard, {\color{blue} where $d=\frac{1}{N-1}$ denotes the situation that all SUs achieve the same throughput (best fairness). $\frac{P_{i}^{(k)}h_i}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j}-d$ means the variation of SU$_i$ in each iteration.} And $c$ is the speed control coefficient to control the changing rate of $F_{i}^{(k)}$. {\color{blue} If other SU$_j$'s behavior $\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j$ increases in the last iteration, the SU$_i$ will increase the $P_{i}$ for avoiding the reduction of $F_{i}^{(k)}$.}
+Note that $F_{i}^{(k)}$ is the form of accumulation, which can completely reflect the behavior of SU$_i$ in the whole iterative process. \par
+% 说一下次级用户之间由于公用频谱租借时间，因此他们存在很强的自私性，而自私性会导致他们在中继的过程中少出力，进而影响合作关系，因此定义一个公平性评价系数，来反映次级用户之间的行为。
+Next, we define the utility of SU$_i$, which is composed of revenue and cost, that is
+\begin{eqnarray}\label{8}
+U_i = t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aF_{i}^{(k)}P_it_a,
+\end{eqnarray}
+where the first term represents the profit that SU$_i$ obtains from the cooperation. The second term, i.e., $aF_{i,(n)}P_it_a$ can be interpreted as the cost that SU$_i$ uses harvested energy to transmit its own data in phase four, where $a$ is the equilibrium coefficient. It is worth noting that the selfish behavior of SU$_i$ will lead to the increasing of the cost. Therefore, a feedback mechanism is established to improve the fairness among the SUs. \\
+\indent In the secondary network, the best response $P_i^\ast$ of each secondary user, can be obtained by solving the following optimization problem:
+%%这写一下自私性导致F变化导致代价变大。
+\begin{align}\label{9}
+&\max\limits_{P_i}\ U_i \\%= t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aF_{i,(n)}P_it_a\\
+s.t.\qquad&P_it_a+P_{ci}t_c \leq E_{hari}, \tag{9a}\\
+&0\leq P_i \leq P_{max}, \tag{9b}
+\end{align}
+where $P_{max}$ in constraint (9b) puts an upper limit on the power radiated by the SU$_i$, which depends on the hardware limitation.\\
+\indent In the primary network, the PU act as the leader. The strategy of the PU is to maximize the primary throughput achieved under the primary-secondary cooperation. The utility of PU is given by
+\begin{eqnarray}\label{10}
+U_p = t_cW\ln\left(1+\frac{P_ph_{pp}}{N_0}+\sum\limits_{i=1}^{N}\frac{P_{ci}h_{ip}}{N_0}\right)-bt_a\sum\limits_{i=1}^{N}P_i,
+\end{eqnarray}
+{\color{blue} where $b$ is the equilibrium coefficient.} And the first term denotes the throughput obtained by the cooperation protocol. The second term represents the energy consumed in the rewarded period.\\
+\indent The optimal power allocation policy in relaying link ${P_{ci}^{\ast}}$, the optimal time allocation policy $ t_a^{\ast}$ and $t_c^{\ast}$, can be obtained by solving the optimization problem \eqref{11}, where $\bm {P_{cs}}=\left[P_{c1},\cdots, P_{cN}\right]$. $P_i^{\ast}$ denotes the best response of SU$_i$, and the constraint (11d) indicates that the PU anticipates the decisions of the SUs which act as followers, and make the optimal strategy based on the best response of the followers. Constraint (11c), (11e), (11f), and(11g) denote the range constraints of variables.
+
+\begin{align}\label{11}
+&\max\limits_{\emph{$\bm{P_{cs}}$},t_a,t_c}\ U_p \\%
+s.t.\qquad&P_it_a+P_{ci}t_c \leq E_{hari},\ \forall i,  \tag{11a}\\
+&t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)\geq \bar{R}_a,\ \forall i, \tag{11b}\\
+&0\leq P_{ci} \leq P_{max},\ \forall i, \tag{11c}\\
+&P_i=P_i^{\ast},\ \forall i,           \tag{11d}\\
+&0\leq t_c \leq 1,         \tag{11e}\\
+&0\leq t_a \leq 1,         \tag{11f}\\
+&1-2t_c-t_a\geq 0,         \tag{11g}
+\end{align}
+
+\section{ Solution of the Optimization Problem}
+In this section, an iterative algorithm is proposed for solving (\ref{9}) and (\ref{11}) based on Stackelberg game. {\color{blue} The leader, PU, first adjusts its strategy based on the best response of the followers (i.e., the SUs).} Then each SU$_i$ reacts, i.e., it selects one strategy to maximize its utility.
+%--------------------------------------------------------------------------------
+\subsection{The Solution of Secondary Network}
+In the secondary network, each SU$_i$ maximizes its utility by controlling $P_i$ individually. However, the relationship between SUs becomes very complicated, since the fairness evaluation coefficient $F_{i}^{(k)}$ is introduced. For the sake of solving the optimization problem in (\ref{9}), the Supermodular game $G=\{\bm{S},\{P_{i}\},\{U_{i}\}\}$ is proposed to reveal the relationship among SUs, where $\bm{S}$ is the set of SUs, $\{P_i\}$ is the strategy space of SUs, $\{U_{i}\}$ is the utility function of SUs.
+\begin{definition}\label{th1}
+The game $G=\{\bm{S},\{P_i\},\{U_{i}\}\}$ is a Supermodular game, if the following conditions are satisfied for all $i\in\{1, \cdots, N\}$,
+\begin{enumerate}
+  \item $U_{i}$ is a twice continuously differentiable function with respect to the strategy space $P_i$.
+  \item $\frac {\partial ^2U_{i}}{\partial P_{i}\partial P_{j}}\geq 0$, $\forall j \neq i, j\in\{1, \cdots, N\}$.
+\end{enumerate}
+\end{definition}
+\begin{proposition}\label{th1}
+The formulated game $G=\{\bm{S},\{P_{i}\},\{U_{i}\}\}$ is a Supermodular game.
+\end{proposition}
+\begin{proof}
+The second derivative of $U_{i}$ with respect to $P_i$ is given by
+\begin{eqnarray}\label{12}
+\begin{split}
+&\frac {\partial ^2U_{i}}{\partial P_{i}^2}=
+-\left[\frac{t_aWh_i^2}{N\left(N_0+h_iP_i\right)^2}+\frac{2act_ah_i}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}h_j}\right],
+\end{split}
+\end{eqnarray}
+ where $a,c$ are the coefficients defined in \eqref{7} and \eqref{8}.
+
+\indent From above equation, it is evident that $U_{i}$ is a twice continuously differentiable function with respect to the strategy space $P_i$.
+\begin{eqnarray}\label{13}
+\begin{split}
+&\frac {\partial ^2U_{i}}{\partial P_{i}\partial P_{j}}=
+\frac{2act_aP_ih_ih_j}{\left(\sum\nolimits_{j=1,j\not= i}^{N}P_{j}h_j\right)^2},
+\end{split}
+\end{eqnarray}
+\indent Obviously, it holds that $\frac {\partial ^2U_{i}}{\partial P_{i}\partial P_{j}}\geq 0$.
+\end{proof}
+
+\indent According to Definition 1, the formulated game $G=\{\bm{S},\{P_i\},\{U_{i}\}\}$ is a Supermodular game. Topkis \cite{Topkis1979} and Moragrega \emph{et al.} \cite{Moragrega2013} proved that a unique NE exists in the Supermodular game. Since we have proved that formulated game $G=\{\bm{S},\{P_{i}\},\{U_{i}\}\}$ is a Supermodular game, the unique NE can be obtained.
+Furthermore, it is clear that $\frac {\partial ^2U_{i}}{\partial P_{i}^2}\leq 0$ from (\ref{12}), therefore, the function (\ref{11}) is concave. Also, the constrain (9a) is affine with respect to $P_i$. Thus, the optimization problem (\ref{9}) is a convex problem.\\
+\indent Since the Slater's condition is satisfied in problem (\ref{9}), the strong duality holds \cite{Boyd2004}. Therefore, the best response $P_i^{\ast}$ in (\ref{9}) can be obtained via Lagrange dual decomposition.
+We first introduce the Lagrangian function of (\ref{9}), which is given by
+\begin{eqnarray}\label{14}
+\begin{split}
+\textit{L}(P_i,\mu_i)&=t_a\frac{W}{N}\ln\left(1+\frac{P_ih_i}{N_0}\right)-aF_{i}^{(k)}P_it_a\\
+&-\mu_i\left[P_it_a+P_{ci}t_c-\eta P_eh_{pi}(1-2t_c-t_a)\right],\\
+\end{split}
+\end{eqnarray}
+where $\mu_i$ denotes the Lagrangian multiplier corresponding to the energy constraint of the SU$_i$. Thus,  the dual function of (14) is given by
+\begin{align}\label{15}
+&\textit{D}(\mu_i)=\max\limits_{P_i}\textit{L}(P_i,\mu_i),
+\end{align}
+and the dual problem can be expressed as
+\begin{align}\label{16}
+&\min\limits_{\mu_i}\ \textit{D}(\mu_i)\\
+s.t.\ &\mu_i\geq0.  \tag{16a}
+\end{align}
+The best response $P_i^{\ast}$ can be obtained by using Karush-Kuhn-Tucker (KKT) conditions \cite{XUY2020}, which are given as
+\begin{eqnarray}\label{17}
+\left\{
+\begin{array}{ll}
+\frac{\partial \textit{L}(P_i,\mu_i)}{\partial P_i}=0, \vspace{1ex}\\
+\mu_i\left[P_it_a+P_{ci}t_c-\eta P_eh_{pi}(1-2t_c-t_a)\right]=0. \vspace{1ex}
+\end{array}
+\right.
+\end{eqnarray}
+Based on (\ref{17}), the optimization solution of (\ref{9}) is given by
+\begin{align}\label{18}
+P_i^{\ast}=\left[\frac{-B_i+\sqrt{B_i^2-4A_iC_i}}{2A_i}\right]_0^{P_{max}},
+\end{align}
+where $A_i$$=$$\frac{2ach_i^2}{\sum\nolimits_{j=1,j\not=i}^{N}P_{j}^{(k-1)}h_j},\ C_i$$=$$N_0\!\!\left(\!\mu_i\!+\!aF_i^{(k\!-\!1)}\!\!\!-\!acd\!\right)-\frac{W}{N}h_i$, and $B_i$$=$$\left(\frac{2acN_0}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}+\mu_i+aF_i^{(k-1)}-acd\right)h_i$. Operator $[x]_a^b$ represents $[x]_a^b$$=$$a$, if $a$$>$$x$, $[x]_a^b$$=$$b$, if $x$$>$$b$, $[x]_a^b$$=$$x$, if $a$$\leq$$x$$\leq$$b$. The detailed derivation process is presented in Appendix A.
+
+\indent Furthermore, the Lagrangian multiplier is updated by using sub-gradient method as follow:
+\begin{equation}\label{19}
+\begin{split}
+\mu_i^{(k+1)}&=\left[\mu_i^{(k)}-\xi\left[-P_it_a-P_{ci}t_c\right.\right.\\
+\phantom{=\;\;}
+&\left.\left.+\eta P_eh_{pi}(1-2t_c-t_a)\right]\right]^+,
+\end{split}
+\end{equation}
+where operator $[\cdot]^{+}=\max\{0,\cdot\}$. $\xi$ denotes the iterative step size, which is positive. Based on the above analysis, the best response $P_i^{\ast}$ can be captured until all variables are converged.
+%---------------------------------------------------------------------------------------------
+\subsection{The Solution of Primary Network}
+In the primary network, (\ref{11}) is an optimization problem with respect to three variables $t_a$, $t_c$, and $\bm {P_{cs}}$. As can be observed from the objective functions in (\ref{11}) and constraints (11a), the relaying time $t_c$ is coupled with the power $\bm {P_{cs}}$. Therefore, the primary problem can be transformed into two subproblems: \textbf{SP1} and \textbf{SP2}.
+In \textbf{SP1}, the time allocation $t_a$ is obtained by fixing $t_c$ and $\bm {P_{cs}}$. And in \textbf{SP2}, the allocation policy $\bm {P_{cs}}$ and $t_c$ are captured by fixing $t_a$. The optimal solution of (\ref{11}) can be obtained by solving \textbf{SP1} and \textbf{SP2} alternately {\color{blue}based on the block coordinate descent method} \cite{Kalamkar2016,Song2019}, which can be expressed as
+\begin{eqnarray}\label{20}
+\begin{array}{ll}
+\textbf{SP1}:\qquad \max\limits_{t_a}\ U_p \\
+s.t\qquad Constraint: \  (11\mathrm{a}), (11\mathrm{b}), (11\mathrm{d}), (11\mathrm{f}), (11\mathrm{g}), \\
+\end{array}
+\end{eqnarray}
+\begin{eqnarray}\label{21}
+\begin{array}{ll}
+\textbf{SP2}:\qquad \max\limits_{\emph{$\bm{P_{cs}}$},t_c}\ U_p \\
+s.t\qquad Constraint: \  (11\mathrm{a}), (11\mathrm{c}),(11\mathrm{d}), (11\mathrm{e}), (11\mathrm{f}). \\
+\end{array}
+\end{eqnarray}
+
+\indent For the sake of the facilitation of comprehension in the following equation, an operation namely Hadamard product \cite{Xie2020} is
+defined.
+\begin{definition}\label{th2}
+Given $\mathbf A=[a_{ij}]$ and $\mathbf B=[b_{ij}]$, which are two matrices of the same dimension, the Hadamard product between $\mathbf A$ and $\mathbf B$ in a given operational symbol $(\circ)$ denotes the element-wise product $\mathbf A\circ \mathbf B\equiv [a_{ij}b_{ij}]$, which has the identical dimension as $\mathbf A$ and $\mathbf B$.
+\end{definition}
+
+\indent In \textbf{SP1}, it is obvious that $U_p$ is a  monotonous decreasing function with respect to $t_a$. Therefore, the optimal time allocation $t_a^\ast$ is obtained by the minimum boundary of constraint (11b), which is given by
+\begin{eqnarray}\label{22}
+t_a^\ast=\left[\frac{\bar{R}_a}{\frac{W}{N}\ln\left(1+\frac{min\{\emph{$\bm{P_s^\ast \circ h_s}$}\}}{N_0}\right)} \right]^{+},
+\end{eqnarray}
+where $min\{\mathbf{x}\}$ denotes selecting the minimum element in the vector $\mathbf{x}$. $\bm{h_s}=\left[h_{1},\cdots, h_{N}\right]$. And $\bm{P_{s}^\ast}=\left[P_{1}^\ast, \cdots, P_{N}^\ast\right]$, represents the vector of the best response.
+
+\indent In \textbf{SP2}, (\ref{21}) is a joint optimization problem with respect to variables $P_{ci}$ and $t_c$. However, \textbf{SP2} is a non-convex optimization problem due to the product of $P_{ci}$ and $t_c$ in constraint $(11\mathrm{a})$. For the sake of making \textbf{SP2} tractable, a new variable $E_{ci}=P_{ci}t_c,\ \forall i,$ is introduced, where $\bm {E_{cs}}=\left[E_{c1},\cdots, E_{cN}\right]$ denotes the vector of the allocated energy in relaying link. Therefore, the problem (\ref{21}) is transformed into the following problem.
+\begin{align}\label{23}
+\max\limits_{\emph{$\bm{E_{cs}}$},t_c}U_p\!\!=&t_cW\ln\left(1\!+\!\frac{P_ph_{pp}}{N_0}\!+\!\sum\limits_{i=1}^{N}\!\frac{E_{ci}h_{ip}}{t_cN_0}\right)\!-\!bt_a\sum\limits_{i=1}^{N}\!P_i\\
+s.t.\qquad &P_it_a+E_{ci} \leq E_{hari},\ \forall i,  \tag{23a}\\
+%&0\leq E_{ci} \leq E_{max},\ \forall i \tag{23b}\\
+&Constraint: \  (11\mathrm{d}), (11\mathrm{e}), (11\mathrm{f}).\notag
+\end{align}
+\begin{proposition}\label{th2}
+The optimization problem (\ref{23}) is a convex problem with respect to $\bm{E_{cs}}$ and $t_c$.
+\end{proposition}
+\begin{proof}
+Given a logarithmic function $f(x)=\ln(a+x)$ is concave. Since the perspective operation preserves convexity \cite{Boyd2004}, the function $f(x,y)=y\ln(a+\frac{x}{y})$ is also concave with respect to $x$ and $y$. Therefore, the objective function in (\ref{23}) is a jointly concave of $\bm {E_{cs}}$ and $t_c$. Meanwhile, due to the introduction of $\bm {E_{cs}}$, the energy neutrality constraint is converted into $(\mathrm{23a})$, which is a affine function. Thus it can be seen that the optimization problem (\ref{23}) is a convex problem with respect to $\bm{E_{cs}}$ and $t_c$.
+\end{proof}
+
+\indent Since the problem (\ref{23}) has been proved to be convex and the variables $\bm{E_{cs}}$ and $t_c$ are coupled, it is necessary to find a efficient method to solve the optimization problem. Hence, we apply the block coordinate descent method \cite{Kalamkar2016} due to the coupled nature of variables. It allows us to solve the problem hierarchically, namely, solving $\bm{E_{cs}^\ast}$ by fixing $t_c$, and solving $t_c^\ast$ by fixing $\bm{E_{cs}}$.
+
+\indent Through the analyses above, we first solve the optimal energy allocation $\bm {E_{cs}^\ast}$. Since the partial derivative of $U_p$ with respect to $E_{ci}$ greater than or equal to zero, $U_p$ is a monotonous increasing function of $E_{ci}$. Hence, ${E_{ci}^\ast}$ is obtained by the maximum boundary of constraint $(\mathrm{23a})$, which is given by
+\begin{align}\label{24}
+{E_{ci}^\ast}=\eta P_eh_{pi}(1-2t_c^\ast-t_a^\ast)-P_i^\ast t_a^\ast,\ \forall i.
+\end{align}
+
+In the next step, the optimal time allocation $t_c^\ast$ is obtained by using Lagrange dual decomposition. Based on (\ref{23}), the Lagrangian function can be formulated as
+\begin{equation}\label{25}
+\begin{split}
+\textit{L}(t_c,\bm\nu,\gamma)&=t_cW\ln\left(1\!+\!\frac{P_ph_{pp}}{N_0}\!+\!\sum\limits_{i=1}^{N}\!\frac{E_{ci}h_{ip}}{t_cN_0}\right)\!-\!bt_a\sum\limits_{i=1}^{N}\!P_i\\
+&-\sum\limits_{i=1}^{N}\nu_i\left[P_it_a+E_{ci}-\eta P_eh_{pi}(1-2t_c-t_a)\right]\\
+&-\gamma(2t_c+t_a-1),
+\end{split}
+\end{equation}
+where $\bm\nu=[\nu_1,\cdots,\nu_N]$ and $\gamma$ denote the Lagrangian multipliers with $\nu_i \geq0,\forall i$, and $\gamma \geq0$.
+By using the Lagrangian dual method, the dual function of (\ref{25}) can be expressed as
+\begin{align}\label{26}
+&\textit{D}(\bm\nu,\gamma)=\max\limits_{t_c}\textit{L}(t_c,\bm\nu,\gamma),
+\end{align}
+and the dual problem can be formulated as
+\begin{align}\label{27}
+&\min\limits_{\bm\nu,\gamma}\ \textit{D}(\bm\nu,\gamma)\\
+s.t.\ \  &\nu_i\geq0,\ \forall i,  \tag{27a}\\
+&\gamma\geq0.\tag{27b}
+\end{align}
+\indent Similarly, since $U_p$ is a concave function and the constraints in (\ref{23}) satisfy the Slater's condition. the strong duality holds. The optimal time allocation $t_c^\ast$ can be calculated by applying the KKT conditions, which are given as
+\begin{eqnarray}\label{28}
+\left\{
+\begin{array}{ll}
+\frac{\partial \textit{L}(t_c,\bm\nu,\gamma)}{\partial t_c}=0, \vspace{1ex}\\
+\nu_i\left[P_it_a+E_{ci}-\eta P_eh_{pi}(1-2t_c-t_a)\right]=0,\ \forall i, \vspace{1ex}\\
+\gamma(2t_c+t_a-1)=0. \vspace{1ex}\\
+\end{array}
+\right.
+\end{eqnarray}
+\indent Based on (28), the optimal time allocation is given by
+\begin{eqnarray}\label{29}
+t_c^\ast=\frac{\sum\nolimits_{i=1}^{N}E_{ci}^\ast h_{ip}\mathcal{W}(\Phi)}{N_0(-\mathcal{W}(\Phi)-1)},
+\end{eqnarray}
+where $\Phi=-\exp[\frac{2}{W}(-\eta P_e\sum\limits_{i=1}^{N}\nu_ih_{pi}-\gamma)-1]$. $\mathcal{W}(\cdot)$ denotes the Lambert W function, which is the inverse function of $f(t)=t\exp(t)$ \cite{Corless1996}. The detailed derivation process is presented in
+Appendix B.
+
+\indent Similarly, the Lagrangian multipliers are updated by using sub-gradient method. That is,
+\begin{eqnarray}\label{41}
+\left\{
+\begin{split}
+\nu_i^{(k+1)}=&\left[\nu_i^{(k)}-\varepsilon\left[-P_it_a-E_{ci}\right.\right.\\
+&\left.\left.+\eta P_eh_{pi}(1-2t_c-t_a)\right]\right]^+,\ \forall i,\vspace{1ex}\\
+\gamma^{(k+1)}=&[\gamma^{(k)}-\phi(-2t_c-t_a+1)]^{+},\vspace{1ex}\\
+\end{split}
+\right.
+\end{eqnarray}
+where $\varepsilon$ and $\phi$ denote the iterative step size, which are positive. The optimal solution of primary network can be obtained by the above operation.
+
+{\color{blue}Since the relationship among SUs has been proven to be a Supermodular game, a unique optimal solution exists in the secondary network. Meanwhile, we have obtained a unique optimal solution of primary network. Referring to \cite{Dong2020}, since both players can obtain the only optimal solution, the proposed Stackelberg game can reach a unique NE.}
+
+\begin{algorithm}
+\caption{The Distributed Resource Allocation Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Initialization:}}
+\begin{algorithmic}[1]
+\STATE Initialization: Primal variables $t_a^{(1)}$, $t_c^{(1)}$, $P_i^{(1)}$, $E_{ci}^{(1)}$, dual variables $\mu_i^{(1)}$, $\gamma^{(1)}$, $\nu_i^{(1)}$, and fairness coefficient $F_i^{(1)},\forall i$. $k\leftarrow1$.
+\REPEAT
+\STATE PT computes $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$ and $t_c^{(k+1)}$ according to (22), (24), (29). And PT computes the fairness coefficient $F_i^{(k)}$ according to (7), $\forall i$.
+\STATE The dual variables $\gamma^{(k+1)}$ and $\nu_i^{(k+1)}$ are updated by (30), $\forall i$.
+\STATE PT broadcasts $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$, $t_c^{(k+1)}$ and $F_i^{(k)}$to each SU$_i, \forall i$.
+\STATE Each SU$_i$ receives the $t_a^{(k+1)}$, $E_{ci}^{(k+1)}$, $t_c^{(k+1)}$ and $F_i^{(k)}$ transmitted by PT. Then the $P_i^{(k+1)}$ is computed by (18), $\forall i$.
+\STATE The dual variable $\mu_i^{(k+1)}$ is updated by (19), $\forall i$.
+\STATE Each SU$_i$ transmit $P_i^{(k+1)}$ to PT simultaneously.
+\STATE $k\leftarrow k+1$
+\UNTIL{The iteration goes to convergence.}
+\STATE Compute the optimal powers of relaying links $P_{ci}^{\ast}=\frac{E_{ci}^{\ast}}{t_c^{\ast}},\forall i$.
+\STATE Output the stable $t_a^\ast$, $t_c^\ast$, $\bm{P_{ci}^{\ast}}$, and $\bm{P_s^{\ast}}$, which is the optimal resource allocation of system.
+\end{algorithmic}
+\end{algorithm}
+\subsection{Iterative Algorithm for Game Mechanism}
+The analysis of the previous subsections is summarized in Algorithm 1. It is worth noting that there are no information interchange among SUs. Hence, Algorithm 1 is a distributed algorithm which can reduce the computational complexity compared with centralized algorithm. The signal overhead is defined as the number of times that message interchange in one iteration. As a leader, PT first sends a message to SUs, which contains the strategy of PT. Then each SU$_i$ reacts, i.e., replying a message to PT.
+Therefore, the signal overhead of Algorithm 1 is $2N$, where $N$ is the number of the SU$_i$. {\color{blue}And the computational complexity is $\mathcal{O}(N)$. For a centralized algorithm in reference  \cite{Venturino2009}, each SU$_i$ needs the status information from the other SUs. The signal overhead is increased to $N^2+N$ and the computational complexity is $\mathcal{O}(N^2)$}. Through the above analyses, our algorithm has lower complexity and less signal overhead compared with the centralized algorithm.
+\section{Simulation Results}
+In this section, the simulation results are presented to evaluate the performance of the proposed resource allocation algorithm.  Firstly, the convergence of the proposed algorithm is analyzed. And then, we compare the harvested energy with the allocated energy by each user, which can demonstrate the effectiveness of our energy allocation policy. Furthermore, GFRAA is compared with two other algorithms, namely  equal power and optimal time allocation (EPOTA) \cite{Xu2017} and optimal time and power but non-fairness allocation (OTPNF) {\color{blue}\cite{DXu2019}} in different scenarios. To guarantee the comparability of the simulation results, EPOTA allocates power equally in the rewarded period and optimizes the other variables in the same way as GFRAA. OTPNF optimizes time and power by the same method as GFRAA, but does not introduce the fairness evaluation coefficient. {\color{blue}Moreover, three algorithms adopt the same parameter values from Table1.}
+In the proposed scenario, PT and PR are located at (0,0) and (50,0) (unit:m), respectively. SAP is deployed at (25,0), where SUs are randomly deployed in a circle with a radius of 10 meters around SAP. The instantaneous channel power gain can be expressed as $h=\beta d^{-m}$, where $\beta$ denotes the fixed loss, $d$ is the distance between transmitter and receiver, and $m$ denotes the path fading exponent. It is assumed that all links have the same exponents as mentioned above except for the direct link (PT to PR), and the direct link is in deep fade due to the poor communication environment \cite{Zhao2020,Kalamkar2016}. The system parameters are listed in Table I.
+\begin{table}[htbp]\label{table1}
+\caption{ System Parameters }
+\centering  % 表居中
+%\scalebox{0.05}
+{
+\begin{tabular}{cll}  % {lccc} 表示各列元素对齐方式，left-l,right-r,center-c
+\hline
+Variable &Parameter &Value\\ \hline  % \hline 在此行下面画一横线         % \\ 表示重新开始一行 % & 表示列的分隔线
+$N$ & number of SUs, & 10 \\
+$P_{max}$ & maximum transmitting power of SUs & 0.5 W\\
+$\bar{R}_a$ & target secondary throughput of SUs & 0.5 Mbps\\
+$W$ & bandwidth of licensed spectrum & 10 MHz \\
+$N_{0}$ &power of White Gaussian Noise & ${10^{-5}}$W \\
+$P_{e}$ &power of PT in phase one & 1W\\
+$P_{p}$ &power of PT in phase two & 1W\\
+$a$     &equilibrium coefficient  &$2000$\\
+$b$     &equilibrium coefficient  &$2000$\\
+$\eta$  &energy conversion efficiency factor & 0.8\\
+$c$ &speed control coefficient of $F_{i}^{(k)}$ & $1.8$ \\
+$d$ &fairness evaluation standard of $F_{i}^{(k)}$ & $\frac{1}{N-1}$\\
+$\beta$ &fixed loss               &$100$\\
+$m$     &path fading exponent    &$3$\\
+\hline
+\end{tabular}}
+\end{table}
+
+\indent Fig. 3 shows the iterative process of all $P_i$. It can be observed that all $P_i$ quickly reach a point. Then under the influence of $F_{i}^{(k)}$, each $P_i$ makes an adjustment, which validates the effectiveness of $F_{i}^{(k)}$. All $P_i$ are converged after 35th iteration. {\color{blue}Fig. 4 and Fig. 5 show the iterative processes of $t_a$, $t_c$ and $P_{ci}$. It is found that $P_{ci}$ and $t_c$ fluctuate mutually in the early iterations. That's because $t_c$ is coupled with $P_{ci}$, which can be seen from (24) and (29). Since the block coordinate descent method is employed, $t_c$ and $P_{ci}$ are updated in parallel and interact on another side at each iteration. It can be seen that $t_a$, $t_c$ and $P_{ci}$ are converged after 25th iteration. Meanwhile, since the Stackelberg game is constructed between PU and SUs, all variables will interact until NE is reached.} The simulation results show the fast convergence indicating the good performance of GFRAA.
+
+\begin{figure}[h]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=7cm]{piconvergence.eps}
+\caption{Power allocation convergence of rewarded period.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=7cm]{pciconvergence.eps}
+\caption{Power allocation convergence of relaying period.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=7cm]{tconvergence.eps}
+\caption{Time allocation convergence.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6.5cm]{EHandEAs.eps}
+\caption{Energy statuses of SUs with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+
+\indent Energy utilization efficiency is an important evaluating indicator of the proposed system. Since the absence of energy storage or management, the energy harvested in this frame can not be allocated in the next frame. {\color{blue}Resource allocation algorithm adopted in WPCNs should use fully energy as much as possible. Since $U_p$ is a monotonous increasing function with respect to $E_{ci}$, PU prefers SUs to apply more energy to the relay phase, which will lead to the full usage of energy harvested at each SU.} Fig. 6 shows the statuses of harvested energy and allocated energy in a frame, which indicate that each user can exhaust the harvested energy by using our algorithm. Hence,  GFRAA shows good performance on energy utilization efficiency.
+
+\begin{figure}[H]
+\centering
+\subfigure[Fairness among SUs]{
+\begin{minipage}{7cm}
+\centering
+\includegraphics[width=6.5cm]{Fairness1.eps}
+\end{minipage}
+}
+\subfigure[The sum-throughput of SUs]{
+\begin{minipage}{7cm}
+\centering
+\includegraphics[width=6.5cm]{Fairness2.eps}
+\end{minipage}
+}
+\subfigure[The throughput of PU]{
+\begin{minipage}{7cm}
+\centering
+\includegraphics[width=6.5cm]{Fairness3.eps}
+\end{minipage}
+}
+\caption{Effect of the number of SUs on (a), (b) and (c) with $P_e=30$ dBm and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+\indent In Fig. 7, GFRAA is compared with EPOTA and OTPNF with different number of SUs. Fig. 7(b) and (c) show that increasing the number of SUs can improve the SU sum-throughput in the rewarded period and increase the achievable throughput at PT. {\color{blue}The reason is that, as increasing the number of SUs, more SUs will participate in relaying information for PU, which improves the channel condition of PU. Meanwhile, more SUs are involved in communication with SAP, which results in a higher performance of the sum-throughput of SUs.} The fairness that applying Jain's fairness index $\mathcal{J}$ \cite{Jain2013} achieved by each algorithm is shown in Fig. 7(a), where $\mathcal{J}=\frac{(\sum\nolimits_{i=1}^{N}x_i)^2}{N\sum\nolimits_{i=1}^{N}x_i^2}$, $x_i$ is the throughput of SU$_i$ in the rewarded period. The result of applying Jain's fairness index ranges from $\frac{1}{N}$ (worst fairness) to 1 (best fairness). The results of Fig. 7 highlight the trade-off between fairness, the achievable throughput of PU, and the SU sum-throughput. That is, GFRAA has the maximum fairness due to the introduction of fairness evaluation coefficient, and GFRAA achieves the highest throughput of PU, but the lowest SU sum-throughput.
+OPTNF has the minimum fairness since fairness is not taken into account, and OPTNF achieves the lowest throughput of PU, but the highest SU sum-throughput. In EPOTA, since allocating power equally to each SU$_i$ results in some fairness, both the throughput of PU and the SU sum-throughput are the intermediate level.
+In the proposed model, PU is at the leadership position indicating that PU's benefit needs to be satisfied firstly. Through the analyses above, GFRAA has better applicability than the other two algorithms.
+\begin{figure}[H]
+\centering
+\subfigure[The sum-throughput of SUs]{
+\begin{minipage}{6.5cm}
+\centering
+\includegraphics[width=6.5cm]{targetofsu2.eps}
+\end{minipage}
+}
+\subfigure[The throughput of PU]{
+\begin{minipage}{6.5cm}
+\centering
+\includegraphics[width=6.5cm]{targetofsu1.eps}
+\end{minipage}
+}
+\caption{Effect of the target secondary throughput on (a) and (b) with $P_e=30$ dBm and $N=10$.}
+\end{figure}
+
+\indent Fig. 8 shows the effect of the target SU throughput $\bar{R}_a$ on SU sum-throughput and PU throughput. As $\bar{R}_a$ increases, SUs need more time to transmit their own data, which reduces the relaying period. Thus resulting in the boost of SU sum-throughput and reduction of PU throughput. From the numerical results of Fig. 8, GFRAA shows the better performance on PU than EPOTA and OTPNF.
+
+\begin{figure}[H]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6.5cm]{PE.eps}
+\caption{Effect of PT's transmit power $P_e$ with $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+{\color{blue} Fig. 9 investigates the PU throughput versus the PT's transmit power $P_e$. The PU throughput of three algorithms increase as the $P_e$ increases. The reason is that, as the $P_e$ increases, SUs will harvest higher energy, which leads to the increase of available energy in relaying process. Furthermore, the evaluation coefficient are introduced in GFRAA, which can inhibit the selfish behavior that SUs tend to consume more energy for their own transmissions. Hence, GFRAA can allocate higher energy for relaying, and achieve a better performance of PU throughput compared with EPOTA and OTPNF.}
+
+\begin{figure}[H]
+\centering
+%\hspace{1.0cm}
+\includegraphics[width=6.5cm]{R.eps}
+\caption{Effect of SUs’ distribution around SAP with $P_e=30$ dBm, $N=10$ and $\bar{R}_a=0.5$ Mbps.}
+\end{figure}
+
+{\color{blue} With the increase of distances between SUs and SAP, SUs need higher energy to communicate with SAP for a target SU Throughput, which leads to energy reduction for relaying. Hence, we test the PU throughput versus the distances between SUs and SAP, which is illustrated in Fig. 10. It is worth noting that GFRAA achieve a higher PU throughput by comparing with the other two algorithms. The reason is that the evaluation coefficient are introduced in GFRAA, SUs can achieve the target SU throughput with lower energy consumption, and higher energy can be allocated for relaying.}
+
+
+%--------------------------------------------------------------------------------%
+\section{Conclusion}
+In this paper, a wireless powered cooperative cognitive radio network was considered, where the PU's utility is essential. The Stackelberg game was employed for describing the relationship between PU and SUs, and the relationship among SUs was modeled as the Supermodular game. With above paradigm, we proposed the GFRAA algorithm to achieve optimal resource allocation. Simulation results revealed the trade-off between fairness, SU sum-throughput and PU throughput. That is, higher of the fairness among SUs results in higher throughput of PU and lower SU sum-throughput. Moreover, by comparing with the other two algorithms EPOTA and OTPNF, GFRAA can achieve higher PU throughput and higher fairness. In summary, GFRAA scheme showed better applicability in the proposed model.
+\section*{Acknowledgement}
+This work is partly supported by National Key R$\&$D Program of China under grant 2018YFB1702100, National Natural Science Foundation of China under grant 61873223, 61803328, and the Natural Science Foundation of Hebei Province under grant F2019203095.
+\appendices
+\begin{center}
+\textsc{Appendix A}\\
+\end{center}
+\indent The first partial derivative of $\textit{L}(P_i,\mu_i)$ with respect to $P_i$ is:
+\begin{eqnarray}\label{31}
+\begin{split}
+\frac{\partial \textit{L}(P_i,\mu_i)}{\partial P_i}&=t_a\frac{Wh_i}{N(N_0+P_ih_i)}-at_aF_i^{(k-1)}+cdat_a\\
+&-2cat_a\frac{P_ih_i}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}-\mu_it_a,
+\end{split}
+\end{eqnarray}
+ where $a,c,d$ are the coefficients defined in \eqref{7} and \eqref{8}.\par
+\indent We make the partial derivative equal to zero, and we can get:
+\begin{eqnarray}\label{32}
+\begin{split}
+&t_a\frac{Wh_i}{N(N_0+P_ih_i)}=\!at_aF_i^{(k-1)}\!\!-\!\!cdat_a+\\
+&~~~~~~~~~~~~~~~~~~~~~~~2cat_a\frac{P_ih_i}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}\!+\!\mu_it_a,\\
+&\Rightarrow \underbrace{\frac{2cah_i^2}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}}_{A_i}P_i^2\\
+&+\!\underbrace{\left[\frac{2acN_0h_i}{\sum\nolimits_{j=1,j\not= i}^{N}P_{j}^{(k-1)}h_j}\!+\!\mu_ih_i\!+\!aF_i^{(k-1)}h_i\!-\!acdh_i\!\right]}_{B_i}\!P_i\\
+&+\underbrace{N_0\left(\mu_i+aF_i^{(k-1)}-acd\right)-\frac{W}{N}h_i}_{C_i}=0.
+\end{split}
+\end{eqnarray}
+\indent The (32) is the form of quadratic equation with respect to $P_i$. Then we can compute the optimal solution $P_i^\ast$ by applying extract roots formula.
+\begin{center}
+\textsc{Appendix B}\\
+\end{center}
+
+\indent We first introduce a conclusion which is given as follows \cite{Xu2017}.
+For a equation with following form,
+\begin{eqnarray}\label{33}
+\begin{split}
+&\ln(a+x)-\frac{x}{a+x}=b,
+\end{split}
+\end{eqnarray}
+the solution can be determined as
+\begin{eqnarray}\label{34}
+x=\frac{-\mathcal{W}(-e^{-b-1})-1}{\mathcal{W}(-e^{-b-1})},
+\end{eqnarray}
+where $a$ and $b$ are constants, $\mathcal{W}(\cdot)$ denotes the Lambert W function. \\
+
+Then we take partial derivative of $\textit{L}(t_c,\bm\nu,\gamma)$ with respect to $t_c$, that is
+\begin{eqnarray}\label{35}
+\begin{split}
+\frac{\partial \textit{L}(t_c,\bm\nu,\gamma)}{\partial t_c}
+&=W\ln\left(1+\frac{P_ph_{pp}}{N_0}+\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}\right)\\
+&-W\frac{\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}}{1+\frac{P_ph_{pp}}{N_0}+\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}}\\
+&-2(\eta P_e\sum\limits_{i=1}^{N}\nu_ih_{pi}+\gamma).
+\end{split}
+\end{eqnarray}
+\indent Making the above partial derivative equal to zero, we can derive:
+\begin{eqnarray}\label{36}
+\begin{split}
+&\ln\left(1+\frac{P_ph_{pp}}{N_0}+\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}\right)\\
+&-\frac{\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}}{1+\frac{P_ph_{pp}}{N_0}+\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}}=\frac{2}{W}(\eta P_e\sum\limits_{i=1}^{N}\nu_ih_{pi}+\gamma).
+\end{split}
+\end{eqnarray}
+\indent It can be seen that when we make $a=1+\frac{P_ph_{pp}}{N_0}$, $b=\frac{2}{W}(\eta P_e\sum\limits_{i=1}^{N}\nu_ih_{pi}+\gamma)$, and $x=\sum\nolimits_{i=1}^{N}\frac{E_{ci}h_{ip}}{t_cN_0}$, Eq. \eqref{36} is converted into the identical form of Eq. \eqref{33}. Therefore, by employing the same method in Eq. \eqref{34} and taking some mathematical manipulations, the optimal $t_c^\ast$ can be obtained, which is given by Eq. \eqref{29}.
+
+
+
+
+
+
+
+
+
+
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+%\bibliography{reference}
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,reference}
+
+
+
+
+\end{document}
+
+
