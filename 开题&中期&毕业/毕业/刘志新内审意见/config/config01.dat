@@ -1,0 +1,45 @@
+ÛÖÐÐ<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ConfigList version="1" >
+
+        <Config name="ShowConfig">
+                <Item key="hideaddfriend" >0</Item>
+                <Item key="hideaddfriend" lang="sp,it,th">1</Item>
+                <Item key="showaddfriend" >0</Item>
+                <Item key="showVoiceVoip" lang="zh_CN,zh_TW">0</Item>
+                <Item key="showVoiceVoip" lang="en">0</Item>
+                <Item key="showVoiceVoip" lang="es">2</Item>
+                <Item key="showVoiceVoip" lang="it">2</Item>
+                <Item key="showVoiceVoip" lang="id">2</Item>
+                <Item key="showVoiceVoip" lang="th">2</Item>
+                <Item key="showVoiceVoip" lang="ar">2</Item>
+                <Item key="showVoiceVoip" lang="pt">2</Item>
+                <Item key="showVoiceVoip" lang="tr">2</Item>
+                <Item key="showShakeMusic" lang="zh_CN">1</Item>
+                <Item key="showRecvTmpMsgBtn">0</Item>
+                <Item key="hidePoiOversea">0</Item>
+        </Config>
+        <Config name="BrandService">
+                <Item key="maxStarBrandCount" lang="zh_CN,zh_TW,en">4</Item>
+                <Item key="continueLocationReportInterval" lang="zh_CN,zh_TW,en">5</Item>
+        </Config>
+        <Config name="SessionStatusNotify">
+                <Item key="MarkReadInterval">3</Item>
+        </Config>
+        <Config name="FreeWiFiConfig">
+                <Item key="CheckURL">http://10.1.0.6/redirect</Item>
+        </Config>
+        <Config name="MailApp">
+                <Item key="ShowMailAppRecommend">1</Item>
+                <Item key="MailAppIcon"><![CDATA[]]></Item>
+                <Item key="MailAppDownloadUrlIos"><![CDATA[https://itunes.apple.com/cn/app/qq-you-xiang/id473225145?mt=8]]></Item>
+                <Item key="MailAppDownloadUrAndroid"><![CDATA[http://app.mail.qq.com/cgi-bin/mailapp?latest=match&apv=wx_bar&downloadclick=wx_bar|android]]></Item>
+                <Item key="MailAppOpenUrlIos"><![CDATA[qqmail://read?scheme=weixin&fromapp=weixin&uin=$uin$&mailid=$mailid$]]></Item>
+                <Item key="MailAppOpenUrlAndroid"><![CDATA[qqmail://read?scheme=weixin&fromapp=weixin&uin=$uin$&mailid=$mailid$]]></Item>
+        </Config>
+        <Config name="IBeacon">
+                <Item key="Content"><![CDATA[{"12345678-1234-1234-1234-123456789012":{"detected_acc":0.2,"acc_between_detected":0.4,"min_detected_secs":4,},"FDA50693-A4E2-4FB1-AFCF-C6EB07647825":{"detected_acc":0.2,"acc_between_detected":0.4,"min_detected_secs":4,},"AB8190D5-D11E-4941-ACC4-42F30510B408":{"detected_acc":0.2,"acc_between_detected":0.4,"min_detected_secs":4,},}]]></Item>
+        </Config>
+        <Config name="AsyncCheckUrl">
+                <Item key="UrlHost"><![CDATA[mp.weixin.qq.com/mp/appmsg/show;mp.weixin.qq.com/s]]></Item>
+        </Config>
+</ConfigList>
